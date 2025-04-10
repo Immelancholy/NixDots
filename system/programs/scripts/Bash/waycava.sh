@@ -161,7 +161,7 @@ sleep_timer = 1
 [input]
 method = pipewire
 source = ${id} 
-sample_rate = 96000
+sample_rate = 48000
 sample_bits = 32
 [output]
 method = raw
