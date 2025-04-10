@@ -1,8 +1,6 @@
 {
   pkgs,
   inputs,
-  git,
-  email,
   ...
 }: {
   home.shell = {
@@ -21,9 +19,7 @@
     ./tmux.nix
     ./kitty.nix
     ./spicetify.nix
-    ./DAW
     ./swayidle.nix
-    ./eww
     ./obs.nix
     ./rofi
     ./cliphist.nix
@@ -40,10 +36,6 @@
   };
 
   services.mpris-proxy = {
-    enable = true;
-  };
-
-  services.remmina = {
     enable = true;
   };
 
@@ -65,12 +57,7 @@
     eza
     libsixel
 
-    shotcut
-
-    krita
-
     manix
-
     # archives
     zip
     xz
@@ -134,7 +121,6 @@
     libsForQt5.qt5ct
     kdePackages.qt6ct
     rmpc
-    mpd
     protonup
     playerctl
     pokemonsay
@@ -143,7 +129,6 @@
     lz4
     kdePackages.ark
     parted
-    teams-for-linux
     # retroarch-free
     qalculate-gtk
     libreoffice
