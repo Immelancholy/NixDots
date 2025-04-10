@@ -9,12 +9,6 @@
         bar_width = 1;
         bar_spacing = 0;
       };
-      input = {
-        method = "pipewire";
-        source = "58";
-        sample_rate = 96000;
-        sample_bits = 32;
-      };
       output = {
         method = "noncurses";
         channels = "stereo";
