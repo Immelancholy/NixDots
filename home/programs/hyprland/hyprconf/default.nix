@@ -1,6 +1,8 @@
 {
   wayland.windowManager.hyprland = {
+    sourceFirst = true;
     settings = {
+      source = ["/etc/xdg/hypr/hyprland.conf"];
       "$scr" = "$XDG_BIN_HOME";
       "$term" = "uwsm app -- kitty";
       "$files" = "uwsm app -- nemo";
@@ -13,7 +15,6 @@
       "$player" = "mpd";
       "$playerctl" = "uwsm app -- playerctl --player=$player";
       "$discord" = "uwsm app -- vesktop.desktop";
-      source = ["/etc/xdg/hypr/hyprland.conf"];
       misc = {
         disable_hyprland_logo = true;
         disable_splash_rendering = true;
