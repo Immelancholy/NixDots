@@ -17,6 +17,10 @@
     ];
   };
 
+  security.sudo = {
+    execWheelOnly = true;
+  };
+
   zramSwap = {
     enable = true;
     algorithm = "zstd";
