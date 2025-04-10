@@ -7,7 +7,7 @@
     enable = true;
     package = null;
     portalPackage = null;
-    xwayland.enable = true;
+    xwayland.enable = false;
     plugins = [
       inputs.hyprland-plugins.packages.${pkgs.system}.csgo-vulkan-fix
       inputs.hyprland-plugins.packages.${pkgs.system}.xtra-dispatchers
