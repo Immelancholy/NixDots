@@ -2,7 +2,7 @@
   userAccounts.users = [];
   userAccounts.sudoUsers = ["mela"];
 
-  home.users.mela = {
+  home-manager.users.mela = {
     home.packages = with pkgs; [
       reaper
       bespokesynth
