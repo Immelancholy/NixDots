@@ -13,6 +13,7 @@
       "$player" = "mpd";
       "$playerctl" = "uwsm app -- playerctl --player=$player";
       "$discord" = "uwsm app -- vesktop.desktop";
+      source = ["/etc/xdg/hypr/hyprland.conf"];
       misc = {
         disable_hyprland_logo = true;
         disable_splash_rendering = true;
