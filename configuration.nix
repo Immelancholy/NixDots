@@ -17,11 +17,13 @@
       userEmail = "lenalowes0@gmail.com";
     };
     programs.cava = {
-      input = {
-        method = "pipewire";
-        source = "58";
-        sample_rate = 48000;
-        sample_bits = 32;
+      settings = {
+        input = {
+          method = "pipewire";
+          source = "58";
+          sample_rate = 48000;
+          sample_bits = 32;
+        };
       };
     };
     wayland.windowManager.hyprland = {
