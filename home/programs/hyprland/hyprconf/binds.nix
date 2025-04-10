@@ -64,7 +64,7 @@
       ", F12, pass, class:^(com.obsproject.Studio)$"
       ", F9, pass, class:^(com.obsproject.Studio)$"
       "Alt, F10, pass, class:^(com.obsproject.Studio)$"
-      # ", mouse:277, exec, $playerctl play-pause" # toggle between media play and pause
+      ", mouse:277, exec, $playerctl play-pause" # toggle between media play and pause
     ];
     bindel = [
       ", XF86AudioLowerVolume, exec, uwsm-app -- rmpc volume -1" # decrease volume
