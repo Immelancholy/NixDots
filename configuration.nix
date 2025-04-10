@@ -3,7 +3,7 @@
   userAccounts.sudoUsers = ["mela"];
 
   environment.sessionVariables = {
-    FLAKE_PATH = "home/mela/NixDots"; #path to flake.nix
+    FLAKE_PATH = "/home/mela/NixDots"; #path to flake.nix
   };
 
   drivers = {
