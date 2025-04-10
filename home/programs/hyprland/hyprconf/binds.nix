@@ -58,7 +58,6 @@
       );
     bindl = [
       ", XF86AudioMute, exec, $playerctl play-pause #pause-play media"
-      ", mouse:277, exec, $playerctl play-pause" # toggle between media play and pause
       "$mod, mouse:282, exec, $playerctl next" #next
       "$mod, mouse:281, exec, $playerctl previous" #previous,
       ", F10, pass, class:^(com.obsproject.Studio)$"
@@ -74,6 +73,7 @@
     ];
     bindn = [
       ", mouse:275, exec, pushToMuteChromium"
+      ", mouse:277, exec, $playerctl play-pause" # toggle between media play and pause
     ];
     bindnr = [
       ", mouse:275, exec, pushToMuteChromium"
