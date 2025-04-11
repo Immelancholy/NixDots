@@ -328,30 +328,6 @@
       oil.enable = true;
       bufferline.enable = true;
       barbar.enable = true;
-      rustaceanvim = {
-        enable = true;
-        settings = {
-          rustanalyzerPackafe = null;
-          server = {
-            cmd = [
-              "rust-analyzer"
-            ];
-            default_settings = {
-              rust-analyzer = {
-                check = {
-                  command = "clippy";
-                };
-                inlayHints = {
-                  lifetimeElisionHints = {
-                    enable = "always";
-                  };
-                };
-              };
-            };
-            standalone = false;
-          };
-        };
-      };
       lz-n = {
         enable = true;
         plugins = [

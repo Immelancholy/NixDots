@@ -55,6 +55,34 @@
     services.remmina = {
       enable = true;
     };
+    programs.nixvim = {
+      plugins = {
+        rustaceanvim = {
+          enable = true;
+          settings = {
+            rustanalyzerPackafe = null;
+            server = {
+              cmd = [
+                "rust-analyzer"
+              ];
+              default_settings = {
+                rust-analyzer = {
+                  check = {
+                    command = "clippy";
+                  };
+                  inlayHints = {
+                    lifetimeElisionHints = {
+                      enable = "always";
+                    };
+                  };
+                };
+              };
+              standalone = false;
+            };
+          };
+        };
+      };
+    };
   };
 
   services.solaar.enable = true;
