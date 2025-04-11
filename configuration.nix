@@ -1,13 +1,13 @@
 {
   pkgs,
-  inputs,
+  rust-overlay,
   ...
 }: {
   userAccounts.users = [];
   userAccounts.sudoUsers = ["mela"];
 
   home-manager.users.mela = {
-    nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
+    nixpkgs.overlays = [rust-overlay.overlays.default];
     home.packages = with pkgs; [
       (
         rust-bin.selectLatestNightlyWith

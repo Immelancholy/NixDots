@@ -103,6 +103,7 @@
     nixpkgs,
     catppuccin,
     home-manager,
+    rust-overlay,
     solaar,
     nix-flatpak,
     lanzaboote,
