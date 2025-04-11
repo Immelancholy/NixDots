@@ -8,19 +8,6 @@
   userAccounts.sudoUsers = ["mela"];
 
   home-manager.users.mela = {
-    home.sessionVariables = {
-      NOTES_PATH = "/home/mela/Documents/Obsidian-Vault"; # path to notes ( for neovim )
-      PROJECT_PATH = "/home/mela/Projects"; # path to Projects ( for neovim )
-    };
-    home.packages = with pkgs; [
-      (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {extensions = ["rust-src" "rust-analyzer"];}))
-      reaper
-      bespokesynth
-      reaper-sws-extension
-      teams-for-linux
-      shotcut
-      krita
-    ];
     programs.git = {
       enable = true;
       userName = "Immelancholy";
@@ -56,6 +43,19 @@
         };
       };
     };
+    home.sessionVariables = {
+      NOTES_PATH = "/home/mela/Documents/Obsidian-Vault"; # path to notes folder ( for neovim )
+      PROJECTS_PATH = "/home/mela/Projects"; # path to Projects folder ( for neovim )
+    };
+    home.packages = with pkgs; [
+      (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {extensions = ["rust-src" "rust-analyzer"];}))
+      reaper
+      bespokesynth
+      reaper-sws-extension
+      teams-for-linux
+      shotcut
+      krita
+    ];
     services.remmina = {
       enable = true;
     };
