@@ -3,19 +3,13 @@
   inputs,
   ...
 }: {
+  nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
   userAccounts.users = [];
   userAccounts.sudoUsers = ["mela"];
 
   home-manager.users.mela = {
-    nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
     home.packages = with pkgs; [
-      (
-        pkgs.rust-bin.selectLatestNightlyWith
-        (toolchain:
-          toolchain.default.override {
-            extensions = ["rust-src" "rust-analyzer"];
-          })
-      )
+      (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {extensions = ["rust-src" "rust-analyzer"];}))
       reaper
       bespokesynth
       reaper-sws-extension
