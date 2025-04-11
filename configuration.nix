@@ -81,6 +81,18 @@
             };
           };
         };
+        obsidian = {
+          enable = true;
+          settings = {
+            ui.enable = false;
+            workspaces = [
+              {
+                name = "Obsidian-Vault";
+                path = "~/Documents/Obsidian-Vault/";
+              }
+            ];
+          };
+        };
       };
     };
   };
@@ -88,7 +100,9 @@
   services.solaar.enable = true;
 
   environment.sessionVariables = {
-    FLAKE_PATH = "/home/mela/NixDots"; #path to flake.nix
+    FLAKE_PATH = "/home/mela/NixDots"; # path to flake.nix
+    NOTES_PATH = "/home/mela/Documents/Obsidian-Vault"; # path to notes ( for neovim )
+    PROJECT_PATH = "/home/mela/Projects"; # path to Projects ( for neovim )
   };
 
   drivers = {

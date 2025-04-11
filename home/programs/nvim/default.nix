@@ -284,18 +284,6 @@
           };
         };
       };
-      obsidian = {
-        enable = true;
-        settings = {
-          ui.enable = false;
-          workspaces = [
-            {
-              name = "Obsidian-Vault";
-              path = "~/Documents/Obsidian-Vault/";
-            }
-          ];
-        };
-      };
       blink-cmp-spell.enable = true;
       blink-cmp-dictionary.enable = true;
       blink-ripgrep.enable = true;
@@ -586,7 +574,7 @@
               }
               {
                 action = {
-                  __raw = "function(path) vim.cmd('cd ~/Projects/ | Telescope find_files') end";
+                  __raw = "function(path) vim.cmd('cd $PROJECTS_PATH | Telescope find_files') end";
                 };
                 desc = " Projects";
                 group = "Tag";
@@ -602,7 +590,7 @@
               }
               {
                 action = {
-                  __raw = "function(path) vim.cmd('cd ~/Documents/Obsidian-Vault/ | Telescope find_files') end";
+                  __raw = "function(path) vim.cmd('cd $NOTES_PATH | Telescope find_files') end";
                 };
                 desc = "󱓧 Notes";
                 group = "Statement";
