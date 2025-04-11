@@ -125,7 +125,6 @@
         modules = [
           ./hardware-configuration.nix
           ({pkgs, ...}: {
-            nixpkgs.config.allowUnfree = true;
             nixpkgs.overlays = [rust-overlay.overlays.default];
             environment.systemPackages = with pkgs; [
               (
