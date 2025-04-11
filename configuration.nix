@@ -102,6 +102,7 @@
   };
 
   services.solaar.enable = true;
+  hardware.logitech.wireless.enable = true;
 
   environment.sessionVariables = {
     FLAKE_PATH = "/home/mela/NixDots"; # path to flake.nix
