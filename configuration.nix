@@ -1,16 +1,16 @@
 {
   pkgs,
-  rust-overlay,
+  inputs,
   ...
 }: {
   userAccounts.users = [];
   userAccounts.sudoUsers = ["mela"];
 
   home-manager.users.mela = {
-    nixpkgs.overlays = [rust-overlay.overlays.default];
+    nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
     home.packages = with pkgs; [
       (
-        rust-bin.selectLatestNightlyWith
+        pkgs.rust-bin.selectLatestNightlyWith
         (toolchain:
           toolchain.default.override {
             extensions = ["rust-src" "rust-analyzer"];
