@@ -8,6 +8,7 @@
   ];
   programs.seahorse.enable = true;
   security.pam.services.login.enableGnomeKeyring = true;
+  services.seatd.enable = true;
 
   nixpkgs.config.allowUnfree = true;
   environment = {
