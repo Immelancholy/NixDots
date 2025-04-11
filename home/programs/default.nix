@@ -48,7 +48,6 @@
     vesktop
     grim
     slurp
-    inputs.zen-browser.packages."${system}".beta
     pipes
     lazygit
     loupe
