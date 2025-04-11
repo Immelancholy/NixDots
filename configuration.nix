@@ -8,6 +8,10 @@
   userAccounts.sudoUsers = ["mela"];
 
   home-manager.users.mela = {
+    home.sessionVariables = {
+      NOTES_PATH = "/home/mela/Documents/Obsidian-Vault"; # path to notes ( for neovim )
+      PROJECT_PATH = "/home/mela/Projects"; # path to Projects ( for neovim )
+    };
     home.packages = with pkgs; [
       (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {extensions = ["rust-src" "rust-analyzer"];}))
       reaper
@@ -101,8 +105,6 @@
 
   environment.sessionVariables = {
     FLAKE_PATH = "/home/mela/NixDots"; # path to flake.nix
-    NOTES_PATH = "/home/mela/Documents/Obsidian-Vault"; # path to notes ( for neovim )
-    PROJECT_PATH = "/home/mela/Projects"; # path to Projects ( for neovim )
   };
 
   drivers = {
