@@ -92,7 +92,7 @@
             workspaces = [
               {
                 name = "Obsidian-Vault";
-                path = "~/Documents/Obsidian-Vault/";
+                path = "/home/mela/Documents/Obsidian-Vault/";
               }
             ];
           };
