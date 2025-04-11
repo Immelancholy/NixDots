@@ -7,7 +7,7 @@
     enable = true;
     package = null;
     portalPackage = null;
-    # hyprctlPath = "${inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland}/bin/hyprctl";
+    hyprctlPath = "${inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland}/bin/hyprctl";
     xwayland.enable = false;
     systemd = {
       # disable the systemd integration, as it conflicts with uwsm.
