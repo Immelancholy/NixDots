@@ -501,7 +501,6 @@
       };
       bufdelete.enable = true;
       treesitter = {
-        autoLoad = true;
         enable = true;
         nixGrammars = true;
         grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
