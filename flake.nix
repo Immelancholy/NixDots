@@ -15,7 +15,7 @@
     };
     home-manager = {
       # url = "github:nix-community/home-manager";
-      url = "github:Immelancholy/home-manager/hyprland-hyprctl-path-option";
+      url = "github:amadejkastelic/home-manager/hyprland-hyprctl-path-option";
       # The `follows` keyword in inputs is used for inheritance.
       # Here, `inputs.nixpkgs` of home-manager is kept consistent with
       # the `inputs.nixpkgs` of the current flake,
