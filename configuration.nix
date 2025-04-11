@@ -1,9 +1,21 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   userAccounts.users = [];
   userAccounts.sudoUsers = ["mela"];
 
   home-manager.users.mela = {
+    nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
     home.packages = with pkgs; [
+      (
+        rust-bin.selectLatestNightlyWith
+        (toolchain:
+          toolchain.default.override {
+            extensions = ["rust-src" "rust-analyzer"];
+          })
+      )
       reaper
       bespokesynth
       reaper-sws-extension
