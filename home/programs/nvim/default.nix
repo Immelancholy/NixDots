@@ -524,6 +524,12 @@
           rust
           yuck
           latex
+          javascript
+          scss
+          svelte
+          tsx
+          typst
+          vue
         ];
         settings = {
           highlight = {
