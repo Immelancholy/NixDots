@@ -65,15 +65,6 @@
     };
   };
 
-  programs.git = {
-    enable = true;
-    config = {
-      init = {
-        defaultBranch = "main";
-      };
-    };
-  };
-
   xdg.portal = {
     xdgOpenUsePortal = true;
     extraPortals = with pkgs; [

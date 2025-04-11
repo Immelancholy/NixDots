@@ -12,6 +12,11 @@
       enable = true;
       userName = "Immelancholy";
       userEmail = "lenalowes0@gmail.com";
+      extraConfig = {
+        init = {
+          defaultBranch = "main";
+        };
+      };
     };
     programs.cava = {
       settings = {
