@@ -1,5 +1,5 @@
 {pkgs, ...}: let
-  gs = pkgs.writeShellScriptBin "gs" ''
+  steam-gamescope = pkgs.writeShellScriptBin "steamos-gamescope" ''
     set -xeuo pipefail
 
     gamescopeArgs=(
@@ -49,7 +49,7 @@
       Encoding=UTF-8
       Name=Steam (gamescope)
       Comment=Launch Steam within Gamescope
-      Exec=${gs}/bin/gs
+      Exec=${steam-gamescope}/bin/steamos-gamescope
       Type=Application
       DesktopNames=gamescope
     '')
