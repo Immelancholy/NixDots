@@ -794,16 +794,15 @@
         ]
       },
       "locked": {
-        "lastModified": 1744364261,
-        "narHash": "sha256-0porfdBKlDOtoqi1rEwQPKBUaOaHFUMgq14bOg565EU=",
-        "owner": "Immelancholy",
+        "lastModified": 1744365649,
+        "narHash": "sha256-TRo6kI4Vr1ytOl6f08qjDUxsAj8GtgJtyJmzSgqvsIE=",
+        "owner": "amadejkastelic",
         "repo": "home-manager",
-        "rev": "67f201475c9606f76e46ca30e984a21be4be24be",
+        "rev": "a4a66299de5e0baaed573cc69ceec4a533c6a4c4",
         "type": "github"
       },
       "original": {
-        "owner": "Immelancholy",
-        "ref": "hyprland-hyprctl-path-option",
+        "owner": "amadejkastelic",
         "repo": "home-manager",
         "type": "github"
       }
