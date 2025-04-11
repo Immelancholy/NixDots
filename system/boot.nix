@@ -9,7 +9,7 @@
     enable = true;
     tpm2.enable = true;
   };
-  kernelModules = ["v4l2loopback"];
+  boot.kernelModules = ["v4l2loopback"];
   boot.extraModulePackages = with config.boot.kernelPackages; [
     bbswitch
     v4l2loopback
