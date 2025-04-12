@@ -30,8 +30,8 @@ in {
         nvn = "cd $FLAKE_PATH; nv";
       };
     };
-    home.sessionVariables = {
-      EDITOR = "nvim";
-    };
+    # home.sessionVariables = {
+    #   EDITOR = "nvim";
+    # };
   };
 }
