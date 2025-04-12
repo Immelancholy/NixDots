@@ -65,7 +65,7 @@
       enable = true;
     };
     programs.nixvim = {
-      enable = true;
+      enable = false;
       defaultEditor = true;
       plugins = {
         rustaceanvim = {
