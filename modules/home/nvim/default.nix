@@ -24,5 +24,11 @@ in {
         };
       };
     };
+    programs.zsh = {
+      shellAliases = {
+        nv = "nvim";
+        nvn = "cd $FLAKE_PATH; nv";
+      };
+    };
   };
 }

@@ -56,16 +56,16 @@
       manager = {
         # show_hidden = true;
       };
-      opener = {
-        edit = [
-          {
-            run = ''nvim "$@"'';
-            block = true;
-            desc = ''nvim'';
-            for = ''unix'';
-          }
-        ];
-      };
+      # opener = {
+      #   edit = [
+      #     {
+      #       run = ''nvim "$@"'';
+      #       block = true;
+      #       desc = ''nvim'';
+      #       for = ''unix'';
+      #     }
+      #   ];
+      # };
       plugin.prepend_fetchers = [
         {
           id = "git";
