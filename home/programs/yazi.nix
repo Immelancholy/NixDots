@@ -54,7 +54,7 @@
     '';
     settings = {
       manager = {
-        # show_hidden = true;
+        show_hidden = true;
       };
       # opener = {
       #   edit = [
