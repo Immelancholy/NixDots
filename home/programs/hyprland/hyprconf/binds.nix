@@ -61,6 +61,9 @@
       "$mod, mouse:282, exec, $playerctl next" #next
       "$mod, mouse:281, exec, $playerctl previous" #previous,
       ", mouse:277, exec, $playerctl play-pause" # toggle between media play and pause
+      "$mod, F9, pass, class:^(com.obsproject.Studio)$"
+      "$mod, F10, pass, class:^(com.obsproject.Studio)$"
+      "$mod, F12, pass, class:^(com.obsproject.Studio)$"
     ];
     bindel = [
       ", XF86AudioLowerVolume, exec, uwsm-app -- rmpc volume -1" # decrease volume
