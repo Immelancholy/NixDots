@@ -133,8 +133,8 @@
         # intelBusId = ""; For Intel
         # amdgpuBusId = ""; For AMD
         nvidiaBusId = "";
-
       };
+    };
   };
 
   displayManager = {
