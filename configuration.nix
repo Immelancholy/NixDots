@@ -1,6 +1,7 @@
 {
   pkgs,
   inputs,
+  config,
   ...
 }: {
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
@@ -120,7 +121,20 @@
 
   drivers = {
     amd.enable = false;
-    nvidia.enable = true;
+    intel.enable = false;
+    nvidia = {
+      enable = true;
+      open = true;
+      powerManagement = true;
+      finePowerManagement = false;
+      package = config.boot.kernelPackages.nvidiaPackages.vulkan_beta;
+      prime = {
+        enable = false;
+        # intelBusId = ""; For Intel
+        # amdgpuBusId = ""; For AMD
+        nvidiaBusId = "";
+
+      };
   };
 
   displayManager = {
