@@ -38,7 +38,7 @@
       useHyprspace = true;
       settings = {
         cursor = {
-          no_hardware_cursors = true;
+          no_hardware_cursors = false;
         };
         monitor = "HDMI-A-1, 1920x1080@144, 0x0, 1, bitdepth, 8";
         input = {
