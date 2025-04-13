@@ -130,8 +130,8 @@
       package = config.boot.kernelPackages.nvidiaPackages.vulkan_beta;
       prime = {
         enable = false;
-        # intelBusId = ""; For Intel
-        # amdgpuBusId = ""; For AMD
+        # intelBusId = ""; # For Intel
+        # amdgpuBusId = ""; # For AMD
         nvidiaBusId = "";
       };
     };
