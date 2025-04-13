@@ -1,6 +1,7 @@
 {
   lib,
   config,
+  ...
 }:
 with lib; let
   cfg = config.drivers.nvidia.prime;
