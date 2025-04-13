@@ -124,8 +124,8 @@
   };
 
   displayManager = {
-    sddm.enable = false;
-    tuiGreet.enable = true;
+    sddm.enable = true;
+    tuiGreet.enable = false;
   };
 
   locale = "en_GB.UTF-8";
