@@ -50,6 +50,11 @@
           force_no_accel = "1";
           numlock_by_default = "true";
         };
+        bind = [
+          "$mod, F9, pass, class:^(com.obsproject.Studio)$"
+          "$mod, F10, pass, class:^(com.obsproject.Studio)$"
+          "$mod, F12, pass, class:^(com.obsproject.Studio)$"
+        ];
       };
     };
     home.sessionVariables = {
