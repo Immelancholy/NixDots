@@ -45,7 +45,8 @@
           "dracula"
         ];
       };
-      name = "Tela-circle-dracula";
+      dark = "Tela-circle-dracula";
+      light = "Tela-circle-dracula";
     };
     image = ./backgrounds/Neon-Beast-Girl.png;
     targets = {
