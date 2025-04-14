@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  lib,
+  ...
+}: {
   catppuccin = {
     flavor = "mocha";
     accent = "mauve";
@@ -91,7 +95,7 @@
       click-double-parent-folder = true;
       show-hidden-files = true;
       show-image-thumbnails = "always";
-      thumbnail-limit = "uint64 104857600";
+      thumbnail-limit = lib.mkLiteral "uint64 104857600";
     };
     "org/nemo/preferences/menu-config" = {
       selection-menu-copy-to = true;
