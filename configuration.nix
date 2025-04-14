@@ -64,6 +64,7 @@
       teams-for-linux
       shotcut
       krita
+      pinta
     ];
     services.remmina = {
       enable = true;
