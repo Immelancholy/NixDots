@@ -43,9 +43,9 @@
         "Ctrl, Print, exec, uwsm-app -- ss.sh af"
         "Ctrl+Shift, Print, exec, uwsm-app -- ss.sh w"
         "$mod, O, exec, uwsm-app -- hyprpicker -a"
-        # "$mod, F9, pass, class:^(com.obsproject.Studio)$"
-        # "$mod, F10, pass, class:^(com.obsproject.Studio)$"
-        # "$mod, F12, pass, class:^(com.obsproject.Studio)$"
+        "$mod, F9, pass, class:^(com.obsproject.Studio)$"
+        "$mod, F10, pass, class:^(com.obsproject.Studio)$"
+        "$mod, F12, pass, class:^(com.obsproject.Studio)$"
       ]
       ++ (
         # workspaces
