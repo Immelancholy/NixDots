@@ -40,13 +40,19 @@
     };
     iconTheme = {
       enable = true;
-      package = pkgs.tela-circle-icon-theme.override {
-        colorVariants = [
-          "dracula"
-        ];
+      # package = pkgs.tela-circle-icon-theme.override {
+      #   colorVariants = [
+      #     "dracula"
+      #   ];
+      # };
+      # dark = "Tela-circle-dracula";
+      # light = "Tela-circle-dracula";
+      package = pkgs.catppuccin-papirus-folders.override {
+        flavor = "mocha";
+        accent = "mauve";
       };
-      dark = "Tela-circle-dracula";
-      light = "Tela-circle-dracula";
+      dark = "Papirus-Dark";
+      light = "Papirus-Dark";
     };
     image = ./backgrounds/Neon-Beast-Girl.png;
     targets = {
