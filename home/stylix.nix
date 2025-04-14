@@ -38,6 +38,15 @@
         popups = 10;
       };
     };
+    iconTheme = {
+      enable = true;
+      package = pkgs.tela-circle-icon-theme.override {
+        colorVariants = [
+          "dracula"
+        ];
+      };
+      name = "Tela-circle-dracula";
+    };
     image = ./backgrounds/Neon-Beast-Girl.png;
     targets = {
       dunst.enable = false;
