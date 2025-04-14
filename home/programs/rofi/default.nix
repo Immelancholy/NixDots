@@ -30,6 +30,7 @@
       kb-mode-next = "Shift+Right,Control+Tab,Control+l";
       kb-mode-previous = "Shift+Left,Control+Shift+Tab,Control+h";
       kb-remove-char-back = "BackSpace";
+      kb-mode-complete = "Control+Shift+l";
     };
   };
   imports = [
