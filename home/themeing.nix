@@ -116,7 +116,7 @@
     "com/github/wwmm/easyeffects/streamoutputs" = {
       blocklist = ["Zen"];
       output-device = "alsa_output.usb-Audient_Audient_iD4-00.pro-output-0";
-      use-default-output-device = true;
+      use-default-output-device = false;
     };
   };
 }
