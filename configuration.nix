@@ -69,7 +69,6 @@
       teams-for-linux
       shotcut
       krita
-      pinta
     ];
     services.remmina = {
       enable = true;
@@ -118,7 +117,6 @@
     };
     services.flatpak = {
       packages = [
-        # "com.github.PintaProject.Pinta"
       ];
     };
   };
