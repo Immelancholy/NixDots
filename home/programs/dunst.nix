@@ -12,11 +12,12 @@
         corner_radius = 15;
         origin = "top-right";
         offset = "(54, 18)";
-        width = "(0, 300)";
-        height = "(0, 300)";
+        width = "(0, 400)";
+        height = "(0, 400)";
         alignment = "center";
         icon_corner_radius = 15;
         icon_position = "top";
+        text_icon_padding = 10;
         max_icon_size = 256;
         font = "JetBrainsMono Nerd Font Mono 9";
       };
@@ -31,7 +32,7 @@
       urgency_critical = {
         background = "#1e1e2e99";
         foreground = "#cdd6f4";
-        frame_color = "#fab387c0";
+        frame_color = "#b4befec0";
       };
     };
   };
