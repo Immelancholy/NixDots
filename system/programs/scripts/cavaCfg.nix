@@ -47,6 +47,9 @@ in {
     name = "cavaCfg";
     after = ["pipewire.service"];
     wantedBy = ["default.target"];
-    script = ''${cavaCfg}'';
+    path = [
+      "${cavaCfg}"
+    ];
+    script = ''cavaCfg'';
   };
 }
