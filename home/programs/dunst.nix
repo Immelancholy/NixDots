@@ -13,7 +13,7 @@
         corner_radius = 15;
         origin = "top-right";
         offset = "(54, 18)";
-        width = "(0, 280)";
+        width = "(0, 300)";
         height = "(0, 400)";
         alignment = "center";
         icon_corner_radius = 15;
