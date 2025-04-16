@@ -30,7 +30,7 @@
           type  "fifo"
           name  "my_fifo"
           path  "/run/user/1000/mpd.fifo"
-          format  "48000:32:2"
+          format  "44100:16:2"
         }
       '';
     };
