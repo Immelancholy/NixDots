@@ -10,6 +10,8 @@
         highlight = "#89b4fac0";
         frame_width = 2;
         corner_radius = 15;
+        padding = 2;
+        horizontal_padding = 2;
         origin = "top-right";
         offset = "(54, 18)";
         width = "(0, 400)";
