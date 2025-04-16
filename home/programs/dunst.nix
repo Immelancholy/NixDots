@@ -18,7 +18,7 @@
         alignment = "center";
         icon_corner_radius = 15;
         icon_position = "top";
-        padding = 10;
+        padding = 12;
         horizontal_padding = 10;
         max_icon_size = 256;
         font = "JetBrainsMono Nerd Font Mono 9";
