@@ -12,8 +12,9 @@
         corner_radius = 15;
         origin = "top-right";
         offset = "(54, 18)";
-        # width = "(0, 400)";
         alignment = "center";
+        padding = 8;
+        horizontal_padding = 8;
         icon_corner_radius = 15;
         icon_position = "top";
         max_icon_size = 256;
