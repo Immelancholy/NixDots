@@ -10,7 +10,7 @@
         highlight = "#89b4fac0";
         gaps_size = 4;
         frame_width = 2;
-        corner_radius = 15;
+        corner_radius = 20;
         origin = "top-right";
         offset = "(54, 18)";
         width = "(0, 280)";
