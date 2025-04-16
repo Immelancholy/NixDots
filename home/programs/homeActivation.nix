@@ -45,7 +45,7 @@
       '';
     in
       lib.hm.dag.entryAfter ["writeBoundary"] ''
-        run ${cavaCfg}
+        run ${cavaCfg}/bin/cavaCfg
       '';
   };
 }
