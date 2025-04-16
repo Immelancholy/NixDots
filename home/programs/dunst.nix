@@ -5,7 +5,7 @@
       global = {
         follow = "keyboard";
         enable_posix_regex = true;
-        frame_color = "#cba6f7c0";
+        frame_color = "#b4befec0";
         separator_color = "frame";
         highlight = "#89b4fac0";
         frame_width = 2;
@@ -32,7 +32,7 @@
       urgency_critical = {
         background = "#1e1e2e99";
         foreground = "#cdd6f4";
-        frame_color = "#b4befec0";
+        frame_color = "#f38ba8c0";
       };
     };
   };
