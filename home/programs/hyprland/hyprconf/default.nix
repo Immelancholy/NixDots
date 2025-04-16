@@ -22,9 +22,6 @@
       cursor = {
         hide_on_key_press = true;
       };
-      decoration = {
-        fullscreen_opacity = 0.9;
-      };
     };
   };
   imports = [
