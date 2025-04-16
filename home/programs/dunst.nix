@@ -14,7 +14,7 @@
         origin = "top-right";
         offset = "(54, 18)";
         width = "(0, 280)";
-        height = "(0, 310)";
+        height = "(0, 320)";
         alignment = "center";
         icon_corner_radius = 15;
         icon_position = "top";
