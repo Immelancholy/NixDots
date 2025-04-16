@@ -31,7 +31,7 @@
           name  "my_fifo"
           path  "/run/user/1000/mpd.fifo"
           format  "48000:32:2"
-        };
+        }
       '';
     };
     mpdris2 = {
