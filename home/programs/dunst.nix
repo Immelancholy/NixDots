@@ -13,10 +13,11 @@
         origin = "top-right";
         offset = "(54, 18)";
         width = "(0, 400)";
+        alignment = "center";
         icon_corner_radius = 15;
         icon_position = "top";
         max_icon_size = 256;
-        font = "JetBrainsMono Nerd Font Mono 9";
+        font = "JetBrainsMono Nerd Font Mono 11";
       };
       urgency_low = {
         background = "#1e1e2e99";
