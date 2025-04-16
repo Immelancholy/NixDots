@@ -69,7 +69,7 @@
       teams-for-linux
       shotcut
       krita
-      qbittorrent-nox
+      qbittorrent
     ];
     services.remmina = {
       enable = true;
