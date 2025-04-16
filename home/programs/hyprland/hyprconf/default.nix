@@ -18,10 +18,12 @@
         disable_hyprland_logo = true;
         disable_splash_rendering = true;
         key_press_enables_dpms = true;
-        vfr = true;
       };
       cursor = {
         hide_on_key_press = true;
+      };
+      decoration = {
+        fullscreen_opacity = 0.9;
       };
     };
   };
