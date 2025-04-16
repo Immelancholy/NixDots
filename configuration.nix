@@ -23,7 +23,7 @@
       settings = {
         input = {
           method = "pipewire";
-          source = "58";
+          source = "virtual_cable_in";
           sample_rate = 48000;
           sample_bits = 32;
         };
