@@ -19,19 +19,14 @@
         };
       };
     };
-    programs.cava = {
-      settings = {
-        # input = {
-        #   method = "pipewire";
-        #   source = "60";
-        #   sample_rate = 48000;
-        #   sample_bits = 32;
-        # };
-        input = {
-          method = "fifo";
-          source = "/run/user/1000/mpd_cava.fifo";
-        };
-      };
+    services.mpd = {
+      extraConfig = ''
+        audio_output {
+          type  "pipewire"
+          name  "Pipewire Sound Server"
+          target  "easyeffects_sink"
+        }
+      '';
     };
     wayland.windowManager.hyprland = {
       # ONLY ENABLE 1 LAYOUT!!

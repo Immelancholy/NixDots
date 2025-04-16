@@ -16,17 +16,6 @@
         follow_outside_symlinks	"yes"
         follow_inside_symlinks		"yes"
         audio_output {
-          type  "pipewire"
-          name  "Pipewire Sound Server"
-          # target  "alsa_output.usb-Audient_Audient_iD4-00.pro-output-0"
-          target  "easyeffects_sink"
-        }
-        # audio_output {
-        #   type  "pipewire"
-        #   name  "Pipewire CAVA"
-        #   target  "virtual_cable_in"
-        # }
-        audio_output {
           type  "fifo"
           name  "mpd_cava"
           path  "/run/user/1000/mpd_cava.fifo"
