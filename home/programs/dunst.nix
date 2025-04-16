@@ -17,7 +17,7 @@
         icon_corner_radius = 15;
         icon_position = "top";
         max_icon_size = 256;
-        font = "JetBrainsMono Nerd Font Mono 11";
+        font = "JetBrainsMono Nerd Font Mono 10";
       };
       urgency_low = {
         background = "#1e1e2e99";
