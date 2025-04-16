@@ -7,16 +7,16 @@
         enable_posix_regex = true;
         frame_color = "#cba6f7c0";
         separator_color = "frame";
-        gap_size = 3;
         highlight = "#89b4fac0";
         frame_width = 2;
         corner_radius = 15;
         origin = "top-right";
         offset = "(54, 18)";
+        width = "(0, 300)";
         alignment = "center";
         icon_corner_radius = 15;
         icon_position = "top";
-        max_icon_size = 128;
+        max_icon_size = 256;
         font = "JetBrainsMono Nerd Font Mono 9";
       };
       urgency_low = {
