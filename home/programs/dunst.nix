@@ -18,8 +18,7 @@
         alignment = "center";
         icon_corner_radius = 15;
         icon_position = "top";
-        text_icon_padding = 20;
-        padding = 20;
+        padding = 15;
         max_icon_size = 256;
         font = "JetBrainsMono Nerd Font Mono 9";
       };
