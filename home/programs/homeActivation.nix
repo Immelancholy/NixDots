@@ -1,8 +1,12 @@
-{lib, ...}: {
+{
+  lib,
+  pkgs,
+  ...
+}: {
   home.activation = {
     cavaConfig = lib.hm.dag.entryAfter ["writeBoundary"] ''
       cavaConfigFile=$HOME/.config/cava/vcConfig
-      id=$(wpctl status | grep "virtual_cable_in" | awk '{print $2}' | grep -m1 "" | cut -f1 -d ".")
+      id=$(${pkgs.wireplumber}/bin/wpctl status | grep "virtual_cable_in" | ${pkgs.gawk}/bin/awk '{print $2}' | grep -m1 "" | cut -f1 -d ".")
       cat >"$cavaConfigFile" <<EOF
       [color]
       gradient=1
