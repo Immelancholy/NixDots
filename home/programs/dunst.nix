@@ -5,14 +5,14 @@
       global = {
         follow = "keyboard";
         enable_posix_regex = true;
-        frame_color = "#b4befec0";
+        frame_color = "#cba6f7c0";
         separator_color = "frame";
         highlight = "#89b4fac0";
         frame_width = 2;
         corner_radius = 15;
         origin = "top-right";
         offset = "(54, 18)";
-        width = "(0, 300)";
+        width = "(0, 280)";
         height = "(0, 350)";
         alignment = "center";
         icon_corner_radius = 15;
