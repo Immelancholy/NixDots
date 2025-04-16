@@ -21,11 +21,17 @@
           # target  "alsa_output.usb-Audient_Audient_iD4-00.pro-output-0"
           target  "easyeffects_sink"
         }
+        # audio_output {
+        #   type  "pipewire"
+        #   name  "Pipewire CAVA"
+        #   target  "virtual_cable_in"
+        # }
         audio_output {
-          type  "pipewire"
-          name  "Pipewire CAVA"
-          target  "virtual_cable_in"
-        }
+          type  "fifo"
+          name  "my_fifo"
+          path  "/run/user/1000/mpd.fifo"
+          format  "48000:32:2"
+        };
       '';
     };
     mpdris2 = {

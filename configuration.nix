@@ -21,11 +21,15 @@
     };
     programs.cava = {
       settings = {
+        # input = {
+        #   method = "pipewire";
+        #   source = "60";
+        #   sample_rate = 48000;
+        #   sample_bits = 32;
+        # };
         input = {
-          method = "pipewire";
-          source = "60";
-          sample_rate = 48000;
-          sample_bits = 32;
+          method = "fifo";
+          source = "/run/user/1000/mpd.fifo";
         };
       };
     };
