@@ -16,7 +16,7 @@
         alignment = "center";
         icon_corner_radius = 15;
         icon_position = "top";
-        max_icon_size = 256;
+        max_icon_size = 128;
         font = "JetBrainsMono Nerd Font Mono 9";
       };
       urgency_low = {
