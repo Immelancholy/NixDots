@@ -21,5 +21,6 @@
     ./ss.nix
     ./muteChromium.nix
     ./restartQpwGraph.nix
+    ./cavaCfg.nix
   ];
 }
