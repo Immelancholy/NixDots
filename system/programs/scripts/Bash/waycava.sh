@@ -160,7 +160,7 @@ bars = ${bar_width}
 sleep_timer = 1
 [input]
 method = fifo
-source = /run/user/1000/mpd.fifo 
+source = /run/user/1000/mpd_waycava.fifo 
 [output]
 method = raw
 raw_target = /dev/stdout

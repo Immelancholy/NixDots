@@ -28,8 +28,14 @@
         # }
         audio_output {
           type  "fifo"
-          name  "my_fifo"
-          path  "/run/user/1000/mpd.fifo"
+          name  "mpd_cava"
+          path  "/run/user/1000/mpd_cava.fifo"
+          format  "44100:16:2"
+        }
+        audio_output {
+          type  "fifo"
+          name  "mpd_waycava"
+          path  "/run/user/1000/mpd_waycava.fifo"
           format  "44100:16:2"
         }
       '';

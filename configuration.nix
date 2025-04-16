@@ -29,7 +29,7 @@
         # };
         input = {
           method = "fifo";
-          source = "/run/user/1000/mpd.fifo";
+          source = "/run/user/1000/mpd_cava.fifo";
         };
       };
     };
