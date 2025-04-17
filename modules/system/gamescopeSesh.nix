@@ -68,7 +68,7 @@
   '';
 in {
   config = lib.mkIf cfg.enable {
-    environment.systemPackages = lib.mkIf cfg.gamescopeSession.enable [
+    environment.systemPackages = lib.mkIf cfg.enable [
       steam-gamescope
       steamscope
       steamos-session-select
