@@ -132,6 +132,11 @@
     FLAKE_PATH = "/home/mela/NixDots"; # path to flake.nix
   };
 
+  programs.steam = {
+    enable = true;
+    gamescopeSession.enable = true;
+  };
+
   drivers = {
     amd.enable = false;
     intel.enable = false;
