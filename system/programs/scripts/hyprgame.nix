@@ -37,6 +37,7 @@
               hyprctl dispatch signalwindow class:rmpc,9
               hyprctl reload config-only -q
               uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto" '*' $HOME/Pictures/wallpapers/Neon-Beast-Girl.mp4
+              systemctl stop --user hyprpaper
               systemctl start --user mpdchck
               hyprctl dispatch exec '[workspace 1 silent; float; size 858 559; move 640 40] uwsm app -- kitty --class "rmpc" uwsm app -- rmpc.sh'
               hyprctl dispatch exec '[workspace 1 silent; float; size 858 462; move 640 609] uwsm app -- kitty --class "cava" uwsm app -- cava.sh'
