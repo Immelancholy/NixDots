@@ -10,13 +10,13 @@ in {
   options.services.mpdchck = {
     enable = mkEnableOption "Enable mpdchck service";
     address = mkOption {
-      type = types.string;
+      type = types.str;
       default = "127.0.0.1";
       description = "Host address for mpd";
     };
     port = mkOption {
       type = types.port;
-      default = "6600";
+      default = 6600;
       description = "Port for mpd";
     };
   };
