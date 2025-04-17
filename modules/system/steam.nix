@@ -8,7 +8,6 @@
 in {
   config = lib.mkIf cfg.enable {
     programs.steam = {
-      enable = true;
       package = pkgs.steam.override {
         extraEnv = {
           OBS_VKCAPTURE = true;
