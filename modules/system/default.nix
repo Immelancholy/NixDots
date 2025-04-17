@@ -8,5 +8,6 @@
     ./intel.nix
     ./steam.nix
     ./gamescopeSesh.nix
+    ./mpdchck.nix
   ];
 }
