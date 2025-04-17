@@ -63,6 +63,12 @@
     home.packages = with pkgs; [
       (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {extensions = ["rust-src" "rust-analyzer"];}))
       reaper
+      inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
+      zulu8
+      zulu17
+      zulu
+      temurin-bin
+      graalvm-ce
       bespokesynth
       reaper-sws-extension
       teams-for-linux
