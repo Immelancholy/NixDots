@@ -109,7 +109,7 @@ in {
       };
       environment = {
         MPD_HOST = cfg.address;
-        MPD_PORT = cfg.port;
+        MPD_PORT = "${cfg.port}";
       };
     };
   };
