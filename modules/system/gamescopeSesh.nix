@@ -74,7 +74,6 @@ in {
       steamos-session-select
     ];
     programs.steam = {
-      gamescopeSession.enable = true;
       extraPackages = lib.mkIf cfg.gamescopeSession.enable [
         steamos-session-select
         steamos-select-branch
