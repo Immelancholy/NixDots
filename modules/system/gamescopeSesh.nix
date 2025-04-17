@@ -2,6 +2,7 @@
   pkgs,
   config,
   lib,
+  ...
 }: let
   cfg = config.programs.steam.gamescopeSession;
   steam-gamescope = pkgs.writeShellScriptBin "steam-gamescope" ''
