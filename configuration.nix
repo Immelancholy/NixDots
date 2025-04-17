@@ -71,6 +71,9 @@
       shotcut
       krita
       qbittorrent
+      rustlings
+      obsidian
+      obsidian-export
     ];
     services.remmina = {
       enable = true;
