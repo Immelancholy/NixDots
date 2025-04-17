@@ -41,7 +41,7 @@ in {
           imports = [
             ./home
             inputs.stylix.homeManagerModules.stylix
-            ../home
+            ../../home
             inputs.catppuccin.homeModules.catppuccin
             inputs.nixvim.homeManagerModules.nixvim
             inputs.spicetify-nix.homeManagerModules.default
