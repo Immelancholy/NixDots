@@ -28,6 +28,7 @@
               hyprctl dispatch signalwindow class:btop,9
               hyprctl dispatch signalwindow class:rmpc,9
               hyprctl dispatch signalwindow class:fastfetch,9
+              systemctl start --user hyprpaper
               pkill mpvpaper
               systemctl stop --user mpdchck
               hyprctl dispatch exec '[workspace 1 silent; float; size 1118 710; move 401 145] uwsm app -- kitty --class "rmpc" uwsm app -- rmpc.sh'
