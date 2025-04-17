@@ -11,7 +11,6 @@
     ./bluetooth.nix
     ./DM
     ./uwsm.nix
-    ./steam.nix
     ./scripts
   ];
 
