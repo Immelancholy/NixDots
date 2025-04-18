@@ -46,6 +46,7 @@
         hy3.enable = true;
       };
       useHyprspace = true;
+      useLiveWallpaper = true;
       settings = {
         cursor = {
           no_hardware_cursors = false;
