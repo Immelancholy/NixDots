@@ -35,6 +35,8 @@
               size = "8G";
               content = {
                 type = "swap";
+                discardPolicy = "both";
+                resumeDevice = true;
               };
             };
             root = {
