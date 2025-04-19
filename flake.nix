@@ -152,7 +152,7 @@
         specialArgs = {inherit inputs;};
         modules = [
           inputs.disko.nixosModules.default
-          ./disko-config.nix
+          ./systems/laptop/disko-config.nix
           {disko.devices.disk.main.device = "/dev/sda";}
           ./systems/laptop/hardware-configuration.nix
           nur.modules.nixos.default
