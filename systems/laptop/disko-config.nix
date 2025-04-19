@@ -12,14 +12,22 @@
         content = {
           type = "gpt";
           partitions = {
-            esp = {
-              size = "512M";
+            ESP = {
               type = "EF00";
+              size = "512M";
               content = {
                 type = "filesystem";
                 format = "vfat";
                 mountpoint = "/boot";
                 mountOptions = ["umask=0077"];
+              };
+            };
+            encryptedSwap = {
+              size = "10M";
+              content = {
+                type = "swap";
+                randomEncryption = true;
+                priority = 100;
               };
             };
             plainSwap = {
