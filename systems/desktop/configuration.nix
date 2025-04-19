@@ -4,6 +4,7 @@
   config,
   ...
 }: {
+  disko.devices.disk.main.device = "/dev/nvme0n1";
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
   userAccounts.users = [];
   userAccounts.sudoUsers = ["mela"];
@@ -190,5 +191,5 @@
     keyMap = "uk";
   };
   time.timeZone = "Europe/London";
-  boot.secureBoot.enable = true;
+  boot.secureBoot.enable = false;
 }
