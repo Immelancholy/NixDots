@@ -128,6 +128,9 @@
         inherit system;
         specialArgs = {inherit inputs;};
         modules = [
+          inputs.disko.nixosModules.default
+          ./systems/desktop/disko-config.nix
+          {disko.devices.disk.main.device = "/dev/nvme0n1";}
           stylix.nixosModules.stylix
           ./systems/desktop/hardware-configuration.nix
           nur.modules.nixos.default
