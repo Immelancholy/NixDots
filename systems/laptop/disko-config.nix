@@ -15,8 +15,8 @@
             ESP = {
               priority = 1;
               name = "ESP";
-              start = "1MiB";
-              end = "512MiB";
+              start = "1M";
+              end = "512M";
               type = "EF00";
               content = {
                 type = "filesystem";
@@ -27,7 +27,7 @@
               };
             };
             encryptedSwap = {
-              size = "10MiB";
+              size = "10M";
               content = {
                 type = "swap";
                 randomEncryption = true;
@@ -35,7 +35,7 @@
               };
             };
             plainSwap = {
-              size = "8GiB";
+              size = "8G";
               content = {
                 type = "swap";
                 discardPolicy = "both";
