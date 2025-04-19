@@ -15,18 +15,19 @@
             ESP = {
               priority = 1;
               name = "ESP";
-              start = "1M";
-              end = "512M";
+              start = "1MiB";
+              end = "512MiB";
               type = "EF00";
               content = {
                 type = "filesystem";
-                format = "fat32";
+                format = "vfat";
+                extraArgs = ["-F 32"];
                 mountpoint = "/boot";
                 mountOptions = ["umask=0077"];
               };
             };
             encryptedSwap = {
-              size = "10M";
+              size = "10MiB";
               content = {
                 type = "swap";
                 randomEncryption = true;
@@ -34,7 +35,7 @@
               };
             };
             plainSwap = {
-              size = "8G";
+              size = "8GiB";
               content = {
                 type = "swap";
                 discardPolicy = "both";
