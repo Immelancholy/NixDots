@@ -19,6 +19,7 @@
   };
 
   home-manager.users.mela = {
+    programs.obs-studio.enable = true;
     programs.git = {
       enable = true;
       userName = "Immelancholy";

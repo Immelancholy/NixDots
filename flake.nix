@@ -133,7 +133,7 @@
           nix-flatpak.nixosModules.nix-flatpak
           solaar.nixosModules.default
           catppuccin.nixosModules.catppuccin
-          ./systems/laptop/configuration.nix
+          ./systems/desktop/configuration.nix
           ./nixos
           ./modules/system
 
@@ -147,7 +147,6 @@
           }
         ];
       };
-
       nix-relic-laptop = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = {inherit inputs;};
