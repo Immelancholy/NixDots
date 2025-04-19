@@ -36,7 +36,7 @@
         desktop = 9;
         popups = 10;
       };
-      image = ../../home/backgrounds/anime-girl-wings.jpg;
     };
+    image = ../../home/backgrounds/anime-girl-wings.jpg;
   };
 }
