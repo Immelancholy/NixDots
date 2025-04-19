@@ -24,19 +24,11 @@
               };
             };
             encryptedSwap = {
-              size = "10M";
+              size = "8G";
               content = {
                 type = "swap";
                 randomEncryption = true;
                 priority = 100;
-              };
-            };
-            plainSwap = {
-              size = "8G";
-              content = {
-                type = "swap";
-                discardPolicy = "both";
-                resumeDevice = true;
               };
             };
             root = {
