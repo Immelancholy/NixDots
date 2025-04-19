@@ -37,6 +37,6 @@
         popups = 10;
       };
     };
-    image = ../../home/backgrounds/anime-girl-wings.jpg;
+    image = ../../home/backgrounds/Neon-Beast-Girl.png;
   };
 }
