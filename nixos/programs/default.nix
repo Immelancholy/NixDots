@@ -11,6 +11,7 @@
     ./DM
     ./uwsm.nix
     ./scripts
+    ./stylix.nix
   ];
 
   xdg.terminal-exec = {

@@ -40,7 +40,7 @@ in {
           services.mpdris2.mpd.musicDirectory = "/home/${user}/Music";
           imports = [
             ../../../home
-            inputs.stylix.homeManagerModules.stylix
+            # inputs.stylix.homeManagerModules.stylix
             ../../home
             inputs.catppuccin.homeModules.catppuccin
             inputs.nixvim.homeManagerModules.nixvim

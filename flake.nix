@@ -111,6 +111,7 @@
     nix-flatpak,
     lanzaboote,
     nur,
+    stylix,
     disko,
     ...
   } @ inputs: let
@@ -127,6 +128,7 @@
         inherit system;
         specialArgs = {inherit inputs;};
         modules = [
+          stylix.nixosModules.stylix
           ./systems/desktop/hardware-configuration.nix
           nur.modules.nixos.default
           lanzaboote.nixosModules.lanzaboote
