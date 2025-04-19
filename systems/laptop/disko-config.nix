@@ -24,8 +24,7 @@
               };
             };
             encryptedSwap = {
-              start = "512M";
-              end = "522M";
+              size = "10M";
               content = {
                 type = "swap";
                 randomEncryption = true;
@@ -33,8 +32,7 @@
               };
             };
             plainSwap = {
-              start = "522M";
-              end = "8714M";
+              size = "8G";
               content = {
                 type = "swap";
                 discardPolicy = "both";
