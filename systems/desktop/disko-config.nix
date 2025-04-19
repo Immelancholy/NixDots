@@ -12,7 +12,7 @@
         content = {
           type = "gpt";
           partitions = {
-            esp = {
+            boot = {
               priority = 1;
               size = "512M";
               type = "EF00";
