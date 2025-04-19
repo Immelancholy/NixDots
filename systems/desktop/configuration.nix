@@ -132,10 +132,6 @@
         };
       };
     };
-    services.flatpak = {
-      packages = [
-      ];
-    };
   };
 
   services.qpwgraph.enable = true;

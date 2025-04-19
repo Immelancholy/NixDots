@@ -6,7 +6,6 @@
   imports = [
     ./hyprland.nix
     ./pipewire.nix
-    ./flatpak.nix
     ./weylus.nix
     ./bluetooth.nix
     ./DM
