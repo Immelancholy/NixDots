@@ -8,6 +8,10 @@
       url = "github:kamadorueda/alejandra/3.1.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    disko = {
+      url = "github:nix-community/disko";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     catppuccin.url = "github:catppuccin/nix";
     catppuccinZen = {
       url = "github:catppuccin/zen-browser";
@@ -107,6 +111,7 @@
     nix-flatpak,
     lanzaboote,
     nur,
+    disko,
     ...
   } @ inputs: let
     systems = [
@@ -118,18 +123,46 @@
   in {
     formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
     nixosConfigurations = {
-      nix-relic = nixpkgs.lib.nixosSystem {
+      nix-relic-desktop = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = {inherit inputs;};
         modules = [
-          ./hardware-configuration.nix
+          ./systems/desktop/hardware-configuration.nix
           nur.modules.nixos.default
           lanzaboote.nixosModules.lanzaboote
           nix-flatpak.nixosModules.nix-flatpak
           solaar.nixosModules.default
           catppuccin.nixosModules.catppuccin
-          ./configuration.nix
-          ./system
+          ./systems/laptop/configuration.nix
+          ./nixos
+          ./modules/system
+
+          home-manager.nixosModules.home-manager
+          {
+            home-manager = {
+              useGlobalPkgs = true;
+              useUserPackages = true;
+              extraSpecialArgs = {inherit inputs;};
+            };
+          }
+        ];
+      };
+
+      nix-relic-laptop = nixpkgs.lib.nixosSystem {
+        inherit system;
+        specialArgs = {inherit inputs;};
+        modules = [
+          inputs.disko.nixosModules.default
+          ./disko-config.nix
+          {disko.devices.disk.main.device = "/dev/sda";}
+          ./systems/laptop/hardware-configuration.nix
+          nur.modules.nixos.default
+          lanzaboote.nixosModules.lanzaboote
+          nix-flatpak.nixosModules.nix-flatpak
+          solaar.nixosModules.default
+          catppuccin.nixosModules.catppuccin
+          ./systems/laptop/configuration.nix
+          ./nixos
           ./modules/system
 
           home-manager.nixosModules.home-manager
