@@ -157,7 +157,6 @@
         modules = [
           inputs.disko.nixosModules.default
           ./systems/laptop/disko-config.nix
-          {disko.devices.disk.main.device = "/dev/sdb";}
           stylix.nixosModules.stylix
           ./systems/laptop/hardware-configuration.nix
           nur.modules.nixos.default

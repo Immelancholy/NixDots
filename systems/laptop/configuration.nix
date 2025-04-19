@@ -8,6 +8,7 @@
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
+  disko.devices.disk.main.device = "/dev/sdb";
   userAccounts.users = [
   ]; # user accounts here
   userAccounts.sudoUsers = [
