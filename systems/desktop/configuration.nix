@@ -141,6 +141,7 @@
 
   environment.sessionVariables = {
     FLAKE_PATH = "/home/mela/NixDots"; # path to flake.nix
+    SYSTEM = ".#nix-relic-desktop";
   };
 
   programs.steam = {
