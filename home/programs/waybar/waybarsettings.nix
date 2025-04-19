@@ -35,6 +35,7 @@
         "pulseaudio"
         "pulseaudio#mic"
         "network"
+        "battery"
         "custom/r_end"
         "custom/l_end"
         "tray"
