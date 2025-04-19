@@ -13,13 +13,8 @@
           type = "gpt";
           partitions = {
             boot = {
-              name = "boot";
-              size = "1M";
-              type = "EF02";
-            };
-            ESP = {
-              name = "ESP";
-              size = "512M";
+              start = "1M";
+              end = "512M";
               type = "EF00";
               content = {
                 type = "filesystem";
@@ -29,7 +24,8 @@
               };
             };
             encryptedSwap = {
-              size = "10M";
+              start = "512M";
+              end = "522M";
               content = {
                 type = "swap";
                 randomEncryption = true;
@@ -37,7 +33,8 @@
               };
             };
             plainSwap = {
-              size = "8G";
+              start = "522M";
+              end = "8714M";
               content = {
                 type = "swap";
                 discardPolicy = "both";
