@@ -32,6 +32,9 @@
 
   home-manager.users.mela = {
     programs.obs-studio.enable = false;
+    services.remmina = {
+      enable = true;
+    };
     programs.git = {
       enable = true;
       userName = "Immelancholy";
