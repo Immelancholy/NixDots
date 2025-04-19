@@ -127,7 +127,8 @@
   hardware.logitech.wireless.enable = true;
 
   environment.sessionVariables = {
-    FLAKE_PATH = "/home/mela/Nix-Relic"; # path to flake.nix
+    FLAKE_PATH = "/home/mela/NixDots"; # path to flake.nix
+    SYSTEM = ".#nix-relic-laptop";
   };
 
   programs.steam = {
