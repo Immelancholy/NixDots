@@ -88,18 +88,7 @@
       PROJECTS_PATH = "/home/mela/Documents/Projects"; # path to Projects folder ( for neovim )
     };
     home.packages = with pkgs; [
-      # reaper
-      # inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
-      # temurin-bin
-      # bespokesynth
-      # reaper-sws-extension
-      # teams-for-linux
-      # shotcut
-      # krita
-      # qbittorrent
-      # rustlings
-      # obsidian
-      # obsidian-export
+      teams-for-linux
     ];
     programs.nixvim = {
       enable = true;
