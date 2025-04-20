@@ -44,6 +44,9 @@
       gcr_4
     ];
   };
+  systemd.user.services.hyprsunset = {
+    enable = true;
+  };
   environment.systemPackages = with pkgs; [
     hyprsunset
     mpc
