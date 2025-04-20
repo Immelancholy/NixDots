@@ -8,7 +8,7 @@
 
         BRIGHTNESS_PERCENT=$(${pkgs.bc}/bin/bc <<< "scale=1; "$CURRENT_BRIGHTNESS" / "$MAX_BRIGHTNESS" * 100")
 
-        dunstctl close
+        dunstctl close-all
         dunstify -t 3000 -a "  Brightness" -h int:value:"$BRIGHTNESS_PERCENT" "$BRIGHTNESS_PERCENT""%"
       }
 
