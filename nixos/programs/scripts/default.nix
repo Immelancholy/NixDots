@@ -19,5 +19,6 @@
     ./ss.nix
     ./muteChromium.nix
     ./cavaCfg.nix
+    ./brightness.nix
   ];
 }
