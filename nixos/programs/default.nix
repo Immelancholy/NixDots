@@ -46,6 +46,24 @@
   };
   systemd.user.services.hyprsunset = {
     enable = true;
+    unitConfig = {
+      Description = "An application to enable a blue-light filter on Hyprland.";
+      Documentation = "https://wiki.hyprland.org/Hypr-Ecosystem/hyprsunset/";
+      PartOf = "graphical-session.target";
+      Requires = "graphical-session.target";
+      After = "graphical-session.target";
+      ConditionEnvironment = "WAYLAND_DISPLAY";
+    };
+    serviceConfig = {
+      Type = "simple";
+      ExecStart = "hyprsunset";
+      Slice = "session.slice";
+      Restart = "on-failure";
+    };
+    wantedBy = "graphical-session.target";
+    path = [
+      "/run/current-system/sw"
+    ];
   };
   environment.systemPackages = with pkgs; [
     hyprsunset
