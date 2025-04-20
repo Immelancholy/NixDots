@@ -56,7 +56,7 @@
         dwindle.enable = false;
         hy3.enable = true;
       };
-      useHyprspace = true;
+      useHyprspace = false;
       useLiveWallpaper = true;
       settings = {
         cursor = {
