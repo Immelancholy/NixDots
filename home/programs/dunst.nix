@@ -23,7 +23,8 @@
         max_icon_size = 256;
         font = "JetBrainsMono Nerd Font Mono 9";
         mouse_left_click = "do_action, close_current";
-        mouse_middle_click = "close_current";
+        mouse_middle_click = "context, close_current";
+        dmenu = "dunst | rofi -dmenu";
       };
       urgency_low = {
         background = "#1e1e2e99";
