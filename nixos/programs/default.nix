@@ -60,7 +60,7 @@
       Slice = "session.slice";
       Restart = "on-failure";
     };
-    wantedBy = "graphical-session.target";
+    wantedBy = ["graphical-session.target"];
     path = [
       "/run/current-system/sw"
     ];
