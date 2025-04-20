@@ -47,7 +47,7 @@ in {
       };
     })
 
-    (mkIf (!cfg.userHyprspace) {
+    (mkIf (!cfg.useHyprspace) {
       wayland.windowManager.hyprland.settings.bind = [
         "$Alt, Tab, exec, rofi -show window -modi window"
       ];
