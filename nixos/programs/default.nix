@@ -56,17 +56,14 @@
     };
     serviceConfig = {
       Type = "simple";
-      ExecStart = "/run/current-system/sw/bin/hyprsunset";
+      ExecStart = "${pkgs.hyprsunset}/bin/hyprsunset";
       Slice = "session.slice";
       Restart = "on-failure";
     };
     wantedBy = ["graphical-session.target"];
-    path = [
-      "/run/current-system/sw"
-    ];
   };
   environment.systemPackages = with pkgs; [
-    hyprsunset
+    brightnessctl
     mpc
     ffmpegthumbnailer
     libcamera
