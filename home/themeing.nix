@@ -101,22 +101,8 @@
       start-with-sidebar = true;
       start-with-toolbar = true;
     };
-    "com/github/wwmm/easyeffects" = {
-      last-loaded-input-preset = "Rode NT1";
-      last-loaded-output-preset = "ATH-R70x";
-      process-all-outputs = false;
-    };
     "com/github/wwmm/easyeffects/spectrum" = {
       rounded-corners = true;
-    };
-    "com/github/wwmm/easyeffects/streaminput" = {
-      input-device = "dummy_plug_out";
-      use-default-input-device = false;
-    };
-    "com/github/wwmm/easyeffects/streamoutputs" = {
-      blocklist = ["Zen"];
-      output-device = "alsa_output.usb-Audient_Audient_iD4-00.pro-output-0";
-      use-default-output-device = false;
     };
   };
 }
