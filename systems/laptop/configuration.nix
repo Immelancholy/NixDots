@@ -143,7 +143,7 @@
   };
 
   services.mpdchck = {
-    enable = true;
+    enable = false;
     address = "/run/user/1000/mpd/socket";
     port = 6600;
   };
