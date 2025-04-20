@@ -6,8 +6,8 @@
         MAX_BRIGHTNESS=$(brightnessctl max)
         CURRENT_BRIGHTNESS=$(brightnessctl get)
 
-        BRIGHTNESS_PERCENT=$(${pkgs.bc}/bin/bc <<< "scale=1; $CURRENT_BRIGHTNESS / $MAX_BRIGHTNESS * 100")
-        dunstify -t 3000 -a "  Brightness" -h int:value:"$BRIGHTNESS_PERCENT" "%"
+        BRIGHTNESS_PERCENT=$(${pkgs.bc}/bin/bc <<< "scale=1; "$CURRENT_BRIGHTNESS" / "$MAX_BRIGHTNESS" * 100")
+        dunstify -t 3000 -a "  Brightness" -h int:value:"$BRIGHTNESS_PERCENT" "$BRIGHTNESS_PERCENT""%"
       }
 
       # Check command line arguments
