@@ -65,6 +65,8 @@
       ", XF86AudioRaiseVolume, exec, uwsm-app -- rmpc volume +1" # increase volume
       ", mouse:281, exec, uwsm-app -- rmpc volume +1" # volume up
       ", mouse:282, exec, uwsm-app -- rmpc volume -1" # volume down
+      ", XF86MonBrightnessUp,"
+      ", XF86MonBrightnessDown,"
     ];
     bindnt = [
       ", mouse:275, exec, pushToMuteChromium"

@@ -45,6 +45,7 @@
     ];
   };
   environment.systemPackages = with pkgs; [
+    hyprsunset
     mpc
     ffmpegthumbnailer
     libcamera
