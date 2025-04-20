@@ -56,7 +56,7 @@
     };
     serviceConfig = {
       Type = "simple";
-      ExecStart = "hyprsunset";
+      ExecStart = "/run/current-system/sw/bin/hyprsunset";
       Slice = "session.slice";
       Restart = "on-failure";
     };
