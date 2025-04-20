@@ -148,7 +148,7 @@
         last-loaded-output-preset = "ATH-R70x";
         process-all-outputs = false;
       };
-      "com/github/wwmm/easyeffects/streaminput" = {
+      "com/github/wwmm/easyeffects/streaminputs" = {
         input-device = "dummy_plug_out";
         use-default-input-device = false;
       };
