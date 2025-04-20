@@ -68,7 +68,7 @@
         cursor = {
           no_hardware_cursors = false;
         };
-        monitor = ", preferred, auto, 1";
+        monitor = "eDP-1, 1920x1080@60, 0x0, 1";
         input = {
           kb_layout = "gb";
           follow_mouse = "1";
@@ -135,6 +135,7 @@
   environment.sessionVariables = {
     FLAKE_PATH = "/home/mela/NixDots"; # path to flake.nix
     SYSTEM = ".#nix-relic-laptop";
+    FRAMERATE = "60";
   };
 
   programs.steam = {

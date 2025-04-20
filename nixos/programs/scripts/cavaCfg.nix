@@ -24,7 +24,7 @@
     bar_spacing=0
     bar_width=1
     bars=0
-    framerate=144
+    framerate=''${FRAMERATE}
     sensitivity=100
 
     [input]
