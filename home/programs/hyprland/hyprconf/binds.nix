@@ -23,7 +23,6 @@
         "Ctrl+Alt, L, exec, uwsm-app -- swaylock -fF"
         ''$mod, V, exec, $term --class "NixDots" uwsm app -- tnix''
         "$mod, N, exec, uwsm-app -- cliphist.sh"
-        "Alt+Shift, Tab, exec, rofi -show window -modi window"
         "$mod, M, exec, hyprgame"
         "$mod, L, workspace, r+1"
         "$mod, H, workspace, r-1"
