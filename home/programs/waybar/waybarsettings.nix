@@ -34,7 +34,6 @@
         "cpu"
         "temperature"
         "memory"
-        "custom/padd"
         "battery"
         "custom/r_end"
         "custom/l_end"
@@ -161,9 +160,9 @@
           warning = 25;
           critical = 10;
         };
-        format = "{icon} {capacity}%";
-        format-charging = "{icon} {capacity}%";
-        format-critical = "{icon} {capacity}%";
+        format = " {icon} {capacity}%";
+        format-charging = " {icon} {capacity}%";
+        format-critical = " {icon} {capacity}%";
         format-icons = [
           "󰁺"
           "󰁻"
