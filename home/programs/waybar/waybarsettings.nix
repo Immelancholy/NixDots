@@ -32,8 +32,6 @@
         "pulseaudio"
         "pulseaudio#mic"
         "network"
-        "custom/r_end"
-        "custom/l_end"
         "cpu"
         "temperature"
         "memory"
