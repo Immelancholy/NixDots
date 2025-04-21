@@ -203,11 +203,11 @@ in {
         binde = Shift, Down, resizeactive, 0 -30
 
         binde = Shift, L, resizeactive, -30 0
-        binde = Shift, L, moveactive, -30 0
+        binde = Shift, L, moveactive, 30 0
         binde = Shift, H, resizeactive, -30 0
         binde = Shift, K, resizeactive, 0 -30
-        binde = Shift, K, moveactive, 0 30
         binde = Shift, J, resizeactive, 0 -30
+        binde = Shift, J, moveactive, 0 30
         bind = , R, submap, manage
         bind = , escape, submap, manage
         submap = manage
