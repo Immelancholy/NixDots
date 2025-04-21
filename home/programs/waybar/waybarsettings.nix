@@ -29,9 +29,9 @@
       modules-right = [
         "custom/padd"
         "custom/l_end"
-        "cpu"
-        "temperature"
-        "memory"
+        # "cpu"
+        # "temperature"
+        # "memory"
         "pulseaudio"
         "pulseaudio#mic"
         "network"
@@ -159,9 +159,9 @@
           warning = 25;
           critical = 10;
         };
-        format = " {icon} {capacity}%";
-        format-charging = " {icon} {capacity}%";
-        format-critical = " {icon} {capacity}%";
+        format = "{icon} {capacity}%";
+        format-charging = "{icon} {capacity}%";
+        format-critical = "{icon} {capacity}%";
         format-icons = [
           "󰁺"
           "󰁻"
