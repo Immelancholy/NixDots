@@ -185,12 +185,20 @@ in {
         binde = , Right, resizeactive, -1 0
         binde = , Up, resizeactive, 0 -1
         binde = , Down, resizeactive, 0 1
+
         binde = , L, resizeactive, 30 0
         binde = , H, resizeactive, 30 0
         binde = , H, moveactive, -30 0
         binde = , K, resizeactive, 0 30
         binde = , K, moveactive, 0 -30
         binde = , J, resizeactive, 0 30
+
+        binde = Shift, L, resizeactive, -30 0
+        binde = Shift, H, resizeactive, -30 0
+        binde = Shift, H, moveactive, 30 0
+        binde = Shift, K, resizeactive, 0 -30
+        binde = Shift, K, moveactive, 0 30
+        binde = Shift, J, resizeactive, 0 -30
         bind = , R, submap, manage
         bind = , escape, submap, manage
         submap = manage
