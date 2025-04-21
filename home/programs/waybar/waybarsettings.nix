@@ -15,6 +15,11 @@
         "hyprland/workspaces"
         "hyprland/window"
         "custom/r_end"
+        "custom/l_end"
+        "cpu"
+        "temperature"
+        "memory"
+        "custom/r_end"
         "custom/padd"
       ];
       modules-center = [
@@ -29,9 +34,6 @@
       modules-right = [
         "custom/padd"
         "custom/l_end"
-        # "cpu"
-        # "temperature"
-        # "memory"
         "pulseaudio"
         "pulseaudio#mic"
         "network"
