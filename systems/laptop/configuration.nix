@@ -135,7 +135,7 @@
   environment.sessionVariables = {
     FLAKE_PATH = "/home/mela/NixDots"; # path to flake.nix
     SYSTEM = ".#nix-relic-laptop";
-    FRAMERATE = 210;
+    FRAMERATE = 60;
   };
 
   programs.steam = {
