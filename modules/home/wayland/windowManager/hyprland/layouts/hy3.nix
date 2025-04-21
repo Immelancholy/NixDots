@@ -185,10 +185,11 @@ in {
         binde = , Right, resizeactive, -1 0
         binde = , Up, resizeactive, 0 -1
         binde = , Down, resizeactive, 0 1
-        binde = , H, resizeactive, 30 0
         binde = , L, resizeactive, 30 0
-        binde = , L, moveactive, -30 0
-        binde = , K, resizeactive, 0 -30
+        binde = , H, resizeactive, 30 0
+        binde = , H, moveactive, -30 0
+        binde = , K, resizeactive, 0 30
+        binde = , K, moveactive, 0 -30
         binde = , J, resizeactive, 0 30
         bind = , R, submap, manage
         bind = , escape, submap, manage
