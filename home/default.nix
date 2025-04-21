@@ -1,8 +1,11 @@
 {
   nixosConfig,
   lib,
+  config,
   ...
-}: {
+}: let
+  user = config.home.username;
+in {
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
 
@@ -69,6 +72,18 @@
         ],
         "vimSync": true
       }
+    '';
+    ".zen/profiles.ini".text = ''
+      [Profile0]
+      Name=${user}Default
+      IsRelative=1
+      Path=${user}.Default
+      ZenAvatarPath=chrome://browser/content/zen-avatars/avatar-82.svg
+      Default=1
+
+      [General]
+      StartWithLastProfile=1
+      Version=2
     '';
   };
 
