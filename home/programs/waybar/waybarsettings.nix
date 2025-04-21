@@ -37,11 +37,11 @@
         "custom/l_end"
         "pulseaudio"
         "pulseaudio#mic"
+        "keyboard-state"
         "network"
         "custom/r_end"
         "custom/l_end"
         "tray"
-        "keyboard-state"
         "custom/r_end"
         "custom/l_end"
         "custom/power"
@@ -186,7 +186,7 @@
         tooltip-format = "{format_source} {source_desc} // {source_volume}%";
       };
       "custom/power" = {
-        format = "⏻ ";
+        format = "⏻";
         tooltip = false;
         on-click = "rofi -show power-menu -modi power-menu:rofi-power-menu ";
       };
