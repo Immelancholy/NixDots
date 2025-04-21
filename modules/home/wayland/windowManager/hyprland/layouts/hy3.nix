@@ -113,7 +113,7 @@ in {
         bindm = $mod, mouse:273, resizewindow
 
         bind = , T, hy3:locktab, lock
-        bind = Shift, T, hy3:locktabe, unlock
+        bind = Shift, T, hy3:locktab, unlock
 
         bind = $mod, Right, hy3:movetoworkspace, r+1, warp
         bind = $mod, Left, hy3:movetoworkspace, r-1, warp
