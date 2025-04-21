@@ -34,7 +34,7 @@
     #     transparent_background = true;
     #   };
     # };
-    colorscheme = "catppuccin";
+    # colorscheme = "catppuccin";
     vimAlias = true;
     withNodeJs = true;
     withPerl = true;
