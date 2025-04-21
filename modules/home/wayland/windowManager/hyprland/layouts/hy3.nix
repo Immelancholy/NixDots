@@ -181,10 +181,12 @@ in {
 
         bind = , R, submap, resize
         submap = resize
-        binde = , Left, resizeactive, 1 0
-        binde = , Right, resizeactive, -1 0
-        binde = , Up, resizeactive, 0 -1
-        binde = , Down, resizeactive, 0 1
+        binde = , Right, resizeactive, 30 0
+        binde = , Left, resizeactive, 30 0
+        binde = , Left, moveactive, -30 0
+        binde = , Up, resizeactive, 0 30
+        binde = , Up, moveactive, 0 -30
+        binde = , Down, resizeactive, 0 30
 
         binde = , L, resizeactive, 30 0
         binde = , H, resizeactive, 30 0
@@ -193,9 +195,16 @@ in {
         binde = , K, moveactive, 0 -30
         binde = , J, resizeactive, 0 30
 
+        binde = Shift, Right, resizeactive, -30 0
+        binde = Shift, Left, resizeactive, -30 0
+        binde = Shift, Left, moveactive, 30 0
+        binde = Shift, Up, resizeactive, 0 -30
+        binde = Shift, Up, moveactive, 0 30
+        binde = Shift, Down, resizeactive, 0 -30
+
         binde = Shift, L, resizeactive, -30 0
+        binde = Shift, L, moveactive, -30 0
         binde = Shift, H, resizeactive, -30 0
-        binde = Shift, H, moveactive, 30 0
         binde = Shift, K, resizeactive, 0 -30
         binde = Shift, K, moveactive, 0 30
         binde = Shift, J, resizeactive, 0 -30
