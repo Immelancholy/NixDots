@@ -186,10 +186,9 @@
         tooltip-format = "{format_source} {source_desc} // {source_volume}%";
       };
       "custom/power" = {
-        format = "{icon}";
+        format = "⏻";
         tooltip = false;
         on-click = "rofi -show power-menu -modi power-menu:rofi-power-menu ";
-        icon = "⏻";
       };
       #Custom padding mmodules
       "custom/l_end" = {
