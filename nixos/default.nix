@@ -51,20 +51,6 @@
 
   users.defaultUserShell = pkgs.zsh;
 
-  catppuccin = {
-    enable = true;
-    flavor = "mocha";
-    accent = "mauve";
-    sddm = {
-      enable = false;
-      flavor = "mocha";
-      font = "Noto Sans Nerd Font";
-      fontSize = "12";
-      background = ../home/backgrounds/anime-girl-wings.jpg;
-      loginBackground = true;
-    };
-  };
-
   xdg.portal = {
     xdgOpenUsePortal = true;
     extraPortals = with pkgs; [
