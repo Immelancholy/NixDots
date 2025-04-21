@@ -48,14 +48,6 @@ in {
             inputs.nix-flatpak.homeManagerModules.nix-flatpak
           ];
           home.file = {
-            "Pictures/fastfetch_logos" = {
-              source = ../../../home/programs/fastfetch/logo;
-              recursive = true;
-            };
-            "Pictures/wallpapers" = {
-              source = ../../../home/backgrounds;
-              recursive = true;
-            };
           };
         })
       users);

@@ -85,6 +85,14 @@ in {
       StartWithLastProfile=1
       Version=2
     '';
+    "Pictures/fastfetch_logos" = {
+      source = ./programs/fastfetch/logo;
+      recursive = true;
+    };
+    "Pictures/wallpapers" = {
+      source = ./backgrounds;
+      recursive = true;
+    };
   };
 
   home.stateVersion = "25.05";
