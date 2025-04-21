@@ -9,8 +9,8 @@
     id=$(${pkgs.wireplumber}/bin/wpctl status | grep "virtual_cable_in" | ${pkgs.gawk}/bin/awk '{print $2}' | grep -m1 "" | cut -f1 -d ".")
     serial=$(${pkgs.wireplumber}/bin/wpctl inspect "''${id}" | sed -n 's/.*object.serial = //p')
     reduce=$((FRAMERATE / 2))
-    if [[ $reduce > 100 ]]; then
-      reduce=100
+    if [[ $reduce > 90 ]]; then
+      reduce=90
     fi
 
     cat >"$cavaConfigFile" <<EOF
