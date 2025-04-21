@@ -45,7 +45,7 @@
         "custom/r_end"
         "custom/l_end"
         "custom/power"
-        # "custom/r_end"
+        "custom/r_end"
         # "custom/padd"
       ];
 
