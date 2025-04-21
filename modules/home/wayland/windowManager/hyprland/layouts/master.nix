@@ -117,10 +117,10 @@ in {
         binde = , Right, moveactive, -10 0
         binde = , Up, moveactive, 0 -10
         binde = , Down, moveactive, 0 10
-        binde = , H, moveactive, 10 0
-        binde = , L, moveactive, -10 0
-        binde = , K, moveactive, 0 -10
-        binde = , J, moveactive, 0 10
+        binde = , H, moveactive, 30 0
+        binde = , L, moveactive, -30 0
+        binde = , K, moveactive, 0 -30
+        binde = , J, moveactive, 0 30
         bind = , M, submap, manage
         bind = , escape, submap, manage
         submap = manage
