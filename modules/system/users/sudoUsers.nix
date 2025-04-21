@@ -56,27 +56,6 @@ in {
               source = ../../../home/backgrounds;
               recursive = true;
             };
-            ".zen/${user}.Default/chrome/userChrome.css" = mkIf config.home-manager.users.${user}.catppuccin.zen.enable {
-              source = "${inputs.catppuccinZen}/themes/Mocha/Mauve/userChrome.css";
-            };
-            ".zen/${user}.Default/chrome/userContent.css" = mkIf config.home-manager.users.${user}.catppuccin.zen.enable {
-              source = "${inputs.catppuccinZen}/themes/Mocha/Mauve/userContent.css";
-            };
-            ".zen/${user}.Default/chrome/zen-logo-mocha.svg" = mkIf config.home-manager.users.${user}.catppuccin.zen.enable {
-              source = "${inputs.catppuccinZen}/themes/Mocha/Mauve/zen-logo-mocha.svg";
-            };
-            ".zen/profiles.ini".text = ''
-              [Profile0]
-              Name=${user}Default
-              IsRelative=1
-              Path=${user}.Default
-              ZenAvatarPath=chrome://browser/content/zen-avatars/avatar-82.svg
-              Default=1
-
-              [General]
-              StartWithLastProfile=1
-              Version=2
-            '';
           };
         })
       users);
