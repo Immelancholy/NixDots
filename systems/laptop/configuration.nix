@@ -32,7 +32,7 @@
   };
 
   home-manager.users.mela = {
-    programs.obs-studio.enable = false;
+    programs.obs-studio.enable = true;
     services.remmina = {
       enable = true;
     };
