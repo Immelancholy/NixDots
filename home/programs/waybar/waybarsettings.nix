@@ -34,6 +34,7 @@
         "cpu"
         "temperature"
         "memory"
+        "custom/padd"
         "battery"
         "custom/r_end"
         "custom/l_end"
