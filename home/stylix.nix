@@ -25,13 +25,13 @@
       dunst.enable = false;
       rofi.enable = false;
       waybar.enable = false;
-      tmux.enable = false;
-      yazi.enable = false;
-      nixvim.enable = false;
-      btop.enable = false;
-      spicetify.enable = false;
-      kitty.enable = false;
-      gtk.flatpakSupport.enable = true;
+      # tmux.enable = false;
+      # yazi.enable = false;
+      # nixvim.enable = false;
+      # btop.enable = false;
+      # spicetify.enable = false;
+      # kitty.enable = false;
+      # gtk.flatpakSupport.enable = true;
     };
   };
 }
