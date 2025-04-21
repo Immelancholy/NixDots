@@ -179,7 +179,7 @@ in {
         bind = Shift+Alt, Up, hy3:movewindow, u
         bind = Shift+Alt, Left, hy3:movewindow, l
 
-        bind = , R, submap, resize
+        bind = Shift, R, submap, resize
         submap = resize
         binde = , Right, resizeactive, 30 0
         binde = , Left, resizeactive, 30 0
@@ -196,11 +196,11 @@ in {
         binde = , J, resizeactive, 0 30
 
         binde = Shift, Right, resizeactive, -30 0
+        binde = Shift, Right, moveactive, 30 0
         binde = Shift, Left, resizeactive, -30 0
-        binde = Shift, Left, moveactive, 30 0
         binde = Shift, Up, resizeactive, 0 -30
-        binde = Shift, Up, moveactive, 0 30
         binde = Shift, Down, resizeactive, 0 -30
+        binde = Shift, Down, moveactive, 0 30
 
         binde = Shift, L, resizeactive, -30 0
         binde = Shift, L, moveactive, 30 0
@@ -208,6 +208,20 @@ in {
         binde = Shift, K, resizeactive, 0 -30
         binde = Shift, J, resizeactive, 0 -30
         binde = Shift, J, moveactive, 0 30
+        bind = , R, submap, manage
+        bind = , escape, submap, manage
+        submap = manage
+
+        bind = , R, submap, resizeTiled
+        submap = resizeTiled
+        binde = , Left, resizeactive, 1 0
+        binde = , Right, resizeactive, -1 0
+        binde = , Up, resizeactive, 0 -1
+        binde = , Down, resizeactive, 0 1
+        binde = , H, resizeactive, 30 0
+        binde = , L, resizeactive, -30 0
+        binde = , K, resizeactive, 0 -30
+        binde = , J, resizeactive, 0 30
         bind = , R, submap, manage
         bind = , escape, submap, manage
         submap = manage
