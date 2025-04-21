@@ -90,19 +90,21 @@
     };
     home.packages = with pkgs; [
       teams-for-linux
+      obsidian
+      obsidian-export
     ];
     programs.nixvim = {
       enable = true;
       defaultEditor = true;
       plugins = {
         obsidian = {
-          enable = false;
+          enable = true;
           settings = {
             ui.enable = false;
             workspaces = [
               {
-                name = "";
-                path = "";
+                name = "Obsidian-Vault";
+                path = "/home/mela/Documents/Obsidian-Vault";
               }
             ];
           };
