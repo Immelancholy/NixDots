@@ -16,9 +16,9 @@ in {
       lyricsPlus
       newReleases
     ];
-    # theme = spicePkgs.themes.catppuccin;
+    theme = spicePkgs.themes.catppuccin;
 
-    # colorScheme = "mocha";
+    colorScheme = "mocha";
     windowManagerPatch = true;
   };
 }
