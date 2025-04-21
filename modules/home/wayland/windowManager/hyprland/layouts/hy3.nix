@@ -186,7 +186,8 @@ in {
         binde = , Up, resizeactive, 0 -1
         binde = , Down, resizeactive, 0 1
         binde = , H, resizeactive, 30 0
-        binde = , L, resizeactive, -30 0
+        binde = , L, resizeactive, 30 0
+        binde = , L, moveactive, -30 0
         binde = , K, resizeactive, 0 -30
         binde = , J, resizeactive, 0 30
         bind = , R, submap, manage
