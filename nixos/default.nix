@@ -26,7 +26,7 @@
     algorithm = "zstd";
     memoryPercent = 50;
     swapDevices = 1;
-    priority = 100;
+    priority = 101;
   };
 
   security.apparmor = {
