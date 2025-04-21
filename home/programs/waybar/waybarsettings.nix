@@ -13,8 +13,6 @@
         "custom/padd"
         "custom/l_end"
         "hyprland/workspaces"
-        "custom/r_end"
-        "custom/l_end"
         "hyprland/window"
         "custom/r_end"
         "custom/padd"
