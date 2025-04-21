@@ -156,7 +156,7 @@
       enable = true;
       open = false;
       powerManagement = true;
-      finePowerManagement = false;
+      finePowerManagement = true;
       # package = config.boot.kernelPackages.nvidiaPackages.vulkan_beta;
       prime = {
         enable = true;
