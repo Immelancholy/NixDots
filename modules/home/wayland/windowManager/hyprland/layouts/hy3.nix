@@ -89,8 +89,8 @@ in {
       };
       extraConfig = ''
 
-        bind = $mod, A, submap, move
-        submap = move
+        bind = $mod, A, submap, manage
+        submap = manage
         bind = Alt, Return, fullscreen, 1
         bind = Alt+Shift, Return, fullscreen
         bind = , Q, hy3:warpcursor
@@ -108,6 +108,7 @@ in {
         bind = , Down, hy3:movefocus, d, once
         bind = , Up, hy3:movefocus, u, once
         bind = , Right, hy3:movefocus, r, once
+        bind = , P, pin, active
         bindm = $mod, mouse:272, movewindow
         bindm = $mod, mouse:273, resizewindow
 
@@ -184,9 +185,24 @@ in {
         binde = , L, resizeactive, -30 0
         binde = , K, resizeactive, 0 -30
         binde = , J, resizeactive, 0 30
-        bind = , R, submap, move
-        bind = , escape, submap, move
+        bind = , R, submap, manage
+        bind = , escape, submap, manage
+        submap = manage
+
+        bind = , M, submap, move
         submap = move
+        binde = , Left, moveactive, 10 0
+        binde = , Right, moveactive, -10 0
+        binde = , Up, moveactive, 0 -10
+        binde = , Down, moveactive, 0 10
+        binde = , H, moveactive, 10 0
+        binde = , L, moveactive, -10 0
+        binde = , K, moveactive, 0 -10
+        binde = , J, moveactive, 0 10
+        bind = , M, submap, manage
+        bind = , escape, submap, manage
+        submap = manage
+
 
         bind = , escape, submap, reset
 
