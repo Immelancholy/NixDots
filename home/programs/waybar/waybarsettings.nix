@@ -42,8 +42,6 @@
         "custom/r_end"
         "custom/l_end"
         "tray"
-        "custom/r_end"
-        "custom/l_end"
         "custom/power"
         "custom/r_end"
         "custom/padd"
@@ -186,7 +184,7 @@
         tooltip-format = "{format_source} {source_desc} // {source_volume}%";
       };
       "custom/power" = {
-        format = "⏻ ";
+        format = "⏻";
         tooltip = false;
         on-click = "rofi -show power-menu -modi power-menu:rofi-power-menu ";
       };
