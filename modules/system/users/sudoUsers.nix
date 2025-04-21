@@ -56,13 +56,13 @@ in {
               source = ../../../home/backgrounds;
               recursive = true;
             };
-            ".zen/${user}.Default/chrome/userChrome.css" = {
+            ".zen/${user}.Default/chrome/userChrome.css" = mkIf config.catppuccin.zen.enable {
               source = "${inputs.catppuccinZen}/themes/Mocha/Mauve/userChrome.css";
             };
-            ".zen/${user}.Default/chrome/userContent.css" = {
+            ".zen/${user}.Default/chrome/userContent.css" = mkIf config.catppuccin.zen.enable {
               source = "${inputs.catppuccinZen}/themes/Mocha/Mauve/userContent.css";
             };
-            ".zen/${user}.Default/chrome/zen-logo-mocha.svg" = {
+            ".zen/${user}.Default/chrome/zen-logo-mocha.svg" = mkIf config.catppuccin.zen.enable {
               source = "${inputs.catppuccinZen}/themes/Mocha/Mauve/zen-logo-mocha.svg";
             };
             ".zen/profiles.ini".text = ''
