@@ -1,5 +1,10 @@
-{config, ...}: let
+{
+  config,
+  osConfig,
+  ...
+}: let
   user = config.home.username;
+  uid = osConfig.users.users.${user}.uid;
 in {
   programs.kitty = {
     enable = true;
@@ -12,7 +17,7 @@ in {
       font_size = 10;
       window_padding_width = 5;
       allow_remote_control = true;
-      listen_on = "unix:/run/user/1000/kitty-${user}";
+      listen_on = "unix:/run/user/${uid}/kitty";
     };
     extraConfig = ''
       # background_opacity 0.67

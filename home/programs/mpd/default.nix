@@ -1,11 +1,16 @@
-{config, ...}: let
+{
+  config,
+  osConfig,
+  ...
+}: let
   user = config.home.username;
+  uid = osConfig.users.users.${user}.uid;
 in {
   services = {
     mpd = {
       enable = true;
       network = {
-        listenAddress = "/run/user/1000/mpd/socket-${user}";
+        listenAddress = "/run/user/${uid}/mpd/socket";
         startWhenNeeded = true;
       };
       musicDirectory = "/home/${user}/Music";
@@ -20,7 +25,7 @@ in {
         audio_output {
           type  "fifo"
           name  "mpd_cava"
-          path  "/run/user/1000/mpd_cava_${user}.fifo"
+          path  "/run/user/${uid}/mpd_cava.fifo"
           format  "44100:16:2"
         }
         # audio_output {
