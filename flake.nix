@@ -12,10 +12,6 @@
       url = "github:chrissicool/zsh-256color";
       flake = false;
     };
-    vindauga = {
-      url = "github:uriel1998/vindauga";
-      flake = false;
-    };
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";

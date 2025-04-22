@@ -67,22 +67,10 @@
     mpc
     ffmpegthumbnailer
     libcamera
-    imagemagick
-    audacious
     (ffmpeg-full.override {
       withUnfree = true;
       withOpengl = true;
       withRtmp = true;
-    })
-    (stdenv.mkDerivation {
-      name = "kunst";
-      src = inputs.vindauga;
-      phases = ["installPhase" "patchPhase"];
-      installPhase = ''
-        mkdir -p $out/bin
-        cp $src/vindauga.sh $out/bin/vindauga
-        chmod +x $out/bin/vindauga
-      '';
     })
     libsForQt5.qt5.qtwayland
     kdePackages.qtwayland
