@@ -5,7 +5,7 @@ in {
     mpd = {
       enable = true;
       network = {
-        listenAddress = "/run/user/1000/mpd/socket";
+        listenAddress = "/run/user/1000/mpd/socket-${user}";
         startWhenNeeded = true;
       };
       musicDirectory = "/home/${user}/Music";
