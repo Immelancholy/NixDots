@@ -20,5 +20,6 @@
     ./muteChromium.nix
     ./cavaCfg.nix
     ./brightness.nix
+    ./mpd-album-art.nix
   ];
 }
