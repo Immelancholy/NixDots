@@ -13,7 +13,6 @@
   ]; # user accounts here
   userAccounts.sudoUsers = [
     "mela"
-    "kary"
   ]; # sudo enabled accounts here (You'll want to go here if you're installing these. )
 
   services.openssh.enable = true;
