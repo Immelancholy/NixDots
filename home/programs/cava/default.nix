@@ -1,11 +1,4 @@
 {
-  config,
-  osConfig,
-  ...
-}: let
-  user = config.home.username;
-  uid = builtins.toString osConfig.users.users.${user}.uid;
-in {
   programs.cava = {
     enable = true;
     settings = {
@@ -23,7 +16,7 @@ in {
       };
       input = {
         method = "fifo";
-        source = "/run/user/${uid}/mpd_cava.fifo";
+        source = "/tmp/mpd_cava.fifo";
       };
       smoothing = {
         monstercat = 1;

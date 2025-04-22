@@ -3,17 +3,13 @@
   osConfig,
   ...
 }: let
-  user = config.home.username;
-  uid = builtins.toString osConfig.users.users.${user}.uid;
 in {
   services = {
     mpd = {
       enable = true;
       network = {
-        listenAddress = "/run/user/${uid}/mpd/socket";
         startWhenNeeded = true;
       };
-      musicDirectory = "/home/${user}/Music";
       extraConfig = ''
         restore_paused "yes"
 
@@ -25,7 +21,7 @@ in {
         audio_output {
           type  "fifo"
           name  "mpd_cava"
-          path  "/run/user/${uid}/mpd_cava.fifo"
+          path  "/tmp/mpd_cava.fifo"
           format  "44100:16:2"
         }
         audio_output {
