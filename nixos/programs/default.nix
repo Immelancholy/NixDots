@@ -2,7 +2,28 @@
   pkgs,
   inputs,
   ...
-}: {
+}: let
+  mpdart = pkgs.stdenv.mkDerivation {
+    name = "mpdart";
+    src = inputs.mpdart;
+
+    buildInputs = with pkgs; [
+      ffmpeg
+      mpd
+      feh
+      libmpdclient
+      pkg-config
+    ];
+    buildPhase = ''
+      gcc mpdart.c -o mpdart
+    '';
+
+    installPhase = ''
+      mkdir -p $out/bin
+      cp mpdart $out/bin
+    '';
+  };
+in {
   imports = [
     ./hyprland.nix
     ./pipewire.nix
@@ -63,6 +84,7 @@
     wantedBy = ["graphical-session.target"];
   };
   environment.systemPackages = with pkgs; [
+    mpdart
     brightnessctl
     mpc
     ffmpegthumbnailer

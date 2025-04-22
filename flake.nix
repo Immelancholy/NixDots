@@ -12,6 +12,10 @@
       url = "github:chrissicool/zsh-256color";
       flake = false;
     };
+    mpdart = {
+      url = "github:zoefiri/mdpart";
+      flake = false;
+    };
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
