@@ -9,28 +9,18 @@
     (modulesPath + "/installer/scan/not-detected.nix")
   ];
   disko.devices.disk.main.device = "/dev/sdb";
-  # userAccounts.users = [
-  # ]; # user accounts here
-  # userAccounts.sudoUsers = [
-  #   "mela"
-  #   "larry"
-  # ]; # sudo enabled accounts here (You'll want to go here if you're installing these. )
+  userAccounts.users = [
+  ]; # user accounts here
+  userAccounts.sudoUsers = [
+    "mela"
+    "larry"
+  ]; # sudo enabled accounts here (You'll want to go here if you're installing these. )
 
   users.users = {
     mela = {
-      isNormalUser = true;
-      description = "Account for Mela";
-      extraGroups = ["networkmanager" "wheel" "video" "seat"];
-      shell = pkgs.zsh;
-      initialPassword = "password";
       uid = 1000;
     };
     larry = {
-      isNormalUser = true;
-      description = "Account for Larry";
-      extraGroups = ["networkmanager" "wheel" "video" "seat"];
-      shell = pkgs.zsh;
-      initialPassword = "password";
       uid = 1001;
     };
   };

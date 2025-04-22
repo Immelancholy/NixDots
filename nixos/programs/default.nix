@@ -185,7 +185,6 @@
     kdePackages.qtstyleplugin-kvantum
     libsForQt5.qt5ct
     kdePackages.qt6ct
-    rmpc
     protonup
     playerctl
     pokemonsay
