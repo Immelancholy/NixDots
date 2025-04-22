@@ -57,10 +57,10 @@
       ../../home
       # inputs.stylix.homemanagermodules.stylix
       ../../modules/home
-      inputs.catppuccin.homemodules.catppuccin
-      inputs.nixvim.homemanagermodules.nixvim
-      inputs.spicetify-nix.homemanagermodules.default
-      inputs.nix-flatpak.homemanagermodules.nix-flatpak
+      inputs.catppuccin.homeModules.catppuccin
+      inputs.nixvim.homeManagerModules.nixvim
+      inputs.spicetify-nix.homeManagerModules.default
+      inputs.nix-flatpak.homeManagerModules.nix-flatpak
     ];
     programs.obs-studio.enable = true;
     services.remmina = {
@@ -161,10 +161,10 @@
       ../../home
       # inputs.stylix.homemanagermodules.stylix
       ../../modules/home
-      inputs.catppuccin.homemodules.catppuccin
-      inputs.nixvim.homemanagermodules.nixvim
-      inputs.spicetify-nix.homemanagermodules.default
-      inputs.nix-flatpak.homemanagermodules.nix-flatpak
+      inputs.catppuccin.homeModules.catppuccin
+      inputs.nixvim.homeManagerModules.nixvim
+      inputs.spicetify-nix.homeManagerModules.default
+      inputs.nix-flatpak.homeManagerModules.nix-flatpak
     ];
     programs.obs-studio.enable = true;
     services.remmina = {
