@@ -129,17 +129,15 @@
         specialArgs = {inherit inputs;};
         modules = [
           inputs.disko.nixosModules.default
-          ./systems/desktop/disko-config.nix
           stylix.nixosModules.stylix
-          ./systems/desktop/hardware-configuration.nix
           nur.modules.nixos.default
           lanzaboote.nixosModules.lanzaboote
           nix-flatpak.nixosModules.nix-flatpak
           solaar.nixosModules.default
           catppuccin.nixosModules.catppuccin
-          ./systems/desktop/configuration.nix
           ./nixos
           ./modules/system
+          ./hosts
 
           home-manager.nixosModules.home-manager
           {
@@ -156,17 +154,15 @@
         specialArgs = {inherit inputs;};
         modules = [
           inputs.disko.nixosModules.default
-          ./systems/laptop/disko-config.nix
           stylix.nixosModules.stylix
-          ./systems/laptop/hardware-configuration.nix
           nur.modules.nixos.default
           lanzaboote.nixosModules.lanzaboote
           nix-flatpak.nixosModules.nix-flatpak
           solaar.nixosModules.default
           catppuccin.nixosModules.catppuccin
-          ./systems/laptop/configuration.nix
           ./nixos
           ./modules/system
+          ./hosts
 
           home-manager.nixosModules.home-manager
           {
