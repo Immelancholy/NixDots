@@ -1,7 +1,7 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     (writeShellScriptBin "mpdArt" ''
-      function current_art (
+      function current_art {
         while "$currentTrack" != "$oldTrack"
         do
           currentTrack=$(playerctl --player=mpd metadata --format "{{title}}")
@@ -11,7 +11,7 @@
 
           oldTrack=''${currentTrack}
         done
-      )
+      }
       while :
       do
         state=$(playerctl --player=mpd status)
