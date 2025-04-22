@@ -28,7 +28,7 @@
     [theme.album]
     fg = "#cba6f7"
   '';
-  xdg.configFile."miniplayer/config" = ''
+  xdg.configFile."miniplayer/config".text = ''
     [player]
     font_width      = 11
     font_height     = 24
