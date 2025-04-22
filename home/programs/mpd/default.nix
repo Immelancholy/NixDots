@@ -6,6 +6,9 @@
   user = config.home.username;
   uid = builtins.toString osConfig.users.users.${user}.uid;
 in {
+  home.file.".mpd/.keep".text = ''
+
+  '';
   services = {
     mpd = {
       enable = true;
