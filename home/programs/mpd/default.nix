@@ -1,13 +1,12 @@
 {
   config,
   osConfig,
-  nixosConfig,
   ...
 }: let
   user = config.home.username;
   uid = builtins.toString osConfig.users.users.${user}.uid;
 in {
-  nixosConfig.services = {
+  services = {
     mpd = {
       enable = true;
       network = {
