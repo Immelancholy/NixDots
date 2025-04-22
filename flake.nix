@@ -14,6 +14,7 @@
     };
     kunst = {
       url = "github:sdushantha/kunst";
+      flake = false;
     };
     disko = {
       url = "github:nix-community/disko";
