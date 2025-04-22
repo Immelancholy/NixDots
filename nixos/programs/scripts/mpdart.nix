@@ -30,8 +30,8 @@
         if [ "$song" != "$song_old" ]; then
           clear
           kitten icat --align=center "$art"
-          line1=playerctl --player=mpd metadata --format "-------- {{artist}} --------"
-          line2=playerctl --player=mpd metadata --format "-------- {{title}} --------"
+          line1=$(playerctl --player=mpd metadata --format "-------- {{artist}} --------")
+          line2=$(playerctl --player=mpd metadata --format "-------- {{title}} --------")
           print_centered "$line1" " "
           print_centered "$line2" " "
           song_old=$song
