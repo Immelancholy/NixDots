@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   home.file.".p10k.zsh" = {
     source = ./p10k.zsh;
   };
@@ -31,8 +35,7 @@
     plugins = [
       {
         name = "zsh-256color";
-        src = "";
-        file = "share/zsh-256color/zsh-256color.plugin.zsh";
+        src = inputs.zsh-256color;
       }
       {
         name = "powerlevel10k";
