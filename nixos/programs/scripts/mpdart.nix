@@ -19,7 +19,7 @@
         state=$(mpc status %state%)
         if [ "$state" = "playing" ]; then
           get_art
-        else
+        elif [ "$state" = "stopped" ]; then
           song_old=""
         fi
       done
