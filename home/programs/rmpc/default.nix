@@ -7,7 +7,6 @@
     #![enable(unwrap_newtypes)]
     #![enable(unwrap_variant_newtypes)]
     (
-        address: "${config.services.mpd.network.listenAddress}:${builtins.toString config.services.mpd.network.port}",
         password: None,
         theme: Some("catppuccin-mocha"),
         cache_dir: None,
