@@ -6,6 +6,9 @@
         art=$(playerctl --player=mpd metadata --format "{{mpris:artUrl}}")
         if [ "$song" != "$song_old" ]; then
           clear
+          echo " "
+          echo " "
+          echo " "
           kitten icat --align=center "$art"
           song_old=$song
         fi
