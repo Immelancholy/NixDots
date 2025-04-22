@@ -12,7 +12,7 @@
           kitten icat --align=center "$art"
           playerctl --player=mpd metadata "{{title}}"
           echo " - "
-          playerctl --player=mpd metadate "{{artist}}"
+          playerctl --player=mpd metadata "{{artist}}"
           song_old=$song
         fi
       }
