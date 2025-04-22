@@ -72,7 +72,7 @@
       withOpengl = true;
       withRtmp = true;
     })
-
+    (writeShellScriptBin "kunst" (builtins.readFile /${inputs.kunst}/kunst))
     libsForQt5.qt5.qtwayland
     kdePackages.qtwayland
     inputs.swww.packages.${pkgs.system}.swww

@@ -12,6 +12,9 @@
       url = "github:chrissicool/zsh-256color";
       flake = false;
     };
+    kunst = {
+      url = "github:sdushantha/kunst";
+    };
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
