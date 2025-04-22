@@ -6,10 +6,10 @@
     qwerty_keybindings = true
 
     [theme.item_highlight_active]
-    fg = "#cba6f7"
-    bg = "#11111b"
+    fg = "#11111b"
+    bg = "#cba6f7"
 
     [theme.item_highlight_inactive]
-    bg = "#cdd6f4"
+    fg = "#cdd6f4"
   '';
 }
