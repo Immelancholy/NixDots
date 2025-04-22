@@ -77,7 +77,7 @@
       src = inputs.kunst;
       phases = ["installPhase" "patchPhase"];
       installPhase = ''
-        mkdir -p $our/bin
+        mkdir -p $out/bin
         cp $src/kunst $out/bin/kunst
         chmod +x $out/bin/kunst
       '';
