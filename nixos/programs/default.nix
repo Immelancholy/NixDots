@@ -67,6 +67,7 @@
     mpc
     ffmpegthumbnailer
     libcamera
+    nsxiv
     (ffmpeg-full.override {
       withUnfree = true;
       withOpengl = true;
