@@ -10,7 +10,8 @@
       font_size = 10;
       window_padding_width = 5;
       allow_remote_control = true;
-      listen_on = "unix:/run/user/1000/mykitty";
+      # listen_on = "unix:/run/user/1000/mykitty";
+      listen_on = "/tmp/mykitty";
     };
     extraConfig = ''
       # background_opacity 0.67

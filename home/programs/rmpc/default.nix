@@ -1,4 +1,4 @@
-{
+{config, ...}: {
   imports = [
     ./themes
   ];
@@ -7,7 +7,7 @@
     #![enable(unwrap_newtypes)]
     #![enable(unwrap_variant_newtypes)]
     (
-        address: "/run/user/1000/mpd/socket",
+        address: "${config.services.mpd.network.listenAddress}:${config.services.mpd.network.port}",
         password: None,
         theme: Some("catppuccin-mocha"),
         cache_dir: None,

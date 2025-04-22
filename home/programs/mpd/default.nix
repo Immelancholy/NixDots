@@ -5,10 +5,9 @@ in {
     mpd = {
       enable = true;
       network = {
-        listenAddress = "/run/user/1000/mpd/socket";
         startWhenNeeded = true;
       };
-      musicDirectory = "~/Music";
+      musicDirectory = "/home/${user}/Music";
       extraConfig = ''
         restore_paused "yes"
 
@@ -38,17 +37,13 @@ in {
     };
     mpdris2 = {
       enable = true;
-      mpd = {
-        host = "/run/user/1000/mpd/socket";
-        musicDirectory = "/home/${user}/Music";
-      };
       notifications = true;
     };
     mpd-discord-rpc = {
       enable = true;
       settings = {
         hosts = [
-          "/run/user/1000/mpd/socket"
+          "${config.services.mpd.network.listenAddress}:${config.services.mpd.network.port}"
         ];
         format = {
           details = "$title";
