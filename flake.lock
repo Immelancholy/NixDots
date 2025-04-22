@@ -1211,22 +1211,6 @@
         "type": "github"
       }
     },
-    "kunst": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1704529451,
-        "narHash": "sha256-vSAp1T1Q28sPCE2BffCxBCZwyZG2VYeoC7XjZPCX2yM=",
-        "owner": "sdushantha",
-        "repo": "kunst",
-        "rev": "5149471925b6f2239b2fa5873370e297fc6b0bea",
-        "type": "github"
-      },
-      "original": {
-        "owner": "sdushantha",
-        "repo": "kunst",
-        "type": "github"
-      }
-    },
     "lanzaboote": {
       "inputs": {
         "crane": "crane",
@@ -1673,7 +1657,6 @@
         "hyprland": "hyprland",
         "hyprland-plugins": "hyprland-plugins",
         "hyprtasking": "hyprtasking",
-        "kunst": "kunst",
         "lanzaboote": "lanzaboote",
         "neovim-nightly-overlay": "neovim-nightly-overlay",
         "nix-flatpak": "nix-flatpak",
