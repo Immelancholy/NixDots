@@ -11,7 +11,6 @@
     ./fastfetch
     ./nvim
     ./easyeffects
-    # ./rmpc
     ./tmux.nix
     ./kitty.nix
     ./spicetify.nix
@@ -22,7 +21,6 @@
     ./dunst.nix
     ./swaylock.nix
     ./udiskie.nix
-    ./ncmpcpp
   ];
 
   services.gnome-keyring = {
