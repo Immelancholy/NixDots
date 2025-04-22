@@ -1,9 +1,7 @@
-{
-  config,
-  osConfig,
-  ...
-}: let
-in {
+{config, ...}: {
+  imports = [
+    ./client
+  ];
   services = {
     mpd = {
       enable = true;
