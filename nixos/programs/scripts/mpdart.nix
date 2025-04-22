@@ -19,8 +19,9 @@
         state=$(mpc status %state%)
         if [ "$state" = "playing" ]; then
           get_art
+        else
+          song_old=""
         fi
-        song_old=""
       done
     '')
   ];
