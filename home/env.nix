@@ -1,8 +1,13 @@
 {
   pkgs,
   lib,
+  config,
+  osConfig,
   ...
-}: {
+}: let
+  user = config.home.username;
+  uid = builtins.toString osConfig.users.users.${user}.uid;
+in {
   home.sessionVariables = {
     STEAM_EXTRA_COMPAT_TOOLS_PATHS = "$HOME/.steam/root/compatibilitytools.d";
     BROWSER = "zen";
@@ -17,7 +22,7 @@
     MOZ_ENABLE_WAYLAND = "1";
     GDK_SCALE = "1";
     GRIMBLAST_EDITOR = "swappy";
-    MPD_HOST = "/run/user/1000/mpd/socket";
+    MPD_HOST = "/run/user/${uid}/mpd/socket";
     NOTES_PATH = "$HOME/Documents/Obsidian-Vault"; # path to notes folder ( for neovim )
     PROJECTS_PATH = "$HOME/Documents/Projects"; # path to Projects folder ( for neovim )
   };
