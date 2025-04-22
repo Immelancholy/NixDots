@@ -13,7 +13,7 @@
         "$mod, grave, exec, $menu"
         "$mod, C, exec, $edit"
         "Alt, Return, fullscreen"
-        ''$mods, U, exec, [workspace 1 silent; float; size 858 559; move 640 40] $term --class "inori" uwsm app -- inori''
+        ''$mods, U, exec, [workspace 1 silent; float; size 348 559; move 640 40] $term --class "inori" uwsm app -- inori''
         ''$mods, U, exec, [workspace 1 silent; float; size 858 462; move 640 609] $term --class "cava" uwsm app -- cava.sh''
         ''$mods, U, exec, [workspace 1 silent; float; size 620 637; move 10 433] $term --class "btop" uwsm app -- btop.sh''
         ''$mods, U, exec, [workspace 1 silent; float; size 402 1030; move 1508 40] $term --class "neo" uwsm app -- neo.sh''

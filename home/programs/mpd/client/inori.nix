@@ -11,5 +11,17 @@
 
     [theme.item_highlight_inactive]
     fg = "#cdd6f4"
+
+    [theme.block_active]
+    fg = "#cba6f7"
+
+    [theme.playing]
+    fg = "#cba6f7"
+
+    [theme.status_artist]
+    fg = "#89dceb"
+
+    [theme.status_album]
+    fg = "#cba6f7"
   '';
 }
