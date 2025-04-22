@@ -9,7 +9,11 @@ with lib; let
   user = config.home.username;
 in {
   options.catppuccin.zen = {
-    enable = mkEnableOption "enable catppuccin zen theme";
+    enable = mkOption {
+      types = types.bool;
+      default = config.catppuccin.enable;
+      description = "enable catppuccin zen theme";
+    };
   };
 
   config = mkIf cfg.enable {

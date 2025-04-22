@@ -10,6 +10,7 @@
   ];
   disko.devices.disk.main.device = "/dev/sdb";
   userAccounts.users = [
+    "kary"
   ]; # user accounts here
   userAccounts.sudoUsers = [
     "mela"
