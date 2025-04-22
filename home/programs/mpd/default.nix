@@ -4,7 +4,7 @@
   ...
 }: let
   user = config.home.username;
-  uid = osConfig.users.users.${user}.uid;
+  uid = builtins.toString osConfig.users.users.${user}.uid;
 in {
   services = {
     mpd = {
