@@ -1,5 +1,15 @@
-{config, ...}: let
+{
+  config,
+  pkgs,
+  ...
+}: let
   user = config.home.username;
+  status = pkgs.writeShellScriptBin "mpdStatus" ''
+    while :
+    do
+      mpc status
+    done
+  '';
 in {
   programs.kitty = {
     enable = true;
@@ -33,5 +43,7 @@ in {
     launch --title "inori" inori
     launch --location=vsplit --title "mpdart" mpdart
     resize_window short 8
+    launch --location=hsplit --title "status" ${status}
+    resize_window short 20
   '';
 }
