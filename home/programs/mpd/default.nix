@@ -6,15 +6,12 @@
   user = config.home.username;
   uid = builtins.toString osConfig.users.users.${user}.uid;
 in {
-  home.file.".mpd/.keep".text = ''
-
-  '';
   # osConfig.users.users.mpd = {
   #
   # };
-  services = {
+  osConfig.services = {
     mpd = {
-      enable = true;
+      enable = false;
       network = {
         listenAddress = "/run/user/${uid}/mpd/socket";
         startWhenNeeded = true;
@@ -28,8 +25,6 @@ in {
         auto_update_depth "4"
         follow_outside_symlinks	"yes"
         follow_inside_symlinks		"yes"
-        user mpd
-        group mpd
         audio_output {
           type  "fifo"
           name  "mpd_cava"
