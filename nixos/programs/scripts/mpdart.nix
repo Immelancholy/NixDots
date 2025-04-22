@@ -20,6 +20,7 @@
         if [ "$state" = "playing" ]; then
           get_art
         fi
+        song_old=""
       done
     '')
   ];
