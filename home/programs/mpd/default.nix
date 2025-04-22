@@ -1,17 +1,15 @@
 {
   config,
   osConfig,
+  nixosConfig,
   ...
 }: let
   user = config.home.username;
   uid = builtins.toString osConfig.users.users.${user}.uid;
 in {
-  # osConfig.users.users.mpd = {
-  #
-  # };
-  osConfig.services = {
+  osConfig.config.services = {
     mpd = {
-      enable = false;
+      enable = true;
       network = {
         listenAddress = "/run/user/${uid}/mpd/socket";
         startWhenNeeded = true;
@@ -31,12 +29,6 @@ in {
           path  "/run/user/${uid}/mpd_cava.fifo"
           format  "44100:16:2"
         }
-        # audio_output {
-        #   type  "fifo"
-        #   name  "mpd_waycava"
-        #   path  "/run/user/1000/mpd_waycava.fifo"
-        #   format  "44100:16:2"
-        # }
         audio_output {
           type  "pipewire"
           name  "Pipewire Cava"
