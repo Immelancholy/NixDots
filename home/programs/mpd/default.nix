@@ -43,7 +43,7 @@ in {
       enable = true;
       settings = {
         hosts = [
-          "${config.services.mpd.network.listenAddress}:${config.services.mpd.network.port}"
+          "${config.services.mpd.network.listenAddress}:${builtins.toString config.services.mpd.network.port}"
         ];
         format = {
           details = "$title";
