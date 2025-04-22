@@ -41,17 +41,6 @@
   };
 
   home-manager.users.larry = {
-    home.username = "larry";
-    home.homeDirectory = "/home/larry";
-    imports = [
-      ../../home
-      # inputs.stylix.homemanagermodules.stylix
-      ../../modules/home
-      inputs.catppuccin.homeModules.catppuccin
-      inputs.nixvim.homeManagerModules.nixvim
-      inputs.spicetify-nix.homeManagerModules.default
-      inputs.nix-flatpak.homeManagerModules.nix-flatpak
-    ];
     programs.obs-studio.enable = true;
     services.remmina = {
       enable = true;
@@ -145,17 +134,6 @@
     };
   };
   home-manager.users.mela = {
-    home.username = "mela";
-    home.homeDirectory = "/home/mela";
-    imports = [
-      ../../home
-      # inputs.stylix.homemanagermodules.stylix
-      ../../modules/home
-      inputs.catppuccin.homeModules.catppuccin
-      inputs.nixvim.homeManagerModules.nixvim
-      inputs.spicetify-nix.homeManagerModules.default
-      inputs.nix-flatpak.homeManagerModules.nix-flatpak
-    ];
     programs.obs-studio.enable = true;
     services.remmina = {
       enable = true;
