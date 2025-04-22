@@ -24,17 +24,16 @@
       nixp = "cd $FLAKE_PATH; git push -u origin main; cd -";
       firmware = "sudo systemctl reboot --firmware-setup";
     };
-    antidote = {
-      enable = true;
-      plugins = [
-        "chrissicool/zsh-256color"
-      ];
-    };
     history.size = 10000;
     history.ignoreAllDups = true;
     history.path = "$HOME/.zsh_history";
     history.ignorePatterns = ["rm *" "pkill *" "cp *"];
     plugins = [
+      {
+        name = "zsh-256color";
+        src = "";
+        file = "share/zsh-256color/zsh-256color.plugin.zsh";
+      }
       {
         name = "powerlevel10k";
         src = pkgs.zsh-powerlevel10k;
