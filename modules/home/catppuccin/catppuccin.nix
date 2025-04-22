@@ -10,7 +10,7 @@ with lib; let
 in {
   options.catppuccin.zen = {
     enable = mkOption {
-      types = types.bool;
+      type = types.bool;
       default = config.catppuccin.enable;
       description = "enable catppuccin zen theme";
     };
