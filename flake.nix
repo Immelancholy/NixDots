@@ -13,7 +13,7 @@
       flake = false;
     };
     mpdart = {
-      url = "github:zoefiri/mdpart";
+      url = "github:zoefiri/mpdart";
       flake = false;
     };
     disko = {
