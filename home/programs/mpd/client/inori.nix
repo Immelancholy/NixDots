@@ -2,7 +2,7 @@
   home.packages = with pkgs; [
     inori
   ];
-  xdf.configFile."inori/config.toml".text = ''
+  xdg.configFile."inori/config.toml".text = ''
     qwerty_keybindings = true
 
     [theme.item_highlight_active]
