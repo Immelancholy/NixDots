@@ -1,4 +1,6 @@
-{
+{config, ...}: let
+  user = config.home.username;
+in {
   programs.kitty = {
     enable = true;
     shellIntegration.enableZshIntegration = true;
@@ -10,7 +12,7 @@
       font_size = 10;
       window_padding_width = 5;
       allow_remote_control = true;
-      listen_on = "unix:/run/user/1000/mykitty";
+      listen_on = "unix:/run/user/1000/kitty-${user}";
     };
     extraConfig = ''
       # background_opacity 0.67
