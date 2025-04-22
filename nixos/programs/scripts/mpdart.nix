@@ -21,6 +21,8 @@
           get_art
         elif [ "$state" = "stopped" ]; then
           song_old=""
+          clear
+          mpc status
         fi
       done
     '')
