@@ -52,7 +52,7 @@
 
   home-manager.users.larry = {
     home.username = "larry";
-    home.homedirectory = "/home/larry";
+    home.homeDirectory = "/home/larry";
     imports = [
       ../../home
       # inputs.stylix.homemanagermodules.stylix
@@ -156,7 +156,7 @@
   };
   home-manager.users.mela = {
     home.username = "mela";
-    home.homedirectory = "/home/mela";
+    home.homeDirectory = "/home/mela";
     imports = [
       ../../home
       # inputs.stylix.homemanagermodules.stylix
