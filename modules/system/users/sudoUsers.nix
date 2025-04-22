@@ -37,7 +37,6 @@ in {
         lib.nameValuePair user {
           home.username = "${user}";
           home.homeDirectory = "/home/${user}";
-          services.mpdris2.mpd.musicDirectory = "/home/${user}/Music";
           imports = [
             ../../../home
             # inputs.stylix.homeManagerModules.stylix
@@ -47,8 +46,6 @@ in {
             inputs.spicetify-nix.homeManagerModules.default
             inputs.nix-flatpak.homeManagerModules.nix-flatpak
           ];
-          home.file = {
-          };
         })
       users);
   };

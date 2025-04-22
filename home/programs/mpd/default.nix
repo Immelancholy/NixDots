@@ -1,4 +1,6 @@
-{
+{config, ...}: let
+  user = config.home.username;
+in {
   services = {
     mpd = {
       enable = true;
@@ -36,7 +38,10 @@
     };
     mpdris2 = {
       enable = true;
-      mpd.host = "/run/user/1000/mpd/socket";
+      mpd = {
+        host = "/run/user/1000/mpd/socket";
+        musicDirectory = "/home/${user}/Music";
+      };
       notifications = true;
     };
     mpd-discord-rpc = {
