@@ -63,7 +63,6 @@
     wantedBy = ["graphical-session.target"];
   };
   environment.systemPackages = with pkgs; [
-    miniplayer
     brightnessctl
     mpc
     ffmpegthumbnailer
