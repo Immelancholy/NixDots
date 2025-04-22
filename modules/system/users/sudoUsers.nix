@@ -25,7 +25,7 @@ in {
         lib.nameValuePair user {
           isNormalUser = true;
           description = "Account for ${user}";
-          extraGroups = ["mpd" "networkmanager" "wheel" "video" "seat"];
+          extraGroups = ["networkmanager" "wheel" "video" "seat"];
           shell = pkgs.zsh;
           initialPassword = "password";
         })
