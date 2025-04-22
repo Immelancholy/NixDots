@@ -7,11 +7,14 @@
     name = "mpdart";
     src = inputs.mpdart;
 
+    nativeBuildInputs = with pkgs; [
+      libmpdclient
+    ];
+
     buildInputs = with pkgs; [
       ffmpeg
       mpd
       feh
-      libmpdclient
       pkg-config
     ];
     buildPhase = ''
