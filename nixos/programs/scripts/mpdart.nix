@@ -10,9 +10,9 @@
           echo " "
           echo " "
           kitten icat --align=center "$art"
-          playerctl --player=mpd metadata "{{title}}"
+          playerctl --player=mpd metadata --format "{{title}}"
           echo " - "
-          playerctl --player=mpd metadata "{{artist}}"
+          playerctl --player=mpd metadata --format "{{artist}}"
           song_old=$song
         fi
       }
