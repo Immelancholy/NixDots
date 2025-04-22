@@ -1,4 +1,6 @@
-{
+{config, ...}: let
+  user = config.home.username;
+in {
   programs.cava = {
     enable = true;
     settings = {
@@ -16,7 +18,7 @@
       };
       input = {
         method = "fifo";
-        source = "/run/user/1000/mpd_cava.fifo";
+        source = "/run/user/1000/mpd_cava_${user}.fifo";
       };
       smoothing = {
         monstercat = 1;
