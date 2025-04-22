@@ -7,6 +7,7 @@
   status = pkgs.writeShellScriptBin "mpdStatus" ''
     while :
     do
+      clear
       mpc status
     done
   '';
