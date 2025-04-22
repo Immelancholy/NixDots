@@ -7,7 +7,7 @@
           currentTrack=$(playerctl --player=mpd metadata --format "{{title}}")
           art=$(playerctl --player=mpd metadate --format "{{mpris:artUrl}}")
 
-          kitten icat $art
+          ${pkgs.kitty}/bin/kitten icat $art
 
           oldTrack=''${currentTrack}
         done
