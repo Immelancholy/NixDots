@@ -10,10 +10,10 @@
   ];
   disko.devices.disk.main.device = "/dev/sdb";
   userAccounts.users = [
-    "kary"
   ]; # user accounts here
   userAccounts.sudoUsers = [
     "mela"
+    "kary"
   ]; # sudo enabled accounts here (You'll want to go here if you're installing these. )
 
   services.openssh.enable = true;
