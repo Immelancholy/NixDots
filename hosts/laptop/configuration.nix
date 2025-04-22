@@ -40,7 +40,7 @@
     };
   };
 
-  home-manager.users.kary = {
+  home-manager.users.larry = {
     programs.obs-studio.enable = true;
     services.remmina = {
       enable = true;
