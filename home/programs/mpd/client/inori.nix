@@ -23,5 +23,8 @@
 
     [theme.status_album]
     fg = "#cba6f7"
+
+    [theme.album]
+    fg = "#cba6f7"
   '';
 }
