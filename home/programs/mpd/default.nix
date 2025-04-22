@@ -14,6 +14,7 @@ in {
         startWhenNeeded = true;
       };
       musicDirectory = "/home/${user}/Music";
+      dataDir = "/home/${user}/.mpd";
       extraConfig = ''
         restore_paused "yes"
 
