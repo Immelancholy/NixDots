@@ -67,7 +67,8 @@
     mpc
     ffmpegthumbnailer
     libcamera
-    nsxiv
+    imagemagick
+    audacious
     (ffmpeg-full.override {
       withUnfree = true;
       withOpengl = true;
@@ -75,12 +76,12 @@
     })
     (stdenv.mkDerivation {
       name = "kunst";
-      src = inputs.kunst;
+      src = inputs.vindauga;
       phases = ["installPhase" "patchPhase"];
       installPhase = ''
         mkdir -p $out/bin
-        cp $src/kunst $out/bin/kunst
-        chmod +x $out/bin/kunst
+        cp $src/vindauga.sh $out/bin/vindauga
+        chmod +x $out/bin/vindauga
       '';
     })
     libsForQt5.qt5.qtwayland

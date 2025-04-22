@@ -12,8 +12,8 @@
       url = "github:chrissicool/zsh-256color";
       flake = false;
     };
-    kunst = {
-      url = "github:sdushantha/kunst";
+    vindauga = {
+      url = "github:uriel1998/vindauga";
       flake = false;
     };
     disko = {
