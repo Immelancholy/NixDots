@@ -84,10 +84,6 @@
         ];
       };
     };
-    home.sessionVariables = {
-      NOTES_PATH = "/home/mela/Documents/Obsidian-Vault"; # path to notes folder ( for neovim )
-      PROJECTS_PATH = "/home/mela/Documents/Projects"; # path to Projects folder ( for neovim )
-    };
     home.packages = with pkgs; [
       teams-for-linux
       obsidian

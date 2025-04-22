@@ -1,9 +1,4 @@
 {
-  pkgs,
-  lib,
-  scriptBin,
-  ...
-}: {
   programs.kitty = {
     enable = true;
     shellIntegration.enableZshIntegration = true;
@@ -31,23 +26,4 @@
       cursor_blink_interval 0.5 ease-in-out
     '';
   };
-  # xdg.desktopEntries = {
-  #   kitty = {
-  #     name = "Kitty";
-  #     genericName = "Terminal emulator";
-  #     comment = "Fast, feature-rich, GPU based terminal";
-  #     exec = "${lib.getExe pkgs.kitty} --hold ${./scripts/poke.sh}";
-  #     type = "Application";
-  #     categories = ["System" "TerminalEmulator"];
-  #     icon = "kitty";
-  #     startupNotify = true;
-  #     settings = {
-  #       X-TerminalArgExec = "--";
-  #       X-TerminalArgTitle = "--title";
-  #       X-TerminalArgAppId = "--class";
-  #       X-TerminalArgDir = "--working-directory";
-  #       X-TerminalArgHold = "--hold";
-  #     };
-  #   };
-  # };
 }

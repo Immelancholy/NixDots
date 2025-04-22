@@ -46,12 +46,6 @@
         file = "share/zsh-nix-shell/nix-shell.plugin.zsh";
       }
     ];
-    # profileExtra = ''
-    #   eval $(gnome-keyring-daemon --start --daemonize)
-    #   if ${pkgs.uwsm}/bin/uwsm check may-start; then
-    #     exec ${pkgs.uwsm}/bin/uwsm start hyrpland-uwsm.desktop
-    #   fi
-    # '';
     initExtra = ''
       source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
       source <(fzf --zsh)

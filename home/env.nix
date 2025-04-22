@@ -18,6 +18,8 @@
     GDK_SCALE = "1";
     GRIMBLAST_EDITOR = "swappy";
     MPD_HOST = "/run/user/1000/mpd/socket";
+    NOTES_PATH = "$HOME/Documents/Obsidian-Vault"; # path to notes folder ( for neovim )
+    PROJECTS_PATH = "$HOME/Documents/Projects"; # path to Projects folder ( for neovim )
   };
 
   systemd.user.sessionVariables = {
