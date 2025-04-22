@@ -72,7 +72,16 @@
       withOpengl = true;
       withRtmp = true;
     })
-    (writeShellScriptBin "kunst" (builtins.readFile /${inputs.kunst}/kunst))
+    (stdenv.mkDerivation {
+      name = "kunst";
+      src = inputs.kunst;
+      phases = ["installPhase" "patchPhase"];
+      installPhase = ''
+        mkdir -p $our/bin
+        cp $src/kunst $out/bin/kunst
+        chmod +x $out/bin/kunst
+      '';
+    })
     libsForQt5.qt5.qtwayland
     kdePackages.qtwayland
     inputs.swww.packages.${pkgs.system}.swww
