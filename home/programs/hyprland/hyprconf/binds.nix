@@ -61,10 +61,10 @@
       ", mouse:277, exec, $playerctl play-pause" # toggle between media play and pause
     ];
     bindel = [
-      ", XF86AudioLowerVolume, exec, uwsm-app -- rmpc volume -1" # decrease volume
-      ", XF86AudioRaiseVolume, exec, uwsm-app -- rmpc volume +1" # increase volume
-      ", mouse:281, exec, uwsm-app -- rmpc volume +1" # volume up
-      ", mouse:282, exec, uwsm-app -- rmpc volume -1" # volume down
+      ", XF86AudioLowerVolume, exec, uwsm-app -- mpc volume -1" # decrease volume
+      ", XF86AudioRaiseVolume, exec, uwsm-app -- mpc volume +1" # increase volume
+      ", mouse:281, exec, uwsm-app -- mpc volume +1" # volume up
+      ", mouse:282, exec, uwsm-app -- mpc volume -1" # volume down
       ", XF86MonBrightnessUp, exec, brightness inc"
       ", XF86MonBrightnessDown, exec, brightness dec"
     ];
@@ -79,8 +79,8 @@
     bind = $mods, P, submap, player
     submap = player
     bindl = , P, exec, $playerctl play-pause
-    bindel  = , O, exec, uwsm-app -- rmpc volume +1 # volume up
-    bindel  = , I, exec, uwsm-app -- rmpc volume -1 # volume down
+    bindel  = , O, exec, uwsm-app -- mpc volume +1 # volume up
+    bindel  = , I, exec, uwsm-app -- mpc volume -1 # volume down
     bindel  = Shift, O, exec, $playerctl next # next
     bindel  = Shift, I, exec, $playerctl previous # next
     bind = , escape, submap, reset
