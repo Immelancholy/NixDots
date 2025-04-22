@@ -17,12 +17,15 @@
 
     [theme.playing]
     fg = "#cba6f7"
+    add_modifier = "HIDDEN"
 
     [theme.status_artist]
     fg = "#89dceb"
+    add_modifier = "HIDDEN"
 
     [theme.status_album]
     fg = "#cba6f7"
+    add_modifier = "HIDDEN"
 
     [theme.album]
     fg = "#cba6f7"
