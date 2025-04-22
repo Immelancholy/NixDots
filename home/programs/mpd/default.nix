@@ -9,6 +9,9 @@ in {
   home.file.".mpd/.keep".text = ''
 
   '';
+  # osConfig.users.users.mpd = {
+  #
+  # };
   services = {
     mpd = {
       enable = true;
@@ -17,7 +20,6 @@ in {
         startWhenNeeded = true;
       };
       musicDirectory = "/home/${user}/Music";
-      dataDir = "/home/${user}/.mpd";
       extraConfig = ''
         restore_paused "yes"
 
@@ -26,6 +28,8 @@ in {
         auto_update_depth "4"
         follow_outside_symlinks	"yes"
         follow_inside_symlinks		"yes"
+        user mpd
+        group mpd
         audio_output {
           type  "fifo"
           name  "mpd_cava"
