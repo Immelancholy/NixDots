@@ -137,7 +137,7 @@
           catppuccin.nixosModules.catppuccin
           ./nixos
           ./modules/system
-          ./hosts
+          ./hosts/desktop
 
           home-manager.nixosModules.home-manager
           {
@@ -162,7 +162,7 @@
           catppuccin.nixosModules.catppuccin
           ./nixos
           ./modules/system
-          ./hosts
+          ./hosts/laptop
 
           home-manager.nixosModules.home-manager
           {
