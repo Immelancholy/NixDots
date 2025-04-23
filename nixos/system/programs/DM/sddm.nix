@@ -7,22 +7,22 @@
 with lib; let
   cfg = config.displayManager.sddm;
 
-  base = "#${config.lib.stylix.colors.base00}";
-  mantle = "#${config.lib.stylix.colors.base01}";
-  surface0 = "#${config.lib.stylix.colors.base02}";
-  surface1 = "#${config.lib.stylix.colors.base03}";
-  surface2 = "#${config.lib.stylix.colors.base04}";
-  text = "#${config.lib.stylix.colors.base05}";
-  rosewater = "#${config.lib.stylix.colors.base06}";
-  lavender = "#${config.lib.stylix.colors.base07}";
-  red = "#${config.lib.stylix.colors.base08}";
-  peach = "#${config.lib.stylix.colors.base09}";
-  yellow = "#${config.lib.stylix.colors.base0A}";
-  green = "#${config.lib.stylix.colors.base0B}";
-  teal = "#${config.lib.stylix.colors.base0C}";
-  blue = "#${config.lib.stylix.colors.base0D}";
-  mauve = "#${config.lib.stylix.colors.base0E}";
-  flamingo = "#${config.lib.stylix.colors.base0F}";
+  {base} = "#${config.lib.stylix.colors.base00}";
+  mantle = "#${config.lib.stylix.colors.{base}01}";
+  surface0 = "#${config.lib.stylix.colors.{base}02}";
+  surface1 = "#${config.lib.stylix.colors.{base}03}";
+  {surface2} = "#${config.lib.stylix.colors.{base}04}";
+  {text} = "#${config.lib.stylix.colors.{base}05}";
+  rosewater = "#${config.lib.stylix.colors.{base}06}";
+  lavender = "#${config.lib.stylix.colors.{base}07}";
+  {red} = "#${config.lib.stylix.colors.{base}08}";
+  peach = "#${config.lib.stylix.colors.{base}09}";
+  yellow = "#${config.lib.stylix.colors.{base}0A}";
+  green = "#${config.lib.stylix.colors.{base}0B}";
+  teal = "#${config.lib.stylix.colors.{base}0C}";
+  blue = "#${config.lib.stylix.colors.{base}0D}";
+  {mauve} = "#${config.lib.stylix.colors.{base}0E}";
+  flamingo = "#${config.lib.stylix.colors.{base}0F}";
 in {
   options.displayManager.sddm = {
     enable = mkOption {
@@ -74,54 +74,51 @@ in {
 
           RoundCorners = "20";
 
-          BackgroundPlaceholder = mkIf (!cfg.animatedBackground.enable) "${config.stylix.image}";
-          Background =
-            if cfg.animatedBackground.enable
-            then "${cfg.animatedBackground.path}"
-            else "${config.stylix.image}";
+          BackgroundPlaceholder = "${config.stylix.image}";
+          Background = "${cfg.animatedBackground.path}";
           BackgroundSpeed = "1.0";
           PauseBackground = "";
           CropBackground = "false";
           BackgroundHorizontalAlignment = "center";
           BackgroundVerticalAlignment = "center";
           DimBackground = "0.0";
-          HeaderTextColor = "$text";
-          DateTextColor = "$text";
-          TimeTextColor = "$text";
+          HeaderTextColor = "${text}";
+          DateTextColor = "${text}";
+          TimeTextColor = "${text}";
 
-          FormBackgroundColor = "$base";
-          BackgroundColor = "$base";
-          DimBackgroundColor = "$base";
+          FormBackgroundColor = "${base}";
+          BackgroundColor = "${base}";
+          DimBackgroundColor = "${base}";
 
-          LoginFieldBackgroundColor = "#$base";
-          PasswordFieldBackgroundColor = "$base";
-          LoginFieldTextColo = "$mauve";
-          PasswordFieldTestColor = "$mauve";
-          UserIconColor = "$mauve";
-          PasswordIconColor = "$mauve";
+          LoginFieldBackgroundColor = "#${base}";
+          PasswordFieldBackgroundColor = "${base}";
+          LoginFieldTextColo = "${mauve}";
+          PasswordFieldTestColor = "${mauve}";
+          UserIconColor = "${mauve}";
+          PasswordIconColor = "${mauve}";
 
-          PlaceholderTextColor = "$surface2";
-          WarningColor = "$red";
+          PlaceholderTextColor = "${surface2}";
+          WarningColor = "${red}";
 
-          LoginButtonTextColor = "$mauve";
-          LoginButtonBackgroundColor = "$base";
-          SystemButtonsIconsColor = "$mauve";
-          SessionButtonTextColor = "$mauve";
-          VirtualKeyboardButtonTextColor = "$mauve";
+          LoginButtonTextColor = "${mauve}";
+          LoginButtonBackgroundColor = "${base}";
+          SystemButtonsIconsColor = "${mauve}";
+          SessionButtonTextColor = "${mauve}";
+          VirtualKeyboardButtonTextColor = "${mauve}";
 
-          DropdownTextColor = "$mauve";
-          DropdownSelectedBackgroundColorrr = "$base";
-          DropdownBackgroundColor = "$base";
+          DropdownTextColor = "${mauve}";
+          DropdownSelectedBackgroundColorrr = "${base}";
+          DropdownBackgroundColor = "${base}";
 
-          HighlightTextColor = "$mauve";
-          HighlightBackgroundColor = "$mauve";
-          HighlightBorderColor = "$mauve";
+          HighlightTextColor = "${mauve}";
+          HighlightBackgroundColor = "${mauve}";
+          HighlightBorderColor = "${mauve}";
 
-          HoverUserIconColor = "$red";
-          HoverPasswordIconColor = "$red";
-          HoverSystemButtonsIconColor = "$red";
-          HoverSessionButtonTextColor = "$red";
-          HoverVirtualKeyboardButtonTextColor = "$red";
+          HoverUserIconColor = "${red}";
+          HoverPasswordIconColor = "${red}";
+          HoverSystemButtonsIconColor = "${red}";
+          HoverSessionButtonTextColor = "${red}";
+          HoverVirtualKeyboardButtonTextColor = "${red}";
 
           PartialBlue = "true";
           BlurMax = "35";
