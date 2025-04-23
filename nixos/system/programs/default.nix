@@ -155,7 +155,7 @@
     gawk
     zstd
     gnupg
-    neo
+    notcurses
 
     # nix related
     #

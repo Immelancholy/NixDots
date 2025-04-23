@@ -37,12 +37,6 @@ in {
       "autostart/input-mapper-autoload.desktop" = lib.mkIf nixosConfig.services.input-remapper.enable {
         source = "${nixosConfig.services.input-remapper.package}/share/applications/input-remapper-autoload.desktop";
       };
-      "neo/colors".text = ''
-        neo_color_version 1
-        -1
-        magenta
-        purple
-      '';
     };
   };
   home.file = {
