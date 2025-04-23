@@ -35,7 +35,7 @@
         blue = mkLiteral "#${config.lib.stylix.colors.base0D}";
         mauve = mkLiteral "#${config.lib.stylix.colors.base0E}EE";
         flamingo = mkLiteral "#${config.lib.stylix.colors.base0F}cd";
-        wallpaper = mkLiteral ''url("${../../backgrounds/Neon-Beast-Girl.png}", width)'';
+        wallpaper = mkLiteral ''url("${config.lib.stylix.image}", width)'';
 
         lines = mkLiteral "6";
         columns = mkLiteral "1";
