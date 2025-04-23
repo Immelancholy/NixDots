@@ -27,7 +27,6 @@
       waybar.enable = false;
       tmux.enable = false;
       yazi.enable = false;
-      nixvim.enable = false;
       btop.enable = false;
       spicetify.enable = false;
       kitty.enable = false;
