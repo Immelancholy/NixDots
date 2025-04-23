@@ -3,7 +3,7 @@
     settings = {
       "$base" = "${config.lib.stylix.colors.base00}";
       "$mantle" = "${config.lib.stylix.colors.base01}";
-      "surface0" = "${config.lib.stylix.colors.base02}";
+      "$surface0" = "${config.lib.stylix.colors.base02}";
       "$surface1" = "${config.lib.stylix.colors.base03}";
       "$surface2" = "${config.lib.stylix.colors.base04}";
       "$text" = "${config.lib.stylix.colors.base05}";
