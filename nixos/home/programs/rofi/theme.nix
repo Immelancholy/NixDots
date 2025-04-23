@@ -158,7 +158,7 @@
         text-color = mkLiteral "@text-dark";
       };
       "element normal.active" = {
-        background-color = mkLiteral "@teal";
+        background-color = mkLiteral "@lavender";
         text-color = mkLiteral "@text-dark";
       };
       "element selected.normal" = {
