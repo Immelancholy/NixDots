@@ -4,7 +4,8 @@
 
       function notify_volume() {
         # Function to show brightness notification
-        VOLUME_PERCENT=''${$(mpc volume | sed 's/.*://')%?}
+        VOLUME=$(mpc volume | sed 's/.*://')
+        VOLUME_PERCENT="''${VOLUME%f}"
 
         dunstctl close-all
         dunstify -t 3000 -a "  Volume" -h int:value:"$VOLUME_PERCENT" "$VOLUME_PERCENT""%"
@@ -25,7 +26,7 @@
           mpc volume +1 > /dev/null
           notify_volume
         elif [[ "$1" == "dec" ]]; then
-          mpv volume set -1 > /dev/null
+          mpc volume set -1 > /dev/null
           notify_volume
         fi
       }
