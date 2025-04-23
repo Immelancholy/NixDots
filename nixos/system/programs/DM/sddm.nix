@@ -74,10 +74,10 @@ in {
 
           RoundCorners = "20";
 
-          BackgroundPlaceholder = mkIf (!cfg.displayManager.sddm.animatedBackground.enable) "${config.stylix.image}";
+          BackgroundPlaceholder = mkIf (!cfg.animatedBackground.enable) "${config.stylix.image}";
           Background =
-            if cfg.displayManager.sddm.animatedBackground.enable
-            then "${config.animatedBackground.path}"
+            if cfg.animatedBackground.enable
+            then "${cfg.animatedBackground.path}"
             else "${config.stylix.image}";
           BackgroundSpeed = "1.0";
           PauseBackground = "";
