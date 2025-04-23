@@ -24,7 +24,7 @@ in {
         enable_posix_regex = true;
         frame_color = "${mauve}c0";
         separator_color = "frame";
-        highlight = "${teal}c0";
+        highlight = "${mauve}c0";
         gaps_size = 4;
         frame_width = 2;
         corner_radius = 20;
