@@ -1,6 +1,7 @@
 {
   inputs,
   config,
+  pkgs,
   ...
 }: {
   disko.devices.disk.main.device = "/dev/sdb";
@@ -13,6 +14,13 @@
   imports = [
     ./users
   ];
+
+  stylix = {
+    base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
+    polarity = "dark";
+
+    image = ../../nixos/home/backgrounds/Neon-Beast-Girl.png;
+  };
 
   services.openssh.enable = true;
 
@@ -69,7 +77,13 @@
   };
 
   displayManager = {
-    sddm.enable = true;
+    sddm = {
+      enable = true;
+      animatedBackground = {
+        enable = true;
+        # path =
+      };
+    };
     tuiGreet.enable = false;
   };
 
