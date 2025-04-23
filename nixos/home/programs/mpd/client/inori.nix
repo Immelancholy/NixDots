@@ -37,7 +37,7 @@ in {
     fg = "${mauve}"
 
     [theme.playing]
-    fg = "${yellow}"
+    fg = "${green}"
     add_modifier = "HIDDEN"
 
     [theme.paused]
