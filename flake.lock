@@ -1253,22 +1253,6 @@
         "type": "github"
       }
     },
-    "mpdart": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1570488583,
-        "narHash": "sha256-Ipm28u86Mdj4b1jxfZg58dx1pIu3SKPb/vlt3AvovGI=",
-        "owner": "zoefiri",
-        "repo": "mpdart",
-        "rev": "4e9d398820b5628f5decd24d7dcb5c146bd49acb",
-        "type": "github"
-      },
-      "original": {
-        "owner": "zoefiri",
-        "repo": "mpdart",
-        "type": "github"
-      }
-    },
     "neovim-nightly-overlay": {
       "inputs": {
         "flake-compat": "flake-compat_3",
@@ -1674,7 +1658,6 @@
         "hyprland-plugins": "hyprland-plugins",
         "hyprtasking": "hyprtasking",
         "lanzaboote": "lanzaboote",
-        "mpdart": "mpdart",
         "neovim-nightly-overlay": "neovim-nightly-overlay",
         "nix-flatpak": "nix-flatpak",
         "nixpkgs": "nixpkgs_4",
