@@ -174,7 +174,6 @@
 
   services.mpdchck = {
     enable = true;
-    address = "/run/user/1000/mpd/socket";
   };
 
   drivers = {
