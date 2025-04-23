@@ -18,22 +18,23 @@
       inherit (config.lib.formats.rasi) mkLiteral;
     in {
       "*" = {
-        base = mkLiteral "#${config.lib.stylix.colors.base00}";
-        mantle = mkLiteral "#${config.lib.stylix.colors.base01}";
+        base = mkLiteral "#${config.lib.stylix.colors.base00}BB";
+        mantle = mkLiteral "#${config.lib.stylix.colors.base01}BB";
         surface0 = mkLiteral "#${config.lib.stylix.colors.base02}";
         surface1 = mkLiteral "#${config.lib.stylix.colors.base03}";
         surface2 = mkLiteral "#${config.lib.stylix.colors.base04}";
         text = mkLiteral "#${config.lib.stylix.colors.base05}";
-        rosewater = mkLiteral "#${config.lib.stylix.colors.base06}";
+        text-dark = mkLiteral "#${config.lib.stylix.colors.base00}";
+        rosewater = mkLiteral "#${config.lib.stylix.colors.base06}dc";
         lavender = mkLiteral "#${config.lib.stylix.colors.base07}";
-        red = mkLiteral "#${config.lib.stylix.colors.base08}";
+        red = mkLiteral "#${config.lib.stylix.colors.base08}EE";
         peach = mkLiteral "#${config.lib.stylix.colors.base09}";
         yellow = mkLiteral "#${config.lib.stylix.colors.base0A}";
         green = mkLiteral "#${config.lib.stylix.colors.base0B}";
-        teal = mkLiteral "#${config.lib.stylix.colors.base0C}";
+        teal = mkLiteral "#${config.lib.stylix.colors.base0C}EE";
         blue = mkLiteral "#${config.lib.stylix.colors.base0D}";
-        mauve = mkLiteral "#${config.lib.stylix.colors.base0E}";
-        flamingo = mkLiteral "#${config.lib.stylix.colors.base0F}";
+        mauve = mkLiteral "#${config.lib.stylix.colors.base0E}EE";
+        flamingo = mkLiteral "#${config.lib.stylix.colors.base0F}cd";
         wallpaper = mkLiteral ''url("${../../backgrounds/Neon-Beast-Girl.png}", width)'';
 
         lines = mkLiteral "6";
