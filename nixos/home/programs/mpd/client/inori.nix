@@ -27,28 +27,28 @@ in {
     qwerty_keybindings = true
 
     [theme.item_highlight_active]
-    fg = "#${mantle}"
-    bg = "#${mauve}"
+    fg = "${mantle}"
+    bg = "${mauve}"
 
     [theme.item_highlight_inactive]
-    fg = "#${text}"
+    fg = "${text}"
 
     [theme.block_active]
-    fg = "#${mauve}"
+    fg = "${mauve}"
 
     [theme.playing]
-    fg = "#${mauve}"
+    fg = "${mauve}"
     add_modifier = "HIDDEN"
 
     [theme.status_artist]
-    fg = "#${teal}"
+    fg = "${teal}"
     add_modifier = "HIDDEN"
 
     [theme.status_album]
-    fg = "#${mauve}"
+    fg = "${mauve}"
     add_modifier = "HIDDEN"
 
     [theme.album]
-    fg = "#${mauve}"
+    fg = "${mauve}"
   '';
 }
