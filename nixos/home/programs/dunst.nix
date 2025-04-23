@@ -22,9 +22,9 @@ in {
       global = {
         follow = "keyboard";
         enable_posix_regex = true;
-        frame_color = "#${mauve}c0";
+        frame_color = "${mauve}c0";
         separator_color = "frame";
-        highlight = "#${base}c0";
+        highlight = "${teal}c0";
         gaps_size = 4;
         frame_width = 2;
         corner_radius = 20;
@@ -44,17 +44,17 @@ in {
         dmenu = "rofi -dmenu";
       };
       urgency_low = {
-        background = "#${base}99";
-        foreground = "#${text}";
+        background = "${base}99";
+        foreground = "${text}";
       };
       urgency_normal = {
-        background = "#${base}99";
-        foreground = "#${text}";
+        background = "${base}99";
+        foreground = "${text}";
       };
       urgency_critical = {
-        background = "#${base}99";
-        foreground = "#${text}";
-        frame_color = "#f38ba8c0";
+        background = "${base}99";
+        foreground = "${text}";
+        frame_color = "${red}c0";
       };
     };
   };
