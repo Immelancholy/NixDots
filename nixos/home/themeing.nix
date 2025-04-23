@@ -11,7 +11,6 @@
     };
     btop = {
       enable = true;
-      flavor = "mocha";
     };
     waybar.enable = false;
     dunst = {
@@ -19,7 +18,6 @@
     };
     tmux = {
       enable = true;
-      flavor = "mocha";
       extraConfig = ''
 
         set -g @catppuccin_window_status_style "rounded"
