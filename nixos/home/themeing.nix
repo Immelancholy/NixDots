@@ -36,10 +36,6 @@
     kitty = {
       enable = true;
     };
-    cava = {
-      enable = true;
-      transparent = true;
-    };
     lazygit = {
       enable = true;
     };
