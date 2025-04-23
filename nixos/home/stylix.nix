@@ -35,7 +35,7 @@
         plugin = "base16-nvim";
         transparentBackground = {
           main = true;
-          signColumn = true;
+          signColumn = false;
         };
       };
     };
