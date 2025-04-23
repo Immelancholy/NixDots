@@ -37,11 +37,14 @@ in {
     fg = "${mauve}"
 
     [theme.playing]
-    fg = "${mauve}"
+    fg = "${green}"
     add_modifier = "HIDDEN"
 
+    [theme.paused]
+    fg = "${yellow}"
+
     [theme.status_artist]
-    fg = "${teal}"
+    fg = "${red}"
     add_modifier = "HIDDEN"
 
     [theme.status_album]
