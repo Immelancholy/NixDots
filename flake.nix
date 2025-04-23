@@ -128,7 +128,7 @@
   in {
     formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
     nixosConfigurations = {
-      desktop = nixpkgs.lib.nixosSystem {
+      nix-relic-desktop = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = {inherit inputs;};
         modules = [
@@ -153,7 +153,7 @@
           }
         ];
       };
-      laptop = nixpkgs.lib.nixosSystem {
+      nix-relic-laptop = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = {inherit inputs;};
         modules = [

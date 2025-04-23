@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   home-manager.users.mela = {
     programs.obs-studio.enable = true;
     services.remmina = {

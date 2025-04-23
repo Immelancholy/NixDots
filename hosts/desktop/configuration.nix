@@ -5,6 +5,7 @@
 }: {
   disko.devices.disk.main.device = "/dev/nvme0n1";
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
+  networking.hostName = "nix-relic-desktop";
   userAccounts.users = [];
   userAccounts.sudoUsers = ["mela"];
 
@@ -34,7 +35,6 @@
 
   environment.sessionVariables = {
     FLAKE_PATH = "/home/mela/NixDots"; # path to flake.nix
-    SYSTEM = ".#desktop";
     FRAMERATE = 144;
   };
 
