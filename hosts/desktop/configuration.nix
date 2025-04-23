@@ -74,7 +74,13 @@
   };
 
   displayManager = {
-    sddm.enable = true;
+    sddm = {
+      enable = true;
+      animatedBackground = {
+        enable = true;
+        # path =
+      };
+    };
     tuiGreet.enable = false;
   };
 
