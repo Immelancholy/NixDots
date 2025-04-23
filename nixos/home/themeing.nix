@@ -33,9 +33,6 @@
         set -ag status-right "#{E:@catppuccin_status_uptime}"
       '';
     };
-    kitty = {
-      enable = true;
-    };
     lazygit = {
       enable = true;
     };
