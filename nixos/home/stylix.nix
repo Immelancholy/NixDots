@@ -30,8 +30,14 @@
       btop.enable = false;
       spicetify.enable = false;
       kitty.enable = false;
-      nixvim.enable = false;
       gtk.flatpakSupport.enable = true;
+      nixvim = {
+        plugin = "base16-nvim";
+        transparentBackground = {
+          main = true;
+          signColumn = true;
+        };
+      };
     };
   };
 }
