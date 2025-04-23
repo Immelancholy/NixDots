@@ -4,7 +4,7 @@
   ...
 }: {
   home-manager.users.mela = {
-    catpuccin = {
+    catppuccin = {
       flavor = "mocha";
       accent = "mauve";
     };
