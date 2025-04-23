@@ -11,17 +11,17 @@ with lib; let
   mantle = "#${config.lib.stylix.colors.base01}";
   surface0 = "#${config.lib.stylix.colors.base02}";
   surface1 = "#${config.lib.stylix.colors.base03}";
-  {surface2} = "#${config.lib.stylix.colors.base04}";
-  {text} = "#${config.lib.stylix.colors.base05}";
+  surface2 = "#${config.lib.stylix.colors.base04}";
+  text = "#${config.lib.stylix.colors.base05}";
   rosewater = "#${config.lib.stylix.colors.base06}";
   lavender = "#${config.lib.stylix.colors.base07}";
-  {red} = "#${config.lib.stylix.colors.base08}";
+  red = "#${config.lib.stylix.colors.base08}";
   peach = "#${config.lib.stylix.colors.base09}";
   yellow = "#${config.lib.stylix.colors.base0A}";
   green = "#${config.lib.stylix.colors.base0B}";
   teal = "#${config.lib.stylix.colors.base0C}";
   blue = "#${config.lib.stylix.colors.base0D}";
-  {mauve} = "#${config.lib.stylix.colors.base0E}";
+  mauve = "#${config.lib.stylix.colors.base0E}";
   flamingo = "#${config.lib.stylix.colors.base0F}";
 in {
   options.displayManager.sddm = {
@@ -114,11 +114,11 @@ in {
           HighlightBackgroundColor = "${mauve}";
           HighlightBorderColor = "${mauve}";
 
-          HoverUserIconColor = "${red}";
-          HoverPasswordIconColor = "${red}";
-          HoverSystemButtonsIconColor = "${red}";
-          HoverSessionButtonTextColor = "${red}";
-          HoverVirtualKeyboardButtonTextColor = "${red}";
+          HoverUserIconColor = "${teal}";
+          HoverPasswordIconColor = "${teal}";
+          HoverSystemButtonsIconColor = "${teal}";
+          HoverSessionButtonTextColor = "${teal}";
+          HoverVirtualKeyboardButtonTextColor = "${teal}";
 
           PartialBlue = "true";
           BlurMax = "35";
