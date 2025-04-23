@@ -40,8 +40,8 @@ in {
       "neo/colors".text = ''
         neo_color_version 1
         -1
-        5
-        13
+        magenta
+        purple
       '';
     };
   };
