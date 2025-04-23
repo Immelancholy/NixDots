@@ -6,9 +6,6 @@
   catppuccin = {
     flavor = "mocha";
     accent = "mauve";
-    yazi = {
-      enable = true;
-    };
     btop = {
       enable = true;
     };
