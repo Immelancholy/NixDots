@@ -12,7 +12,7 @@ in {
         autoLoad = true;
         enable = true;
         settings = {
-          flavour = "mocha";
+          flavour = config.catppuccin.flavor;
           default_integrations = true;
           integrations = {
             cmp = true;

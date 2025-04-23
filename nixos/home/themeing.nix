@@ -4,17 +4,7 @@
   ...
 }: {
   catppuccin = {
-    flavor = "mocha";
-    accent = "mauve";
-    btop = {
-      enable = true;
-    };
-    waybar.enable = false;
-    dunst = {
-      enable = false;
-    };
     tmux = {
-      enable = true;
       extraConfig = ''
 
         set -g @catppuccin_window_status_style "rounded"
@@ -25,9 +15,6 @@
         set -ag status-right "#{E:@catppuccin_status_session}"
         set -ag status-right "#{E:@catppuccin_status_uptime}"
       '';
-    };
-    lazygit = {
-      enable = true;
     };
     obs = {
       enable = true;

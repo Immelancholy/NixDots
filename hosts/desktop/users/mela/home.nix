@@ -4,6 +4,10 @@
   ...
 }: {
   home-manager.users.mela = {
+    catpuccin = {
+      flavor = "mocha";
+      accent = "mauve";
+    };
     stylix.targets = {
       tmux.enable = false;
       yazi.enable = false;

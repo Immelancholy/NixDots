@@ -4,6 +4,18 @@
   ...
 }: {
   home-manager.users.mela = {
+    catpuccin = {
+      flavor = "mocha";
+      accent = "mauve";
+    };
+    stylix.targets = {
+      tmux.enable = false;
+      yazi.enable = false;
+      btop.enable = false;
+      spicetify.enable = false;
+      kitty.enable = false;
+      nixvim.enable = false;
+    };
     programs.obs-studio.enable = true;
     services.remmina = {
       enable = true;
