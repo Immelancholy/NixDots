@@ -32,10 +32,10 @@
       kitty.enable = false;
       gtk.flatpakSupport.enable = true;
       nixvim = {
-        plugin = "base16-nvim";
+        plugin = "mini.base16";
         transparentBackground = {
           main = true;
-          signColumn = false;
+          signColumn = true;
         };
       };
     };
