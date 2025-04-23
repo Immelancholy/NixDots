@@ -26,7 +26,7 @@
           mpc volume +1 > /dev/null
           notify_volume
         elif [[ "$1" == "dec" ]]; then
-          mpc volume set -1 > /dev/null
+          mpc volume -1 > /dev/null
           notify_volume
         fi
       }
