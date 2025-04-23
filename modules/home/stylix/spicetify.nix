@@ -1,10 +1,12 @@
 {
   config,
   lib,
+  inputs,
   ...
 }:
 with lib; let
   cfg = config.stylix.targets.spicetify;
+  spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.stdenv.system};
 in {
   config = mkIf (!cfg.enable) {
     programs.spicetify = {
