@@ -51,7 +51,7 @@
     }
 
     #workspaces button:hover {
-        background: alpha(@blue, 0.92);
+        background: alpha(@teal, 0.92);
         color: @surface0;
         animation: ws_hover 20s ease-in-out 1;
         transition: all 0.3s cubic-bezier(.55, -0.68, .48, 1.682);
