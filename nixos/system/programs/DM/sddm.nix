@@ -7,7 +7,7 @@
 with lib; let
   cfg = config.displayManager.sddm;
 
-  {base} = "#${config.lib.stylix.colors.base00}";
+  base = "#${config.lib.stylix.colors.base00}";
   mantle = "#${config.lib.stylix.colors.base01}";
   surface0 = "#${config.lib.stylix.colors.base02}";
   surface1 = "#${config.lib.stylix.colors.base03}";
