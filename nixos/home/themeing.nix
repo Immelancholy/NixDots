@@ -8,8 +8,6 @@
     accent = "mauve";
     yazi = {
       enable = true;
-      accent = "mauve";
-      flavor = "mocha";
     };
     btop = {
       enable = true;
