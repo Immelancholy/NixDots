@@ -54,7 +54,6 @@ in {
         run neo-color
       '';
     };
-    activationPackage = neo-color;
     extraActivationPath = [
       "/run/current-system/sw"
     ];
