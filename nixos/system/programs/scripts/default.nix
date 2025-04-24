@@ -10,7 +10,7 @@
     ./checkshell.nix
     ./cliphist.nix
     ./mpdart.nix
-    ./pipes.nix
+    ./neo.nix
     ./swww.nix
     ./tmux_dev.nix
     ./tmux_nix.nix
