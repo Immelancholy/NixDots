@@ -41,8 +41,9 @@
       -1
       ''${lavender:11}
       ''${mauve:11}
-      ''${blue:11}
       ''${teal:11}
+      ''${yellow:11}
+      ''${blue:11}
       ''${text:11}
     EOF
   '';
