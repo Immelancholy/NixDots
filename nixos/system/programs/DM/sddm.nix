@@ -75,7 +75,10 @@ in {
           RoundCorners = "20";
 
           BackgroundPlaceholder = "${config.stylix.image}";
-          Background = "${cfg.animatedBackground.video}";
+          Background =
+            if cfg.animatedBackground.enable
+            then "${cfg.animatedBackground.video}"
+            else "${config.stylix.image}";
           BackgroundSpeed = "1.0";
           PauseBackground = "";
           CropBackground = "false";
