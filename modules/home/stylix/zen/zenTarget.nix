@@ -1,6 +1,7 @@
 {
   config,
   lib,
+  inputs,
   ...
 }: let
   cfg = config.stylix.targets.zen;
