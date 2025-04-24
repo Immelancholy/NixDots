@@ -36,7 +36,8 @@
     yellow=$(colortrans ${yellow} | sed -n '2p' | awk '{print $8}')
 
     if [ ! -d "$neoDir" ]; then
-      mkdir -p XDG_CONFIG_HOME/neo
+      echo "Making Neo Directory"
+      mkdir -p "$neoDir"
     fi
 
     cat >"$neoColorFile" <<EOF
