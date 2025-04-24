@@ -77,7 +77,7 @@ in {
           BackgroundPlaceholder = "${config.stylix.image}";
           Background =
             if cfg.animatedBackground.enable
-            then "${cfg.animatedBackground.video}"
+            then "${cfg.animatedBackground.path}"
             else "${config.stylix.image}";
           BackgroundSpeed = "1.0";
           PauseBackground = "";
