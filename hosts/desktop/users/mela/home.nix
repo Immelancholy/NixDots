@@ -16,7 +16,7 @@
       kitty.enable = false;
       nixvim.enable = false;
     };
-    zen.stylix.enable = false;
+    zen.theme.enable = false;
     programs.obs-studio.enable = true;
     programs.git = {
       enable = true;
