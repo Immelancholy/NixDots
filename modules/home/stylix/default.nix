@@ -6,6 +6,6 @@
     ./btop.nix
     ./spicetify.nix
     ./tmux.nix
-    ./zen
+    ./zenTarget.nix
   ];
 }
