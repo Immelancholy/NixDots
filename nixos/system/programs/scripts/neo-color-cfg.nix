@@ -32,17 +32,25 @@
     peach=$(colortrans ${peach} | sed -n '2p' | awk '{print $8}')
     red=$(colortrans ${red} | sed -n '2p' | awk '{print $8}')
 
+    teal="''${teal:11}"
+    blue="''${blue:11}"
+    lavender="''${lavender:11}"
+    mauve="''${mauve:11}"
+    flamingo="''${flamingo:11}"
+    peach="''${peach:11}"
+    red="''${red:11}"
+
 
     echo >"$neoColorFile" <<EOF
       neo_color_version 1
       -1
-      ''${red:11}
-      ''${peach:11}
-      ''${flamingo:11}
-      ''${mauve:11}
-      ''$lavender:11}
-      ''${blue:11}
-      ''${teal:11}
+      $red
+      $peach
+      $flamingo
+      $mauve
+      $lavender
+      $blue
+      $teal
     EOF
   '';
 in {
