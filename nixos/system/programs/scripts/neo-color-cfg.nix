@@ -45,11 +45,11 @@
       neo_color_version 1
       -1
       $teal
-      $blue
       $lavender
-      $mauve
-      $peach
       $red
+      $peach
+      $blue
+      $mauve
       $flamingo
     EOF
   '';
