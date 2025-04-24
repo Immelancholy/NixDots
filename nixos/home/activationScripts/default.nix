@@ -1,0 +1,5 @@
+{
+  imports = [
+    ./neo-color.nix
+  ];
+}
