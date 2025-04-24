@@ -13,7 +13,7 @@ in {
     enable = mkEnableOption "Enable Zen Browser";
     defaultBrowser = mkEnableOption "Make Zen the default browser";
   };
-  config = mkIf cfg.enabl {
+  config = mkIf cfg.enable {
     home.packages = [
       inputs.zen-browser.packages.${pkgs.system}.default
     ];
@@ -31,7 +31,7 @@ in {
         Version=2
       '';
     };
-    xdg.mimeApps = mkIf cfg.defaultBrowser {
+    xdg.mimeApps = mkIf (cfg.enable && cfg.defaultBrowser) {
       enable = true;
       associations.added = {
         "text/html" = ["zen.desktop"];
