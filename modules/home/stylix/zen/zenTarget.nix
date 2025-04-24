@@ -23,11 +23,11 @@
   mauve = "#${config.lib.stylix.colors.base0E}";
   flamingo = "#${config.lib.stylix.colors.base0F}";
 in {
-  options.stylix.targets.zen = {
+  options.zen.stylix.enable = {
     enable = lib.mkEnableOption "Theme Zen Browser" true;
   };
 
-  config = lib.mkIf config.stylix.targets.zen.enable {
+  config = lib.mkIf config.zen.stylix.enable {
     home.file.".zen/${user}.Default/chrome/userChrome.css".text = ''
       @media (prefers-color-scheme: dark) {
 

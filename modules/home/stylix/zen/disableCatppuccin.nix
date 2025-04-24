@@ -4,7 +4,7 @@
   ...
 }:
 with lib; let
-  cfg = config.stylix.targets.zen;
+  cfg = config.zen.stylix;
 in {
   config = mkIf (!cfg.enable) {
     catppuccin = {
