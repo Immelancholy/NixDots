@@ -64,6 +64,9 @@
     EOF
   '';
 in {
+  environment.systemPackages = [
+    cavaCfg
+  ];
   systemd.user.services."cavaCfg" = {
     enable = true;
     name = "cavaCfg";

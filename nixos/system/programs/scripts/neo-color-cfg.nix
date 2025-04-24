@@ -50,4 +50,13 @@ in {
   environment.systemPackages = [
     neo-color
   ];
+  systemd.user.services."neo-color" = {
+    enable = true;
+    name = "Neo Color";
+    wantedBy = ["default.target"];
+    path = [
+      "/run/current-system/sw"
+    ];
+    script = ''neo-color'';
+  };
 }
