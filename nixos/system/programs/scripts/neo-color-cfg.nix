@@ -21,7 +21,12 @@
   flamingo = "${config.lib.stylix.colors.base0F}";
 
   neo-color = pkgs.writeShellScriptBin "neo-color" ''
-    neoColorFile=$XDG_CONFIG_HOME/neo/colors
+    neoDir="$XDG_CONFIG_HOME/neo"
+    neoColorFile="$neoDir/colors"
+
+    if [ ! -d "$neoDir" ]; then
+      mkdir -p "$neoDir"
+    fi
     teal=$(colortrans ${teal} | sed -n '2p' | awk '{print $8}')
     blue=$(colortrans ${blue} | sed -n '2p' | awk '{print $8}')
     lavender=$(colortrans ${lavender} | sed -n '2p' | awk '{print $8}')
