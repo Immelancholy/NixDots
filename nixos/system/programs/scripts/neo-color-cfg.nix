@@ -48,6 +48,7 @@
       $lavender
       $blue
       $mauve
+      $red
       $flamingo
     EOF
   '';
