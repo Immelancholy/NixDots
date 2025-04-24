@@ -31,6 +31,8 @@
     flamingo=$(colortrans ${flamingo} | sed -n '2p' | awk '{print $8}')
     peach=$(colortrans ${peach} | sed -n '2p' | awk '{print $8}')
     red=$(colortrans ${red} | sed -n '2p' | awk '{print $8}')
+    text=$(colortrans ${text} | sed -n '2p' | awk '{print $8}')
+    yellow=$(colortrans ${yellow} | sed -n '2p' | awk '{print $8}')
 
 
 
