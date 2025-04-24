@@ -45,7 +45,10 @@
         hy3.enable = true;
       };
       useHyprspace = false;
-      useLiveWallpaper = true;
+      liveWallpaper = {
+        enable = true;
+        path = ../../../../nixos/home/backgrounds/Neon-Beast-Girl.mp4;
+      };
       settings = {
         cursor = {
           no_hardware_cursors = false;
