@@ -35,7 +35,9 @@
     text=$(colortrans ${text} | sed -n '2p' | awk '{print $8}')
     yellow=$(colortrans ${yellow} | sed -n '2p' | awk '{print $8}')
 
-
+    if [ ! -d "$neoDir" ]; then
+      mkdir -p XDG_CONFIG_HOME/neo
+    fi
 
     cat >"$neoColorFile" <<EOF
       neo_color_version 1
