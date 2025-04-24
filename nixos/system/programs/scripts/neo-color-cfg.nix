@@ -46,8 +46,6 @@
       -1
       $teal
       $lavender
-      $red
-      $peach
       $blue
       $mauve
       $flamingo
