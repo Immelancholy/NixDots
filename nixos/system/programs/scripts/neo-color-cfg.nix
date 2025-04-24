@@ -34,15 +34,15 @@
 
 
     echo >"$neoColorFile" <<EOF
-        neo_color_version 1
-        -1
-        $red
-        $peach
-        $flamingo
-        $mauve
-        $lavender}
-        $blue
-        $teal
+      neo_color_version 1
+      -1
+      ''${red:11}
+      ''${peach:11}
+      ''${flamingo:11}
+      ''${mauve:11}
+      ''$lavender:11}
+      ''${blue:11}
+      ''${teal:11}
     EOF
   '';
 in {
