@@ -6,6 +6,8 @@
 }: let
   user = config.home.username;
 
+  cfg = zen.theme;
+
   base = "#${config.lib.stylix.colors.base00}";
   mantle = "#${config.lib.stylix.colors.base01}";
   surface0 = "#${config.lib.stylix.colors.base02}";
@@ -23,11 +25,10 @@
   mauve = "#${config.lib.stylix.colors.base0E}";
   flamingo = "#${config.lib.stylix.colors.base0F}";
 in {
-  options.programs.zen.stylix.enable = {
-    enable = lib.mkEnableOption "Theme Zen Browser";
+  options.zen.theme = {
+    enable = lib.mkEnableOption "Theme zen";
   };
-
-  config = lib.mkIf config.zen.stylix.enable {
+  config = lib.mkIf cfg.enable {
     home.file.".zen/${user}.Default/chrome/userChrome.css".text = ''
       @media (prefers-color-scheme: dark) {
 
