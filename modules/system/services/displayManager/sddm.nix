@@ -34,7 +34,7 @@ in {
       enable = mkEnableOption "Use animated background for sddm";
       video = mkOption {
         type = types.path;
-        default = ../../../home/backgrounds/Neon-Beast-Girl.mp4;
+        default = ../../../../nixos/home/backgrounds/Neon-Beast-Girl.mp4;
         description = "Path to animated background";
       };
     };
