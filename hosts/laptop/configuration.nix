@@ -80,7 +80,7 @@
     sddm = {
       enable = true;
       animatedBackground = {
-        enable = false;
+        enable = true;
         # path =
       };
     };
