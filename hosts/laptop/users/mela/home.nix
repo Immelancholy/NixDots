@@ -16,6 +16,7 @@
     #   kitty.enable = false;
     #   nixvim.enable = false;
     #   zen.enable = false;
+    #   vesktop.enable = false;
     # };
     programs.obs-studio.enable = true;
     services.remmina = {
