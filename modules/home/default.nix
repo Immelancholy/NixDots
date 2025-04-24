@@ -4,5 +4,6 @@
     ./programs
     ./catppuccin
     ./stylix
+    ./zen
   ];
 }

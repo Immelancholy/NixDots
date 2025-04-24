@@ -7,5 +7,6 @@
     ./spicetify.nix
     ./tmux.nix
     ./zenTarget.nix
+    ./zen.nix
   ];
 }
