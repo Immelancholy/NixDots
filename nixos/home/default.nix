@@ -37,19 +37,19 @@ in {
       "autostart/input-mapper-autoload.desktop" = lib.mkIf nixosConfig.services.input-remapper.enable {
         source = "${nixosConfig.services.input-remapper.package}/share/applications/input-remapper-autoload.desktop";
       };
+      "neo/colors".text = ''
+        neo_color_version 1
+        -1
+        177
+        141
+        183
+        153
+        224
+        225
+      '';
     };
   };
   home.file = {
-    "neo/colors".text = ''
-      neo_color_version 1
-      -1
-      177
-      141
-      183
-      153
-      224
-      225
-    '';
     ".vimium/Vimium-C-Binds.json".text = ''
       {
         "name": "Vimium C",
