@@ -23,7 +23,7 @@
   flamingo = "#${config.lib.stylix.colors.base0F}";
 in {
   options.stylix.targets.zen = {
-    enable = config.lib.stylix.mkEnableTarget "Theme zen" false;
+    enable = config.lib.stylix.mkEnableTarget "Theme zen" true;
   };
   config = lib.mkIf (config.stylix.enable && config.stylix.targets.zen.enable) {
     home.file.".zen/${user}.Default/chrome/userChrome.css".text = ''
