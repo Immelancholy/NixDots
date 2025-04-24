@@ -41,7 +41,7 @@
       ''${blue:11}
       ''${lavender:11}
       ''${mauve:11}
-      ''${red:11}
+      ''${yellow:11}
       ''${text:11}
     EOF
   '';
