@@ -24,7 +24,7 @@
   flamingo = "#${config.lib.stylix.colors.base0F}";
 in {
   options.stylix.targets.zen = {
-    enable = config.lib.stylix.mkEnableTarget "Theme Zen Browser" true;
+    enable = lib.mkEnableOption "Theme Zen Browser" true;
   };
 
   config = lib.mkIf config.stylix.targets.zen.enable {
