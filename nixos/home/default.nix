@@ -40,6 +40,16 @@ in {
     };
   };
   home.file = {
+    "neo/colors".text = ''
+      neo_color_version 1
+      -1
+      177
+      141
+      183
+      153
+      224
+      225
+    '';
     ".vimium/Vimium-C-Binds.json".text = ''
       {
         "name": "Vimium C",
