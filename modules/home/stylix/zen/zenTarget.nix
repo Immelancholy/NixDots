@@ -23,8 +23,8 @@
   mauve = "#${config.lib.stylix.colors.base0E}";
   flamingo = "#${config.lib.stylix.colors.base0F}";
 in {
-  options.zen.stylix.enable = {
-    enable = lib.mkEnableOption "Theme Zen Browser" true;
+  options.programs.zen.stylix.enable = {
+    enable = lib.mkEnableOption "Theme Zen Browser";
   };
 
   config = lib.mkIf config.zen.stylix.enable {
