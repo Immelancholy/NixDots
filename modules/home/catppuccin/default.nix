@@ -1,5 +1,5 @@
 {
   imports = [
-    # ./catppuccin.nix
+    ./catppuccin.nix
   ];
 }
