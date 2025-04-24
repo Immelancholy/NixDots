@@ -39,9 +39,9 @@
     cat >"$neoColorFile" <<EOF
       neo_color_version 1
       -1
-      ''${yellow:11}
-      ''${blue:11}
       ''${lavender:11}
+      ''${blue:11}
+      ''${yellow:11}
       ''${mauve:11}
       ''${teal:11}
       ''${text:11}
