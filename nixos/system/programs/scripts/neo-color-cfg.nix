@@ -36,7 +36,7 @@
     red=$(colortrans ${red} | sed -n '2p' | awk '{print $8}')
 
 
-    cat "$neoColorFile" <<EOF
+    cat >"$neoColorFile" <<EOF
         neo_color_version 1
         -1
         ''${red}
