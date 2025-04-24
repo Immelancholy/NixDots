@@ -81,7 +81,7 @@
       enable = true;
       animatedBackground = {
         enable = true;
-        # path =
+        path = ../../nixos/home/backgrounds/Neon-Beast-Girl.mp4;
       };
     };
     tuiGreet.enable = false;
