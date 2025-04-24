@@ -4,7 +4,6 @@
   inputs,
   ...
 }: let
-  cfg = config.stylix.targets.zen;
   user = config.home.username;
 
   base = "#${config.lib.stylix.colors.base00}";
@@ -28,7 +27,7 @@ in {
     enable = config.lib.stylix.mkEnableTarget "Theme Zen Browser" true;
   };
 
-  config = lib.mkIf (config.stylix.enable && cfg.enable) {
+  config = lib.mkIf (config.stylix.enable && config.stylix.targets.zen.enable) {
     home.file.".zen/${user}.Default/chrome/userChrome.css".text = ''
       @media (prefers-color-scheme: dark) {
 
