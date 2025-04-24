@@ -22,7 +22,7 @@
   # mauve = "#${config.lib.stylix.colors.base0E}";
   # flamingo = "#${config.lib.stylix.colors.base0F}";
 in {
-  options.stylix.targets.zen.enable = {
+  options.stylix.targets.zen = {
     enable = config.lib.stylix.mkEnableTarget "Theme zen" false;
   };
   config = lib.mkIf (config.stylix.enable && config.stylix.targets.zen.enable) {
