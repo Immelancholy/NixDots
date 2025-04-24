@@ -4,7 +4,7 @@
   inputs,
   ...
 }: let
-  # user = config.home.username;
+  user = config.home.username;
   # base = "#${config.lib.stylix.colors.base00}";
   # mantle = "#${config.lib.stylix.colors.base01}";
   # surface0 = "#${config.lib.stylix.colors.base02}";
@@ -296,7 +296,7 @@ in {
     #     }
     #
     #   '';
-    home.file.".zen/mela.Default/chrome/zen-logo-mocha.svg" = {
+    home.file.".zen/${user}.Default/chrome/zen-logo-mocha.svg" = {
       source = "${inputs.catppuccinZen}/themes/Mocha/Mauve/zen-logo-mocha.svg";
     };
   };
