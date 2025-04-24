@@ -6,7 +6,7 @@
 }: let
   user = config.home.username;
 
-  cfg = zen.theme;
+  cfg = config.zen.theme;
 
   base = "#${config.lib.stylix.colors.base00}";
   mantle = "#${config.lib.stylix.colors.base01}";
