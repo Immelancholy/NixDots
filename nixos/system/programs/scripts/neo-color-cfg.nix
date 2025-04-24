@@ -41,7 +41,6 @@
       -1
       ''${lavender:11}
       ''${blue:11}
-      ''${yellow:11}
       ''${mauve:11}
       ''${teal:11}
       ''${text:11}
