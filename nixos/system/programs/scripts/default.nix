@@ -20,5 +20,6 @@
     ./cavaCfg.nix
     ./brightness.nix
     ./volume.nix
+    ./colortrans.nix
   ];
 }
