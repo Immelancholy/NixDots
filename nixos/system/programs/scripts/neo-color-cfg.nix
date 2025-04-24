@@ -40,8 +40,8 @@
       neo_color_version 1
       -1
       ''${lavender:11}
-      ''${blue:11}
       ''${mauve:11}
+      ''${blue:11}
       ''${teal:11}
       ''${text:11}
     EOF
