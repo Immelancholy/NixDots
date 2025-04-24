@@ -41,7 +41,7 @@
     red="''${red:11}"
 
 
-    echo >"$neoColorFile" <<EOF
+    cat >"$neoColorFile" <<EOF
       neo_color_version 1
       -1
       $red
