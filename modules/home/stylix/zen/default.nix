@@ -1,6 +1,6 @@
 {
   imports = [
     ./disableCatppuccin.nix
-    # ./zenTarget.nix
+    ./zenTarget.nix
   ];
 }
