@@ -48,9 +48,9 @@
       $blue
       $lavender
       $mauve
-      $flamingo
       $peach
       $red
+      $flamingo
     EOF
   '';
 in {
