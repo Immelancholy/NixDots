@@ -556,7 +556,7 @@ in {
     extraActivationPath = [
       neo-color
       colortrans
-      pkgs.python3Full
+      pkgs.gawk
     ];
   };
 }
