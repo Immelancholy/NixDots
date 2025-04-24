@@ -296,7 +296,7 @@ in {
     #     }
     #
     #   '';
-    ".zen/mela.Default/chrome/zen-logo-mocha.svg" = {
+    home.file.".zen/mela.Default/chrome/zen-logo-mocha.svg" = {
       source = "${inputs.catppuccinZen}/themes/Mocha/Mauve/zen-logo-mocha.svg";
     };
   };
