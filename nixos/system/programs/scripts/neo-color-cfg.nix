@@ -34,7 +34,10 @@
     text=$(colortrans ${text} | sed -n '2p' | awk '{print $8}')
     yellow=$(colortrans ${yellow} | sed -n '2p' | awk '{print $8}')
 
-
+    if [ ! -d "$neoDir" ]; then
+      echo "Making Neo Directory"
+      mkdir -p "$neoDir"
+    fi
 
     cat >"$neoColorFile" <<EOF
       neo_color_version 1
