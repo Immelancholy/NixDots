@@ -44,13 +44,13 @@
     cat >"$neoColorFile" <<EOF
       neo_color_version 1
       -1
-      $red
-      $peach
-      $flamingo
-      $mauve
-      $lavender
-      $blue
       $teal
+      $blue
+      $lavender
+      $mauve
+      $flamingo
+      $peach
+      $red
     EOF
   '';
 in {
