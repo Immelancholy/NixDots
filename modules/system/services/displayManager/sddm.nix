@@ -32,7 +32,7 @@ in {
     };
     animatedBackground = {
       enable = mkEnableOption "Use animated background for sddm";
-      video = mkOption {
+      path = mkOption {
         type = types.path;
         default = null;
         description = "Path to animated background";
