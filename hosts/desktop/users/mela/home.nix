@@ -9,7 +9,7 @@
   };
   madness = pkgs.fetchurl {
     url = "https://www.dropbox.com/scl/fi/yph1240qyi9bfuz0d6gcp/ailivewallpapers.com-whispers-of-madness-2560x1440.mp4?rlkey=dgxnzp3dcmdzim3tkzqpl0n5g&dl=1";
-    hash = "";
+    hash = "sha256-wG4Rcfmb9EfCo4z5rsq2zxkzWTguHio/eW8NgwO2VJ0=";
   };
 in {
   home-manager.users.mela = {
