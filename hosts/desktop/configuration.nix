@@ -3,12 +3,7 @@
   config,
   pkgs,
   ...
-}: let
-  Megarex = pkgs.fetchurl {
-    url = "https://go.moewalls.com/download.php?video=/2025/megarex-muse-dash.mp4";
-    hash = "sha256-wfZdRIpq1aE/Y8riwgQnogaQIl11EhVzbXfR54Gu6d0=";
-  };
-in {
+}: {
   disko.devices.disk.main.device = "/dev/nvme0n1";
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
   networking.hostName = "nix-relic-desktop";
@@ -23,7 +18,7 @@ in {
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     polarity = "dark";
 
-    image = ../../nixos/home/backgrounds/Megarex.png;
+    image = ../../nixos/home/backgrounds/Smoke_In_Rain.png;
   };
 
   services.openssh.enable = true;
@@ -83,7 +78,7 @@ in {
       enable = true;
       animatedBackground = {
         enable = true;
-        path = Megarex;
+        path = ../../nixos/home/backgrounds/Smoke_In_Rain.mp4;
       };
     };
     tuiGreet.enable = false;

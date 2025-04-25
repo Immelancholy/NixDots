@@ -2,12 +2,7 @@
   pkgs,
   inputs,
   ...
-}: let
-  Megarex = pkgs.fetchurl {
-    url = "https://go.moewalls.com/download.php?video=/2025/megarex-muse-dash.mp4";
-    hash = "sha256-wfZdRIpq1aE/Y8riwgQnogaQIl11EhVzbXfR54Gu6d0=";
-  };
-in {
+}: {
   home-manager.users.mela = {
     catppuccin = {
       flavor = "mocha";
@@ -53,7 +48,7 @@ in {
       useHyprspace = false;
       liveWallpaper = {
         enable = true;
-        path = Megarex;
+        path = ../../../../nixos/home/backgrounds/Smoke_In_Rain.mp4;
       };
       settings = {
         cursor = {
