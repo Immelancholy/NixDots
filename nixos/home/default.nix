@@ -28,7 +28,7 @@
 
   Shorea = pkgs.fetchurl {
     url = "https://pbs.twimg.com/media/GG0t0K6bcAA8-xW?format=jpg&name=medium";
-    hash = "";
+    hash = "sha256-NJNpjZUxK+6vvOUJMt/NxkaSA1fUqee7czH+z2f/SU4=";
   };
 in {
   # link the configuration file in current directory to the specified location in home directory
