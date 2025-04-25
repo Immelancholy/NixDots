@@ -5,7 +5,7 @@
 }: let
   img = pkgs.fetchurl {
     url = "https://pbs.twimg.com/media/GcHyQ8DWUAAOAho?format=jpg&name=medium";
-    hash = "";
+    hash = "sha256-YB13taH2jBB6POHniL/muHxCT1Mpir40YgjCkU5Vetc=";
   };
 in {
   home.file.".p10k.zsh" = {
