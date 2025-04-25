@@ -68,7 +68,7 @@ in {
       }
     '';
     "Pictures/fastfetch_logos" = {
-      source = /${Nakari};
+      source = Nakari;
       recursive = true;
     };
     "Pictures/wallpapers" = {
