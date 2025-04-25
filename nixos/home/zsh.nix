@@ -3,7 +3,7 @@
   inputs,
   ...
 }: let
-  img = builtins.fetchurl {
+  img = pkgs.fetchurl {
     url = "https://pbs.twimg.com/media/GcHyQ8DWUAAOAho?format=jpg&name=medium";
     hash = "";
   };
