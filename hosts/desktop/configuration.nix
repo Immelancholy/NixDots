@@ -3,12 +3,7 @@
   config,
   pkgs,
   ...
-}: let
-  madness = pkgs.fetchurl {
-    url = "https://www.desktophut.com/files/h665Ui9LxvQpP4v_Whispers%20of%20Madness%20Juni%20Kodama%20Live%20Wallpaper.mp4";
-    hash = "";
-  };
-in {
+}: {
   disko.devices.disk.main.device = "/dev/nvme0n1";
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
   networking.hostName = "nix-relic-desktop";
@@ -23,7 +18,7 @@ in {
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     polarity = "dark";
 
-    image = ../../nixos/home/backgrounds/Madness.png;
+    image = ../../nixos/home/backgrounds/Arcade_Girl.png;
   };
 
   services.openssh.enable = true;
@@ -83,7 +78,7 @@ in {
       enable = true;
       animatedBackground = {
         enable = true;
-        path = madness;
+        path = ../../nixos/home/backgrounds/Arcade_Girl.mp4;
       };
     };
     tuiGreet.enable = false;
