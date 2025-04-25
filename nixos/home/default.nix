@@ -2,6 +2,7 @@
   nixosConfig,
   lib,
   config,
+  pkgs,
   ...
 }: let
   user = config.home.username;
