@@ -18,7 +18,7 @@
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     polarity = "dark";
 
-    image = ../../nixos/home/backgrounds/Demon.jpg;
+    image = ../../nixos/home/backgrounds/YinLin.jpg;
   };
 
   services.openssh.enable = true;
@@ -78,7 +78,7 @@
       enable = true;
       animatedBackground = {
         enable = true;
-        path = ../../nixos/home/backgrounds/Demon.jpg;
+        path = ../../nixos/home/backgrounds/YinLin.mp4;
       };
     };
     tuiGreet.enable = false;
