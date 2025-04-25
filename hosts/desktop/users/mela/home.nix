@@ -48,7 +48,7 @@
       useHyprspace = false;
       liveWallpaper = {
         enable = true;
-        path = ../../../../nixos/home/backgrounds/Akagimi.mp4;
+        path = ../../../../nixos/home/backgrounds/Demon.mp4;
       };
       settings = {
         cursor = {
