@@ -9,7 +9,7 @@ with lib; let
 
   changeWallpaper = pkgs.writeShellScriptBin "paper-change" ''
     pkill mpvpaper
-    uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto" '*' ${cfg.liveWallpaper.path}
+    uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}
   '';
 in {
   options.wayland.windowManager.hyprland = {
