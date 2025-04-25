@@ -78,7 +78,7 @@
       enable = true;
       animatedBackground = {
         enable = true;
-        path = ../../nixos/home/backgrounds/Neon-Beast-Girl.mp4;
+        path = ../../nixos/home/backgrounds/emily-in-the-cyberpunk-city.3840x2160.mp4;
       };
     };
     tuiGreet.enable = false;
