@@ -2,7 +2,12 @@
   pkgs,
   inputs,
   ...
-}: {
+}: let
+  img = builtins.fetchurl {
+    url = "https://pbs.twimg.com/media/GcHyQ8DWUAAOAho?format=jpg&name=medium";
+    hash = "";
+  };
+in {
   home.file.".p10k.zsh" = {
     source = ./p10k.zsh;
   };
@@ -56,7 +61,7 @@
 
       if [ "$class" = "fastfetch" ];
       then
-        fastfetch --logo $HOME/Pictures/fastfetch_logos/tomoe.png
+        fastfetch --logo ${img}
       else
         fortune | pokemonsay -p fennekin -N
       fi
