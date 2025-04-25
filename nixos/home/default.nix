@@ -18,7 +18,7 @@
 
   Azurenti = pkgs.fetchurl {
     url = "https://pbs.twimg.com/media/GS9F_-JWMAALb1S?format=jpg&name=medium";
-    hash = "";
+    hash = "sha256-+IdQuGYwOTUwS/B7tMpDf91o3uerAWaXSs4Wn5/jABU=";
   };
 
   Fubuki = pkgs.fetchurl {
