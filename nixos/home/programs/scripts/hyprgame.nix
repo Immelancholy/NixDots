@@ -5,7 +5,7 @@
 }: let
   wallpaper = config.wayland.windowManager.hyprland.useLiveWallpaper.path;
 in {
-  environment.systemPackages = [
+  home.packages = [
     (pkgs.writeShellScriptBin "hyprgame" ''
       HYPRGAMEMODE=$(hyprctl getoption animations:enabled | sed -n '1p' | awk '{print $2}')
 
