@@ -42,12 +42,13 @@ in {
       };
       color = {
         gradient = 1;
-        gradient_color_1 = "'${teal}'";
+        gradient_color_1 = "'${mauve}'";
         gradient_color_2 = "'${blue}'";
-        gradient_color_3 = "'${mauve}'";
-        gradient_color_4 = "'${flamingo}'";
-        gradient_color_5 = "'${peach}'";
-        gradient_color_6 = "'${red}'";
+        gradient_color_3 = "'${teal}'";
+        gradient_color_4 = "'${green}'";
+        gradient_color_5 = "'${yellow}'";
+        gradient_color_6 = "'${peach}'";
+        gradient_color_7 = "'${red}'";
       };
     };
   };
