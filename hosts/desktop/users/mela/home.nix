@@ -2,7 +2,12 @@
   pkgs,
   inputs,
   ...
-}: {
+}: let
+  Megarex = pkgs.fetchurl {
+    url = "https://go.moewalls.com/download.php?video=/2025/megarex-muse-dash.mp4";
+    hash = "";
+  };
+in {
   home-manager.users.mela = {
     catppuccin = {
       flavor = "mocha";
@@ -48,7 +53,7 @@
       useHyprspace = false;
       liveWallpaper = {
         enable = true;
-        path = ../../../../nixos/home/backgrounds/Evil_Miku.mp4;
+        path = Megarex;
       };
       settings = {
         cursor = {
