@@ -41,7 +41,7 @@ in {
       else
               hyprctl dispatch signalwindow class:mpd,9
               hyprctl reload config-only -q
-              uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto" '*' ${wallpaper}
+              uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${wallpaper}
               systemctl start --user mpdchck
               hyprctl dispatch exec '[workspace 1 silent; float; size 858 559; move 640 40] uwsm app -- kitty --class "mpd" --session=mpd.session'
               hyprctl dispatch exec '[workspace 1 silent; float; size 858 462; move 640 609] uwsm app -- kitty --class "cava" cava.sh'

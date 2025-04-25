@@ -26,7 +26,7 @@ in {
     ];
     wayland.windowManager.hyprland.settings = {
       exec-once = [
-        ''uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto" '*' ${cfg.liveWallpaper.path}''
+        ''uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}''
       ];
     };
     home = {

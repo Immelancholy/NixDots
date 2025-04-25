@@ -3,7 +3,12 @@
   config,
   pkgs,
   ...
-}: {
+}: let
+  megarex = pkgs.fetchurl {
+    url = "https://www.dropbox.com/scl/fi/3haz3x3yifeymuo3anrkd/ailivewallpapers.com-muse-dash-at-rest-2560x1440.mp4?rlkey=nvu35gv2pqgbe12kprvs8yi4k&dl=1";
+    hash = "sha256-IjLZwXqggUaT5Nbcya48WQkxbL2U17v7H/kjcYKn7/w=";
+  };
+in {
   disko.devices.disk.main.device = "/dev/nvme0n1";
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
   networking.hostName = "nix-relic-desktop";
@@ -18,7 +23,7 @@
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     polarity = "dark";
 
-    image = ../../nixos/home/backgrounds/Smoke_In_Rain.png;
+    image = ../../nixos/home/backgrounds/Megarex.png;
   };
 
   services.openssh.enable = true;
@@ -78,7 +83,7 @@
       enable = true;
       animatedBackground = {
         enable = true;
-        path = ../../nixos/home/backgrounds/Smoke_In_Rain.mp4;
+        path = megarex;
       };
     };
     tuiGreet.enable = false;
