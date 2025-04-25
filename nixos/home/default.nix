@@ -6,7 +6,7 @@
   ...
 }: let
   user = config.home.username;
-  Nakari = pkgs.fetchurl {
+  Nakari = builtins.fetchurl {
     url = "https://pbs.twimg.com/media/GcHyQ8DWUAAOAho?format=jpg&name=medium";
     hash = "sha256-YB13taH2jBB6POHniL/muHxCT1Mpir40YgjCkU5Vetc=";
   };
