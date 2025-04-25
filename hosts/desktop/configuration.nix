@@ -4,10 +4,6 @@
   pkgs,
   ...
 }: let
-  megarex = pkgs.fetchurl {
-    url = "https://www.dropbox.com/scl/fi/3haz3x3yifeymuo3anrkd/ailivewallpapers.com-muse-dash-at-rest-2560x1440.mp4?rlkey=nvu35gv2pqgbe12kprvs8yi4k&dl=1";
-    hash = "sha256-IjLZwXqggUaT5Nbcya48WQkxbL2U17v7H/kjcYKn7/w=";
-  };
   madness = pkgs.fetchurl {
     url = "https://www.dropbox.com/scl/fi/yph1240qyi9bfuz0d6gcp/ailivewallpapers.com-whispers-of-madness-2560x1440.mp4?rlkey=dgxnzp3dcmdzim3tkzqpl0n5g&dl=1";
     hash = "sha256-wG4Rcfmb9EfCo4z5rsq2zxkzWTguHio/eW8NgwO2VJ0=";
