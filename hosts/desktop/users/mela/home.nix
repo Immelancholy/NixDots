@@ -5,7 +5,7 @@
 }: let
   Megarex = pkgs.fetchurl {
     url = "https://go.moewalls.com/download.php?video=/2025/megarex-muse-dash.mp4";
-    hash = "";
+    hash = "sha256-wfZdRIpq1aE/Y8riwgQnogaQIl11EhVzbXfR54Gu6d0=";
   };
 in {
   home-manager.users.mela = {
