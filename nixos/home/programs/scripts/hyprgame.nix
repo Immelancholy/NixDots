@@ -1,4 +1,10 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  config,
+  ...
+}: let
+  wallpaper = config.wayland.windowManager.hyprland.useLiveWallpaper.path;
+in {
   environment.systemPackages = [
     (pkgs.writeShellScriptBin "hyprgame" ''
       HYPRGAMEMODE=$(hyprctl getoption animations:enabled | sed -n '1p' | awk '{print $2}')
@@ -35,7 +41,7 @@
       else
               hyprctl dispatch signalwindow class:mpd,9
               hyprctl reload config-only -q
-              uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto" '*' $LIVE_WALLPAPER
+              uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto" '*' ${wallpaper}
               systemctl start --user mpdchck
               hyprctl dispatch exec '[workspace 1 silent; float; size 858 559; move 640 40] uwsm app -- kitty --class "mpd" --session=mpd.session'
               hyprctl dispatch exec '[workspace 1 silent; float; size 858 462; move 640 609] uwsm app -- kitty --class "cava" cava.sh'
