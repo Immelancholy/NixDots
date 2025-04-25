@@ -23,7 +23,7 @@
 
   Fubuki = pkgs.fetchurl {
     url = "https://pbs.twimg.com/media/GJDueQOXsAA7DjN?format=jpg&name=medium";
-    hash = "";
+    hash = "sha256-m7175RBqjgsDb+yNyRkR0AnVp9rvG1nrX7HKpqSJLSU=";
   };
 
   Shorea = pkgs.fetchurl {
