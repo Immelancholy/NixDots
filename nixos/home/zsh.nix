@@ -3,10 +3,6 @@
   inputs,
   ...
 }: let
-  img = pkgs.fetchurl {
-    url = "https://pbs.twimg.com/media/GcHyQ8DWUAAOAho?format=jpg&name=medium";
-    hash = "sha256-YB13taH2jBB6POHniL/muHxCT1Mpir40YgjCkU5Vetc=";
-  };
 in {
   home.file.".p10k.zsh" = {
     source = ./p10k.zsh;
@@ -61,7 +57,7 @@ in {
 
       if [ "$class" = "fastfetch" ];
       then
-        fastfetch --logo ${img}
+        fastfetch --logo $HOME/Pictures/fastfetch_logos/Nakari.jpg
       else
         fortune | pokemonsay -p fennekin -N
       fi

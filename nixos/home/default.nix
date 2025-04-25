@@ -5,6 +5,10 @@
   ...
 }: let
   user = config.home.username;
+  Nakari = pkgs.fetchurl {
+    url = "https://pbs.twimg.com/media/GcHyQ8DWUAAOAho?format=jpg&name=medium";
+    hash = "sha256-YB13taH2jBB6POHniL/muHxCT1Mpir40YgjCkU5Vetc=";
+  };
 in {
   # link the configuration file in current directory to the specified location in home directory
   # home.file.".config/i3/wallpaper.jpg".source = ./wallpaper.jpg;
@@ -62,9 +66,8 @@ in {
         "vimSync": true
       }
     '';
-    "Pictures/fastfetch_logos" = {
-      source = ./programs/fastfetch/logo;
-      recursive = true;
+    "Pictures/fastfetch_logos/Nakari.jpg" = {
+      source = ./${Nakari};
     };
     "Pictures/wallpapers" = {
       source = ./backgrounds;
