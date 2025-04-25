@@ -5,8 +5,8 @@
   ...
 }: let
   madness = pkgs.fetchurl {
-    url = "https://www.dropbox.com/scl/fi/yph1240qyi9bfuz0d6gcp/ailivewallpapers.com-whispers-of-madness-2560x1440.mp4?rlkey=dgxnzp3dcmdzim3tkzqpl0n5g&dl=1";
-    hash = "sha256-wG4Rcfmb9EfCo4z5rsq2zxkzWTguHio/eW8NgwO2VJ0=";
+    url = "https://www.desktophut.com/files/h665Ui9LxvQpP4v_Whispers%20of%20Madness%20Juni%20Kodama%20Live%20Wallpaper.mp4";
+    hash = "";
   };
 in {
   disko.devices.disk.main.device = "/dev/nvme0n1";
