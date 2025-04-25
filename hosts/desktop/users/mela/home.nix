@@ -5,7 +5,7 @@
 }: let
   madness = pkgs.fetchurl {
     url = "https://www.desktophut.com/files/h665Ui9LxvQpP4v_Whispers%20of%20Madness%20Juni%20Kodama%20Live%20Wallpaper.mp4";
-    hash = "";
+    hash = "sha256-wG4Rcfmb9EfCo4z5rsq2zxkzWTguHio/eW8NgwO2VJ0=";
   };
 in {
   home-manager.users.mela = {
