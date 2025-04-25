@@ -13,7 +13,7 @@
 
   Goth_Chell = pkgs.fetchurl {
     url = "https://pbs.twimg.com/media/GXERYazW0AErHbS?format=jpg&name=medium";
-    hash = "";
+    hash = "sha256-OX8v3Xh+sDhgVv6P3leWHHZrIPiVuBrnd9iAoEPtFBQ=";
   };
 
   Azurenti = pkgs.fetchurl {
