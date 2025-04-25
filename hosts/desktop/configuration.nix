@@ -18,7 +18,7 @@
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     polarity = "dark";
 
-    image = ../../nixos/home/backgrounds/Neon-Beast-Girl.png;
+    image = ../../nixos/home/backgrounds/emily-in-the-cyberpunk-city.3840x2160.jpg;
   };
 
   services.openssh.enable = true;
