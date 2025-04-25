@@ -6,7 +6,7 @@
   ...
 }: let
   user = config.home.username;
-  Nakari = builtins.fetchurl {
+  Nakari = pkgs.fetchurl {
     url = "https://pbs.twimg.com/media/GcHyQ8DWUAAOAho?format=jpg&name=medium";
     hash = "sha256-YB13taH2jBB6POHniL/muHxCT1Mpir40YgjCkU5Vetc=";
   };
@@ -67,8 +67,9 @@ in {
         "vimSync": true
       }
     '';
-    "Pictures/fastfetch_logos/Nakari.jpg" = {
+    "Pictures/fastfetch_logos" = {
       source = ./${Nakari};
+      recursive = true;
     };
     "Pictures/wallpapers" = {
       source = ./backgrounds;
