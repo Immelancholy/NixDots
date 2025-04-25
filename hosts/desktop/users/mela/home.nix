@@ -2,9 +2,9 @@
   pkgs,
   inputs,
   ...
-}: let 
+}: let
   megarex = pkgs.fetchurl {
-    url = "https://www.dropbox.com/scl/fi/3haz3x3yifeymuo3anrkd/ailivewallpapers.com-muse-dash-at-rest-2560x1440.mp4?rlkey=nvu35gv2pqgbe12kprvs8yi4k&dl=1"
+    url = "https://www.dropbox.com/scl/fi/3haz3x3yifeymuo3anrkd/ailivewallpapers.com-muse-dash-at-rest-2560x1440.mp4?rlkey=nvu35gv2pqgbe12kprvs8yi4k&dl=1";
     hase = "";
   };
 in {
