@@ -3,7 +3,7 @@
   config,
   ...
 }: let
-  wallpaper = config.wayland.windowManager.hyprland.useLiveWallpaper.path;
+  wallpaper = config.wayland.windowManager.hyprland.liveWallpaper.path;
 in {
   home.packages = [
     (pkgs.writeShellScriptBin "hyprgame" ''
