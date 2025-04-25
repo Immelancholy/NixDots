@@ -8,6 +8,10 @@
     url = "https://www.dropbox.com/scl/fi/3haz3x3yifeymuo3anrkd/ailivewallpapers.com-muse-dash-at-rest-2560x1440.mp4?rlkey=nvu35gv2pqgbe12kprvs8yi4k&dl=1";
     hash = "sha256-IjLZwXqggUaT5Nbcya48WQkxbL2U17v7H/kjcYKn7/w=";
   };
+  madness = pkgs.fetchurl {
+    url = "https://www.dropbox.com/scl/fi/yph1240qyi9bfuz0d6gcp/ailivewallpapers.com-whispers-of-madness-2560x1440.mp4?rlkey=dgxnzp3dcmdzim3tkzqpl0n5g&dl=1";
+    hash = "";
+  };
 in {
   disko.devices.disk.main.device = "/dev/nvme0n1";
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
@@ -23,7 +27,7 @@ in {
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     polarity = "dark";
 
-    image = ../../nixos/home/backgrounds/Megarex.png;
+    image = ../../nixos/home/backgrounds/Madness.png;
   };
 
   services.openssh.enable = true;
@@ -83,7 +87,7 @@ in {
       enable = true;
       animatedBackground = {
         enable = true;
-        path = megarex;
+        path = madness;
       };
     };
     tuiGreet.enable = false;
