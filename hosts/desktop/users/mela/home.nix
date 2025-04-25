@@ -48,7 +48,7 @@
       useHyprspace = false;
       liveWallpaper = {
         enable = true;
-        path = ../../../../nixos/home/backgrounds/emily-in-the-cyberpunk-city.3840x2160.mp4;
+        path = ../../../../nixos/home/backgrounds/Akagimi.mp4;
       };
       settings = {
         cursor = {
