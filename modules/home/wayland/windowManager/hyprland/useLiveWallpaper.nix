@@ -7,7 +7,7 @@
 with lib; let
   cfg = config.wayland.windowManager.hyprland;
 
-  paper-change = pkgs.writeShellScriptBin "paper-change" ''
+  changeWallpaper = pkgs.writeShellScriptBin "paper-change" ''
     pkill mpvpaper
     uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto" '*' ${cfg.liveWallpaper.path}
   '';
@@ -29,12 +29,17 @@ in {
         ''uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto" '*' ${cfg.liveWallpaper.path}''
       ];
     };
-    home.activation = {
-      paper-change = lib.hm.dag.entryAfter ["writeBoundary"] ''
-        run paper-change
-      '';
+    home = {
+      activation = {
+        paper-change = lib.hm.dag.entryAfter ["writeBoundary"] ''
+          run paper-change
+        '';
+      };
       extraActivationPath = [
-        paper-change
+        pkgs.uwsm
+        changeWallpaper
+        pkgs.mpvpaper
+        pkgs.procps
       ];
     };
   };
