@@ -67,9 +67,9 @@ in {
         "vimSync": true
       }
     '';
-    # "Pictures/fastfetch_logos/Nakari.jpg" = {
-    #   source = Nakari;
-    # };
+    "Pictures/fastfetch_logos/Nakari.jpg" = {
+      source = Nakari;
+    };
     "Pictures/wallpapers" = {
       source = ./backgrounds;
       recursive = true;
