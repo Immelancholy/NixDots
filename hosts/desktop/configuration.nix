@@ -18,7 +18,7 @@
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     polarity = "dark";
 
-    image = ../../nixos/home/backgrounds/Sunset.png;
+    image = ../../nixos/home/backgrounds/Cyberpunk_Rain.png;
   };
 
   services.openssh.enable = true;
@@ -78,7 +78,7 @@
       enable = true;
       animatedBackground = {
         enable = true;
-        path = ../../nixos/home/backgrounds/Sunset.mp4;
+        path = ../../nixos/home/backgrounds/Cyberpunk_Rain.mp4;
       };
     };
     tuiGreet.enable = false;
