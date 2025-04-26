@@ -48,7 +48,7 @@
       useHyprspace = false;
       liveWallpaper = {
         enable = true;
-        path = ../../../../nixos/home/backgrounds/Arcade_Girl.mp4;
+        path = ../../../../nixos/home/backgrounds/Smoke_In_Rain.mp4;
       };
       settings = {
         cursor = {
