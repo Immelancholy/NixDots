@@ -48,7 +48,7 @@
       useHyprspace = false;
       liveWallpaper = {
         enable = true;
-        path = ../../../../nixos/home/backgrounds/Arcueid.mp4;
+        path = ../../../../nixos/home/backgrounds/Sailor_Moon.mp4;
       };
       settings = {
         cursor = {
