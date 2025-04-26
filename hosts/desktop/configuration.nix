@@ -18,7 +18,7 @@
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     polarity = "dark";
 
-    image = ../../nixos/home/backgrounds/Sailor_Moon.png;
+    image = ../../nixos/home/backgrounds/Momo_Smoke.png;
   };
 
   services.openssh.enable = true;
@@ -78,7 +78,7 @@
       enable = true;
       animatedBackground = {
         enable = true;
-        path = ../../nixos/home/backgrounds/Sailor_Moon.mp4;
+        path = ../../nixos/home/backgrounds/Momo_Smoke.mp4;
       };
     };
     tuiGreet.enable = false;
