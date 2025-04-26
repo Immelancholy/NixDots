@@ -132,6 +132,13 @@
         inherit system;
         specialArgs = {inherit inputs nixpkgs;};
         modules = [
+          ({lib, ...}: {
+            nix.registry.flake = nixpkgs;
+            nix.channel.enable = false;
+
+            environment.etc."nix/inputs/nixpkgs".source = "${nixpkgs}";
+            nix.settings.nix-path = lib.mkForce "nixpkgs=/etc/nix/inputs/nixpkgs";
+          })
           inputs.disko.nixosModules.default
           stylix.nixosModules.stylix
           nur.modules.nixos.default
