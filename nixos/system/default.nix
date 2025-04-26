@@ -15,7 +15,7 @@
   security.pam.services.login.enableGnomeKeyring = true;
   services.seatd.enable = true;
 
-  nix.registry.flake = nixpkgs;
+  nix.registry.nixpkgs.flake = nixpkgs;
   nix.channel.enable = false;
 
   environment.etc."nix/inputs/nixpkgs".source = "${nixpkgs}";
