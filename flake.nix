@@ -132,7 +132,11 @@
         inherit system;
         specialArgs = {inherit inputs nixpkgs;};
         modules = [
-          ({lib, ...}: {
+          ({
+            lib,
+            nixpkgs,
+            ...
+          }: {
             nix.registry.flake = nixpkgs;
             nix.channel.enable = false;
 
