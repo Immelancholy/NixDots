@@ -123,7 +123,7 @@ in {
           HoverSessionButtonTextColor = "${teal}";
           HoverVirtualKeyboardButtonTextColor = "${teal}";
 
-          PartialBlue = "true";
+          PartialBlur = "true";
           BlurMax = "35";
           Blur = "2.0";
 
