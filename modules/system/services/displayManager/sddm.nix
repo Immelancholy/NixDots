@@ -110,7 +110,7 @@ in {
           VirtualKeyboardButtonTextColor = "${mauve}";
 
           DropdownTextColor = "${mauve}";
-          DropdownSelectedBackgroundColorrr = "${base}";
+          DropdownSelectedBackgroundColor = "${base}";
           DropdownBackgroundColor = "${base}";
 
           HighlightTextColor = "${mauve}";
@@ -119,7 +119,7 @@ in {
 
           HoverUserIconColor = "${teal}";
           HoverPasswordIconColor = "${teal}";
-          HoverSystemButtonsIconColor = "${teal}";
+          HoverSystemButtonsIconsColor = "${teal}";
           HoverSessionButtonTextColor = "${teal}";
           HoverVirtualKeyboardButtonTextColor = "${teal}";
 
