@@ -15,6 +15,12 @@
   security.pam.services.login.enableGnomeKeyring = true;
   services.seatd.enable = true;
 
+  nix.registry.flake = nixpkgs;
+  nix.channel.enable = false;
+
+  environment.etc."nix/inputs/nixpkgs".source = "${nixpkgs}";
+  nix.settings.nix-path = lib.mkForce "nixpkgs=/etc/nix/inputs/nixpkgs";
+
   nixpkgs.config.allowUnfree = true;
   environment = {
     shells = with pkgs; [
