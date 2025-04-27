@@ -9,7 +9,7 @@ with lib; let
   user = config.home.username;
 
   paper-change = ''
-    mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}
+    ${pkgs.mpvpaper}/bin/mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}
   '';
 in {
   options.wayland.windowManager.hyprland = {
@@ -41,9 +41,6 @@ in {
       };
       Install = {
         WantedBy = ["graphical-session.target"];
-      };
-      Environment = {
-        PATH = "/etc/profiles/per-user/${user}/bin";
       };
     };
   };
