@@ -8,7 +8,7 @@ with lib; let
   cfg = config.wayland.windowManager.hyprland;
 
   paper-change = ''
-    uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}
+    mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}
   '';
 in {
   options.wayland.windowManager.hyprland = {
