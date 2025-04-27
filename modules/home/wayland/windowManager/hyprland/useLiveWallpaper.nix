@@ -25,11 +25,6 @@ in {
       mpvpaper
       paper-change
     ];
-    # wayland.windowManager.hyprland.settings = {
-    #   exec-once = [
-    #     "systemctl start --user paper-change"
-    #   ];
-    # };
     systemd.user.services.paper-change = {
       Unit = {
         Description = "Wallpaper Changer";
