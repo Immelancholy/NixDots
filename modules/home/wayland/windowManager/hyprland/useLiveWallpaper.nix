@@ -26,11 +26,11 @@ in {
       mpvpaper
       paper-change
     ];
-    # wayland.windowManager.hyprland.settings = {
-    #   exec-once = [
-    #     ''${paper-change}''
-    #   ];
-    # };
+    wayland.windowManager.hyprland.settings = {
+      exec-once = [
+        "systemctl start --user paper-change"
+      ];
+    };
     systemd.user.services.paper-change = {
       Unit = {
         Description = "Wallpaper changer";
@@ -40,7 +40,6 @@ in {
       Service = {
         ExecStart = ''/run/current-system/sw/bin/hyprctl dispatch exec paper-change'';
         Type = "simple";
-        Environment = "PATH=/etc/profiles/per-user/${user}/bin:/run/current-system/sw/bin";
       };
       Install = {
         WantedBy = ["graphical-session.target"];
