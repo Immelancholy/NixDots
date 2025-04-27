@@ -8,8 +8,12 @@ with lib; let
   cfg = config.wayland.windowManager.hyprland;
 
   paper-change = pkgs.writeShellScriptBin "paper-change" ''
-    pkill mpvpaper
-    uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}
+    if [ command -v mpvpaper >/dev/null 2>&1 ]; then
+      pkill mpvpaper
+      uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}
+    else
+      pkill mpvpaper
+    fi
   '';
 in {
   options.wayland.windowManager.hyprland = {
@@ -20,28 +24,34 @@ in {
       description = "Path to animated background";
     };
   };
-  config = mkIf cfg.liveWallpaper.enable {
-    home.packages = with pkgs; [
-      mpvpaper
-      paper-change
-    ];
-    systemd.user.services.paper-change = {
-      Unit = {
-        Description = "Wallpaper Changer";
-        PartOf = ["graphical-session.target"];
-        Requires = ["graphical-session.target"];
-        After = ["graphical-session.target"];
-        ConditionEnvironment = "WAYLAND_DISPLAY";
+  config = mkMerge [
+    {
+      home.packages = [
+        paper-change
+      ];
+      systemd.user.services.paper-change = {
+        Unit = {
+          Description = "Wallpaper Changer";
+          PartOf = ["graphical-session.target"];
+          Requires = ["graphical-session.target"];
+          After = ["graphical-session.target"];
+          ConditionEnvironment = "WAYLAND_DISPLAY";
+        };
+        Service = {
+          ExecStart = ''/run/current-system/sw/bin/hyprctl dispatch exec paper-change'';
+          Type = "simple";
+          Slice = ["session.slice"];
+          Restart = "on-failure";
+        };
+        Install = {
+          WantedBy = ["graphical-session.target"];
+        };
       };
-      Service = {
-        ExecStart = ''/run/current-system/sw/bin/hyprctl dispatch exec paper-change'';
-        Type = "simple";
-        Slice = ["session.slice"];
-        Restart = "on-failure";
-      };
-      Install = {
-        WantedBy = ["graphical-session.target"];
-      };
-    };
-  };
+    }
+    (mkIf cfg.liveWallpaper.enable {
+      home.packages = with pkgs; [
+        mpvpaper
+      ];
+    })
+  ];
 }
