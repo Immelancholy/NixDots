@@ -6,7 +6,6 @@
 }:
 with lib; let
   cfg = config.wayland.windowManager.hyprland;
-  user = config.home.username;
 
   paper-change = pkgs.writeShellScriptBin "paper-change" ''
     pkill mpvpaper
@@ -26,20 +25,24 @@ in {
       mpvpaper
       paper-change
     ];
-    wayland.windowManager.hyprland.settings = {
-      exec-once = [
-        "systemctl start --user paper-change"
-      ];
-    };
+    # wayland.windowManager.hyprland.settings = {
+    #   exec-once = [
+    #     "systemctl start --user paper-change"
+    #   ];
+    # };
     systemd.user.services.paper-change = {
       Unit = {
-        Description = "Wallpaper changer";
-        After = ["graphical-session-pre.target"];
+        Description = "Wallpaper Changer";
         PartOf = ["graphical-session.target"];
+        Requires = ["graphical-session.target"];
+        After = ["graphical-session.target"];
+        ConditionEnvironment = "WAYLAND_DISPLAY";
       };
       Service = {
         ExecStart = ''/run/current-system/sw/bin/hyprctl dispatch exec paper-change'';
         Type = "simple";
+        Slice = ["session.slice"];
+        Restart = "on-failure";
       };
       Install = {
         WantedBy = ["graphical-session.target"];
