@@ -31,7 +31,8 @@ in {
     systemd.user.services = {
       Unit = {
         Description = "Wallpaper changer";
-        After = ["default.target"];
+        After = ["graphical-session-pre.target"];
+        PartOf = ["graphical-session.target"];
       };
       Service = {
         ExecStart = "${paper-change}";
