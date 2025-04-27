@@ -42,10 +42,9 @@ in {
       Install = {
         WantedBy = ["graphical-session.target"];
       };
-      Environment = [
-        "PATH=/run/current-system/sw/bin"
-        "PATH=/etc/profiles/per-user/${user}/bin"
-      ];
+      Environment = {
+        PATH = "/etc/profiles/per-user/${user}/bin";
+      };
     };
   };
 }
