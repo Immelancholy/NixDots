@@ -7,8 +7,7 @@
 with lib; let
   cfg = config.wayland.windowManager.hyprland;
 
-  paper-change = pkgs.writeShellScriptBin "paper-change" ''
-    pkill mpvpaper
+  paper-change = ''
     uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}
   '';
 in {
@@ -26,21 +25,21 @@ in {
     ];
     # wayland.windowManager.hyprland.settings = {
     #   exec-once = [
-    #     ''uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}''
+    #     ''${paper-change}''
     #   ];
     # };
-    home = {
-      activation = {
-        paper-change = lib.hm.dag.entryAfter ["installPackages"] ''
-          run paper-change
-        '';
+    systemd.user.services = {
+      Unit = {
+        Description = "Wallpaper changer";
+        After = "default.target";
       };
-      extraActivationPath = [
-        pkgs.uwsm
-        paper-change
-        pkgs.mpvpaper
-        pkgs.procps
-      ];
+      Service = {
+        ExecStart = "${paper-change}";
+        Type = "simple";
+      };
+      Install = {
+        WantedBy = "graphical-session.target";
+      };
     };
   };
 }
