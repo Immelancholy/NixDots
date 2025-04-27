@@ -7,7 +7,7 @@
 with lib; let
   cfg = config.wayland.windowManager.hyprland;
 
-  changeWallpaper = pkgs.writeShellScriptBin "paper-change" ''
+  paper-change = pkgs.writeShellScriptBin "paper-change" ''
     pkill mpvpaper
     uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}
   '';
@@ -31,7 +31,7 @@ in {
     };
     home = {
       activation = {
-        paper-change = lib.hm.dag.entryAfter ["writeBoundary"] ''
+        paper-change = lib.hm.dag.entryAfter ["installPackages"] ''
           run paper-change
         '';
       };
