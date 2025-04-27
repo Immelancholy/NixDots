@@ -9,7 +9,7 @@ with lib; let
   user = config.home.username;
 
   paper-change = ''
-    /etc/profiles/per-user/${user}/bin/mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}
+    mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}
   '';
 in {
   options.wayland.windowManager.hyprland = {
@@ -36,7 +36,7 @@ in {
         PartOf = ["graphical-session.target"];
       };
       Service = {
-        ExecStart = "${paper-change}";
+        ExecStart = "/run/current-system/sw/bin/hyprctl dispatch exec ${paper-change}";
         Type = "simple";
         Environment = "PATH=/etc/profiles/per-user/${user}/bin:/run/current-system/sw/bin";
       };
