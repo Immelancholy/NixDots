@@ -8,7 +8,8 @@ with lib; let
   cfg = config.wayland.windowManager.hyprland;
 
   paper-change = pkgs.writeShellScriptBin "paper-change" ''
-    if [ command -v mpvpaper >/dev/null 2>&1 ]; then
+    if command -v mpvpaper
+    then
       pkill mpvpaper
       uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}
     else
