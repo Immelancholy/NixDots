@@ -85,6 +85,7 @@
       obsidian
       obsidian-export
       gimp3-with-plugins
+      inkscape-with-extensions
       pinta
     ];
     services.remmina = {
