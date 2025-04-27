@@ -48,9 +48,9 @@
         dwindle.enable = false;
         hy3.enable = true;
       };
-      useHyprspace = true;
+      useHyprspace = false;
       liveWallpaper = {
-        enable = false;
+        enable = true;
         path = ../../../../nixos/home/backgrounds/Evil_Miku.mp4;
       };
       settings = {
