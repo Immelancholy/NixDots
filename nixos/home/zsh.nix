@@ -8,7 +8,7 @@
   };
   programs.zsh = {
     enable = true;
-    enableCompletion = false;
+    enableCompletion = true;
     autosuggestion = {
       enable = true;
     };
