@@ -38,7 +38,7 @@ in {
       Service = {
         ExecStart = "${paper-change}";
         Type = "simple";
-        Environment = "/etc/profiles/per-user/${user}/bin";
+        Environment = "PATH=/etc/profiles/per-user/${user}/bin";
       };
       Install = {
         WantedBy = ["graphical-session.target"];
