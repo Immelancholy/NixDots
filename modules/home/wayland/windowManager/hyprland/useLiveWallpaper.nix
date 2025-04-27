@@ -28,7 +28,7 @@ in {
     #     ''${paper-change}''
     #   ];
     # };
-    systemd.user.services = {
+    systemd.user.services.paper-change = {
       Unit = {
         Description = "Wallpaper changer";
         After = ["graphical-session-pre.target"];
