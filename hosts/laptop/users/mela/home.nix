@@ -50,7 +50,7 @@
       };
       useHyprspace = false;
       liveWallpaper = {
-        enable = false;
+        enable = true;
         path = ../../../../nixos/home/backgrounds/Evil_Miku.mp4;
       };
       settings = {
