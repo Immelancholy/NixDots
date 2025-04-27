@@ -84,6 +84,8 @@
       rustlings
       obsidian
       obsidian-export
+      gimp3-with-plugins
+      pinta
     ];
     services.remmina = {
       enable = true;
