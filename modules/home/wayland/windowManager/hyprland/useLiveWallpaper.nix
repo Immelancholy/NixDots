@@ -37,7 +37,7 @@ in {
       };
       extraActivationPath = [
         pkgs.uwsm
-        changeWallpaper
+        paper-change
         pkgs.mpvpaper
         pkgs.procps
       ];
