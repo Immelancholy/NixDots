@@ -36,7 +36,7 @@ in {
         PartOf = ["graphical-session.target"];
       };
       Service = {
-        ExecStart = "/run/current-system/sw/bin/hyprctl dispatch exec -- ${paper-change}";
+        ExecStart = ''/run/current-system/sw/bin/hyprctl dispatch exec -- ${paper-change}'';
         Type = "simple";
         Environment = "PATH=/etc/profiles/per-user/${user}/bin:/run/current-system/sw/bin";
       };
