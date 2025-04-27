@@ -6,6 +6,7 @@
 }:
 with lib; let
   cfg = config.wayland.windowManager.hyprland;
+  user = config.home.username;
 
   paper-change = ''
     mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}
@@ -41,6 +42,10 @@ in {
       Install = {
         WantedBy = ["graphical-session.target"];
       };
+      Environment = [
+        "PATH=/run/current-system/sw/bin"
+        "PATH=/etc/profiles/per-user/${user}/bin"
+      ];
     };
   };
 }
