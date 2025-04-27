@@ -8,8 +8,9 @@ with lib; let
   cfg = config.wayland.windowManager.hyprland;
   user = config.home.username;
 
-  paper-change = ''
-    mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}
+  paper-change = pkgs.writeShellScriptBin "paper-change" ''
+    pkill mpvpaper
+    uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}
   '';
 in {
   options.wayland.windowManager.hyprland = {
@@ -23,6 +24,7 @@ in {
   config = mkIf cfg.liveWallpaper.enable {
     home.packages = with pkgs; [
       mpvpaper
+      paper-change
     ];
     # wayland.windowManager.hyprland.settings = {
     #   exec-once = [
@@ -36,7 +38,7 @@ in {
         PartOf = ["graphical-session.target"];
       };
       Service = {
-        ExecStart = ''/run/current-system/sw/bin/hyprctl dispatch exec -- uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}'';
+        ExecStart = ''/run/current-system/sw/bin/hyprctl dispatch exec paper-change'';
         Type = "simple";
         Environment = "PATH=/etc/profiles/per-user/${user}/bin:/run/current-system/sw/bin";
       };
