@@ -24,11 +24,11 @@ in {
     home.packages = with pkgs; [
       mpvpaper
     ];
-    wayland.windowManager.hyprland.settings = {
-      exec-once = [
-        ''uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}''
-      ];
-    };
+    # wayland.windowManager.hyprland.settings = {
+    #   exec-once = [
+    #     ''uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${cfg.liveWallpaper.path}''
+    #   ];
+    # };
     home = {
       activation = {
         paper-change = lib.hm.dag.entryAfter ["installPackages"] ''
