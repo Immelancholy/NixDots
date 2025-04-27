@@ -48,7 +48,7 @@
       useHyprspace = false;
       liveWallpaper = {
         enable = true;
-        path = ../../../../nixos/home/backgrounds/Momo_Smoke.mp4.mp4;
+        path = ../../../../nixos/home/backgrounds/Momo_Smoke.mp4;
       };
       settings = {
         cursor = {
