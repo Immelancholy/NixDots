@@ -31,14 +31,14 @@ in {
     systemd.user.services = {
       Unit = {
         Description = "Wallpaper changer";
-        After = "default.target";
+        After = ["default.target"];
       };
       Service = {
         ExecStart = "${paper-change}";
         Type = "simple";
       };
       Install = {
-        WantedBy = "graphical-session.target";
+        WantedBy = ["graphical-session.target"];
       };
     };
   };
