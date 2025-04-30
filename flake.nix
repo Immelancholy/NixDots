@@ -128,7 +128,7 @@
   in {
     formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
     nixosConfigurations = {
-      enlil = nixpkgs.lib.nixosSystem {
+      Enlil = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = {inherit inputs nixpkgs;};
         modules = [
@@ -153,7 +153,7 @@
           }
         ];
       };
-      ereshkigal = nixpkgs.lib.nixosSystem {
+      Ereshkigal = nixpkgs.lib.nixosSystem {
         inherit system;
         specialArgs = {inherit inputs nixpkgs;};
         modules = [

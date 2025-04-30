@@ -5,7 +5,7 @@
   ...
 }: {
   disko.devices.disk.main.device = "/dev/sdb";
-  networking.hostName = "ereshkigal";
+  networking.hostName = "Ereshkigal";
   userAccounts.users = [
   ]; # user accounts here
   userAccounts.sudoUsers = [
