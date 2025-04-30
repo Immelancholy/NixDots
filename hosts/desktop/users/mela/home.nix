@@ -17,7 +17,18 @@
       # nixvim.enable = false;
       # zen.enable = false;
       # vesktop.enable = false;
-      vesktop.enable = true;
+    };
+    programs.vesktop = {
+      enable = true;
+      settings = {
+        discordBranch = "canary";
+        minimizeToTray = true;
+        arRPC = true;
+        spellCheckLanguages = [
+          "en-gb"
+          "en"
+        ];
+      };
     };
     programs.obs-studio.enable = true;
     programs.git = {
