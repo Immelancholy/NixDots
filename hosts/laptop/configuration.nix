@@ -5,7 +5,7 @@
   ...
 }: {
   disko.devices.disk.main.device = "/dev/sdb";
-  networking.hostName = "nix-relic-laptop";
+  networking.hostName = "ereshkigal";
   userAccounts.users = [
   ]; # user accounts here
   userAccounts.sudoUsers = [
