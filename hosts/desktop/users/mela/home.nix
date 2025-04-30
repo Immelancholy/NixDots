@@ -29,6 +29,19 @@
           "en"
         ];
       };
+      vencord.settings = {
+        autoUpdate = true;
+        autoUpdateNotification = true;
+        plugins = {
+          ChatInputButtonAPI.enabled = true;
+          CommandsAPI.enabled = true;
+          DynamicImageModelAPI.enabled = true;
+          MemberListDecoratorsAPI.enabled = true;
+          MessageAccessoriesAPI.enabled = true;
+          MessageDecorationsAPI.enabled = true;
+          FakeNitro.enabled = true;
+        };
+      };
     };
     programs.obs-studio.enable = true;
     programs.git = {
