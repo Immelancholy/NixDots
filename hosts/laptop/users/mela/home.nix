@@ -4,6 +4,9 @@
   ...
 }: {
   home-manager.users.mela = {
+    imports = [
+      ./vesktop.nix
+    ];
     catppuccin = {
       flavor = "mocha";
       accent = "mauve";
