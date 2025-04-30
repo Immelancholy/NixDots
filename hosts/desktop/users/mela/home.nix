@@ -149,7 +149,9 @@
             PinDMs = {
               enabled = true;
               pinOrder = 0;
-              userBasedCatagoryList = {
+              dmSectionCollapsed = false;
+              canCollapseDmSection = false;
+              userBasedCategoryList = {
                 "459733044383842304" = [
                   {
                     id = "bt86f0qkj1";
