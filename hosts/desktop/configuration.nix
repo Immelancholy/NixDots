@@ -6,7 +6,7 @@
 }: {
   disko.devices.disk.main.device = "/dev/nvme0n1";
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
-  networking.hostName = "tiamat";
+  networking.hostName = "enlil";
   userAccounts.users = [];
   userAccounts.sudoUsers = ["mela"];
 
