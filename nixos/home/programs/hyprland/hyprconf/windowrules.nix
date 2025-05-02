@@ -1,9 +1,9 @@
 {
   wayland.windowManager.hyprland.settings = {
     windowrule = [
-      ''opacity 1.0 0.95, class:^(kitty)$''
+      ''opacity 1.0 0.90,class:^(kitty)$''
       ''opacity 0.90 0.90,class:^(zen)$''
-      ''opacity 1.0 override, title:(.*YouTube.*|.*Instagram.*)$''
+      ''opacity 1.0 override, title:(.*YouTube.*|.*Instagram.*|.*HiAnime.*)$''
       ''opacity 0.80 0.80,class:^(gcr-prompter)$''
       ''opacity 0.80 0.80,class:^(org.gnome.seahorse.Application)$''
       ''opacity 0.80 0.80,class:^(org.prismlauncher.PrismLauncher)$''
