@@ -29,14 +29,14 @@
         headinglen=''${#heading}
         padlength=$(( (width - 2 - headinglen) / 2 ))
         for ((i = 0; i < padlength; ++i)); do
-          printf "-"
+          printf ""
         done
         printf " %s " "$heading"
         for ((i = 0; i < padlength; ++i)); do
-          printf "-"
+          printf ""
         done
         if (( (width - 2 - headinglen) % 2 )); then
-          printf "-"
+          printf ""
         fi
         printf "\n"
       }
