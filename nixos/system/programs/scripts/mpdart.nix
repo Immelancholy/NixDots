@@ -1,18 +1,11 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   environment.systemPackages = [
     (pkgs.writeShellScriptBin "mpdart" ''
-      function get_screen_width()
-      {
-          screen_width=$(tput cols)
-          declare -g screen_width
-      }
-      function center_text()
-      {
-          textsize=''${#1}
-          span=$(((screen_width + textsize) / 2))
-
-          printf '%*s\n' "''${span}" "$1"
-      }
+      source "${inputs.bash-utility}/src/format.sh"
       get_art () {
         song=$(mpc current --format %file%)
         if [ "$song" != "$song_old" ]; then
@@ -23,9 +16,8 @@
           line1="-------- $artist --------"
           line2="-------- $title --------"
           kitten icat --align=center "$art"
-          get_screen_width
-          center_text "$line1"
-          center_text "$line2"
+          format::text_center "$line1"
+          format::text_center "$line2"
           song_old=$song
         fi
       }

@@ -8,6 +8,10 @@
       url = "github:kamadorueda/alejandra/3.1.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    bash-utility = {
+      url = "github:labbots/bash-utility";
+      flake = false;
+    };
     zsh-256color = {
       url = "github:chrissicool/zsh-256color";
       flake = false;
