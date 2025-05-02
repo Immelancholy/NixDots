@@ -13,7 +13,6 @@
           kitten icat --align=center "$art"
           columns=$(tput cols)
           printf "%*s\n" $(((''${#line1}+$columns)/2)) "$line1"
-          columns=$(tput cols)
           printf "%*s\n" $(((''${#line2}+$columns)/2)) "$line2"
           song_old=$song
         fi
