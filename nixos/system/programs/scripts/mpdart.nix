@@ -1,6 +1,18 @@
 {pkgs, ...}: {
   environment.systemPackages = [
     (pkgs.writeShellScriptBin "mpdart" ''
+      function get_screen_width()
+      {
+          screen_width=$(tput cols)
+          declare -g screen_width
+      }
+      function center_text()
+      {
+          textsize=''${#1}
+          span=$(((screen_width + textsize) / 2))
+
+          printf '%*s\n' "''${span}" "$1"
+      }
       get_art () {
         song=$(mpc current --format %file%)
         if [ "$song" != "$song_old" ]; then
@@ -11,9 +23,9 @@
           line1="-------- $artist --------"
           line2="-------- $title --------"
           kitten icat --align=center "$art"
-          columns=$(tput cols)
-          # printf "%*s\n" $(((''${#line1}+$columns)/2)) "$line1"
-          printf "%*s\n" $(((''${#line2}+$columns)/2)) "$line2"
+          get_screen_width
+          center_text "$line1"
+          center_text "$line2"
           song_old=$song
         fi
       }
