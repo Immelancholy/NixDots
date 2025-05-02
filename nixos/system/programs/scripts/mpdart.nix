@@ -25,13 +25,15 @@
            return 0
       }
       get_art () {
-        song=$(playerctl --player=mpd metadata --format "{{title}}")
+        song=$(mpc current --format %file%)
         art=$(playerctl --player=mpd metadata --format "{{mpris:artUrl}}")
         if [ "$song" != "$song_old" ]; then
           clear
           kitten icat --align=center "$art"
-          line1=$(playerctl --player=mpd metadata --format "-------- {{artist}} --------")
-          line2=$(playerctl --player=mpd metadata --format "-------- {{title}} --------")
+          title=$(mpc current --format %title%)
+          artist=$(mpc current --format %artist%)
+          line1="-------- $artist --------"
+          line2="-------- $title --------"
           print_centered "$line1" " "
           print_centered "$line2" " "
           song_old=$song
