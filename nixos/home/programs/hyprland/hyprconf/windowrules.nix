@@ -1,9 +1,7 @@
 {
   wayland.windowManager.hyprland.settings = {
     windowrule = [
-      # opacity 0.90 0.90,class:^(firefox)$
-      # opacity 0.90 0.90,class:^(Google-chrome)$
-      # opacity 0.90 0.90,class:^(Brave-browser)$
+      ''opacity 1.0 0.95, class:^(kitty)$''
       ''opacity 0.90 0.90,class:^(zen)$''
       ''opacity 1.0 override, title:(.*YouTube.*|.*Instagram.*)$''
       ''opacity 0.80 0.80,class:^(gcr-prompter)$''
@@ -115,8 +113,6 @@
       ''size 850 540,class:^(org.pulseaudio.pavucontrol)$''
 
       ''float, title:(.*Properties*.)$''
-
-      # noblur, class:^(kitty)$
 
       # common modals
       ''float,title:^(Open)$''
