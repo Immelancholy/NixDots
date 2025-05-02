@@ -12,14 +12,15 @@ in {
     useHyprspace = mkOption {
       type = types.bool;
       default = false;
-      description = ''Use Hy3 tyling style'';
+      description = ''Use Hyprspace'';
     };
   };
   config = mkMerge [
     (mkIf cfg.useHyprspace {
       wayland.windowManager.hyprland = {
         plugins = [
-          inputs.Hyprspace.packages.${pkgs.system}.Hyprspace
+          # inputs.Hyprspace.packages.${pkgs.system}.Hyprspace
+          pkgs.hyprlandPlugins.hyprspace
         ];
         settings = {
           bind = [
