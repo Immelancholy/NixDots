@@ -1,6 +1,11 @@
 {
   wayland.windowManager.hyprland.settings = {
     windowrule = [
+      ''opacity 1.0 0.90,class:^(neo)$''
+      ''opacity 1.0 0.90,class:^(cava)$''
+      ''opacity 1.0 0.90,class:^(mpd)$''
+      ''opacity 1.0 0.90,class:^(btop)$''
+      ''opacity 1.0 0.90,class:^(fastfetch)$''
       ''opacity 1.0 0.90,class:^(kitty)$''
       ''opacity 0.90 0.90,class:^(zen)$''
       ''opacity 1.0 override, title:(.*YouTube.*|.*Instagram.*|.*HiAnime.*|.*Twitch.*)$''
