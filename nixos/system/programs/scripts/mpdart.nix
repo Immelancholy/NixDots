@@ -13,22 +13,12 @@
 
       show_help() {
           printf "%s" "\
-      usage: mpdart [-h|--help] [--music_dir \"path/to/dir\"] [--verbose]
+      usage: mpdart [-h|--help] [--music_dir \"path/to/dir\"]
 
       optional arguments:
          -h, --help            show this help message and exit
          --music_dir           the music directory which MPD plays from
-         --verbose             show the output
       "
-      }
-
-      log() {
-          [ "$VERBOSE" ] && echo "$PROG_NAME: $1"
-      }
-
-      logError() {
-          echo "$PROG_NAME: $1" >&2
-          exit 1
       }
 
       options=$(getopt -o h --long 'music_dir:,verbose,help' -- "$@")
@@ -43,9 +33,6 @@
               -h|--help)
                   show_help
                   exit
-                  ;;
-              --verbose)
-                  VERBOSE=true
                   ;;
               --)
                   shift
@@ -64,7 +51,6 @@
           for ART in "$DIR/cover."{png,jpg,webp}; do
             if [ -f "$ART" ]; then
               convert "$ART" $COVER &> /dev/null
-              log "got album art"
             fi
           done
           artist=$(mpc current --format %artist%)
