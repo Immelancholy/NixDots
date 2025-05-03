@@ -76,16 +76,19 @@
         fi
       }
 
-      while :
-      do
-        state=$(mpc status %state%)
-        if [ "$state" = "playing" ]; then
-          get_art
-        elif [ "$state" = "stopped" ]; then
-          song_old=""
-          clear
-        fi
-      done
+
+      main () {
+        while :
+        do
+          state=$(mpc status %state%)
+          if [ "$state" = "playing" ]; then
+            get_art
+          elif [ "$state" = "stopped" ]; then
+            song_old=""
+            clear
+          fi
+        done
+      }
     '')
   ];
 }
