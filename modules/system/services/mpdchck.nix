@@ -29,8 +29,6 @@ in {
           if [ "$state" = "playing" ];
           then
             sr.sh > /dev/null
-          else
-
           fi
         done
       '')
