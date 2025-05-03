@@ -17,7 +17,7 @@
   boot.kernelModules = ["kvm-intel"];
   boot.extraModulePackages = [];
 
-  fileSystems."/home/mela/mnt/HDD0" = {
+  fileSystems."/mnt/HDD0" = {
     device = "/dev/disk/by-uuid/30a1a261-698f-4575-b726-5b597aec89c7";
     fsType = "ext4";
   };
