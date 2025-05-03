@@ -68,13 +68,23 @@
         fi
       }
 
+      FIRST_RUN=true
 
       main () {
         while :
         do
           state=$(mpc status %state%)
+          cols=$(tput cols)
+          if [ "$FIRST_RUN" == true ]; then
+            FIRST_RUN=false
+            cols_old=$cols
+          fi
           if [ "$state" = "playing" ]; then
             get_art
+            if [ "$cols" != "$cols_old" ]; then
+              get_art
+              cols_old=$cols
+            fi
           elif [ "$state" = "stopped" ]; then
             song_old=""
             clear
