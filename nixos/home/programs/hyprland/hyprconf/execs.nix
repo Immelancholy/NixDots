@@ -12,6 +12,7 @@
       "[workspace 2 silent] $browser"
       "[workspace 2 silent] uwsm app -- teams-for-linux --minimized"
       "uwsm app -- $discord"
+      "systemctl restart --user mpd"
     ];
   };
 }
