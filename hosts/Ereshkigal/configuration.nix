@@ -75,13 +75,13 @@
 
   displayManager = {
     sddm = {
-      enable = true;
+      enable = false;
       animatedBackground = {
         enable = true;
         path = ../../nixos/home/backgrounds/Evil_Miku.mp4;
       };
     };
-    tuiGreet.enable = false;
+    tuiGreet.enable = true;
   };
 
   locale = "en_GB.UTF-8";
