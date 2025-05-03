@@ -141,7 +141,7 @@
           catppuccin.nixosModules.catppuccin
           ./nixos/system
           ./modules/system
-          ./hosts/desktop
+          ./hosts/Enlil
 
           home-manager.nixosModules.home-manager
           {
@@ -166,7 +166,7 @@
           catppuccin.nixosModules.catppuccin
           ./nixos/system
           ./modules/system
-          ./hosts/laptop
+          ./hosts/Ereshkigal
 
           home-manager.nixosModules.home-manager
           {
