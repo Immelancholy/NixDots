@@ -6,20 +6,6 @@
   imports = [
     ./vesktop.nix
   ];
-  catppuccin = {
-    flavor = "mocha";
-    accent = "mauve";
-  };
-  # stylix.targets = {
-  #   tmux.enable = false;
-  #   yazi.enable = false;
-  #   btop.enable = false;
-  #   spicetify.enable = false;
-  #   kitty.enable = false;
-  #   nixvim.enable = false;
-  #   zen.enable = false;
-  #   vesktop.enable = false;
-  # };
   services.mpd = {
     extraConfig = ''
       audio_output {
