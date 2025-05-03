@@ -7,7 +7,7 @@
     (pkgs.writeShellScriptBin "mpdart" ''
       source "${inputs.bash-utility}/src/format.sh"
       TMP=''${TMPDIR:-/tmp}
-      COVER=''${$TMP/albumArt.jpg}
+      COVER=$TMP/albumArt.jpg
       MUSIC_DIR="''${MPD_MUSIC_DIR:-~/Music}"
       PROG_NAME=$(basename "$0")
 
