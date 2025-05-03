@@ -63,21 +63,6 @@ in {
         "vimSync": true
       }
     '';
-    "Pictures/fastfetch_logos/Nakari.jpg" = {
-      source = Nakari;
-    };
-    "Pictures/fastfetch_logos/Goth_Chell.jpg" = {
-      source = Goth_Chell;
-    };
-    "Pictures/fastfetch_logos/Azurenti.jpg" = {
-      source = Azurenti;
-    };
-    "Pictures/fastfetch_logos/Fubuki.jpg" = {
-      source = Fubuki;
-    };
-    "Pictures/fastfetch_logos/Shorea.jpg" = {
-      source = Shorea;
-    };
     "Pictures/wallpapers" = {
       source = ./backgrounds;
       recursive = true;
