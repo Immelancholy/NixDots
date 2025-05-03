@@ -51,7 +51,7 @@
           for ART in "$DIR/cover."{png,jpg,webp}; do
             if [ -f "$ART" ]; then
               convert "$ART" $COVER &> /dev/null
-            elif
+            else
               for ART in "$DIR/../cover."{png,jpg,webp}; do
               if [ -f "$ART" ]; then
                 convert "$ART" $COVER &> /dev/null
