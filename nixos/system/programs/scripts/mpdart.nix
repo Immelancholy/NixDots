@@ -90,7 +90,7 @@
             song_old=""
             clear
           fi
-          read -t 0.000001 -rsn1 key
+          read -rsn1 -t 0.001 key
           if [ "$key" = 'q' ]; then
             break
           fi
