@@ -15,14 +15,4 @@
     ];
     SSH_AUTH_SOCK = "/run/user/1000/keyring/ssh";
   };
-  environment.etc."xdg/user-dirs.defaults".text = ''
-    DESKTOP=Desktop
-    DOCUMENTS=Documents
-    DOWNLOAD=Downloads
-    MUSIC=Music
-    PICTURES=Pictures
-    PUBLICSHARE=Public
-    TEMPLATES=Templates
-    VIDEOS=Videos
-  '';
 }
