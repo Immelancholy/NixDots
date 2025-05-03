@@ -41,7 +41,7 @@ in {
             ../../../nixos/home
             # inputs.stylix.homeManagerModules.stylix
             ../../home
-            ../../../hosts/${config.networking.hostName}/${user}/home.nix
+            ../../../hosts/${config.networking.hostName}/users/${user}/home.nix
             inputs.catppuccin.homeModules.catppuccin
             inputs.nixvim.homeManagerModules.nixvim
             inputs.spicetify-nix.homeManagerModules.default
