@@ -8,7 +8,7 @@
       source "${inputs.bash-utility}/src/format.sh"
       TMP="/tmp"
       COVER="$TMP/albumArt.jpg"
-      MUSIC_DIR="''${MPD_MUSIC_DIR:-$HOME/Music}"
+      MUSIC_DIR="$HOME/Music"
       PROG_NAME=$(basename "$0")
 
       show_help() {
