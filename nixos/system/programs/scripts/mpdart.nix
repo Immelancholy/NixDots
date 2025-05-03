@@ -51,11 +51,13 @@
           for ART in "$DIR/cover."{png,jpg,webp}; do
             if [ -f "$ART" ]; then
               convert "$ART" $COVER &> /dev/null
-            else
+            elif
               for ART in "$DIR/../cover."{png,jpg,webp}; do
-              if [ -f "$ART" ]; then
-                convert "$ART" $COVER &> /dev/null
-              fi
+                if [ -f "$ART" ]; then
+                  convert "$ART" $COVER &> /dev/null
+                fi
+              done
+            else
             fi
           done
           artist=$(mpc current --format %artist%)
