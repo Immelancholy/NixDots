@@ -107,10 +107,8 @@ in {
       path = [
         mpdchck
         srsh
-        pipewire
-        wireplumber
-        mpc
-        mpd
+        pkgs.pipewire
+        pkgs.mpc
       ];
       script = ''mpdchck.sh'';
       serviceConfig = {
