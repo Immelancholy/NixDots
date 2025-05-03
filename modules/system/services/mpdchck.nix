@@ -29,6 +29,8 @@ in {
           if [ "$state" = "playing" ];
           then
             sr.sh > /dev/null
+          else
+
           fi
         done
       '')
@@ -38,7 +40,7 @@ in {
         while :
         do
           state=$(mpc status %state%)
-          if [ "$state" = "paused" ] || [ "$state" = "stopped" ];
+          if [ "$state" != "playing" ];
           then
             pw-metadata -n settings 0 clock.force-rate 0 > /dev/null
 
