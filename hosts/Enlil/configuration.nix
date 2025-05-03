@@ -10,10 +10,6 @@
   userAccounts.users = [];
   userAccounts.sudoUsers = ["mela"];
 
-  imports = [
-    ./users
-  ];
-
   environment.systemPackages = with pkgs; [
   ];
   stylix = {
