@@ -47,6 +47,7 @@
       cleanup () {
         stty echo
         tput cvvis
+        clear
         exit 1
       }
 
@@ -111,6 +112,7 @@
       main
       stty echo
       tput cvvis
+      clear
       exit 0
     '')
   ];
