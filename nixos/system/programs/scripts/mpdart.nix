@@ -6,6 +6,7 @@
   environment.systemPackages = [
     (pkgs.writeShellScriptBin "mpdart" ''
       stty -echo
+      tput cvis
       source "${inputs.bash-utility}/src/format.sh"
       TMP="/tmp"
       COVER="$TMP/albumArt.jpg"
@@ -100,6 +101,7 @@
 
       main
       stty echo
+      tput cnorm
       exit 0
     '')
   ];
