@@ -44,6 +44,14 @@
           shift
       done
 
+      cleanup () {
+        stty echo
+        tput cvvis
+        exit 1
+      }
+
+      trap cleanup SIGINT
+
       get_art () {
         song=$(mpc current --format %file%)
         if [ "$song" != "$song_old" ]; then
