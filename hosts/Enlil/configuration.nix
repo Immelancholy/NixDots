@@ -74,6 +74,8 @@
   displayManager = {
     sddm = {
       enable = false;
+      screenWidth = "1920";
+      screenHeight = "1080";
       animatedBackground = {
         enable = true;
         path = ../../nixos/home/backgrounds/Evil_Miku.mp4;
