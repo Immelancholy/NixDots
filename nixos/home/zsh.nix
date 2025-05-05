@@ -21,10 +21,6 @@
       rmpcs = "rmpc.sh";
       ca = "cava.sh";
       fastfetch = "clear; fastfetch";
-      switch = ''cd $FLAKE_PATH; clear; fastfetch; git add .; git commit -m "switch"; sudo nixos-rebuild switch --flake .; git add . ; git commit -m "Update Flake Lock"; cd -'';
-      update = "cd $FLAKE_PATH; clear; fastfetch; nix flake update --flake . --commit-lock-file; cd -";
-      boot = ''cd $FLAKE_PATH; clear; fastfetch; git add .; git commit -m "switch"; sudo nixos-rebuild boot --flake .; git add . ; git commit -m "Update Flake Lock"; cd -'';
-      nixp = "cd $FLAKE_PATH; git push -u origin main; cd -";
       firmware = "sudo systemctl reboot --firmware-setup";
       gc = "nix-collect-garbage -d && sudo nix-collect-garbage -d";
     };
@@ -92,6 +88,45 @@
             GIT=0
           fi
         }
+
+        switch () {
+          builtin cd "$FLAKE_PATH" || exit
+          clear
+          fastfetch
+          git add .
+          git commit -m "switch"
+          sudo nixos-rebuild switch --flake .
+          git add .
+          git commit -m "Update Flake Lock"
+          builtin cd - || exit
+        }
+
+        boot () {
+          builtin cd "$FLAKE_PATH" || exit
+          clear
+          fastfetch
+          git add .
+          git commit -m "switch"
+          sudo nixos-rebuild boot --flake .
+          git add .
+          git commit -m "Update Flake Lock"
+          builtin cd - || exit
+        }
+
+        update () {
+          builtin cd "$FLAKE_PATH" || exit
+          clear
+          fastfetch
+          nix flake update --flake . --commit-lock-file
+          builtin cd - || exit
+        }
+
+        nixp () {
+          builtin cd "$FLAKE_PATH" || exit
+          git push -u origin main
+          builtin cd - || exit
+        }
+
         source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
         source <(fzf --zsh)
 
