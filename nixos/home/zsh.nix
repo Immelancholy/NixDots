@@ -55,27 +55,24 @@
       ''
         z () {
           __zoxide_z "$@"
-          git_status=$(git status)
 
-          if [ "$git_status" != "fatal: not a git repository (or any of the parent directories): .git" ]; then
+          if git status &>/dev/null; then
             clear
             onefetch
           fi
         }
         zi () {
           __zoxide_zi "$@"
-          git_status=$(git status)
 
-          if [ "$git_status" != "fatal: not a git repository (or any of the parent directories): .git" ]; then
+          if git status &>/dev/null; then
             clear
             onefetch
           fi
         }
         cd () {
-          builtin cd "$@"
-          git_status=$(git status)
+          builtin cd "$@" || exit
 
-          if [ "$git_status" != "fatal: not a git repository (or any of the parent directories): .git" ]; then
+          if git status &>/dev/null; then
             clear
             onefetch
           fi
