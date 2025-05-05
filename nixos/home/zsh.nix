@@ -63,6 +63,7 @@
             GIT=1
           elif [ $INIT = 1 ]; then
             fortune | pokemonsay -p fennekin -N
+            GIT=0
             INIT=0
           elif [ ! "$current_repo" ] && \
             [ $GIT = 1 ]; then
