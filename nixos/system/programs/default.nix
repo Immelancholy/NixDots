@@ -62,6 +62,7 @@
     wantedBy = ["graphical-session.target"];
   };
   environment.systemPackages = with pkgs; [
+    onefetch
     neo
     pipes
     brightnessctl

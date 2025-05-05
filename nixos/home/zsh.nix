@@ -49,6 +49,22 @@
       }
     ];
     initContent = ''
+      z () {
+        __zoxide_z "$@"
+        git_status=$(git status)
+
+        if [ "$git_status" != "fatal: not a git repository (or any of the parent directories): .git" ]; then
+          onefetch
+        fi
+      }
+      zi () {
+        __zoxide_zi "$@"
+        git_status=$(git status)
+
+        if [ "$git_status" != "fatal: not a git repository (or any of the parent directories): .git" ]; then
+          onefetch
+        fi
+      }
       source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
       source <(fzf --zsh)
 
