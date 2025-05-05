@@ -50,6 +50,7 @@
       */
       ''
         last_repo=
+        INIT=1
         check_for_repo () {
           current_repo=$(git rev-parse --show-toplevel 2> /dev/null)
 
@@ -58,12 +59,17 @@
             clear
             onefetch -i "$(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)"
             last_repo=$current_repo
+            INIT=0
             GIT=1
-          elif [ "$current_repo" ] && \
-            [ "$current_repo" = "$last_repo" ]; then
-            GIT=1
-          else
+          elif [ $INIT = 1 ]; then
             fortune | pokemonsay -p fennekin -N
+            INIT=0
+            GIT=0
+          elif [[ ! "$current_repo" ]] && \
+            [ $GIT = 1 ]; then
+            clear
+            fortune | pokemonsay -p fennekin -N
+          else
             GIT=0
           fi
         }
