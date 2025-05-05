@@ -48,35 +48,50 @@
         file = "share/zsh-nix-shell/nix-shell.plugin.zsh";
       }
     ];
-    initContent = ''
-      z () {
-        __zoxide_z "$@"
-        git_status=$(git status)
+    initContent =
+      /*
+      bash
+      */
+      ''
+        z () {
+          __zoxide_z "$@"
+          git_status=$(git status)
 
-        if [ "$git_status" != "fatal: not a git repository (or any of the parent directories): .git" ]; then
-          onefetch
+          if [ "$git_status" != "fatal: not a git repository (or any of the parent directories): .git" ]; then
+            clear
+            onefetch
+          fi
+        }
+        zi () {
+          __zoxide_zi "$@"
+          git_status=$(git status)
+
+          if [ "$git_status" != "fatal: not a git repository (or any of the parent directories): .git" ]; then
+            clear
+            onefetch
+          fi
+        }
+        cd () {
+          builtin cd "$@"
+          git_status=$(git status)
+
+          if [ "$git_status" != "fatal: not a git repository (or any of the parent directories): .git" ]; then
+            clear
+            onefetch
+          fi
+        }
+        source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+        source <(fzf --zsh)
+
+        [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+
+        if [ "$class" = "fastfetch" ];
+        then
+          fastfetch --logo $HOME/Pictures/fastfetch_logos/Nakari.jpg
+        else
+          fortune | pokemonsay -p fennekin -N
         fi
-      }
-      zi () {
-        __zoxide_zi "$@"
-        git_status=$(git status)
-
-        if [ "$git_status" != "fatal: not a git repository (or any of the parent directories): .git" ]; then
-          onefetch
-        fi
-      }
-      source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
-      source <(fzf --zsh)
-
-      [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-
-      if [ "$class" = "fastfetch" ];
-      then
-        fastfetch --logo $HOME/Pictures/fastfetch_logos/Nakari.jpg
-      else
-        fortune | pokemonsay -p fennekin -N
-      fi
-    '';
+      '';
   };
 }
