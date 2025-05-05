@@ -196,11 +196,11 @@
           enabled = true;
           summaryExpiryThresholdDays = 3;
         };
-        ShikiCodeblocks = {
-          enabled = true;
-          useDevIcon = "GREYSCALE";
-          theme = "https://raw.githubusercontent.com/shikijs/textmate-grammars-themes/2d87559c7601a928b9f7e0f0dda243d2fb6d4499/packages/tm-themes/themes/dark-plus.json";
-        };
+        # ShikiCodeblocks = {
+        #   enabled = true;
+        #   useDevIcon = "GREYSCALE";
+        #   theme = "https://raw.githubusercontent.com/shikijs/textmate-grammars-themes/2d87559c7601a928b9f7e0f0dda243d2fb6d4499/packages/tm-themes/themes/dark-plus.json";
+        # };
         ShowConnections.enabled = true;
         ShowHiddenChannels = {
           enabled = true;
