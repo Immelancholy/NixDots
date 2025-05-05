@@ -53,10 +53,14 @@
         INIT=1
         onefetch_img () {
           image="$(find ~/Pictures/fastfetch_logos/ -name "*.jpg" -o -name "*.png" 2> /dev/null | shuf -n1)"
-          if [ "$image" ]; then
-            onefetch --image-protocol kitty -i "$image"
+          if [ "$TERM" = "screen-256color" ]; then
+            fastfetch
           else
-            onefetch
+            if [ "$image" ]; then
+              onefetch --image-protocol kitty -i "$image"
+            else
+              onefetch
+            fi
           fi
         }
         check_for_repo () {
