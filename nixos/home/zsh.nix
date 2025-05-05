@@ -52,7 +52,7 @@
         last_repo=
         INIT=1
         onefetch_img () {
-          image="$(find ~/Pictures/screenshots/ -name "*.jpg" -o -name "*.png" | shuf -n1 2> /dev/null)"
+          image="$(find ~/Pictures/screenshots/ -name "*.jpg" -o -name "*.png" 2> /dev/null | shuf -n1)"
           if [ "$image" ]; then
             onefetch -i "$image"
           else
