@@ -73,12 +73,12 @@
         }
 
         cd () {
-          builtin cd "$@" || exit
+          builtin cd "$@"
           check_for_repo
         }
 
         switch () {
-          builtin cd "$FLAKE_PATH" || exit
+          builtin cd "$FLAKE_PATH"
           clear
           onefetch -i "$(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)"
           git add .
@@ -90,7 +90,7 @@
         }
 
         boot () {
-          builtin cd "$FLAKE_PATH" || exit
+          builtin cd "$FLAKE_PATH"
           clear
           onefetch -i "$(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)"
           git add .
@@ -102,7 +102,7 @@
         }
 
         update () {
-          builtin cd "$FLAKE_PATH" || exit
+          builtin cd "$FLAKE_PATH"
           clear
           onefetch -i "$(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)"
           nix flake update --flake . --commit-lock-file
@@ -110,7 +110,7 @@
         }
 
         nixp () {
-          builtin cd "$FLAKE_PATH" || exit
+          builtin cd "$FLAKE_PATH"
           git push -u origin main
           builtin cd - || exit
         }
