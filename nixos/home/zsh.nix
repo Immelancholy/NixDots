@@ -68,7 +68,7 @@
 
           if git status &>/dev/null; then
             clear
-            onefetch
+            onefetch -i "$(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)"
             GIT=1
           elif [ $GIT = 1 ]; then
             clear
@@ -81,7 +81,7 @@
 
           if git status &>/dev/null; then
             clear
-            onefetch
+            onefetch -i "$(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)"
             GIT=1
           elif [ $GIT = 1 ]; then
             clear
@@ -93,7 +93,7 @@
         switch () {
           builtin cd "$FLAKE_PATH" || exit
           clear
-          fastfetch
+          onefetch -i "$(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)"
           git add .
           git commit -m "switch"
           sudo nixos-rebuild switch --flake .
@@ -105,7 +105,7 @@
         boot () {
           builtin cd "$FLAKE_PATH" || exit
           clear
-          fastfetch
+          onefetch -i "$(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)"
           git add .
           git commit -m "switch"
           sudo nixos-rebuild boot --flake .
@@ -117,7 +117,7 @@
         update () {
           builtin cd "$FLAKE_PATH" || exit
           clear
-          fastfetch
+          onefetch -i "$(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)"
           nix flake update --flake . --commit-lock-file
           builtin cd - || exit
         }
@@ -139,7 +139,7 @@
           fastfetch --logo $HOME/Pictures/fastfetch_logos/Nakari.jpg
         elif git status &>/dev/null;
         then
-          onefetch
+          onefetch -i "$(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)"
           GIT=1
         else
           fortune | pokemonsay -p fennekin -N
