@@ -58,12 +58,7 @@
             [ "$current_repo" != "$last_repo" ]; then
             clear
             onefetch -i "$(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)"
-            GIT=1
             last_repo=$current_repo
-          elif [ $GIT = 1 ]; then
-            clear
-            fortune | pokemonsay -p fennekin -N
-            GIT=0
           fi
         }
 
