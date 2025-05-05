@@ -67,7 +67,6 @@
           else
             fortune | pokemonsay -p fennekin -N
           fi
-          e
         }
 
         z () {
