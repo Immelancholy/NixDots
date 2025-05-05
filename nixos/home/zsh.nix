@@ -62,6 +62,7 @@
             GIT=1
           elif [ $GIT = 1 ]; then
             clear
+            fortune | pokemonsay -p fennekin -N
             GIT=0
           fi
         }
@@ -74,6 +75,7 @@
             GIT=1
           elif [ $GIT = 1 ]; then
             clear
+            fortune | pokemonsay -p fennekin -N
             GIT=0
           fi
         }
@@ -86,6 +88,7 @@
             GIT=1
           elif [ $GIT = 1 ]; then
             clear
+            fortune | pokemonsay -p fennekin -N
             GIT=0
           fi
         }
