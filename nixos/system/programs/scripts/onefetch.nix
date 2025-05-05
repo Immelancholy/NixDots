@@ -1,5 +1,5 @@
 {pkgs, ...}: let
-  zoxgit = pkgs.writeShellScriptApplication {
+  zoxgit = pkgs.writeShellApplication {
     name = "zoxgit";
 
     runtimeInputs = with pkgs; [
