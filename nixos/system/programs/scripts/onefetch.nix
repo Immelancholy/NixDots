@@ -5,6 +5,7 @@
     runtimeInputs = with pkgs; [
       git
       onefetch
+      zoxide
     ];
 
     text =
