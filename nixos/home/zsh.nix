@@ -49,6 +49,7 @@
       bash
       */
       ''
+        GIT=0
         z () {
           __zoxide_z "$@"
 
@@ -136,6 +137,10 @@
         if [ "$class" = "fastfetch" ];
         then
           fastfetch --logo $HOME/Pictures/fastfetch_logos/Nakari.jpg
+        elif git status &>/dev/null;
+        then
+          onefetch
+          GIT=1
         else
           fortune | pokemonsay -p fennekin -N
         fi
