@@ -65,7 +65,7 @@
             fortune | pokemonsay -p fennekin -N
             INIT=0
             GIT=0
-          elif [[ ! "$current_repo" ]] && \
+          elif ! [ "$current_repo" ] && \
             [ $GIT = 1 ]; then
             clear
             fortune | pokemonsay -p fennekin -N
