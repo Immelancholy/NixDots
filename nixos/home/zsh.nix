@@ -66,9 +66,10 @@
             INIT=0
             GIT=0
           elif ! [ "$current_repo" ] && \
-            [ $GIT = 1 ]; then
+            [ $GIT = 0 ]; then
             clear
             fortune | pokemonsay -p fennekin -N
+            GIT=0
           else
             GIT=0
           fi
