@@ -50,44 +50,36 @@
       */
       ''
         GIT=0
+        last_repo=
+        check_for_repo () {
+          current_repo=$(git rev-parse --show-toplevel 2> /dev/null)
+
+          if [ "$current_repo" ] && \
+            [ "$current_repo" != "$last_repo" ]; then
+            clear
+            onefetch -i "$(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)"
+            GIT=1
+            last_repo=$current_repo
+          elif [ $GIT = 1 ]; then
+            clear
+            fortune | pokemonsay -p fennekin -N
+            GIT=0
+          fi
+        }
+
         z () {
           __zoxide_z "$@"
-
-          if git status &>/dev/null; then
-            clear
-            onefetch -i "$(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)"
-            GIT=1
-          elif [ $GIT = 1 ]; then
-            clear
-            fortune | pokemonsay -p fennekin -N
-            GIT=0
-          fi
+          check_for_repo
         }
+
         zi () {
           __zoxide_zi "$@"
-
-          if git status &>/dev/null; then
-            clear
-            onefetch -i "$(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)"
-            GIT=1
-          elif [ $GIT = 1 ]; then
-            clear
-            fortune | pokemonsay -p fennekin -N
-            GIT=0
-          fi
+          check_for_repo
         }
+
         cd () {
           builtin cd "$@" || exit
-
-          if git status &>/dev/null; then
-            clear
-            onefetch -i "$(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)"
-            GIT=1
-          elif [ $GIT = 1 ]; then
-            clear
-            fortune | pokemonsay -p fennekin -N
-            GIT=0
-          fi
+          check_for_repo
         }
 
         switch () {
@@ -136,13 +128,9 @@
 
         if [ "$class" = "fastfetch" ];
         then
-          fastfetch --logo $HOME/Pictures/fastfetch_logos/Nakari.jpg
-        elif git status &>/dev/null;
-        then
-          onefetch -i "$(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)"
-          GIT=1
+          fastfetch --logo "$HOME"/Pictures/fastfetch_logos/Nakari.jpg
         else
-          fortune | pokemonsay -p fennekin -N
+          check_for_repo
         fi
       '';
   };
