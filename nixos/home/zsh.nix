@@ -53,14 +53,10 @@
         INIT=1
         onefetch_img () {
           image="$(find ~/Pictures/fastfetch_logos/ -name "*.jpg" -o -name "*.png" 2> /dev/null | shuf -n1)"
-          if [ "$TERM" = "screen-256color" ]; then
-            fastfetch
+          if [ "$image" ]; then
+            onefetch --image-protocol kitty -i "$image"
           else
-            if [ "$image" ]; then
-              onefetch --image-protocol kitty -i "$image"
-            else
-              onefetch
-            fi
+            onefetch
           fi
         }
         check_for_repo () {
@@ -148,6 +144,9 @@
         if [ "$class" = "fastfetch" ];
         then
           fastfetch --logo "$HOME"/Pictures/fastfetch_logos/Nakari.jpg
+        elif [ "$TERM" = "screen-256color" ];
+        then
+          fortune | pokemonsay -p fennekin -N
         else
           check_for_repo
         fi
