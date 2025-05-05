@@ -15,7 +15,6 @@
     MPD_PORT = "${builtins.toString config.services.mpd.network.port}";
     NOTES_PATH = "$HOME/Documents/Obsidian-Vault"; # path to notes folder ( for neovim )
     PROJECTS_PATH = "$HOME/Documents/Projects"; # path to Projects folder ( for neovim )
-    QT_WAYLAND_DISABLE_WINDOWDECORATION = 1;
     QT_AUTO_SCREEN_SCALE_FACTOR = 1;
     GDK_SCALE = 1;
   };
