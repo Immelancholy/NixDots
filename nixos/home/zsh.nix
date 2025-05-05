@@ -59,6 +59,10 @@
           if git status &>/dev/null; then
             clear
             onefetch
+            GIT=1
+          elif [ $GIT = 1 ]; then
+            clear
+            GIT=0
           fi
         }
         zi () {
@@ -67,6 +71,10 @@
           if git status &>/dev/null; then
             clear
             onefetch
+            GIT=1
+          elif [ $GIT = 1 ]; then
+            clear
+            GIT=0
           fi
         }
         cd () {
@@ -75,6 +83,10 @@
           if git status &>/dev/null; then
             clear
             onefetch
+            GIT=1
+          elif [ $GIT = 1 ]; then
+            clear
+            GIT=0
           fi
         }
         source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
