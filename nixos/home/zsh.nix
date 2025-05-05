@@ -69,6 +69,7 @@
             clear
             fortune | pokemonsay -p fennekin -N
             GIT=0
+            last_repo=
           fi
         }
 
