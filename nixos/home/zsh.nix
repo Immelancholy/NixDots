@@ -54,7 +54,7 @@
         onefetch_img () {
           image="$(find ~/Pictures/fastfetch_logos/ -name "*.jpg" -o -name "*.png" 2> /dev/null | shuf -n1)"
           if [ "$image" ]; then
-            onefetch -i "$image"
+            onefetch --image-protocol kitty -i "$image"
           else
             onefetch
           fi
