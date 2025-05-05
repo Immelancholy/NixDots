@@ -55,7 +55,7 @@
 
           if git status &>/dev/null; then
             clear
-            onefetch -i $(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)
+            onefetch -i "$(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)"
             GIT=1
           elif [ $GIT = 1 ]; then
             clear
