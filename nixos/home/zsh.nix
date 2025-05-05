@@ -59,7 +59,9 @@
             onefetch -i "$(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)"
             last_repo=$current_repo
             GIT=1
-          elif [ "$current_repo" ] && [ $GIT = 1 ]; then
+          elif [ "$current_repo" ]; then
+            GIT=1
+          elif [ ! "$current_repo" ] && [ $GIT = 1 ]; then
             clear
             fortune | pokemonsay -p fennekin -N
             GIT=0
