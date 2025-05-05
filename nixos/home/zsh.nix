@@ -52,7 +52,7 @@
         last_repo=
         INIT=1
         onefetch_img () {
-          image="$(find ~/Pictures/fastfetch_logos -name '*.jpg' | shuf -n1)"
+          image="$(find ~/Pictures/screenshots/ -name "*.jpg" -o -name "*.png" | shuf -n1)"
           if [ "$image" != "" ]; then
             onefetch -i "$image"
           else
