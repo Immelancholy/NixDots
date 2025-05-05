@@ -15,43 +15,35 @@ in {
       description = ''Use Hyprspace'';
     };
   };
-  config = mkMerge [
-    (mkIf cfg.useHyprspace {
-      wayland.windowManager.hyprland = {
-        plugins = [
-          inputs.Hyprspace.packages.${pkgs.system}.Hyprspace
-          # pkgs.hyprlandPlugins.hyprspace
+  config = mkIf cfg.useHyprspace {
+    wayland.windowManager.hyprland = {
+      plugins = [
+        inputs.Hyprspace.packages.${pkgs.system}.Hyprspace
+        # pkgs.hyprlandPlugins.hyprspace
+      ];
+      settings = {
+        bind = [
+          "$Alt, Tab, overview:toggle"
+          "Alt+Shift, Tab, exec, rofi -show window -modi window"
         ];
-        settings = {
-          bind = [
-            "$Alt, Tab, overview:toggle"
-            "Alt+Shift, Tab, exec, rofi -show window -modi window"
-          ];
 
-          plugin = {
-            overview = {
-              onBottom = true;
-              workspaceMargin = 11;
-              workspaceBorderSize = 2;
-              centerAligned = true;
-              panelHeight = 320;
-              drawActiveWorkspace = true;
-              switchOnDrop = true;
-              affectStrut = false;
+        plugin = {
+          overview = {
+            onBottom = true;
+            workspaceMargin = 11;
+            workspaceBorderSize = 2;
+            centerAligned = true;
+            panelHeight = 320;
+            drawActiveWorkspace = true;
+            switchOnDrop = true;
+            affectStrut = false;
 
-              workspaceActiveBorder = "rgba($mauveff)";
-              workspaceInactiveBorder = "rgba($lavendercc)";
-              disableBlur = false;
-            };
+            workspaceActiveBorder = "rgba($mauveff)";
+            workspaceInactiveBorder = "rgba($lavendercc)";
+            disableBlur = false;
           };
         };
       };
-    })
-
-    (mkIf (!cfg.useHyprspace) {
-      wayland.windowManager.hyprland.settings.bind = [
-        "$Alt, Tab, exec, rofi -show window -modi window"
-      ];
-    })
-  ];
+    };
+  };
 }
