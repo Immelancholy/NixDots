@@ -21,5 +21,6 @@
     ./volume.nix
     ./colortrans.nix
     ./neo-color-cfg.nix
+    ./onefetch.nix
   ];
 }
