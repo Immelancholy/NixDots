@@ -44,7 +44,7 @@ in {
         export QT_AUTO_SCREEN_SCALE_FACTOR=1
         export GDK_SCALE=1
         export XCURSOR_THEME="${config.stylix.cursor.name}"
-        export XCURSOR_SIZE=${config.stylix.cursor.size}
+        export XCURSOR_SIZE=${builtins.toString config.stylix.cursor.size}
       '';
       "uwsm/env-hyprland".text = ''
         export NIXOS_OZONE_WL=1
@@ -52,7 +52,7 @@ in {
         export MOZ_ENABLE_WAYLAND=1
         export GDK_BACKEND="wayland,x11
         export HYPRCURSOR_THEME="${config.stylix.cursor.name}"
-        export HYPRCURSOR_SIZE=${config.stylix.cursor.size}
+        export HYPRCURSOR_SIZE=${builtins.toString config.stylix.cursor.size}
       '';
     };
   };
