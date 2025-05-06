@@ -17,6 +17,10 @@ all=(shutdown reboot suspend hibernate logout lockscreen)
 # By default, show all (i.e., just copy the array)
 show=("${all[@]}")
 
+if [ -z "$UWSM_ENABLED" ]; then
+	UWSM_ENABLED=0
+fi
+
 if [ "$DISPLAY_MANAGER" = "sddm" ] && \
 	[ "$UWSM_ENABLED" = 1]; then
 	logout_method="uwsm stop"
