@@ -66,10 +66,8 @@ with lib; let
 
     function mute () {
       vol=$(playerctl --player=${player} volume)
-      vol_max=1
-      vol_percent=$(${pkgs.bc}/bin/bc <<< "scale=1; "$vol" / "$vol_max" * 100")
       old_vol=$(</tmp/old_vol)
-      if [ "$vol_percent" -gt 0 ]; then
+      if ((${pkgs.bc}/bin/bc -l <<< ""$vol" > 0")); then
         playerctl --player=${player} volume 0 > /dev/null
         echo "$vol" > /tmp/old_vol
       elif [ "$old_vol" != "" ]; then
