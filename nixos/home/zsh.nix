@@ -20,7 +20,6 @@
       edit = "sudo -e";
       rmpcs = "rmpc.sh";
       ca = "cava.sh";
-      fast = "clear; fastfetch";
       firmware = "sudo systemctl reboot --firmware-setup";
       gc = "nix-collect-garbage -d && sudo nix-collect-garbage -d";
     };
