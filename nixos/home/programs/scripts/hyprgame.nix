@@ -4,6 +4,7 @@
   ...
 }: let
   wallpaper = config.wayland.windowManager.hyprland.liveWallpaper.path;
+  player = config.wayland.windowManager.hyprland.player;
 in {
   home.packages = [
     (pkgs.writeShellScriptBin "hyprgame" ''
@@ -36,7 +37,7 @@ in {
               hyprctl dispatch signalwindow class:fastfetch,9
               pkill mpvpaper
               systemctl stop --user mpdchck
-              hyprctl dispatch exec '[workspace 1 silent; float; size 1118 710; move 401 145] uwsm app -- kitty --class "mpd" --session=mpd.session'
+              hyprctl dispatch exec '[workspace 1 silent; float; size 1118 710; move 401 145] ${player}'
               exit
       else
               hyprctl dispatch signalwindow class:mpd,9
