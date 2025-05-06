@@ -118,6 +118,7 @@
       ''size 850 540,class:^(org.pulseaudio.pavucontrol)$''
 
       ''float, title:(.*Properties*.)$''
+      ''float, class:(mpv)$''
 
       # common modals
       ''float,title:^(Open)$''
