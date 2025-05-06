@@ -35,7 +35,7 @@
       export QT_QPA_PLATFORM="wayland;xcb"
       export MOZ_ENABLE_WAYLAND=1
       export GDK_BACKEND="wayland,x11
-      export UWSM=1
+      export UWSM_ENABLED=1
     '';
     "uwsm/env-hyprland".text = ''
       export HYPRCURSOR_THEME="${config.stylix.cursor.name}"
