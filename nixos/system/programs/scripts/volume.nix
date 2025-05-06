@@ -15,14 +15,8 @@
         vol_int="''${vol//"%"}"
         if [ $vol_int > 0 ]; then
           mpc volume 0 > /dev/null
-          old_vol_int="$vol_int"
-          MUTED=1
-        elif [ $MUTED = 1 ]; then
-          mpc volume "$old_vol_int"
-          MUTED=0
         else
           mpc volume 100
-          MUTED=0
         fi
       }
 
