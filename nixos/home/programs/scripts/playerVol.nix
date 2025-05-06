@@ -10,10 +10,9 @@ with lib; let
     function notify_volume() {
       # Function to show brightness notification
       VOLUME=$(mpc volume | sed 's/.*://')
-      VOLUME_PERCENT="''${VOLUME%f}"
 
       dunstctl close-all
-      dunstify -t 3000 -a "  Volume" -h int:value:"$VOLUME_PERCENT" "$VOLUME_PERCENT"
+      dunstify -t 3000 -a "  Volume" -h int:value:"$VOLUME" "$VOLUME"
     }
 
     function mute () {
