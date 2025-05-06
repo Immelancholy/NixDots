@@ -14,7 +14,7 @@
       function mute () {
         vol=$(mpc volume | sed 's/.*://')
         vol_int="''${old_vol//"%"}"
-        if [ $vol_int != 0 ]; then
+        if [ "$vol_int" != "0" ]; then
           mpc volume 0
           $old_vol_int=$vol_int
           MUTED=1
