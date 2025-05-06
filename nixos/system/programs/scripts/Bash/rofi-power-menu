@@ -7,16 +7,15 @@
 #
 # See README.md for more information.
 
+set -e
+set -u
+
 if [ "$DISPLAY_MANAGER" = "sddm" ] && \
-	[ "$UWSM_ENABLED" = 1]; then
+	[ $UWSM_ENABLED = 1]; then
 	logout_method="uwsm stop"
 else
 	logout_method="loginctl terminate-user $USER"
 fi
-
-set -e
-set -u
-
 
 # All supported choices
 all=(shutdown reboot suspend hibernate logout lockscreen)
