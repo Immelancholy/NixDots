@@ -30,8 +30,7 @@ in {
     config = {
       osc = "no";
       hwdec = "auto";
-      autofit = "75%";
-      autofit-smaller = "40%x30%";
+      autofit = "75%x75%";
     };
   };
   home.packages = with pkgs; [
