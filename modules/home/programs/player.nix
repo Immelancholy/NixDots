@@ -25,7 +25,7 @@ in {
   };
   config = {
     wayland.windowManager.hyprland.settings = {
-      "$player" = "${cfg.player.name}";
+      "$player" = "${cfg.name}";
       exec-once = [
         ''[workspace 1 silent; float; size 858 559; move 640 40] ${cfg.cmd}''
       ];
