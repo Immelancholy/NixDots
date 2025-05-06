@@ -85,7 +85,6 @@
     pavucontrol
     pulsemixer
     bibata-cursors
-    clapper
     libopus
     libvlc
     cachix
