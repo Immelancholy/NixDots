@@ -13,10 +13,10 @@
       function mute () {
         vol=$(mpc volume | sed 's/.*://')
         vol_int="''${vol//"%"}"
-        if [ $vol_int > 0 ]; then
+        if [ "$vol_int" -gt 0 ]; then
           mpc volume 0 > /dev/null
         else
-          mpc volume 100
+          mpc volume 100 > /dev/null
         fi
       }
 

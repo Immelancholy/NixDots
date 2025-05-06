@@ -10,14 +10,11 @@ function notify_volume() {
 
 function mute () {
 	vol=$(mpc volume | sed 's/.*://')
-	vol_int="${vol//"%"}"
-	if ! [ "$vol_int" != 0 ]; then
-		mpc volume 0
-		old_vol_int="$vol_int"
-		MUTED=1
-	elif [ "$MUTED" = 1 ]; then
-		mpc volume "$old_vol_int"
-		MUTED=0
+	vol_int="''${vol//"%"}"
+	if [ "$vol_int" -gt 0 ]; then
+		mpc volume 0 > /dev/null
+	else
+		mpc volume 100 > /dev/null
 	fi
 }
 
@@ -41,5 +38,5 @@ elif [[ "$1" == "dec" ]]; then
 	notify_volume
 elif [[ "$1" == "mute" ]]; then
 	mute
-
+	notify_volume
 fi
