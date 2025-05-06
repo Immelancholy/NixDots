@@ -106,7 +106,7 @@
           sudo nixos-rebuild switch --flake .
           git add .
           git commit -m "Update Flake Lock"
-          builtin cd - || exit
+          builtin cd - || return
         }
 
         boot () {
@@ -118,7 +118,7 @@
           sudo nixos-rebuild boot --flake .
           git add .
           git commit -m "Update Flake Lock"
-          builtin cd - || exit
+          builtin cd - || return
         }
 
         update () {
@@ -126,13 +126,13 @@
           clear
           onefetch_img
           nix flake update --flake . --commit-lock-file
-          builtin cd - || exit
+          builtin cd - || return
         }
 
         nixp () {
           builtin cd "$FLAKE_PATH" || return
           git push -u origin main
-          builtin cd - || exit
+          builtin cd - || return
         }
 
         source ${pkgs.zsh-vi-mode}/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
