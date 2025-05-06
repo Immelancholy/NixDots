@@ -34,7 +34,7 @@ in {
               hyprctl dispatch signalwindow class:neo,9
               hyprctl dispatch signalwindow class:cava,9
               hyprctl dispatch signalwindow class:btop,9
-              hyprctl dispatch signalwindow class:mpd,9
+              hyprctl dispatch signalwindow class:${pclass},9
               hyprctl dispatch signalwindow class:fastfetch,9
               pkill mpvpaper
               systemctl stop --user mpdchck
