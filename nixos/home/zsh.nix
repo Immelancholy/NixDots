@@ -20,8 +20,7 @@
       edit = "sudo -e";
       rmpcs = "rmpc.sh";
       ca = "cava.sh";
-      fast = "fastfetch";
-      fastfetch = "clear; fastfetch";
+      fast = "clear; fastfetch";
       firmware = "sudo systemctl reboot --firmware-setup";
       gc = "nix-collect-garbage -d && sudo nix-collect-garbage -d";
     };
@@ -65,7 +64,7 @@
           if [ "$TERM" = "screen-256color" ];
           then
             if [ $INIT = 1 ]; then
-              fast
+              fastfetch
               INIT=0
             else
               return
