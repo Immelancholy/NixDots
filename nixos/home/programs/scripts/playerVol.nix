@@ -57,17 +57,17 @@ with lib; let
     function notify_volume() {
       # Function to show brightness notification
       VOLUME=$(playerctl --player=${player} volume)
-      VOLUME_100=$((VOLUME * 100))
-      VOLUME_PERCENT="''${VOLUME_100%.*}%"
+      VOLUME_MAX=1
+      VOLUME_PERCENT=$(${pkgs.bc}/bin/bc <<< "scale=0; "$VOLUME" / "$VOLUME_MAX" * 100")
 
       dunstctl close-all
-      dunstify -t 3000 -a "  Volume" -h int:value:"$VOLUME_PERCENT" "$VOLUME_PERCENT"
+      dunstify -t 3000 -a "  Volume" -h int:value:"$VOLUME_PERCENT" "$VOLUME_PERCENT""%"
     }
 
     function mute () {
       vol=$(playerctl --player=${player} volume)
-      vol_100=$((vol * 100))
-      vol_percent=''${vol_100%.*}
+      vol_max=1
+      vol_percent=$(${pkgs.bc}/bin/bc <<< "scale=0; "$vol" / "$vol_max" * 100")
       old_vol=$(</tmp/old_vol)
       if [ "$vol_percent" -gt 0 ]; then
         playerctl --player=${player} volume 0 > /dev/null
