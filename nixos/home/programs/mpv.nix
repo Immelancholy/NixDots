@@ -26,6 +26,7 @@ in {
       pkgs.mpvScripts.mpris
       pkgs.mpvScripts.modernz
       pkgs.mpvScripts.thumbfast
+      pkgs.mpvScripts.mpv-notify-send
     ];
     config = {
       osc = "no";
