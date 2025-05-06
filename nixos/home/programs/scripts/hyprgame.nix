@@ -4,7 +4,8 @@
   ...
 }: let
   wallpaper = config.wayland.windowManager.hyprland.liveWallpaper.path;
-  player = config.wayland.windowManager.hyprland.player;
+  player = config.wayland.windowManager.hyprland.player.cmd;
+  pclass = config.wayland.windowManager.hyprland.player.class;
 in {
   home.packages = [
     (pkgs.writeShellScriptBin "hyprgame" ''
@@ -40,7 +41,7 @@ in {
               hyprctl dispatch exec '[workspace 1 silent; float; size 1118 710; move 401 145] ${player}'
               exit
       else
-              hyprctl dispatch signalwindow class:mpd,9
+              hyprctl dispatch signalwindow class:${pclass},9
               hyprctl reload config-only -q
               uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${wallpaper}
               systemctl start --user mpdchck
