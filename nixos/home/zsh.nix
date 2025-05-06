@@ -63,7 +63,7 @@
           if [ "$TERM" = "screen-256color" ];
           then
             if [ $INIT = 1 ]; then
-              fastfetch
+              fortune | pokemonsay -p fennekin -N
               INIT=0
             else
               return
