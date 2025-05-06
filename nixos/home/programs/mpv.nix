@@ -25,7 +25,13 @@ in {
     scripts = [
       pkgs.mpvScripts.mpris
       pkgs.mpvScripts.modernz
+      pkgs.mpvScripts.thumbfast
     ];
+    config = {
+      osc = "no";
+      hwdec = "auto";
+      autofit = "50%";
+    };
   };
   home.packages = with pkgs; [
     mpvc

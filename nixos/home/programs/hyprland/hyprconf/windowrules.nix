@@ -119,7 +119,7 @@
 
       ''float, title:(.*Properties*.)$''
       ''float, class:^(mpv)$''
-      ''size 1152 648, class:^(mpv)$''
+      # ''size 1152 648, class:^(mpv)$''
 
       # common modals
       ''float,title:^(Open)$''
