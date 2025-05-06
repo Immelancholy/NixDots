@@ -217,21 +217,21 @@ in {
     # color of the window controls (close, minimize, maximize) in borderless/fullscreen mode
     window_controls_color=${text}
     # color of close window control on hover
-    windowcontrols_close_hover=#F45C5B
+    windowcontrols_close_hover=${red}
     # color of maximize window controls on hover
-    windowcontrols_max_hover=#F8BC3A
+    windowcontrols_max_hover=${yellow}
     # color of minimize window controls on hover
-    windowcontrols_min_hover=#43CB44
+    windowcontrols_min_hover=${green}
     # color of the title (above seekbar)
     title_color=${text}
     # color of the cache information
     cache_info_color=${text}
     # color of the seekbar progress and handle
-    seekbarfg_color=#FB8C00
+    seekbarfg_color=${mauve}
     # color of the remaining seekbar
-    seekbarbg_color=#94754F
+    seekbarbg_color=${surface2}
     # color of the cache ranges on the seekbar
-    seekbar_cache_color=#918F8E
+    seekbar_cache_color=${teal}
     # match volume bar color with seekbar color (ignores side_buttons_color)
     volumebar_match_seek_color=no
     # color of the timestamps (below seekbar)
@@ -245,13 +245,13 @@ in {
     # color of the play/pause button
     playpause_color=${text}
     # color of the element when held down (pressed)
-    held_element_color=#999999
+    held_element_color=${mauve}
     # color of a hovered button when hover_effect includes "color"
-    hover_effect_color=#FB8C00
+    hover_effect_color=${mauve}
     # color of the border for thumbnails (with thumbfast)
-    thumbnail_border_color=#111111
+    thumbnail_border_color=${mantle}
     # color of the border outline for thumbnails
-    thumbnail_border_outline=#404040
+    thumbnail_border_outline=${surface1}
 
     # alpha of the OSC background box
     fade_alpha=130
