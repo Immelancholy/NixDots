@@ -42,6 +42,7 @@
         mpc volume -1 > /dev/null
         notify_volume
       elif [[ "$1" == "mute" ]]; then
+        mute
 
       fi
     '')
