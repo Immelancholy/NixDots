@@ -7,7 +7,6 @@
 
     animations = {
       enabled = true;
-      workspace_wraparound = true;
       bezier = [
         "wind, 0.05, 0.9, 0.1, 1.05"
         "winIn, 0.1, 1.1, 0.1, 1.1"
