@@ -1,7 +1,6 @@
 {pkgs, ...}: {
   environment.systemPackages = with pkgs; [
     (writeShellScriptBin "volumeControl" ''
-
       function notify_volume() {
         # Function to show brightness notification
         VOLUME=$(mpc volume | sed 's/.*://')
@@ -13,16 +12,15 @@
 
       function mute () {
         vol=$(mpc volume | sed 's/.*://')
-        vol_int="''${old_vol//"%"}"
-        if ! [ $vol_int -eq 0 ]; then
+        vol_int="''${vol//"%"}"
+        if ! [ "$vol_int" != 0 ]; then
           mpc volume 0
-          $old_vol_int=$vol_int
+          old_vol_int="$vol_int"
           MUTED=1
-        elif [ $MUTED -eq 1 ]; then
-          mpc volume $old_vol_int
+        elif [ "$MUTED" = 1 ]; then
+          mpc volume "$old_vol_int"
           MUTED=0
         fi
-
       }
 
 
