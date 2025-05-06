@@ -28,6 +28,8 @@ in {
       pkgs.mpvScripts.thumbfast
     ];
     config = {
+      profile = "gpu-hq";
+      gpu-api = "vulkan";
       osc = "no";
       hwdec = "auto";
       autofit = "75%x75%";
