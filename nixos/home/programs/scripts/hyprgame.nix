@@ -44,7 +44,7 @@ in {
               hyprctl reload config-only -q
               uwsm app -- mpvpaper -f -p -o "--loop hwdec=auto --no-audio" '*' ${wallpaper}
               systemctl start --user mpdchck
-              hyprctl dispatch exec '[workspace 1 silent; float; size 858 559; move 640 40] uwsm app -- kitty --class "mpd" --session=mpd.session'
+              hyprctl dispatch exec '[workspace 1 silent; float; size 858 559; move 640 40] ${player}'
               hyprctl dispatch exec '[workspace 1 silent; float; size 858 462; move 640 609] uwsm app -- kitty --class "cava" cava.sh'
               hyprctl dispatch exec '[workspace 1 silent; float; size 620 666; move 10 404] uwsm app -- kitty --class "btop" btop.sh'
               hyprctl dispatch exec '[workspace 1 silent; float; size 402 1030; move 1508 40] uwsm app -- kitty --class "neo" neo.sh'
