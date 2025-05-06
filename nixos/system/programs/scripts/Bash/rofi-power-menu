@@ -10,6 +10,12 @@
 set -e
 set -u
 
+if [ "$DISPLAY_MANAGER" = "sddm" ]; then
+	LOGOUT_METHOD="uwsm stop"
+else
+	LOGOUT_METHOD="loginctl terminate-user $USER"
+fi
+
 # All supported choices
 all=(shutdown reboot suspend hibernate logout lockscreen)
 
@@ -39,7 +45,7 @@ declare -A actions
 actions[lockscreen]="uwsm-app -- swaylock -fF"
 #actions[switchuser]="???"
 # actions[logout]="loginctl terminate-user $USER"
-actions[logout]="uwsm stop"
+actions[logout]="$LOGOUT_METHOD"
 actions[suspend]="systemctl suspend"
 actions[hibernate]="systemctl hibernate"
 actions[reboot]="systemctl reboot"

@@ -15,6 +15,9 @@ in {
     };
   };
   config = mkIf cfg.enable {
+    environment.sessionVariables = {
+      DISPLAY_MANAGER = "tuiGreet";
+    };
     security.pam.services.tuiGreet.enableGnomeKeyring = true;
     security.pam.services.greetd.enableGnomeKeyring = true;
     services.greetd = {
