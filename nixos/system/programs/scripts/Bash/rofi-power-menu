@@ -18,7 +18,7 @@ all=(shutdown reboot suspend hibernate logout lockscreen)
 show=("${all[@]}")
 
 if [ "$DISPLAY_MANAGER" = "sddm" ] && \
-	[ $UWSM = 1]; then
+	[ "$UWSM" = 1]; then
 	logout_method="uwsm stop"
 else
 	logout_method="loginctl terminate-user $USER"
