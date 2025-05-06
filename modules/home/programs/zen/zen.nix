@@ -48,7 +48,7 @@ in {
         Version=2
       '';
     };
-    xdg.mime = mkIf (cfg.enable && cdg.defaultBrowser) {
+    xdg.mime = mkIf (cfg.enable && cfg.defaultBrowser) {
       enable = true;
     };
     xdg.mimeApps = mkIf (cfg.enable && cfg.defaultBrowser) {
