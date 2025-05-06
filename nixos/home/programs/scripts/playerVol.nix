@@ -6,7 +6,7 @@
 }:
 with lib; let
   player = config.player.name;
-  musicdae = pkgs.writeShellScriptBin "volumeControl" ''
+  musicdae = pkgs.writeShellScriptBin "playerVol" ''
     function notify_volume() {
       # Function to show brightness notification
       VOLUME=$(mpc volume | sed 's/.*://')
