@@ -19,9 +19,9 @@ show=("${all[@]}")
 
 if [ "$DISPLAY_MANAGER" = "sddm" ] && \
 	[ $UWSM = 1]; then
-	LOGOUT_METHOD="uwsm stop"
+	logout_method="uwsm stop"
 else
-	LOGOUT_METHOD="loginctl terminate-user $USER"
+	logout_method="loginctl terminate-user $USER"
 fi
 
 declare -A texts
