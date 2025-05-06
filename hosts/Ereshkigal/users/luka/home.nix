@@ -15,12 +15,13 @@
       }
     '';
   };
+  player = {
+    name = "spotify";
+    cmd = "uwsm app -- spotify.desktop";
+    class = "spotify";
+  };
   wayland.windowManager.hyprland = {
     # ONLY ENABLE 1 LAYOUT!!
-    player = {
-      cmd = "uwsm app -- spotify.desktop";
-      class = "spotify";
-    };
     layout = {
       master.enable = false;
       dwindle.enable = false;
