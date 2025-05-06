@@ -31,7 +31,7 @@ in {
       osc = "no";
       hwdec = "auto";
       autofit = "75%";
-      autofit-msalle = "40%x30%";
+      autofit-smaller = "40%x30%";
     };
   };
   home.packages = with pkgs; [
