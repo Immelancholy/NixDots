@@ -11,8 +11,12 @@ function notify_volume() {
 function mute () {
 	vol=$(mpc volume | sed 's/.*://')
 	vol_int="''${vol//"%"}"
+	old_vol=$(cat /tmp/old_vol)
 	if [ "$vol_int" -gt 0 ]; then
 		mpc volume 0 > /dev/null
+		echo "$vol_int" >> /tmp/old_vol
+	elif [ "$old_vol" != "" ]; then
+		mpc volume "$old_vol" > /dev/null
 	else
 		mpc volume 100 > /dev/null
 	fi
