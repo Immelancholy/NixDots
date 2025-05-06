@@ -26,12 +26,12 @@ in {
       pkgs.mpvScripts.mpris
       pkgs.mpvScripts.modernz
       pkgs.mpvScripts.thumbfast
-      pkgs.mpvScripts.mpv-notify-send
     ];
     config = {
       osc = "no";
       hwdec = "auto";
-      autofit = "50%";
+      autofit = "75%";
+      autofit-msalle = "40%x30%";
     };
   };
   home.packages = with pkgs; [
