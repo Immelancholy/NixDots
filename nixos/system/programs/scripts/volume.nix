@@ -14,7 +14,7 @@
         vol=$(mpc volume | sed 's/.*://')
         vol_int="''${vol//"%"}"
         if ! [ "$vol_int" != 0 ]; then
-          mpc volume 0
+          mpc volume 0 > /dev/null
           old_vol_int="$vol_int"
           MUTED=1
         elif [ "$MUTED" = 1 ]; then
@@ -43,7 +43,7 @@
         notify_volume
       elif [[ "$1" == "mute" ]]; then
         mute
-
+        notify_volume
       fi
     '')
   ];
