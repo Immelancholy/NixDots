@@ -54,7 +54,10 @@
           9)
       );
     bindl = [
-      ", XF86AudioMute, exec, $playerctl play-pause #pause-play media"
+      ", XF86AudioPlay, exec, $playerctl play-pause #pause-play media"
+      ", XF86AudioNext, exec, $playerctl next" #next
+      ", XF86AudioPrev, exec, $playerctl previous" #previous,
+      ", XF86AudioMute, exec, uwsm-app -- volumeControl mute" # decrease volume of mpd
       "$mod, mouse:282, exec, $playerctl next" #next
       "$mod, mouse:281, exec, $playerctl previous" #previous,
       ", mouse:277, exec, $playerctl play-pause" # toggle between media play and pause

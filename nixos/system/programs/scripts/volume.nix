@@ -7,13 +7,25 @@
         VOLUME=$(mpc volume | sed 's/.*://')
         VOLUME_PERCENT="''${VOLUME%f}"
 
-        dunstctl close-all
-        dunstify -t 3000 -a "  Volume" -h int:value:"$VOLUME_PERCENT" "$VOLUME_PERCENT""%"
+        # dunstctl close-all
+        dunstify -t 3000 -a "  Volume" -h int:value:"$VOLUME_PERCENT" "$VOLUME_PERCENT"
+      }
+
+      function mute () {
+        old_vol=$(mpc volume | sed 's/.*://')
+        old_vol_int="''${old_vol//"%"}"
+        if [ $MUTED = 1 ]; then
+          mpc volume $old_vol_int
+        else
+          mpc volume 0
+          MUTED=1
+        fi
+
       }
 
 
       if [[ "$#" != 1 || ! ("$1" == "inc" || "$1" == "dec") ]]; then
-          printf "Usage: %s [inc|dec]\n" "$0" >&2
+          printf "Usage: %s [inc|dec|mute]\n" "$0" >&2
           exit 1
       fi
 
@@ -29,6 +41,8 @@
       elif [[ "$1" == "dec" ]]; then
         mpc volume -1 > /dev/null
         notify_volume
+      elif [[ "$1" == "mute" ]]; then
+
       fi
     '')
   ];
