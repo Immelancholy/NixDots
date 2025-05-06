@@ -17,6 +17,7 @@
   };
   wayland.windowManager.hyprland = {
     # ONLY ENABLE 1 LAYOUT!!
+    player = "uwsm app -- spotify.desktop";
     layout = {
       master.enable = false;
       dwindle.enable = false;
