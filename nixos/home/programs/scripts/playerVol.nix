@@ -67,7 +67,7 @@ with lib; let
     function mute () {
       vol=$(playerctl --player=${player} volume)
       old_vol=$(</tmp/old_vol)
-      if ((${pkgs.bc}/bin/bc -l <<< ""$vol" > 0")); then
+      if (( $(${pkgs.bc}/bin/bc -l <<< ""$vol" > 0") )); then
         playerctl --player=${player} volume 0 > /dev/null
         echo "$vol" > /tmp/old_vol
       elif [ "$old_vol" != "" ]; then
