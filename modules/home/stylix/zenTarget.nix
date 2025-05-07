@@ -5,22 +5,22 @@
   ...
 }: let
   user = config.home.username;
-  base = "#${config.lib.stylix.colors.base00}";
-  mantle = "#${config.lib.stylix.colors.base01}";
-  surface0 = "#${config.lib.stylix.colors.base02}";
-  surface1 = "#${config.lib.stylix.colors.base03}";
-  surface2 = "#${config.lib.stylix.colors.base04}";
-  text = "#${config.lib.stylix.colors.base05}";
-  rosewater = "#${config.lib.stylix.colors.base06}";
-  lavender = "#${config.lib.stylix.colors.base07}";
-  red = "#${config.lib.stylix.colors.base08}";
-  peach = "#${config.lib.stylix.colors.base09}";
-  yellow = "#${config.lib.stylix.colors.base0A}";
-  green = "#${config.lib.stylix.colors.base0B}";
-  teal = "#${config.lib.stylix.colors.base0C}";
-  blue = "#${config.lib.stylix.colors.base0D}";
-  mauve = "#${config.lib.stylix.colors.base0E}";
-  flamingo = "#${config.lib.stylix.colors.base0F}";
+  base = "#${config.lib.stylix.colors.base00}EE";
+  mantle = "#${config.lib.stylix.colors.base01}EE";
+  surface0 = "#${config.lib.stylix.colors.base02}EE";
+  surface1 = "#${config.lib.stylix.colors.base03}EE";
+  surface2 = "#${config.lib.stylix.colors.base04}EE";
+  text = "#${config.lib.stylix.colors.base05}EE";
+  rosewater = "#${config.lib.stylix.colors.base06}EE";
+  lavender = "#${config.lib.stylix.colors.base07}EE";
+  red = "#${config.lib.stylix.colors.base08}EE";
+  peach = "#${config.lib.stylix.colors.base09}EE";
+  yellow = "#${config.lib.stylix.colors.base0A}EE";
+  green = "#${config.lib.stylix.colors.base0B}EE";
+  teal = "#${config.lib.stylix.colors.base0C}EE";
+  blue = "#${config.lib.stylix.colors.base0D}EE";
+  mauve = "#${config.lib.stylix.colors.base0E}EE";
+  flamingo = "#${config.lib.stylix.colors.base0F}EE";
 in {
   options.stylix.targets.zen = {
     enable = config.lib.stylix.mkEnableTarget "Theme zen" true;
