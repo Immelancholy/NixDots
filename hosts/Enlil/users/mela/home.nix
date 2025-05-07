@@ -49,7 +49,6 @@ in {
       source = Shorea;
     };
   };
-  player.scriptUseDefaultSink = true;
   catppuccin = {
     flavor = "mocha";
     accent = "mauve";
