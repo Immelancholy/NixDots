@@ -32,13 +32,13 @@ in {
         :root {
           --zen-colors-primary: ${surface0} !important;
           --zen-primary-color: ${mauve} !important;
-          --zen-colors-secondary: ${surface0} !important;
+          --zen-colors-secondary: ${mauve} !important;
           --zen-colors-tertiary: ${base} !important;
           --zen-colors-border: ${mauve} !important;
           --toolbarbutton-icon-fill: ${mauve} !important;
           --lwt-text-color: ${text} !important;
           --toolbar-field-color: ${text} !important;
-          --tab-selected-textcolor: ${mantle} !important;
+          --tab-selected-textcolor: ${text} !important;
           --toolbar-field-focus-color: ${text} !important;
           --toolbar-color: ${text} !important;
           --newtab-text-primary-color: ${text} !important;
