@@ -31,11 +31,11 @@ in {
 
         :root {
           --zen-colors-primary: ${surface0} !important;
-          --zen-primary-color: ${base} !important;
+          --zen-primary-color: ${mauve} !important;
           --zen-colors-secondary: ${surface0} !important;
           --zen-colors-tertiary: ${mantle} !important;
-          --zen-colors-border: ${base} !important;
-          --toolbarbutton-icon-fill: ${base} !important;
+          --zen-colors-border: ${mauve} !important;
+          --toolbarbutton-icon-fill: ${mauve} !important;
           --lwt-text-color: ${text} !important;
           --toolbar-field-color: ${text} !important;
           --tab-selected-textcolor: ${lavender} !important;
@@ -76,11 +76,11 @@ in {
 
         .content-shortcuts {
           background-color: ${base} !important;
-          border-color: ${base} !important;
+          border-color: ${mauve} !important;
         }
 
         .urlbarView-url {
-          color: ${base} !important;
+          color: ${mauve} !important;
         }
 
         #zenEditBookmarkPanelFaviconContainer {
@@ -131,8 +131,8 @@ in {
         }
 
         .identity-color-purple {
-          --identity-tab-color: ${base} !important;
-          --identity-icon-color: ${base} !important;
+          --identity-tab-color: ${mauve} !important;
+          --identity-icon-color: ${mauve} !important;
         }
       }
 
@@ -144,9 +144,9 @@ in {
         @-moz-document url-prefix("about:") {
           :root {
             --in-content-page-color: ${text} !important;
-            --color-accent-primary: ${base} !important;
-            --color-accent-primary-hover: ${base} !important;
-            --color-accent-primary-active: ${base} !important;
+            --color-accent-primary: ${mauve} !important;
+            --color-accent-primary-hover: ${mauve} !important;
+            --color-accent-primary-active: ${mauve} !important;
             --background-color: ${base} !important;
             --in-content-page-background: ${base} !important;
           }
@@ -162,11 +162,11 @@ in {
             --newtab-element-hover-color: ${surface0} !important;
             --newtab-text-primary-color: ${text} !important;
             --newtab-wordmark-color: ${text} !important;
-            --newtab-primary-action-background: ${base} !important;
+            --newtab-primary-action-background: ${mauve} !important;
           }
 
           .icon {
-            color: ${base} !important;
+            color: ${mauve} !important;
           }
 
           .search-wrapper .logo-and-wordmark .logo {
@@ -186,7 +186,7 @@ in {
           }
 
           .card-outer:is(:hover, :focus, .active):not(.placeholder) .card-title {
-            color: ${base} !important;
+            color: ${mauve} !important;
           }
 
           .top-site-outer .search-topsite {
@@ -203,11 +203,11 @@ in {
           :root {
             --zen-colors-tertiary: ${mantle} !important;
             --in-content-text-color: ${text} !important;
-            --link-color: ${base} !important;
-            --link-color-hover: ${base} !important;
+            --link-color: ${mauve} !important;
+            --link-color-hover: ${mauve} !important;
             --zen-colors-primary: ${surface0} !important;
             --in-content-box-background: ${surface0} !important;
-            --zen-primary-color: ${base} !important;
+            --zen-primary-color: ${mauve} !important;
           }
 
           groupbox , moz-card{
@@ -260,8 +260,8 @@ in {
           }
 
           .identity-color-purple {
-            --identity-tab-color: ${base} !important;
-            --identity-icon-color: ${base} !important;
+            --identity-tab-color: ${mauve} !important;
+            --identity-icon-color: ${mauve} !important;
           }
         }
 
@@ -277,7 +277,7 @@ in {
         @-moz-document url-prefix("about:protections") {
           :root {
             --zen-primary-color: ${base} !important;
-            --social-color: ${base} !important;
+            --social-color: ${mauve} !important;
             --coockie-color: ${teal} !important;
             --fingerprinter-color: ${yellow} !important;
             --cryptominer-color: ${lavender} !important;
