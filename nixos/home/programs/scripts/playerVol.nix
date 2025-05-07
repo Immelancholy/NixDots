@@ -107,6 +107,10 @@ with lib; let
       VOL=''${VOL_WPCTL:8}
       VOLUME_PERCENT=$(${pkgs.bc}/bin/bc <<< " "$VOL" * 100 ")
       VOLUME_PERCENT=''${VOLUME_PERCENT%.*}
+      MUTED=''${VOL_WPCTL:13}
+      if [ "$MUTED" = "[MUTED]" ]; then
+        VOLUME_PERCENT=0
+      fi
 
       dunstctl close-all
       dunstify -t 3000 -a "  Volume" -h int:value:"$VOLUME_PERCENT" "$VOLUME_PERCENT""%"
