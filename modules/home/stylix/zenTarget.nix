@@ -30,9 +30,9 @@ in {
       @media (prefers-color-scheme: dark) {
 
         :root {
-          --zen-colors-primary: ${surface0} !important;
+          --zen-colors-primary: ${mauve} !important;
           --zen-primary-color: ${mauve} !important;
-          --zen-colors-secondary: ${mauve} !important;
+          --zen-colors-secondary: ${surface0} !important;
           --zen-colors-tertiary: ${base} !important;
           --zen-colors-border: ${mauve} !important;
           --toolbarbutton-icon-fill: ${mauve} !important;
