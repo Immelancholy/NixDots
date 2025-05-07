@@ -19,7 +19,7 @@
   green = "#${config.lib.stylix.colors.base0B}BB";
   teal = "#${config.lib.stylix.colors.base0C}BB";
   blue = "#${config.lib.stylix.colors.base0D}BB";
-  base = "#${config.lib.stylix.colors.base0E}BB";
+  mauve = "#${config.lib.stylix.colors.base0E}BB";
   flamingo = "#${config.lib.stylix.colors.base0F}BB";
 in {
   options.stylix.targets.zen = {
