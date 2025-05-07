@@ -38,7 +38,7 @@ in {
           --toolbarbutton-icon-fill: ${mauve} !important;
           --lwt-text-color: ${text} !important;
           --toolbar-field-color: ${text} !important;
-          --tab-selected-textcolor: ${lavender} !important;
+          --tab-selected-textcolor: ${mantle} !important;
           --toolbar-field-focus-color: ${text} !important;
           --toolbar-color: ${text} !important;
           --newtab-text-primary-color: ${text} !important;
@@ -46,8 +46,8 @@ in {
           --arrowpanel-background: ${base} !important;
           --sidebar-text-color: ${text} !important;
           --lwt-sidebar-text-color: ${text} !important;
-          --lwt-sidebar-background-color: #11111b !important;
-          --toolbar-bgcolor: ${mauve} !important;
+          --lwt-sidebar-background-color: ${base} !important;
+          --toolbar-bgcolor: ${base} !important;
           --newtab-background-color: ${base} !important;
           --zen-themed-toolbar-bg: ${base} !important;
           --zen-main-browser-background: ${base} !important;
@@ -84,13 +84,13 @@ in {
         }
 
         #zenEditBookmarkPanelFaviconContainer {
-          background: #11111b !important;
+          background: ${base} !important;
         }
 
         toolbar .toolbarbutton-1 {
           &:not([disabled]) {
             &:is([open], [checked]) > :is(.toolbarbutton-icon, .toolbarbutton-text, .toolbarbutton-badge-stack){
-              fill: #11111b;
+              fill: ${base};
             }
           }
         }
@@ -221,7 +221,7 @@ in {
           }
 
           .main-content {
-            background-color: #11111b !important;
+            background-color: ${base} !important;
           }
 
           .identity-color-blue {
