@@ -7,7 +7,7 @@
       if [ "$MUTED" = "[MUTED]" ]; then
         wpctl set-mute @DEFAULT_SOURCE@ 0
         wpctl set-mute "$COMMES" 1
-      elif [ "$COMMES" = "" ]; then
+      else
         wpctl set-mute @DEFAULT_SOURCE@ 1
         wpctl set-mute "$COMMES" 0
       fi
