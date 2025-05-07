@@ -67,7 +67,7 @@ in {
         }
 
         #TabsToolbar {
-          background-color: ${mantle} !important;
+          background-color: ${mauve} !important;
         }
 
         #urlbar-background {
