@@ -49,7 +49,7 @@ in {
           --lwt-sidebar-background-color: ${base} !important;
           --toolbar-bgcolor: ${base} !important;
           --newtab-background-color: ${base} !important;
-          --zen-themed-toolbar-bg: ${base} !important;
+          --zen-themed-toolbar-bg: ${mauve} !important;
           --zen-main-browser-background: ${base} !important;
           --toolbox-bgcolor-inactive: ${base} !important;
         }
