@@ -49,7 +49,7 @@ in {
           --lwt-sidebar-background-color: ${base} !important;
           --toolbar-bgcolor: ${base} !important;
           --newtab-background-color: ${base} !important;
-          --zen-themed-toolbar-bg: ${surface0} !important;
+          --zen-themed-toolbar-bg: ${base} !important;
           --zen-main-browser-background: ${base} !important;
           --toolbox-bgcolor-inactive: ${base} !important;
         }
@@ -67,7 +67,7 @@ in {
         }
 
         #TabsToolbar {
-          background-color: ${surface0} !important;
+          background-color: ${base} !important;
         }
 
         #urlbar-background {
