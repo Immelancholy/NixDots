@@ -1,11 +1,21 @@
-{pkgs, ...}: {
-  environment.systemPackages = with pkgs; [
-    (writeShellScriptBin "pushToMuteChromium" ''
-      mapfile -t inputs < <(wpctl status | grep "Chromium input" | grep -v "mela@nixos" | grep -o -E '[0-9]+')
-      for i in "''${inputs[@]}"
-      do
-        wpctl set-mute "$i" toggle
-      done
-    '')
+{pkgs, ...}: let
+  toggle-mute = pkgs.writeShellScriptBin "toggle-mute" ''
+    MUTED=$(wpctl get-volume @DEFAULT_SOURCE@)
+    MUTED=''${MUTED:13}
+    COMMES=$(wpctl status | grep "virtual_cable_in" | ${pkgs.gawk}/bin/awk '{print $2}' | grep -m1 "" | cut -f1 -d "."
+    function mute () {
+      if [ "$MUTED" = "[MUTED]" ]; then
+        wpctl mute @DEFAULT_SOURCE@ 0
+        wpctl mute "$COMMES" 1
+      elif [ "$COMMES" = "" ]; then
+        wpctl mute @DEFAULT_SOURCE@ 1
+        wpctl mute "$COMMES" 0
+      fi
+    }
+    mute
+  '';
+in {
+  environment.systemPackages = [
+    toggle-mute
   ];
 }
