@@ -35,7 +35,7 @@ in {
           --zen-colors-secondary: ${surface0} !important;
           --zen-colors-tertiary: ${base} !important;
           --zen-colors-border: ${mauve} !important;
-          --toolbarbutton-icon-fill: ${mauve} !important;
+          --toolbarbutton-icon-fill: ${base} !important;
           --lwt-text-color: ${text} !important;
           --toolbar-field-color: ${text} !important;
           --tab-selected-textcolor: ${lavender} !important;
@@ -49,7 +49,7 @@ in {
           --lwt-sidebar-background-color: #11111b !important;
           --toolbar-bgcolor: ${surface0} !important;
           --newtab-background-color: ${base} !important;
-          --zen-themed-toolbar-bg: ${mantle} !important;
+          --zen-themed-toolbar-bg: ${base} !important;
           --zen-main-browser-background: ${base} !important;
           --toolbox-bgcolor-inactive: ${base} !important;
         }
