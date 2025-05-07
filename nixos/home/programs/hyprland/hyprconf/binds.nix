@@ -74,9 +74,6 @@
     bindnt = [
       ", mouse:275, exec, toggle-mute"
     ];
-    bindntr = [
-      ", mouse:275, exec, toggle-mute"
-    ];
   };
   wayland.windowManager.hyprland.extraConfig = ''
     bind = $mods, P, submap, player
