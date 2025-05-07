@@ -105,7 +105,7 @@ with lib; let
     notify_volume () {
       VOL_WPCTL=$(wpctl get-volume @DEFAULT_SINK@)
       VOL=''${VOL_WPCTL:8}
-      VOLUME_PERCENT=$(${pkgs.bc}/bin/bc <<< " "$vol" * 100 ")
+      VOLUME_PERCENT=$(${pkgs.bc}/bin/bc <<< " "$VOL" * 100 ")
       VOLUME_PERCENT=''${VOLUME_PERCENT%.*}
 
       dunstctl close-all
