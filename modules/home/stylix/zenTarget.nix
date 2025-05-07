@@ -60,6 +60,7 @@ in {
 
         .sidebar-placesTree {
           background-color: ${base} !important;
+          border-color: ${mauve} !important
         }
 
         #zen-workspaces-button {
@@ -68,7 +69,6 @@ in {
 
         #TabsToolbar {
           background-color: ${base} !important;
-          border-color: ${mauve} !important
         }
 
         #urlbar-background {
