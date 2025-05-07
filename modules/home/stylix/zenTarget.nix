@@ -31,7 +31,7 @@ in {
 
         :root {
           --zen-colors-primary: ${surface0} !important;
-          --zen-primary-color: ${base} !important;
+          --zen-primary-color: ${mauve} !important;
           --zen-colors-secondary: ${surface0} !important;
           --zen-colors-tertiary: ${mantle} !important;
           --zen-colors-border: ${mauve} !important;
@@ -144,7 +144,7 @@ in {
         @-moz-document url-prefix("about:") {
           :root {
             --in-content-page-color: ${text} !important;
-            --color-accent-primary: ${mauve} !important;
+            --color-accent-primary: ${base} !important;
             --color-accent-primary-hover: ${mauve} !important;
             --color-accent-primary-active: rgb(223, 167, 247) !important;
             background-color: ${base} !important;
