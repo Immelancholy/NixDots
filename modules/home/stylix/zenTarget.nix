@@ -31,10 +31,10 @@ in {
 
         :root {
           --zen-colors-primary: ${surface0} !important;
-          --zen-primary-color: ${mauve} !important;
+          --zen-primary-color: ${base} !important;
           --zen-colors-secondary: ${surface0} !important;
           --zen-colors-tertiary: ${mantle} !important;
-          --zen-colors-border: ${base} !important;
+          --zen-colors-border: ${mauve} !important;
           --toolbarbutton-icon-fill: ${mauve} !important;
           --lwt-text-color: ${text} !important;
           --toolbar-field-color: ${text} !important;
