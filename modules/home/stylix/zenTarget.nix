@@ -33,7 +33,7 @@ in {
           --zen-colors-primary: ${surface0} !important;
           --zen-primary-color: ${mauve} !important;
           --zen-colors-secondary: ${surface0} !important;
-          --zen-colors-tertiary: ${mantle} !important;
+          --zen-colors-tertiary: ${base} !important;
           --zen-colors-border: ${mauve} !important;
           --toolbarbutton-icon-fill: ${mauve} !important;
           --lwt-text-color: ${text} !important;
