@@ -47,7 +47,7 @@ in {
           --sidebar-text-color: ${text} !important;
           --lwt-sidebar-text-color: ${text} !important;
           --lwt-sidebar-background-color: #11111b !important;
-          --toolbar-bgcolor: ${surface0} !important;
+          --toolbar-bgcolor: ${mauve} !important;
           --newtab-background-color: ${base} !important;
           --zen-themed-toolbar-bg: ${base} !important;
           --zen-main-browser-background: ${base} !important;
