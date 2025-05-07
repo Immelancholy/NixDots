@@ -144,9 +144,9 @@ in {
         @-moz-document url-prefix("about:") {
           :root {
             --in-content-page-color: ${text} !important;
-            --color-accent-primary: ${base} !important;
+            --color-accent-primary: ${mauve} !important;
             --color-accent-primary-hover: ${mauve} !important;
-            --color-accent-primary-active: rgb(223, 167, 247) !important;
+            --color-accent-primary-active: ${mauve} !important;
             background-color: ${base} !important;
             --in-content-page-background: ${base} !important;
           }
@@ -207,7 +207,7 @@ in {
             --link-color-hover: ${mauve} !important;
             --zen-colors-primary: ${surface0} !important;
             --in-content-box-background: ${surface0} !important;
-            --zen-primary-color: ${mauve} !important;
+            --zen-primary-color: ${base} !important;
           }
 
           groupbox , moz-card{
