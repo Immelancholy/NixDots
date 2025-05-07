@@ -46,8 +46,8 @@ in {
           --arrowpanel-background: ${base} !important;
           --sidebar-text-color: ${text} !important;
           --lwt-sidebar-text-color: ${text} !important;
-          --lwt-sidebar-background-color: ${mantle} !important;
-          --toolbar-bgcolor: ${mantle} !important;
+          --lwt-sidebar-background-color: ${base} !important;
+          --toolbar-bgcolor: ${base} !important;
           --newtab-background-color: ${base} !important;
           --zen-themed-toolbar-bg: ${base} !important;
           --zen-main-browser-background: ${base} !important;
