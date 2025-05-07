@@ -72,10 +72,10 @@
       ", XF86MonBrightnessDown, exec, brightness dec"
     ];
     bindnt = [
-      ", mouse:275, exec, pushToMuteChromium"
+      ", mouse:275, exec, toggle-mute"
     ];
     bindntr = [
-      ", mouse:275, exec, pushToMuteChromium"
+      ", mouse:275, exec, toggle-mute"
     ];
   };
   wayland.windowManager.hyprland.extraConfig = ''
