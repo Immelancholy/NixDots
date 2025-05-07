@@ -147,7 +147,7 @@ in {
             --color-accent-primary: ${mauve} !important;
             --color-accent-primary-hover: ${mauve} !important;
             --color-accent-primary-active: ${mauve} !important;
-            background-color: ${base} !important;
+            --background-color: ${base} !important;
             --in-content-page-background: ${base} !important;
           }
 
@@ -207,7 +207,7 @@ in {
             --link-color-hover: ${mauve} !important;
             --zen-colors-primary: ${surface0} !important;
             --in-content-box-background: ${surface0} !important;
-            --zen-primary-color: ${base} !important;
+            --zen-primary-color: ${mauve} !important;
           }
 
           groupbox , moz-card{
