@@ -77,9 +77,9 @@
           line2="$artist - $album"
           line3="─────────────────────────────────╶   "
           kitten icat --align=center "$COVER"
-          printf '%s\n' "$line1\n"
-          printf '%s\n' "$line2\n"
-          printf '%s\n' "$line3\n"
+          printf '%s\n' "$line1"
+          printf '%s\n' "$line2"
+          printf '%s\n' "$line3"
           song_old=$song
         fi
       }
