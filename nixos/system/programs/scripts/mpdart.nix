@@ -11,6 +11,9 @@
       COVER="$TMP/albumArt.jpg"
       MUSIC_DIR="$HOME/Music"
       PROG_NAME=$(basename "$0")
+      C1=""
+      C2=""
+      C3=""
 
       show_help() {
           printf "%s" "\
@@ -82,8 +85,8 @@
           fi
           artist=$(mpc current --format %artist%)
           line1="''${white}$title"
-          line2="$artist - $album"
-          line2="''${white}''${line2:0:48}"
+          line2="''${white}$artist - $album"
+          line2="''${line2:0:48}"
           line3="''${blue}─────────────────────────────────╶"
           kitten icat --align=center "$COVER"
           printf '%s\n' "$line1"
