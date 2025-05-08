@@ -5,8 +5,8 @@
 }: {
   environment.systemPackages = [
     (pkgs.writeShellScriptBin "mpdart" ''
-      stty -echo
-      tput civis
+      # stty -echo
+      # tput civis
       TMP="/tmp"
       COVER="$TMP/albumArt.jpg"
       MUSIC_DIR="$HOME/Music"
