@@ -47,7 +47,7 @@ in {
         status_album = {
           fg = "${blue}";
         };
-        field_album = {
+        album = {
           fg = "${blue}";
         };
       };
