@@ -115,7 +115,7 @@
           line1="''${col1}$title"
           line2="''${col2}$artist ''${col3}- ''${col4}$album"
           cols=$(tput cols)
-          line2p3="''${line2:0:$cols}"
+          line2="''${line2:0:$cols}"
           line3="''${col5}─────────────────────────────────╶"
           kitten icat --align=center "$COVER"
           printf '%s\n' "$line1"
