@@ -20,7 +20,7 @@
   mauve = "#${config.lib.stylix.colors.base0E}";
   flamingo = "#${config.lib.stylix.colors.base0F}";
 in {
-  xdg.configFiles."mpdart/colors".text = ''
+  xdg.configFile."mpdart/colors".text = ''
     ${text}
     ${text}
     ${text}
