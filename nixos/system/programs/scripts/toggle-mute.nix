@@ -8,9 +8,7 @@
       --unmute-all)
         wpctl set-mute @DEFAULT_SOURCE@ 0
         wpctl set-mute "$COMMES" 0
-        ;;
-      --)
-        mute
+        exit 0
         ;;
     esac
 
@@ -23,6 +21,8 @@
         wpctl set-mute "$COMMES" 0
       fi
     }
+
+    mute
   '';
 in {
   environment.systemPackages = [
