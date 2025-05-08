@@ -24,30 +24,32 @@ in {
     enable = true;
     settings = {
       qwerty_keybindings = true;
-      "theme.item_highlight_active" = {
-        fg = "${mauve}";
-        bg = "${base}";
-      };
-      "theme.item_highlight_inactive" = {
-        fg = "${text}";
-      };
-      "theme.block_active" = {
-        fg = "${mauve}";
-      };
-      "theme.status_playing" = {
-        fg = "${teal}";
-      };
-      "theme.status_paused" = {
-        fg = "${yellow}";
-      };
-      "theme.status_artist" = {
-        fg = "${red}";
-      };
-      "theme.status_album" = {
-        fg = "${blue}";
-      };
-      "theme.field_album" = {
-        fg = "${blue}";
+      theme = {
+        item_highlight_active = {
+          fg = "${mauve}";
+          bg = "${base}";
+        };
+        item_highlight_inactive = {
+          fg = "${text}";
+        };
+        block_active = {
+          fg = "${mauve}";
+        };
+        status_playing = {
+          fg = "${teal}";
+        };
+        status_paused = {
+          fg = "${yellow}";
+        };
+        status_artist = {
+          fg = "${red}";
+        };
+        status_album = {
+          fg = "${blue}";
+        };
+        field_album = {
+          fg = "${blue}";
+        };
       };
     };
   };
