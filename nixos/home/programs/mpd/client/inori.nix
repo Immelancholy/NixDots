@@ -27,6 +27,7 @@ in {
       theme = {
         item_highlight_active = {
           fg = "${mauve}";
+          add_modifier = "BOLD";
         };
         item_highlight_inactive = {
           fg = "${text}";
@@ -44,7 +45,7 @@ in {
           fg = "${red}";
         };
         status_album = {
-          fg = "${blue}";
+          fg = "${mauve}";
         };
         album = {
           fg = "${mauve}";
