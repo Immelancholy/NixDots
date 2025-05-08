@@ -7,7 +7,6 @@
     (pkgs.writeShellScriptBin "mpdart" ''
       stty -echo
       tput civis
-      source "${inputs.bash-utility}/src/format.sh"
       TMP="/tmp"
       COVER="$TMP/albumArt.jpg"
       MUSIC_DIR="$HOME/Music"
@@ -58,6 +57,7 @@
         if [ "$song" != "$song_old" ]; then
           clear
           title=$(mpc current --format %title%)
+          album=$(mpc current --format %album%)
           DIR="$MUSIC_DIR/$(dirname "$(mpc current -f %file%)")"
           ffmpeg -i "$MUSIC_DIR/$(mpc current -f %file%)" "$COVER" -y &> /dev/null
           if ! [ $? -eq 0 ]; then
@@ -73,11 +73,13 @@
             done
           fi
           artist=$(mpc current --format %artist%)
-          line1="-------- $artist --------"
-          line2="-------- $title --------"
+          line1="$title"
+          line2="$artist - $album"
+          line3="─────────────────────────────────╶   "
           kitten icat --align=center "$COVER"
-          format::text_center "$line1"
-          format::text_center "$line2"
+          printf '%s\n' "$line1\n"
+          printf '%s\n' "$line2\n"
+          printf '%s\n' "$line3\n"
           song_old=$song
         fi
       }
