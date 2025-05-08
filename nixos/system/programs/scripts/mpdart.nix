@@ -11,9 +11,45 @@
       COVER="$TMP/albumArt.jpg"
       MUSIC_DIR="$HOME/Music"
       PROG_NAME=$(basename "$0")
-      C1=""
-      C2=""
-      C3=""
+
+      get_colors () {
+        filename="XDG_CONFIG_HOME/mpdart/colors"
+        colors=()
+        while IFS= read -r color; do
+          colors+=("$color")
+        done < "$filename"
+
+        col1=''${colors[0]}
+        col2=''${colors[1]}
+        col3=''${colors[2]}
+        col4=''${colors[3]}
+        col5=''${colors[4]}
+        if [[ -z "$col1" ]]; then
+          col1=$(tput setaf "$col1")
+        else
+          col1=$(tput setaf 7)
+        fi
+        if [[ -z "$col2" ]]; then
+          col2=$(tput setaf "$col2")
+        else
+          col2=$(tput setaf 7)
+        fi
+        if [[ -z "$col3" ]]; then
+          col3=$(tput setaf "$col3")
+        else
+          col3=$(tput setaf 7)
+        fi
+        if [[ -z "$col4" ]]; then
+          col4=$(tput setaf "$col4")
+        else
+          col4=$(tput setaf 7)
+        fi
+        if [[ -z "$col5" ]]; then
+          col5=$(tput setaf "$col5")
+        else
+          col5=$(tput setaf 4)
+        fi
+      }
 
       show_help() {
           printf "%s" "\
@@ -62,14 +98,6 @@
           title=$(mpc current --format %title%)
           album=$(mpc current --format %album%)
           DIR="$MUSIC_DIR/$(dirname "$(mpc current -f %file%)")"
-          black=$(tput setaf 0) # Black - Regular
-          red=$(tput setaf 1) # Red
-          green=$(tput setaf 2) # Green
-          yellow=$(tput setaf 3) # Yellow
-          blue=$(tput setaf 4) # Blue
-          purple=$(tput setaf 5) # Purple
-          cyan=$(tput setaf 6) # Cyan
-          white=$(tput setaf 7) # White
           ffmpeg -i "$MUSIC_DIR/$(mpc current -f %file%)" "$COVER" -y &> /dev/null
           if ! [ $? -eq 0 ]; then
             for ART in "$DIR/cover."{png,jpg,webp}; do
@@ -84,10 +112,10 @@
             done
           fi
           artist=$(mpc current --format %artist%)
-          line1="''${white}$title"
-          line2="''${white}$artist - $album"
+          line1="''${col1}$title"
+          line2="''${col2}$artist ''${col3}- ''${col4}$album"
           line2="''${line2:0:48}"
-          line3="''${blue}─────────────────────────────────╶"
+          line3="''${col5}─────────────────────────────────╶"
           kitten icat --align=center "$COVER"
           printf '%s\n' "$line1"
           printf '%s\n' "$line2"
