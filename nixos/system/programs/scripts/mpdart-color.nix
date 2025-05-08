@@ -20,9 +20,9 @@
   mauve = "${config.lib.stylix.colors.base0E}";
   flamingo = "${config.lib.stylix.colors.base0F}";
 
-  neo-color = pkgs.writeShellScriptBin "neo-color" ''
-    neoDir="$XDG_CONFIG_HOME/neo"
-    neoColorFile="$neoDir/colors"
+  mpdart-color = pkgs.writeShellScriptBin "mpdart-color" ''
+    config="$XDG_CONFIG_HOME/mpdart"
+    colorfile="$config/colors"
 
     base=$(colortrans ${base} | sed -n '2p' | awk '{print $8}')
     mantle=$(colortrans ${mantle} | sed -n '2p' | awk '{print $8}')
@@ -40,32 +40,30 @@
     mauve=$(colortrans ${mauve} | sed -n '2p' | awk '{print $8}')
     flamingo=$(colortrans ${flamingo} | sed -n '2p' | awk '{print $8}')
 
-    if [ ! -d "$neoDir" ]; then
-      echo "Making Neo Directory"
-      mkdir -p "$neoDir"
+    if [ ! -d "$config" ]; then
+      echo "Making mpdart config directory"
+      mkdir -p "$config"
     fi
 
-    cat >"$neoColorFile" <<EOF
-      neo_color_version 1
-      -1
-      ''${flamingo:11}
-      ''${blue:11}
-      ''${mauve:11}
-      ''${teal:11}
+    cat >"$colorfile" <<EOF
       ''${text:11}
+      ''${text:11}
+      ''${text:11}
+      ''${text:11}
+      ''${mauve:11}
     EOF
   '';
 in {
   environment.systemPackages = [
-    neo-color
+    mpdart-color
   ];
-  systemd.user.services."neo-color" = {
+  systemd.user.services."mpdart-color" = {
     enable = true;
-    name = "Neo Color";
+    name = "mpdart Color";
     wantedBy = ["default.target"];
     path = [
       "/run/current-system/sw"
     ];
-    script = ''neo-color'';
+    script = ''mpdart-color'';
   };
 }
