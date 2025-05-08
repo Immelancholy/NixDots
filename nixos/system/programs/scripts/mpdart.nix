@@ -80,7 +80,7 @@
           kitten icat --align=center "$COVER"
           printf '%s\n' "$line1"
           printf '%s\n' "$line2"
-          printf '%s\n' "$line3"
+          printf '%s' "$line3"
           song_old=$song
         fi
       }
