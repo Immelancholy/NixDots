@@ -45,7 +45,7 @@
           col2=$(tput setaf ''${colors[1]})
           col3=$(tput setaf ''${colors[2]})
           col4=$(tput setaf ''${colors[3]})
-          col5=$(tput setaf ''${colors[4]})
+          col5=$(tput setaf 7)
         fi
       }
 
