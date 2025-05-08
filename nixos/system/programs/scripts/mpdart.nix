@@ -75,6 +75,7 @@
           artist=$(mpc current --format %artist%)
           line1="$title"
           line2="$artist - $album"
+          line2=''${line2:0:48}
           line3="─────────────────────────────────╶   "
           kitten icat --align=center "$COVER"
           printf '%s\n' "$line1"
