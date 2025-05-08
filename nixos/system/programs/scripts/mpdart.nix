@@ -28,13 +28,13 @@
           col5=$(tput setaf ''${colors[4]})
         else
           mkdir -p $config
-          cat > $colorfile <<EOF
-          7
-          7
-          7
-          7
-          4
-          EOF
+      cat > $colorfile <<EOF
+      7
+      7
+      7
+      7
+      4
+      EOF
 
           colors=()
           while IFS= read -r color; do
