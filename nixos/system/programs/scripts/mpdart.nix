@@ -26,19 +26,19 @@
           done < "$colorfile"
 
           hex_to_rgb "''${colors[0]}"
-          col1="\033[38;2;''${R};''${G};''${B}m"
+          col1="\e[33[38;2;''${R};''${G};''${B}m"
 
           hex_to_rgb "''${colors[1]}"
-          col2="\033[38;2;''${R};''${G};''${B}m"
+          col2="\e[33[38;2;''${R};''${G};''${B}m"
 
           hex_to_rgb "''${colors[2]}"
-          col3="\033[38;2;''${R};''${G};''${B}m"
+          col3="\e[33[38;2;''${R};''${G};''${B}m"
 
           hex_to_rgb "''${colors[3]}"
-          col4="\033[38;2;''${R};''${G};''${B}m"
+          col4="\e[33[38;2;''${R};''${G};''${B}m"
 
           hex_to_rgb "''${colors[4]}"
-          col5="\033[38;2;''${R};''${G};''${B}m"
+          col5="\e[33[38;2;''${R};''${G};''${B}m"
 
         else
           mkdir -p $config
