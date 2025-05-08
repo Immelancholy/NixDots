@@ -154,6 +154,7 @@
         done
       }
 
+      get_colors
       main
       stty echo
       tput cvvis
