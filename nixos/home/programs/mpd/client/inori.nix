@@ -20,38 +20,35 @@
   mauve = "#${config.lib.stylix.colors.base0E}";
   flamingo = "#${config.lib.stylix.colors.base0F}";
 in {
-  home.packages = with pkgs; [
-    inori
-  ];
-  xdg.configFile."inori/config.toml".text = ''
-    qwerty_keybindings = true
-
-    [theme.item_highlight_active]
-    fg = "${mantle}"
-    bg = "${mauve}"
-
-    [theme.item_highlight_inactive]
-    fg = "${text}"
-
-    [theme.block_active]
-    fg = "${mauve}"
-
-    [theme.playing]
-    fg = "${teal}"
-    add_modifier = "HIDDEN"
-
-    [theme.paused]
-    fg = "${yellow}"
-
-    [theme.status_artist]
-    fg = "${red}"
-    add_modifier = "HIDDEN"
-
-    [theme.status_album]
-    fg = "${mauve}"
-    add_modifier = "HIDDEN"
-
-    [theme.album]
-    fg = "${mauve}"
-  '';
+  programs.inori = {
+    enable = true;
+    settings = {
+      qwerty_keybindings = true;
+      "theme.item_highlight_active" = {
+        fg = "${mauve}";
+        bg = "${base}";
+      };
+      "theme.item_highlight_inactive" = {
+        fg = "${text}";
+      };
+      "theme.block_active" = {
+        fg = "${mauve}";
+      };
+      "theme.status_playing" = {
+        fg = "${teal}";
+      };
+      "theme.status_paused" = {
+        fg = "${yellow}";
+      };
+      "theme.status_artist" = {
+        fg = "${red}";
+      };
+      "theme.status_album" = {
+        fg = "${blue}";
+      };
+      "theme.field_album" = {
+        fg = "${blue}";
+      };
+    };
+  };
 }
