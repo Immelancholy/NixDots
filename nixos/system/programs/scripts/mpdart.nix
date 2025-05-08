@@ -61,8 +61,8 @@
           DIR="$MUSIC_DIR/$(dirname "$(mpc current -f %file%)")"
           ffmpeg -i "$MUSIC_DIR/$(mpc current -f %file%)" "$COVER" -y &> /dev/null
           STATUS=$?
-          if [ "$status" -eq 0 ]; then
-            return
+          if [ $status -eq 0 ]; then
+
           else
             for ART in "$DIR/cover."{png,jpg,webp}; do
               if [ -f "$ART" ]; then
