@@ -35,10 +35,10 @@ in {
         block_active = {
           fg = "${mauve}";
         };
-        status_playing = {
+        playing = {
           fg = "${teal}";
         };
-        status_paused = {
+        paused = {
           fg = "${yellow}";
         };
         status_artist = {
