@@ -46,11 +46,11 @@
     fi
 
     cat >"$colorfile" <<EOF
-      ''${text:11}
-      ''${text:11}
-      ''${text:11}
-      ''${text:11}
-      ''${mauve:11}
+    ''${text:11}
+    ''${text:11}
+    ''${text:11}
+    ''${text:11}
+    ''${mauve:11}
     EOF
   '';
 in {

@@ -113,7 +113,7 @@
           line1="''${col1}$title"
           line2="''${col2}$artist ''${col3}- ''${col4}$album"
           line2="''${line2:0:48}"
-          line3="─────────────────────────────────╶"
+          line3="''${col5}─────────────────────────────────╶"
           kitten icat --align=center "$COVER"
           printf '%s\n' "$line1"
           printf '%s\n' "$line2"
