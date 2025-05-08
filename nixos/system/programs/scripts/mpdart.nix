@@ -45,7 +45,7 @@
           col2=$(tput setaf ''${colors[1]})
           col3=$(tput setaf ''${colors[2]})
           col4=$(tput setaf ''${colors[3]})
-          col5=$(tput setaf 7)
+          col5=$(tput setaf ''${colors[4]})
         fi
       }
 
@@ -113,7 +113,7 @@
           line1="''${col1}$title"
           line2="''${col2}$artist ''${col3}- ''${col4}$album"
           line2="''${line2:0:48}"
-          line3="''${col5}─────────────────────────────────╶"
+          line3="─────────────────────────────────╶"
           kitten icat --align=center "$COVER"
           printf '%s\n' "$line1"
           printf '%s\n' "$line2"
