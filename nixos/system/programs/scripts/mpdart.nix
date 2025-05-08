@@ -59,6 +59,14 @@
           title=$(mpc current --format %title%)
           album=$(mpc current --format %album%)
           DIR="$MUSIC_DIR/$(dirname "$(mpc current -f %file%)")"
+          black=$(tput setaf 0) # Black - Regular
+          red=$(tput setaf 1) # Red
+          green=$(tput setaf 2) # Green
+          yellow=$(tput setaf 3) # Yellow
+          blue=$(tput setaf 4) # Blue
+          purple=$(tput setaf 5) # Purple
+          cyan=$(tput setaf 6) # Cyan
+          white=$(tput setaf 7) # White
           ffmpeg -i "$MUSIC_DIR/$(mpc current -f %file%)" "$COVER" -y &> /dev/null
           if ! [ $? -eq 0 ]; then
             for ART in "$DIR/cover."{png,jpg,webp}; do
@@ -73,16 +81,14 @@
             done
           fi
           artist=$(mpc current --format %artist%)
-          line1="$title"
+          line1="''${blue}$title"
           line2="$artist - $album"
-          line2=''${line2:0:48}
-          purple=$(tput setaf 4)
-          line3="''${purple}─────────────────────────────────╶"
+          line2="''${white}''${line2:0:48}"
+          line3="''${blue}─────────────────────────────────╶"
           kitten icat --align=center "$COVER"
           printf '%s\n' "$line1"
           printf '%s\n' "$line2"
           printf '%s' "$line3"
-          tput setaf 7
           song_old=$song
         fi
       }
