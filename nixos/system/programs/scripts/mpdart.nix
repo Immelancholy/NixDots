@@ -42,24 +42,12 @@
 
         else
           mkdir -p $config
-      cat > $colorfile <<EOF
-      7
-      7
-      7
-      7
-      4
-      EOF
 
-          colors=()
-          while IFS= read -r color; do
-            colors+=("$color")
-          done < "$colorfile"
-
-          col1=$(tput setaf ''${colors[0]})
-          col2=$(tput setaf ''${colors[1]})
-          col3=$(tput setaf ''${colors[2]})
-          col4=$(tput setaf ''${colors[3]})
-          col5=$(tput setaf ''${colors[4]})
+          col1=$(tput setaf 7)
+          col2=$(tput setaf 7)
+          col3=$(tput setaf 7)
+          col4=$(tput setaf 7)
+          col5=$(tput setaf 4)
         fi
       }
 
