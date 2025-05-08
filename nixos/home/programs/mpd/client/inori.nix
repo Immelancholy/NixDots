@@ -26,8 +26,8 @@ in {
       qwerty_keybindings = true;
       theme = {
         item_highlight_active = {
-          fg = "${mauve}";
-          add_modifier = "BOLD";
+          fg = "${base}";
+          bg = "${mauve}";
         };
         item_highlight_inactive = {
           fg = "${text}";
