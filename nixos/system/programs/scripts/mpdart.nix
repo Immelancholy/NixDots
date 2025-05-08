@@ -76,7 +76,7 @@
           line1="$title"
           line2="$artist - $album"
           line2=''${line2:0:48}
-          purple=$(tput setaf 5)
+          purple=$(tput setaf 4)
           line3="''${purple}─────────────────────────────────╶"
           kitten icat --align=center "$COVER"
           printf '%s\n' "$line1"
