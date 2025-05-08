@@ -13,40 +13,23 @@
       PROG_NAME=$(basename "$0")
 
       get_colors () {
-        filename="XDG_CONFIG_HOME/mpdart/colors"
-        colors=()
-        while IFS= read -r color; do
-          colors+=("$color")
-        done < "$filename"
+        colorfile="XDG_CONFIG_HOME/mpdart/colors"
+        if [ -f "$colorfile" ]; then
+          colors=()
+          while IFS= read -r color; do
+            colors+=("$color")
+          done < "$colorfile"
 
-        col1=''${colors[0]}
-        col2=''${colors[1]}
-        col3=''${colors[2]}
-        col4=''${colors[3]}
-        col5=''${colors[4]}
-        if [[ -z "$col1" ]]; then
-          col1=$(tput setaf "$col1")
+          col1=$(tput setaf ''${colors[0]})
+          col2=$(tput setaf ''${colors[1]})
+          col3=$(tput setaf ''${colors[2]})
+          col4=$(tput setaf ''${colors[3]})
+          col5=$(tput setaf ''${colors[4]})
         else
           col1=$(tput setaf 7)
-        fi
-        if [[ -z "$col2" ]]; then
-          col2=$(tput setaf "$col2")
-        else
           col2=$(tput setaf 7)
-        fi
-        if [[ -z "$col3" ]]; then
-          col3=$(tput setaf "$col3")
-        else
           col3=$(tput setaf 7)
-        fi
-        if [[ -z "$col4" ]]; then
-          col4=$(tput setaf "$col4")
-        else
           col4=$(tput setaf 7)
-        fi
-        if [[ -z "$col5" ]]; then
-          col5=$(tput setaf "$col5")
-        else
           col5=$(tput setaf 4)
         fi
       }
