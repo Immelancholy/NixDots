@@ -555,7 +555,7 @@
 in {
   home = {
     activation = {
-      neo-color = lib.hm.dag.entryAfter ["writeBoundary"] ''
+      mpdart-color = lib.hm.dag.entryAfter ["writeBoundary"] ''
         run mpdart-color
       '';
     };
