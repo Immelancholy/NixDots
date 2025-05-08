@@ -19,5 +19,6 @@
     ./brightness.nix
     ./colortrans.nix
     ./neo-color-cfg.nix
+    ./mpdart-color.nix
   ];
 }
