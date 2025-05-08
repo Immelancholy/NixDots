@@ -27,7 +27,6 @@ in {
       theme = {
         item_highlight_active = {
           fg = "${mauve}";
-          bg = "${base}";
         };
         item_highlight_inactive = {
           fg = "${text}";
@@ -48,7 +47,7 @@ in {
           fg = "${blue}";
         };
         album = {
-          fg = "${blue}";
+          fg = "${mauve}";
         };
       };
     };
