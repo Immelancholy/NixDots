@@ -59,16 +59,22 @@
           clear
           title=$(mpc current --format %title%)
           DIR="$MUSIC_DIR/$(dirname "$(mpc current -f %file%)")"
-          for ART in "$DIR/cover."{png,jpg,webp}; do
-            if [ -f "$ART" ]; then
-              convert "$ART" $COVER &> /dev/null
-            fi
-          done
-          for ART in "$DIR/../cover."{png,jpg,webp}; do
-            if [ -f "$ART" ]; then
-              convert "$ART" $COVER &> /dev/null
-            fi
-          done
+          ffmpeg -i "$MUSIC_DIR/$(mpc current -f %file%)" -y &> /dev/null
+          STATUS=$?
+          if [ "$status" -eq 0]; then
+            return
+          else
+            for ART in "$DIR/cover."{png,jpg,webp}; do
+              if [ -f "$ART" ]; then
+                convert "$ART" $COVER &> /dev/null
+              fi
+            done
+            for ART in "$DIR/../cover."{png,jpg,webp}; do
+              if [ -f "$ART" ]; then
+                convert "$ART" $COVER &> /dev/null
+              fi
+            done
+          fi
           artist=$(mpc current --format %artist%)
           line1="-------- $artist --------"
           line2="-------- $title --------"
