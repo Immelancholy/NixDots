@@ -124,7 +124,7 @@ in {
       ];
       bindnt = [
         ", mouse:275, exec, toggle-mute"
-        "$mod, mouse:275, toggle-mute --unmute-all"
+        "$mod, mouse:275, exec, toggle-mute --unmute-all"
       ];
     };
   };
