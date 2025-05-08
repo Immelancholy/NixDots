@@ -8,6 +8,14 @@
       MUSIC_DIR="$HOME/Music"
       PROG_NAME=$(basename "$0")
 
+      hex_to_rgb () {
+        HEX=$(echo "$1" | tr -d '#' | tr '[:lower:]' '[:upper:]')
+        DIGITS=$(( ''${#HEX} / 3 ))
+        R=$(( 16#''${HEX:$(( DIGITS * 0 )):$DIGITS} ))
+        G=$(( 16#''${HEX:$(( DIGITS * 1 )):$DIGITS} ))
+        B=$(( 16#''${HEX:$(( DIGITS * 2 )):$DIGITS} ))
+      }
+
       get_colors () {
         config="$XDG_CONFIG_HOME/mpdart"
         colorfile="$config/colors"
@@ -17,11 +25,21 @@
             colors+=("$color")
           done < "$colorfile"
 
-          col1=$(tput setaf ''${colors[0]})
-          col2=$(tput setaf ''${colors[1]})
-          col3=$(tput setaf ''${colors[2]})
-          col4=$(tput setaf ''${colors[3]})
-          col5=$(tput setaf ''${colors[4]})
+          hex_to_rgb "''${colors[0]}"
+          col1="\033[38;2;''${R};''${G};''${B}m"
+
+          hex_to_rgb "''${colors[1]}"
+          col2="\033[38;2;''${R};''${G};''${B}m"
+
+          hex_to_rgb "''${colors[2]}"
+          col3="\033[38;2;''${R};''${G};''${B}m"
+
+          hex_to_rgb "''${colors[3]}"
+          col4="\033[38;2;''${R};''${G};''${B}m"
+
+          hex_to_rgb "''${colors[4]}"
+          col5="\033[38;2;''${R};''${G};''${B}m"
+
         else
           mkdir -p $config
       cat > $colorfile <<EOF

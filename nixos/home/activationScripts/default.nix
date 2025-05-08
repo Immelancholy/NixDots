@@ -2,6 +2,6 @@
   imports = [
     ./neo-color.nix
     ./cavaCfg.nix
-    ./mpdart-color.nix
+    # ./mpdart-color.nix
   ];
 }
