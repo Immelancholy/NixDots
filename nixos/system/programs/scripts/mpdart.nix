@@ -113,13 +113,20 @@
           fi
           artist=$(mpc current --format %artist%)
           line1="''${col1}$title"
-          line2="''${col2}$artist ''${col3}- ''${col4}$album"
+          line2p1="''${col2}$artist "
+          len2p1=''${#line2p1}
+          line2p2="''${col3}- "
+          len2p1=''${#line2p2}
+          line2p3="''${col4}$album"
           cols=$(tput cols)
-          line2="''${line2:0:$cols}"
+          cols_album=$(( $cols-$len2p1-$len2p2))
+          line2p3="''${line2p3:0:$cols_album}"
           line3="''${col5}─────────────────────────────────╶"
           kitten icat --align=center "$COVER"
           printf '%s\n' "$line1"
-          printf '%s\n' "$line2"
+          printf '%s' "$line2p1"
+          printf '%s' "$line2p2"
+          printf '%s\n' "$line2p3"
           printf '%s' "$line3"
           song_old=$song
         fi
