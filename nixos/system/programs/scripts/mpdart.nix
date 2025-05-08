@@ -82,6 +82,7 @@
           printf '%s\n' "$line1"
           printf '%s\n' "$line2"
           printf '%s' "$line3"
+          tput setaf 7
           song_old=$song
         fi
       }
