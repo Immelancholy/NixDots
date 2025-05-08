@@ -113,6 +113,19 @@ in {
         "$mod, F10, pass, class:^(com.obsproject.Studio)$"
         "$mod, F12, pass, class:^(com.obsproject.Studio)$"
       ];
+      bindl = [
+        "$mod, mouse:282, exec, $playerctl next" #next
+        "$mod, mouse:281, exec, $playerctl previous" #previous,
+        ", mouse:277, exec, $playerctl play-pause" # toggle between media play and pause
+      ];
+      bindel = [
+        ", mouse:281, exec, uwsm-app -- playerVol inc" # volume up of mpd
+        ", mouse:282, exec, uwsm-app -- playerVol dec" # volume down of mpd
+      ];
+      bindnt = [
+        ", mouse:275, exec, toggle-mute"
+        "$mod, mouse:275, toggle-mute --unmute-all"
+      ];
     };
   };
   home.packages = with pkgs; [
