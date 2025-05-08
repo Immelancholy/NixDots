@@ -117,7 +117,6 @@
           len2p1=''${#artist}
           line2p2="''${col3}- "
           line2p3="''${col4}$album"
-          cols=$(tput cols)
           cols_album=$(($cols-$len2p1-3))
           line2p3="''${line2p3:0:$cols_album}"
           line3="''${col5}─────────────────────────────────╶"
