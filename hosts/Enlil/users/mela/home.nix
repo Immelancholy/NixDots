@@ -63,6 +63,11 @@ in {
     # zen.enable = false;
     # vesktop.enable = false;
   };
+
+  home.sessionVariables = {
+    CAVA_STDOUT_MAX_INSTANCES = 2;
+  };
+
   programs.obs-studio.enable = true;
   programs.git = {
     enable = true;
