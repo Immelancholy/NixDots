@@ -3,6 +3,7 @@
   config,
   lib,
   inputs,
+  globalHomeImports,
   ...
 }:
 with lib; let
@@ -39,13 +40,9 @@ in {
           home.homeDirectory = "/home/${user}";
           imports = [
             ../../../nixos/home
-            # inputs.stylix.homeManagerModules.stylix
             ../../home
             ../../../hosts/${config.networking.hostName}/users/${user}/home.nix
-            inputs.catppuccin.homeModules.catppuccin
-            inputs.nixvim.homeManagerModules.nixvim
-            inputs.spicetify-nix.homeManagerModules.default
-            inputs.nix-flatpak.homeManagerModules.nix-flatpak
+            globalHomeImports
           ];
         })
       users);

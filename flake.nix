@@ -124,6 +124,13 @@
     ];
     forAllSystems = nixpkgs.lib.genAttrs systems;
     system = forAllSystems (system: system);
+    globalHomeImports = [
+      inputs.catppuccin.homeModules.catppuccin
+      inputs.nixvim.homeManagerModules.nixvim
+      inputs.spicetify-nix.homeManagerModules.default
+      inputs.nix-flatpak.homeManagerModules.nix-flatpak
+      inputs.artis.homeManagerModules.default
+    ];
   in {
     formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
     nixosConfigurations = {
@@ -147,7 +154,7 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              extraSpecialArgs = {inherit inputs;};
+              extraSpecialArgs = {inherit inputs globalHomeImports;};
             };
           }
         ];
