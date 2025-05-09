@@ -159,7 +159,7 @@
                 inputs.spicetify-nix.homeManagerModules.default
                 inputs.nix-flatpak.homeManagerModules.nix-flatpak
                 inputs.artis.homeManagerModules.default
-                ./nixos/home
+                # ./nixos/home
                 ./modules/home
               ];
             };
