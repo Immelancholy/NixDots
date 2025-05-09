@@ -5,7 +5,7 @@
   lib,
   ...
 }: let
-  usernames = config.useraccounts.sudoUsers ++ config.useraccounts.users;
+  usernames = config.userAccounts.sudoUsers ++ config.userAccounts.users;
   forAllUsers = lib.genAttrs usernames;
 in {
   disko.devices.disk.main.device = "/dev/nvme0n1";
