@@ -153,7 +153,7 @@
               useUserPackages = true;
               extraSpecialArgs = {inherit inputs;};
               sharedModules = [
-                inputs.nix-relic-modules.homeManagerModules.default
+                inputs.nix-relic-modules.hmModules.default
                 inputs.catppuccin.homeModules.catppuccin
                 inputs.nixvim.homeManagerModules.nixvim
                 inputs.spicetify-nix.homeManagerModules.default
@@ -189,7 +189,7 @@
               useUserPackages = true;
               extraSpecialArgs = {inherit inputs;};
               sharedModules = [
-                inputs.nix-relic-modules.homeManagerModules.default
+                inputs.nix-relic-modules.hmModules.default
                 inputs.catppuccin.homeModules.catppuccin
                 inputs.nixvim.homeManagerModules.nixvim
                 inputs.spicetify-nix.homeManagerModules.default
