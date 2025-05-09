@@ -5,7 +5,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     # nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.11";
     artis = {
-      url = "github:Immelancholy/artis";
+      url = "github:Immelancholy/artis/home-manager-test";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     alejandra = {
