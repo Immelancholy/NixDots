@@ -6,7 +6,7 @@
     ./btop.nix
     ./spicetify.nix
     ./tmux.nix
-    ./zenTarget.nix
+    # ./zenTarget.nix
     ./zen.nix
     ./vesktop.nix
   ];
