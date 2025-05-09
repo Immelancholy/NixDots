@@ -1,6 +1,7 @@
 {
   lib,
   config,
+  ...
 }: let
   users = config.userAccounts.sudoUsers ++ config.userAccounts.users;
   forAllUsers = lib.genAttrs users;
