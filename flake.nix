@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     # nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.11";
+    nix-relic-modules.url = "github:Immelancholy/Nix-Relic-Modules";
     artis = {
       url = "github:Immelancholy/artis";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -187,6 +188,7 @@
               useUserPackages = true;
               extraSpecialArgs = {inherit inputs;};
               sharedModules = [
+                inputs.nix-relic-modules.homeManagerModules.default
                 inputs.catppuccin.homeModules.catppuccin
                 inputs.nixvim.homeManagerModules.nixvim
                 inputs.spicetify-nix.homeManagerModules.default
