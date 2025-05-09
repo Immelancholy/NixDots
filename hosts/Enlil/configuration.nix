@@ -2,13 +2,22 @@
   inputs,
   config,
   pkgs,
+  lib,
   ...
-}: {
+}: let
+  usernames = config.useraccounts.sudoUsers ++ config.useraccounts.users;
+  forAllUsers = lib.genAtters usernames;
+in {
   disko.devices.disk.main.device = "/dev/nvme0n1";
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
   networking.hostName = "Enlil";
-  userAccounts.users = [];
-  userAccounts.sudoUsers = ["mela"];
+  userAccounts = {
+    users = [];
+    sudoUsers = ["mela"];
+    extraHomeImports = forAllUsers (username: [
+      ../../../hosts/${config.networking.hostName}/users/${username}/home.nix
+    ]);
+  };
 
   programs.weylus.users = [
     "mela"

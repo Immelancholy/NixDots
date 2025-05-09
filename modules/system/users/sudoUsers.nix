@@ -14,6 +14,11 @@ in {
       example = ["mela"];
       description = "Define Users with sudo";
     };
+    extraHomeImports = mkOption {
+      type = types.listOf types.raw;
+      default = [];
+      description = "Just a place to add global imports other than shared modules";
+    };
   };
   config = {
     users.users = let
@@ -35,9 +40,7 @@ in {
         lib.nameValuePair user {
           home.username = "${user}";
           home.homeDirectory = "/home/${user}";
-          imports = [
-            ../../../hosts/${config.networking.hostName}/users/${user}/home.nix
-          ];
+          imports = cfg.extraHomeImports;
         })
       users);
   };
