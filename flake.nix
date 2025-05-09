@@ -125,11 +125,6 @@
     forAllSystems = nixpkgs.lib.genAttrs systems;
     system = forAllSystems (system: system);
     globalHomeImports = [
-      inputs.catppuccin.homeModules.catppuccin
-      inputs.nixvim.homeManagerModules.nixvim
-      inputs.spicetify-nix.homeManagerModules.default
-      inputs.nix-flatpak.homeManagerModules.nix-flatpak
-      inputs.artis.homeManagerModules.default
     ];
   in {
     formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
@@ -155,6 +150,15 @@
               useGlobalPkgs = true;
               useUserPackages = true;
               extraSpecialArgs = {inherit inputs;};
+              sharedModules = [
+                inputs.catppuccin.homeModules.catppuccin
+                inputs.nixvim.homeManagerModules.nixvim
+                inputs.spicetify-nix.homeManagerModules.default
+                inputs.nix-flatpak.homeManagerModules.nix-flatpak
+                inputs.artis.homeManagerModules.default
+                ./nixos/home
+                ./modules/home
+              ];
             };
           }
         ];
@@ -180,6 +184,15 @@
               useGlobalPkgs = true;
               useUserPackages = true;
               extraSpecialArgs = {inherit inputs;};
+              sharedModules = [
+                inputs.catppuccin.homeModules.catppuccin
+                inputs.nixvim.homeManagerModules.nixvim
+                inputs.spicetify-nix.homeManagerModules.default
+                inputs.nix-flatpak.homeManagerModules.nix-flatpak
+                inputs.artis.homeManagerModules.default
+                ./nixos/home
+                ./modules/home
+              ];
             };
           }
         ];

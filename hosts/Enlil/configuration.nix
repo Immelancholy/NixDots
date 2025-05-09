@@ -10,6 +10,10 @@
   userAccounts.users = [];
   userAccounts.sudoUsers = ["mela"];
 
+  programs.weylus.users = [
+    "mela"
+  ];
+
   environment.systemPackages = with pkgs; [
   ];
   stylix = {

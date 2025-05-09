@@ -13,6 +13,10 @@
     "mela"
   ]; # sudo enabled accounts here (You'll want to go here if you're installing these. )
 
+  programs.weylus.users = [
+    "mela"
+  ];
+
   stylix = {
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     polarity = "dark";

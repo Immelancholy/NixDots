@@ -2,8 +2,6 @@
   pkgs,
   config,
   lib,
-  inputs,
-  globalHomeImports,
   ...
 }:
 with lib; let
@@ -18,7 +16,6 @@ in {
     };
   };
   config = {
-    programs.weylus.users = cfg.users;
     users.users = let
       users = cfg.users;
     in
@@ -38,13 +35,9 @@ in {
         lib.nameValuePair user {
           home.username = "${user}";
           home.homeDirectory = "/home/${user}";
-          imports =
-            globalHomeImports
-            ++ [
-              ../../../nixos/home
-              ../../home
-              ../../../hosts/${config.networking.hostName}/users/${user}/home.nix
-            ];
+          imports = [
+            ../../../hosts/${config.networking.hostName}/users/${user}/home.nix
+          ];
         })
       users);
   };
