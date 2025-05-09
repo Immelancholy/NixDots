@@ -8,7 +8,7 @@
     ./cava.nix
     ./checkshell.nix
     ./cliphist.nix
-    ./mpdart.nix
+    # ./mpdart.nix
     ./neo.nix
     ./tmux_dev.nix
     ./tmux_nix.nix

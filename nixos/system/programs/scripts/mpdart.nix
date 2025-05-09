@@ -6,7 +6,6 @@
       TMP="/tmp"
       COVER="$TMP/albumArt.jpg"
       MUSIC_DIR="$HOME/Music"
-      PROG_NAME=$(basename "$0")
 
       hex_to_rgb () {
         HEX=$(echo "$1" | tr -d '#' | tr '[:lower:]' '[:upper:]')
