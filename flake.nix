@@ -154,7 +154,7 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              extraSpecialArgs = {inherit inputs globalHomeImports;};
+              extraSpecialArgs = {inherit inputs;};
             };
           }
         ];
