@@ -6,7 +6,7 @@
   ...
 }: let
   usernames = config.useraccounts.sudoUsers ++ config.useraccounts.users;
-  forAllUsers = lib.genAtters usernames;
+  forAllUsers = lib.genAttrs usernames;
 in {
   disko.devices.disk.main.device = "/dev/nvme0n1";
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
