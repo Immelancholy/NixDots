@@ -154,14 +154,14 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              extraSpecialArgs = {inherit inputs;};
+              extraSpecialArgs = {inherit inputs globalHomeImports;};
             };
           }
         ];
       };
       Ereshkigal = nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = {inherit inputs nixpkgs;};
+        specialArgs = {inherit inputs nixpkgs globalHomeImports;};
         modules = [
           inputs.disko.nixosModules.default
           stylix.nixosModules.stylix
