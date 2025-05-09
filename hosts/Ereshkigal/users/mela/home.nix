@@ -22,6 +22,11 @@
   #   zen.enable = false;
   #   vesktop.enable = false;
   # };
+
+  player = {
+    enable = true;
+  };
+
   programs.obs-studio.enable = true;
   services.remmina = {
     enable = true;

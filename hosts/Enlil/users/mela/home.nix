@@ -12,6 +12,11 @@
     flavor = "mocha";
     accent = "mauve";
   };
+
+  player = {
+    enable = true;
+  };
+
   stylix.targets = {
     # tmux.enable = false;
     # yazi.enable = false;
