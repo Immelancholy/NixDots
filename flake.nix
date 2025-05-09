@@ -153,6 +153,7 @@
               useUserPackages = true;
               extraSpecialArgs = {inherit inputs;};
               sharedModules = [
+                inputs.nix-relic-modules.homeManagerModules.default
                 inputs.catppuccin.homeModules.catppuccin
                 inputs.nixvim.homeManagerModules.nixvim
                 inputs.spicetify-nix.homeManagerModules.default
@@ -169,7 +170,6 @@
         inherit system;
         specialArgs = {inherit inputs nixpkgs globalHomeImports;};
         modules = [
-          inputs.nix-relic-modules.homeManagerModules.default
           inputs.disko.nixosModules.default
           stylix.nixosModules.stylix
           nur.modules.nixos.default
