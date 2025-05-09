@@ -15,7 +15,7 @@ in {
     users = [];
     sudoUsers = ["mela"];
     extraHomeImports = forAllUsers (username: [
-      ../../../hosts/${config.networking.hostName}/users/${username}/home.nix
+      ./users/${username}/home.nix
     ]);
   };
 
