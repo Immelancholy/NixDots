@@ -1309,11 +1309,11 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1746828256,
-        "narHash": "sha256-2FMqfvN++x3aYHU3VXqnVlIl0eatZPtlcccJGjoriWU=",
+        "lastModified": 1746828300,
+        "narHash": "sha256-pYSVJdXurQypnysoMJx2JVUpajDP0tp1d0J89K6UlIQ=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic-Modules",
-        "rev": "3649bb439a9c4bf4d3c1009a97b41a9938f77000",
+        "rev": "8b626f3792940e04fda8fcce0c24905090d87d0e",
         "type": "github"
       },
       "original": {
