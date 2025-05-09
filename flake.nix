@@ -136,7 +136,7 @@
     nixosConfigurations = {
       Enlil = nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = {inherit inputs nixpkgs;};
+        specialArgs = {inherit inputs nixpkgs globalHomeImports;};
         modules = [
           inputs.disko.nixosModules.default
           stylix.nixosModules.stylix
@@ -154,7 +154,7 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              extraSpecialArgs = {inherit inputs globalHomeImports;};
+              extraSpecialArgs = {inherit inputs;};
             };
           }
         ];
