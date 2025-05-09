@@ -35,9 +35,6 @@ in {
         lib.nameValuePair user {
           home.username = "${user}";
           home.homeDirectory = "/home/${user}";
-          imports = [
-            ../../../hosts/${config.networking.hostName}/users/${user}/home.nix
-          ];
         })
       users);
   };

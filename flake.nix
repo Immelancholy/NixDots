@@ -143,6 +143,7 @@
           ./nixos/system
           ./modules/system
           ./hosts/Enlil
+          ./hosts/hostHome.nix
 
           home-manager.nixosModules.home-manager
           {
@@ -177,6 +178,7 @@
           ./nixos/system
           ./modules/system
           ./hosts/Ereshkigal
+          ./hosts/hostHome.nix
 
           home-manager.nixosModules.home-manager
           {

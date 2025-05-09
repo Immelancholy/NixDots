@@ -5,8 +5,8 @@
   lib,
   ...
 }: let
-  usernames = config.userAccounts.sudoUsers ++ config.userAccounts.users;
-  forAllUsers = lib.genAttrs usernames;
+  users = config.userAccounts.users ++ config.userAccounts.sudoUsers;
+  forAllUsers = lib.genAttrs users;
 in {
   disko.devices.disk.main.device = "/dev/nvme0n1";
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
@@ -14,9 +14,6 @@ in {
   userAccounts = {
     users = [];
     sudoUsers = ["mela"];
-    extraHomeImports = forAllUsers (username: [
-      ./users/${username}/home.nix
-    ]);
   };
 
   programs.weylus.users = [
