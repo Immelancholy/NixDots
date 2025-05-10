@@ -83,21 +83,22 @@ in {
     wl-clipboard
     sbctl
     inputs.yazi.packages.${pkgs.system}.default
-    nrm.brightness
-    nrm.btop
-    nrm.cava
-    nrm.checkshell
-    nrm.cliphist
-    nrm.colortrans
-    nrm.mpdchck
-    nrm.neo
-    nrm.rofi-power-menu
-    nrm.ss
-    nrm.tmux_dev
-    nrm.tmux_nix
-    nrm.tmux_notes
-    nrm.toggle-mute
-    nrm.waycava
+    # nrm.brightness
+    # nrm.btop
+    # nrm.cava
+    # nrm.checkshell
+    # nrm.cliphist
+    # nrm.colortrans
+    # nrm.mpdchck
+    # nrm.neo
+    # nrm.rofi-power-menu
+    # nrm.ss
+    # nrm.tmux_dev
+    # nrm.tmux_nix
+    # nrm.tmux_notes
+    # nrm.toggle-mute
+    # nrm.waycava
+    nrm.default
     qpwgraph
     pavucontrol
     pulsemixer
