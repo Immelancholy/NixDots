@@ -3,7 +3,7 @@
   inputs,
   ...
 }: let
-  nrm = inputs.nix-relic-modules.packages.${pkgs.system};.
+  nrm = inputs.nix-relic-modules.packages.${pkgs.system};
 in {
   imports = [
     ./hyprland.nix
