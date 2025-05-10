@@ -129,7 +129,6 @@
     formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
     nixosConfigurations = {
       Enlil = nixpkgs.lib.nixosSystem {
-        inherit system;
         specialArgs = {inherit inputs nixpkgs;};
         modules = [
           inputs.nix-relic-modules.nixosModules.default
