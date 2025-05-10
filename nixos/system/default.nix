@@ -31,6 +31,7 @@
   };
 
   security.sudo = {
+    package = pkgs.sudo-rs;
     execWheelOnly = true;
   };
 
