@@ -66,4 +66,13 @@ in {
   environment.systemPackages = [
     cavaCfg
   ];
+  systemd.user.services."cavaCfg" = {
+    enable = true;
+    name = "Cava Cfg";
+    wantedBy = ["default.target"];
+    path = [
+      "/run/current-system/sw"
+    ];
+    script = ''cavaCfg'';
+  };
 }
