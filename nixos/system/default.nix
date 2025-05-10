@@ -14,7 +14,9 @@
   programs.seahorse.enable = true;
   security.pam.services.login.enableGnomeKeyring = true;
   services.seatd.enable = true;
+
   services.neo-color.enable = true;
+  services.cavaCfg.enable = true;
 
   nix.registry.nixpkgs.flake = nixpkgs;
   nix.channel.enable = false;
