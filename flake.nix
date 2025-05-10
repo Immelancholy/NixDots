@@ -143,7 +143,6 @@
           solaar.nixosModules.default
           catppuccin.nixosModules.catppuccin
           ./nixos/system
-          # ./modules/system
           ./hosts/Enlil
           ./hosts/hostHome.nix
 
@@ -161,7 +160,6 @@
                 inputs.nix-flatpak.homeManagerModules.nix-flatpak
                 inputs.artis.homeManagerModules.default
                 ./nixos/home
-                # ./modules/home
               ];
             };
           }
@@ -171,6 +169,7 @@
         inherit system;
         specialArgs = {inherit inputs nixpkgs globalHomeImports;};
         modules = [
+          inputs.nix-relic-modules.nixosModules.default
           inputs.disko.nixosModules.default
           stylix.nixosModules.stylix
           nur.modules.nixos.default
@@ -179,7 +178,6 @@
           solaar.nixosModules.default
           catppuccin.nixosModules.catppuccin
           ./nixos/system
-          ./modules/system
           ./hosts/Ereshkigal
           ./hosts/hostHome.nix
 
@@ -196,8 +194,6 @@
                 inputs.spicetify-nix.homeManagerModules.default
                 inputs.nix-flatpak.homeManagerModules.nix-flatpak
                 inputs.artis.homeManagerModules.default
-                ./nixos/home
-                ./modules/home
               ];
             };
           }
