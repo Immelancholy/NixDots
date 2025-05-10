@@ -3,7 +3,7 @@
   description = "My NixOS and Home Manager config.";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-    # nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.11";
+    nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-24.11";
     nix-relic-modules = {
       url = "github:Immelancholy/Nix-Relic-Modules";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -110,18 +110,12 @@
 
   outputs = {
     self,
+    nix-relic-modules,
     nixpkgs,
-    catppuccin,
     home-manager,
-    rust-overlay,
-    solaar,
-    nix-flatpak,
-    lanzaboote,
-    nur,
-    stylix,
-    disko,
     ...
   } @ inputs: let
+    inherit (self) outputs;
     systems = [
       "aarch64-linux"
       "x86_64-linux"
@@ -129,18 +123,20 @@
     forAllSystems = nixpkgs.lib.genAttrs systems;
   in {
     formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
+
+    overlays = import ./overlays {inherit inputs;};
+
     nixosConfigurations = {
       Enlil = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs nixpkgs;};
+        specialArgs = {inherit inputs outputs;};
         modules = [
-          inputs.nix-relic-modules.nixosModules.default
+          nix-relic-modules.nixosModules.default
           inputs.disko.nixosModules.default
-          stylix.nixosModules.stylix
-          nur.modules.nixos.default
-          lanzaboote.nixosModules.lanzaboote
-          nix-flatpak.nixosModules.nix-flatpak
-          solaar.nixosModules.default
-          catppuccin.nixosModules.catppuccin
+          inputs.stylix.nixosModules.stylix
+          inputs.nur.modules.nixos.default
+          inputs.lanzaboote.nixosModules.lanzaboote
+          inputs.solaar.nixosModules.default
+          inputs.catppuccin.nixosModules.catppuccin
           ./nixos/system
           ./hosts/Enlil
           ./hosts/hostHome.nix
@@ -150,13 +146,12 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              extraSpecialArgs = {inherit inputs;};
+              extraSpecialArgs = {inherit inputs outputs;};
               sharedModules = [
-                inputs.nix-relic-modules.homeManagerModules.default
+                nix-relic-modules.homeManagerModules.default
                 inputs.catppuccin.homeModules.catppuccin
                 inputs.nixvim.homeManagerModules.nixvim
                 inputs.spicetify-nix.homeManagerModules.default
-                inputs.nix-flatpak.homeManagerModules.nix-flatpak
                 inputs.artis.homeManagerModules.default
                 ./nixos/home
               ];
@@ -165,16 +160,15 @@
         ];
       };
       Ereshkigal = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs nixpkgs;};
+        specialArgs = {inherit inputs nixpkgs outputs;};
         modules = [
-          inputs.nix-relic-modules.nixosModules.default
+          nix-relic-modules.nixosModules.default
           inputs.disko.nixosModules.default
-          stylix.nixosModules.stylix
-          nur.modules.nixos.default
-          lanzaboote.nixosModules.lanzaboote
-          nix-flatpak.nixosModules.nix-flatpak
-          solaar.nixosModules.default
-          catppuccin.nixosModules.catppuccin
+          inputs.stylix.nixosModules.stylix
+          inputs.nur.modules.nixos.default
+          inputs.lanzaboote.nixosModules.lanzaboote
+          inputs.solaar.nixosModules.default
+          inputs.catppuccin.nixosModules.catppuccin
           ./nixos/system
           ./hosts/Ereshkigal
           ./hosts/hostHome.nix
@@ -184,9 +178,9 @@
             home-manager = {
               useGlobalPkgs = true;
               useUserPackages = true;
-              extraSpecialArgs = {inherit inputs;};
+              extraSpecialArgs = {inherit inputs outputs;};
               sharedModules = [
-                inputs.nix-relic-modules.homeManagerModules.default
+                nix-relic-modules.homeManagerModules.default
                 inputs.catppuccin.homeModules.catppuccin
                 inputs.nixvim.homeManagerModules.nixvim
                 inputs.spicetify-nix.homeManagerModules.default

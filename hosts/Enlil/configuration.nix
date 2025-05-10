@@ -2,12 +2,8 @@
   inputs,
   config,
   pkgs,
-  lib,
   ...
-}: let
-  users = config.userAccounts.users ++ config.userAccounts.sudoUsers;
-  forAllUsers = lib.genAttrs users;
-in {
+}: {
   disko.devices.disk.main.device = "/dev/nvme0n1";
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
   networking.hostName = "Enlil";
@@ -21,6 +17,7 @@ in {
   ];
 
   environment.systemPackages = with pkgs; [
+    stable.ghostty
   ];
   stylix = {
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
