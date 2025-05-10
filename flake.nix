@@ -134,7 +134,7 @@
         inherit system;
         specialArgs = {inherit inputs nixpkgs globalHomeImports;};
         modules = [
-          inputs.nixosModules.default
+          inputs.nix-relic-modules.nixosModules.default
           inputs.disko.nixosModules.default
           stylix.nixosModules.stylix
           nur.modules.nixos.default
