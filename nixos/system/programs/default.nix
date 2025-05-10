@@ -12,7 +12,6 @@ in {
     ./weylus.nix
     ./bluetooth.nix
     ./uwsm.nix
-    ./scripts
     ./stylix.nix
   ];
 

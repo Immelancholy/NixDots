@@ -1,5 +1,4 @@
 {
   imports = [
-    ./hyprgame.nix
   ];
 }
