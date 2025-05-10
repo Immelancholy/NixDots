@@ -19,8 +19,8 @@
   blue = "#${config.lib.stylix.colors.base0D}";
   mauve = "#${config.lib.stylix.colors.base0E}";
   flamingo = "#${config.lib.stylix.colors.base0F}";
-in{
-  pkgs.writeShellScriptBin "cavaCfg" ''
+
+  cavaCfg = pkgs.writeShellScriptBin "cavaCfg" ''
     cavaConfigFile=$HOME/.config/cava/vcConfig
     id=$(${pkgs.wireplumber}/bin/wpctl status | grep "virtual_cable_in" | ${pkgs.gawk}/bin/awk '{print $2}' | grep -m1 "" | cut -f1 -d ".")
     serial=$(${pkgs.wireplumber}/bin/wpctl inspect "''${id}" | sed -n 's/.*object.serial = //p')
@@ -62,4 +62,8 @@ in{
     waves=0
     EOF
   '';
+in {
+  environment.systemPackages = [
+    cavaCfg
+  ];
 }
