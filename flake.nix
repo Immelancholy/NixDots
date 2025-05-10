@@ -124,7 +124,6 @@
       "x86_64-linux"
     ];
     forAllSystems = nixpkgs.lib.genAttrs systems;
-    system = forAllSystems (system: system);
   in {
     formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
     nixosConfigurations = {
