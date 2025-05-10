@@ -165,7 +165,7 @@
       };
       Ereshkigal = nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = {inherit inputs nixpkgs globalHomeImports;};
+        specialArgs = {inherit inputs nixpkgs;};
         modules = [
           inputs.nix-relic-modules.nixosModules.default
           inputs.disko.nixosModules.default
