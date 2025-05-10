@@ -1,6 +1,6 @@
 {
   imports = [
-    ./cavaCfg.nix
+    # ./cavaCfg.nix
     # ./neo-color-cfg.nix
   ];
 }
