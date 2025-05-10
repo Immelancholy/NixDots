@@ -86,10 +86,12 @@ in {
     nrm.brightness
     nrm.btop
     nrm.cava
+    nrm.cavaCfg
     nrm.checkshell
     nrm.cliphist
     nrm.colortrans
     nrm.mpdchck
+    nrm.neo-color
     nrm.neo
     nrm.rofi-power-menu
     nrm.ss
