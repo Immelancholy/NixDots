@@ -125,14 +125,12 @@
     ];
     forAllSystems = nixpkgs.lib.genAttrs systems;
     system = forAllSystems (system: system);
-    globalHomeImports = [
-    ];
   in {
     formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
     nixosConfigurations = {
       Enlil = nixpkgs.lib.nixosSystem {
         inherit system;
-        specialArgs = {inherit inputs nixpkgs globalHomeImports;};
+        specialArgs = {inherit inputs nixpkgs;};
         modules = [
           inputs.nix-relic-modules.nixosModules.default
           inputs.disko.nixosModules.default
