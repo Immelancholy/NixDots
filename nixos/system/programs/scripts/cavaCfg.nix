@@ -1,7 +1,7 @@
 {
-  lib,
   pkgs,
   config,
+  writeShellScriptBin,
   ...
 }: let
   base = "#${config.lib.stylix.colors.base00}";
@@ -20,8 +20,8 @@
   blue = "#${config.lib.stylix.colors.base0D}";
   mauve = "#${config.lib.stylix.colors.base0E}";
   flamingo = "#${config.lib.stylix.colors.base0F}";
-
-  cavaCfg = pkgs.writeShellScriptBin "cavaCfg" ''
+in
+  writeShellScriptBin "cavaCfg" ''
     cavaConfigFile=$HOME/.config/cava/vcConfig
     id=$(${pkgs.wireplumber}/bin/wpctl status | grep "virtual_cable_in" | ${pkgs.gawk}/bin/awk '{print $2}' | grep -m1 "" | cut -f1 -d ".")
     serial=$(${pkgs.wireplumber}/bin/wpctl inspect "''${id}" | sed -n 's/.*object.serial = //p')
@@ -62,22 +62,4 @@
     noise_reduction=''${reduce}
     waves=0
     EOF
-  '';
-in {
-  environment.systemPackages = [
-    cavaCfg
-  ];
-  systemd.user.services."cavaCfg" = {
-    enable = true;
-    name = "cavaCfg";
-    after = ["pipewire.service"];
-    wantedBy = ["default.target"];
-    path = [
-      "${cavaCfg}"
-    ];
-    script = ''cavaCfg'';
-    environment = {
-      FRAMERATE = config.environment.sessionVariables.FRAMERATE;
-    };
-  };
-}
+  ''
