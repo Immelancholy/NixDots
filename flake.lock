@@ -44,6 +44,26 @@
         "type": "github"
       }
     },
+    "anifetch": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1746994629,
+        "narHash": "sha256-Xzq80k9z2rdEzmkma365ucE15T2qDKOGJHKIrIssLNM=",
+        "owner": "Immelancholy",
+        "repo": "anifetch",
+        "rev": "5607edb6dc58a03eb5ef7ac0a9ce598fb248a6e3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Immelancholy",
+        "repo": "anifetch",
+        "type": "github"
+      }
+    },
     "aquamarine": {
       "inputs": {
         "hyprutils": [
@@ -1680,6 +1700,7 @@
       "inputs": {
         "Hyprspace": "Hyprspace",
         "alejandra": "alejandra",
+        "anifetch": "anifetch",
         "artis": "artis",
         "catppuccin": "catppuccin",
         "catppuccinZen": "catppuccinZen",
