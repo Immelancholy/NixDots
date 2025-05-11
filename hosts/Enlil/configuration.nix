@@ -28,7 +28,7 @@
   services.openssh = {
     enable = true;
 
-    PasswordAuthentication = false;
+    passwordAuthentication = false;
   };
 
   users.users.root.openssh.authorizedKeys.keys = [
