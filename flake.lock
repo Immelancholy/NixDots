@@ -895,16 +895,15 @@
         ]
       },
       "locked": {
-        "lastModified": 1746522256,
-        "narHash": "sha256-NRaB2q1QoT8fu9oMl7rS/X3KHW9hzC+rAqB2XDZhKJI=",
-        "owner": "Daholli",
+        "lastModified": 1747006169,
+        "narHash": "sha256-b91iVsAgT0kfiTAGTBg+C9FLRYhi8nlddI4wHyVuTBA=",
+        "owner": "outfoxxed",
         "repo": "hy3",
-        "rev": "a9caea020e457b4c5868913eea391beffd5fc22c",
+        "rev": "f74302dd00fbbd006ecda8acced222c6c5d0f72f",
         "type": "github"
       },
       "original": {
-        "owner": "Daholli",
-        "ref": "fix-namings",
+        "owner": "outfoxxed",
         "repo": "hy3",
         "type": "github"
       }
