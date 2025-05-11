@@ -8,6 +8,10 @@
       url = "github:Immelancholy/Nix-Relic-Modules";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    anifetch = {
+      url = "github:Immelancholy/anifetch";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     artis = {
       url = "github:Immelancholy/artis";
       inputs.nixpkgs.follows = "nixpkgs";
