@@ -79,8 +79,7 @@
     };
 
     hy3 = {
-      # url = "github:outfoxxed/hy3";
-      url = "github:Daholli/hy3/fix-namings";
+      url = "github:outfoxxed/hy3";
       inputs.hyprland.follows = "hyprland";
     };
     nixvim = {
