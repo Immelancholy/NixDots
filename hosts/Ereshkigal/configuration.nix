@@ -28,7 +28,7 @@
     enable = true;
 
     settings = {
-      PassworthAuthentication = false;
+      PasswordAuthentication = false;
     };
   };
 
