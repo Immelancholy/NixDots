@@ -18,7 +18,6 @@
     overlays = [
       outputs.overlays.stable-packages
       inputs.nix-relic-modules.overlays.nix-relic-modules
-      inputs.artis.overlays.artis
     ];
 
     config = {
