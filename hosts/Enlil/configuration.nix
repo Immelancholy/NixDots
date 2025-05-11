@@ -25,7 +25,11 @@
     image = ../../nixos/home/backgrounds/Evil_Miku.png;
   };
 
-  services.openssh.enable = true;
+  services.openssh = {
+    enable = true;
+
+    PasswordAuthentication = false;
+  };
 
   users.users.root.openssh.authorizedKeys.keys = [
     "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBLCQZSKxQcuHRUbEN7AK1lSf0VmXzTTYJA4BTs0pIgT Desktop"
