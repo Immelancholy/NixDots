@@ -17,7 +17,6 @@
   ];
 
   environment.systemPackages = with pkgs; [
-    stable.ghostty
   ];
   stylix = {
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
