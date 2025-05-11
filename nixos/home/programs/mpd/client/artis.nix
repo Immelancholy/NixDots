@@ -22,7 +22,6 @@
 in {
   programs.artis = {
     enable = true;
-    package = pkgs.artis;
     colors = {
       color1 = "${text}";
       color2 = "${text}";
