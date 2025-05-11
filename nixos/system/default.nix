@@ -17,6 +17,7 @@
   nixpkgs = {
     overlays = [
       outputs.overlays.stable-packages
+      inputs.nix-relic-modules.overlays
     ];
 
     config = {
