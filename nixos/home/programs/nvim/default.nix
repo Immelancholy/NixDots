@@ -807,7 +807,7 @@
       {
         action = "<esc>";
         key = "jk";
-        mode = ["i" "v"];
+        mode = ["!" "v"];
       }
     ];
     clipboard = {
