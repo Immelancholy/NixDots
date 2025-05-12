@@ -9,7 +9,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     anifetch = {
-      url = "github:Notenlish/anifetch";
+      url = "github:Immelancholy/anifetch";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     artis = {
