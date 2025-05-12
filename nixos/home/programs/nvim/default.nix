@@ -804,6 +804,11 @@
         key = "<leader>b5";
         mode = ["n"];
       }
+      {
+        action = "<esc>";
+        key = "jk";
+        mode = ["i" "v"];
+      }
     ];
     clipboard = {
       register = "unnamedplus";
