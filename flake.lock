@@ -51,15 +51,15 @@
         ]
       },
       "locked": {
-        "lastModified": 1746994629,
-        "narHash": "sha256-Xzq80k9z2rdEzmkma365ucE15T2qDKOGJHKIrIssLNM=",
-        "owner": "Immelancholy",
+        "lastModified": 1747009441,
+        "narHash": "sha256-d4AQFM9w1ylN66/2OL5BZyV0rGcNlL1RBbSLqkx7AA0=",
+        "owner": "Notenlish",
         "repo": "anifetch",
-        "rev": "5607edb6dc58a03eb5ef7ac0a9ce598fb248a6e3",
+        "rev": "bc866dd402dd66490d75ced094206c9b69b1c15d",
         "type": "github"
       },
       "original": {
-        "owner": "Immelancholy",
+        "owner": "Notenlish",
         "repo": "anifetch",
         "type": "github"
       }
