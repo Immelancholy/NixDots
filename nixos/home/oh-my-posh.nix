@@ -114,7 +114,7 @@ in {
                 {
                   "background": "p:salmon",
                   "background_templates": [
-                    "{{ if or (.Working.Changed) (.Staging.Changed) }}p:salmon{{ end }}",
+                    "{{ if or (.Working.Changed)p:salmon(.Staging.Changed) }}p:salmon{{ end }}",
                     "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:salmon{{ end }}",
                     "{{ if gt .Ahead 0 }}p:ahead{{ end }}",
                     "{{ if gt .Behind 0 }}p:behind{{ end }}"
