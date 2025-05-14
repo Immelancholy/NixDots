@@ -41,7 +41,8 @@ in {
             "salmon": "${peach}",
             "sky": "${surface1}",
             "teal_blue": "${flamingo}",
-            "changed": "${blue}"
+            "ahead": "${green}",
+            "behind": "${red}"
           },
           "transient_prompt": {
             "background": "transparent",
@@ -113,10 +114,10 @@ in {
                 {
                   "background": "p:salmon",
                   "background_templates": [
-                    "{{ if or (.Working.Changed) (.Staging.Changed) }}p:changed{{ end }}",
-                    "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:changed{{ end }}",
-                    "{{ if gt .Ahead 0 }}p:changed{{ end }}",
-                    "{{ if gt .Behind 0 }}p:changed{{ end }}"
+                    "{{ if or (.Working.Changed) (.Staging.Changed) }}p:salmon{{ end }}",
+                    "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:salmon{{ end }}",
+                    "{{ if gt .Ahead 0 }}p:ahead{{ end }}",
+                    "{{ if gt .Behind 0 }}p:behind{{ end }}"
                   ],
                   "foreground": "p:white",
                   "powerline_symbol": "\ue0b0",
@@ -126,7 +127,7 @@ in {
                     "fetch_upstream_icon": true
                   },
                   "style": "powerline",
-                  "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+                  "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus}} {{ .BranchStatus}}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
                   "type": "git"
                 },
                 {
