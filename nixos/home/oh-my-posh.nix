@@ -100,7 +100,7 @@ in {
                     "style": "folder"
                   },
                   "style": "powerline",
-                  "template": " \udb80\ude56{{ .Path }} ",
+                  "template": " \udb80\ude4b {{ .Path }} ",
                   "type": "path"
                 },
                 {
