@@ -37,17 +37,17 @@ in {
         },
         "blocks": [
           {
-            "background": "#0C212F",
-            "foreground": "#FFFFFF",
-            "leading_diamond": "\ue0b6",
-            "style": "diamond",
-            "template": " {{ .Icon }} ",
-            "trailing_diamond": "\ue0b0",
-            "type": "os"
-          },
-          {
             "alignment": "left",
             "segments": [
+              {
+                "background": "#0C212F",
+                "foreground": "#FFFFFF",
+                "leading_diamond": "\ue0b6",
+                "style": "diamond",
+                "template": " {{ .Icon }} ",
+                "trailing_diamond": "\ue0b0",
+                "type": "os"
+              },
               {
                 "type": "text",
                 "style": "diamond",
@@ -130,8 +130,14 @@ in {
                 "trailing_diamond": "\ue0b0",
                 "type": "time"
               }
+
             ],
             "type": "prompt"
+          }
+          "transient_prompt": {
+            "background": "transparent",
+            "foreground": "#ffffff",
+            "template": "{{ .Shell }}> "
           }
         ],
         "final_space": true,
