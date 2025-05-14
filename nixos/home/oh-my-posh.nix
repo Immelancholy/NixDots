@@ -1,4 +1,8 @@
-{config, ...}: let
+{
+  config,
+  lib,
+  ...
+}: let
   base = "#${config.lib.stylix.colors.base00}";
   mantle = "#${config.lib.stylix.colors.base01}";
   surface0 = "#${config.lib.stylix.colors.base02}";
@@ -26,7 +30,7 @@ in {
             {
               background = "#29315A";
               foreground = "#3EC669";
-              leading_diamond = "\ue0b6";
+              leading_diamond = lib.mkLiteral ''"\ue0b6"'';
               properties = {
                 style = "folder";
               };
