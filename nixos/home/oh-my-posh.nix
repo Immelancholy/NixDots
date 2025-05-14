@@ -173,7 +173,7 @@ in {
             "newline": true,
             "segments": [
               {
-                "foreground": "${text}",
+                "foreground": "${base}",
                 "background": "${surface2}",
                 "leading_diamond": "\ue0b6",
                 "properties": {
@@ -186,7 +186,7 @@ in {
                 "type": "executiontime"
               },
               {
-                "foreground": "${base}",
+                "foreground": "${text}",
                 "background": "${surface1}",
                 "leading_diamond": "\ue0b6",
                 "style": "diamond",
