@@ -40,7 +40,8 @@ in {
             "blush": "${mauve}",
             "salmon": "${peach}",
             "sky": "${surface1}",
-            "teal_blue": "${flamingo}"
+            "teal_blue": "${flamingo}",
+            "changed": "${blue}"
           },
           "transient_prompt": {
             "background": "transparent",
@@ -111,6 +112,12 @@ in {
                 },
                 {
                   "background": "p:salmon",
+                  "background_templates": [
+                    "{{ if or (.Working.Changed) (.Staging.Changed) }}p:changed{{ end }}",
+                    "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:changed{{ end }}",
+                    "{{ if gt .Ahead 0 }}p:changed{{ end }}",
+                    "{{ if gt .Behind 0 }}p:changed{{ end }}"
+                  ],
                   "foreground": "p:white",
                   "powerline_symbol": "\ue0b0",
                   "properties": {
