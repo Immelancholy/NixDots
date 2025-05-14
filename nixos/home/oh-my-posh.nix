@@ -39,7 +39,7 @@ in {
           "transient_prompt": {
             "background": "transparent",
             "foreground": "p:blush",
-            "template": "\uf054 "
+            "template": "\udb80\udd42 "
           },
           "blocks": [
             {
