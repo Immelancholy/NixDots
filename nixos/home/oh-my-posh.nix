@@ -174,7 +174,7 @@ in {
             "segments": [
               {
                 "foreground": "${text}",
-                "background": "${surface1}",
+                "background": "${surface2}",
                 "leading_diamond": "\ue0b6",
                 "properties": {
                   "style": "austin",
