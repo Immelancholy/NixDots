@@ -19,22 +19,7 @@
         autoActivate = true;
       };
       better-escape = {
-        enable = false;
-        settings = {
-          default_mappings = false;
-          mappings = {
-            i = {
-              j = {
-                j = "<Esc>";
-              };
-            };
-            v = {
-              j = {
-                j = "<Esc";
-              };
-            };
-          };
-        };
+        enable = true;
       };
       aerial = {
         enable = true;
