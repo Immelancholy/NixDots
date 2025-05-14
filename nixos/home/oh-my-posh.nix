@@ -40,15 +40,6 @@ in {
             "alignment": "left",
             "segments": [
               {
-                "background": "#0C212F",
-                "foreground": "#FFFFFF",
-                "leading_diamond": "\ue0b6",
-                "style": "diamond",
-                "template": " {{ .Icon }} ",
-                "trailing_diamond": "\ue0b0",
-                "type": "os"
-              },
-              {
                 "type": "text",
                 "style": "diamond",
                 "leading_diamond": "\ue0b6",
@@ -78,6 +69,15 @@ in {
           {
             "alignment": "left",
             "segments": [
+              {
+                "background": "#0C212F",
+                "foreground": "#FFFFFF",
+                "leading_diamond": "\ue0b6",
+                "style": "diamond",
+                "template": " {{ .Icon }} ",
+                "trailing_diamond": "\ue0b0",
+                "type": "os"
+              },
               {
                 "background": "p:plum",
                 "foreground": "p:white",
