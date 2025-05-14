@@ -1,4 +1,4 @@
-{config; ...}= let
+{config, ...}: let
   base = "#${config.lib.stylix.colors.base00}";
   mantle = "#${config.lib.stylix.colors.base01}";
   surface0 = "#${config.lib.stylix.colors.base02}";
@@ -39,9 +39,9 @@ in {
               background = "#29315A";
               foreground = "#43CCEA";
               foreground_templates = [
-                "{{ if or (.Working.Changed) (.Staging.Changed) }}#FF9248{{ end }}";
-                "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#ff4500{{ end }}";
-                "{{ if gt .Ahead 0 }}#B388FF{{ end }}";
+                "{{ if or (.Working.Changed) (.Staging.Changed) }}#FF9248{{ end }}"
+                "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#ff4500{{ end }}"
+                "{{ if gt .Ahead 0 }}#B388FF{{ end }}"
                 "{{ if gt .Behind 0 }}#B388FF{{ end }}"
               ];
               leading_diamond = " \ue0b6";
@@ -91,7 +91,7 @@ in {
               template = "\ue718{{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }}";
               trailing_diamond = "\ue0b4";
               type = "node";
-            };
+            }
             {
               background = "#29315A";
               foreground = "#E64747";
