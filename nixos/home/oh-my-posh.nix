@@ -187,7 +187,7 @@ in {
               },
               {
                 "foreground": "${text}",
-                "background": "${mauve}",
+                "background": "${mantle}",
                 "leading_diamond": "\ue0b6",
                 "style": "diamond",
                 "template": "{{ .UserName }} \u276f",
