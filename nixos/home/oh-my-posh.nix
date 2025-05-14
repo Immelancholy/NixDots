@@ -32,13 +32,13 @@ in {
             "teal": "${peach}",
             "plum": "${mantle}",
             "blush": "${mauve}",
-            "salmon": "${surface0}",
+            "salmon": "${flamingo}",
             "sky": "${peach}",
             "teal_blue": "${surface0}"
           },
           "transient_prompt": {
             "background": "transparent",
-            "foreground": "p:teal",
+            "foreground": "p:teal_blue",
             "template": "~~> "
           },
           "blocks": [
