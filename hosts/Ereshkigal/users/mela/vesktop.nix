@@ -1,6 +1,6 @@
 {
   programs.vesktop = {
-    enable = true;
+    enable = false;
     settings = {
       discordBranch = "canary";
       minimizeToTray = true;
