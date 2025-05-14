@@ -41,7 +41,6 @@ in {
             "salmon": "${peach}",
             "sky": "${surface1}",
             "teal_blue": "${flamingo}",
-            "ahead": "${green}",
             "behind": "${red}"
           },
           "transient_prompt": {
@@ -116,7 +115,7 @@ in {
                   "background_templates": [
                     "{{ if or (.Working.Changed) (.Staging.Changed) }}p:salmon{{ end }}",
                     "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:salmon{{ end }}",
-                    "{{ if gt .Ahead 0 }}p:ahead{{ end }}",
+                    "{{ if gt .Ahead 0 }}p:salmon{{ end }}",
                     "{{ if gt .Behind 0 }}p:behind{{ end }}"
                   ],
                   "foreground": "p:white",
