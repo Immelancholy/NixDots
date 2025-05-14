@@ -12,6 +12,7 @@
     ./env.nix
     ./mimeapps.nix
     ./stylix.nix
+    ./oh-my-posh.nix
     ./activationScripts
   ];
 
