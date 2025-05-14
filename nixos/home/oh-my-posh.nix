@@ -16,6 +16,10 @@
   mauve = "#${config.lib.stylix.colors.base0E}";
   flamingo = "#${config.lib.stylix.colors.base0F}";
 in {
+  programs.bash = {
+    enable = true;
+    completion.enable = true;
+  };
   programs.oh-my-posh = {
     enable = true;
     enableBashIntegration = true;
