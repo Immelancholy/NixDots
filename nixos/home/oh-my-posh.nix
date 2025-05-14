@@ -41,7 +41,7 @@ in {
             "salmon": "${peach}",
             "sky": "${surface1}",
             "teal_blue": "${flamingo}",
-            "behind": "#e5c890"
+            "behind": "#f5a97f"
           },
           "transient_prompt": {
             "background": "transparent",
@@ -127,7 +127,7 @@ in {
                     "fetch_upstream_icon": true
                   },
                   "style": "powerline",
-                  "template": " <b>~></b> {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+                  "template": " <b>~></b>{{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
                   "type": "git"
                 },
                 {
