@@ -46,9 +46,9 @@ in {
                 "background": "${teal}",
                 "background_templates": [
                   "{{ if or (.Working.Changed) (.Staging.Changed) }}${peach}{{ end }}",
-                  "{{ if and (gt .Ahead 0) (gt .Behind 0) }}${mauve}{{ end }}",
-                  "{{ if gt .Ahead 0 }}${surface1}{{ end }}",
-                  "{{ if gt .Behind 0 }}${surface1}{{ end }}"
+                  "{{ if and (gt .Ahead 0) (gt .Behind 0) }}${surface1}{{ end }}",
+                  "{{ if gt .Ahead 0 }}${mauve}{{ end }}",
+                  "{{ if gt .Behind 0 }}${mauve}{{ end }}"
                 ],
                 "leading_diamond": " \ue0b6",
                 "properties": {
