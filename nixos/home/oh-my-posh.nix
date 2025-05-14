@@ -32,13 +32,14 @@ in {
             "teal": "${surface1}",
             "plum": "${mauve}",
             "blush": "${mantle}",
-            "salmon": "${surface0}",
+            "salmon": "${red}",
             "sky": "${peach}",
             "teal_blue": "${flamingo}",
+            "black": "${base}"
           },
           "transient_prompt": {
             "background": "transparent",
-            "foreground": "${green}",
+            "foreground": "p:teal_blue",
             "template": "~~> "
           },
           "blocks": [
@@ -76,8 +77,8 @@ in {
               "alignment": "left",
               "segments": [
                 {
-                  "background": "#0C212F",
-                  "foreground": "#FFFFFF",
+                  "background": "p:black",
+                  "foreground": "p:white",
                   "leading_diamond": "\ue0b6",
                   "trailing_diamond": "\ue0b0",
                   "style": "diamond",
