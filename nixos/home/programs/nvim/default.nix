@@ -22,7 +22,7 @@
         enable = true;
         settings = {
           mappings = {
-            "!" = {
+            i = {
               j = {
                 k = "<Esc>";
               };
