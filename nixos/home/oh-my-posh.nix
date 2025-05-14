@@ -29,12 +29,12 @@ in {
           "palette": {
             "white": "#FFFFFF",
             "tan": "${teal}",
-            "teal": "${peach}",
+            "teal": "${surface2}",
             "plum": "${mantle}",
             "blush": "${mauve}",
-            "salmon": "${flamingo}",
+            "salmon": "${peach}",
             "sky": "${surface1}",
-            "teal_blue": "${surface0}"
+            "teal_blue": "${flamingo}"
           },
           "transient_prompt": {
             "background": "transparent",
