@@ -122,12 +122,13 @@ in {
                   "foreground": "p:white",
                   "powerline_symbol": "\ue0b0",
                   "properties": {
+                    "branch_icon": "",
                     "fetch_stash_count": true,
                     "fetch_status": true,
                     "fetch_upstream_icon": true
                   },
                   "style": "powerline",
-                  "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+                  "template": " \u279c {{ .UpstreamIcon }}{{ .HEAD }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
                   "type": "git"
                 },
                 {
