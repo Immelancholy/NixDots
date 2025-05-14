@@ -22,128 +22,133 @@
 in {
   programs.oh-my-posh = {
     enable = true;
-    settings = builtins.fromJSON (builtins.unsafeDiscardStringContext ''
-      {
-        "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-        "palette": {
-          "white": "#FFFFFF",
-          "tan": "#CC3802",
-          "teal": "#047E84",
-          "plum": "#9A348E",
-          "blush": "#DA627D",
-          "salmon": "#FCA17D",
-          "sky": "#86BBD8",
-          "teal_blue": "#33658A",
-          "black": "#0C212F"
-        },
-        "transient_prompt": {
-          "background": "transparent",
-          "foreground": "p:white",
-          "template": "~~> "
-        },
-        "blocks": [
-          {
-            "alignment": "left",
-            "segments": [
-              {
-                "type": "text",
-                "style": "diamond",
-                "leading_diamond": "\ue0b6",
-                "foreground": "p:white",
-                "background": "p:tan",
-                "template": "{{ if .Env.PNPPSHOST }} \uf8c5 {{ .Env.PNPPSHOST }} {{ end }}"
-              },
-              {
-                "type": "text",
-                "style": "powerline",
-                "foreground": "p:white",
-                "background": "p:teal",
-                "powerline_symbol": "\ue0b0",
-                "template": "{{ if .Env.PNPPSSITE }} \uf2dd {{ .Env.PNPPSSITE }}{{ end }}"
-              },
-              {
-                "type": "text",
-                "style": "diamond",
-                "trailing_diamond": "\ue0b4",
-                "foreground": "p:white",
-                "background": "p:teal",
-                "template": "{{ if .Env.PNPPSSITE }}\u00A0{{ end }}"
-              }
-            ],
-            "type": "rprompt"
-          },
-          {
-            "alignment": "left",
-            "segments": [
-              {
-                "background": "p:black",
-                "foreground": "p:white",
-                "leading_diamond": "\ue0b6",
-                "trailing_diamond": "\ue0b0",
-                "style": "diamond",
-                "template": " {{ .Icon }} ",
-                "type": "os"
-              },
-              {
-                "background": "p:plum",
-                "foreground": "p:white",
-                "powerline_symbol": "\ue0b0",
-                "style": "diamond",
-                "template": " {{ .UserName }} ",
-                "type": "session"
-              },
-              {
-                "background": "p:blush",
-                "foreground": "p:white",
-                "powerline_symbol": "\ue0b0",
-                "properties": {
-                  "style": "folder"
-                },
-                "style": "powerline",
-                "template": " {{ .Path }} ",
-                "type": "path"
-              },
-              {
-                "background": "p:salmon",
-                "foreground": "p:white",
-                "powerline_symbol": "\ue0b0",
-                "properties": {
-                  "branch_icon": "",
-                  "fetch_stash_count": true,
-                  "fetch_status": false,
-                  "fetch_upstream_icon": true
-                },
-                "style": "powerline",
-                "template": " \u279c ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}) ",
-                "type": "git"
-              },
-              {
-                "background": "p:sky",
-                "foreground": "p:white",
-                "powerline_symbol": "\ue0b0",
-                "style": "powerline",
-                "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
-                "type": "node"
-              },
-              {
-                "background": "p:teal_blue",
-                "foreground": "p:white",
-                "properties": {
-                  "time_format": "15:04"
-                },
-                "style": "diamond",
-                "template": " \u2665 {{ .CurrentDate | date .Format }} ",
-                "trailing_diamond": "\ue0b0",
-                "type": "time"
-              }
+    settings = builtins.fromJSON (builtins.unsafeDiscardStringContext
+      /*
+      json
+      */
+      ''
 
-            ],
-            "type": "prompt"
-          }
-        ],
-        "final_space": true,
-        "version": 3
-      }
-    '');
+        {
+          "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+          "palette": {
+            "white": "#FFFFFF",
+            "tan": "#CC3802",
+            "teal": "#047E84",
+            "plum": "#9A348E",
+            "blush": "#DA627D",
+            "salmon": "#FCA17D",
+            "sky": "#86BBD8",
+            "teal_blue": "#33658A",
+            "black": "#0C212F"
+          },
+          "transient_prompt": {
+            "background": "transparent",
+            "foreground": "p:teal",
+            "template": "~~> "
+          },
+          "blocks": [
+            {
+              "alignment": "left",
+              "segments": [
+                {
+                  "type": "text",
+                  "style": "diamond",
+                  "leading_diamond": "\ue0b6",
+                  "foreground": "p:white",
+                  "background": "p:tan",
+                  "template": "{{ if .Env.PNPPSHOST }} \uf8c5 {{ .Env.PNPPSHOST }} {{ end }}"
+                },
+                {
+                  "type": "text",
+                  "style": "powerline",
+                  "foreground": "p:white",
+                  "background": "p:teal",
+                  "powerline_symbol": "\ue0b0",
+                  "template": "{{ if .Env.PNPPSSITE }} \uf2dd {{ .Env.PNPPSSITE }}{{ end }}"
+                },
+                {
+                  "type": "text",
+                  "style": "diamond",
+                  "trailing_diamond": "\ue0b4",
+                  "foreground": "p:white",
+                  "background": "p:teal",
+                  "template": "{{ if .Env.PNPPSSITE }}\u00A0{{ end }}"
+                }
+              ],
+              "type": "rprompt"
+            },
+            {
+              "alignment": "left",
+              "segments": [
+                {
+                  "background": "p:black",
+                  "foreground": "p:white",
+                  "leading_diamond": "\ue0b6",
+                  "trailing_diamond": "\ue0b0",
+                  "style": "diamond",
+                  "template": " {{ .Icon }} ",
+                  "type": "os"
+                },
+                {
+                  "background": "p:plum",
+                  "foreground": "p:white",
+                  "powerline_symbol": "\ue0b0",
+                  "style": "diamond",
+                  "template": " {{ .UserName }} ",
+                  "type": "session"
+                },
+                {
+                  "background": "p:blush",
+                  "foreground": "p:white",
+                  "powerline_symbol": "\ue0b0",
+                  "properties": {
+                    "style": "folder"
+                  },
+                  "style": "powerline",
+                  "template": " {{ .Path }} ",
+                  "type": "path"
+                },
+                {
+                  "background": "p:salmon",
+                  "foreground": "p:white",
+                  "powerline_symbol": "\ue0b0",
+                  "properties": {
+                    "branch_icon": "",
+                    "fetch_stash_count": true,
+                    "fetch_status": false,
+                    "fetch_upstream_icon": true
+                  },
+                  "style": "powerline",
+                  "template": " \u279c ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}) ",
+                  "type": "git"
+                },
+                {
+                  "background": "p:sky",
+                  "foreground": "p:white",
+                  "powerline_symbol": "\ue0b0",
+                  "style": "powerline",
+                  "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
+                  "type": "node"
+                },
+                {
+                  "background": "p:teal_blue",
+                  "foreground": "p:white",
+                  "properties": {
+                    "time_format": "15:04"
+                  },
+                  "style": "diamond",
+                  "template": " \u2665 {{ .CurrentDate | date .Format }} ",
+                  "trailing_diamond": "\ue0b0",
+                  "type": "time"
+                }
+
+              ],
+              "type": "prompt"
+            }
+          ],
+          "final_space": true,
+          "version": 3
+        }
+      '');
   };
 }
