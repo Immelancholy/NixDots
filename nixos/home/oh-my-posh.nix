@@ -39,7 +39,7 @@ in {
           "background": "transparent",
           "foreground": "#ffffff",
           "template": "{{ .Shell }}> "
-        }
+        },
         "blocks": [
           {
             "alignment": "left",
