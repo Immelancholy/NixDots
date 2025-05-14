@@ -134,11 +134,6 @@ in {
             ],
             "type": "prompt"
           }
-          "transient_prompt": {
-            "background": "transparent",
-            "foreground": "#ffffff",
-            "template": "{{ .Shell }}> "
-          }
         ],
         "final_space": true,
         "version": 3
