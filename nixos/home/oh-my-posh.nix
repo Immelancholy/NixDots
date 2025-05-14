@@ -18,7 +18,7 @@
 in {
   programs.bash = {
     enable = true;
-    completion.enable = true;
+    enableCompletion = true;
   };
   programs.oh-my-posh = {
     enable = true;
