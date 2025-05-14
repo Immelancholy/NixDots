@@ -22,8 +22,15 @@
         enable = true;
         settings = {
           mappings = {
-            j = {
-              k = "<Esc>";
+            "!" = {
+              j = {
+                k = "<Esc>";
+              };
+            };
+            v = {
+              j = {
+                k = "<Esc";
+              };
             };
           };
         };
