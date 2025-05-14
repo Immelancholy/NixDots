@@ -30,8 +30,8 @@ in {
             "alignment": "right",
             "segments": [
               {
-                "background": "#29315A",
-                "foreground": "#3EC669",
+                "foreground": "#29315A",
+                "background": "#3EC669",
                 "leading_diamond": "\ue0b6",
                 "properties": {
                   "style": "folder"
@@ -42,9 +42,9 @@ in {
                 "type": "path"
               },
               {
-                "background": "#29315A",
-                "foreground": "#43CCEA",
-                "foreground_templates": [
+                "foreground": "#29315A",
+                "background": "#43CCEA",
+                "background_templates": [
                   "{{ if or (.Working.Changed) (.Staging.Changed) }}#FF9248{{ end }}",
                   "{{ if and (gt .Ahead 0) (gt .Behind 0) }}#ff4500{{ end }}",
                   "{{ if gt .Ahead 0 }}#B388FF{{ end }}",
@@ -63,8 +63,8 @@ in {
                 "type": "git"
               },
               {
-                "background": "#29315A",
-                "foreground": "#E4F34A",
+                "foreground": "#29315A",
+                "background": "#E4F34A",
                 "leading_diamond": " \ue0b6",
                 "properties": {
                   "fetch_version": false
@@ -75,8 +75,8 @@ in {
                 "type": "python"
               },
               {
-                "background": "#29315A",
-                "foreground": "#7FD5EA",
+                "foreground": "#29315A",
+                "background": "#7FD5EA",
                 "leading_diamond": " \ue0b6",
                 "properties": {
                   "fetch_version": false
@@ -87,8 +87,8 @@ in {
                 "type": "go"
               },
               {
-                "background": "#29315A",
-                "foreground": "#42E66C",
+                "foreground": "#29315A",
+                "background": "#42E66C",
                 "leading_diamond": " \ue0b6",
                 "properties": {
                   "fetch_version": false
@@ -99,8 +99,8 @@ in {
                 "type": "node"
               },
               {
-                "background": "#29315A",
-                "foreground": "#E64747",
+                "foreground": "#29315A",
+                "background": "#E64747",
                 "leading_diamond": " \ue0b6",
                 "properties": {
                   "fetch_version": false
@@ -111,8 +111,8 @@ in {
                 "type": "ruby"
               },
               {
-                "background": "#29315A",
-                "foreground": "#E64747",
+                "foreground": "#29315A",
+                "background": "#E64747",
                 "leading_diamond": " \ue0b6",
                 "properties": {
                   "fetch_version": false
@@ -123,8 +123,8 @@ in {
                 "type": "java"
               },
               {
-                "background": "#29315A",
-                "foreground": "#9B6BDF",
+                "foreground": "#29315A",
+                "background": "#9B6BDF",
                 "leading_diamond": " \ue0b6",
                 "properties": {
                   "fetch_version": false
@@ -147,9 +147,9 @@ in {
                 "trailing_diamond": "\ue0b4"
               },
               {
-                "background": "#29315A",
-                "foreground": "#9B6BDF",
-                "foreground_templates": [
+                "foreground": "#29315A",
+                "background": "#9B6BDF",
+                "background_templates": [
                   "{{if eq \"Charging\" .State.String}}#40c4ff{{end}}",
                   "{{if eq \"Discharging\" .State.String}}#ff5722{{end}}",
                   "{{if eq \"Full\" .State.String}}#4caf50{{end}}"
@@ -173,8 +173,8 @@ in {
             "newline": true,
             "segments": [
               {
-                "background": "#29315A",
-                "foreground": "#AEA4BF",
+                "foreground": "#29315A",
+                "background": "#AEA4BF",
                 "leading_diamond": "\ue0b6",
                 "properties": {
                   "style": "austin",
@@ -186,8 +186,8 @@ in {
                 "type": "executiontime"
               },
               {
-                "background": "#29315A",
-                "foreground": "#E64747",
+                "foreground": "#29315A",
+                "background": "#E64747",
                 "leading_diamond": "\ue0b6",
                 "style": "diamond",
                 "template": "{{ .UserName }} \u276f",
