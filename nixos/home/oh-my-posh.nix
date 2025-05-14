@@ -33,12 +33,13 @@ in {
           "blush": "#DA627D",
           "salmon": "#FCA17D",
           "sky": "#86BBD8",
-          "teal_blue": "#33658A"
+          "teal_blue": "#33658A",
+          "black": "#0C212F"
         },
         "transient_prompt": {
           "background": "transparent",
-          "foreground": "#ffffff",
-          "template": "{{ .Shell }}> "
+          "foreground": "p:white",
+          "template": "~~> "
         },
         "blocks": [
           {
@@ -75,8 +76,8 @@ in {
             "alignment": "left",
             "segments": [
               {
-                "background": "#0C212F",
-                "foreground": "#FFFFFF",
+                "background": "p:black",
+                "foreground": "p:white",
                 "leading_diamond": "\ue0b6",
                 "trailing_diamond": "\ue0b0",
                 "style": "diamond",
