@@ -32,7 +32,7 @@ in {
             "teal": "${surface1}",
             "plum": "${mauve}",
             "blush": "${mantle}",
-            "salmon": "#FCA17D",
+            "salmon": "${red}",
             "sky": "${peach}",
             "teal_blue": "${flamingo}",
             "black": "${base}"
