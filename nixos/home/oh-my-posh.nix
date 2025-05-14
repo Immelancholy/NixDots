@@ -43,9 +43,9 @@ in {
               },
               {
                 "foreground": "${text}",
-                "background": "${teal}",
+                "background": "${surface1}",
                 "background_templates": [
-                  "{{ if or (.Working.Changed) (.Staging.Changed) }}${surface1}{{ end }}",
+                  "{{ if or (.Working.Changed) (.Staging.Changed) }}${surface2}{{ end }}",
                   "{{ if and (gt .Ahead 0) (gt .Behind 0) }}${mauve}{{ end }}",
                   "{{ if gt .Ahead 0 }}${peach}{{ end }}",
                   "{{ if gt .Behind 0 }}${peach}{{ end }}"
