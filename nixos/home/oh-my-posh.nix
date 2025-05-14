@@ -186,7 +186,7 @@ in {
                 "type": "executiontime"
               },
               {
-                "foreground": "${text}",
+                "foreground": "${base}",
                 "background": "${surface1}",
                 "leading_diamond": "\ue0b6",
                 "style": "diamond",
