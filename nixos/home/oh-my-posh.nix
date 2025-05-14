@@ -33,7 +33,7 @@ in {
             "plum": "${mantle}",
             "blush": "${mauve}",
             "salmon": "${flamingo}",
-            "sky": "${peach}",
+            "sky": "${surface1}",
             "teal_blue": "${surface0}"
           },
           "transient_prompt": {
