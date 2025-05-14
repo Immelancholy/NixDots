@@ -38,7 +38,7 @@ in {
           },
           "transient_prompt": {
             "background": "transparent",
-            "foreground": "p:teal_blue",
+            "foreground": "${surface1}",
             "template": "~~> "
           },
           "blocks": [
