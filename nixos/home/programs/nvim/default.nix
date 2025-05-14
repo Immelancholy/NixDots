@@ -25,12 +25,12 @@
           mappings = {
             i = {
               j = {
-                k = "<Esc>";
+                j = "<Esc>";
               };
             };
             v = {
               j = {
-                k = "<Esc";
+                j = "<Esc";
               };
             };
           };
