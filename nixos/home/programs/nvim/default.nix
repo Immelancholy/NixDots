@@ -18,6 +18,14 @@
         enable = true;
         autoActivate = true;
       };
+      better-escape = {
+        enable = true;
+        mappings = {
+          j = {
+            k = "<Esc>";
+          };
+        };
+      };
       aerial = {
         enable = true;
         settings = {
@@ -803,11 +811,6 @@
         action = "<cmd>BufferGoto 5<cr>";
         key = "<leader>b5";
         mode = ["n"];
-      }
-      {
-        action = "<esc>";
-        key = "jk";
-        mode = ["!" "v"];
       }
     ];
     clipboard = {
