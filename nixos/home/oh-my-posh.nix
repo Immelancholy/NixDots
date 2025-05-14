@@ -41,7 +41,7 @@ in {
             "salmon": "${peach}",
             "sky": "${surface1}",
             "teal_blue": "${flamingo}",
-            "behind": "${red}"
+            "behind": "#e5c890"
           },
           "transient_prompt": {
             "background": "transparent",
