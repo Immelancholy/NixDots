@@ -116,7 +116,7 @@ in {
                   "properties": {
                     "branch_icon": "",
                     "fetch_stash_count": true,
-                    "fetch_status": false,
+                    "fetch_status": true,
                     "fetch_upstream_icon": true
                   },
                   "style": "powerline",
