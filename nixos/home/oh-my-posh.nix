@@ -113,7 +113,6 @@ in {
                   "background": "p:salmon",
                   "foreground": "p:white",
                   "powerline_symbol": "\ue0b0",
-                  "style": "powerline",
                   "properties": {
                     "fetch_stash_count": true,
                     "fetch_status": true,
