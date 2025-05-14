@@ -88,7 +88,7 @@ in {
                 "foreground": "p:white",
                 "powerline_symbol": "\ue0b0",
                 "style": "diamond",
-                "template": "{{ .UserName }} ",
+                "template": " {{ .UserName }} ",
                 "type": "session"
               },
               {
