@@ -46,9 +46,9 @@ in {
                 "background": "${teal}",
                 "background_templates": [
                   "{{ if or (.Working.Changed) (.Staging.Changed) }}${peach}{{ end }}",
-                  "{{ if and (gt .Ahead 0) (gt .Behind 0) }}${red}{{ end }}",
-                  "{{ if gt .Ahead 0 }}${mauve}{{ end }}",
-                  "{{ if gt .Behind 0 }}${mauve}{{ end }}"
+                  "{{ if and (gt .Ahead 0) (gt .Behind 0) }}${mauve}{{ end }}",
+                  "{{ if gt .Ahead 0 }}${red}{{ end }}",
+                  "{{ if gt .Behind 0 }}${red}{{ end }}"
                 ],
                 "leading_diamond": " \ue0b6",
                 "properties": {
@@ -100,7 +100,7 @@ in {
               },
               {
                 "foreground": "${text}",
-                "background": "${red}",
+                "background": "${surface2}",
                 "leading_diamond": " \ue0b6",
                 "properties": {
                   "fetch_version": false
@@ -112,7 +112,7 @@ in {
               },
               {
                 "foreground": "${text}",
-                "background": "${red}",
+                "background": "${surface2}",
                 "leading_diamond": " \ue0b6",
                 "properties": {
                   "fetch_version": false
@@ -187,7 +187,7 @@ in {
               },
               {
                 "foreground": "${text}",
-                "background": "${mantle}",
+                "background": "${surface1}",
                 "leading_diamond": "\ue0b6",
                 "style": "diamond",
                 "template": "{{ .UserName }} \u276f",
