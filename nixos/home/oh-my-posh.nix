@@ -33,6 +33,7 @@ in {
           "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
           "palette": {
             "white": "#FFFFFF",
+            "black": "#0C212F",
             "tan": "${teal}",
             "teal": "${surface2}",
             "plum": "${mantle}",
@@ -81,7 +82,7 @@ in {
               "alignment": "left",
               "segments": [
                 {
-                  "background": "#0C212F",
+                  "background": "p:black",
                   "foreground": "p:white",
                   "leading_diamond": "\ue0b6",
                   "trailing_diamond": "\ue0b0",
