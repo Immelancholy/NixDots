@@ -29,16 +29,16 @@ in {
           "palette": {
             "white": "${text}",
             "tan": "${teal}",
-            "teal": "${surface1}",
+            "teal": "${peach}",
             "plum": "${mantle}",
-            "blush": "${surface1}",
+            "blush": "${mauve}",
             "salmon": "${surface0}",
             "sky": "${peach}",
-            "teal_blue": "${flamingo}"
+            "teal_blue": "${surface0}"
           },
           "transient_prompt": {
             "background": "transparent",
-            "foreground": "${mauve}",
+            "foreground": "p:teal",
             "template": "~~> "
           },
           "blocks": [
@@ -114,7 +114,7 @@ in {
                     "fetch_upstream_icon": true
                   },
                   "style": "powerline",
-                  "template": " \u279c ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}) ",
+                  "template": " \u279c {{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
                   "type": "git"
                 },
                 {
