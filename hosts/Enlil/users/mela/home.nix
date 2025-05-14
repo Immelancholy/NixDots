@@ -65,6 +65,9 @@
       path = ../../../../nixos/home/backgrounds/Evil_Miku.mp4;
     };
     settings = {
+      general = {
+        allow_tearing = true;
+      };
       cursor = {
         no_hardware_cursors = false;
       };

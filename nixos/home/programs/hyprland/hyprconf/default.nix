@@ -13,9 +13,6 @@
       "$edit" = "uwsm app -- nvim.desktop";
       "$playerctl" = "uwsm app -- playerctl --player=$player";
       "$discord" = "uwsm app -- vesktop.desktop";
-      general = {
-        allow_tearing = true;
-      };
       misc = {
         disable_hyprland_logo = true;
         disable_splash_rendering = true;
