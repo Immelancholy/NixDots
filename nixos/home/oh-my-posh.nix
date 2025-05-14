@@ -75,13 +75,12 @@ in {
                 "leading_diamond": "\ue0b6",
                 "style": "diamond",
                 "template": " {{ .Icon }} ",
-                "trailing_diamond": "\ue0b0",
                 "type": "os"
               },
               {
                 "background": "p:plum",
                 "foreground": "p:white",
-                "leading_diamond": "\ue0b6",
+                "powerline_symbol": "\ue0b0",
                 "style": "diamond",
                 "template": "{{ .UserName }} ",
                 "type": "session"
