@@ -27,7 +27,7 @@ in {
         {
           "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
           "palette": {
-            "white": "${text}",
+            "white": "#FFFFFF",
             "tan": "${teal}",
             "teal": "${peach}",
             "plum": "${mantle}",
@@ -77,7 +77,7 @@ in {
               "segments": [
                 {
                   "background": "#0C212F",
-                  "foreground": "#FFFFFF",
+                  "foreground": "p:white",
                   "leading_diamond": "\ue0b6",
                   "trailing_diamond": "\ue0b0",
                   "style": "diamond",
