@@ -173,7 +173,7 @@ in {
             "newline": true,
             "segments": [
               {
-                "foreground": "${mantle}",
+                "foreground": "${base}",
                 "background": "${surface2}",
                 "leading_diamond": "\ue0b6",
                 "properties": {
