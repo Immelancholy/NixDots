@@ -31,7 +31,7 @@ in {
             "tan": "${teal}",
             "teal": "${surface1}",
             "plum": "${mantle}",
-            "blush": "${mauve}",
+            "blush": "${surface1}",
             "salmon": "${surface0}",
             "sky": "${peach}",
             "teal_blue": "${flamingo}"
