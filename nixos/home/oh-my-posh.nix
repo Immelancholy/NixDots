@@ -26,66 +26,100 @@ in {
       {
         "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
         "palette": {
-              "os": "#ACB0BE",
-              "pink": "${surface1}",
-              "lavender": "${lavender}",
-              "blue":  "${blue}",
-              "wight": "#FFFFFF",
-              "text": "#494D64"
+          "white": "#FFFFFF",
+          "tan": "${red}",
+          "teal": "${teal}",
+          "plum": "${mantle}",
+          "blush": "${mauve}",
+          "salmon": "${flamingo}",
+          "sky": "${peach}",
+          "teal_blue": "${blue}"
         },
         "blocks": [
           {
             "alignment": "left",
             "segments": [
               {
-                "background": "p:blue",
-                "foreground": "p:wight",
-                "powerline_symbol": "\ue0b4",
-                "leading_diamond": "\ue0b6",
+                "type": "text",
                 "style": "diamond",
-                "template": "{{.Icon}} ",
-                "type": "os"
+                "leading_diamond": "\ue0b6",
+                "foreground": "p:white",
+                "background": "p:tan",
+                "template": "{{ if .Env.PNPPSHOST }} \uf8c5 {{ .Env.PNPPSHOST }} {{ end }}"
               },
               {
-                "background": "p:blue",
-                "foreground": "p:text",
-                "powerline_symbol": "\ue0b4",
+                "type": "text",
+                "style": "powerline",
+                "foreground": "p:white",
+                "background": "p:teal",
+                "powerline_symbol": "\ue0b0",
+                "template": "{{ if .Env.PNPPSSITE }} \uf2dd {{ .Env.PNPPSSITE }}{{ end }}"
+              },
+              {
+                "type": "text",
                 "style": "diamond",
-                "template": "{{ .UserName }}@{{ .HostName }}",
+                "trailing_diamond": "\ue0b4",
+                "foreground": "p:white",
+                "background": "p:teal",
+                "template": "{{ if .Env.PNPPSSITE }}\u00A0{{ end }}"
+              }
+            ],
+            "type": "rprompt"
+          },
+          {
+            "alignment": "left",
+            "segments": [
+              {
+                "background": "p:plum",
+                "foreground": "p:white",
+                "leading_diamond": "\ue0b6",
+                "style": "diamond",
+                "template": "{{ .UserName }} ",
                 "type": "session"
               },
               {
-                "background": "p:pink",
-                "foreground": "p:text",
+                "background": "p:blush",
+                "foreground": "p:white",
+                "powerline_symbol": "\ue0b0",
                 "properties": {
-                  "folder_icon": "..\ue5fe..",
-                  "home_icon": "~",
-                  "style": "agnoster_short"
+                  "style": "folder"
                 },
-                "powerline_symbol": "\ue0b4",
                 "style": "powerline",
-                "template": " {{ .Path }}",
+                "template": " {{ .Path }} ",
                 "type": "path"
               },
               {
-                "background": "p:lavender",
-                "foreground": "p:text",
-                "style": "powerline",
+                "background": "p:salmon",
+                "foreground": "p:white",
+                "powerline_symbol": "\ue0b0",
                 "properties": {
-                  "branch_icon": "\ue725 ",
-                  "cherry_pick_icon": "\ue29b ",
-                  "commit_icon": "\uf417 ",
+                  "branch_icon": "",
+                  "fetch_stash_count": true,
                   "fetch_status": false,
-                  "fetch_upstream_icon": false,
-                  "merge_icon": "\ue727 ",
-                  "no_commits_icon": "\uf0c3 ",
-                  "rebase_icon": "\ue728 ",
-                  "revert_icon": "\uf0e2 ",
-                  "tag_icon": "\uf412 "
+                  "fetch_upstream_icon": true
                 },
-                "powerline_symbol": "\ue0b4",
-                "template": " {{ .HEAD }}",
+                "style": "powerline",
+                "template": " \u279c ({{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }}) ",
                 "type": "git"
+              },
+              {
+                "background": "p:sky",
+                "foreground": "p:white",
+                "powerline_symbol": "\ue0b0",
+                "style": "powerline",
+                "template": " \ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
+                "type": "node"
+              },
+              {
+                "background": "p:teal_blue",
+                "foreground": "p:white",
+                "properties": {
+                  "time_format": "15:04"
+                },
+                "style": "diamond",
+                "template": " \u2665 {{ .CurrentDate | date .Format }} ",
+                "trailing_diamond": "\ue0b0",
+                "type": "time"
               }
             ],
             "type": "prompt"
