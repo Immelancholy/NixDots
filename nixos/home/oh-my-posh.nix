@@ -35,12 +35,11 @@ in {
             "salmon": "${surface0}",
             "sky": "${peach}",
             "teal_blue": "${flamingo}",
-            "black": "${base}"
           },
           "transient_prompt": {
             "background": "transparent",
-            "foreground": "p:teal_blue",
-            "template": "=> "
+            "foreground": "${green}",
+            "template": "~~> "
           },
           "blocks": [
             {
@@ -77,7 +76,7 @@ in {
               "alignment": "left",
               "segments": [
                 {
-                  "background": "p:black",
+                  "background": "#0C212F",
                   "foreground": "p:white",
                   "leading_diamond": "\ue0b6",
                   "trailing_diamond": "\ue0b0",
