@@ -107,7 +107,7 @@ in {
                     "style": "folder"
                   },
                   "style": "powerline",
-                  "template": "{{if ne \"~\" .PWD}} \udb80\ude4b ",
+                  "template": "{{if ne \"~\" .PWD}} \udb80\ude4b{{ end }} ",
                   "type": "path"
                 },
                 {
