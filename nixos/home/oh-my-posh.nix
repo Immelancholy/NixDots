@@ -116,7 +116,7 @@ in {
                     "{{ if or (.Working.Changed) (.Staging.Changed) }}p:behind{{ end }}",
                     "{{ if and (gt .Ahead 0) (gt .Behind 0) }}p:salmon{{ end }}",
                     "{{ if gt .Ahead 0 }}p:salmon{{ end }}",
-                    "{{ if gt .Behind 0 }}p:behind{{ end }}"
+                    "{{ if gt .Behind 0 }}p:salmon{ end }}"
                   ],
                   "foreground": "p:white",
                   "powerline_symbol": "\ue0b0",
