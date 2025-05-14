@@ -73,6 +73,7 @@ in {
                 "background": "#0C212F",
                 "foreground": "#FFFFFF",
                 "leading_diamond": "\ue0b6",
+                "trailing_diamond": "\ue0b4",
                 "style": "diamond",
                 "template": " {{ .Icon }} ",
                 "type": "os"
