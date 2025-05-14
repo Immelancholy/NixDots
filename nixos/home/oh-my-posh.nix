@@ -114,7 +114,7 @@ in {
                   "foreground": "p:white",
                   "powerline_symbol": "\ue0b0",
                   "style": "powerline",
-                  "properties",
+                  "properties": {
                     "fetch_stash_count": true,
                     "fetch_status": true,
                     "fetch_upstream_icon": true
