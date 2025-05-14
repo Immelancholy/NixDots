@@ -39,7 +39,7 @@ in {
           },
           "transient_prompt": {
             "background": "transparent",
-            "foreground": "p:teal",
+            "foreground": "p:sky",
             "template": "~~> "
           },
           "blocks": [
