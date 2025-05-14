@@ -42,10 +42,10 @@ in {
                 "type": "path"
               },
               {
-                "foreground": "${base}",
+                "foreground": "${text}",
                 "background": "${surface1}",
                 "background_templates": [
-                  "{{ if or (.Working.Changed) (.Staging.Changed) }}${surface2}{{ end }}",
+                  "{{ if or (.Working.Changed) (.Staging.Changed) }}${surface1}{{ end }}",
                   "{{ if and (gt .Ahead 0) (gt .Behind 0) }}${mauve}{{ end }}",
                   "{{ if gt .Ahead 0 }}${peach}{{ end }}",
                   "{{ if gt .Behind 0 }}${peach}{{ end }}"
@@ -173,7 +173,7 @@ in {
             "newline": true,
             "segments": [
               {
-                "foreground": "${base}",
+                "foreground": "${text}",
                 "background": "${surface2}",
                 "leading_diamond": "\ue0b6",
                 "properties": {
