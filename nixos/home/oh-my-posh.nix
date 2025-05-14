@@ -77,7 +77,7 @@ in {
               "segments": [
                 {
                   "background": "#0C212F",
-                  "foreground": "p:white",
+                  "foreground": "#FFFFFF",
                   "leading_diamond": "\ue0b6",
                   "trailing_diamond": "\ue0b0",
                   "style": "diamond",
