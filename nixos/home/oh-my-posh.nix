@@ -28,14 +28,14 @@ in {
           "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
           "palette": {
             "white": "${text}",
-            "tan": "#CC3802",
-            "teal": "#047E84",
-            "plum": "#9A348E",
-            "blush": "#DA627D",
+            "tan": "${teal}",
+            "teal": "${surface1}",
+            "plum": "${mauve}",
+            "blush": "${mantle}",
             "salmon": "#FCA17D",
-            "sky": "#86BBD8",
-            "teal_blue": "#33658A",
-            "black": "#0C212F"
+            "sky": "${peach}",
+            "teal_blue": "${flamingo}",
+            "black": "${base}"
           },
           "transient_prompt": {
             "background": "transparent",
