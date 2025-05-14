@@ -35,6 +35,11 @@ in {
           "sky": "#86BBD8",
           "teal_blue": "#33658A"
         },
+        "transient_prompt": {
+          "background": "transparent",
+          "foreground": "#ffffff",
+          "template": "{{ .Shell }}> "
+        }
         "blocks": [
           {
             "alignment": "left",
@@ -73,7 +78,7 @@ in {
                 "background": "#0C212F",
                 "foreground": "#FFFFFF",
                 "leading_diamond": "\ue0b6",
-                "trailing_diamond": "\ue0b4",
+                "trailing_diamond": "\ue0b0",
                 "style": "diamond",
                 "template": " {{ .Icon }} ",
                 "type": "os"
