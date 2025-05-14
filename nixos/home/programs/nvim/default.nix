@@ -20,9 +20,11 @@
       };
       better-escape = {
         enable = true;
-        mappings = {
-          j = {
-            k = "<Esc>";
+        settings = {
+          mappings = {
+            j = {
+              k = "<Esc>";
+            };
           };
         };
       };
