@@ -42,7 +42,7 @@ in {
                 "type": "path"
               },
               {
-                "foreground": "${text}",
+                "foreground": "${base}",
                 "background": "${surface1}",
                 "background_templates": [
                   "{{ if or (.Working.Changed) (.Staging.Changed) }}${surface2}{{ end }}",
