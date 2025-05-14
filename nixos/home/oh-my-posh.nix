@@ -27,7 +27,7 @@ in {
         {
           "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
           "palette": {
-            "white": "#FFFFFF",
+            "white": "${text}",
             "tan": "#CC3802",
             "teal": "#047E84",
             "plum": "#9A348E",
