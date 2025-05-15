@@ -7,7 +7,7 @@
     hostName = config.networking.hostName;
     users = config.nix-relic.users.users;
   in
-    builtins.listToAttrs (map (user:
+    builtins.mapAttrs (user:
       lib.nameValuePair user {
         imports = [
           ./${hostName}/users/${user}/home.nix
