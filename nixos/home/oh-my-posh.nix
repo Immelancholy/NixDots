@@ -72,9 +72,8 @@ in {
                 {
                   "background": "black",
                   "foreground": ":black",
-                  "leading_diamond": "\udb80\udd42",
                   "style": "diamond",
-                  "template": "",
+                  "template": "\udb80\udd42",
                   "type": "text"
                 },
                 {
