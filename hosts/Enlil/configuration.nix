@@ -4,13 +4,23 @@
   pkgs,
   ...
 }: {
+  nix-relic.users.users = {
+    mela = {
+      isNormalUser = true;
+      isAdmin = true;
+      useDefaultShell = true;
+    };
+  };
+  users.users = {
+    root = {
+      openssh.authorizedKeys.keys = [
+        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBLCQZSKxQcuHRUbEN7AK1lSf0VmXzTTYJA4BTs0pIgT Desktop"
+      ];
+    };
+  };
   disko.devices.disk.main.device = "/dev/nvme0n1";
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
   networking.hostName = "Enlil";
-  userAccounts = {
-    users = [];
-    sudoUsers = ["mela"];
-  };
 
   programs.weylus.users = [
     "mela"
@@ -35,9 +45,7 @@
     };
   };
 
-  users.users.root.openssh.authorizedKeys.keys = [
-    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBLCQZSKxQcuHRUbEN7AK1lSf0VmXzTTYJA4BTs0pIgT Desktop"
-  ];
+  users.users.
   services.pipewire.extraConfig.pipewire."92-low-latency" = {
     "context.properties" = {
       "default.clock.allowed-rates" = [44100 48000 88200 96000];

@@ -1,14 +1,7 @@
-{
-  lib,
-  config,
-  ...
-}: let
-  users = config.userAccounts.sudoUsers ++ config.userAccounts.users;
-  forAllUsers = lib.genAttrs users;
-in {
-  home-manager.users = forAllUsers (user: {
+{config, ...}: {
+  nix-relic.home-manager.config = {
     imports = [
-      ./${config.networking.hostName}/users/${user}/home.nix
+      ./${config.networking.hostName}/users/${config.home.username}/home.nix
     ];
-  });
+  };
 }
