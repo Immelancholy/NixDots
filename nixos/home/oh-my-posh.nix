@@ -66,15 +66,8 @@ in {
                   "foreground": "p:white",
                   "powerline_symbol": "\ue0b0",
                   "style": "diamond",
-                  "template": " {{ .UserName }} ",
+                  "template": " {{ .UserName }} \ue0b1",
                   "type": "session"
-                },
-                {
-                  "background": "black",
-                  "foreground": ":black",
-                  "style": "diamond",
-                  "template": "\udb80\udd42",
-                  "type": "text"
                 },
                 {
                   "background": "p:plum",
