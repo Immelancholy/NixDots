@@ -72,9 +72,9 @@ in {
                 {
                   "background": "p:plum",
                   "foreground": "p:white",
-                  "leading_diamond": "<transparent,p:plum>\ue0b0</>\ue0b1",
+                  "leading_diamond": "<transparent,p:plum>\ue0b0</>",
                   "style": "diamond",
-                  "template": "{{ .HostName }} ",
+                  "template": "<p:plum>\ue0b1</>{{ .HostName }} ",
                   "type": "session"
                 },
                 {
