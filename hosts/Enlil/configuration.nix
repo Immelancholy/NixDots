@@ -9,15 +9,12 @@
       isNormalUser = true;
       isAdmin = true;
       useDefaultShell = true;
-    };
-  };
-  users.users = {
-    root = {
       openssh.authorizedKeys.keys = [
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBLCQZSKxQcuHRUbEN7AK1lSf0VmXzTTYJA4BTs0pIgT Desktop"
       ];
     };
   };
+
   disko.devices.disk.main.device = "/dev/nvme0n1";
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
   networking.hostName = "Enlil";
@@ -44,6 +41,10 @@
       PasswordAuthentication = false;
     };
   };
+
+  users.users.root.openssh.authorizedKeys.keys = [
+    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK+5oVR8PMnCW5lP533YWut9mqzqj+Fepk5U9Uo/sKbv Laptop"
+  ];
 
   services.pipewire.extraConfig.pipewire."92-low-latency" = {
     "context.properties" = {
