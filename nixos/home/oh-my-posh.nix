@@ -66,7 +66,7 @@ in {
                   "foreground": "p:white",
                   "trailing_diamond": "<transparent,p:plum>\ue0d7</>",
                   "style": "diamond",
-                  "template": " {{ .UserName }} @",
+                  "template": " {{ .UserName }}",
                   "type": "session"
                 },
                 {
@@ -74,7 +74,7 @@ in {
                   "foreground": "p:white",
                   "leading_diamond": "<transparent,p:plum>\ue0b0</>",
                   "style": "diamond",
-                  "template": " {{ .HostName }} ",
+                  "template": "{{ .HostName }} ",
                   "type": "session"
                 },
                 {
