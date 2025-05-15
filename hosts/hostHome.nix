@@ -10,6 +10,7 @@ with lib; let
   in ({
     config,
     pkgs,
+    ...
   }:
     recursiveUpdate {
       _module.args = {
