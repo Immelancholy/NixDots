@@ -2,16 +2,24 @@
   config,
   lib,
   ...
-}: {
-  home-manager.users = let
-    hostName = config.networking.hostName;
-    users = config.nix-relic.users.users;
-  in
-    builtins.mapAttrs (user:
-      lib.nameValuePair user {
-        imports = [
-          ./${hostName}/users/${user}/home.nix
-        ];
-      }
-      users);
+}:
+with lib; let
+  hostName = config.networking.hostName;
+  makeHM = name: _user: let
+    user = config.users.users.${name};
+  in ({
+    config,
+    pkgs,
+  }:
+    recursiveUpdate {
+      _module.args = {
+        inherit hostName user;
+      };
+
+      imports = [
+        ./${hostName}/users/${name}/home.nix
+      ];
+    });
+in {
+  home-manager.users = mapAttrs makeHM config.nix-relic.users.users;
 }
