@@ -72,10 +72,10 @@ in {
                 {
                   "background": "black",
                   "foreground": ":black",
-                  "powerline_symbol": "\udb80\udd42",
+                  "leading_diamond": "\udb80\udd42",
                   "style": "diamond",
                   "template": "",
-                  "type": "session"
+                  "type": "text"
                 },
                 {
                   "background": "p:plum",
