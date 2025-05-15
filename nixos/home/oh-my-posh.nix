@@ -58,15 +58,15 @@ in {
                   "leading_diamond": "\ue0b6",
                   "trailing_diamond": "\ue0b0",
                   "style": "diamond",
-                  "template": " {{ .Icon }} ",
+                  "template": " {{ .Icon }} \ue0b1",
                   "type": "os"
                 },
                 {
                   "background": "p:plum",
                   "foreground": "p:white",
-                  "powerline_symbol": "\ue0b0",
+                  "trailing_diamond": "<transparent,p:plum>\ue0b0</>",
                   "style": "diamond",
-                  "template": " {{ .UserName }} \ue0b1",
+                  "template": " {{ .UserName }} ",
                   "type": "session"
                 },
                 {
