@@ -16,7 +16,7 @@
   networking = {
     hostName = "Enlil";
     hosts = {
-      "192.168.1.1" = ["Ereshkigal"];
+      "192.168.1.11" = ["Ereshkigal"];
     };
   };
 
