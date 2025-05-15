@@ -12,6 +12,6 @@
         imports = [
           ./${hostName}/users/${user}/home.nix
         ];
-      })
-    users);
+      }
+      users);
 }
