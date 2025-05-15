@@ -64,7 +64,7 @@ in {
                 {
                   "background": "p:plum",
                   "foreground": "p:white",
-                  "trailing_diamond": "<transparent,p:plum>\udb80\udd42</>",
+                  "trailing_diamond": "<transparent,p:plum>ue0b0</>",
                   "style": "diamond",
                   "template": " {{ .UserName }} ",
                   "type": "session"
@@ -72,7 +72,7 @@ in {
                 {
                   "background": "p:plum",
                   "foreground": "p:white",
-                  "powerline_symbol": "\ue0b0",
+                  "trainling_diamond": "\ue0b0",
                   "style": "diamond",
                   "template": " {{ .HostName }} ",
                   "type": "session"
