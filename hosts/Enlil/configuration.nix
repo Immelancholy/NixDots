@@ -45,7 +45,6 @@
     };
   };
 
-  users.users.
   services.pipewire.extraConfig.pipewire."92-low-latency" = {
     "context.properties" = {
       "default.clock.allowed-rates" = [44100 48000 88200 96000];
