@@ -43,6 +43,11 @@ in {
             "teal_blue": "${flamingo}",
             "behind": "#ef9f76"
           },
+          "secondary_prompt": {
+            "background": "transparent",
+            "foreground": "p:blush",
+            "template": "\udb80\udd42 "
+          },
           "transient_prompt": {
             "background": "transparent",
             "foreground": "p:blush",
@@ -66,7 +71,7 @@ in {
                   "foreground": "p:white",
                   "powerline_symbol": "\ue0b0",
                   "style": "diamond",
-                  "template": " {{ .UserName }}@{{ .HostName }} ",
+                  "template": " {{ if .SSHSession }}\ueba9 {{ end }}{{ .UserName }}@{{ .HostName }} ",
                   "type": "session"
                 },
                 {
