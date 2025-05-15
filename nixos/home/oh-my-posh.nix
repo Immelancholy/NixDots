@@ -64,7 +64,7 @@ in {
                 {
                   "background": "p:plum",
                   "foreground": "p:white",
-                  "trailing_diamond": "<transparent,p:plum>\ue0b1</>",
+                  "trailing_diamond": "<transparent,p:plum>\udb80\udd42</>",
                   "style": "diamond",
                   "template": " {{ .UserName }} ",
                   "type": "session"
