@@ -36,6 +36,10 @@
     image = ../../nixos/home/backgrounds/Evil_Miku.png;
   };
 
+  services.tailscale = {
+    enable = true;
+  };
+
   services.openssh = {
     enable = true;
 
