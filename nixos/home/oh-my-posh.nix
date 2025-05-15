@@ -72,7 +72,7 @@ in {
                 {
                   "background": "p:plum",
                   "foreground": "p:white",
-                  "powerline_symbol": "\ue0b0",
+                  "trailing_diamond": "<transparent,p:plum>\ue0b0</>",
                   "style": "diamond",
                   "template": " {{ .HostName }} ",
                   "type": "session"
