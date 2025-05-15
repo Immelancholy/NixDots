@@ -65,6 +65,7 @@ in {
                   "background": "p:plum",
                   "foreground": "p:white",
                   "powerline_symbol": "\ue0b0",
+                  "trailing_diamond": "\ue0b0",
                   "style": "diamond",
                   "template": " {{ .UserName }} ",
                   "type": "session"
@@ -78,7 +79,7 @@ in {
                   "type": "session"
                 },
                 {
-                  "background": "p:tan",
+                  "background": "p:teal",
                   "foreground": "p:white",
                   "powerline_symbol": "\ue0b0",
                   "properties": {
