@@ -13,7 +13,7 @@ with lib; {
         inherit hostName user;
       };
 
-      imports = [
+      imports = mkif user.isNormalUser [
         ./${hostName}/users/${name}/home.nix
       ];
     };
