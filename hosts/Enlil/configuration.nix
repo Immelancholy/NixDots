@@ -13,14 +13,18 @@
     };
   };
 
-  disko.devices.disk.main.device = "/dev/nvme0n1";
-  nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
-  networking.hostName = "Enlil";
+  networking = {
+    hostName = "Enlil";
+    hosts = {
+      "192.168.1.1" = ["Ereshkigal"];
+    };
+  };
 
   programs.weylus.users = [
     "mela"
   ];
 
+  nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
   environment.systemPackages = with pkgs; [
     # anifetch
     nix-prefetch
