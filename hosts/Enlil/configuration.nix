@@ -42,6 +42,7 @@
     settings = {
       PasswordAuthentication = false;
       MaxStartups = 3;
+      AllowTcpForwarding = "no";
     };
   };
 
