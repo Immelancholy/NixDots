@@ -66,7 +66,7 @@ in {
                   "foreground": "p:white",
                   "powerline_symbol": "\ue0b0",
                   "style": "diamond",
-                  "template": " {{ .UserName }}@{{ .HostName}} ",
+                  "template": " {{ .UserName }} @ {{ .HostName}} ",
                   "type": "session"
                 },
                 {
