@@ -6,15 +6,12 @@
 }: {
   nix-relic.users.users = {
     mela = {
-      isNormalUser = true;
       isAdmin = true;
       openssh.authorizedKeys.keys = [
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBLCQZSKxQcuHRUbEN7AK1lSf0VmXzTTYJA4BTs0pIgT Desktop"
       ];
     };
-    luka = {
-      isNormalUser = true;
-    };
+    luka = {};
   };
 
   disko.devices.disk.main.device = "/dev/sdb";
