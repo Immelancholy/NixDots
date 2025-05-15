@@ -66,7 +66,23 @@ in {
                   "foreground": "p:white",
                   "powerline_symbol": "\ue0b0",
                   "style": "diamond",
-                  "template": " {{ .UserName }} @ {{ .HostName}} ",
+                  "template": " {{ .UserName }} ",
+                  "type": "session"
+                },
+                {
+                  "background": "black",
+                  "foreground": ":black",
+                  "powerline_symbol": "\udb80\udd42",
+                  "style": "diamond",
+                  "template": "",
+                  "type": "session"
+                },
+                {
+                  "background": "p:plum",
+                  "foreground": "p:white",
+                  "powerline_symbol": "\ue0b0",
+                  "style": "diamond",
+                  "template": " {{ .HostName }} ",
                   "type": "session"
                 },
                 {
