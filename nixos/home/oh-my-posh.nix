@@ -58,13 +58,13 @@ in {
                   "leading_diamond": "\ue0b6",
                   "trailing_diamond": "\ue0b0",
                   "style": "diamond",
-                  "template": " {{ .Icon }} \ue0b1",
+                  "template": " {{ .Icon }}\ue0b1",
                   "type": "os"
                 },
                 {
                   "background": "p:plum",
                   "foreground": "p:white",
-                  "trailing_diamond": "<transparent,p:plum>\ue0b0</>",
+                  "trailing_diamond": "<transparent,p:plum>\ue0b1</>",
                   "style": "diamond",
                   "template": " {{ .UserName }} ",
                   "type": "session"
