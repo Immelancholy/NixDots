@@ -8,6 +8,7 @@
   disko.devices = {
     disk = {
       main = {
+        device = "/dev/sdb";
         type = "disk";
         content = {
           type = "gpt";

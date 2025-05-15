@@ -18,8 +18,12 @@
     };
   };
 
-  disko.devices.disk.main.device = "/dev/sdb";
-  networking.hostName = "Ereshkigal";
+  networking = {
+    hostName = "Ereshkigal";
+    hosts = {
+      "192.168.1.105" = ["Enlil"];
+    };
+  };
 
   programs.weylus.users = [
     "mela"
