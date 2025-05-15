@@ -41,6 +41,7 @@
 
     settings = {
       PasswordAuthentication = false;
+      MaxStartups = 3;
     };
   };
 
