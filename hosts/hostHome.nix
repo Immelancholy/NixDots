@@ -25,5 +25,5 @@ with lib; let
       }
   );
 in {
-  home-manager.users = mapAttrs makeHM config.nix-relic.users.users;
+  config.home-manager.users = mapAttrs makeHM config.nix-relic.users.users;
 }
