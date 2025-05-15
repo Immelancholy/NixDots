@@ -9,6 +9,11 @@
       isNormalUser = true;
       isAdmin = true;
       useDefaultShell = true;
+      home-config = {
+        imports = [
+          ./users/mela/home.nix
+        ];
+      };
     };
   };
   users.users = {
