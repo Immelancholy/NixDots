@@ -75,6 +75,7 @@ in {
                   "powerline_symbol": "\ue0b0",
                   "style": "diamond",
                   "template": " {{ .HostName}}",
+                  "type": "session"
                 },
                 {
                   "background": "p:tan",
