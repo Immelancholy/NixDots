@@ -58,7 +58,7 @@ in {
                   "leading_diamond": "\ue0b6",
                   "trailing_diamond": "\ue0b0",
                   "style": "diamond",
-                  "template": "\ue0b7 {{ .Icon }} \ue0b1",
+                  "template": " {{ .Icon }} \ue0b1",
                   "type": "os"
                 },
                 {
