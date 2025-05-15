@@ -65,21 +65,12 @@ in {
                   "background": "p:plum",
                   "foreground": "p:white",
                   "powerline_symbol": "\ue0b0",
-                  "trailing_diamond": "\ue0b0",
                   "style": "diamond",
-                  "template": " {{ .UserName }} ",
+                  "template": " {{ .UserName }}@{{ .HostName}} ",
                   "type": "session"
                 },
                 {
                   "background": "p:blush",
-                  "foreground": "p:white",
-                  "powerline_symbol": "\ue0b0",
-                  "style": "diamond",
-                  "template": " {{ .HostName}} ",
-                  "type": "session"
-                },
-                {
-                  "background": "p:teal",
                   "foreground": "p:white",
                   "powerline_symbol": "\ue0b0",
                   "properties": {
