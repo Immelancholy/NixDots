@@ -8,6 +8,17 @@
     ../../../../nixos/home/fetch_images.nix
   ];
 
+  programs.ssh = {
+    enable = true;
+    package = null;
+    matchBlocks = {
+      "enlil" = {
+        host = "enlil";
+        forwardAgent = true;
+      };
+    };
+  };
+
   catppuccin = {
     flavor = "mocha";
     accent = "mauve";
