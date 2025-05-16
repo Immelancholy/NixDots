@@ -9,6 +9,7 @@
   programs.zsh = {
     enable = true;
     enableCompletion = true;
+    package = null;
     autosuggestion = {
       enable = true;
     };

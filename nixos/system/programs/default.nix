@@ -34,6 +34,13 @@
     enableUdevRules = true;
   };
 
+  security.wrappers.write = {
+    group = "tty";
+    owner = "root";
+    setgid = true;
+    source = "${pkgs.util-linux}/bin/write";
+  };
+
   programs.zsh.enable = true;
   services.dbus = {
     enable = true;
