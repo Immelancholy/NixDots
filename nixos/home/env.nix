@@ -19,10 +19,10 @@
     GDK_SCALE = 1;
   };
 
-  systemd.user.sessionVariables = {
-    SSH_AUTH_SOCK = "\${XDG_RUNTIME_DIR}/keyring/ssh";
-    GNOME_KEYRING_CONTROL = "\${XDG_RUNTIME_DIR}/keyring";
-  };
+  # systemd.user.sessionVariables = {
+  #   SSH_AUTH_SOCK = "\${XDG_RUNTIME_DIR}/keyring/ssh";
+  #   GNOME_KEYRING_CONTROL = "\${XDG_RUNTIME_DIR}/keyring";
+  # };
 
   xdg.configFile = {
     "uwsm/env".text = ''
