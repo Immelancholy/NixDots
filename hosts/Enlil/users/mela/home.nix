@@ -13,8 +13,8 @@
     package = null;
     matchBlocks = {
       "ereshkigal" = {
-        hostname = "ereshkigal";
-        ForwardAgent = "yes";
+        host = "ereshkigal";
+        forwardAgent = "yes";
       };
     };
   };
