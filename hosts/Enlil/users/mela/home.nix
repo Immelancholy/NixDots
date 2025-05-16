@@ -14,7 +14,7 @@
     matchBlocks = {
       "ereshkigal" = {
         host = "ereshkigal";
-        forwardAgent = "yes";
+        forwardAgent = true;
       };
     };
   };
