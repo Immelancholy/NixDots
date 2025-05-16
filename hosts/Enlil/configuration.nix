@@ -33,7 +33,7 @@
     rssh = {
       enable = true;
       settings = {
-        auth_key_file = "/etc/ssh/authorized_keys.d/$ruser";
+        auth_key_file = "/etc/ssh/authorized_keys.d/$user";
       };
     };
   };
