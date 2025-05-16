@@ -41,7 +41,6 @@
       enable = true;
       settings = {
         auth_key_file = "/etc/ssh/authorized_keys.d/$user";
-        loglevel = "debug";
       };
     };
   };
@@ -60,7 +59,6 @@
   services.openssh = {
     enable = true;
     openFirewall = false;
-
     settings = {
       PasswordAuthentication = false;
       KbdInteractiveAuthentication = false;
