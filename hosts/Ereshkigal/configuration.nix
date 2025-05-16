@@ -20,7 +20,7 @@
 
   networking = {
     hostName = "Ereshkigal";
-    nameservers = ["100.100.100.100" "8.8.8.8" "1.1.1.1"];
+    nameservers = ["100.100.100.100" "9.9.9.9" "1.1.1.1"];
     search = ["jaglion-teeth.ts.net"];
   };
 
