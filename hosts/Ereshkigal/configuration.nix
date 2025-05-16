@@ -34,12 +34,12 @@
     "mela"
   ];
 
-  # security.pam.sshAgentAuth = {
-  #   enable = true;
-  #   authorizedKeysFiles = [
-  #     "/home/mela/.ssh/id_ed25519.1.pub"
-  #   ];
-  # };
+  security.pam.sshAgentAuth = {
+    enable = true;
+    authorizedKeysFiles = [
+      "/etc/ssh/authorized_keys.d/%u"
+    ];
+  };
 
   stylix = {
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";

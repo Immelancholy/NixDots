@@ -24,8 +24,15 @@
     "mela"
   ];
 
+  nix.settings.trusted-users = [
+    "mela"
+  ];
+
   security.pam.sshAgentAuth = {
     enable = true;
+    authorizedKeysFiles = [
+      "/etc/ssh/authorized_keys.d/%u"
+    ];
   };
 
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
