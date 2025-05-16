@@ -30,16 +30,16 @@
     "mela"
   ];
 
-  # nix.settings.trusted-users = [
-  #   "mela"
-  # ];
+  nix.settings.trusted-users = [
+    "mela"
+  ];
 
-  security.pam.sshAgentAuth = {
-    enable = true;
-    authorizedKeysFiles = [
-      "/home/mela/.ssh/id_ed25519.1.pub"
-    ];
-  };
+  # security.pam.sshAgentAuth = {
+  #   enable = true;
+  #   authorizedKeysFiles = [
+  #     "/home/mela/.ssh/id_ed25519.1.pub"
+  #   ];
+  # };
 
   stylix = {
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
