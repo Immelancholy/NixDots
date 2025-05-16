@@ -64,6 +64,7 @@
       PermitRootLogin = "no";
       MaxStartups = 3;
       AllowTcpForwarding = "no";
+      UsePrivilegeSeparation = "yes";
     };
   };
 
