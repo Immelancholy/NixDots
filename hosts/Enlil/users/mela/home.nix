@@ -8,6 +8,14 @@
     ../../../../nixos/home/fetch_images.nix
   ];
 
+  programs.ssh = {
+    enable = true;
+    package = null;
+    extraConfig = ''
+      Host ereshkigal
+        ForwardAgent yes
+    '';
+  };
   catppuccin = {
     flavor = "mocha";
     accent = "mauve";
