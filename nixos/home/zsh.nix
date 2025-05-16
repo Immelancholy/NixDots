@@ -42,13 +42,6 @@
         file = "share/zsh-nix-shell/nix-shell.plugin.zsh";
       }
     ];
-    loginExtra =
-      /*
-      bash
-      */
-      ''
-        eval $(gnome-keyring-daemon -s)
-      '';
     initContent =
       /*
       bash
