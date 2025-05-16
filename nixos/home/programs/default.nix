@@ -30,15 +30,6 @@
     defaultBrowser = true;
   };
 
-  # services.gnome-keyring = {
-  #   enable = true;
-  #   components = [
-  #     "pkcs11"
-  #     "secrets"
-  #     "ssh"
-  #   ];
-  # };
-
   programs.btop = {
     enable = true;
     settings = {
