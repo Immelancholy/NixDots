@@ -14,6 +14,13 @@
     };
   };
 
+  nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
+  environment.systemPackages = with pkgs; [
+    sshpass
+    # anifetch
+    nix-prefetch
+  ];
+
   networking = {
     hostName = "Enlil";
     nameservers = ["100.100.100.100" "192.242.2.2" "9.9.9.9"];
@@ -38,12 +45,6 @@
     };
   };
 
-  nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
-  environment.systemPackages = with pkgs; [
-    sshpass
-    # anifetch
-    nix-prefetch
-  ];
   stylix = {
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     polarity = "dark";
