@@ -30,8 +30,15 @@
     "mela"
   ];
 
+  # nix.settings.trusted-users = [
+  #   "mela"
+  # ];
+
   security.pam.sshAgentAuth = {
     enable = true;
+    authorizedKeysFiles = [
+      "/home/mela/.ssh/id_ed25519.1.pub"
+    ];
   };
 
   stylix = {
