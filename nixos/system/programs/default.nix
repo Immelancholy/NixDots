@@ -46,10 +46,6 @@
   services.dbus = {
     enable = true;
     implementation = "broker";
-    packages = with pkgs; [
-      libsecret
-      gcr_4
-    ];
   };
   systemd.user.services.hyprsunset = {
     enable = true;
