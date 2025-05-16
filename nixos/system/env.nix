@@ -14,8 +14,8 @@
       "${XDG_BIN_HOME}"
     ];
   };
-  environment.extraInit = ''
-    export SSH_AUTH_SOCK="XDG_RUNTIME_DIR/keyring/ssh"
-    export GNOME_KEYRING_CONTROL="''${XDG_RUNTIME_DIR}/keyring/control"
-  '';
+  # environment.extraInit = ''
+  #   export SSH_AUTH_SOCK="XDG_RUNTIME_DIR/keyring/ssh"
+  #   export GNOME_KEYRING_CONTROL="''${XDG_RUNTIME_DIR}/keyring/control"
+  # '';
 }
