@@ -23,11 +23,6 @@
   #   vesktop.enable = false;
   # };
 
-  extraConfig = ''
-    Host ereshkigal
-      ForwardAgent yes
-  '';
-
   player = {
     enable = true;
   };

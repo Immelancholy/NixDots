@@ -11,10 +11,12 @@
   programs.ssh = {
     enable = true;
     package = null;
-    extraConfig = ''
-      Host ereshkigal
-        ForwardAgent yes
-    '';
+    matchBlocks = {
+      "ereshkigal" = {
+        hostname = "ereshkigal";
+        ForwardAgent = "yes";
+      };
+    };
   };
   catppuccin = {
     flavor = "mocha";
