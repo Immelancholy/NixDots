@@ -46,14 +46,15 @@
 
     settings = {
       PasswordAuthentication = false;
+      PermitRootLogin = "no";
       MaxStartups = 3;
       AllowTcpForwarding = "no";
     };
   };
 
-  users.users.root.openssh.authorizedKeys.keys = [
-    "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBLCQZSKxQcuHRUbEN7AK1lSf0VmXzTTYJA4BTs0pIgT Desktop"
-  ];
+  # users.users.root.openssh.authorizedKeys.keys = [
+  #   "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBLCQZSKxQcuHRUbEN7AK1lSf0VmXzTTYJA4BTs0pIgT Desktop"
+  # ];
 
   services.pipewire.extraConfig.pipewire."92-low-latency" = {
     "context.properties" = {
