@@ -14,4 +14,12 @@
       "${XDG_BIN_HOME}"
     ];
   };
+
+  environment.extraInit =
+    /*
+    sh
+    */
+    ''
+      eval $(gnome-keyring-daemon -s)
+    '';
 }

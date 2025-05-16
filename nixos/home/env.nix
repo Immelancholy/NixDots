@@ -35,7 +35,7 @@
         export MOZ_ENABLE_WAYLAND=1
         export GDK_BACKEND="wayland,x11"
         export UWSM_ENABLED=1
-        eval $(gnome-keyring-daemon -s)
+        # eval $(gnome-keyring-daemon -s)
       '';
       "uwsm/env-hyprland".text = ''
         export HYPRCURSOR_THEME="${config.stylix.cursor.name}"
