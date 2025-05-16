@@ -20,8 +20,8 @@
   };
 
   systemd.user.sessionVariables = {
-    SSH_AUTH_SOCK = "$XDG_RUNTIME_DIR/keyring/ssh";
-    GNOME_KEYRING_CONTROL = "$XDG_RUNTIME_DIR/keyring";
+    SSH_AUTH_SOCK = "\${XDG_RUNTIME_DIR}/keyring/ssh";
+    GNOME_KEYRING_CONTROL = "\${XDG_RUNTIME_DIR}/keyring";
   };
 
   xdg.configFile = {

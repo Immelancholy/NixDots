@@ -28,11 +28,14 @@
     "mela"
   ];
 
-  security.pam.sshAgentAuth = {
-    enable = true;
-    authorizedKeysFiles = [
-      "/etc/ssh/authorized_keys.d/%u"
-    ];
+  security.pam = {
+    services.sudo.rssh = true;
+    rssh = {
+      enable = true;
+      settings = {
+        auth_key_file = "/etc/ssh/authorized_keys.d/\${USER}";
+      };
+    };
   };
 
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];

@@ -35,12 +35,12 @@
   ];
 
   security.pam = {
-    services.sudo.sshAgentAuth = true;
-    sshAgentAuth = {
+    services.sudo.rssh = true;
+    rssh = {
       enable = true;
-      authorizedKeysFiles = [
-        "/etc/ssh/authorized_keys.d/mela"
-      ];
+      settings = {
+        auth_key_file = "/etc/ssh/authorized_keys.d/\${USER}";
+      };
     };
   };
 
