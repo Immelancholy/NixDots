@@ -24,6 +24,10 @@
     "mela"
   ];
 
+  security.pam.sshAgentAuth = {
+    enable = true;
+  };
+
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
   environment.systemPackages = with pkgs; [
     # anifetch

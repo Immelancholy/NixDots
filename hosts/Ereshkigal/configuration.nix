@@ -30,6 +30,10 @@
     "mela"
   ];
 
+  security.pam.sshAgentAuth = {
+    enable = true;
+  };
+
   stylix = {
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     polarity = "dark";
@@ -78,7 +82,7 @@
 
   programs.steam = {
     enable = false;
-    gamescopeSession.enable = true;
+    gamescopeSession.enable = false;
   };
 
   services.mpdchck = {
