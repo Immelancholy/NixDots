@@ -121,7 +121,7 @@
 
   displayManager = {
     sddm = {
-      enable = true;
+      enable = false;
       screenWidth = "1920";
       screenHeight = "1080";
       animatedBackground = {
@@ -129,7 +129,7 @@
         path = ../../nixos/home/backgrounds/Evil_Miku.mp4;
       };
     };
-    tuiGreet.enable = false;
+    tuiGreet.enable = true;
   };
 
   locale = "en_GB.UTF-8";
