@@ -162,6 +162,9 @@
                 inputs.spicetify-nix.homeManagerModules.default
                 inputs.artis.homeManagerModules.default
                 ./nixos/home
+                {
+                  stylix.enableReleaseChecks = false;
+                }
               ];
             };
           }
@@ -198,6 +201,9 @@
                 inputs.nix-flatpak.homeManagerModules.nix-flatpak
                 inputs.artis.homeManagerModules.default
                 ./nixos/home
+                {
+                  stylix.enableReleaseChecks = false;
+                }
               ];
             };
           }
