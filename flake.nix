@@ -180,6 +180,9 @@
           ./nixos/system
           ./hosts/Ereshkigal
           ./hosts/hostHome.nix
+          {
+            stylix.enableReleaseChecks = false;
+          }
 
           home-manager.nixosModules.home-manager
           {
