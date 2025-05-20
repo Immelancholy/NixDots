@@ -100,7 +100,18 @@
       ];
     };
   };
+  programs.gh = {
+    enable = true;
+    extensions = [
+    ];
+    settings = {
+      git_protocol = "ssh";
+      prompt = "enabled";
+      editor = "$EDITOR";
+    };
+  };
   home.packages = with pkgs; [
+    github-desktop
     (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {extensions = ["rust-src" "rust-analyzer"];}))
     reaper
     inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
