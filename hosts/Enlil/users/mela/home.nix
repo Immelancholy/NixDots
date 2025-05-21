@@ -111,7 +111,6 @@
     };
   };
   home.packages = with pkgs; [
-    github-desktop
     (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {extensions = ["rust-src" "rust-analyzer"];}))
     reaper
     inputs.prismlauncher.packages.${pkgs.system}.prismlauncher

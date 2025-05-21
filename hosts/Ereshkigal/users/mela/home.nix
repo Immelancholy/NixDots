@@ -94,7 +94,6 @@
     };
   };
   home.packages = with pkgs; [
-    github-desktop
     teams-for-linux
     obsidian
     obsidian-export
