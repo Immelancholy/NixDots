@@ -14,6 +14,9 @@
     withPython3 = true;
     luaLoader.enable = true;
     plugins = {
+      transparent = {
+        enable = true;
+      };
       otter = {
         enable = true;
         autoActivate = true;
