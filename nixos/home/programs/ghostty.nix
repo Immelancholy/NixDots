@@ -16,6 +16,7 @@
       background-opacity = 0.8;
       desktop-notifications = true;
       window-padding-color = "background";
+      title = "ghostty";
     };
   };
 }
