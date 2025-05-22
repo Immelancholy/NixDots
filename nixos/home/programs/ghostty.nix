@@ -15,7 +15,6 @@
       window-padding-y = 5;
       background-opacity = 0.80;
       desktop-notifications = true;
-      gtk-gsk-renderer = "default";
       window-padding-color = "background";
     };
   };
