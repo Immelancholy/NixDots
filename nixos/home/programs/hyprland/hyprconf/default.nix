@@ -4,7 +4,7 @@
     settings = {
       "$scr" = "$XDG_BIN_HOME";
       "$term" = "uwsm app -- ghostty";
-      "$term_launc" = "$term -e";
+      "$term_launch" = "$term -e";
       "$files" = "uwsm app -- nemo.desktop";
       "$filest" = "uwsm app -- yazi.desktop";
       "$mod" = "SUPER";
