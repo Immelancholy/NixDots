@@ -33,7 +33,7 @@
 
   programs.btop = {
     enable = true;
-    package = pkgs.btop.overrid {
+    package = pkgs.btop.override {
       cudaSupport = true;
     };
     settings = {
