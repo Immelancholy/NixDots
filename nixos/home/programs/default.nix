@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   home.shell = {
     enableZshIntegration = true;
   };
@@ -33,8 +33,12 @@
 
   programs.btop = {
     enable = true;
+    package = pkgs.btop.overrid {
+      cudaSupport = true;
+    };
     settings = {
       vim_keys = true;
+      theme_background = false;
     };
   };
 
