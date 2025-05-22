@@ -17,7 +17,7 @@
     enable = true;
     settings = {
       default = [
-        "kitty.desktop"
+        "com.mitchellh.ghostty.desktop"
       ];
     };
   };
