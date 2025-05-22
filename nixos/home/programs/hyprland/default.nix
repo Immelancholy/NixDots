@@ -38,11 +38,7 @@ in {
   home.packages = with pkgs; [
     hyprpicker
     hyprshot
-    (nrm.hyprgame.override {
-      wallpaper = config.wayland.windowManager.hyprland.liveWallpaper.path;
-      player = config.player.cmd;
-      pclass = config.player.class;
-    })
+    nrm.hyprgame
   ];
 
   imports = [
