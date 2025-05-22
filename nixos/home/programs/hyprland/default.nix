@@ -39,7 +39,7 @@ in {
     hyprpicker
     hyprshot
     (nrm.hyprgame.override {
-      wallpaper = config.stylix.image;
+      wallpaper = cfg.liveWallpaper.path;
     })
   ];
 
