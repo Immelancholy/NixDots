@@ -16,7 +16,7 @@
         "Alt, Tab, exec, rofi -show window -modi window"
         ''$mods, U, exec, [workspace 1 silent; float; size 858 462; move 640 609] $term --window-padding-x=0 --font-size=4 -e cava -p "$XDG_CONFIG_HOME"/cava/vcConfig''
         ''$mods, U, exec, [workspace 1 silent; float; size 620 637; move 10 433] $term --font-size=9 -e btop''
-        ''$mods, U, exec, [workspace 1 silent; float; size 402 1030; move 1508 42] $term --window-padding-x=0 -e neo -a -S 20 -d 1 -f 144 -C "$XDG_CONFIG_HOME"/neo/colors -b 1 -m "Welcome, ${config.home.username}." --lingerms=1,1 --rippct=0''
+        ''$mods, U, exec, [workspace 1 silent; float; size 402 1030; move 1508 42] $term --window-padding-x=0 -e \'neo -a -S 20 -d 1 -f 144 -C "$XDG_CONFIG_HOME"/neo/colors -b 1 -m "Welcome, ''${USER^}." --lingerms=1,1 --rippct=0'\''
         ''$mods, U, exec, [workspace 1 silent; float; size 620 383; move 10 42] env class="fastfetch" $term''
         "$mod, Delete, exec, rofi -show power-menu -modi power-menu:rofi-power-menu"
         "$mod, 0, workspace, 10"
