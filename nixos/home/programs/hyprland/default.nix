@@ -38,7 +38,9 @@ in {
   home.packages = with pkgs; [
     hyprpicker
     hyprshot
-    nrm.hyprgame
+    (nrm.hyprgame.override {
+      wallpaper = config.stylix.image;
+    })
   ];
 
   imports = [
