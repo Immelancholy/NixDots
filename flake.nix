@@ -8,6 +8,9 @@
       url = "github:Immelancholy/Nix-Relic-Modules";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    ghostty = {
+      url = "github:ghostty-org/ghostty";
+    };
     anifetch = {
       url = "github:Immelancholy/anifetch";
       inputs.nixpkgs.follows = "nixpkgs";
