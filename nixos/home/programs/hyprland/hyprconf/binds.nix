@@ -7,21 +7,21 @@
     bind =
       [
         "$mod, T, exec, $term"
-        ''$mods, T, exec, $term_launch tmux''
+        ''$mods, T, exec, $term --class=tmux -e tmux''
         "$mod, F, exec, $browser"
         "$mod, E, exec, $files"
         "$mod, grave, exec, $menu"
         "$mod, C, exec, $edit"
         "Alt, Return, fullscreen"
         "Alt, Tab, exec, rofi -show window -modi window"
-        ''$mods, U, exec, [workspace 1 silent; float; size 858 462; move 640 609] $term_launch cava -p "$XDG_CONFIG_HOME"/cava/vcConfig''
-        ''$mods, U, exec, [workspace 1 silent; float; size 620 637; move 10 433] $term_launch btop''
-        ''$mods, U, exec, [workspace 1 silent; float; size 402 1030; move 1508 42] $term_launch neo -a -S 20 -d 1 -f 144 -C "$XDG_CONFIG_HOME"/neo/colors -b 1 -m "Welcome, ''${USER^}." --lingerms=1,1 --rippct=0''
+        ''$mods, U, exec, [workspace 1 silent; float; size 858 462; move 640 609] $term --class=cava --window-padding-x=cava --font-size=3 -e cava -p "$XDG_CONFIG_HOME"/cava/vcConfig''
+        ''$mods, U, exec, [workspace 1 silent; float; size 620 637; move 10 433] $term --class=btop --font-size=9.5 -e btop''
+        ''$mods, U, exec, [workspace 1 silent; float; size 402 1030; move 1508 42] $term --class=neo --window-padding-x=0 -e neo -a -S 20 -d 1 -f 144 -C "$XDG_CONFIG_HOME"/neo/colors -b 1 -m "Welcome, ''${USER^}." --lingerms=1,1 --rippct=0''
         ''$mods, U, exec, [workspace 1 silent; float; size 620 383; move 10 42] env class="fastfetch" $term''
         "$mod, Delete, exec, rofi -show power-menu -modi power-menu:rofi-power-menu"
         "$mod, 0, workspace, 10"
         "Ctrl+Alt, L, exec, uwsm-app -- swaylock -fF"
-        ''$mod, V, exec, $term_launch tnix''
+        ''$mod, V, exec, $term --class=NixOS_Conf -e tnix''
         "$mod, N, exec, rofi -show Cliphist -modi Cliphist:cliphist.sh"
         "$mod, M, exec, hyprgame"
         "$mod, L, workspace, r+1"
@@ -34,7 +34,7 @@
         "$mod, mouse_down, workspace, e-1"
         "$mods, mouse_up, workspace, r+1"
         "$mods, mouse_down, workspace, r-1"
-        ''Ctrl+Shift, Escape, exec, $term_launch btop''
+        ''Ctrl+Shift, Escape, exec, $term --class=btop -e btop''
         ", XF86Calculator, exec, uwsm-app -- qalculate-gtk"
         "$mod, X, togglespecialworkspace"
         ", Print, exec, uwsm-app -- ss.sh -o"
