@@ -8,7 +8,6 @@
       window-padding-balance = true;
       window-padding-x = 5;
       background-opacity = 0.80;
-      shell-integration-features = "no-cursor";
     };
   };
 }
