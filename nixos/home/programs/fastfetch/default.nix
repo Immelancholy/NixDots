@@ -8,9 +8,9 @@
         width = 23;
         height = 18;
         padding = {
-          top = 1;
+          top = 0;
           left = 0;
-          right = 0;
+          right = 1;
         };
       };
       display = {
