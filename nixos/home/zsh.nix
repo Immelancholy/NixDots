@@ -59,16 +59,19 @@
             onefetch
           fi
         }
-        if [ -z $TERM ]; then
-          fetch_cmd=fastfetch
-        else
-          fetch_cmd=onefetch_img
-        fi
+        check_term () {
+          if [ -z $TERM ]; then
+            fetch_cmd=fastfetch
+          else
+            fetch_cmd=onefetch_img
+          fi
+        }
         check_for_repo () {
           current_repo=$(git rev-parse --show-toplevel 2> /dev/null)
           if [ "$current_repo" ] && \
             [ "$current_repo" != "$last_repo" ]; then
             clear
+            check_term
             $fetch_cmd
             last_repo=$current_repo
             INIT=0
@@ -104,6 +107,7 @@
         switch () {
           builtin cd "$FLAKE_PATH" || return
           clear
+          check_term
           $fetch_cmd
           git add .
           git commit -m "switch"
@@ -116,6 +120,7 @@
         boot () {
           builtin cd "$FLAKE_PATH" || return
           clear
+          check_term
           $fetch_cmd
           git add .
           git commit -m "switch"
