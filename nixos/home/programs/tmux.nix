@@ -2,6 +2,7 @@
   programs.tmux = {
     enable = true;
     secureSocket = true;
+    terminal = "tmux-256color";
     mouse = true;
     disableConfirmationPrompt = true;
     prefix = "C-s";
@@ -18,7 +19,6 @@
     ];
     extraConfig = ''
       set -g default-command "/run/current-system/sw/bin/zsh"
-      set-option -g default-terminal "''${TERM}"
       set -sa terminal-features ',xterm-ghostty:RGB'
       set -gq allow-passthrough on
       set -g update-environment 'KITTY_LISTEN_ON'
