@@ -1,7 +1,6 @@
 {pkgs, ...}: {
   programs.tmux = {
     enable = true;
-    terminal = "screen-256color";
     secureSocket = true;
     mouse = true;
     disableConfirmationPrompt = true;
