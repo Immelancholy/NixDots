@@ -8,7 +8,7 @@
     package = inputs.ghostty.packages.${pkgs.stdenv.hostPlatform.system}.default;
     installVimSyntax = true;
     settings = {
-      font-synthetic-styling = true;
+      font-synthetic-style = false;
       cursor-style-blink = true;
       cursor-click-to-move = true;
       window-padding-balance = true;
