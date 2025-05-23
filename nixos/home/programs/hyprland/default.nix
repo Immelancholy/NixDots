@@ -41,11 +41,11 @@ in {
     (nrm.hyprgame.override {
       wallpaper = cfg.liveWallpaper.path;
       extraKills = ''
-        hyprctl dispatch signalwindow 'class:(.*screen1)$,9'
-          hyprctl dispatch signalwindow 'class:(.*screen1)$,9'
-          hyprctl dispatch signalwindow 'class:(.*screen1)$,9'
-          hyprctl dispatch signalwindow 'class:(.*screen1)$,9'
-          hyprctl dispatch signalwindow 'class:(.*screen1)$,9'
+        hyprctl dispatch signalwindow 'class:(.*screen1),9'
+          hyprctl dispatch signalwindow 'class:(.*screen1),9'
+          hyprctl dispatch signalwindow 'class:(.*screen1),9'
+          hyprctl dispatch signalwindow 'class:(.*screen1),9'
+          hyprctl dispatch signalwindow 'class:(.*screen1),9'
       '';
     })
   ];
