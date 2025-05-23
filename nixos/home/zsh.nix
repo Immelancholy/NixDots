@@ -61,7 +61,7 @@
         }
         check_for_repo () {
           current_repo=$(git rev-parse --show-toplevel 2> /dev/null)
-          if [ "$TERM" = "screen-256color" ];
+          if [ "$TERM" = "tmux-256color" ];
           then
             if [ $INIT = 1 ]; then
               fortune | pokemonsay -p fennekin -N
@@ -110,7 +110,7 @@
         switch () {
           builtin cd "$FLAKE_PATH" || return
           clear
-          if [ "$TERM" = "screen-256color" ]; then
+          if [ "$TERM" = "tmux-256color" ]; then
             fastfetch
           else
             onefetch_img
@@ -126,7 +126,7 @@
         boot () {
           builtin cd "$FLAKE_PATH" || return
           clear
-          if [ "$TERM" = "screen-256color" ]; then
+          if [ "$TERM" = "tmux-256color" ]; then
             fastfetch
           else
             onefetch_img
@@ -142,7 +142,7 @@
         update () {
           builtin cd "$FLAKE_PATH" || return
           clear
-          if [ "$TERM" = "screen-256color" ]; then
+          if [ "$TERM" = "tmux-256color" ]; then
             fastfetch
           else
             onefetch_img
