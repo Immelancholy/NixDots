@@ -19,7 +19,8 @@
     ];
     extraConfig = ''
       set -g default-command "/run/current-system/sw/bin/zsh"
-      set -as terminal-features ",xterm-ghostty:RGB"
+      set-option -g default-terminal 'tmux-256color'
+      set -sa terminal-features ',xterm-ghostty:RGB'
       set -gq allow-passthrough on
       set -g update-environment 'KITTY_LISTEN_ON'
 
