@@ -157,7 +157,7 @@
 
         if [ "$class" = "fastfetch" ];
         then
-          fastfetch --logo "$HOME"/Pictures/fastfetch_logos/Nakari.jpg
+          fastfetch --logo "$HOME"/Pictures/fastfetch_logos/Nakari.jpg --logo-padding-top 1
         else
           check_for_repo
         fi
