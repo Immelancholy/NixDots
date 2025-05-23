@@ -59,8 +59,8 @@
             onefetch
           fi
         }
-        check_term () {
-          if [ -z $TERM ]; then
+        check_tmux () {
+          if [ -z $TMUX ]; then
             fetch_cmd=fastfetch
           else
             fetch_cmd=onefetch_img
