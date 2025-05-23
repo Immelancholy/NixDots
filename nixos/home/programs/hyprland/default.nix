@@ -47,6 +47,7 @@ in {
           hyprctl dispatch signalwindow 'class:(fastfetch.ghostty.screen1),9'
           hyprctl dispatch signalwindow 'class:(btop.ghostty.screen1),9'
           hyprctl dispatch signalwindow 'class:(cava.ghostty.screen1),9'
+          hyprctl dispatch exec '[workspace 1 silent; float; size 1118 710; move 401 145] ${playerCmd}'
       '';
       extraLaunch = ''
         hyprctl dispatch exec '[workspace 1 silent; float; size 858 462; move 640 609] uwsm app -- ghostty --window-padding-x=0 --window-padding-y=0 --font-size=4 --class=cava.ghostty.screen1 -e cava -p "$XDG_CONFIG_HOME"/cava/vcConfig'
