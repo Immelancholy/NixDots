@@ -59,11 +59,17 @@
             onefetch
           fi
         }
+        tmux_fetch () {
+           printf '%s\n' " "
+           printf '%s\n' " "
+           chafa -f kitty -s 23x18 "/home/mela/Pictures/fastfetch_logos/Azurenti.jpg" --align=top,left | fastfetch --raw - --logo-width 23 --logo-height 18
+        }
+
         check_tmux () {
           if [ -z $TMUX ]; then
             fetch_cmd=onefetch_img
           else
-            fetch_cmd=fastfetch
+            fetch_cmd=tmux_fetch
           fi
         }
         check_tmux
