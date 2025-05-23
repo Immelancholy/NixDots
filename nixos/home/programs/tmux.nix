@@ -4,6 +4,7 @@
     secureSocket = true;
     mouse = true;
     disableConfirmationPrompt = true;
+    terminal = "tmux-256color";
     prefix = "C-s";
     baseIndex = 1;
     plugins = with pkgs; [
