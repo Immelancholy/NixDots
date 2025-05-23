@@ -8,7 +8,7 @@
         width = 23;
         height = 18;
         padding = {
-          top = 4;
+          top = 1;
           left = 0;
           right = 0;
         };
