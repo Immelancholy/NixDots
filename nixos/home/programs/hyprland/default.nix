@@ -42,7 +42,7 @@ in {
     (nrm.hyprgame.override {
       wallpaper = cfg.liveWallpaper.path;
       extraKills = ''
-        hyprctl dispatch signalwindow 'class:(mpd.ghostty.screen1),9'
+        tmux kill-session -t "Music"
           hyprctl dispatch signalwindow 'class:(neo.ghostty.screen1),9'
           hyprctl dispatch signalwindow 'class:(fastfetch.ghostty.screen1),9'
           hyprctl dispatch signalwindow 'class:(btop.ghostty.screen1),9'
