@@ -3,10 +3,10 @@
     enable = true;
     settings = {
       logo = {
-        type = "kitty";
+        type = "kitty-direct";
         source = ''$(find $HOME/Pictures/fastfetch_logos/ -name "*.jpg" -o -name "*.png" | shuf -n 1)'';
         width = 23;
-        # height = 18;
+        height = 18;
       };
       display = {
         separator = " : ";
