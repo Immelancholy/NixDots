@@ -1365,11 +1365,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1747968783,
-        "narHash": "sha256-QB8iNReNUvT9Eq3EoPxcLOFL3nwql6bfZLY+2tGWRp0=",
+        "lastModified": 1747971631,
+        "narHash": "sha256-hHgAETF3fMQHvgFIzip5yAm9Q7hPJdSX4cZde8aMDy4=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic-Modules",
-        "rev": "738675b450b8b4c8c6f3ea329fd492ea562d8341",
+        "rev": "18156ce7f09d7a3c27194452d653958ec72f118d",
         "type": "github"
       },
       "original": {
