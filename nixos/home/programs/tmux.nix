@@ -10,12 +10,8 @@
     plugins = with pkgs; [
       tmuxPlugins.sensible
       tmuxPlugins.pain-control
-      {
-        plugin = tmuxPlugins.cpu;
-        extraConfig = ''
-          set -agF status-right "#{E:@catppuccin_status_cpu}"
-        '';
-      }
+      tmuxPlugins.cpu
+      tmuxPlugins.tmux-powerline
     ];
     extraConfig = ''
       set -g default-command "/run/current-system/sw/bin/zsh"
