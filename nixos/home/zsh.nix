@@ -61,8 +61,6 @@
         }
         tmux_fetch () {
           image=$(find $HOME/Pictures/fastfetch_logos/ -name "*.jpg" -o -name "*.png" | shuf -n 1)
-          printf '%s\n' " "
-          printf '%s\n' " "
           chafa -f kitty -s 23x18 "$image" --align=top,left | fastfetch --raw - --logo-width 23 --logo-height 18
         }
 
