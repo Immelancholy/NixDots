@@ -61,7 +61,7 @@
         }
         tmux_fetch () {
           image=$(find $HOME/Pictures/fastfetch_logos/ -name "*.jpg" -o -name "*.png" | shuf -n 1)
-          chafa -f kitty -s 23x18 "$image" --align=top,left | fastfetch --raw - --logo-width 23 --logo-height 18
+          chafa -f kitty -s 23x18 "$image" --align=bottom,left | fastfetch --raw - --logo-width 23 --logo-height 18
         }
 
         check_tmux () {
@@ -69,6 +69,13 @@
             fetch_cmd=onefetch_img
           else
             fetch_cmd=tmux_fetch
+          fi
+        }
+        fastfetch () {
+          if [ -z $TMUX ]; then
+            fastfetch
+          else
+            tmux_fetch
           fi
         }
         check_tmux
