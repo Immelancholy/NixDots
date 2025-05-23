@@ -60,9 +60,10 @@
           fi
         }
         tmux_fetch () {
-           printf '%s\n' " "
-           printf '%s\n' " "
-           chafa -f kitty -s 23x18 "/home/mela/Pictures/fastfetch_logos/Azurenti.jpg" --align=top,left | fastfetch --raw - --logo-width 23 --logo-height 18
+          image=$(find $HOME/Pictures/fastfetch_logos/ -name "*.jpg" -o -name "*.png" | shuf -n 1)
+          printf '%s\n' " "
+          printf '%s\n' " "
+          chafa -f kitty -s 23x18 "$image" --align=top,left | fastfetch --raw - --logo-width 23 --logo-height 18
         }
 
         check_tmux () {
