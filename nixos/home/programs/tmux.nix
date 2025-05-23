@@ -11,7 +11,7 @@
       tmuxPlugins.sensible
       tmuxPlugins.pain-control
       tmuxPlugins.cpu
-      tmuxPlugins.tmux-powerline
+      tmuxPlugins.tmux-nova
     ];
     extraConfig = ''
       set -g default-command "/run/current-system/sw/bin/zsh"
