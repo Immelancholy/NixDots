@@ -4,7 +4,6 @@
     secureSocket = true;
     mouse = true;
     disableConfirmationPrompt = true;
-    terminal = "xterm-ghostty";
     prefix = "C-s";
     baseIndex = 1;
     plugins = with pkgs; [
@@ -19,7 +18,7 @@
     ];
     extraConfig = ''
       set -g default-command "/run/current-system/sw/bin/zsh"
-      set -as terminal-features ",xterm*:RGB"
+      set -as terminal-features ",xterm-ghostty:RGB"
       set -gq allow-passthrough on
       set -g update-environment 'KITTY_LISTEN_ON'
 
