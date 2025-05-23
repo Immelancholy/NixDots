@@ -4,6 +4,7 @@
     secureSocket = true;
     mouse = true;
     disableConfirmationPrompt = true;
+    terminal = "xterm-ghostty";
     prefix = "C-s";
     baseIndex = 1;
     plugins = with pkgs; [
