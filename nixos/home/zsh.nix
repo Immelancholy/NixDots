@@ -67,15 +67,10 @@
         check_tmux () {
           if [ -z $TMUX ]; then
             fetch_cmd=onefetch_img
+            alias fastfetch="fastfetch"
           else
             fetch_cmd=tmux_fetch
-          fi
-        }
-        fastfetch () {
-          if [ -z $TMUX ]; then
-            fastfetch
-          else
-            tmux_fetch
+            alias fastfetch="tmux_fetch"
           fi
         }
         check_tmux
