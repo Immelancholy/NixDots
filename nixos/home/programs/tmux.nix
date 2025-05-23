@@ -18,7 +18,7 @@
     ];
     extraConfig = ''
       set -g default-command "/run/current-system/sw/bin/zsh"
-      set-option -sa terminal-overrides ",xterm*:Tc"
+      set -as terminal-features ",xterm*:RGB"
       set -gq allow-passthrough on
       set -g update-environment 'KITTY_LISTEN_ON'
 
