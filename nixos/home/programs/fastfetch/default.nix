@@ -3,7 +3,7 @@
     enable = true;
     settings = {
       logo = {
-        type = "kitty-direct";
+        type = "kitty";
         source = ''$(find $HOME/Pictures/fastfetch_logos/ -name "*.jpg" -o -name "*.png" | shuf -n 1)'';
         width = 23;
         height = 18;
