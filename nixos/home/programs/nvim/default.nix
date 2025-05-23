@@ -429,7 +429,6 @@
       bufdelete.enable = true;
       treesitter = {
         enable = true;
-        folding = true;
         # grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
         #   bash
         #   json
