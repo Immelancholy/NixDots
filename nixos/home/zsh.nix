@@ -69,7 +69,7 @@
           if [ "$current_repo" ] && \
             [ "$current_repo" != "$last_repo" ]; then
             clear
-            fetch_cmd
+            $fetch_cmd
             last_repo=$current_repo
             INIT=0
             GIT=1
@@ -104,7 +104,7 @@
         switch () {
           builtin cd "$FLAKE_PATH" || return
           clear
-          fetch_cmd
+          $fetch_cmd
           git add .
           git commit -m "switch"
           sudo nixos-rebuild switch --flake .
@@ -116,7 +116,7 @@
         boot () {
           builtin cd "$FLAKE_PATH" || return
           clear
-          fetch_cmd
+          $fetch_cmd
           git add .
           git commit -m "switch"
           sudo nixos-rebuild boot --flake .
