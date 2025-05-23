@@ -61,9 +61,9 @@
         }
         check_tmux () {
           if [ -z $TMUX ]; then
-            fetch_cmd=fastfetch
-          else
             fetch_cmd=onefetch_img
+          else
+            fetch_cmd=fastfetch
           fi
         }
         check_tmux
