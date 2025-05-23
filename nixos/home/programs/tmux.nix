@@ -11,7 +11,22 @@
       tmuxPlugins.sensible
       tmuxPlugins.pain-control
       tmuxPlugins.cpu
-      tmuxPlugins.tmux-nova
+      {
+        plugin = tmuxPlugins.tmux-nova;
+        extraConfig = ''
+          set -g @nova-nerdfonts true
+          set -g @nova-nerdfonts-left 
+          set -g @nova-nerdfonts-right 
+
+          set -g @nova-segment-whoami "#(whoami)@#h"
+
+          set -g @nova-pane "#I#{?pane_in_mode,  #{pane_mode},}  #W"
+
+          set -g @nova-rows 0
+          set -g @nova-segments-0-left "mode"
+          set -g @nova-segments-0-right "whoami"
+        '';
+      }
     ];
     extraConfig = ''
       set -g default-command "/run/current-system/sw/bin/zsh"
