@@ -48,6 +48,7 @@
       */
       ''
         bindkey -e
+        [ -z "$TMUX" ] && export TERM=tmux-256color
 
         last_repo=
         INIT=1
