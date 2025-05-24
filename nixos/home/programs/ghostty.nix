@@ -33,8 +33,8 @@
         "ctrl+s>8=goto_tab:8"
         "ctrl+s>9=goto_tab:9"
 
-        "ctrl+s>'-'=new_split:down"
-        "ctrl+s>'|'=new_split:right"
+        "ctrl+s>-=new_split:down"
+        "ctrl+s>|=new_split:right"
         "ctrl+s>h=goto_split:left"
         "ctrl+s>j=goto_split:bottom"
         "ctrl+s>k=goto_split:top"
