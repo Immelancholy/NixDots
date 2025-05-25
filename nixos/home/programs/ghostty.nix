@@ -5,7 +5,7 @@
 }: {
   programs.ghostty = {
     enable = true;
-    package = inputs.ghostty.packages.${pkgs.stdenv.hostPlatform.system}.default;
+    # package = inputs.ghostty.packages.${pkgs.stdenv.hostPlatform.system}.default;
     installVimSyntax = true;
     settings = {
       font-synthetic-style = false;
@@ -20,6 +20,7 @@
       window-padding-color = "background";
       title = "ghostty";
       alpha-blending = "linear-corrected";
+      bold-is-bright = true;
     };
   };
 }
