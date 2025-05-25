@@ -16,6 +16,7 @@
       window-padding-y = 5;
       background-opacity = 0.8;
       desktop-notifications = true;
+      gtk-single-instance = false;
       window-padding-color = "background";
       title = "ghostty";
       alpha-blending = "linear-corrected";
