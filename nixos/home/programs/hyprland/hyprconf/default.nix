@@ -40,7 +40,7 @@ in {
       ecosystem = {
         enforce_permissions = true;
       };
-      permission =
+      settings.permission =
         if cfg.usingFlake
         then
           [
