@@ -38,7 +38,7 @@ in {
         hide_on_key_press = true;
       };
       ecosystem = {
-        enforce_permissions = true;
+        # enforce_permissions = true;
       };
       permission =
         if cfg.usingFlake
