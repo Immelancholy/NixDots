@@ -2,8 +2,19 @@
   osConfig,
   pkgs,
   lib,
+  inputs,
+  config,
   ...
-}: {
+}: let
+  flake = [
+    "${inputs.hyprland-plugins.packages.${pkgs.system}.csgo-vulkan-fix}/lib/libcsgo-vulkan-fix.so, plugin, allow"
+    "${inputs.hyprland-plugins.packages.${pkgs.system}.xtra-dispatchers}/lib/libxtra-dispatchers.so, plugin, allow"
+  ];
+  noFlake = [
+    "${pkgs.hyprlandPlugins.csgo-vulkan-fix}/lib/libcsgo-vulkan-fix.so, plugin, allow"
+  ];
+  cfg = config.wayland.windowManager.hyprland;
+in {
   wayland.windowManager.hyprland = {
     sourceFirst = true;
     settings = {
@@ -29,10 +40,20 @@
       ecosystem = {
         enforce_permissions = true;
       };
-      permission = [
-        "${osConfig.programs.hyprland.portalPackage}/libexec/.xdg-desktop-portal-hyprland-wrapped, screencopy, allow"
-        "${lib.getExe pkgs.grim}, screencopy, allow"
-      ];
+      permission =
+        if cfg.usingFlake
+        then
+          [
+            "${osConfig.programs.hyprland.portalPackage}/libexec/.xdg-desktop-portal-hyprland-wrapped, screencopy, allow"
+            "${lib.getExe pkgs.grim}, screencopy, allow"
+          ]
+          ++ flake
+        else
+          [
+            "${osConfig.programs.hyprland.portalPackage}/libexec/.xdg-desktop-portal-hyprland-wrapped, screencopy, allow"
+            "${lib.getExe pkgs.grim}, screencopy, allow"
+          ]
+          ++ noFlake;
     };
   };
   imports = [
