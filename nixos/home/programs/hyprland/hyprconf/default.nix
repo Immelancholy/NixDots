@@ -1,4 +1,9 @@
 {
+  osConfig,
+  pkgs,
+  lib,
+  ...
+}: {
   wayland.windowManager.hyprland = {
     sourceFirst = true;
     settings = {
@@ -21,6 +26,13 @@
       cursor = {
         hide_on_key_press = true;
       };
+      ecosystem = {
+        enforce_permissions = true;
+      };
+      permission = [
+        "${osConfig.programs.hyprland.portalPackage}/libexec/.xdg-desktop-portal-hyprland-wrapped, screencopy, allow"
+        "${lib.getExe pkgs.grim}, screencopy, allow"
+      ];
     };
   };
   imports = [
