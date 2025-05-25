@@ -74,7 +74,7 @@
     mpc
     ffmpegthumbnailer
     libcamera
-    (systemd-restarts.overrid {
+    (systemd-restarts.override {
       restarts = ''
         systemctl restart --user xdg-desktop-portal
           systemctl restart --user dunst
