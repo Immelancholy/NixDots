@@ -112,31 +112,21 @@
         }
 
         switch-remote () {
-          if [ -z "$2" ]; then
-            buildHost="localhost"
-          else
-            buildHost="$2"
-          fi
           builtin cd "$FLAKE_PATH" || return
           clear
           $fetch_cmd
           git add .
-          nixos-rebuild switch --flake . --use-remote-sudo --target-host "$1" --build-host "$buildHost"
+          nixos-rebuild switch --flake . --use-remote-sudo --target-host "$@"
           git add .
           builtin cd - || return
         }
 
         boot-remote () {
-          if [ -z "$2" ]; then
-            buildHost="localhost"
-          else
-            buildHost="$2"
-          fi
           builtin cd "$FLAKE_PATH" || return
           clear
           $fetch_cmd
           git add .
-          nixos-rebuild boot --flake . --use-remote-sudo --target-host "$1" --build-host "$buildHost"
+          nixos-rebuild boot --flake . --use-remote-sudo --target-host "$@"
           git add .
           builtin cd - || return
         }
