@@ -111,15 +111,43 @@
           check_for_repo
         }
 
+        switch-remote () {
+          if [ -z "$2" ]; then
+            buildHost="localhost"
+          else
+            buildHost="$2"
+          fi
+          builtin cd "$FLAKE_PATH" || return
+          clear
+          $fetch_cmd
+          git add .
+          nixos-rebuild switch --flake . --use-remote-sudo --target-host "$1" --build-host "$buildHost"
+          git add .
+          builtin cd - || return
+        }
+
+        boot-remote () {
+          if [ -z "$2" ]; then
+            buildHost="localhost"
+          else
+            buildHost="$2"
+          fi
+          builtin cd "$FLAKE_PATH" || return
+          clear
+          $fetch_cmd
+          git add .
+          nixos-rebuild boot --flake . --use-remote-sudo --target-host "$1" --build-host "$buildHost"
+          git add .
+          builtin cd - || return
+        }
+
         switch () {
           builtin cd "$FLAKE_PATH" || return
           clear
           $fetch_cmd
           git add .
-          git commit -m "switch"
           sudo nixos-rebuild switch --flake .
           git add .
-          git commit -m "Update Flake Lock"
           builtin cd - || return
         }
 
@@ -128,10 +156,8 @@
           clear
           $fetch_cmd
           git add .
-          git commit -m "switch"
           sudo nixos-rebuild boot --flake .
           git add .
-          git commit -m "Update Flake Lock"
           builtin cd - || return
         }
 
