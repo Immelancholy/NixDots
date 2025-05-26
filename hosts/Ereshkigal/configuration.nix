@@ -2,6 +2,7 @@
   inputs,
   config,
   pkgs,
+  lib,
   ...
 }: {
   nix-relic.users.users = {
@@ -19,6 +20,16 @@
       extraGroups = ["tty"];
     };
   };
+
+  home-manager.sharedModules = [
+    {
+      xdg.configFile."uwsm/env-hyprland".text = lib.mkForce ''
+        export HYPRCURSOR_THEME="${config.stylix.cursor.name}"
+        export HYPRCURSOR_SIZE=${builtins.toString config.stylix.cursor.size}
+        export AQ_DRM_DEVICES=/dev/dri/card0:/dev/dri/card1
+      '';
+    }
+  ];
 
   environment.systemPackages = [
     pkgs.sshpass

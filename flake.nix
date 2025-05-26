@@ -148,9 +148,6 @@
           ./nixos/system
           ./hosts/Enlil
           ./hosts/hostHome.nix
-          # {
-          #   stylix.enableReleaseChecks = false;
-          # }
 
           home-manager.nixosModules.home-manager
           {
@@ -165,9 +162,6 @@
                 inputs.spicetify-nix.homeManagerModules.default
                 inputs.artis.homeManagerModules.default
                 ./nixos/home
-                # {
-                #   stylix.enableReleaseChecks = false;
-                # }
               ];
             };
           }
@@ -186,9 +180,6 @@
           ./nixos/system
           ./hosts/Ereshkigal
           ./hosts/hostHome.nix
-          {
-            stylix.enableReleaseChecks = false;
-          }
 
           home-manager.nixosModules.home-manager
           {
@@ -204,9 +195,6 @@
                 inputs.nix-flatpak.homeManagerModules.nix-flatpak
                 inputs.artis.homeManagerModules.default
                 ./nixos/home
-                {
-                  stylix.enableReleaseChecks = false;
-                }
               ];
             };
           }
