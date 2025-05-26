@@ -159,9 +159,9 @@
           builtin cd - || return
         }
 
-        nixp () {
+        nixgit () {
           builtin cd "$FLAKE_PATH" || return
-          git push -u origin main
+          lazygit
           builtin cd - || return
         }
 
