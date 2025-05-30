@@ -79,6 +79,7 @@
         systemctl restart --user xdg-desktop-portal
           systemctl restart --user dunst
           systemctl restart --user nm-applet
+          systemctl restart --user solaar
           sleep 10
           systemctl restart --user remmina
           exit
