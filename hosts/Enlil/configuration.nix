@@ -11,6 +11,7 @@
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBLCQZSKxQcuHRUbEN7AK1lSf0VmXzTTYJA4BTs0pIgT Enlil"
       ];
       extraGroups = ["tty"];
+      initialPassword = "password";
     };
   };
 
@@ -145,5 +146,5 @@
     keyMap = "uk";
   };
   time.timeZone = "Europe/London";
-  boot.secureBoot.enable = true;
+  boot.secureBoot.enable = false;
 }
