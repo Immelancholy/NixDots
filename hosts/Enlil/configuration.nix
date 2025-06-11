@@ -20,6 +20,7 @@
     sshpass
     # anifetch
     nix-prefetch
+    heroic
   ];
 
   networking = {
