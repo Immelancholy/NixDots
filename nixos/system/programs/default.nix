@@ -136,8 +136,6 @@
     dxvk_2
     nv-codec-headers-12
     w3m-full
-    libsecret
-    gcr_4
     gcc
     sqlite
     lua53Packages.sqlite
