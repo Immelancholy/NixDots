@@ -49,16 +49,6 @@
     "mela"
   ];
 
-  security.pam = {
-    services.sudo.rssh = true;
-    rssh = {
-      enable = true;
-      settings = {
-        auth_key_file = "/etc/ssh/authorized_keys.d/$user";
-      };
-    };
-  };
-
   stylix = {
     # base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
     polarity = "dark";
