@@ -1,0 +1,54 @@
+<!DOCTYPE patchbay>
+<patchbay name="Default" version="0.9.3">
+ <items>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Music Player Daemon/mpd.Pipewire Sound Server" port="mpd.Pipewire Sound Server:output_FL"/>
+   <input node="Easy Effects Sink" port="Easy Effects Sink:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Easy Effects Source" port="Easy Effects Source:capture_FR"/>
+   <input node="Commes Mic In" port="Commes Mic In:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Easy Effects Source" port="Easy Effects Source:capture_FR"/>
+   <input node="Desktop Mic In" port="Desktop Mic In:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Audient iD4 Pro" port="Audient iD4:capture_AUX0"/>
+   <input node="Compressor" port="compressor:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Desktop Output" port="Desktop Output:monitor_FR"/>
+   <input node="Audient iD4 Pro" port="Audient iD4:playback_AUX1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Audient iD4 Pro" port="Audient iD4:capture_AUX0"/>
+   <input node="Compressor" port="compressor:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Desktop Output" port="Desktop Output:monitor_FL"/>
+   <input node="Audient iD4 Pro" port="Audient iD4:playback_AUX0"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Commes Output" port="Commes Output:monitor_FR"/>
+   <input node="Audient iD4 Pro" port="Audient iD4:playback_AUX1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Easy Effects Source" port="Easy Effects Source:capture_FL"/>
+   <input node="Commes Mic In" port="Commes Mic In:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Commes Output" port="Commes Output:monitor_FL"/>
+   <input node="Audient iD4 Pro" port="Audient iD4:playback_AUX0"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Easy Effects Source" port="Easy Effects Source:capture_FL"/>
+   <input node="Desktop Mic In" port="Desktop Mic In:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Music Player Daemon/mpd.Pipewire Sound Server" port="mpd.Pipewire Sound Server:output_FR"/>
+   <input node="Easy Effects Sink" port="Easy Effects Sink:playback_FR"/>
+  </item>
+ </items>
+</patchbay>
+
