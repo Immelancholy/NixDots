@@ -2,7 +2,7 @@
   programs.vesktop = {
     enable = true;
     settings = {
-      discordBranch = "canary";
+      discordBranch = "stable";
       minimizeToTray = true;
       arRPC = true;
       spellCheckLanguages = [
