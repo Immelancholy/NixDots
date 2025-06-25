@@ -1326,6 +1326,27 @@
         "type": "github"
       }
     },
+    "llm-git-commit": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1750894742,
+        "narHash": "sha256-NrhxIICG5etzV90tldYWbtc67hmoysMsQT8fJpt0zMY=",
+        "owner": "Immelancholy",
+        "repo": "llm-git-commit",
+        "rev": "295b144edea799b5565e964149699aeddaa6c69a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Immelancholy",
+        "ref": "nix-flake",
+        "repo": "llm-git-commit",
+        "type": "github"
+      }
+    },
     "neovim-nightly-overlay": {
       "inputs": {
         "flake-compat": "flake-compat_4",
@@ -1758,6 +1779,7 @@
         "hyprland": "hyprland",
         "hyprland-plugins": "hyprland-plugins",
         "lanzaboote": "lanzaboote",
+        "llm-git-commit": "llm-git-commit",
         "neovim-nightly-overlay": "neovim-nightly-overlay",
         "nix-flatpak": "nix-flatpak",
         "nix-relic-modules": "nix-relic-modules",

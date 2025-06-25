@@ -3,7 +3,17 @@
   inputs,
   config,
   ...
-}: {
+}: let
+  llm-git-commit = inputs.llm-git-commit.packages.${pkgs.system}.default;
+  pyWithLlm = (
+    pkgs.python3.withPackages (ps: [ps.llm ps.llm-mistral llm-git-commit ps.llm-openrouter])
+  );
+  llm-with-plugins = (
+    pkgs.writeShellScriptBin "llm" ''
+      exec ${pyWithLlm}/bin/llm "$@"
+    ''
+  );
+in {
   imports = [
     ./hyprland.nix
     ./pipewire.nix
@@ -66,6 +76,7 @@
     wantedBy = ["graphical-session.target"];
   };
   environment.systemPackages = with pkgs; [
+    llm-with-plugins
     chafa
     onefetch
     neo

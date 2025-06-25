@@ -4,6 +4,10 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.05";
+    llm-git-commit = {
+      url = "github:Immelancholy/llm-git-commit/nix-flake";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nix-relic-modules = {
       url = "github:Immelancholy/Nix-Relic-Modules";
       inputs.nixpkgs.follows = "nixpkgs";
