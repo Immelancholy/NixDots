@@ -77,6 +77,7 @@ in {
   };
   environment.systemPackages = with pkgs; [
     llm-with-plugins
+    nix-output-monitor
     chafa
     onefetch
     neo

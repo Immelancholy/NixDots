@@ -10,10 +10,60 @@
       openssh.authorizedKeys.keys = [
         "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBLCQZSKxQcuHRUbEN7AK1lSf0VmXzTTYJA4BTs0pIgT Enlil"
       ];
-      extraGroups = ["tty"];
+      extraGroups = ["tty" "docker"];
       initialPassword = "password";
     };
   };
+
+  virtualisation.docker = {
+    enable = true;
+    storageDriver = "btrfs";
+  };
+
+  # virtualisation.lxd = {
+  #   enable = true;
+  #   recommendedSysctlSettings = true;
+  #   agent.enable = true;
+  #   preseed = {
+  #     networks = [
+  #       {
+  #         name = "lxdbr0";
+  #         type = "bridge";
+  #         config = {
+  #           "ipv4.address" = "auto";
+  #           "ipv4.nat" = "true";
+  #         };
+  #       }
+  #     ];
+  #     profiles = [
+  #       {
+  #         name = "default";
+  #         devices = {
+  #           eth0 = {
+  #             name = "eth0";
+  #             network = "lxdbr0";
+  #             type = "nic";
+  #           };
+  #           root = {
+  #             path = "/";
+  #             pool = "default";
+  #             size = "35GiB";
+  #             type = "disk";
+  #           };
+  #         };
+  #       }
+  #     ];
+  #     storage_pools = [
+  #       {
+  #         name = "default";
+  #         driver = "dir";
+  #         config = {
+  #           source = "/var/lib/lxd/storage-pools/default";
+  #         };
+  #       }
+  #     ];
+  #   };
+  # };
 
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
   environment.systemPackages = with pkgs; [
