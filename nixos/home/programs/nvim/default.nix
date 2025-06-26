@@ -809,6 +809,11 @@
         key = "<leader>b5";
         mode = ["n"];
       }
+      {
+        action = "<cmd>terminal llm git-commit<cr>";
+        key = "<leader>gc";
+        mode = ["n"];
+      }
     ];
     clipboard = {
       register = "unnamedplus";
@@ -838,6 +843,20 @@
         event = [
           "BufEnter"
         ];
+      }
+      {
+        event = [
+          "TermOpen"
+          "BufEnter"
+        ];
+        pattern = [
+          "*"
+        ];
+        callback = {
+          __raw = ''
+            function() if vim.opt.buftype:get() == "terminal" then vim.cmd(":startinsert") end end
+          '';
+        };
       }
     ];
   };

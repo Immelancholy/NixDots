@@ -1,4 +1,3 @@
-# flake.nix
 {
   description = "My NixOS and Home Manager config.";
   inputs = {
