@@ -18,7 +18,7 @@
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
   environment.systemPackages = with pkgs; [
     sshpass
-    # anifetch
+    anifetch
     nix-prefetch
     heroic
   ];

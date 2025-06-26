@@ -21,7 +21,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     anifetch = {
-      url = "github:Immelancholy/anifetch";
+      url = "github:Notenlish/anifetch";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     artis = {
