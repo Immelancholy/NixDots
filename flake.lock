@@ -1333,16 +1333,15 @@
         ]
       },
       "locked": {
-        "lastModified": 1750894742,
-        "narHash": "sha256-NrhxIICG5etzV90tldYWbtc67hmoysMsQT8fJpt0zMY=",
-        "owner": "Immelancholy",
+        "lastModified": 1750896964,
+        "narHash": "sha256-KR8PTsKTRqOSWV62KmugelxiwugUtFlBo4cJcusKRkU=",
+        "owner": "ShamanicArts",
         "repo": "llm-git-commit",
-        "rev": "295b144edea799b5565e964149699aeddaa6c69a",
+        "rev": "2fba5b353f137e2c02abb2990c038e92d1b112bf",
         "type": "github"
       },
       "original": {
-        "owner": "Immelancholy",
-        "ref": "nix-flake",
+        "owner": "ShamanicArts",
         "repo": "llm-git-commit",
         "type": "github"
       }
