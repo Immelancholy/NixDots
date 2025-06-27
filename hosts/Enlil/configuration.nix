@@ -3,7 +3,17 @@
   config,
   pkgs,
   ...
-}: {
+}: let
+  llm-git-commit = inputs.llm-git-commit.packages.${pkgs.system}.default;
+  pyWithLlm = (
+    pkgs.python3.withPackages (ps: [ps.llm ps.llm-mistral llm-git-commit ps.llm-openrouter])
+  );
+  llm-with-plugins = (
+    pkgs.writeShellScriptBin "llm" ''
+      exec ${pyWithLlm}/bin/llm "$@"
+    ''
+  );
+in {
   nix-relic.users.users = {
     mela = {
       isAdmin = true;
@@ -67,6 +77,7 @@
 
   nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
   environment.systemPackages = with pkgs; [
+    llm-with-plugins
     sshpass
     anifetch
     nix-prefetch
