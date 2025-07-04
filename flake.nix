@@ -4,7 +4,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixpkgs-stable.url = "github:nixos/nixpkgs/nixos-25.05";
     llm-git-commit = {
-      url = "github:Immelancholy/llm-git-commit/add-master-branch-option-to-flake";
+      url = "github:ShamanicArts/llm-git-commit";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     nix-relic-modules = {
