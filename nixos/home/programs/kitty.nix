@@ -5,11 +5,12 @@ in {
     enable = true;
     shellIntegration.enableZshIntegration = true;
     settings = {
-      font_family = "${config.stylix.fonts.monospace.name}";
-      bold_font = "${config.stylix.fonts.monospace.name} Bold";
-      italic_font = "${config.stylix.fonts.monospace.name} Italic";
-      bold_italic_font = "${config.stylix.fonts.monospace.name} Bold Italic";
-      font_size = config.stylix.fonts.sizes.terminal;
+      # bold_font = "CaskaydiaCoveNFM-SemiBold";
+      # italic_font = "CaskaydiaCoveNFM-Italic";
+      # bold_italic_font = "CaskaydiaCoveNFM-SemiBoldItalic";
+      bold_font = "auto";
+      italic_font = "auto";
+      bold_italic_font = "auto";
       window_padding_width = 5;
       allow_remote_control = true;
       listen_on = "unix:/tmp/mykitty-${user}";
