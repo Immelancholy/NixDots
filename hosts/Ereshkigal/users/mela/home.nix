@@ -106,6 +106,7 @@
         enable = true;
         settings = {
           ui.enable = false;
+          legacy_commands = false;
           workspaces = [
             {
               name = "Obsidian-Vault";
