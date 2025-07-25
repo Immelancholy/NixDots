@@ -7,6 +7,10 @@
       url = "github:ShamanicArts/llm-git-commit";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    lsfg-vk-flake = {
+      url = "github:pabloaul/lsfg-vk-flake/main";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     nix-relic-modules = {
       url = "github:Immelancholy/Nix-Relic-Modules";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -103,9 +107,6 @@
       url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    prismlauncher = {
-      url = "github:PrismLauncher/PrismLauncher";
-    };
     nix-flatpak.url = "github:gmodena/nix-flatpak/?ref=latest";
     stylix.url = "github:danth/stylix";
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
@@ -152,6 +153,7 @@
           inputs.lanzaboote.nixosModules.lanzaboote
           inputs.solaar.nixosModules.default
           inputs.catppuccin.nixosModules.catppuccin
+          inputs.lsfg-vk-flake.nixosModules.default
           ./nixos/system
           ./hosts/Enlil
           ./hosts/hostHome.nix

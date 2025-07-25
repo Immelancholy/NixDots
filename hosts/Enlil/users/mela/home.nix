@@ -113,7 +113,7 @@
   home.packages = with pkgs; [
     (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {extensions = ["rust-src" "rust-analyzer"];}))
     reaper
-    inputs.prismlauncher.packages.${pkgs.system}.prismlauncher
+    prismlauncher
     inputs.fastanime.packages.${pkgs.system}.default
     temurin-bin
     bespokesynth

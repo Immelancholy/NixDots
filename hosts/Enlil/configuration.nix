@@ -30,6 +30,8 @@ in {
     storageDriver = "btrfs";
   };
 
+  services.lsfg-vk.enable = true;
+
   # virtualisation.lxd = {
   #   enable = true;
   #   recommendedSysctlSettings = true;
