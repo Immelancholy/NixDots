@@ -1172,6 +1172,26 @@
         "type": "github"
       }
     },
+    "inori": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1752568902,
+        "narHash": "sha256-jp6tnOrOPugRd2RI0d2LJeTiYh8hBkoNNRG4QV06sNc=",
+        "owner": "eshrh",
+        "repo": "inori",
+        "rev": "071314c46fe1f21623f8eb1e495ab45fd914a29a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "eshrh",
+        "repo": "inori",
+        "type": "github"
+      }
+    },
     "ixx": {
       "inputs": {
         "flake-utils": [
@@ -1644,6 +1664,7 @@
         "hy3": "hy3",
         "hyprland": "hyprland",
         "hyprland-plugins": "hyprland-plugins",
+        "inori": "inori",
         "lanzaboote": "lanzaboote",
         "llm-git-commit": "llm-git-commit",
         "lsfg-vk-flake": "lsfg-vk-flake",
