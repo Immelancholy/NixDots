@@ -2,7 +2,7 @@
   programs.vesktop = {
     enable = true;
     settings = {
-      discordBranch = "canary";
+      discordBranch = "stable";
       minimizeToTray = true;
       arRPC = true;
       spellCheckLanguages = [
@@ -184,6 +184,7 @@
                   "1394447646327963648"
                   "1049029425699758141"
                   "1381752843186339973"
+                  "1216323127592751114"
                 ];
               }
             ];
