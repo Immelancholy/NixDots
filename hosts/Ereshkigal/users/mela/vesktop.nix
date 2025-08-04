@@ -136,17 +136,6 @@
           userBasedCategoryList = {
             "459733044383842304" = [
               {
-                id = "bt86f0qkj1";
-                name = "Relic <3";
-                collapsed = false;
-                color = 15277667;
-                channels = [
-                  "1229552350285398036"
-                  "1311503458507030580"
-                  "1311504508760883261"
-                ];
-              }
-              {
                 id = "9e8eg7k1rze";
                 name = "Fwiends";
                 color = 15844367;
