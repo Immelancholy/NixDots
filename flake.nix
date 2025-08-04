@@ -144,7 +144,7 @@
 
     overlays = import ./overlays {inherit inputs;};
 
-    # packages = forAllSystems (system: import ./pkgs nixpkgs.legacyPackages.${system});
+    packages = forAllSystems (system: import ./pkgs nixpkgs.legacyPackages.${system});
 
     nixosConfigurations = {
       Enlil = nixpkgs.lib.nixosSystem {
