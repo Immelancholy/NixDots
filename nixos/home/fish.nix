@@ -12,9 +12,14 @@
       gc = "nix-collect-garbage -d && sudo nix-collect-garbage -d";
       nv = "nvim";
     };
-    interactiveShellInit = ''
-      set -U fish_greeting
-    '';
+    interactiveShellInit =
+      /*
+      fish
+      */
+      ''
+        set -U fish_greeting
+        function fish_mode_prompt; end
+      '';
     shellInitLast =
       /*
       fish
