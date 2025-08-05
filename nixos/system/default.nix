@@ -80,6 +80,7 @@
   environment = {
     shells = with pkgs; [
       zsh
+      fish
     ];
   };
 
@@ -105,7 +106,7 @@
   };
   networking.networkmanager.enable = true;
 
-  users.defaultUserShell = pkgs.zsh;
+  users.defaultUserShell = pkgs.fish;
 
   xdg.portal = {
     xdgOpenUsePortal = true;
