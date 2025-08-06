@@ -330,8 +330,6 @@
 
         function switch-remote -w='switch-remote'
           cd "$FLAKE_PATH"
-          clear
-          $fetch_cmd
           git add .
           nixos-rebuild switch --flake . --sudo --ask-sudo-password --target-host $argv &| nom
           git add .
@@ -340,8 +338,6 @@
 
         function boot-remote -w='boot-remote'
           cd "$FLAKE_PATH"
-          clear
-          $fetch_cmd
           git add .
           nixos-rebuild boot --flake . --sudo --ask-sudo-password --target-host $argv &| nom
           git add .
@@ -350,8 +346,6 @@
 
         function switch-build -w='switch-build'
           cd "$FLAKE_PATH"
-          clear
-          $fetch_cmd
           git add .
           sudo nixos-rebuild switch --flake . &| nom
           git add .
@@ -360,8 +354,6 @@
 
         function boot -w='boot'
           cd "$FLAKE_PATH"
-          clear
-          $fetch_cmd
           git add .
           sudo nixos-rebuild boot --flake . &| nom
           git add .
@@ -370,8 +362,6 @@
 
         function update -w='update'
           cd "$FLAKE_PATH"
-          clear
-          $fetch_cmd
           nix flake update --flake . --commit-lock-file
           builtin cd $dirprev || return
         end
