@@ -730,6 +730,7 @@
       shiftwidth = 0;
       number = true;
       relativenumber = true;
+      shell = "/run/current-system/sw/bin/zsh";
     };
     extraPlugins = with pkgs.vimPlugins; [
       plenary-nvim
