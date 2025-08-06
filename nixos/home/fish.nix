@@ -58,7 +58,8 @@
             set -gx last_repo $current_repo
             set -gx INIT 0
             set -gx GIT 1
-          else if [ $INIT = 1 ]
+          else if [ $INIT -eq 1 ]
+            clear
             pokeget fennekin --hide-name
             set -gx INIT 0
             set -gx GIT 0
