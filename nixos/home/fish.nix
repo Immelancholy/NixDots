@@ -27,8 +27,8 @@
       ''
         fish_vi_key_bindings
 
-        set -gx INIT 1
         set -gx last_repo
+        set -gx INIT 1
 
         function onefetch_img
           set image "$(find ~/Pictures/fastfetch_logos/ -name "*.jpg" -o -name "*.png" 2> /dev/null | shuf -n1)"
@@ -60,8 +60,8 @@
             set -gx GIT 1
           else if [ $INIT = 1 ]
             pokeget fennekin --hide-name
-            set -gx GIT 0
             set -gx INIT 0
+            set -gx GIT 0
           else if [ ! "$current_repo" ] && \
             [ $GIT = 1 ]
             clear
