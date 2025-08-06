@@ -374,8 +374,6 @@
 
         function nix-llm-git -w='nix-llm-git'
           cd "$FLAKE_PATH"
-          clear
-          $fetch_cmd
           llm git-commit
           prevd
         end
