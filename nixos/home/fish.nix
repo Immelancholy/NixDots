@@ -232,6 +232,14 @@
           prevd || return
         end
 
+        function nix-llm-git -w='nix-llm-git'
+          builtin cd "$FLAKE_PATH" || return
+          clear
+          $fetch_cmd
+          llm git-commit
+          prevd || return
+        end
+
         if [ "$class" = "fastfetch" ]
           fastfetch --logo "$HOME"/Pictures/fastfetch_logos/Nakari.jpg
         else
