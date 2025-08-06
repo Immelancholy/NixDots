@@ -1,4 +1,4 @@
-{
+{pkgs, ...}: {
   programs.fish = {
     enable = true;
     generateCompletions = true;
@@ -12,6 +12,16 @@
       gc = "nix-collect-garbage -d && sudo nix-collect-garbage -d";
       nv = "nvim";
     };
+    plugins = [
+      {
+        name = "autopair";
+        src = pkgs.fishPlugins.autopair.src;
+      }
+      {
+        name = "fzf";
+        src = pkgs.fishPlugins.fzf-fish.src;
+      }
+    ];
     interactiveShellInit =
       /*
       fish
@@ -325,7 +335,7 @@
           git add .
           nixos-rebuild switch --flake . --sudo --ask-sudo-password --target-host $argv &| nom
           git add .
-          prevd
+          builtin cd $dirprev || return
         end
 
         function boot-remote -w='boot-remote'
@@ -335,7 +345,7 @@
           git add .
           nixos-rebuild boot --flake . --sudo --ask-sudo-password --target-host $argv &| nom
           git add .
-          prevd
+          builtin cd $dirprev || return
         end
 
         function switch-build -w='switch-build'
@@ -345,7 +355,7 @@
           git add .
           sudo nixos-rebuild switch --flake . &| nom
           git add .
-          prevd
+          builtin cd $dirprev || return
         end
 
         function boot -w='boot'
@@ -355,7 +365,7 @@
           git add .
           sudo nixos-rebuild boot --flake . &| nom
           git add .
-          prevd
+          builtin cd $dirprev || return
         end
 
         function update -w='update'
@@ -363,7 +373,7 @@
           clear
           $fetch_cmd
           nix flake update --flake . --commit-lock-file
-          prevd
+          builtin cd $dirprev || return
         end
 
         function nixgit -w='nixgit'
