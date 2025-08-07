@@ -6,6 +6,7 @@
   imports = [
     ./vesktop.nix
     ../../../../nixos/home/fetch_images.nix
+    ./fastanime.nix
   ];
 
   programs.ssh = {
