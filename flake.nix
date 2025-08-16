@@ -17,7 +17,7 @@
     };
     fastanime = {
       url = "github:Benexl/FastAnime";
-      inputs.nixpkgs.follows = "nixpkgs";
+      # inputs.nixpkgs.follows = "nixpkgs";
     };
     ghostty = {
       url = "github:ghostty-org/ghostty";
@@ -171,7 +171,7 @@
               sharedModules = [
                 nix-relic-modules.homeManagerModules.default
                 inputs.catppuccin.homeModules.catppuccin
-                inputs.nixvim.homeManagerModules.nixvim
+                inputs.nixvim.homeModules.nixvim
                 inputs.spicetify-nix.homeManagerModules.default
                 inputs.artis.homeManagerModules.default
                 ./nixos/home
@@ -203,7 +203,7 @@
               sharedModules = [
                 nix-relic-modules.homeManagerModules.default
                 inputs.catppuccin.homeModules.catppuccin
-                inputs.nixvim.homeManagerModules.nixvim
+                inputs.nixvim.homeModules.nixvim
                 inputs.spicetify-nix.homeManagerModules.default
                 inputs.nix-flatpak.homeManagerModules.nix-flatpak
                 inputs.artis.homeManagerModules.default
