@@ -31,7 +31,7 @@
     header_color = 95,135,175
 
     # the image renderer to use [icat/chafa]
-    image_renderer = chafa
+    image_renderer = icat
 
     # To be passed to fzf
     # Be sure to indent
@@ -96,7 +96,7 @@
     # If you don't care about image and text previews, it doesn’t matter
     # though it’s awesome
     # Try it, and you will see
-    preview = True
+    preview = full
 
     # Whether to show images in the preview [True/False]
     # Windows users: just switch to Linux 😄
@@ -243,7 +243,7 @@
     # 'top' can also be used as a value for this option
     # 'top' will cause fastanime to auto select the first server it sees
     # this saves on resources and is faster since not all servers are being fetched
-    server = top
+    server = TOP
 
     # Auto select next episode [True/False]
     # this makes fastanime increment the current episode number
