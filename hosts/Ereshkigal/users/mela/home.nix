@@ -32,6 +32,7 @@
   programs.obs-studio.enable = true;
   services.remmina = {
     enable = true;
+    systemdService.enable = true;
   };
   programs.git = {
     enable = true;

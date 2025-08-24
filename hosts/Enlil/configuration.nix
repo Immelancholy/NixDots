@@ -139,7 +139,10 @@ in {
 
   services.qpwgraph.enable = true;
 
-  services.solaar.enable = true;
+  services.solaar = {
+    enable = true;
+    package = inputs.solaar.packages.${pkgs.system}.default;
+  };
   hardware.logitech.wireless.enable = true;
 
   environment.sessionVariables = {
