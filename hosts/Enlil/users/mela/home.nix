@@ -132,7 +132,7 @@
   ];
   services.remmina = {
     enable = true;
-    addRdpMimeTypeAssoc = true;
+    systemdService.enable = false;
   };
   programs.nixvim = {
     enable = true;
