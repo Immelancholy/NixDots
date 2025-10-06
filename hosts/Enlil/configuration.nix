@@ -77,7 +77,11 @@ in {
   #   };
   # };
 
-  nixpkgs.overlays = [inputs.rust-overlay.overlays.default];
+  nixpkgs.overlays = [
+    inputs.anifetch.overlays.anifetch
+    inputs.rust-overlay.overlays.default
+  ];
+
   environment.systemPackages = with pkgs; [
     llm-with-plugins
     sshpass
