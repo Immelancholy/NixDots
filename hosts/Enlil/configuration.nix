@@ -88,6 +88,7 @@ in {
     anifetch
     nix-prefetch
     heroic
+    blender
   ];
 
   networking = {
