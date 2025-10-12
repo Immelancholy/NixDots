@@ -104,11 +104,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1756147322,
-        "narHash": "sha256-lrBhzGjvv6eAnarFsnqEP2Ur+glh1AY+tL8DFLjU2W4=",
+        "lastModified": 1760306104,
+        "narHash": "sha256-/FjBvbuTLqaGD6MxN3GIesh18oOAxyWL/GIn8gRYWUg=",
         "owner": "Immelancholy",
         "repo": "artis",
-        "rev": "e4a7adaf9d9dfe46dd87f3eebc301155ef07c464",
+        "rev": "7ddac1ec02e5772ba52125b69c55e7521edbd7fa",
         "type": "github"
       },
       "original": {
