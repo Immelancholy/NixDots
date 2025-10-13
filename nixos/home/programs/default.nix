@@ -36,6 +36,7 @@
     settings = {
       general = {
         fullscreen = false;
+        disable-notifications = true;
       };
     };
   };
