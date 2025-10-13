@@ -95,9 +95,10 @@
         numlock_by_default = "true";
       };
       bind = [
-        "$mod, F9, pass, class:^(com.obsproject.Studio)$"
-        "$mod, F10, pass, class:^(com.obsproject.Studio)$"
-        "$mod, F12, pass, class:^(com.obsproject.Studio)$"
+        # "$mod, F9, pass, class:^(com.obsproject.Studio)$"
+        # "$mod, F10, pass, class:^(com.obsproject.Studio)$"
+        # "$mod, F12, pass, class:^(com.obsproject.Studio)$"
+        "Ctrl, Print, exec, quickshell -c hyprquickshot"
       ];
       bindl = [
         "$mod, mouse:282, exec, $playerctl next" #next
