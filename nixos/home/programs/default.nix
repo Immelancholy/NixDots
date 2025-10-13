@@ -31,6 +31,15 @@
     defaultBrowser = true;
   };
 
+  programs.satty = {
+    enable = true;
+    settings = {
+      general = {
+        fullscreen = false;
+      };
+    };
+  };
+
   services.kdeconnect = {
     enable = true;
     indicator = true;
