@@ -7,6 +7,10 @@
       url = "github:ShamanicArts/llm-git-commit";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    hyprquickshot = {
+      url = "github:Immelancholy/hyprquickshot/open-screenshot-in-swappy";
+      flake = false;
+    };
     lsfg-vk-flake = {
       url = "github:pabloaul/lsfg-vk-flake/main";
       inputs.nixpkgs.follows = "nixpkgs";

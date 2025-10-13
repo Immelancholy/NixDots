@@ -23,6 +23,7 @@
     ./mpv.nix
     ./zathura.nix
     ./kitty.nix
+    ./quickshell
   ];
 
   programs.zen = {

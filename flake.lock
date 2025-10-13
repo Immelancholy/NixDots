@@ -1102,6 +1102,23 @@
         "type": "github"
       }
     },
+    "hyprquickshot": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1760313547,
+        "narHash": "sha256-MIWVHKCESX6QmK16kZwLR0mgcSUHgkoKl1cJYdTM+tg=",
+        "owner": "Immelancholy",
+        "repo": "hyprquickshot",
+        "rev": "ccc5075eee78d248fa63457a2d4bf86ff1385c05",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Immelancholy",
+        "ref": "open-screenshot-in-swappy",
+        "repo": "hyprquickshot",
+        "type": "github"
+      }
+    },
     "hyprutils": {
       "inputs": {
         "nixpkgs": [
@@ -1703,6 +1720,7 @@
         "hy3": "hy3",
         "hyprland": "hyprland",
         "hyprland-plugins": "hyprland-plugins",
+        "hyprquickshot": "hyprquickshot",
         "inori": "inori",
         "lanzaboote": "lanzaboote",
         "llm-git-commit": "llm-git-commit",
