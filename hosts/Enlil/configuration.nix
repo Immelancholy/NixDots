@@ -83,12 +83,15 @@ in {
   ];
 
   environment.systemPackages = with pkgs; [
+    inputs.winboat.packages.${pkgs.system}.winboat
     llm-with-plugins
+    freerdp
     sshpass
     anifetch
     nix-prefetch
     heroic
     blender
+    nodePackages_latest.nodejs
   ];
 
   networking = {

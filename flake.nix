@@ -56,6 +56,9 @@
       url = "github:catppuccin/zen-browser";
       flake = false;
     };
+    winboat = {
+      url = "github:TibixDev/winboat";
+    };
     home-manager = {
       url = "github:nix-community/home-manager";
       # The `follows` keyword in inputs is used for inheritance.
