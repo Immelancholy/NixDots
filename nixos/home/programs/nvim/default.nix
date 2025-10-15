@@ -622,6 +622,7 @@
           pylyzer.enable = true;
           marksman.enable = true;
           bashls.enable = true;
+          qmlls.enable = true;
         };
       };
       lsp-format.enable = true;
