@@ -1,4 +1,9 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  config,
+  ...
+}: {
   home.shell = {
     enableZshIntegration = true;
   };
@@ -75,6 +80,12 @@
       };
     };
   };
+
+  home.packages = [
+    (inputs.hyprquickshot.packages.${pkgs.system}.default.override {
+      SattyPackage = config.programs.satty.package;
+    })
+  ];
 
   services.kdeconnect = {
     enable = true;

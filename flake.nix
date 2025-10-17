@@ -9,7 +9,7 @@
     };
     hyprquickshot = {
       url = "github:Immelancholy/hyprquickshot/open-screenshot-in-satty";
-      flake = false;
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     lsfg-vk-flake = {
       url = "github:pabloaul/lsfg-vk-flake/main";
