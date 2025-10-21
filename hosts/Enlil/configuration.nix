@@ -155,12 +155,14 @@ in {
 
   environment.sessionVariables = {
     FLAKE_PATH = "/home/mela/NixDots"; # path to flake.nix
-    FRAMERATE = 144;
+    FRAMERATE = 280;
   };
 
   programs.steam = {
     enable = true;
-    gamescopeSession.enable = true;
+    gamescopeSession = {
+      enable = true;
+    };
   };
 
   services.mpdchck = {

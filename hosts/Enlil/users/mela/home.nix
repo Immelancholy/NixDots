@@ -95,12 +95,15 @@
         supports_wide_color = 1;
         supports_hdr = 1;
         sdrbrightness = 1.2;
-        sdrsaturation = 0.95;
+        sdrsaturation = 1.2;
         sdr_min_luminance = 0.005;
         sdr_max_luminance = 225;
       };
       render = {
-        cm_fs_passthrough = 0;
+        new_render_scheduling = false;
+        direct_scanout = 1;
+        send_content_type = 1;
+        cm_fs_passthrough = 1;
         cm_auto_hdr = 2;
       };
       experimental = {
