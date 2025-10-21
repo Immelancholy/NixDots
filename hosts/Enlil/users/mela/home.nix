@@ -83,9 +83,29 @@
         allow_tearing = true;
       };
       cursor = {
-        no_hardware_cursors = false;
+        no_hardware_cursors = 2;
       };
-      monitor = "HDMI-A-1, 1920x1080@144, 0x0, 1, bitdepth, 8";
+      monitorv2 = {
+        output = "DP-1";
+        mode = "1920x1080@280";
+        position = "0x0";
+        scale = 1;
+        bitdepth = 10;
+        cm = "srgb";
+        supports_wide_color = 1;
+        supports_hdr = 1;
+        sdrbrightness = 1.2;
+        sdrsaturation = 0.95;
+        sdr_min_luminance = 0.005;
+        sdr_max_luminance = 225;
+      };
+      render = {
+        cm_fs_passthrough = 0;
+        cm_auto_hdr = 2;
+      };
+      experimental = {
+        xx_color_management_v4 = true;
+      };
       input = {
         kb_layout = "gb";
         follow_mouse = "1";
