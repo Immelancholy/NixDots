@@ -85,20 +85,7 @@
       cursor = {
         no_hardware_cursors = 2;
       };
-      monitorv2 = {
-        output = "DP-1";
-        mode = "1920x1080@280";
-        position = "0x0";
-        scale = 1;
-        bitdepth = 10;
-        cm = "srgb";
-        supports_wide_color = 1;
-        supports_hdr = 1;
-        sdrbrightness = 1.2;
-        sdrsaturation = 1.2;
-        sdr_min_luminance = 0.005;
-        sdr_max_luminance = 225;
-      };
+      monitor = "DP-1, 1920x1080@280, 0x0, 1, bitdepth, 10, cm, srgb";
       render = {
         new_render_scheduling = false;
         direct_scanout = 1;
