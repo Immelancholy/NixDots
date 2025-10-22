@@ -85,13 +85,10 @@
       cursor = {
         no_hardware_cursors = 2;
       };
-      monitor = "DP-1, 1920x1080@280, 0x0, 1, bitdepth, 10, cm, srgb";
+      monitor = "DP-1, 1920x1080@280, 0x0, 1, bitdepth, 8, cm, srgb";
       render = {
-        new_render_scheduling = false;
-        direct_scanout = 1;
-        send_content_type = 1;
         cm_fs_passthrough = 1;
-        cm_auto_hdr = 2;
+        # cm_auto_hdr = 2;
       };
       experimental = {
         xx_color_management_v4 = true;
