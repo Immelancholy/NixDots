@@ -39,7 +39,6 @@
         "$mod, X, togglespecialworkspace"
         ", Print, exec, hyprquickshot"
         "$mod, O, exec, uwsm-app -- hyprpicker -a"
-        ''$mod, B, exec, hyprctl keyword monitor "DP-1, 1920x1080@280, 0x0, 1, bitdepth, 10, cm, hdr"''
       ]
       ++ (
         # workspaces

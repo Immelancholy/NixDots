@@ -87,8 +87,10 @@
       };
       monitor = "DP-1, 1920x1080@280, 0x0, 1, bitdepth, 8, cm, srgb";
       render = {
-        cm_fs_passthrough = 1;
-        # cm_auto_hdr = 2;
+        send_content_type = true;
+        direct_scanout = 1;
+        cm_fs_passthrough = 2;
+        cm_auto_hdr = 1;
       };
       experimental = {
         xx_color_management_v4 = true;
@@ -105,6 +107,7 @@
         "$mod, F9, pass, class:^(com.obsproject.Studio)$"
         "$mod, F10, pass, class:^(com.obsproject.Studio)$"
         "$mod, F12, pass, class:^(com.obsproject.Studio)$"
+        "$mod, B, exec, force-hdr DP-1, 1920x1080@280, 0x0, 1"
       ];
       bindl = [
         "$mod, mouse:282, exec, $playerctl next" #next
