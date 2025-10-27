@@ -76,7 +76,7 @@
     useHyprspace = true;
     liveWallpaper = {
       enable = true;
-      path = ../../../../nixos/home/backgrounds/Evil_Miku.mp4;
+      path = ../../../../nixos/home/backgrounds/Momo_Smoke.mp4;
     };
     settings = {
       general = {
