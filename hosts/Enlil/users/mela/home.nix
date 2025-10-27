@@ -74,10 +74,6 @@
       hy3.enable = true;
     };
     useHyprspace = true;
-    liveWallpaper = {
-      enable = true;
-      path = ../../../../nixos/home/backgrounds/Momo_Smoke.mp4;
-    };
     settings = {
       general = {
         allow_tearing = true;

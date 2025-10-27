@@ -14,14 +14,23 @@
     ''
   );
 in {
-  nix-relic.users.users = {
-    mela = {
-      isAdmin = true;
-      openssh.authorizedKeys.keys = [
-        "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBLCQZSKxQcuHRUbEN7AK1lSf0VmXzTTYJA4BTs0pIgT Enlil"
-      ];
-      extraGroups = ["tty" "docker"];
-      initialPassword = "password";
+  nix-relic = {
+    users.users = {
+      mela = {
+        isAdmin = true;
+        openssh.authorizedKeys.keys = [
+          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBLCQZSKxQcuHRUbEN7AK1lSf0VmXzTTYJA4BTs0pIgT Enlil"
+        ];
+        extraGroups = ["tty" "docker"];
+        initialPassword = "password";
+      };
+    };
+    wallpaper = {
+      path = ../../nixos/home/backgrounds/Momo_Smoke.png;
+      animatedWallpaper = {
+        enable = true;
+        path = ../../nixos/home/backgrounds/Momo_Smoke.mp4;
+      };
     };
   };
 
@@ -31,51 +40,6 @@ in {
   };
 
   services.lsfg-vk.enable = true;
-
-  # virtualisation.lxd = {
-  #   enable = true;
-  #   recommendedSysctlSettings = true;
-  #   agent.enable = true;
-  #   preseed = {
-  #     networks = [
-  #       {
-  #         name = "lxdbr0";
-  #         type = "bridge";
-  #         config = {
-  #           "ipv4.address" = "auto";
-  #           "ipv4.nat" = "true";
-  #         };
-  #       }
-  #     ];
-  #     profiles = [
-  #       {
-  #         name = "default";
-  #         devices = {
-  #           eth0 = {
-  #             name = "eth0";
-  #             network = "lxdbr0";
-  #             type = "nic";
-  #           };
-  #           root = {
-  #             path = "/";
-  #             pool = "default";
-  #             size = "35GiB";
-  #             type = "disk";
-  #           };
-  #         };
-  #       }
-  #     ];
-  #     storage_pools = [
-  #       {
-  #         name = "default";
-  #         driver = "dir";
-  #         config = {
-  #           source = "/var/lib/lxd/storage-pools/default";
-  #         };
-  #       }
-  #     ];
-  #   };
-  # };
 
   nixpkgs.overlays = [
     inputs.anifetch.overlays.anifetch
@@ -107,13 +71,6 @@ in {
   nix.settings.trusted-users = [
     "mela"
   ];
-
-  stylix = {
-    # base16Scheme = "${pkgs.base16-schemes}/share/themes/catppuccin-mocha.yaml";
-    polarity = "dark";
-
-    image = ../../nixos/home/backgrounds/Momo_Smoke.png;
-  };
 
   services.tailscale = {
     enable = true;
@@ -192,10 +149,6 @@ in {
       enable = true;
       screenWidth = "1920";
       screenHeight = "1080";
-      animatedBackground = {
-        enable = true;
-        path = ../../nixos/home/backgrounds/Evil_Miku.mp4;
-      };
     };
     tuiGreet.enable = false;
   };
