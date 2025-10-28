@@ -9,6 +9,19 @@
     ./fastanime.nix
   ];
 
+  stylix = {
+    iconTheme = {
+      enable = true;
+      package = pkgs.tela-circle-icon-theme.override {
+        colorVariants = [
+          "dracula"
+        ];
+      };
+      dark = "Tela-circle-dracula";
+      light = "Tela-circle-dracula";
+    };
+  };
+
   programs.ssh = {
     enable = true;
     package = null;
