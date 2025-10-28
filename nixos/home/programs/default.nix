@@ -31,9 +31,12 @@
     ./quickshell
   ];
 
-  programs.zen = {
+  programs.zen-browser = {
     enable = true;
-    defaultBrowser = true;
+    defaultBrowser = {
+      enable = true;
+      desktopFile = "zen-beta.desktop";
+    };
   };
 
   programs.satty = {
