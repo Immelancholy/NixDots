@@ -103,7 +103,7 @@
     };
 
     hy3 = {
-      url = "github:outfoxxed/hy3";
+      url = "github:nnra6864/hy3/replace-generateVersion";
       inputs.hyprland.follows = "hyprland";
     };
     nixvim = {

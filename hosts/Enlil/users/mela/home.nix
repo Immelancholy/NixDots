@@ -62,9 +62,11 @@
   programs.obs-studio.enable = true;
   programs.git = {
     enable = true;
-    userName = "Immelancholy";
-    userEmail = "lenalowes0@gmail.com";
-    extraConfig = {
+    settings = {
+      user = {
+        name = "Immelancholy";
+        email = "lenalowes0@gmail.com";
+      };
       init = {
         defaultBranch = "main";
       };
@@ -86,7 +88,7 @@
       dwindle.enable = false;
       hy3.enable = true;
     };
-    useHyprspace = true;
+    useHyprspace = false;
     settings = {
       general = {
         allow_tearing = true;
