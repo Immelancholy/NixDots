@@ -19,6 +19,9 @@
       dark = "Tela-circle-dracula";
       light = "Tela-circle-dracula";
     };
+    targets = {
+      blender.enable = true;
+    };
   };
 
   programs.ssh = {
