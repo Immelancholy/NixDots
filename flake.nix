@@ -142,9 +142,8 @@
     ];
     forAllSystems = nixpkgs.lib.genAttrs systems;
 
-    mkHost = host: system:
+    mkHost = host:
       nixpkgs.lib.nixosSystem {
-        inherit system;
         specialArgs = {inherit inputs outputs;};
         modules = [
           nix-relic-modules.nixosModules.default
@@ -213,8 +212,8 @@
     homeManagerModules = import ./modules/home-manager;
 
     nixosConfigurations = {
-      Enlil = mkHost "Enlil" "x86_64-linux";
-      Ereshkigal = mkHost "Ereshkigal" "x86_64-linux";
+      Enlil = mkHost "Enlil";
+      Ereshkigal = mkHost "Ereshkigal";
     };
   };
 }
