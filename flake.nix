@@ -210,6 +210,10 @@
 
     packages = forAllSystems (system: import ./pkgs nixpkgs.legacyPackages.${system});
 
+    nixosModules = import ./modules/nixos;
+
+    homeManagerModules = import ./modules/home-manager;
+
     nixosConfigurations = {
       Enlil = mkHost "Enlil" "x86_64-linux";
       Ereshkigal = mkHost "Ereshkigal" "x86_64-linux";
