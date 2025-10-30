@@ -5,7 +5,6 @@
 }: {
   imports = [
     ./vesktop.nix
-    ../../../../nixos/home/fetch_images.nix
   ];
 
   stylix = {

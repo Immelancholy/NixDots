@@ -26,10 +26,10 @@ in {
       };
     };
     wallpaper = {
-      path = ../../nixos/home/backgrounds/Momo_Smoke.png;
+      path = "${inputs.nix-relic-modules}/backgrounds/Momo_Smoke.png";
       animatedWallpaper = {
         enable = true;
-        path = ../../nixos/home/backgrounds/Momo_Smoke.mp4;
+        path = "${inputs.nix-relic-modules}/backgrounds/Momo_Smoke.mp4";
       };
     };
   };

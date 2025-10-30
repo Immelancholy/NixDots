@@ -164,7 +164,7 @@
           inputs.solaar.nixosModules.default
           inputs.catppuccin.nixosModules.catppuccin
           inputs.lsfg-vk-flake.nixosModules.default
-          ./nixos/system
+          # ./nixos/system
           ./hosts/${host}
           (
             {
@@ -208,7 +208,7 @@
                 inputs.spicetify-nix.homeManagerModules.default
                 inputs.artis.homeManagerModules.default
                 inputs.zen-browser.homeModules.beta
-                ./nixos/home
+                # ./nixos/home
               ];
             };
           }
