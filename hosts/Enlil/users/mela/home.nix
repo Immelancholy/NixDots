@@ -47,11 +47,6 @@
     };
   };
 
-  catppuccin = {
-    flavor = "mocha";
-    accent = "mauve";
-  };
-
   player = {
     enable = true;
   };

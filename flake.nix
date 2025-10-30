@@ -23,10 +23,6 @@
       url = "github:viu-media/viu";
       # inputs.nixpkgs.follows = "nixpkgs";
     };
-    ghostty = {
-      url = "github:ghostty-org/ghostty";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     anifetch = {
       url = "github:Notenlish/anifetch";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -50,11 +46,6 @@
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-    catppuccin.url = "github:catppuccin/nix";
-    catppuccinZen = {
-      url = "github:catppuccin/zen-browser";
-      flake = false;
     };
     winboat = {
       url = "github:TibixDev/winboat";
@@ -162,7 +153,6 @@
           inputs.nur.modules.nixos.default
           inputs.lanzaboote.nixosModules.lanzaboote
           inputs.solaar.nixosModules.default
-          inputs.catppuccin.nixosModules.catppuccin
           inputs.lsfg-vk-flake.nixosModules.default
           # ./nixos/system
           ./hosts/${host}
@@ -203,7 +193,6 @@
               extraSpecialArgs = {inherit inputs outputs;};
               sharedModules = [
                 nix-relic-modules.homeManagerModules.default
-                inputs.catppuccin.homeModules.catppuccin
                 inputs.nixvim.homeModules.nixvim
                 inputs.spicetify-nix.homeManagerModules.default
                 inputs.artis.homeManagerModules.default
