@@ -150,15 +150,10 @@
       "x86_64-linux"
     ];
     forAllSystems = nixpkgs.lib.genAttrs systems;
-  in {
-    formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
 
-    overlays = import ./overlays {inherit inputs;};
-
-    packages = forAllSystems (system: import ./pkgs nixpkgs.legacyPackages.${system});
-
-    nixosConfigurations = {
-      Enlil = nixpkgs.lib.nixosSystem {
+    mkHost = host: system:
+      nixpkgs.lib.nixosSystem {
+        inherit system;
         specialArgs = {inherit inputs outputs;};
         modules = [
           nix-relic-modules.nixosModules.default
@@ -170,9 +165,35 @@
           inputs.catppuccin.nixosModules.catppuccin
           inputs.lsfg-vk-flake.nixosModules.default
           ./nixos/system
-          ./hosts/Enlil
-          ./hosts/hostHome.nix
+          ./hosts/${host}
+          (
+            {
+              config,
+              lib,
+              ...
+            }:
+              with lib; {
+                config = let
+                  makeHM = name: _user: let
+                    user = config.users.users.${name};
+                  in {
+                    _module.args = {
+                      inherit host user;
+                    };
 
+                    imports = [
+                      ./hosts/${host}/users/${name}/home.nix
+                    ];
+                    home.sessionVariables = {
+                      NOTES_PATH = "$HOME/Documents/Obsidian-Vault"; # path to notes folder ( for neovim )
+                      PROJECTS_PATH = "$HOME/Documents/Projects"; # path to Projects folder ( for neovim )
+                    };
+                  };
+                in {
+                  home-manager.users = mapAttrs makeHM config.nix-relic.users.users;
+                };
+              }
+          )
           home-manager.nixosModules.home-manager
           {
             home-manager = {
@@ -192,40 +213,16 @@
           }
         ];
       };
-      Ereshkigal = nixpkgs.lib.nixosSystem {
-        specialArgs = {inherit inputs nixpkgs outputs;};
-        modules = [
-          nix-relic-modules.nixosModules.default
-          inputs.disko.nixosModules.default
-          inputs.stylix.nixosModules.stylix
-          inputs.nur.modules.nixos.default
-          inputs.lanzaboote.nixosModules.lanzaboote
-          inputs.solaar.nixosModules.default
-          inputs.catppuccin.nixosModules.catppuccin
-          ./nixos/system
-          ./hosts/Ereshkigal
-          ./hosts/hostHome.nix
+  in {
+    formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
 
-          home-manager.nixosModules.home-manager
-          {
-            home-manager = {
-              useGlobalPkgs = true;
-              useUserPackages = true;
-              extraSpecialArgs = {inherit inputs outputs;};
-              sharedModules = [
-                nix-relic-modules.homeManagerModules.default
-                inputs.catppuccin.homeModules.catppuccin
-                inputs.nixvim.homeModules.nixvim
-                inputs.spicetify-nix.homeManagerModules.default
-                inputs.nix-flatpak.homeManagerModules.nix-flatpak
-                inputs.artis.homeManagerModules.default
-                inputs.zen-browser.homeModules.beta
-                ./nixos/home
-              ];
-            };
-          }
-        ];
-      };
+    overlays = import ./overlays {inherit inputs;};
+
+    packages = forAllSystems (system: import ./pkgs nixpkgs.legacyPackages.${system});
+
+    nixosConfigurations = {
+      Enlil = mkHost "Enlil" "x86_64-linux";
+      Ereshkigal = mkHost "Ereshkigal" "x86_64-linux";
     };
   };
 }
