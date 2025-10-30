@@ -36,7 +36,6 @@
   ];
 
   networking = {
-    hostName = "Ereshkigal";
     nameservers = ["100.100.100.100" "192.242.2.2" "9.9.9.9"];
     search = ["jaglion-teeth.ts.net"];
   };

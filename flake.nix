@@ -191,6 +191,7 @@
                   };
                 in {
                   home-manager.users = mapAttrs makeHM config.nix-relic.users.users;
+                  networking.hostName = "${host}";
                 };
               }
           )
