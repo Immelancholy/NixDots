@@ -98,7 +98,7 @@
       cursor = {
         no_hardware_cursors = 2;
       };
-      monitor = "DP-1, 1920x1080@280, 0x0, 1, bitdepth, 8, cm, srgb";
+      monitor = "DP-1, 1920x1080@280, 0x0, 1, vrr, 2, bitdepth, 8, cm, srgb";
       render = {
         send_content_type = true;
         direct_scanout = 1;
@@ -120,7 +120,7 @@
         "$mod, F9, pass, class:^(com.obsproject.Studio)$"
         "$mod, F10, pass, class:^(com.obsproject.Studio)$"
         "$mod, F12, pass, class:^(com.obsproject.Studio)$"
-        "$mod, B, exec, force-hdr DP-1, 1920x1080@280, 0x0, 1, bitdepth, 8"
+        "$mod, B, exec, force-hdr DP-1, 1920x1080@280, 0x0, 1, vrr, 2, bitdepth, 8"
       ];
       bindl = [
         "$mod, mouse:282, exec, $playerctl next" #next
