@@ -19,8 +19,8 @@
       url = "github:Immelancholy/Nix-Relic-Modules";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    fastanime = {
-      url = "github:Benexl/FastAnime";
+    viu = {
+      url = "github:viu-media/viu";
       # inputs.nixpkgs.follows = "nixpkgs";
     };
     ghostty = {
