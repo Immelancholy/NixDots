@@ -40,10 +40,15 @@ in {
     storageDriver = "btrfs";
   };
 
-  nixpkgs.overlays = [
-    inputs.anifetch.overlays.anifetch
-    inputs.rust-overlay.overlays.default
-  ];
+  nixpkgs = {
+    config = {
+      cudaSupport = true;
+    };
+    overlays = [
+      inputs.anifetch.overlays.anifetch
+      nix-relic.inputs.rust-overlay.overlays.default
+    ];
+  };
 
   environment.systemPackages = with pkgs; [
     inputs.winboat.packages.${pkgs.system}.winboat

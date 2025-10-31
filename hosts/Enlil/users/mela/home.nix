@@ -55,7 +55,17 @@
     CAVA_STDOUT_MAX_INSTANCES = 2;
   };
 
-  programs.obs-studio.enable = true;
+  programs.obs-studio = {
+    enable = true;
+    package = pkgs.obs-studio;
+
+    plugins = with pkgs.obs-studio-plugins; [
+      obs-vkcapture
+      droidcam-obs
+      obs-pipewire-audio-capture
+    ];
+  };
+
   programs.git = {
     enable = true;
     settings = {
@@ -68,6 +78,7 @@
       };
     };
   };
+
   services.mpd = {
     extraConfig = ''
       audio_output {
@@ -77,6 +88,7 @@
       }
     '';
   };
+
   wayland.windowManager.hyprland = {
     # ONLY ENABLE 1 LAYOUT!!
     layout = {
@@ -131,6 +143,7 @@
       ];
     };
   };
+
   programs.gh = {
     enable = true;
     extensions = [
@@ -141,6 +154,7 @@
       editor = "$EDITOR";
     };
   };
+
   home.packages = with pkgs; [
     (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {extensions = ["rust-src" "rust-analyzer"];}))
     reaper

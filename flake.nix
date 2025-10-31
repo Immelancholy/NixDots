@@ -10,7 +10,6 @@
 
     nix-relic = {
       url = "github:Immelancholy/Nix-Relic/dev";
-      inputs.nixpkgs.follows = "nixpkgs";
     };
 
     alejandra = {
@@ -20,11 +19,6 @@
 
     disko = {
       url = "github:nix-community/disko";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    rust-overlay = {
-      url = "github:oxalica/rust-overlay";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
