@@ -18,11 +18,12 @@ in {
   nix-relic = {
     flakePath = "/home/mela/NixDots";
     cava = {
-      framerate = 144;
-      noiseReduction = 72;
+      framerate = 280;
+      noiseReduction = 93;
     };
     framerates = {
       steamGamescopeSession = 280;
+      neo = 280;
     };
     wallpaper = {
       path = "${nix-relic}/backgrounds/Momo_Smoke.png";
