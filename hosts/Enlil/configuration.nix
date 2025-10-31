@@ -2,6 +2,7 @@
   inputs,
   config,
   pkgs,
+  nix-relic,
   ...
 }: let
   llm-git-commit = inputs.llm-git-commit.packages.${pkgs.system}.default;
@@ -26,10 +27,10 @@ in {
       };
     };
     wallpaper = {
-      path = "${inputs.nix-relic-modules}/backgrounds/Momo_Smoke.png";
+      path = "${nix-relic}/backgrounds/Momo_Smoke.png";
       animatedWallpaper = {
         enable = true;
-        path = "${inputs.nix-relic-modules}/backgrounds/Momo_Smoke.mp4";
+        path = "${nix-relic}/backgrounds/Momo_Smoke.mp4";
       };
     };
   };
@@ -38,8 +39,6 @@ in {
     enable = true;
     storageDriver = "btrfs";
   };
-
-  services.lsfg-vk.enable = true;
 
   nixpkgs.overlays = [
     inputs.anifetch.overlays.anifetch
@@ -101,7 +100,7 @@ in {
 
   services.solaar = {
     enable = true;
-    package = inputs.solaar.packages.${pkgs.system}.default;
+    package = nix-relic.inputs.solaar.packages.${pkgs.system}.default;
   };
   hardware.logitech.wireless.enable = true;
 

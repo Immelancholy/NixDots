@@ -1,9 +1,5 @@
 {inputs, ...}: {
-  modifications = final: _prev: {
-    nur = inputs.nur.overlays.default;
-    stable = import inputs.nixpkgs-stable {
-      system = final.system;
-      config.allowUnfree = true;
-    };
+  additions = final: _prev: import ../pkgs final.pkgs;
+  modifications = final: prev: {
   };
 }
