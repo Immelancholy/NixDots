@@ -16,6 +16,21 @@
   );
 in {
   nix-relic = {
+    flakePath = "/home/mela/NixDots";
+    cava = {
+      framerate = 144;
+      noiseReduction = 72;
+    };
+    framerates = {
+      steamGamescopeSession = 280;
+    };
+    wallpaper = {
+      path = "${nix-relic}/backgrounds/Momo_Smoke.png";
+      animatedWallpaper = {
+        enable = true;
+        path = "${nix-relic}/backgrounds/Momo_Smoke.mp4";
+      };
+    };
     users.users = {
       mela = {
         isAdmin = true;
@@ -24,13 +39,6 @@ in {
         ];
         extraGroups = ["tty" "docker"];
         initialPassword = "password";
-      };
-    };
-    wallpaper = {
-      path = "${nix-relic}/backgrounds/Momo_Smoke.png";
-      animatedWallpaper = {
-        enable = true;
-        path = "${nix-relic}/backgrounds/Momo_Smoke.mp4";
       };
     };
   };
@@ -108,11 +116,6 @@ in {
     package = nix-relic.inputs.solaar.packages.${pkgs.system}.default;
   };
   hardware.logitech.wireless.enable = true;
-
-  environment.sessionVariables = {
-    FLAKE_PATH = "/home/mela/NixDots"; # path to flake.nix
-    FRAMERATE = 280;
-  };
 
   programs.steam = {
     enable = true;

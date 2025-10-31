@@ -2,40 +2,32 @@
   description = "My NixOS and Home Manager config.";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
-
+    nix-relic = {
+      url = "github:Immelancholy/Nix-Relic/dev";
+    };
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    nix-relic = {
-      url = "github:Immelancholy/Nix-Relic/dev";
-    };
-
     alejandra = {
       url = "github:kamadorueda/alejandra/3.1.0";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
     llm-git-commit = {
       url = "github:ShamanicArts/llm-git-commit";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
     viu = {
       url = "github:viu-media/viu";
     };
-
     anifetch = {
       url = "github:Notenlish/anifetch";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
     winboat = {
       url = "github:TibixDev/winboat";
     };
