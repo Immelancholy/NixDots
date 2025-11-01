@@ -150,9 +150,9 @@ in {
   displayManager = {
     sddm = {
       enable = true;
+      compositor = "kwin";
       screenWidth = "1920";
       screenHeight = "1080";
-      compositor = "kwin";
     };
     tuiGreet.enable = false;
   };
