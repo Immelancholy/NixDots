@@ -12,11 +12,11 @@
       enable = true;
       package = pkgs.tela-circle-icon-theme.override {
         colorVariants = [
-          "dracula"
+          "red"
         ];
       };
-      dark = "Tela-circle-dracula";
-      light = "Tela-circle-dracula";
+      dark = "Tela-circle-red";
+      light = "Tela-circle-red";
     };
     targets = {
       blender.enable = true;
