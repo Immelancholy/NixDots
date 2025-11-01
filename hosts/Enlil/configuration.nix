@@ -152,6 +152,7 @@ in {
       enable = true;
       screenWidth = "1920";
       screenHeight = "1080";
+      compositor = "kwin";
     };
     tuiGreet.enable = false;
   };
