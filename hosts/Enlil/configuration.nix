@@ -15,6 +15,9 @@
     ''
   );
 in {
+  imports = [
+    inputs.nixos-hardware.nixosModules.lenovo-legion-t526amr5
+  ];
   nix-relic = {
     flakePath = "/home/mela/NixDots";
     cava = {
