@@ -7,7 +7,7 @@
     description = "Pulls changes to system config";
     restartIfChanged = false;
     onSuccess = ["rebuild.service"];
-    startAt = "23:20";
+    startAt = "23:30";
     path = [pkgs.git pkgs.openssh];
     script = ''
       test "$(git branch --show-current)" = "main"
