@@ -8,16 +8,6 @@
   ];
 
   stylix = {
-    iconTheme = {
-      enable = true;
-      package = pkgs.tela-circle-icon-theme.override {
-        colorVariants = [
-          "red"
-        ];
-      };
-      dark = "Tela-circle-red";
-      light = "Tela-circle-red";
-    };
     targets = {
       blender.enable = true;
     };
