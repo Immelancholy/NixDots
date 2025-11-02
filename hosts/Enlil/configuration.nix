@@ -60,6 +60,7 @@ in {
   };
 
   environment.systemPackages = with pkgs; [
+    winboat
     llm-with-plugins
     freerdp
     sshpass
