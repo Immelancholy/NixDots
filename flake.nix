@@ -28,9 +28,6 @@
       url = "github:Notenlish/anifetch";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    winboat = {
-      url = "github:TibixDev/winboat";
-    };
   };
 
   outputs = {

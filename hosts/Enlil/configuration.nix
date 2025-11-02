@@ -5,7 +5,7 @@
   nix-relic,
   ...
 }: let
-  llm-git-commit = inputs.llm-git-commit.packages.${pkgs.system}.default;
+  llm-git-commit = inputs.llm-git-commit.packages.${pkgs.stdenv.hostPlatform.system}.default;
   pyWithLlm = (
     pkgs.python3.withPackages (ps: [ps.llm ps.llm-mistral llm-git-commit ps.llm-openrouter])
   );
@@ -60,7 +60,6 @@ in {
   };
 
   environment.systemPackages = with pkgs; [
-    inputs.winboat.packages.${pkgs.system}.winboat
     llm-with-plugins
     freerdp
     sshpass
@@ -114,7 +113,7 @@ in {
 
   services.solaar = {
     enable = true;
-    package = nix-relic.inputs.solaar.packages.${pkgs.system}.default;
+    package = nix-relic.inputs.solaar.packages.${pkgs.stdenv.hostPlatform.system}.default;
   };
   hardware.logitech.wireless.enable = true;
 
