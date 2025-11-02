@@ -1243,6 +1243,22 @@
         "type": "github"
       }
     },
+    "nixos-hardware": {
+      "locked": {
+        "lastModified": 1761933221,
+        "narHash": "sha256-rNHeoG3ZrA94jczyLSjxCtu67YYPYIlXXr0uhG3wNxM=",
+        "owner": "nixos",
+        "repo": "nixos-hardware",
+        "rev": "7467f155fcba189eb088a7601f44fbef7688669b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "master",
+        "repo": "nixos-hardware",
+        "type": "github"
+      }
+    },
     "nixpkgs": {
       "locked": {
         "lastModified": 1761114652,
@@ -1606,6 +1622,7 @@
         "home-manager": "home-manager",
         "llm-git-commit": "llm-git-commit",
         "nix-relic": "nix-relic",
+        "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_10",
         "viu": "viu"
       }
