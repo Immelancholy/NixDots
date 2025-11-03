@@ -18,7 +18,7 @@
 
       test "$(git branch --show-current)" = "main"
 
-      git pull --ff-only
+      git pull origin main --ff-only
 
     '';
 
@@ -39,8 +39,9 @@
     path = [pkgs.nixos-rebuild pkgs.systemd];
 
     script = ''
+      chown -R root:root ${config.nix-relic.flakePath}
 
-      nixos-rebuild boot
+      nixos-rebuild boot --flake .#Enlil
 
       booted="$(readlink /run/booted-system/{initrd,kernel,kernel-modules})"
 
@@ -50,12 +51,18 @@
 
       if [ "''${booted}" = "''${built}" ]; then
 
-        nixos-rebuild switch
+        nixos-rebuild switch --flake .#${config.networking.hostName}
 
       fi
 
+      chown -R mela:users ${config.nix-relic.flakePath}
+
     '';
 
-    serviceConfig.Type = "oneshot";
+    serviceConfig = {
+      WorkingDirectory = "${config.nix-relic.flakePath}";
+      # User = "root";
+      Type = "oneshot";
+    };
   };
 }
