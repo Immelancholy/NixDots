@@ -16,7 +16,7 @@ in {
 
     startAt = "Sun 23:20:00";
 
-    path = [pkgs.nix pkgs.git pkgs.gh pkgs.openssh pkgs.su];
+    path = [pkgs.nix pkgs.git pkgs.gh pkgs.openssh];
 
     script = ''
       ssh-add $HOME/.ssh/id_ed25519
