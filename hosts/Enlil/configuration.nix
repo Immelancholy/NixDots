@@ -20,6 +20,7 @@ in {
   ];
   nix-relic = {
     flakePath = "/home/mela/NixDots";
+    updateScript.enableToken = true;
     cava = {
       framerate = 280;
       noiseReduction = 93;
