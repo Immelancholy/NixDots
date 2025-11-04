@@ -4,7 +4,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixos-hardware.url = "github:nixos/nixos-hardware/master";
     nix-relic = {
-      url = "github:Immelancholy/Nix-Relic/dev";
+      url = "github:Immelancholy/Nix-Relic";
     };
     home-manager = {
       url = "github:nix-community/home-manager";
