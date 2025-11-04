@@ -86,7 +86,8 @@
       dwindle.enable = false;
       hy3.enable = true;
     };
-    useHyprspace = false;
+    hyprspace.enable = false;
+    hyprexpo.enable = true;
     settings = {
       general = {
         allow_tearing = true;
