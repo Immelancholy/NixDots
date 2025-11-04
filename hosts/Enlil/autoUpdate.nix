@@ -23,7 +23,6 @@
 
     environment = {
       SSH_AUTH_SOCK = "/run/user/1000/gcr/ssh";
-      # DBUS_SESSION_BUS_ADDRESS = "unix:path=/run/user/1000/bus";
     };
 
     serviceConfig = {
