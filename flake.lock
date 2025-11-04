@@ -1125,10 +1125,7 @@
           "nixpkgs"
         ],
         "pre-commit-hooks-nix": "pre-commit-hooks-nix",
-        "rust-overlay": [
-          "nix-relic",
-          "rust-overlay"
-        ]
+        "rust-overlay": "rust-overlay"
       },
       "locked": {
         "lastModified": 1737639419,
@@ -1217,7 +1214,7 @@
         "nixpkgs-stable": "nixpkgs-stable_2",
         "nixvim": "nixvim",
         "nur": "nur",
-        "rust-overlay": "rust-overlay",
+        "rust-overlay": "rust-overlay_2",
         "solaar": "solaar",
         "spicetify-nix": "spicetify-nix",
         "stylix": "stylix",
@@ -1229,11 +1226,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1762257169,
-        "narHash": "sha256-Vfgq88KpL1bRf/Uh1/GLrQvy5lSFbm3ozXwyq75exaQ=",
+        "lastModified": 1762257743,
+        "narHash": "sha256-1UkdCSxFMethec3U2NEyB/63vGjbXSBSmYMZpku9ip8=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "ca9a0622bc16c7410f93f26ee37a7aa7bb9d21ad",
+        "rev": "78f4e4c149858e719f0eeef200dab7617560e40b",
         "type": "github"
       },
       "original": {
@@ -1648,6 +1645,28 @@
       "inputs": {
         "nixpkgs": [
           "nix-relic",
+          "lanzaboote",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1762223900,
+        "narHash": "sha256-caxpESVH71mdrdihYvQZ9rTZPZqW0GyEG9un7MgpyRM=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "cfe1598d69a42a5edb204770e71b8df77efef2c3",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "rust-overlay_2": {
+      "inputs": {
+        "nixpkgs": [
+          "nix-relic",
           "nixpkgs"
         ]
       },
@@ -1665,7 +1684,7 @@
         "type": "github"
       }
     },
-    "rust-overlay_2": {
+    "rust-overlay_3": {
       "inputs": {
         "nixpkgs": [
           "nix-relic",
@@ -2099,7 +2118,7 @@
       "inputs": {
         "flake-utils": "flake-utils_4",
         "nixpkgs": "nixpkgs_9",
-        "rust-overlay": "rust-overlay_2"
+        "rust-overlay": "rust-overlay_3"
       },
       "locked": {
         "lastModified": 1761913586,
