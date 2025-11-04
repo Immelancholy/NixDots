@@ -2,7 +2,11 @@
   pkgs,
   config,
   ...
-}: {
+}: let
+  pass = pkgs.writeShellScriptBin "pass" ''
+    ${pkgs.libsecret}/bin/secret-tool lookup unique ssh-store:/home/mela/.ssh/id_ed25519
+  '';
+in {
   systemd.services.pull-updates = {
     description = "Pulls changes to system config";
 
@@ -10,22 +14,32 @@
 
     onSuccess = ["rebuild.service"];
 
-    startAt = "23:30";
+    startAt = "Sun 23:20:00";
 
-    path = [pkgs.git pkgs.openssh];
+    path = [pkgs.nix pkgs.git pkgs.gh pkgs.openssh pkgs.su];
 
     script = ''
+      ssh-add $HOME/.ssh/id_ed25519
 
-      test "$(git branch --show-current)" = "main"
+      nix flake update --option access-tokens "github.com=$(gh auth token)" --commit-lock-file
 
-      git pull origin main --ff-only
+      git push
 
     '';
+
+    environment = {
+      DISPLAY = "dummy";
+      SSH_AUTH_SOCK = "/run/user/1000/gcr/ssh";
+      SSH_ASKPASS = "${pass}/bin/pass";
+      DBUS_SESSION_BUS_ADDRESS = "unix:path=/run/user/1000/bus";
+    };
 
     serviceConfig = {
       WorkingDirectory = "${config.nix-relic.flakePath}";
 
       User = "mela";
+
+      Group = "users";
 
       Type = "oneshot";
     };
