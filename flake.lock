@@ -1025,15 +1025,16 @@
         "systems": "systems_4"
       },
       "locked": {
-        "lastModified": 1754263431,
-        "narHash": "sha256-EmGvVOQcY/93SnoHL5OAsLI5ltvVrTeMu2pgeoc3Z/I=",
+        "lastModified": 1758176212,
+        "narHash": "sha256-ORusmpZumDNsp+sfApE7Q5d8Qb4QF2VAFR+gcjKFcsc=",
         "owner": "r00t3g",
         "repo": "hyprtasking",
-        "rev": "a803c56cc2ae98b8bd3f7102388fae4826697927",
+        "rev": "a3625a2d4b100135199b5a449729df5b2cb949e8",
         "type": "github"
       },
       "original": {
         "owner": "r00t3g",
+        "ref": "fix-build-on-hypr-0.51",
         "repo": "hyprtasking",
         "type": "github"
       }
@@ -1258,11 +1259,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1762244235,
-        "narHash": "sha256-ndTm7lA6t+wS+QnIEkyt3bgvp0yJmN+Byd54xseZiWQ=",
+        "lastModified": 1762244422,
+        "narHash": "sha256-5ufovRMng9yQ6ZxntZ3nSxgg2fRa78E2yntQ6zGr9s8=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "f75062106a2f29ca43eae8e2bed8608eba799cb8",
+        "rev": "103445ce67b6490568e42fb4521c85af7e99d58e",
         "type": "github"
       },
       "original": {
