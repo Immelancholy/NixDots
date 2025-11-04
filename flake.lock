@@ -1226,11 +1226,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1762276506,
-        "narHash": "sha256-26ihbyeP/T3TEefF40FSs+bemx8qSoJF5gt+Cs1bPyI=",
+        "lastModified": 1762282031,
+        "narHash": "sha256-g6LS9taL2EB67MCAl2HRdHUDayVFAfUReyi/GkLXcbM=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "a60fc7d6c7290941327f653e3bff373977e20385",
+        "rev": "b88bebf3cd4baacd790518bb387e17f791c61ccf",
         "type": "github"
       },
       "original": {
@@ -1787,11 +1787,11 @@
         "tinted-zed": "tinted-zed"
       },
       "locked": {
-        "lastModified": 1761745264,
-        "narHash": "sha256-6mhnXLXAUz9qCeGGLiQhIZNcNvYk6YFWQePuM5BWrkE=",
+        "lastModified": 1762280767,
+        "narHash": "sha256-PCMBSi+RIvLDVCjXOxN6+anIDTo8QgWLXjmOA4yqfDI=",
         "owner": "Immelancholy",
         "repo": "stylix",
-        "rev": "b315ba90e5cea3a8195e35c4a9e1003a8863247e",
+        "rev": "27731038217a3c583c891fb468fb3053c154d20c",
         "type": "github"
       },
       "original": {
