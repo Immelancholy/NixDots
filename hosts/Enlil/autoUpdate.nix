@@ -10,7 +10,7 @@
 
     onSuccess = ["rebuild.service"];
 
-    startAt = "Sun 23:20:00";
+    startAt = "Sun 10:00:00";
 
     path = [pkgs.nix pkgs.git pkgs.gh pkgs.openssh];
 
