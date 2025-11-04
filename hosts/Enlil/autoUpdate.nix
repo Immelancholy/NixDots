@@ -2,11 +2,7 @@
   pkgs,
   config,
   ...
-}: let
-  pass = pkgs.writeShellScriptBin "pass" ''
-    ${pkgs.libsecret}/bin/secret-tool lookup unique ssh-store:/home/mela/.ssh/id_ed25519
-  '';
-in {
+}: {
   systemd.services.pull-updates = {
     description = "Pulls changes to system config";
 
@@ -19,8 +15,6 @@ in {
     path = [pkgs.nix pkgs.git pkgs.gh pkgs.openssh];
 
     script = ''
-      ssh-add $HOME/.ssh/id_ed25519
-
       nix flake update --option access-tokens "github.com=$(gh auth token)" --commit-lock-file
 
       git push
@@ -28,10 +22,8 @@ in {
     '';
 
     environment = {
-      DISPLAY = "dummy";
       SSH_AUTH_SOCK = "/run/user/1000/gcr/ssh";
-      SSH_ASKPASS = "${pass}/bin/pass";
-      DBUS_SESSION_BUS_ADDRESS = "unix:path=/run/user/1000/bus";
+      # DBUS_SESSION_BUS_ADDRESS = "unix:path=/run/user/1000/bus";
     };
 
     serviceConfig = {
