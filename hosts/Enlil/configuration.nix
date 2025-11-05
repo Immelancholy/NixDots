@@ -64,6 +64,7 @@ in {
   };
 
   environment.systemPackages = with pkgs; [
+    picard
     winboat
     llm-with-plugins
     freerdp
