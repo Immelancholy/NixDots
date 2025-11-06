@@ -1226,11 +1226,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1762448122,
-        "narHash": "sha256-6wO4HQC6cplUq1J7oxkJf3HPy9mree4t7pNdvJ44RxQ=",
+        "lastModified": 1762448491,
+        "narHash": "sha256-1fbaH1I/jHmV/7Bx5KGlWvGLvf6Y9tBNc1jqAysyLxY=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "e19c797d8eb5bdb36da9824c7a239c7076fbdced",
+        "rev": "6bacba68c69951043ef9cf1299f1c2a1c5c46686",
         "type": "github"
       },
       "original": {
