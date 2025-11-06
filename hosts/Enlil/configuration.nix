@@ -49,8 +49,6 @@ in {
     };
   };
 
-  programs.libreoffice.enable = lib.mkDefault false;
-
   virtualisation.docker = {
     enable = true;
     storageDriver = "btrfs";

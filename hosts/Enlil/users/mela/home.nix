@@ -14,10 +14,6 @@
     };
   };
 
-  programs.onlyoffice = {
-    enable = true;
-  };
-
   programs.mpv = {
     package = pkgs.mpv.override {
       extraMakeWrapperArgs = [
@@ -42,6 +38,15 @@
       target-colorspace-hint = true;
     };
     scripts = lib.mkForce [];
+  };
+
+  programs.thunderbird = {
+    enable = true;
+    profiles = {
+      Mela = {
+        isDefault = true;
+      };
+    };
   };
 
   programs.ssh = {
