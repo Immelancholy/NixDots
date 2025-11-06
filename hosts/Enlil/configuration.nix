@@ -65,6 +65,7 @@ in {
   };
 
   environment.systemPackages = with pkgs; [
+    steamtinkerlaunch
     picard
     winboat
     llm-with-plugins
