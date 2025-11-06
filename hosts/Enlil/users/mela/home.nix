@@ -14,6 +14,10 @@
     };
   };
 
+  programs.onlyoffice = {
+    enable = true;
+  };
+
   programs.mpv = {
     package = pkgs.mpv.override {
       extraMakeWrapperArgs = [
