@@ -181,7 +181,9 @@
       ];
       bindnt = [
         ", mouse:275, exec, toggle-mute"
-        "$mod, mouse:275, exec, toggle-mute --unmute-all"
+        "Shift, mouse:275, exec, toggle-mute --mute-all"
+        "$mod, M, exec, toggle-mute"
+        "$mod+Shift, M, exec, toggle-mute --mute-all"
       ];
     };
   };
