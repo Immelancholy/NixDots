@@ -65,7 +65,7 @@ in {
   };
 
   environment.systemPackages = with pkgs; [
-    steamtinkerlaunch
+    nexusmods-app-unfree
     picard
     winboat
     llm-with-plugins

@@ -159,7 +159,7 @@
       };
       input = {
         kb_layout = "gb";
-        kb_options = "caps:swapescape,compose:rwin";
+        kb_options = "compose:rwin";
         follow_mouse = "1";
 
         sensitivity = "0";
