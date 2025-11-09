@@ -1287,11 +1287,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1762689025,
-        "narHash": "sha256-MCkXqdk6WJjyLuEJ5ncuE9qzasg0q+FRgWjTNTGNmAE=",
+        "lastModified": 1762694966,
+        "narHash": "sha256-D5fOotW3nsDyb0ExAmfoktJ8yP7/a3BOPYptZA7dp00=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "08fc0ada04be9e75dd716f19bdaf0a83613174f7",
+        "rev": "2a44b97296a7aa7b0a84fb6ddd2ec9cc454006ea",
         "type": "github"
       },
       "original": {
