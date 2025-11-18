@@ -4,7 +4,7 @@
   ];
 
   virtualisation.xen = {
-    enable = true;
+    enable = false;
     boot = {
       builderVerbosity = "info";
     };
