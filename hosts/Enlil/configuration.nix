@@ -3,7 +3,6 @@
   config,
   pkgs,
   nix-relic,
-  lib,
   ...
 }: let
   llm-git-commit = inputs.llm-git-commit.packages.${pkgs.stdenv.hostPlatform.system}.default;
