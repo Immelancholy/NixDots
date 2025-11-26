@@ -41,15 +41,6 @@
     scripts = lib.mkForce [];
   };
 
-  programs.thunderbird = {
-    enable = true;
-    profiles = {
-      Mela = {
-        isDefault = true;
-      };
-    };
-  };
-
   programs.ssh = {
     enable = true;
     package = null;
@@ -219,6 +210,7 @@
     enable = true;
     systemdService.enable = false;
   };
+  services.easyeffects.package = pkgs.nr.easyeffects;
   programs.nixvim = {
     enable = true;
     defaultEditor = true;
@@ -260,22 +252,6 @@
           ];
         };
       };
-    };
-  };
-  dconf.settings = {
-    "com/github/wwmm/easyeffects" = {
-      last-loaded-input-preset = "Rode NT1";
-      last-loaded-output-preset = "ATH-R70x";
-      process-all-outputs = false;
-    };
-    "com/github/wwmm/easyeffects/streaminputs" = {
-      input-device = "dummy_plug_out";
-      use-default-input-device = false;
-    };
-    "com/github/wwmm/easyeffects/streamoutputs" = {
-      blocklist = ["Zen"];
-      output-device = "alsa_output.usb-Audient_Audient_iD4-00.pro-output-0";
-      use-default-output-device = false;
     };
   };
 }

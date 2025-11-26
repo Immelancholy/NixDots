@@ -66,7 +66,7 @@ in {
   environment.systemPackages = with pkgs; [
     nexusmods-app-unfree
     picard
-    winboat
+    (winboat.override {nodejs_24 = pkgs.stable.nodejs_24;})
     llm-with-plugins
     freerdp
     sshpass
