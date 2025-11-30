@@ -9,15 +9,15 @@
         "systems": "systems"
       },
       "locked": {
-        "lastModified": 1764491183,
-        "narHash": "sha256-3dOEXhvo8POodvfOOS2VPbB+et+vUjz+CnKNzh2S/oM=",
-        "owner": "crizzy9",
+        "lastModified": 1759033501,
+        "narHash": "sha256-QhcOFLJYC9CiSVPkci62ghMEAJChzl+L98To1pKvnRQ=",
+        "owner": "KZDKM",
         "repo": "Hyprspace",
-        "rev": "c561dde94afa0eb560eb3f2e2012d30afd5f280f",
+        "rev": "e54884da1d6a1af76af9d053887bf3750dd554fd",
         "type": "github"
       },
       "original": {
-        "owner": "crizzy9",
+        "owner": "KZDKM",
         "repo": "Hyprspace",
         "type": "github"
       }
@@ -1299,11 +1299,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1764538618,
-        "narHash": "sha256-w3X5FqwbnDP/xpqYfUBZzlXmYIlVIQd85OPYTRvOUHM=",
+        "lastModified": 1764536545,
+        "narHash": "sha256-kteGCGBrBFUt8JvSGkBFPuuINx0BeCkRxQ43fdmJ+tM=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "dfa3cd31c8ad33eb1602fe54c5d9bc2de91ffa19",
+        "rev": "d9c175e71164bca6ccd07d8b3a110a24d9b8e6fe",
         "type": "github"
       },
       "original": {
