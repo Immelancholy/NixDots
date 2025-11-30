@@ -18,6 +18,7 @@ in {
   imports = [
     inputs.nixos-hardware.nixosModules.lenovo-legion-t526amr5
   ];
+  stylix.enableReleaseChecks = false;
   nix-relic = {
     flakePath = "/home/mela/NixDots";
     updateScript.enableToken = true;

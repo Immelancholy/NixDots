@@ -89,6 +89,9 @@
               extraSpecialArgs = {inherit inputs outputs nix-relic;};
               sharedModules = [
                 nix-relic.homeManagerModules.default
+                {
+                  stylix.enableReleaseChecks = false;
+                }
               ];
             };
           }
