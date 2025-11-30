@@ -419,7 +419,6 @@
     "flake-parts_5": {
       "inputs": {
         "nixpkgs-lib": [
-          "nix-relic",
           "stylix",
           "nixpkgs"
         ]
@@ -513,7 +512,7 @@
     },
     "flake-utils_4": {
       "inputs": {
-        "systems": "systems_9"
+        "systems": "systems_8"
       },
       "locked": {
         "lastModified": 1731533236,
@@ -1259,7 +1258,9 @@
         "rust-overlay": "rust-overlay",
         "solaar": "solaar",
         "spicetify-nix": "spicetify-nix",
-        "stylix": "stylix",
+        "stylix": [
+          "stylix"
+        ],
         "yamb": "yamb",
         "yazi": "yazi",
         "yazi-flavors": "yazi-flavors",
@@ -1503,12 +1504,10 @@
     "nur_2": {
       "inputs": {
         "flake-parts": [
-          "nix-relic",
           "stylix",
           "flake-parts"
         ],
         "nixpkgs": [
-          "nix-relic",
           "stylix",
           "nixpkgs"
         ]
@@ -1613,6 +1612,7 @@
         "nix-relic": "nix-relic",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_8",
+        "stylix": "stylix",
         "viu": "viu"
       }
     },
@@ -1749,11 +1749,10 @@
         "flake-parts": "flake-parts_5",
         "gnome-shell": "gnome-shell",
         "nixpkgs": [
-          "nix-relic",
           "nixpkgs"
         ],
         "nur": "nur_2",
-        "systems": "systems_8",
+        "systems": "systems_9",
         "tinted-foot": "tinted-foot",
         "tinted-kitty": "tinted-kitty",
         "tinted-schemes": "tinted-schemes",
