@@ -694,15 +694,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1764459352,
-        "narHash": "sha256-iKRP2qNtOIhqShZcWC1m54r7uUXnLk0jgWM4wJWmJ68=",
-        "owner": "outfoxxed",
+        "lastModified": 1764517496,
+        "narHash": "sha256-trwv1zm3JlEed29Y+MhrcAfjLX5Wybt/0/MxWqt3qRU=",
+        "owner": "Immelancholy",
         "repo": "hy3",
-        "rev": "ac8ac4c2371b18d02a29222a4e8d2da51f348226",
+        "rev": "2a195d8a46b389ea11ab219a13046b6dc7eedfc6",
         "type": "github"
       },
       "original": {
-        "owner": "outfoxxed",
+        "owner": "Immelancholy",
+        "ref": "switch-to-dispatcherv2",
         "repo": "hy3",
         "type": "github"
       }
@@ -1268,11 +1269,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1764516030,
-        "narHash": "sha256-btTRh19Gpq+8ercHd8nZzuaHaDGlkxJLhEbJCRav/wU=",
+        "lastModified": 1764517596,
+        "narHash": "sha256-Dt1jvO7FpnAtBPcS6AlSWKmLJtyRiKlZMY2zVvoaBr4=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "c000f5b5b5a5e45f39a14eab756aa700ed672ab6",
+        "rev": "d36ca4ed6abd198e4d12581b807b95237d17b29d",
         "type": "github"
       },
       "original": {
