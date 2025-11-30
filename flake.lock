@@ -419,6 +419,7 @@
     "flake-parts_5": {
       "inputs": {
         "nixpkgs-lib": [
+          "nix-relic",
           "stylix",
           "nixpkgs"
         ]
@@ -512,7 +513,7 @@
     },
     "flake-utils_4": {
       "inputs": {
-        "systems": "systems_8"
+        "systems": "systems_9"
       },
       "locked": {
         "lastModified": 1731533236,
@@ -1258,9 +1259,7 @@
         "rust-overlay": "rust-overlay",
         "solaar": "solaar",
         "spicetify-nix": "spicetify-nix",
-        "stylix": [
-          "stylix"
-        ],
+        "stylix": "stylix",
         "yamb": "yamb",
         "yazi": "yazi",
         "yazi-flavors": "yazi-flavors",
@@ -1269,11 +1268,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1764508696,
-        "narHash": "sha256-L7Zow3mVFqs3PXqK/YbY4sk5FzQW4BToyZA8LYHxg8A=",
+        "lastModified": 1764509076,
+        "narHash": "sha256-EcQsW9hDPxA8c4DQCJvmWlhexSfQA9CCGppj2r5rfdY=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "59792e7375ae8caf8138f290085e4f1e63d5717b",
+        "rev": "17e5c5480321fe10c368ff9d1927ba6dd2c5d869",
         "type": "github"
       },
       "original": {
@@ -1504,10 +1503,12 @@
     "nur_2": {
       "inputs": {
         "flake-parts": [
+          "nix-relic",
           "stylix",
           "flake-parts"
         ],
         "nixpkgs": [
+          "nix-relic",
           "stylix",
           "nixpkgs"
         ]
@@ -1612,7 +1613,6 @@
         "nix-relic": "nix-relic",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_8",
-        "stylix": "stylix",
         "viu": "viu"
       }
     },
@@ -1749,10 +1749,11 @@
         "flake-parts": "flake-parts_5",
         "gnome-shell": "gnome-shell",
         "nixpkgs": [
+          "nix-relic",
           "nixpkgs"
         ],
         "nur": "nur_2",
-        "systems": "systems_9",
+        "systems": "systems_8",
         "tinted-foot": "tinted-foot",
         "tinted-kitty": "tinted-kitty",
         "tinted-schemes": "tinted-schemes",
@@ -1760,15 +1761,15 @@
         "tinted-zed": "tinted-zed"
       },
       "locked": {
-        "lastModified": 1764508421,
-        "narHash": "sha256-najLnGqTP3Qis19GRc/Yqc9pWRnTWxg1OS67xi/I7W0=",
-        "owner": "Immelancholy",
+        "lastModified": 1764451865,
+        "narHash": "sha256-d4tfTm3ccp4rx7W1WW1BzSkTgEeMd4cZvhAJ7lP145M=",
+        "owner": "nix-community",
         "repo": "stylix",
-        "rev": "6c63f3876cf3ca3a262fcf386834b5cf7340e9d4",
+        "rev": "8a096ccec828c68bfb870295d186ad994ea0ae2c",
         "type": "github"
       },
       "original": {
-        "owner": "Immelancholy",
+        "owner": "nix-community",
         "repo": "stylix",
         "type": "github"
       }
