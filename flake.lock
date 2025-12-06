@@ -31,16 +31,15 @@
         ]
       },
       "locked": {
-        "lastModified": 1730688725,
-        "narHash": "sha256-g0SSfTWZ5mtMOpQic+eqq9sXMy1E/7yKxxfupZd9V4A=",
+        "lastModified": 1751513446,
+        "narHash": "sha256-pnRh5ysSgMSOQxvL82sNJRwD/CiSYWplrGRU2WLoNKQ=",
         "owner": "kamadorueda",
         "repo": "alejandra",
-        "rev": "2bb91e309ca99656addff5c74545acbf5813636d",
+        "rev": "c68bef57c1db3add865493d9cb741a14618bdc28",
         "type": "github"
       },
       "original": {
         "owner": "kamadorueda",
-        "ref": "3.1.0",
         "repo": "alejandra",
         "type": "github"
       }
@@ -206,6 +205,21 @@
         "type": "github"
       }
     },
+    "crane_2": {
+      "locked": {
+        "lastModified": 1762538466,
+        "narHash": "sha256-8zrIPl6J+wLm9MH5ksHcW7BUHo7jSNOu0/hA0ohOOaM=",
+        "owner": "ipetkov",
+        "repo": "crane",
+        "rev": "0cea393fffb39575c46b7a0318386467272182fe",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ipetkov",
+        "repo": "crane",
+        "type": "github"
+      }
+    },
     "disko": {
       "inputs": {
         "nixpkgs": [
@@ -320,6 +334,21 @@
         "owner": "edolstra",
         "repo": "flake-compat",
         "rev": "b4a34015c698c7793d592d66adbab377907a2be8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
+    "flake-compat_5": {
+      "locked": {
+        "lastModified": 1761588595,
+        "narHash": "sha256-XKUZz9zewJNUj46b4AJdiRZJAvSZ0Dqj2BNfXvFlJC4=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "f387cd2afec9419c8ee37694406ca490c3f34ee5",
         "type": "github"
       },
       "original": {
@@ -1299,11 +1328,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1765041989,
-        "narHash": "sha256-ijvfS+afze0/dJ6PRFjv0cttZk+0WPzwJ3aTUPBGqdY=",
+        "lastModified": 1765057834,
+        "narHash": "sha256-SDnkKjisoIKqQ2h80viPF5GzB3Uha8Mjw+VFxUvH080=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "911c82137ad2b27c6bb58e4f24b97457a9126130",
+        "rev": "9577cf92a7f6f76dcffac2092e145fa39d72c512",
         "type": "github"
       },
       "original": {
@@ -1660,7 +1689,8 @@
         "nix-relic": "nix-relic",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_9",
-        "viu": "viu"
+        "viu": "viu",
+        "zed": "zed"
       }
     },
     "rust-analyzer-src": {
@@ -1715,6 +1745,27 @@
         "owner": "oxalica",
         "repo": "rust-overlay",
         "rev": "ab726555a9a72e6dc80649809147823a813fa95b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "rust-overlay_3": {
+      "inputs": {
+        "nixpkgs": [
+          "zed",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1762915112,
+        "narHash": "sha256-d9j1g8nKmYDHy+/bIOPQTh9IwjRliqaTM0QLHMV92Ic=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "aa1e85921cfa04de7b6914982a94621fbec5cc02",
         "type": "github"
       },
       "original": {
@@ -2198,6 +2249,29 @@
       "original": {
         "owner": "yazi-rs",
         "repo": "plugins",
+        "type": "github"
+      }
+    },
+    "zed": {
+      "inputs": {
+        "crane": "crane_2",
+        "flake-compat": "flake-compat_5",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
+        "rust-overlay": "rust-overlay_3"
+      },
+      "locked": {
+        "lastModified": 1765043809,
+        "narHash": "sha256-MOfozSTIY7R3F0EGPnvhYGrbH/qvslW6mHIbRt3ZBq8=",
+        "owner": "zed-industries",
+        "repo": "zed",
+        "rev": "b2e35b5f999b1640251d155d13a0b3914e7c96a1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zed-industries",
+        "repo": "zed",
         "type": "github"
       }
     },
