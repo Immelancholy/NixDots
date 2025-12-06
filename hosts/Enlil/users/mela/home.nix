@@ -6,7 +6,7 @@
 }: {
   imports = [
     ./vesktop.nix
-    ./mimeapps.nix
+    ./zed.nix
   ];
 
   stylix = {
