@@ -1328,11 +1328,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1765058185,
-        "narHash": "sha256-5ztrZol9DaFUyQnKcc+prSPsEiFoAuBUBDkSTcwT5rE=",
+        "lastModified": 1765063952,
+        "narHash": "sha256-9pCqIDvH3lRUddSsGiM5Kb1Brkq51WD30G52f6YAXqE=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "1c2f29f9ad328e3b4157912a59d5266aae8623e2",
+        "rev": "851f9838bb0bc107a3ae14137f135e734132e4ac",
         "type": "github"
       },
       "original": {
