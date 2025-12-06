@@ -49,6 +49,24 @@ in {
       };
       base_keymap = "Emacs";
       vim_mode = true;
+      terminal = {
+        detect_venv = {
+          on = {
+            directories = [
+              ".env"
+              "env"
+              ".venv"
+              "venv"
+              ".venv"
+            ];
+            activate_script = "default";
+          };
+        };
+        env = {
+          GIT_EDITOR = "zed --wait";
+          EDITOR = "zed";
+        };
+      };
       languages = {
         Nix = {
           language_servers = [
