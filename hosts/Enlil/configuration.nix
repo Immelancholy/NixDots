@@ -48,6 +48,10 @@ in {
     };
   };
 
+  programs.nix-ld = {
+    enable = true;
+  };
+
   virtualisation.docker = {
     enable = true;
     storageDriver = "btrfs";
@@ -58,7 +62,7 @@ in {
       cudaSupport = true;
     };
     overlays = [
-      inputs.zed.overlays.default
+      # inputs.zed.overlays.default
       inputs.anifetch.overlays.anifetch
       nix-relic.inputs.rust-overlay.overlays.default
     ];

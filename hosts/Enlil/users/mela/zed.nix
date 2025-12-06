@@ -5,13 +5,13 @@
   ...
 }: let
   associations = {
-    "text/plain" = ["dev.zed.Zed-Nightly.desktop"];
-    "text/css" = ["dev.zed.Zed-Nightly.desktop"];
-    "text/csv" = ["dev.zed.Zed-Nightly.desktop"];
-    "text/javascript" = ["dev.zed.Zed-Nightly.desktop"];
-    "application/json" = ["dev.zed.Zed-Nightly.desktop"];
-    "application/xml" = ["dev.zed.Zed-Nightly.desktop"];
-    "application/x-shellscript" = ["dev.zed.Zed-Nightly.desktop"];
+    "text/plain" = ["dev.zed.Zed.desktop"];
+    "text/css" = ["dev.zed.Zed.desktop"];
+    "text/csv" = ["dev.zed.Zed.desktop"];
+    "text/javascript" = ["dev.zed.Zed.desktop"];
+    "application/json" = ["dev.zed.Zed.desktop"];
+    "application/xml" = ["dev.zed.Zed.desktop"];
+    "application/x-shellscript" = ["dev.zed.Zed.desktop"];
   };
 in {
   xdg.mimeApps = {
@@ -19,7 +19,6 @@ in {
     defaultApplications = associations;
   };
   programs.zed-editor = {
-    # package = inputs.zed.packages.${pkgs.stdenv.hostPlatform.system}.default;
     mutableUserTasks = lib.mkForce false;
     mutableUserSettings = lib.mkForce false;
     mutableUserKeymaps = lib.mkForce false;
@@ -27,14 +26,21 @@ in {
     extensions = [
       "nix"
       "basher"
+      "markdown-oxide"
+      "rumdl"
+      "git-firefly"
     ];
     extraPackages = with pkgs; [
       nixd
-      shellcheck
       bash-language-server
-      tree-sitter-grammars.tree-sitter-bash
+      markdown-oxide
+      rumdl
       shfmt
       inputs.alejandra.packages.${pkgs.stdenv.hostPlatform.system}.default
+      shellcheck
+      tree-sitter-grammars.tree-sitter-bash
+      tree-sitter-grammars.tree-sitter-nix
+      tree-sitter-grammars.tree-sitter-markdown
     ];
     userSettings = {
       telemetry = {
@@ -59,28 +65,18 @@ in {
             };
           };
         };
-        Bash = {
+        "Shell Script" = {
           language_servers = [
             "bash-language-server"
           ];
-        };
-      };
-      lsp = {
-        bash-language-server = {
-          initialization_options = {
-            formatting = {
-              command = [
-                "shfmt"
-                "--"
-              ];
-            };
-          };
-        };
-        nixd = {
-          settings = {
-            diagnostics = {
-              suppress = [
-                "sema-extra-with"
+          external = {
+            formatter = {
+              command = "shfmt";
+              arguments = [
+                "--filename"
+                "{buffer_path}"
+                "--indent"
+                "2"
               ];
             };
           };
