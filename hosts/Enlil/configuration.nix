@@ -18,7 +18,6 @@ in {
   imports = [
     inputs.nixos-hardware.nixosModules.lenovo-legion-t526amr5
   ];
-  stylix.enableReleaseChecks = false;
   nix-relic = {
     flakePath = "/home/mela/NixDots";
     updateScript.enableToken = true;
@@ -59,10 +58,13 @@ in {
       cudaSupport = true;
     };
     overlays = [
+      inputs.zed.overlays.default
       inputs.anifetch.overlays.anifetch
       nix-relic.inputs.rust-overlay.overlays.default
     ];
   };
+
+  environment.variables.EDITOR = "nvim";
 
   environment.systemPackages = with pkgs; [
     nexusmods-app-unfree

@@ -1,9 +1,25 @@
 {
   pkgs,
   lib,
+  inputs,
   ...
-}: {
+}: let
+  associations = {
+    "text/plain" = ["dev.zed.Zed-Nightly.desktop"];
+    "text/css" = ["dev.zed.Zed-Nightly.desktop"];
+    "text/csv" = ["dev.zed.Zed-Nightly.desktop"];
+    "text/javascript" = ["dev.zed.Zed-Nightly.desktop"];
+    "application/json" = ["dev.zed.Zed-Nightly.desktop"];
+    "application/xml" = ["dev.zed.Zed-Nightly.desktop"];
+    "application/x-shellscript" = ["dev.zed.Zed-Nightly.desktop"];
+  };
+in {
+  xdg.mimeApps = {
+    associations.added = associations;
+    defaultApplications = associations;
+  };
   programs.zed-editor = {
+    # package = inputs.zed.packages.${pkgs.stdenv.hostPlatform.system}.default;
     mutableUserTasks = lib.mkForce false;
     mutableUserSettings = lib.mkForce false;
     mutableUserKeymaps = lib.mkForce false;
@@ -18,6 +34,7 @@
       bash-language-server
       tree-sitter-grammars.tree-sitter-bash
       shfmt
+      inputs.alejandra.packages.${pkgs.stdenv.hostPlatform.system}.default
     ];
     userSettings = {
       telemetry = {
@@ -32,6 +49,15 @@
             "nixd"
             "!nil"
           ];
+          formatter = {
+            external = {
+              command = "alejandra";
+              arguments = [
+                "--quiet"
+                "--"
+              ];
+            };
+          };
         };
         Bash = {
           language_servers = [
@@ -51,15 +77,6 @@
           };
         };
         nixd = {
-          initialization_options = {
-            formatting = {
-              command = [
-                "alejandra"
-                "--quiet"
-                "--"
-              ];
-            };
-          };
           settings = {
             diagnostics = {
               suppress = [

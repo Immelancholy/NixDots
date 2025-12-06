@@ -11,7 +11,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     alejandra = {
-      url = "github:kamadorueda/alejandra/3.1.0";
+      url = "github:kamadorueda/alejandra";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     disko = {
@@ -27,6 +27,10 @@
     };
     anifetch = {
       url = "github:Notenlish/anifetch";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+    zed = {
+      url = "github:zed-industries/zed";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
@@ -52,6 +56,18 @@
           nix-relic.nixosModules.default
           inputs.disko.nixosModules.default
           ./hosts/${host}
+          {
+            nix.settings = {
+              extra-substituters = [
+                "https://zed.cachix.org"
+                "https://cache.garnix.io"
+              ];
+              extra-trusted-public-keys = [
+                "zed.cachix.org-1:/pHQ6dpMsAZk2DiP4WCL0p9YDNKWj2Q5FL20bNmw1cU="
+                "cache.garnix.io:CTFPyKSLcx5RMJKfLo5EEPUObbA78b0YQ2DTCJXqr9g="
+              ];
+            };
+          }
           (
             {
               config,
@@ -89,9 +105,6 @@
               extraSpecialArgs = {inherit inputs outputs nix-relic;};
               sharedModules = [
                 nix-relic.homeManagerModules.default
-                {
-                  stylix.enableReleaseChecks = false;
-                }
               ];
             };
           }

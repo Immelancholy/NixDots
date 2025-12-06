@@ -213,7 +213,7 @@
   services.easyeffects.package = pkgs.nr.easyeffects;
   programs.nixvim = {
     enable = true;
-    defaultEditor = true;
+    defaultEditor = false;
     plugins = {
       rustaceanvim = {
         enable = true;
