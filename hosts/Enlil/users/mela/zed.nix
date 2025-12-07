@@ -13,6 +13,18 @@
     "application/xml" = ["dev.zed.Zed.desktop"];
     "application/x-shellscript" = ["dev.zed.Zed.desktop"];
   };
+  tree-sitter = with pkgs.tree-sitter-grammars; [
+    tree-sitter-bash
+    tree-sitter-nix
+    tree-sitter-markdown
+    tree-sitter-latex
+    tree-sitter-bibtex
+    tree-sitter-python
+    tree-sitter-hyprlang
+    tree-sitter-rust
+    tree-sitter-make
+    tree-sitter-cpp
+  ];
   python-lsp = pkgs.python3.withPackages (ps:
     with ps; [
       python-lsp-server
@@ -42,29 +54,23 @@ in {
       "python-snippets"
       "make"
     ];
-    extraPackages = with pkgs; [
-      nixd
-      rust-analyzer
-      hyprls
-      bash-language-server
-      python-lsp
-      markdown-oxide
-      texlab
-      rumdl
-      ruff
-      shfmt
-      inputs.alejandra.packages.${pkgs.stdenv.hostPlatform.system}.default
-      shellcheck
-      tree-sitter-grammars.tree-sitter-bash
-      tree-sitter-grammars.tree-sitter-nix
-      tree-sitter-grammars.tree-sitter-markdown
-      tree-sitter-grammars.tree-sitter-latex
-      tree-sitter-grammars.tree-sitter-bibtex
-      tree-sitter-grammars.tree-sitter-python
-      tree-sitter-grammars.tree-sitter-hyprlang
-      tree-sitter-grammars.tree-sitter-rust
-      tree-sitter-grammars.tree-sitter-make
-    ];
+    extraPackages = with pkgs;
+      [
+        nixd
+        libclang
+        rust-analyzer
+        hyprls
+        bash-language-server
+        python-lsp
+        markdown-oxide
+        texlab
+        rumdl
+        ruff
+        shfmt
+        inputs.alejandra.packages.${pkgs.stdenv.hostPlatform.system}.default
+        shellcheck
+      ]
+      ++ tree-sitter;
     userKeymaps = [
       {
         context = "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu";
