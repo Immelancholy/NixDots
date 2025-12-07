@@ -137,6 +137,11 @@ in {
           "space space" = "pane::DeploySearch";
 
           "space e" = "pane::RevealInProjectPanel";
+
+          "Z Z" = [
+            "workspace::SendKeystrokes"
+            "ctrl-s ctrl-shift-w"
+          ];
         };
       }
       {
@@ -145,6 +150,10 @@ in {
           "space space" = "file_finder::Toggle";
 
           "space f p" = "projects::OpenRecent";
+
+          "space e" = "workspace::ToggleRightDock";
+
+          "space t t" = "terminal_panel::Toggle";
         };
       }
       {
@@ -177,8 +186,6 @@ in {
       {
         context = "Workspace";
         bindings = {
-          "space e" = "workspace::ToggleRightDock";
-          "space t t" = "terminal_panel::Toggle";
         };
       }
       {
@@ -188,6 +195,7 @@ in {
           "ctrl-l" = "workspace::ActivatePaneRight";
           "ctrl-k" = "workspace::ActivatePaneUp";
           "ctrl-j" = "workspace::ActivatePaneDown";
+          "space t t" = "terminal_panel::Toggle";
         };
       }
       {
@@ -207,6 +215,10 @@ in {
           "ctrl-l" = "workspace::ActivatePaneRight";
           "ctrl-k" = "workspace::ActivatePaneUp";
           "ctrl-j" = "workspace::ActivatePaneDown";
+          "Z Z" = [
+            "workspace::SendKeystrokes"
+            "space e ctrl-s ctrl-shift-w"
+          ];
         };
       }
       {
