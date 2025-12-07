@@ -200,6 +200,7 @@ in {
           "x" = "project_panel::Cut";
           "y" = "project_panel::Copy";
           "p" = "project_panel::Paste";
+          "w" = "project_panel::Open";
           "q" = "workspace::ToggleRightDock";
           "space e" = "workspace::ToggleRightDock";
           "ctrl-h" = "workspace::ActivatePaneLeft";
@@ -279,9 +280,9 @@ in {
         edit_prediction_provider = "zed";
       };
       file_finder = {
-        modal_width = "medium";
+        modal_max_width = "medium";
       };
-      relative_line_numbers = true;
+      relative_line_numbers = "enabled";
       tab_bar = {
         show = true;
       };
@@ -308,15 +309,12 @@ in {
       notification_panel = {
         dock = "right";
       };
-      chat_panel = {
-        dock = "right";
-      };
       snippet_sort_order = "top";
       telemetry = {
         metrics = false;
         diagnostics = false;
       };
-      centred_layout = {
+      centered_layout = {
         left_padding = 0.15;
         right_padding = 0.15;
       };
@@ -378,8 +376,8 @@ in {
           language_servers = [
             "bash-language-server"
           ];
-          external = {
-            formatter = {
+          formatter = {
+            external = {
               command = "shfmt";
               arguments = [
                 "--filename"
