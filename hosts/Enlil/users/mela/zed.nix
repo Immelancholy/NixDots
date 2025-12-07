@@ -49,6 +49,14 @@ in {
       };
       base_keymap = "Emacs";
       vim_mode = true;
+      inlay_hints = {
+        enabled = true;
+      };
+      diagnostics = {
+        inline = {
+          enabled = true;
+        };
+      };
       terminal = {
         detect_venv = {
           on = {
@@ -57,14 +65,13 @@ in {
               "env"
               ".venv"
               "venv"
-              ".venv"
             ];
             activate_script = "default";
           };
         };
         env = {
-          GIT_EDITOR = "zed --wait";
-          EDITOR = "zed";
+          GIT_EDITOR = "zeditor --wait";
+          EDITOR = "zeditor --wait";
         };
       };
       languages = {
