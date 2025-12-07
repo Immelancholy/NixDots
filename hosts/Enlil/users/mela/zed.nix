@@ -101,7 +101,7 @@ in {
           "space c a" = "editor::ToggleCodeActions";
           "space ." = "editor::ToggleCodeActions";
           "space c r" = "editor::Rename";
-          "space t t" = "terminal_panel::ToggleFocus";
+          "space t t" = "terminal_panel::Toggle";
           "g d" = "editor::GoToDefinition";
           "g D" = "editor::GoToDefinitionSplit";
           "g i" = "editor::GoToImplementation";
@@ -177,8 +177,8 @@ in {
       {
         context = "Workspace";
         bindings = {
-          "space e" = "project_panel::ToggleFocus";
-          "space t t" = "terminal_panel::ToggleFocus";
+          "space e" = "workspace::ToggleRightDock";
+          "space t t" = "terminal_panel::Toggle";
         };
       }
       {
@@ -243,6 +243,57 @@ in {
       }
     ];
     userSettings = {
+      file_types = {
+        Dockerfile = [
+          "Dockerfile"
+          "Dockerfile.*"
+        ];
+        JSON = [
+          "json"
+          "jsonc"
+          ".code-snippets"
+        ];
+      };
+      file_scan_exclusions = [
+        "**/.git"
+        "**/.svn"
+        "**/CVS"
+        "**/.DS_Store"
+        "**/.classpath"
+        "**.settings"
+        "**/out"
+        "**/dist"
+        "**/.husky"
+        "**/.turbo"
+        "**/.vscode-test"
+        "**/.vscode"
+        "**/.next"
+        "**/.storybook"
+        "**/.tap"
+        "**/.nyc_output"
+        "**/report"
+        "**/node_modules"
+        "**/result"
+      ];
+      features = {
+        edit_prediction_provider = "zed";
+      };
+      file_finder = {
+        modal_width = "medium";
+      };
+      relative_line_numbers = true;
+      tab_bar = {
+        show = true;
+      };
+      scrollbar = {
+        show = "never";
+      };
+      tabs = {
+        show_diagnostics = "errors";
+      };
+      git_panel = {
+        dock = "right";
+      };
       project_panel = {
         button = true;
         dock = "right";
