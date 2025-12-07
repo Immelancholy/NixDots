@@ -29,11 +29,13 @@ in {
       "markdown-oxide"
       "rumdl"
       "git-firefly"
+      "latex"
     ];
     extraPackages = with pkgs; [
       nixd
       bash-language-server
       markdown-oxide
+      texlab
       rumdl
       shfmt
       inputs.alejandra.packages.${pkgs.stdenv.hostPlatform.system}.default
@@ -41,6 +43,8 @@ in {
       tree-sitter-grammars.tree-sitter-bash
       tree-sitter-grammars.tree-sitter-nix
       tree-sitter-grammars.tree-sitter-markdown
+      tree-sitter-grammars.tree-sitter-latex
+      tree-sitter-grammars.tree-sitter-bibtex
     ];
     userSettings = {
       telemetry = {
