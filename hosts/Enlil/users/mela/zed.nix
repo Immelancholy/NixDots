@@ -373,11 +373,20 @@ in {
           EDITOR = "zeditor --wait";
         };
       };
+      lsp = {
+        discord_presence = {
+          initialization_options = {
+            git_integration = true;
+          };
+        };
+      };
+
       languages = {
         Nix = {
           language_servers = [
             "nixd"
             "!nil"
+            "discord_presence"
           ];
           formatter = {
             external = {
