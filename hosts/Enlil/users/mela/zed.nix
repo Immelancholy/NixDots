@@ -74,6 +74,7 @@ in {
         inputs.alejandra.packages.${pkgs.stdenv.hostPlatform.system}.default
         shellcheck
         tombi
+        zed-discord-presence
       ]
       ++ tree-sitter;
     userKeymaps = [
