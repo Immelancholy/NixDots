@@ -166,6 +166,11 @@ in {
           "space e" = "workspace::ToggleRightDock";
 
           "space t t" = "terminal_panel::Toggle";
+
+          "Z Z" = [
+            "workspace::SendKeystrokes"
+            "ctrl-s ctrl-shift-w"
+          ];
         };
       }
       {
