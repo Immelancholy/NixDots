@@ -24,6 +24,7 @@
     tree-sitter-rust
     tree-sitter-make
     tree-sitter-cpp
+    tree-sitter-toml
   ];
   python-lsp = pkgs.python3.withPackages (ps:
     with ps; [
@@ -53,6 +54,9 @@ in {
       "rust-snippets"
       "python-snippets"
       "make"
+      "discord-presence"
+      "toml"
+      "tombi"
     ];
     extraPackages = with pkgs;
       [
@@ -69,6 +73,7 @@ in {
         shfmt
         inputs.alejandra.packages.${pkgs.stdenv.hostPlatform.system}.default
         shellcheck
+        tombi
       ]
       ++ tree-sitter;
     userKeymaps = [
