@@ -103,12 +103,6 @@ in {
         };
       }
       {
-        context = "Agent";
-        bindings = {
-          "space e" = "project_panel::ToggleFocus";
-        };
-      }
-      {
         context = "Editor && vim_mode == normal && !VimWaiting && !menu";
         bindings = {
           "ctrl-h" = "workspace::ActivatePaneLeft";
