@@ -103,7 +103,7 @@ in {
         };
       }
       {
-        context = "AgentPanel";
+        context = "Agent";
         bindings = {
           "space e" = "project_panel::ToggleFocus";
         };
@@ -219,6 +219,7 @@ in {
           "ctrl-k" = "workspace::ActivatePaneUp";
           "ctrl-j" = "workspace::ActivatePaneDown";
           "space t t" = "terminal_panel::Toggle";
+          "space e" = "project_panel::ToggleFocus";
         };
       }
       {
