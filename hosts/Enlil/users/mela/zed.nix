@@ -105,7 +105,7 @@ in {
       {
         context = "AgentPanel";
         bindings = {
-          "space e" = "pane::RevealInProjectPanel";
+          "space e" = "project_panel::ToggleFocus";
         };
       }
       {
