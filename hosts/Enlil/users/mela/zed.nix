@@ -103,6 +103,12 @@ in {
         };
       }
       {
+        context = "AgentPanel";
+        bindings = {
+          "space e" = "pane::RevealInProjectPanel";
+        };
+      }
+      {
         context = "Editor && vim_mode == normal && !VimWaiting && !menu";
         bindings = {
           "ctrl-h" = "workspace::ActivatePaneLeft";
