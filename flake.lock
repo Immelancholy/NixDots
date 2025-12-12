@@ -1280,15 +1280,16 @@
         "yazi": "yazi",
         "yazi-flavors": "yazi-flavors",
         "yazi-plugins": "yazi-plugins",
+        "zarumet": "zarumet",
         "zen-browser": "zen-browser",
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1765330627,
-        "narHash": "sha256-SH8sPqj/aw4MjjefAWXNObfQYHDkLE+b79WvlYZ13eI=",
+        "lastModified": 1765500547,
+        "narHash": "sha256-6uQpgJt44QcL5kPqcOQMJydKwcpkyA43NNDSPaVBEiU=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "420d8b7d35405f13ee82bc69f1b165e9a1b8dc5a",
+        "rev": "ef766382dd73e287013fb7b4bb80055ebb4aef44",
         "type": "github"
       },
       "original": {
@@ -1675,6 +1676,28 @@
         "owner": "oxalica",
         "repo": "rust-overlay",
         "rev": "ab726555a9a72e6dc80649809147823a813fa95b",
+        "type": "github"
+      },
+      "original": {
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "rust-overlay_3": {
+      "inputs": {
+        "nixpkgs": [
+          "nix-relic",
+          "zarumet",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1765334520,
+        "narHash": "sha256-jTof2+ir9UPmv4lWksYO6WbaXCC0nsDExrB9KZj7Dz4=",
+        "owner": "oxalica",
+        "repo": "rust-overlay",
+        "rev": "db61f666aea93b28f644861fbddd37f235cc5983",
         "type": "github"
       },
       "original": {
@@ -2143,6 +2166,28 @@
       "original": {
         "owner": "yazi-rs",
         "repo": "plugins",
+        "type": "github"
+      }
+    },
+    "zarumet": {
+      "inputs": {
+        "nixpkgs": [
+          "nix-relic",
+          "nixpkgs"
+        ],
+        "rust-overlay": "rust-overlay_3"
+      },
+      "locked": {
+        "lastModified": 1765500327,
+        "narHash": "sha256-ssgOu0n+HG08f8gDiNcJ/41oG39B1OtblP9dcyfBhmA=",
+        "owner": "Immelancholy",
+        "repo": "zarumet",
+        "rev": "f986de0ec5bcf25bbc10f7e5992d7a6aa6074a2d",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Immelancholy",
+        "repo": "zarumet",
         "type": "github"
       }
     },
