@@ -684,7 +684,7 @@
       },
       "original": {
         "owner": "Immelancholy",
-        "ref": "update-to-m_reserved_area-test",
+        "ref": "update-to-m_reserved_area",
         "repo": "hy3",
         "type": "github"
       }
@@ -1285,11 +1285,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1765583089,
-        "narHash": "sha256-yQ7NRzAETEETbnvwoZy8t7Mm9yD77/g0Ke8ZZvbGolo=",
+        "lastModified": 1765668484,
+        "narHash": "sha256-VUsy6QqeiSbuthg6eyfZNrPjZDPbach6NGWHVFlouQw=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "fa7a5017137dd43ddda773c3f9e1bb4b25191997",
+        "rev": "ce9f4f88da9f9bd560a857bdcdfd6278809af66c",
         "type": "github"
       },
       "original": {
@@ -2178,15 +2178,16 @@
         "rust-overlay": "rust-overlay_3"
       },
       "locked": {
-        "lastModified": 1765583032,
-        "narHash": "sha256-anuLWOCAkTlj3zF7U9LJ89cMqts5J7w+x1qkxwuIbc0=",
+        "lastModified": 1765668342,
+        "narHash": "sha256-zhs8VfwH8fyhUfKjagH/sMwHzaJ/KHWXz2097l/BbTY=",
         "owner": "Immelancholy",
         "repo": "zarumet",
-        "rev": "d214ff370cf1e72925bb38a418baa26b39295ae4",
+        "rev": "cc21c8ce37776150e7e30330d62fb972902e35c6",
         "type": "github"
       },
       "original": {
         "owner": "Immelancholy",
+        "ref": "use-mpd-querey-art",
         "repo": "zarumet",
         "type": "github"
       }
