@@ -1,0 +1,3 @@
+{
+  services.qpwgraph.enable = true;
+}

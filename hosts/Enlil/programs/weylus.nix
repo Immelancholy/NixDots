@@ -1,0 +1,5 @@
+{
+  programs.weylus.users = [
+    "mela"
+  ];
+}

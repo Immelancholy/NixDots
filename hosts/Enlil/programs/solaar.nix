@@ -1,0 +1,5 @@
+{
+  services.solaar = {
+    enable = true;
+  };
+}
