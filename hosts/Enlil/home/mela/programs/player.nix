@@ -1,0 +1,5 @@
+{
+  player = {
+    enable = true;
+  };
+}

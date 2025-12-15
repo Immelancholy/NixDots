@@ -51,25 +51,34 @@
         modules = [
           nix-relic.nixosModules.default
           inputs.disko.nixosModules.default
-          ./hosts/${host}
           (
             {
               config,
               lib,
               ...
             }:
-              with lib; {
+              with lib; let
+                inherit (builtins) filter map toString;
+                inherit (lib.filesystem) listFilesRecursive;
+                inherit (lib.strings) hasSuffix;
+                inherit (lib) elem;
+                imports = [] ++ listFilesRecursive ./hosts/${host};
+                excludes = [] ++ listFilesRecursive ./hosts/${host}/home;
+                auto_import = i: e: filter (hasSuffix ".nix") (map toString (filter (p: !(elem p e)) i));
+              in {
+                imports = auto_import imports excludes;
                 config = let
                   makeHM = name: _user: let
                     user = config.users.users.${name};
+                    imports = [] ++ listFilesRecursive ./hosts/${host}/home/${name};
+                    excludes = [];
                   in {
                     _module.args = {
                       inherit host user;
                     };
 
-                    imports = [
-                      ./hosts/${host}/users/${name}/home.nix
-                    ];
+                    imports = auto_import imports excludes;
+
                     home.sessionVariables = {
                       NOTES_PATH = "$HOME/Documents/Obsidian-Vault"; # path to notes folder ( for neovim )
                       PROJECTS_PATH = "$HOME/Documents/Projects"; # path to Projects folder ( for neovim )

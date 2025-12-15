@@ -57,6 +57,7 @@ in {
       "discord-presence"
       "toml"
       "tombi"
+      "opencode"
     ];
     extraPackages = with pkgs;
       [
@@ -75,6 +76,7 @@ in {
         shellcheck
         tombi
         zed-discord-presence
+        opencode
       ]
       ++ tree-sitter;
     userKeymaps = [

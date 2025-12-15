@@ -93,9 +93,14 @@ in {
     "mela"
   ];
 
-  nix.settings.trusted-users = [
-    "mela"
-  ];
+  nix.settings = {
+    trusted-users = [
+      "mela"
+    ];
+    experimental-features = [
+      "pipe-operators"
+    ];
+  };
 
   services.tailscale = {
     enable = true;
