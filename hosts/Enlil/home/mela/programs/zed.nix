@@ -83,23 +83,23 @@ in {
       {
         context = "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu";
         bindings = {
-          "space g h" = "editor::ToggleSelectedDiffHunks";
-          "space g s" = "editor::ToggleFocus";
+          "ctrl-space g h" = "editor::ToggleSelectedDiffHunks";
+          "ctrl-space g s" = "editor::ToggleFocus";
 
-          "space t i" = "editor::ToggleInlayHints";
+          "ctrl-space t i" = "editor::ToggleInlayHints";
 
-          "space u w" = "editor::ToggleSoftWrap";
+          "ctrl-space u w" = "editor::ToggleSoftWrap";
 
-          "space c z" = "workspace::ToggleCenteredLayout";
+          "ctrl-space c z" = "workspace::ToggleCenteredLayout";
 
-          "space m p" = "markdown::OpenPreview";
-          "space m P" = "markdown::OpenPreviewToTheSide";
+          "ctrl-space m p" = "markdown::OpenPreview";
+          "ctrl-space m P" = "markdown::OpenPreviewToTheSide";
 
-          "space f p" = "projects::OpenRecent";
+          "ctrl-space f p" = "projects::OpenRecent";
 
-          "space s w" = "pane::DeploySearch";
+          "ctrl-space s w" = "pane::DeploySearch";
 
-          "space a c" = "assistant::ToggleFocus";
+          "ctrl-space a c" = "assistant::ToggleFocus";
 
           "g f" = "editor::OpenExcerpts";
         };
@@ -112,10 +112,11 @@ in {
           "ctrl-k" = "workspace::ActivatePaneUp";
           "ctrl-j" = "workspace::ActivatePaneDown";
 
-          "space c a" = "editor::ToggleCodeActions";
-          "space ." = "editor::ToggleCodeActions";
-          "space c r" = "editor::Rename";
-          "space t t" = "terminal_panel::Toggle";
+          "ctrl-space c a" = "editor::ToggleCodeActions";
+          "ctrl-space ." = "editor::ToggleCodeActions";
+          "ctrl-space c r" = "editor::Rename";
+          "ctrl-space t t" = "terminal_panel::Toggle";
+
           "g d" = "editor::GoToDefinition";
           "g D" = "editor::GoToDefinitionSplit";
           "g i" = "editor::GoToImplementation";
@@ -132,7 +133,7 @@ in {
           "s s" = "outline::Toggle";
           "s S" = "project_symbols::Toggle";
 
-          "space x x" = "diagnostics::Deploy";
+          "ctrl-space x x" = "diagnostics::Deploy";
 
           "[ h" = "editor::GoToHunk";
           "] h" = "editor::GoToPreviousHunk";
@@ -142,15 +143,15 @@ in {
 
           "shift-q" = "pane::CloseActiveItem";
           "ctrl-q" = "pane::CloseActiveItem";
-          "space b d" = "pane::CloseActiveItem";
+          "ctrl-space b d" = "pane::CloseActiveItem";
 
-          "space b o" = "pane::CloseInactiveItems";
+          "ctrl-space b o" = "pane::CloseInactiveItems";
 
           "ctrl-s" = "workspace::Save";
 
-          "space space" = "pane::DeploySearch";
+          "ctrl-space space" = "pane::DeploySearch";
 
-          "space e" = "pane::RevealInProjectPanel";
+          "ctrl-space e" = "pane::RevealInProjectPanel";
 
           "Z Z" = [
             "workspace::SendKeystrokes"
@@ -161,13 +162,17 @@ in {
       {
         context = "EmptyPane || SharedScreen";
         bindings = {
-          "space space" = "file_finder::Toggle";
+          "ctrl-space space" = "file_finder::Toggle";
 
-          "space f p" = "projects::OpenRecent";
+          "ctrl-space f p" = "projects::OpenRecent";
 
-          "space e" = "workspace::ToggleRightDock";
+          "ctrl-space e" = "project_panel::ToggleFocus";
 
-          "space t t" = "terminal_panel::Toggle";
+          "ctrl-space r" = "workspace::ToggleRightDock";
+
+          "ctrl-space t t" = "terminal_panel::ToggleFocus";
+
+          "ctrl-space a c" = "assistant::ToggleFocus";
 
           "Z Z" = [
             "workspace::SendKeystrokes"
@@ -208,14 +213,29 @@ in {
         };
       }
       {
+        context = "AgentPanel";
+        bindings = {
+          "ctrl-h" = "workspace::ActivatePaneLeft";
+          "ctrl-l" = "workspace::ActivatePaneRight";
+          "ctrl-k" = "workspace::ActivatePaneUp";
+          "ctrl-j" = "workspace::ActivatePaneDown";
+          "ctrl-space t t" = "terminal_panel::ToggleFocus";
+          "ctrl-space r" = "workspace::ToggleRightDock";
+          "ctrl-space a c" = "assistant::ToggleFocus";
+          "ctrl-space e" = "project_panel::ToggleFocus";
+        };
+      }
+      {
         context = "Terminal";
         bindings = {
           "ctrl-h" = "workspace::ActivatePaneLeft";
           "ctrl-l" = "workspace::ActivatePaneRight";
           "ctrl-k" = "workspace::ActivatePaneUp";
           "ctrl-j" = "workspace::ActivatePaneDown";
-          "space t t" = "terminal_panel::Toggle";
-          "space e" = "project_panel::ToggleFocus";
+          "ctrl-space t t" = "terminal_panel::ToggleFocus";
+          "ctrl-space r" = "workspace::ToggleRightDock";
+          "ctrl-space a c" = "assistant::ToggleFocus";
+          "ctrl-space e" = "project_panel::ToggleFocus";
         };
       }
       {
@@ -229,15 +249,15 @@ in {
           "y" = "project_panel::Copy";
           "p" = "project_panel::Paste";
           "w" = "project_panel::Open";
-          "q" = "workspace::ToggleRightDock";
-          "space e" = "workspace::ToggleRightDock";
+          "q" = "workspace::ToggleLeftDock";
+          "ctrl-space e" = "workspace::ToggleLeftDock";
           "ctrl-h" = "workspace::ActivatePaneLeft";
           "ctrl-l" = "workspace::ActivatePaneRight";
           "ctrl-k" = "workspace::ActivatePaneUp";
           "ctrl-j" = "workspace::ActivatePaneDown";
           "Z Z" = [
             "workspace::SendKeystrokes"
-            "space e ctrl-s ctrl-shift-w"
+            "ctrl-space e ctrl-s ctrl-shift-w"
           ];
         };
       }
@@ -253,7 +273,7 @@ in {
       {
         context = "EmptyPane || SharedScreen || vim_mode == normal";
         bindings = {
-          "space r t" = [
+          "ctrl-space r t" = [
             "editor::SpawnNearestTask"
             {
               "reveal" = "no_focus";
@@ -324,21 +344,7 @@ in {
       tabs = {
         show_diagnostics = "errors";
       };
-      git_panel = {
-        dock = "right";
-      };
-      project_panel = {
-        button = true;
-        dock = "right";
-        git_status = true;
-      };
-      outline_panel = {
-        dock = "right";
-      };
-      collaboration_panel = {
-        dock = "right";
-      };
-      notification_panel = {
+      terminal = {
         dock = "right";
       };
       snippet_sort_order = "top";
