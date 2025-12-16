@@ -29,6 +29,10 @@
       url = "github:Notenlish/anifetch";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    affinity-nix = {
+      url = "github:mrshmllow/affinity-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs = {
