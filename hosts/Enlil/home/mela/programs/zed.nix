@@ -219,9 +219,8 @@ in {
           "ctrl-l" = "workspace::ActivatePaneRight";
           "ctrl-k" = "workspace::ActivatePaneUp";
           "ctrl-j" = "workspace::ActivatePaneDown";
-          "ctrl-space t t" = "terminal_panel::ToggleFocus";
-          "ctrl-space r" = "workspace::ToggleRightDock";
-          "ctrl-space a c" = "assistant::ToggleFocus";
+          "ctrl-space t t" = "terminal_panel::Toggle";
+          "ctrl-space a c" = "workspace::ToggleRightDock";
           "ctrl-space e" = "project_panel::ToggleFocus";
         };
       }
@@ -232,8 +231,7 @@ in {
           "ctrl-l" = "workspace::ActivatePaneRight";
           "ctrl-k" = "workspace::ActivatePaneUp";
           "ctrl-j" = "workspace::ActivatePaneDown";
-          "ctrl-space t t" = "terminal_panel::ToggleFocus";
-          "ctrl-space r" = "workspace::ToggleRightDock";
+          "ctrl-space t t" = "terminal_panel::Toggle";
           "ctrl-space a c" = "assistant::ToggleFocus";
           "ctrl-space e" = "project_panel::ToggleFocus";
         };
@@ -343,9 +341,6 @@ in {
       };
       tabs = {
         show_diagnostics = "errors";
-      };
-      terminal = {
-        dock = "right";
       };
       snippet_sort_order = "top";
       telemetry = {
