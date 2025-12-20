@@ -1370,11 +1370,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1766179141,
-        "narHash": "sha256-r0yM6b5zH7NiHcVhld5bF1fMQRgego/ZADHtLXpKmuo=",
+        "lastModified": 1766190636,
+        "narHash": "sha256-rAKA1Nui0ER5smVrOD+dTv/yoJidrPYWjooepLlbn1Y=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "a135db7a330ca292493729970e86504702fae26f",
+        "rev": "bc735ad31fffd0d5c4559e16be1c1e4b9d569ac5",
         "type": "github"
       },
       "original": {
@@ -2366,16 +2366,15 @@
         "rust-overlay": "rust-overlay_3"
       },
       "locked": {
-        "lastModified": 1766179128,
-        "narHash": "sha256-aqK6pFFsWxjKtYTpFXwA8X6eJM4SEfxlDjVyZLZWtyA=",
+        "lastModified": 1766190252,
+        "narHash": "sha256-xeRGWfEgEKdCAnZ+0KZMDa5Na9rmMYBI3SNf/IB6FFI=",
         "owner": "Immelancholy",
         "repo": "zarumet",
-        "rev": "69f799e147e37368f2ca4bb1110c866f7b38cc91",
+        "rev": "d66f1a107263e64c478ad915c94d7476fa2ca88b",
         "type": "github"
       },
       "original": {
         "owner": "Immelancholy",
-        "ref": "full-client",
         "repo": "zarumet",
         "type": "github"
       }
