@@ -367,13 +367,6 @@ in {
           enabled = true;
         };
       };
-      context_server = {
-        mpc-server-context7 = {
-          settings = {
-            context7_api_key = "ctx7sk-824b0995-875b-4ed3-8370-487b08a2a4d8";
-          };
-        };
-      };
       terminal = {
         detect_venv = {
           on = {

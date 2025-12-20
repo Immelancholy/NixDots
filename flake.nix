@@ -33,6 +33,7 @@
       url = "github:mrshmllow/affinity-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    agenix.url = "github:ryantm/agenix";
   };
 
   outputs = {
@@ -40,6 +41,7 @@
     nixpkgs,
     home-manager,
     nix-relic,
+    agenix,
     ...
   } @ inputs: let
     inherit (self) outputs;
@@ -55,6 +57,7 @@
         modules = [
           nix-relic.nixosModules.default
           inputs.disko.nixosModules.default
+          agenix.nixosModules.default
           (
             {
               config,
@@ -67,7 +70,7 @@
                 inherit (lib.strings) hasSuffix;
                 inherit (lib) elem;
                 imports = [] ++ listFilesRecursive ./hosts/${host};
-                excludes = [] ++ listFilesRecursive ./hosts/${host}/home;
+                excludes = [] ++ listFilesRecursive ./hosts/${host}/home ++ listFilesRecursive ./hosts/${host}/secrets;
                 auto_import = i: e: filter (hasSuffix ".nix") (map toString (filter (p: !(elem p e)) i));
               in {
                 imports = auto_import imports excludes;
@@ -102,6 +105,7 @@
               extraSpecialArgs = {inherit inputs outputs nix-relic;};
               sharedModules = [
                 nix-relic.homeManagerModules.default
+                agenix.homeManagerModules.default
               ];
             };
           }
