@@ -7,7 +7,7 @@
     inputs.nixos-hardware.nixosModules.lenovo-legion-t526amr5
   ];
   nix-relic = {
-    flakePath = "/home/mela/NixDots";
+    flakePath = "/home/mela/.nix/nixos-config";
     updateScript.enableToken = true;
     cava = {
       framerate = 280;
