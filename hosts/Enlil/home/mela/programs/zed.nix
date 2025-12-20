@@ -58,6 +58,7 @@ in {
       "toml"
       "tombi"
       "opencode"
+      "mcp-server-context7"
     ];
     extraPackages = with pkgs;
       [
@@ -249,6 +250,7 @@ in {
           "w" = "project_panel::Open";
           "q" = "workspace::ToggleLeftDock";
           "ctrl-space e" = "workspace::ToggleLeftDock";
+          "ctrl-space a" = "assistant::ToggleFocus";
           "ctrl-h" = "workspace::ActivatePaneLeft";
           "ctrl-l" = "workspace::ActivatePaneRight";
           "ctrl-k" = "workspace::ActivatePaneUp";
@@ -363,6 +365,13 @@ in {
       diagnostics = {
         inline = {
           enabled = true;
+        };
+      };
+      context_server = {
+        mpc-server-context7 = {
+          settings = {
+            context7_api_key = "ctx7sk-824b0995-875b-4ed3-8370-487b08a2a4d8";
+          };
         };
       };
       terminal = {
