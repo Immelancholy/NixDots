@@ -150,27 +150,6 @@
         "type": "github"
       }
     },
-    "artis": {
-      "inputs": {
-        "nixpkgs": [
-          "nix-relic",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1765669616,
-        "narHash": "sha256-HAOpTxRLRMoPu90n7/i52+TYq9C6oCnE0L2zqFfUKLE=",
-        "owner": "Immelancholy",
-        "repo": "artis",
-        "rev": "027a8e771a35d35d0acede670b78ee730449c3c7",
-        "type": "github"
-      },
-      "original": {
-        "owner": "Immelancholy",
-        "repo": "artis",
-        "type": "github"
-      }
-    },
     "base16": {
       "inputs": {
         "fromYaml": "fromYaml"
@@ -1297,27 +1276,6 @@
         "type": "github"
       }
     },
-    "inori": {
-      "inputs": {
-        "nixpkgs": [
-          "nix-relic",
-          "nixpkgs"
-        ]
-      },
-      "locked": {
-        "lastModified": 1764867258,
-        "narHash": "sha256-ScRGGCdy1atCVDUh8v8Qb36T9SDEzdyRFuzVAH4BgaU=",
-        "owner": "eshrh",
-        "repo": "inori",
-        "rev": "081618b4a731dffa496937862756869839d77dac",
-        "type": "github"
-      },
-      "original": {
-        "owner": "eshrh",
-        "repo": "inori",
-        "type": "github"
-      }
-    },
     "lanzaboote": {
       "inputs": {
         "crane": "crane",
@@ -1407,14 +1365,12 @@
     "nix-relic": {
       "inputs": {
         "Hyprspace": "Hyprspace",
-        "artis": "artis",
         "hy3": "hy3",
         "hyprland": "hyprland",
         "hyprland-easymotion": "hyprland-easymotion",
         "hyprland-plugins": "hyprland-plugins",
         "hyprquickshot": "hyprquickshot",
         "hyprtasking": "hyprtasking",
-        "inori": "inori",
         "lanzaboote": "lanzaboote",
         "neovim-nightly-overlay": "neovim-nightly-overlay",
         "nixpkgs": "nixpkgs_7",
@@ -1434,11 +1390,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1766345759,
-        "narHash": "sha256-k5g0aH9VTjkZMJMe6VJ7CvkYKyk3rbVg0kO5916+UCs=",
+        "lastModified": 1766347337,
+        "narHash": "sha256-/Hyk5BjGYhNqG53C+yu8tqhF1/sFUYQ5SU9guS5XXKY=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "9f690a26d6808e47b761220e2dabb8d94c0c811e",
+        "rev": "eabe04bb70e18c10378f23bf0d245fa353ab15aa",
         "type": "github"
       },
       "original": {
