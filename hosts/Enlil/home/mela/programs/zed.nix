@@ -296,6 +296,11 @@ in {
       }
     ];
     userSettings = {
+      terminal = {
+        shell = {
+          program = "fish";
+        };
+      };
       file_types = {
         Dockerfile = [
           "Dockerfile"
