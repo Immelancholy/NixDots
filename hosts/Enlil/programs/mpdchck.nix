@@ -1,5 +1,5 @@
 {
   services.mpdchck = {
-    enable = true;
+    enable = false;
   };
 }
