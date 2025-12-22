@@ -334,7 +334,7 @@ in {
         "**/result"
       ];
       features = {
-        edit_prediction_provider = "zed";
+        edit_prediction_provider = "copilot";
       };
       file_finder = {
         modal_max_width = "medium";
