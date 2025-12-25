@@ -919,11 +919,11 @@
         "nixpkgs": "nixpkgs_5"
       },
       "locked": {
-        "lastModified": 1765330562,
-        "narHash": "sha256-5W1z7d0bnkOPNik8yyQMqtzcBlFQoSjFyEvhv2dN7/E=",
+        "lastModified": 1766621912,
+        "narHash": "sha256-TGFhyAlH3rrxf5WG7HHqsWC4SMQuRHsl0fYnVEbxVzw=",
         "owner": "immelancholy",
         "repo": "hyprland-easymotion",
-        "rev": "85cb76b0bcf6b2e3555e54416872a951d1bb3e76",
+        "rev": "a11117f7f7716f453fa5b7a7acff9cf790cae356",
         "type": "github"
       },
       "original": {
@@ -1389,11 +1389,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1766620886,
-        "narHash": "sha256-MP2SGISSL3aYvdGIiOEsTYOTTjo1LOPenAsQ4OC2snU=",
+        "lastModified": 1766621976,
+        "narHash": "sha256-AyrC5SLyoKsg0Yw9w5aCteTwiQ2A/74TcmLQE5Z42V4=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "d483db1a8cab479ef3c8b340302742e88a27b93f",
+        "rev": "29979bea98bdaa6014193dc6814c527acaebf5e0",
         "type": "github"
       },
       "original": {
@@ -1595,11 +1595,11 @@
     },
     "nixpkgs_5": {
       "locked": {
-        "lastModified": 1764950072,
-        "narHash": "sha256-BmPWzogsG2GsXZtlT+MTcAWeDK5hkbGRZTeZNW42fwA=",
+        "lastModified": 1766309749,
+        "narHash": "sha256-3xY8CZ4rSnQ0NqGhMKAy5vgC+2IVK0NoVEzDoOh4DA4=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "f61125a668a320878494449750330ca58b78c557",
+        "rev": "a6531044f6d0bef691ea18d4d4ce44d0daa6e816",
         "type": "github"
       },
       "original": {
