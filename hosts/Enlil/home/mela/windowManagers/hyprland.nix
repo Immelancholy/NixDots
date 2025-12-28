@@ -9,6 +9,9 @@
     hyprspace.enable = false;
     hyprexpo.enable = true;
     settings = {
+      ecosystem = {
+        enforce_permissions = true;
+      };
       general = {
         allow_tearing = true;
       };
