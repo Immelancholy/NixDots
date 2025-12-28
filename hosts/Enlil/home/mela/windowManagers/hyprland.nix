@@ -37,9 +37,6 @@
         cm_fs_passthrough = 0;
         cm_auto_hdr = 1;
       };
-      experimental = {
-        xx_color_management_v4 = true;
-      };
       input = {
         kb_layout = "gb";
         kb_options = "compose:rwin";
