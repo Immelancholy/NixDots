@@ -1,11 +1,10 @@
-{nix-relic, ...}: {
+{
   displayManager = {
     sddm = {
       enable = true;
-      animatedBackground = {
-        enable = true;
-        path = "${nix-relic}/backgrounds/Evil_Miku.mp4";
-      };
+      compositor = "kwin";
+      screenWidth = "1920";
+      screenHeight = "1080";
     };
     tuiGreet.enable = false;
   };
