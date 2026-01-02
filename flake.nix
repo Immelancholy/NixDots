@@ -5,6 +5,7 @@
     nixos-hardware.url = "github:nixos/nixos-hardware/master";
     nix-relic = {
       url = "github:Immelancholy/Nix-Relic";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     home-manager = {
       url = "github:nix-community/home-manager";
