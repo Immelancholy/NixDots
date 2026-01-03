@@ -14,6 +14,7 @@
   );
 in {
   environment.systemPackages = with pkgs; [
+    autoeq-fiio
     nexusmods-app-unfree
     picard
     (winboat.override {nodejs_24 = pkgs.stable.nodejs_24;})
