@@ -1390,11 +1390,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1767486764,
-        "narHash": "sha256-+SkCG5DJ8NaLj1ehstd8ySevZhxNpGyT3/DHE8FHlxY=",
+        "lastModified": 1767556774,
+        "narHash": "sha256-Jc6e1k3iZfZG3DmydtERc1ePIDSaaOG7vz1Wc0Nkz8A=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "1b492c8e21e43db50b33cbc9e6b6dab827bcd418",
+        "rev": "248a07f06e2ab73cd22286ca232c2daa3afed50a",
         "type": "github"
       },
       "original": {
@@ -1422,10 +1422,10 @@
     "nixpkgs": {
       "locked": {
         "lastModified": 1759417375,
-        "narHash": "sha256-O7eHcgkQXJNygY6AypkF9tFhsoDQjpNEojw3eFs73Ow=",
+        "narHash": "sha256-EgE0pxsrW9jp9YFMkHL9JMXxcqi/OoumPJYwf+Okucw=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "dc704e6102e76aad573f63b74c742cd96f8f1e6c",
+        "rev": "fb7944c166a3b630f177938e478f0378e64ce108",
         "type": "github"
       },
       "original": {
@@ -1452,16 +1452,16 @@
     },
     "nixpkgs-stable": {
       "locked": {
-        "lastModified": 1767051569,
-        "narHash": "sha256-0MnuWoN+n1UYaGBIpqpPs9I9ZHW4kynits4mrnh1Pk4=",
+        "lastModified": 1767480499,
+        "narHash": "sha256-8IQQUorUGiSmFaPnLSo2+T+rjHtiNWc+OAzeHck7N48=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "40ee5e1944bebdd128f9fbada44faefddfde29bd",
+        "rev": "30a3c519afcf3f99e2c6df3b359aec5692054d92",
         "type": "github"
       },
       "original": {
         "owner": "nixos",
-        "ref": "nixos-25.05",
+        "ref": "nixos-25.11",
         "repo": "nixpkgs",
         "type": "github"
       }
