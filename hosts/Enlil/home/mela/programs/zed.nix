@@ -296,6 +296,47 @@ in {
       }
     ];
     userSettings = {
+      agent = {
+        default_model = {
+          provider = "Z.ai";
+          model = "glm-4.7";
+        };
+      };
+      language_models = {
+        openai_compatible = {
+          "Z.ai" = {
+            api_url = "https://api.z.ai/api/coding/paas/v4";
+            available_models = [
+              {
+                name = "glm-4.7";
+                display_name = "GLM 4.7";
+                max_tokens = 200000;
+                max_output_tokens = 128000;
+                max_completion_tokens = 128000;
+                capabilities = {
+                  tools = true;
+                  images = false;
+                  parallel_tool_calls = true;
+                  prompt_cache_key = true;
+                };
+              }
+              {
+                name = "glm-4.6";
+                display_name = "GLM 4.6";
+                max_tokens = 200000;
+                max_output_tokens = 128000;
+                max_completion_tokens = 128000;
+                capabilities = {
+                  tools = true;
+                  images = false;
+                  parallel_tool_calls = true;
+                  prompt_cache_key = true;
+                };
+              }
+            ];
+          };
+        };
+      };
       terminal = {
         shell = {
           program = "fish";
