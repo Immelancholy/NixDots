@@ -21,7 +21,7 @@
     };
     llm-git-commit = {
       url = "github:ShamanicArts/llm-git-commit";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.nixpkgs.follows = "nix-relic/nixpkgs-stable";
     };
     viu = {
       url = "github:viu-media/viu";

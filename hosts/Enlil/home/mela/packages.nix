@@ -4,6 +4,7 @@
   ...
 }: {
   home.packages = with pkgs; [
+    gitbutler
     (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {extensions = ["rust-src" "rust-analyzer"];}))
     reaper
     prismlauncher

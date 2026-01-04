@@ -1,6 +1,7 @@
-{
+{pkgs, ...}: {
   programs.vesktop = {
     enable = true;
+    package = pkgs.stable.vesktop;
     settings = {
       discordBranch = "stable";
       minimizeToTray = true;

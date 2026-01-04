@@ -3,9 +3,16 @@
   inputs,
   ...
 }: let
-  llm-git-commit = inputs.llm-git-commit.packages.${pkgs.stdenv.hostPlatform.system}.default;
+  lgc = inputs.llm-git-commit.packages.${pkgs.stdenv.hostPlatform.system}.default;
+
+  python = pkgs.stable.python3.override {
+    self = python;
+    packageOverrides = pyfinal: pyprev: {
+      llm-git-commit = lgc;
+    };
+  };
   pyWithLlm = (
-    pkgs.python3.withPackages (ps: [ps.llm llm-git-commit ps.llm-openrouter])
+    python.withPackages (ps: with ps; [llm llm-git-commit llm-openrouter])
   );
   llm-with-plugins = (
     pkgs.writeShellScriptBin "llm" ''

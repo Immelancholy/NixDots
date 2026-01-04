@@ -1307,7 +1307,8 @@
     "llm-git-commit": {
       "inputs": {
         "nixpkgs": [
-          "nixpkgs"
+          "nix-relic",
+          "nixpkgs-stable"
         ]
       },
       "locked": {
