@@ -1,5 +1,6 @@
 {
   services.mpd = {
+    network.listenAddress = "0.0.0.0";
     extraConfig = ''
       audio_output {
         type  "pipewire"
