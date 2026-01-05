@@ -7,8 +7,6 @@ in {
     };
     shellInit = ''
       set -gx context7_api_key "$(cat ${context7-zed-dir})"
-      set -gx EDITOR "zeditor . --wait"
-
     '';
   };
 }
