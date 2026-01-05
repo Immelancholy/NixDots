@@ -1744,6 +1744,26 @@
         "type": "github"
       }
     },
+    "opencode": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1767580541,
+        "narHash": "sha256-1JTHGLjCTXn7qQiCbUMO0anHZCsUCugIPgZzIkP6zHw=",
+        "owner": "anomalyco",
+        "repo": "opencode",
+        "rev": "555d7fcdde1d991793aee117bb1455e76995ded9",
+        "type": "github"
+      },
+      "original": {
+        "owner": "anomalyco",
+        "repo": "opencode",
+        "type": "github"
+      }
+    },
     "plugin-loader": {
       "flake": false,
       "locked": {
@@ -1820,6 +1840,7 @@
         "nix-relic": "nix-relic",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_11",
+        "opencode": "opencode",
         "viu": "viu"
       }
     },

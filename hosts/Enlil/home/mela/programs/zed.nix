@@ -77,7 +77,7 @@ in {
         shellcheck
         tombi
         zed-discord-presence
-        opencode
+        inputs.opencode.packages.${pkgs.stdenv.hostPlatform.system}.default
       ]
       ++ tree-sitter;
     userKeymaps = [

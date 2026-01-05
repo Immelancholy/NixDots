@@ -136,7 +136,7 @@
         enable = true;
       };
       neo-tree = {
-        window.position = lib.mkForce "left";
+        settings.window.position = lib.mkForce "left";
       };
       copilot-lua = {
         enable = true;

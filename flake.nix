@@ -34,6 +34,10 @@
       url = "github:mrshmllow/affinity-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    opencode = {
+      url = "github:anomalyco/opencode";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     agenix.url = "github:ryantm/agenix";
   };
 
