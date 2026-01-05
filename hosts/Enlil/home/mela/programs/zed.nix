@@ -303,6 +303,37 @@ in {
         };
       };
       language_models = {
+        anthropic = {
+          api_url = "https://api.minimax.io/anthropic";
+          available_models = [
+            {
+              name = "MiniMax-M2.1";
+              display_name = "MiniMax M2.1";
+              max_tokens = 200000;
+              max_output_tokens = 128000;
+              max_completion_tokens = 128000;
+              capabilities = {
+                tools = true;
+                images = false;
+                parallel_tool_calls = true;
+                prompt_cache_key = true;
+              };
+            }
+            {
+              name = "MiniMax-M2";
+              display_name = "MiniMax M2";
+              max_tokens = 200000;
+              max_output_tokens = 128000;
+              max_completion_tokens = 128000;
+              capabilities = {
+                tools = true;
+                images = false;
+                parallel_tool_calls = true;
+                prompt_cache_key = true;
+              };
+            }
+          ];
+        };
         openai_compatible = {
           "Z.ai" = {
             api_url = "https://api.z.ai/api/coding/paas/v4";
