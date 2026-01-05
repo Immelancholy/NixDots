@@ -1,3 +1,3 @@
 {
-  environment.variables.EDITOR = "nvim";
+  environment.variables.EDITOR = "zeditor . --wait";
 }
