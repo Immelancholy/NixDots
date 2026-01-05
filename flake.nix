@@ -119,7 +119,7 @@
   in {
     formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
 
-    overlays = import ./overlays {inherit inputs;};
+    overlays = import ./overlays;
 
     packages = forAllSystems (system: import ./pkgs nixpkgs.legacyPackages.${system});
 
