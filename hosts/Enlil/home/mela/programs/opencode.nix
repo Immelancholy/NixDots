@@ -10,6 +10,10 @@
     settings = {
       model = "zai-coding-plan/glm-4.7";
 
+      plugin = [
+        "@simonwjackson/opencode-direnv"
+      ];
+
       mcp = {
         context7 = {
           enabled = true;
