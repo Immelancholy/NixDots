@@ -3,7 +3,7 @@
 in {
   programs.fish = {
     shellAbbrs = {
-      zedit = "zeditor . --wait";
+      zedit = "zeditor .";
     };
     shellInit = ''
       set -gx context7_api_key "$(cat ${context7-zed-dir})"
