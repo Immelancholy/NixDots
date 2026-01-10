@@ -303,7 +303,7 @@ in {
         };
       };
       language_models = {
-        MiniMax = {
+        anthropic = {
           api_url = "https://api.minimax.io/anthropic";
           available_models = [
             {
