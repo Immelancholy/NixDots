@@ -228,43 +228,7 @@ in
       writableTmpDirAsHomeHook
     ];
 
-    checkFlags =
-      [
-        # Flaky: unreliably fails on certain hosts (including Hydra)
-        "--skip=zed::tests::test_window_edit_state_restoring_enabled"
-        # The following tests are flaky on at least x86_64-linux and aarch64-darwin,
-        # where they sometimes fail with: "database table is locked: workspaces".
-        "--skip=zed::tests::test_open_file_in_many_spaces"
-        "--skip=zed::tests::test_open_non_existing_file"
-        # Flaky: fails with entity_map concurrency issues on certain hosts
-        "--skip=zed::tests::test_disable_ai_crash"
-        "--skip=zed::tests::test_navigation"
-        "--skip=zed::tests::test_new_empty_workspace"
-        "--skip=zed::tests::test_open_add_new"
-        "--skip=zed::tests::test_open_and_save_new_file"
-        "--skip=zed::tests::test_open_entry"
-        "--skip=zed::tests::test_open_paths"
-        "--skip=zed::tests::test_opening_excluded_paths"
-        "--skip=zed::tests::test_pane_actions"
-        "--skip=zed::tests::test_prefer_focused_window"
-        "--skip=zed::tests::test_reopening_closed_items"
-        "--skip=zed::tests::test_save_conflicting_item"
-        "--skip=zed::tests::test_setting_language_when_saving_as_single_file_worktree"
-        "--skip=zed::tests::test_window_edit_state_restoring_disabled"
-        "--skip=zed::tests::test_bundled_files_editor"
-        "--skip=zed::open_listener::tests::test_open_workspace_with_directory"
-        "--skip=zed::open_listener::tests::test_reuse_flag_functionality"
-        "--skip=zed::open_listener::tests::test_wait_with_directory_waits_for_window_close"
-      ]
-      ++ lib.optionals stdenv.hostPlatform.isDarwin [
-        # Flaky: unreliably fails on certain hosts (including Hydra)
-        "--skip=zed::open_listener::tests::test_open_workspace_with_directory"
-        "--skip=zed::open_listener::tests::test_open_workspace_with_nonexistent_files"
-      ]
-      ++ lib.optionals stdenv.hostPlatform.isLinux [
-        # Fails on certain hosts (including Hydra) for unclear reason
-        "--skip=test_open_paths_action"
-      ];
+    useNextest = true;
 
     installPhase =
       ''
