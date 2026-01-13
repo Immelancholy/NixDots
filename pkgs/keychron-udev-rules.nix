@@ -11,7 +11,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
   nativeBuildInputs = [udevCheckHook];
 
   src = writeTextFile {
-    name = "99-keychron.rules";
+    name = "69-keychron.rules";
     text = ''
       KERNEL=="hidraw\*", SUBSYSTEM=="hidraw", ATTRS{idVendor}=="3434", MODE="0660", TAG+="uaccess", TAG+="udev-acl"
     '';
@@ -24,7 +24,7 @@ stdenvNoCC.mkDerivation (finalAttrs: {
 
   installPhase = ''
     runHook preInstall
-    install -Dm644 $src $out/lib/udev/rules.d/99-keychron.rules
+    install -Dm644 $src $out/lib/udev/rules.d/69-keychron.rules
     runHook postInstall
   '';
 
