@@ -5,7 +5,7 @@ in {
     shellAbbrs = {
       zedit = "zeditor .";
     };
-    shellInit = ''
+    interactiveShellInit = ''
       set -gx context7_api_key "$(cat ${context7-zed-dir})"
     '';
   };
