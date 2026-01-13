@@ -13,7 +13,7 @@
     wallpaper = {
       path = "${nix-relic}/backgrounds/Sailor_Moon.png";
       animatedWallpaper = {
-        enable = false;
+        enable = true;
         path = "${nix-relic}/backgrounds/Sailor_Moon.mp4";
       };
     };
