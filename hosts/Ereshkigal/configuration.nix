@@ -1,5 +1,5 @@
 {nix-relic, ...}: {
-  nix-relic.users = {
+  nix-relic = {
     flakePath = "/home/mela/NixDots";
     updateScript.enableToken = true;
     cava = {
@@ -45,7 +45,6 @@
 
   stylix = {
     polarity = "dark";
-    image = "${nix-relic}/backgrounds/Evil_Miku.png";
   };
 
   locale = "en_GB.UTF-8";

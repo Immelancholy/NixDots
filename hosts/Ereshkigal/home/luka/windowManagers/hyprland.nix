@@ -6,7 +6,6 @@
       dwindle.enable = false;
       hy3.enable = true;
     };
-    useHyprspace = false;
     settings = {
       cursor = {
         no_hardware_cursors = false;
