@@ -3,26 +3,28 @@
   pkgs,
 }:
 writeShellApplication {
-  name = "toggle-mullvad";
+  name = "toggle-exit-node";
   runtimeInputs = with pkgs; [tailscale];
   text = ''
-    mullvad_on() {
+    node_on() {
         cmd=$(tailscale exit-node suggest | grep node:)
         suggested=''${cmd:21}
 
         sudo tailscale set --exit-node="$suggested"
+        echo "Exit node set to: $suggested"
     }
-    mullvad_off() {
+    node_off() {
         sudo tailscale set --exit-node=
+        echo "Exit node disabled."
     }
     while getopts ":u:d:h:" option; do
         case $option in
             u)
-                mullvad_on
+                node_on
                 exit 0
                 ;;
             d)
-                mullvad_off
+                node_off
                 exit 0
                 ;;
             h)
