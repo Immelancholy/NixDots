@@ -74,6 +74,9 @@
   networking = {
     nameservers = ["100.100.100.100" "192.242.2.2" "9.9.9.9"];
     search = ["jaglion-teeth.ts.net"];
+    firewall = {
+      allowedTCPPorts = [1234];
+    };
   };
 
   boot.secureBoot.enable = true;

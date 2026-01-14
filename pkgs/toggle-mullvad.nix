@@ -17,7 +17,7 @@ writeShellApplication {
         sudo tailscale set --exit-node=
         echo "Exit node disabled."
     }
-    while getopts ":u:d:h:" option; do
+    while getopts ":udh:" option; do
         case $option in
             u)
                 node_on
