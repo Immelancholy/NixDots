@@ -36,5 +36,6 @@ in {
     inputs.agenix.packages.${pkgs.stdenv.hostPlatform.system}.default
     ungoogled-chromium
     lmstudio
+    toggle-mullvad
   ];
 }
