@@ -24,16 +24,22 @@
         path = "${nix-relic}/backgrounds/Sailor_Moon.mp4";
       };
     };
-    users.users = {
-      mela = {
-        isAdmin = true;
-        openssh.authorizedKeys.keys = [
-          "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBLCQZSKxQcuHRUbEN7AK1lSf0VmXzTTYJA4BTs0pIgT Enlil"
-        ];
-        extraGroups = ["tty" "docker" "gamemode"];
-        initialPassword = "password";
+    users = {
+      users = {
+        mela = {
+          isAdmin = true;
+          openssh.authorizedKeys.keys = [
+            "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBLCQZSKxQcuHRUbEN7AK1lSf0VmXzTTYJA4BTs0pIgT Enlil"
+          ];
+          extraGroups = ["tty" "docker" "gamemode"];
+          initialPassword = "password";
+        };
       };
     };
+  };
+
+  users.groups = {
+    audio.members = ["mela"];
   };
 
   locale = "en_GB.UTF-8";
@@ -49,6 +55,33 @@
     earlySetup = true;
     keyMap = "uk";
   };
+
+  security.pam.loginLimits = [
+    {
+      domain = "@audio";
+      item = "memlock";
+      type = "-";
+      value = "unlimited";
+    }
+    {
+      domain = "@audio";
+      item = "rtprio";
+      type = "-";
+      value = "95";
+    }
+    {
+      domain = "@audio";
+      item = "nofile";
+      type = "soft";
+      value = "99999";
+    }
+    {
+      domain = "@audio";
+      item = "nofile";
+      type = "hard";
+      value = "99999";
+    }
+  ];
 
   time.timeZone = "Europe/London";
 

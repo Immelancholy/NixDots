@@ -9,6 +9,9 @@
     hyprspace.enable = false;
     hyprexpo.enable = true;
     settings = {
+      exec-once = [
+        "[workspace 5 silent] uwsm app -- lm-studio"
+      ];
       ecosystem = {
         enforce_permissions = true;
       };
