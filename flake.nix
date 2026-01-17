@@ -125,7 +125,7 @@
 
     nixosModules = import ./modules/nixos;
 
-    homeManagerModules = import ./modules/home-manager;
+    homeModules = import ./modules/home-manager;
 
     nixosConfigurations = {
       Enlil = mkHost "Enlil";
