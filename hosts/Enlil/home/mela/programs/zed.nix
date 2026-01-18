@@ -2,6 +2,7 @@
   pkgs,
   lib,
   inputs,
+  config,
   ...
 }: let
   associations = {
@@ -26,6 +27,7 @@
     tree-sitter-cpp
     tree-sitter-toml
   ];
+  opencode-pkg = config.programs.opencode.package;
   python-lsp = pkgs.python3.withPackages (ps:
     with ps; [
       python-lsp-server
@@ -77,7 +79,7 @@ in {
         shellcheck
         tombi
         zed-discord-presence
-        inputs.opencode.packages.${pkgs.stdenv.hostPlatform.system}.default
+        opencode-pkg
       ]
       ++ tree-sitter;
     userKeymaps = [

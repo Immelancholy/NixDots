@@ -4,6 +4,7 @@ in {
   programs.fish = {
     shellAbbrs = {
       zedit = "zeditor .";
+      opencode = "opencode-cli";
     };
     interactiveShellInit = ''
       set -gx context7_api_key "$(cat ${context7-zed-dir})"

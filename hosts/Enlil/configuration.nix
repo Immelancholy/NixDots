@@ -97,6 +97,9 @@
   nixpkgs = {
     config = {
       cudaSupport = true;
+      permittedInsecurePackages = [
+        "nexusmods-app-unfree-0.21.1"
+      ];
     };
     overlays = [
       inputs.anifetch.overlays.anifetch
