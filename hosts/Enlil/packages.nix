@@ -34,7 +34,6 @@ in {
     blender
     nodePackages_latest.nodejs
     inputs.agenix.packages.${pkgs.stdenv.hostPlatform.system}.default
-    ungoogled-chromium
     lmstudio
     toggle-mullvad
   ];
