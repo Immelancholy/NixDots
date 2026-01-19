@@ -35,6 +35,6 @@ in {
     nodePackages_latest.nodejs
     inputs.agenix.packages.${pkgs.stdenv.hostPlatform.system}.default
     lmstudio
-    toggle-mullvad
+    toggle-exit-node
   ];
 }

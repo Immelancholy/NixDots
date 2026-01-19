@@ -3,5 +3,5 @@ pkgs: {
   easyeffects = pkgs.callPackage ./easyeffects/package.nix {};
   zed-editor = pkgs.callPackage ./zed-editor.nix {};
   keychron-udev-rules = pkgs.callPackage ./keychron-udev-rules.nix {};
-  toggle-mullvad = pkgs.callPackage ./toggle-mullvad.nix {};
+  toggle-exit-node = pkgs.callPackage ./toggle-exit-node.nix {};
 }

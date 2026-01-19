@@ -27,7 +27,6 @@ in {
     sshpass
     nix-prefetch
     inputs.agenix.packages.${pkgs.stdenv.hostPlatform.system}.default
-    ungoogled-chromium
-    toggle-mullvad
+    toggle-exit-node
   ];
 }
