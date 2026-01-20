@@ -135,9 +135,6 @@
       blink-cmp-copilot = {
         enable = true;
       };
-      neo-tree = {
-        settings.window.position = lib.mkForce "left";
-      };
       copilot-lua = {
         enable = true;
         settings = {

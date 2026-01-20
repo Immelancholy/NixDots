@@ -12,7 +12,7 @@
     bespokesynth
     reaper-sws-extension
     teams-for-linux
-    shotcut
+    kdePackages.kdenlive
     krita
     qbittorrent
     rustlings
