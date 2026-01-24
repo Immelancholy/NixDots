@@ -4,9 +4,9 @@
       "context.properties" = {
         "default.clock.allowed-rates" = [44100 48000 88200 96000];
         "default.clock.min-quantum" = 64;
-        "default.clock.max-quantum" = 512;
-        "default.clock.quantum-limit" = 4096;
-        "default.clock.quantum-floor" = 32;
+        "default.clock.max-quantum" = 256;
+        "default.clock.quantum-limit" = 512;
+        "default.clock.quantum-floor" = 64;
       };
     };
     wireplumber.extraConfig = {
