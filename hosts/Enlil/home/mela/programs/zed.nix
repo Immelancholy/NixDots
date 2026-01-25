@@ -61,6 +61,7 @@ in {
       "tombi"
       "opencode"
       "mcp-server-context7"
+      "lua"
     ];
     extraPackages = with pkgs;
       [

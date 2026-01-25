@@ -1,6 +1,6 @@
 {lib, ...}: {
   programs.nixvim = {
-    enable = true;
+    enable = false;
     defaultEditor = false;
     keymaps = [
       {
