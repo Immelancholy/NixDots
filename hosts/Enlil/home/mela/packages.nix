@@ -22,6 +22,7 @@
     inkscape-with-extensions
     pinta
     inputs.affinity-nix.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.RheaynaVim.packages.${pkgs.stdenv.hostPlatform.system}.default
     brave
   ];
 }

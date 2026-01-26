@@ -299,6 +299,7 @@ in {
       }
     ];
     userSettings = {
+      tab_size = 2;
       agent = {
         default_model = {
           provider = "Z.ai";

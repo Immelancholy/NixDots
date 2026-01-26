@@ -7,6 +7,9 @@
       url = "github:Immelancholy/Nix-Relic";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    RheaynaVim = {
+      url = "github:Immelancholy/RheaynaVim";
+    };
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
