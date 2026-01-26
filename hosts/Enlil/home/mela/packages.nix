@@ -24,7 +24,6 @@
     inputs.affinity-nix.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.RheaynaVim.packages.${pkgs.stdenv.hostPlatform.system}.default
     brave
-    stylua
     inputs.alejandra.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
