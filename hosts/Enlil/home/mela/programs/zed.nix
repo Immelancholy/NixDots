@@ -5,15 +5,6 @@
   config,
   ...
 }: let
-  associations = {
-    "text/plain" = ["dev.zed.Zed.desktop"];
-    "text/css" = ["dev.zed.Zed.desktop"];
-    "text/csv" = ["dev.zed.Zed.desktop"];
-    "text/javascript" = ["dev.zed.Zed.desktop"];
-    "application/json" = ["dev.zed.Zed.desktop"];
-    "application/xml" = ["dev.zed.Zed.desktop"];
-    "application/x-shellscript" = ["dev.zed.Zed.desktop"];
-  };
   tree-sitter = with pkgs.tree-sitter-grammars; [
     tree-sitter-bash
     tree-sitter-nix
@@ -34,10 +25,6 @@
       python-lsp-ruff
     ]);
 in {
-  xdg.mimeApps = {
-    associations.added = associations;
-    defaultApplications = associations;
-  };
   programs.zed-editor = {
     mutableUserTasks = lib.mkForce false;
     mutableUserSettings = lib.mkForce false;
