@@ -30,11 +30,11 @@
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1769389433,
-        "narHash": "sha256-xj5l2W54ErnJtsoR4UUVoKea+qMPihsPzDa8O1V2vZI=",
+        "lastModified": 1769392595,
+        "narHash": "sha256-ORd2fkrlTgu3sP7D7RiHVmRBP22EP6ohbHifDi3xfrI=",
         "owner": "Immelancholy",
         "repo": "RheaynaVim",
-        "rev": "e94da18398bbf2c567429cbe46f6aa35fc3e36c4",
+        "rev": "04fa2afcc4eea751e35dcf60be2321b4d716da59",
         "type": "github"
       },
       "original": {
