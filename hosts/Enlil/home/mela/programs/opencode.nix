@@ -5,15 +5,26 @@
 }: {
   programs.opencode = {
     enable = true;
-    package = inputs.opencode.packages.${pkgs.stdenv.hostPlatform.system}.desktop;
+    package = inputs.opencode.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
     settings = {
       model = "zai-coding-plan/glm-4.7";
 
       plugin = [
         "@simonwjackson/opencode-direnv"
+        "opencode-lmstudio@latest"
       ];
-
+      
+      provider = {
+        lmstudio = {
+          npm = "@ai-sdk/openai-compatible";
+          name = "LM Studio (local)";
+          options = {
+            baseUrl = "http://192.168.1.162:1234/v1";
+          };
+        };
+      };
+      
       mcp = {
         context7 = {
           enabled = true;
