@@ -1,4 +1,4 @@
-{
+{lib, ...}: {
   wayland.windowManager.hyprland = {
     # ONLY ENABLE 1 LAYOUT!!
     layout = {
@@ -9,6 +9,7 @@
     hyprspace.enable = false;
     hyprexpo.enable = true;
     settings = {
+      "$editor" = lib.mkForce "uwsm app -- nvim.desktop";
       exec-once = [
         "[workspace 5 silent] uwsm app -- lm-studio"
       ];
