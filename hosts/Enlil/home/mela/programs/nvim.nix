@@ -17,7 +17,7 @@ in {
     associations.added = associations;
     defaultApplications = associations;
   };
-  home.packages = with pkgs; [
+  home.packages = [
     inputs.RheaynaVim.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
   home.sessionVariables = {
