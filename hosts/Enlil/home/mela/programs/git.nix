@@ -9,6 +9,8 @@
       init = {
         defaultBranch = "main";
       };
+      diff.tool = "nvimdiff";
+      merge.tool = "nvimdiff";
     };
   };
 }
