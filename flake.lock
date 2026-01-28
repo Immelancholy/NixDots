@@ -27,17 +27,19 @@
         "neovim-nightly-overlay": "neovim-nightly-overlay",
         "nixpkgs": "nixpkgs_2",
         "opencode": "opencode",
+        "plugins-atone": "plugins-atone",
+        "plugins-conflict-marker": "plugins-conflict-marker",
         "plugins-lze": "plugins-lze",
         "plugins-lzextras": "plugins-lzextras",
         "rust-overlay": "rust-overlay",
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1769537948,
-        "narHash": "sha256-G2DNUF6XVtX06k9WETfWhSH3nDlHggLQeAHV/7SdXJw=",
+        "lastModified": 1769636027,
+        "narHash": "sha256-M4SAI1/VST43RciUv4BAIVkycKp8PDyTMxyIPx6PnMg=",
         "owner": "Immelancholy",
         "repo": "RheaynaVim",
-        "rev": "fd7490202db0d57dc53233ef04b58944d3afc3b1",
+        "rev": "ba552a9c90e91ecf2bc1305c9c82a977127bb354",
         "type": "github"
       },
       "original": {
@@ -1939,6 +1941,38 @@
       "original": {
         "type": "file",
         "url": "https://github.com/noahc3/AffinityPluginLoader/releases/download/v0.2.0/affinitypluginloader-plus-winefix.tar.xz"
+      }
+    },
+    "plugins-atone": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1763096453,
+        "narHash": "sha256-1/scPTclNcXOKCVjAuve/wV88zIKIWeb5ul3Jb/9+xg=",
+        "owner": "XXiaoA",
+        "repo": "atone.nvim",
+        "rev": "d1c1f08bfe23ac56536d0091c8a398938ee9db4e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "XXiaoA",
+        "repo": "atone.nvim",
+        "type": "github"
+      }
+    },
+    "plugins-conflict-marker": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1767956543,
+        "narHash": "sha256-stIJpOEmsmjA4uuYaf41sc03gJlGSte7hr6bf52uvVI=",
+        "owner": "tronikelis",
+        "repo": "conflict-marker.nvim",
+        "rev": "42fedfdfaad7163570366744f3ed202cedc6e70e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tronikelis",
+        "repo": "conflict-marker.nvim",
+        "type": "github"
       }
     },
     "plugins-lze": {
