@@ -20,7 +20,6 @@
     obsidian-export
     gimp3-with-plugins
     inkscape-with-extensions
-    pinta
     inputs.affinity-nix.packages.${pkgs.stdenv.hostPlatform.system}.default
     brave
     inputs.alejandra.packages.${pkgs.stdenv.hostPlatform.system}.default
