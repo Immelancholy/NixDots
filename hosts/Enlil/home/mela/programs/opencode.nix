@@ -8,7 +8,7 @@
     package = inputs.opencode.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
     settings = {
-      model = "zai-coding-plan/glm-4.7";
+      model = "chutes/moonshotai/Kimi-K2.5-TEE";
 
       plugin = [
         "@simonwjackson/opencode-direnv"
