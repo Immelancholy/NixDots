@@ -28,7 +28,6 @@ in {
     (winboat.override {nodejs_24 = pkgs.stable.nodejs_24;})
     freerdp
     sshpass
-    anifetch
     nix-prefetch
     heroic
     blender

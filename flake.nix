@@ -7,9 +7,6 @@
       url = "github:Immelancholy/Nix-Relic";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    RheaynaVim = {
-      url = "github:Immelancholy/RheaynaVim";
-    };
     home-manager = {
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -26,20 +23,22 @@
       url = "github:ShamanicArts/llm-git-commit";
       inputs.nixpkgs.follows = "nix-relic/nixpkgs-stable";
     };
-    viu = {
-      url = "github:viu-media/viu";
-    };
-    anifetch = {
-      url = "github:Notenlish/anifetch";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     affinity-nix = {
       url = "github:mrshmllow/affinity-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    opencode = {
-      url = "github:anomalyco/opencode";
+    RheaynaVim = {
+      url = "github:Immelancholy/RheaynaVim";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        opencode.follows = "opencode";
+        rust-overlay.follows = "nix-relic/rust-overlay";
+        neovim-nightly-overlay.follows = "neovim-nightly-overlay";
+      };
     };
+    viu.url = "github:viu-media/viu";
+    opencode.url = "github:anomalyco/opencode";
+    neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
     agenix.url = "github:ryantm/agenix";
   };
 
