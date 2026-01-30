@@ -8,7 +8,7 @@
     package = inputs.opencode.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
     settings = {
-      model = "chutes/moonshotai/Kimi-K2.5-TEE";
+      model = "opencode/kimi-k2.5-free";
 
       plugin = [
         "@simonwjackson/opencode-direnv"
