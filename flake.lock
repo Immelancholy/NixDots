@@ -35,6 +35,7 @@
         ],
         "plugins-atone": "plugins-atone",
         "plugins-conflict-marker": "plugins-conflict-marker",
+        "plugins-copilot-lua": "plugins-copilot-lua",
         "plugins-lze": "plugins-lze",
         "plugins-lzextras": "plugins-lzextras",
         "rust-overlay": [
@@ -44,11 +45,11 @@
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1769909536,
-        "narHash": "sha256-JeY7UanAId14LXGOCrPDiDR/Z56acpI4Xv1RFj2zydI=",
+        "lastModified": 1769958639,
+        "narHash": "sha256-7ip0TFdF42rv0OY6SZEoLel9USwYUzE1IPTCv07P9V8=",
         "owner": "Immelancholy",
         "repo": "RheaynaVim",
-        "rev": "129c2ca884ee6870911c2d478ab9fb4bf9146b87",
+        "rev": "3f223473964c0e5d735845cdf82ec468a47b55f4",
         "type": "github"
       },
       "original": {
@@ -1773,6 +1774,22 @@
       "original": {
         "owner": "tronikelis",
         "repo": "conflict-marker.nvim",
+        "type": "github"
+      }
+    },
+    "plugins-copilot-lua": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1769603846,
+        "narHash": "sha256-nvGt/u4K5iYi7AZegV/tpOjFNlye7+LYPMejuuIwJ0M=",
+        "owner": "zbirenbaum",
+        "repo": "copilot.lua",
+        "rev": "9b8d77c6c847c83c784c05f5f86b4821ed90d3a1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "zbirenbaum",
+        "repo": "copilot.lua",
         "type": "github"
       }
     },
