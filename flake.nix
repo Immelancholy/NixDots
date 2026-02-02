@@ -27,6 +27,10 @@
       url = "github:mrshmllow/affinity-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    zarumet = {
+      url = "github:Immelancholy/zarumet";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     RheaynaVim = {
       url = "github:Immelancholy/RheaynaVim";
       inputs = {
@@ -34,6 +38,7 @@
         opencode.follows = "opencode";
         rust-overlay.follows = "nix-relic/rust-overlay";
         neovim-nightly-overlay.follows = "neovim-nightly-overlay";
+        zarumet.follows = "zarumet";
       };
     };
     viu.url = "github:viu-media/viu";
