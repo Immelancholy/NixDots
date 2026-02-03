@@ -35,5 +35,6 @@ in {
     inputs.agenix.packages.${pkgs.stdenv.hostPlatform.system}.default
     lmstudio
     toggle-exit-node
+    ungoogled-chromium
   ];
 }

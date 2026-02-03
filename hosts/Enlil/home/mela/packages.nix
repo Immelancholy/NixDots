@@ -21,7 +21,6 @@
     gimp3-with-plugins
     inkscape-with-extensions
     inputs.affinity-nix.packages.${pkgs.stdenv.hostPlatform.system}.default
-    brave
     inputs.alejandra.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }

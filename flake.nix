@@ -5,7 +5,10 @@
     nixos-hardware.url = "github:nixos/nixos-hardware/master";
     nix-relic = {
       url = "github:Immelancholy/Nix-Relic";
-      inputs.nixpkgs.follows = "nixpkgs";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        zarumet.follows = "zarumet";
+      };
     };
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -38,7 +41,6 @@
         opencode.follows = "opencode";
         rust-overlay.follows = "nix-relic/rust-overlay";
         neovim-nightly-overlay.follows = "neovim-nightly-overlay";
-        zarumet.follows = "zarumet";
       };
     };
     viu.url = "github:viu-media/viu";
