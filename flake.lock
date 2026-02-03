@@ -45,11 +45,11 @@
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1769958639,
-        "narHash": "sha256-7ip0TFdF42rv0OY6SZEoLel9USwYUzE1IPTCv07P9V8=",
+        "lastModified": 1770154449,
+        "narHash": "sha256-s+EFcK/5MAujxXhfZ1SZYXv/rFuxw6rhIciS4bJY6n0=",
         "owner": "Immelancholy",
         "repo": "RheaynaVim",
-        "rev": "3f223473964c0e5d735845cdf82ec468a47b55f4",
+        "rev": "f101d2b0bac55ecaa99ff0873158457d09ccf0ea",
         "type": "github"
       },
       "original": {
@@ -1384,11 +1384,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1769903925,
-        "narHash": "sha256-WLNaidOzX8l09PbAbPosEsjfu6RHetNAdWtrvSTu2M8=",
+        "lastModified": 1770155673,
+        "narHash": "sha256-KEcR24DHPA8mVa5zoR8G33K0iZ7IKhzA4Tp25aS/LLo=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "b9bd2a8e5d1598fe95a93df7525a2e097e9ae5db",
+        "rev": "ce0d751992cfaf2ec69a73087bfa10c4200afef0",
         "type": "github"
       },
       "original": {
