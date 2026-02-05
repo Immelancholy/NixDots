@@ -38,6 +38,7 @@
         "plugins-copilot-lua": "plugins-copilot-lua",
         "plugins-lze": "plugins-lze",
         "plugins-lzextras": "plugins-lzextras",
+        "plugins-nvim-highlight-colors": "plugins-nvim-highlight-colors",
         "rust-overlay": [
           "nix-relic",
           "rust-overlay"
@@ -45,11 +46,11 @@
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1770154449,
-        "narHash": "sha256-s+EFcK/5MAujxXhfZ1SZYXv/rFuxw6rhIciS4bJY6n0=",
+        "lastModified": 1770325414,
+        "narHash": "sha256-hRTtpwBfPGpVKhRcZyW/TnlILpyG9flUu77Y8rH5eeI=",
         "owner": "Immelancholy",
         "repo": "RheaynaVim",
-        "rev": "f101d2b0bac55ecaa99ff0873158457d09ccf0ea",
+        "rev": "6c98e461a6c17679ebf6a8ad2f1cf8687c977417",
         "type": "github"
       },
       "original": {
@@ -1824,6 +1825,22 @@
       "original": {
         "owner": "BirdeeHub",
         "repo": "lzextras",
+        "type": "github"
+      }
+    },
+    "plugins-nvim-highlight-colors": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1769415958,
+        "narHash": "sha256-LrY61knLKAn36+RnMddAzxf/wYtdnLxnnQhtHB3mQwc=",
+        "owner": "brenoprata10",
+        "repo": "nvim-highlight-colors",
+        "rev": "e2cb22089cc2358b2b995c09578224f142de6039",
+        "type": "github"
+      },
+      "original": {
+        "owner": "brenoprata10",
+        "repo": "nvim-highlight-colors",
         "type": "github"
       }
     },
