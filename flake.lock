@@ -46,11 +46,11 @@
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1770326976,
-        "narHash": "sha256-SO6pMAhBIBM1eRvu3HuACnJqA7YUHN+mVXBlJlKbfGs=",
+        "lastModified": 1770327503,
+        "narHash": "sha256-BdEMvbMLYBU3eM7Ue98ngAkIGVNly+k6nAt/Xx+tk/Y=",
         "owner": "Immelancholy",
         "repo": "RheaynaVim",
-        "rev": "93914b600cc3df4ddb30f4e2860e4e2b3aa0ab24",
+        "rev": "7891a9d0115ca0c5c7e5273ade5d20513aad51f5",
         "type": "github"
       },
       "original": {
@@ -1723,16 +1723,16 @@
         "nixpkgs": "nixpkgs_11"
       },
       "locked": {
-        "lastModified": 1770317334,
-        "narHash": "sha256-H5D1uUi/5EUPheNZSPuRaRRcFF9n4MEcT7ToIejGESo=",
+        "lastModified": 1770314510,
+        "narHash": "sha256-Bmo7o+W2menHq4L+pXPriGqY8SzNYVo6hJ0RRGHR7do=",
         "owner": "anomalyco",
         "repo": "opencode",
-        "rev": "a0bc65621532a5dfcd41fa08d62dbcaf093a924d",
+        "rev": "e08705f4ef128f20912925de9d08c41515a9709b",
         "type": "github"
       },
       "original": {
         "owner": "anomalyco",
-        "ref": "v1.1.52",
+        "ref": "production",
         "repo": "opencode",
         "type": "github"
       }
