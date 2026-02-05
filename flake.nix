@@ -44,7 +44,7 @@
       };
     };
     viu.url = "github:viu-media/viu";
-    opencode.url = "github:anomalyco/opencode";
+    opencode.url = "github:anomalyco/opencode/production";
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
     agenix.url = "github:ryantm/agenix";
   };
