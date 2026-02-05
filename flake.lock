@@ -1723,11 +1723,11 @@
         "nixpkgs": "nixpkgs_11"
       },
       "locked": {
-        "lastModified": 1769949753,
-        "narHash": "sha256-8V7c8Cg9fuzdQWAF4pYl9jEnF2KfRCItE8OfVTHhE28=",
+        "lastModified": 1770324806,
+        "narHash": "sha256-lXxCLE6j89WxMGHngaZEkM9c+g7I976GVvGdD7pryS8=",
         "owner": "anomalyco",
         "repo": "opencode",
-        "rev": "3e671042577f947cad6d645e8a5096add62e8687",
+        "rev": "b5511958183fed28e9658f5210c2a818c028058b",
         "type": "github"
       },
       "original": {
