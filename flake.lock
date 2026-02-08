@@ -1723,11 +1723,11 @@
         "nixpkgs": "nixpkgs_11"
       },
       "locked": {
-        "lastModified": 1770489143,
-        "narHash": "sha256-XVZs40hXlJPtdZAYD+Emwn8Iexkhc2R8UKadRFw2XUs=",
+        "lastModified": 1770524755,
+        "narHash": "sha256-0z7ak0WBugcUamzZLUxCWo2PBhydNuXeOROqP6h7c/Y=",
         "owner": "anomalyco",
         "repo": "opencode",
-        "rev": "04f216902bfb517e88ffbfbe7dcf0d7767671ba6",
+        "rev": "85d0ed5989c1f5d4fbcb32c6df481a39f18bcc08",
         "type": "github"
       },
       "original": {
@@ -2499,11 +2499,11 @@
         "rust-overlay": "rust-overlay_3"
       },
       "locked": {
-        "lastModified": 1770524489,
-        "narHash": "sha256-J6NYafZGd0Ff7LO9fiiv01s7GfivdmWqqKiEoPk/j7Q=",
+        "lastModified": 1770525210,
+        "narHash": "sha256-7LxHMUG2eLsyWrbFmjlHVVp9WQo8vYxFRiP/Xe5gW58=",
         "owner": "Immelancholy",
         "repo": "zarumet",
-        "rev": "473d444741d5868718d29e403017a17fe3fab057",
+        "rev": "eede8d9e562ecd4c95d922c5266dee12ed60d44b",
         "type": "github"
       },
       "original": {
