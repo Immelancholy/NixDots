@@ -46,11 +46,11 @@
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1770327503,
-        "narHash": "sha256-BdEMvbMLYBU3eM7Ue98ngAkIGVNly+k6nAt/Xx+tk/Y=",
+        "lastModified": 1770513056,
+        "narHash": "sha256-jJtgRU7gADBmX4NrjfU1EyG0cOcTbIM9Yp6NtNccwBA=",
         "owner": "Immelancholy",
         "repo": "RheaynaVim",
-        "rev": "7891a9d0115ca0c5c7e5273ade5d20513aad51f5",
+        "rev": "181d7f2698e1254188210d77cff2122c55562795",
         "type": "github"
       },
       "original": {
@@ -1495,11 +1495,11 @@
     },
     "nixpkgs_11": {
       "locked": {
-        "lastModified": 1768393167,
-        "narHash": "sha256-n2063BRjHde6DqAz2zavhOOiLUwA3qXt7jQYHyETjX8=",
+        "lastModified": 1770073757,
+        "narHash": "sha256-Vy+G+F+3E/Tl+GMNgiHl9Pah2DgShmIUBJXmbiQPHbI=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "2f594d5af95d4fdac67fba60376ec11e482041cb",
+        "rev": "47472570b1e607482890801aeaf29bfb749884f6",
         "type": "github"
       },
       "original": {
@@ -1723,11 +1723,11 @@
         "nixpkgs": "nixpkgs_11"
       },
       "locked": {
-        "lastModified": 1770314510,
-        "narHash": "sha256-Bmo7o+W2menHq4L+pXPriGqY8SzNYVo6hJ0RRGHR7do=",
+        "lastModified": 1770489143,
+        "narHash": "sha256-XVZs40hXlJPtdZAYD+Emwn8Iexkhc2R8UKadRFw2XUs=",
         "owner": "anomalyco",
         "repo": "opencode",
-        "rev": "e08705f4ef128f20912925de9d08c41515a9709b",
+        "rev": "04f216902bfb517e88ffbfbe7dcf0d7767671ba6",
         "type": "github"
       },
       "original": {
@@ -1784,11 +1784,11 @@
     "plugins-copilot-lua": {
       "flake": false,
       "locked": {
-        "lastModified": 1769603846,
-        "narHash": "sha256-nvGt/u4K5iYi7AZegV/tpOjFNlye7+LYPMejuuIwJ0M=",
+        "lastModified": 1770403820,
+        "narHash": "sha256-pZjz2W9DERdHHNJS6ilLsfnCIdB7N0NaDYxjcyOvTKU=",
         "owner": "zbirenbaum",
         "repo": "copilot.lua",
-        "rev": "9b8d77c6c847c83c784c05f5f86b4821ed90d3a1",
+        "rev": "3faffefbd6ddeb52578535ec6b730e0b72d7fd1a",
         "type": "github"
       },
       "original": {
@@ -1800,11 +1800,11 @@
     "plugins-lze": {
       "flake": false,
       "locked": {
-        "lastModified": 1769574380,
-        "narHash": "sha256-5o9/qvlQW7f/+ofENfs63zZls1gWYpug5+PzxSbwSgQ=",
+        "lastModified": 1769938695,
+        "narHash": "sha256-TJ6/xiFwyImPN2ABjsDymluhk2v3MVhetH+dTJAXMFI=",
         "owner": "BirdeeHub",
         "repo": "lze",
-        "rev": "a6314f9aff8cdbf872f96ff41ee2d2f27627b743",
+        "rev": "2b5e081f48df165c1e67050bc0b85a4c939e0827",
         "type": "github"
       },
       "original": {
@@ -1816,11 +1816,11 @@
     "plugins-lzextras": {
       "flake": false,
       "locked": {
-        "lastModified": 1769563201,
-        "narHash": "sha256-LvWQiiSzlAH3mZSHdqU99vZL8n3SGUl5bKeLtGutB8E=",
+        "lastModified": 1770073207,
+        "narHash": "sha256-hWIN/wuDpSu8xwqPmdjQREKMbnPeo/nUybu3Z2q/emY=",
         "owner": "BirdeeHub",
         "repo": "lzextras",
-        "rev": "3b3ccb8418b5deab45ea54434938644f263fff4c",
+        "rev": "20bfe66fdfb1ee1a23994acec043191aa6d54e6e",
         "type": "github"
       },
       "original": {
@@ -2360,11 +2360,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1769899536,
-        "narHash": "sha256-oKNKQNQCdiSRCqcPqetOj3NT1PVt83BXSNZF1w8LhQI=",
+        "lastModified": 1770507082,
+        "narHash": "sha256-sa2iL5DjyOeWtPQvrNOkBb3jS/DU3MtjOL2M+oEawWk=",
         "owner": "BirdeeHub",
         "repo": "nix-wrapper-modules",
-        "rev": "cc2f127e41d0cdaf77ce0bb37cc7574c8f06884c",
+        "rev": "858dc0b10ecd2ac013985432085125c71277926c",
         "type": "github"
       },
       "original": {
@@ -2499,11 +2499,11 @@
         "rust-overlay": "rust-overlay_3"
       },
       "locked": {
-        "lastModified": 1770062845,
-        "narHash": "sha256-TTluwrwOFFRdDk3M116Orij/h0CCXriS+UouFz/wbqo=",
+        "lastModified": 1770522372,
+        "narHash": "sha256-RzzU3fmJFClgJnouV6H0je/iEdH1ikSpKxSurv8n72Q=",
         "owner": "Immelancholy",
         "repo": "zarumet",
-        "rev": "133fa9765afb547316812a2d945ad4e095d6b819",
+        "rev": "e7ba1d8b2b9d44211cc325c6af58327945242a37",
         "type": "github"
       },
       "original": {
