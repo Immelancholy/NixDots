@@ -7,7 +7,12 @@
     enable = true;
     package = inputs.opencode.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
+    agents = {
+      tutor = ./agents/tutor.md;
+    };
+
     settings = {
+      default_agent = "tutor";
       model = "chutes/moonshotai/Kimi-K2-Thinking-TEE";
 
       plugin = [
