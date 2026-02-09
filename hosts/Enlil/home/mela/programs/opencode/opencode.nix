@@ -13,6 +13,14 @@
 
     settings = {
       default_agent = "tutor";
+      agent = {
+        general = {
+          model = "zai-coding-plan/glm-4.7";
+        };
+        explore = {
+          model = "zai-coding-plan/glm-4.7";
+        };
+      };
       model = "chutes/moonshotai/Kimi-K2-Thinking-TEE";
 
       plugin = [
