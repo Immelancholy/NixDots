@@ -26,7 +26,7 @@
       plugin = [
         "@simonwjackson/opencode-direnv"
         "opencode-lmstudio@latest"
-        "opencode-antigravity-auth@latest"
+        "opencode-antigravity-auth@beta"
       ];
       
       provider = {
