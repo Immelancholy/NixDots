@@ -15,13 +15,13 @@
       default_agent = "tutor";
       agent = {
         general = {
-          model = "zai-coding-plan/glm-4.7";
+          model = "zai-coding-plan/glm-5";
         };
         explore = {
-          model = "zai-coding-plan/glm-4.7";
+          model = "zai-coding-plan/glm-5";
         };
       };
-      model = "chutes/moonshotai/Kimi-K2-Thinking-TEE";
+      model = "zai-coding-plan/glm-5";
 
       plugin = [
         "@simonwjackson/opencode-direnv"
