@@ -25,7 +25,6 @@
 
       plugin = [
         "@simonwjackson/opencode-direnv"
-        "opencode-lmstudio@latest"
         "opencode-antigravity-auth@latest"
       ];
       
@@ -104,13 +103,6 @@
               limit = { context = 1048576; output = 65535; };
               modalities = { input = [ "text" "image" "pdf" ]; output = [ "text" ]; };
             };
-          };
-        };
-        lmstudio = {
-          npm = "@ai-sdk/openai-compatible";
-          name = "LM Studio (local)";
-          options = {
-            baseUrl = "http://192.168.1.162:1234/v1";
           };
         };
       };
