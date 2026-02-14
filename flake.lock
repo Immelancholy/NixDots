@@ -1386,11 +1386,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1771094121,
-        "narHash": "sha256-zVxpCI99txC4HK9krFneI6iTiUAsL4SeSHseKcfaXMI=",
+        "lastModified": 1771095228,
+        "narHash": "sha256-hYP2NgiqCrvhT1qkU3ONPU06PTUPbU/nqNgNcLJJKrs=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "58d1fb174b68d50210a401bf031a1bd16de59012",
+        "rev": "3f266a0630de06bbcc161fae0186e89ccfd59b1b",
         "type": "github"
       },
       "original": {
