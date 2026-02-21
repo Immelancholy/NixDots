@@ -1,9 +1,8 @@
-{pkgs, ...}: {
+{
   programs.vesktop = {
     enable = true;
-    # package = pkgs.stable.vesktop;
     settings = {
-      discordBranch = "stable";
+      discordBranch = "canary";
       minimizeToTray = true;
       arRPC = true;
       spellCheckLanguages = [
