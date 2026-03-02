@@ -22,7 +22,7 @@
       cursor = {
         no_hardware_cursors = 2;
       };
-      monitorv2 = {
+      "monitorv2[desc:Microstep MAG 274CXF]" = {
         output = "DP-1";
         mode = "1920x1080@280";
         position = "0x0";
@@ -38,6 +38,16 @@
         max_luminance = 300;
         max_avg_luminance = 300;
       };
+      "monitorv2[desc:HAT Kamvas Pro 16 0xF0000001]" = {
+        output = "HDMI-A-1";
+        mode = "2569x1440@60";
+        position = "1920x0";
+        scale = 1;
+      };
+      workspace = [
+        "r[1-5], monitor:DP-1"
+        "6, monitor:HDMI-A-1"
+      ];
       render = {
         send_content_type = true;
         direct_scanout = 1;

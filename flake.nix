@@ -26,10 +26,6 @@
       url = "github:ShamanicArts/llm-git-commit";
       inputs.nixpkgs.follows = "nix-relic/nixpkgs-stable";
     };
-    affinity-nix = {
-      url = "github:mrshmllow/affinity-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
     zarumet = {
       url = "github:Immelancholy/zarumet";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -125,7 +121,7 @@
         ];
       };
   in {
-    formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.alejandra);
+    formatter = forAllSystems (system: inputs.alejandra.packages.${system}.alejandra);
 
     overlays = import ./overlays;
 
