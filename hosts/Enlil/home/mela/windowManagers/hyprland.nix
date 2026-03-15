@@ -7,6 +7,7 @@
       hy3.enable = false;
       scrolling.enable = true;
     };
+    easymotion.enable = true;
     settings = {
       "$editor" = lib.mkForce "uwsm app -- nvim.desktop";
       exec-once = [
