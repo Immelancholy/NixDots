@@ -1198,11 +1198,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1773595744,
-        "narHash": "sha256-h2YT/zcySsksOQCGVNOdaSm61KdpDJhPZRTMcCV2rt0=",
+        "lastModified": 1773606114,
+        "narHash": "sha256-VInqnno07sGZvA7/Ag96Fx6MxxPyLYeOyuceQoLdisU=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "12bf1a2ab652ff3e1fc20b91dbc0c74f1b947254",
+        "rev": "09d980104b7b17c73d32af50f452c7d6be050b1f",
         "type": "github"
       },
       "original": {
