@@ -778,15 +778,16 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1772311857,
-        "narHash": "sha256-vp3/bkS4hjpSVjkh8e6rR/EfNxl4BBQxXk9m8HusCVU=",
-        "owner": "zakk4223",
+        "lastModified": 1773536012,
+        "narHash": "sha256-VGejQ4XfFpGlAxGO2kANZLTPZOX2V+Ot8b9XC2NzXLw=",
+        "owner": "Immelancholy",
         "repo": "hyprland-easymotion",
-        "rev": "15244c5283aa40cb90625c206d15b5ac77889445",
+        "rev": "90c16f6e62bdbb2f6c5c6b9aeb0db27ed6bf7f78",
         "type": "github"
       },
       "original": {
-        "owner": "zakk4223",
+        "owner": "Immelancholy",
+        "ref": "update-hypr-commit",
         "repo": "hyprland-easymotion",
         "type": "github"
       }
@@ -1250,11 +1251,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1773533722,
-        "narHash": "sha256-MjFEoE8l5KU0LC0m8y2t9xMeYe9VsJQ85b077Glim3c=",
+        "lastModified": 1773536097,
+        "narHash": "sha256-A6I5JG3kyE43PR6R+XRoppn62IA31HqpT4TMtc6La7Q=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "35d38f30b96a0319dd3d28c832f2c64b9ad688ec",
+        "rev": "b32c11c091f9231507c3d48424be48cf3d942268",
         "type": "github"
       },
       "original": {
@@ -1265,11 +1266,11 @@
     },
     "nixos-hardware": {
       "locked": {
-        "lastModified": 1773532705,
-        "narHash": "sha256-zrGB/7iqC+5YSn07p5fYkEZVmF/kX5El/nQ5P0Prksw=",
+        "lastModified": 1773533765,
+        "narHash": "sha256-qonGfS2lzCgCl59Zl63jF6dIRRpvW3AJooBGMaXjHiY=",
         "owner": "nixos",
         "repo": "nixos-hardware",
-        "rev": "df40dce33f2f2b7c3d35a1d1cc80a03b9def4503",
+        "rev": "f8e82243fd601afb9f59ad230958bd073795cbfe",
         "type": "github"
       },
       "original": {
