@@ -6,8 +6,6 @@
       dwindle.enable = false;
       hy3.enable = true;
     };
-    hyprspace.enable = false;
-    hyprexpo.enable = true;
     settings = {
       "$editor" = lib.mkForce "uwsm app -- nvim.desktop";
       exec-once = [
