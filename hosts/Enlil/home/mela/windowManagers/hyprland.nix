@@ -4,11 +4,15 @@
     layout = {
       master.enable = false;
       dwindle.enable = false;
-      hy3.enable = true;
+      hy3.enable = false;
+      scrolling.enable = true;
     };
     settings = {
       "$editor" = lib.mkForce "uwsm app -- nvim.desktop";
       exec-once = [
+        "systemctl start --user qpwgraph"
+        "[workspace 2 silent] $browser"
+        "uwsm app -- $discord"
         "[workspace 5 silent] uwsm app -- lm-studio"
       ];
       ecosystem = {
