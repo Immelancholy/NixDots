@@ -4,10 +4,10 @@
     layout = {
       master.enable = false;
       dwindle.enable = false;
-      hy3.enable = false;
       scrolling.enable = true;
     };
     easymotion.enable = true;
+    hycov.enable = true;
     settings = {
       "$editor" = lib.mkForce "uwsm app -- nvim.desktop";
       exec-once = [
