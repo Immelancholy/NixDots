@@ -632,24 +632,36 @@
         "type": "github"
       }
     },
-    "hy3": {
+    "hycov": {
       "inputs": {
         "hyprland": [
           "nix-relic",
           "hyprland"
+        ],
+        "nixpkgs": [
+          "nix-relic",
+          "hycov",
+          "hyprland",
+          "nixpkgs"
+        ],
+        "systems": [
+          "nix-relic",
+          "hycov",
+          "hyprland",
+          "systems"
         ]
       },
       "locked": {
-        "lastModified": 1773279884,
-        "narHash": "sha256-cM9aozel3fOGjGvCor0jXAvz5e8pmMblX/1rGda04WI=",
-        "owner": "outfoxxed",
-        "repo": "hy3",
-        "rev": "778f23283bcd473786509aed673167e25dc43322",
+        "lastModified": 1772872702,
+        "narHash": "sha256-C8H6LIEDAXri8nM792jsXDpIhdUbqQPs1CZSzxkTZJs=",
+        "owner": "bighu630",
+        "repo": "hycov",
+        "rev": "69ec66ccd6209f878995d27f64020a575fa311ba",
         "type": "github"
       },
       "original": {
-        "owner": "outfoxxed",
-        "repo": "hy3",
+        "owner": "bighu630",
+        "repo": "hycov",
         "type": "github"
       }
     },
@@ -1172,7 +1184,7 @@
     },
     "nix-relic": {
       "inputs": {
-        "hy3": "hy3",
+        "hycov": "hycov",
         "hyprland": "hyprland",
         "hyprland-easymotion": "hyprland-easymotion",
         "hyprland-plugins": "hyprland-plugins",
@@ -1198,11 +1210,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1773769790,
-        "narHash": "sha256-qodYoQGuPOLD8EUyBwZgRoAyOmakRCzqrK5jKZ0be1w=",
+        "lastModified": 1773773549,
+        "narHash": "sha256-ruFRm2nRf9IQDPDyrNDrRmCVperTTIDcmqCEZhE45NE=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "a9621859c8bc01efc2b09fd3426398c82b4c7398",
+        "rev": "17002e636f26ee7405641167329fa48293d444b2",
         "type": "github"
       },
       "original": {
