@@ -632,39 +632,6 @@
         "type": "github"
       }
     },
-    "hycov": {
-      "inputs": {
-        "hyprland": [
-          "nix-relic",
-          "hyprland"
-        ],
-        "nixpkgs": [
-          "nix-relic",
-          "hycov",
-          "hyprland",
-          "nixpkgs"
-        ],
-        "systems": [
-          "nix-relic",
-          "hycov",
-          "hyprland",
-          "systems"
-        ]
-      },
-      "locked": {
-        "lastModified": 1772872702,
-        "narHash": "sha256-C8H6LIEDAXri8nM792jsXDpIhdUbqQPs1CZSzxkTZJs=",
-        "owner": "bighu630",
-        "repo": "hycov",
-        "rev": "69ec66ccd6209f878995d27f64020a575fa311ba",
-        "type": "github"
-      },
-      "original": {
-        "owner": "bighu630",
-        "repo": "hycov",
-        "type": "github"
-      }
-    },
     "hyprcursor": {
       "inputs": {
         "hyprlang": [
@@ -1184,7 +1151,6 @@
     },
     "nix-relic": {
       "inputs": {
-        "hycov": "hycov",
         "hyprland": "hyprland",
         "hyprland-easymotion": "hyprland-easymotion",
         "hyprland-plugins": "hyprland-plugins",
@@ -1210,11 +1176,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1773774792,
-        "narHash": "sha256-qjHqNXYs7a9xxJTI3CxKv7LHvDlKPuTl7YZIaHlmsaM=",
+        "lastModified": 1773777026,
+        "narHash": "sha256-B1tYhc7V7Z+3bihZ9gUswy3EbdYhZn81wwP/sQOekfI=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "77df32fdb146b7710629c0b2ed4840b3bd3b0352",
+        "rev": "a71e0759f5b095829526fc1adf25ec7f6baf628c",
         "type": "github"
       },
       "original": {
