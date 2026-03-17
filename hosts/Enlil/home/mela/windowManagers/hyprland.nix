@@ -7,9 +7,11 @@
       scrolling.enable = true;
     };
     easymotion.enable = true;
-    hycov.enable = true;
     settings = {
       "$editor" = lib.mkForce "uwsm app -- nvim.desktop";
+      windowrule = [
+        ''match:class ^(steam_app_\d+)$, workspace special''
+      ];
       exec-once = [
         "systemctl start --user qpwgraph"
         "[workspace 2 silent] $browser"
