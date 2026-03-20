@@ -10,14 +10,16 @@
     settings = {
       "$editor" = lib.mkForce "uwsm app -- nvim.desktop";
       "$browser" = lib.mkForce "uwsm app -- helium.desktop";
+      "$browserBoot" = "uwsm app -- helium --class=heliumBoot";
       windowrule = [
         ''match:class ^(steam_app_\d+)$, workspace special''
         ''match:class ^(helium)$, opacity 0.9 0.8''
+        ''match:class ^(heliumBoot)$, opacity 0.9 0.8''
+        ''match:class ^(heliumBoot)$, workspace 2 silent''
       ];
       exec-once = [
         "systemctl start --user qpwgraph"
-        "$browser"
-        "hyprctl dispatch movetoworkspacesilent 2,class:helium"
+        "$browserBoot"
         "uwsm app -- $discord"
         "[workspace 5 silent] uwsm app -- lm-studio"
       ];
