@@ -16,7 +16,8 @@
       ];
       exec-once = [
         "systemctl start --user qpwgraph"
-        "[workspace 2 silent] $browser"
+        "browser"
+        "hyprctl dispatch movetoworkspacesilent 2,class:helium"
         "uwsm app -- $discord"
         "[workspace 5 silent] uwsm app -- lm-studio"
       ];
