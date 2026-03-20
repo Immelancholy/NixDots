@@ -9,8 +9,10 @@
     easymotion.enable = true;
     settings = {
       "$editor" = lib.mkForce "uwsm app -- nvim.desktop";
+      "$browser" = lib.mkForce "uwsm app -- helium.desktop";
       windowrule = [
         ''match:class ^(steam_app_\d+)$, workspace special''
+        ''match:class ^(helium)$, opacity 0.9 0.8''
       ];
       exec-once = [
         "systemctl start --user qpwgraph"

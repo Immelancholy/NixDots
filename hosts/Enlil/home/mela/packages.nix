@@ -21,5 +21,6 @@
     gimp3-with-plugins
     inkscape-with-extensions
     inputs.alejandra.packages.${pkgs.stdenv.hostPlatform.system}.default
+    inputs.helium.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 }
