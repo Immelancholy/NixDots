@@ -1,8 +1,11 @@
 {
   inputs,
   nix-relic,
+  lib,
   ...
-}: {
+}: let
+  disable = lib.mkForce false;
+in {
   imports = [
     inputs.nixos-hardware.nixosModules.lenovo-legion-t526amr5
   ];
@@ -33,6 +36,10 @@
           ];
           extraGroups = ["tty" "docker" "gamemode"];
           initialPassword = "password";
+          home-config = {
+            programs.zen-browser.enable = disable;
+            programs.zed-editor.enable = disable;
+          };
         };
       };
     };
