@@ -21,7 +21,6 @@
         "systemctl start --user qpwgraph"
         "$browserBoot"
         "uwsm app -- $discord"
-        "[workspace 5 silent] uwsm app -- lm-studio"
       ];
       ecosystem = {
         enforce_permissions = true;
