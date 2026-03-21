@@ -4,7 +4,7 @@
   ...
 }: {
   programs.opencode = {
-    enable = true;
+    enable = false;
     package = inputs.opencode.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
     agents = {
