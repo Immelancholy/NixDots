@@ -37,7 +37,7 @@ in {
           extraGroups = ["tty" "docker" "gamemode"];
           initialPassword = "password";
           home-config = {
-            programs.zen-browser.enable = disable;
+            # programs.zen-browser.enable = disable;
             programs.zed-editor.enable = disable;
           };
         };
