@@ -67,11 +67,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1775195966,
-        "narHash": "sha256-35Ri0INve8GqbDjthCbutDeN6aFC60SatnGrDVlih+A=",
+        "lastModified": 1775260434,
+        "narHash": "sha256-Km+QqtLb3RiO0J3WG44rSffzuEaRW4YFOADgH4VEZaY=",
         "owner": "kamadorueda",
         "repo": "alejandra",
-        "rev": "1292d20217358af65d4e96a9fe67e7d3b483019e",
+        "rev": "633579fda5c8fb0c1e08779c568bad3cff915947",
         "type": "github"
       },
       "original": {
@@ -634,11 +634,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1775247674,
-        "narHash": "sha256-MCaiC3iWarAsmu8KJXgJHb1H8lf+BD9gymvxkbmNVdc=",
+        "lastModified": 1775268934,
+        "narHash": "sha256-Sa5tW5kYPJornQEkFVD43F/0d4/WP+/GLTNktTFe2qU=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "03bdcf84f092956943dcf9ef164481e463512716",
+        "rev": "9dc93220c1c9a410ef6277d6dc55c571d9e592d0",
         "type": "github"
       },
       "original": {
@@ -772,15 +772,16 @@
         "nixpkgs": "nixpkgs_4"
       },
       "locked": {
-        "lastModified": 1775010947,
-        "narHash": "sha256-y2rDcGiqkpDXDkayR8QJBd9Pt7I1H4T1Me4OBy5e4DE=",
-        "owner": "zakk4223",
+        "lastModified": 1775270084,
+        "narHash": "sha256-EzXNVqPy23ssPxkDJDHDaHt3Ua7XbNRWsdo0Y7b6FnY=",
+        "owner": "Immelancholy",
         "repo": "hyprland-easymotion",
-        "rev": "a670a046b825b9aa974d556e794cf60ff8cc5e76",
+        "rev": "53be91a1dc6b21d4f8f567c3bce876de9ce3de68",
         "type": "github"
       },
       "original": {
-        "owner": "zakk4223",
+        "owner": "Immelancholy",
+        "ref": "chase_upstream_again",
         "repo": "hyprland-easymotion",
         "type": "github"
       }
@@ -1210,11 +1211,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1775152887,
-        "narHash": "sha256-HYbXZ+yuZrJyzEJOY3X2LiJbg+lCaB8PzUaaHGGxxJo=",
+        "lastModified": 1775270117,
+        "narHash": "sha256-TI3FPqtiihuG1mlILn4udQBOW6IJlfY0g5IC5JQtquo=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "30d0e56372cb0a45c30d869aad502e0b336a56e5",
+        "rev": "4a6e5de08522c3a8804f81b6ef183b3ec61b62ee",
         "type": "github"
       },
       "original": {
@@ -1321,11 +1322,11 @@
     },
     "nixpkgs_4": {
       "locked": {
-        "lastModified": 1773821835,
-        "narHash": "sha256-TJ3lSQtW0E2JrznGVm8hOQGVpXjJyXY2guAxku2O9A4=",
+        "lastModified": 1775036866,
+        "narHash": "sha256-ZojAnPuCdy657PbTq5V0Y+AHKhZAIwSIT2cb8UgAz/U=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "b40629efe5d6ec48dd1efba650c797ddbd39ace0",
+        "rev": "6201e203d09599479a3b3450ed24fa81537ebc4e",
         "type": "github"
       },
       "original": {
