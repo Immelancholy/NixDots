@@ -25,13 +25,12 @@ in {
     autoeq-fiio
     nexusmods-app-unfree
     picard
-    (winboat.override {nodejs_24 = pkgs.stable.nodejs_24;})
+    winboat
     freerdp
     sshpass
     nix-prefetch
     heroic
     # blender
-    nodePackages_latest.nodejs
     inputs.agenix.packages.${pkgs.stdenv.hostPlatform.system}.default
     toggle-exit-node
   ];
