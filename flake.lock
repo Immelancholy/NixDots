@@ -2003,11 +2003,11 @@
         "nixpkgs": "nixpkgs_10"
       },
       "locked": {
-        "lastModified": 1774961360,
-        "narHash": "sha256-w655SIhOpJJJHXbjNj1y596GAKy5s+OqS+xO41aBjGI=",
+        "lastModified": 1775728248,
+        "narHash": "sha256-TVy+yKogUhnDiUC/Ih1wqHKptz7rcf/+IFVkYkdu8Ec=",
         "owner": "viu-media",
         "repo": "viu",
-        "rev": "9faba7957fb2a71b181ff6e3296a41e08cc50a28",
+        "rev": "f63c7661c682151b3015360b755f35332b1c8930",
         "type": "github"
       },
       "original": {
