@@ -23,7 +23,6 @@ in {
   environment.systemPackages = with pkgs; [
     llm-with-plugins
     autoeq-fiio
-    nexusmods-app-unfree
     picard
     winboat
     freerdp
