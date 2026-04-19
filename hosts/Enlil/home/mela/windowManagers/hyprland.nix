@@ -65,7 +65,6 @@
       render = {
         send_content_type = true;
         direct_scanout = 1;
-        cm_fs_passthrough = 0;
         cm_auto_hdr = 1;
       };
       input = {
