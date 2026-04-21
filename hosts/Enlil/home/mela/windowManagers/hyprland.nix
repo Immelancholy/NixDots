@@ -13,6 +13,7 @@
       "$browserBoot" = "uwsm app -- helium --class=heliumBoot";
       windowrule = [
         ''match:class ^(steam_app_\d+)$, workspace special:game''
+        ''match:content 3, workspace special:game''
         ''match:class ^(xfreerdp)$, workspace special:win''
         ''match:class ^(\d+)$, workspace special''
         ''match:class ^(helium)$, opacity 0.9 0.8''
