@@ -18,13 +18,12 @@
       ];
     };
     config = {
-      profile = "gpu-hq";
-      gpu-api = "vulkan";
       osc = "no";
       hwdec = "auto";
-      vo = "gpu-next";
-      gpu-context = "waylandvk";
-      target-colorspace-hint = true;
+      vo = "gpu";
+      gpu-context = "wayland";
+      target-colorspace-hint-mode = "source";
+      target-peak = 300;
     };
     scripts = lib.mkForce [];
   };

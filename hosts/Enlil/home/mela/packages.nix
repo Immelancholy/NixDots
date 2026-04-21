@@ -7,7 +7,7 @@
     (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {extensions = ["rust-src" "rust-analyzer"];}))
     reaper
     prismlauncher
-    inputs.viu.packages.${pkgs.stdenv.hostPlatform.system}.default
+    ani-cli
     temurin-bin
     bespokesynth
     reaper-sws-extension

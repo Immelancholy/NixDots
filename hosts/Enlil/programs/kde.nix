@@ -17,6 +17,7 @@
     kwallet
     kwallet-pam
     gwenview
+    dolphin
   ];
   services.displayManager.sddm.package = lib.mkForce pkgs.kdePackages.sddm;
 }

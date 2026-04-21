@@ -12,10 +12,13 @@
       "$browser" = lib.mkForce "uwsm app -- helium.desktop";
       "$browserBoot" = "uwsm app -- helium --class=heliumBoot";
       windowrule = [
-        ''match:class ^(steam_app_\d+)$, workspace special''
+        ''match:class ^(steam_app_\d+)$, workspace special:game''
+        ''match:class ^(\d+)$, workspace special''
         ''match:class ^(helium)$, opacity 0.9 0.8''
         ''match:class ^(heliumBoot)$, opacity 0.9 0.8''
         ''match:class ^(heliumBoot)$, workspace 2 silent''
+        ''match:title ^(.*[Ee]pisode \d+ - mpv*.)$, workspace special:video''
+        ''match:title ^(.*[Ee]pisode \d+ - mpv*.)$, fullscreen 1''
       ];
       exec-once = [
         "systemctl start --user qpwgraph"
@@ -63,9 +66,7 @@
         "6, monitor:HDMI-A-1"
       ];
       render = {
-        send_content_type = true;
         direct_scanout = 1;
-        cm_auto_hdr = 1;
       };
       input = {
         kb_layout = "gb";
@@ -80,6 +81,10 @@
         "$mod, F9, pass, class:^(com.obsproject.Studio)$"
         "$mod, F10, pass, class:^(com.obsproject.Studio)$"
         "$mod, F12, pass, class:^(com.obsproject.Studio)$"
+        "Alt, G, togglespecialworkspace, game"
+        "Alt, V, togglespecialworkspace, video"
+        "$mods, G, movetoworkspacesilent, special:game"
+        "$mods, V, movetoworkspacesilent, special:video"
       ];
       bindl = [
         "$mod, mouse:282, exec, $playerctl next" #next
