@@ -13,6 +13,7 @@
       "$browserBoot" = "uwsm app -- helium --class=heliumBoot";
       windowrule = [
         ''match:class ^(steam_app_\d+)$, workspace special:game''
+        ''match:class ^(xfreerdp)$, workspace special:win''
         ''match:class ^(\d+)$, workspace special''
         ''match:class ^(helium)$, opacity 0.9 0.8''
         ''match:class ^(heliumBoot)$, opacity 0.9 0.8''
@@ -83,6 +84,8 @@
         "$mod, F12, pass, class:^(com.obsproject.Studio)$"
         "Alt, G, togglespecialworkspace, game"
         "Alt, V, togglespecialworkspace, video"
+        "Alt, W, togglespecialworkspace, win"
+        "$mods, W, movetoworkspacesilent, special:win"
         "$mods, G, movetoworkspacesilent, special:game"
         "$mods, V, movetoworkspacesilent, special:video"
       ];
