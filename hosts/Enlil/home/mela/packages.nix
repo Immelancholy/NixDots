@@ -7,7 +7,18 @@
     (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {extensions = ["rust-src" "rust-analyzer"];}))
     reaper
     prismlauncher
-    ani-cli
+    (ani-cli.overrideAttrs (finalAttrs: previousAttrs: {
+      src = "${inputs.ani-cli}"; 
+      runtimeInputs = with pkgs; [
+        gnugrep
+        gnused
+        curl
+        fzf
+        ffmpeg
+        aria2
+        openssl
+      ];
+    }))
     temurin-bin
     bespokesynth
     reaper-sws-extension

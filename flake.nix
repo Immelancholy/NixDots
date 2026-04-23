@@ -39,6 +39,11 @@
         neovim-nightly-overlay.follows = "neovim-nightly-overlay";
       };
     };
+    ani-cli = {
+      url = "github:justchokingaround/ani-cli/allanime-fix";
+      # url = "github:pystardust/ani-cli";
+      flake = false;
+    };
     opencode.url = "github:anomalyco/opencode/tags/v1.1.53";
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
     agenix.url = "github:ryantm/agenix";
