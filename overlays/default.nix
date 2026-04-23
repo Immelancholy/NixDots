@@ -3,10 +3,10 @@
   modifications = final: prev: {
     ani-cli = prev.ani-cli.overrideAttrs (finalAttrs: previousAttrs: {
       src = prev.fetchFromGitHub {
-        owner = "pystardust";
+        owner = "justchokingaround";
         repo = "ani-cli";
-        tag = "v4.12";
-        hash = "sha256-ELGjAp4YGgPLN62g7Fgkb83CMotAGeRnRgIGU8rd73E=";
+        rev = "967821592a52bf6d0481672b961f8ccae5d67cac";
+        hash = "sha256-R+sXA5NZ/gDElMUTUHyOha7ZZ6FKgwTpAYuWUF4hqto=";
       };
       runtimeInputs = with prev; [
         gnugrep
