@@ -83,16 +83,15 @@
     "ani-cli": {
       "flake": false,
       "locked": {
-        "lastModified": 1776874681,
+        "lastModified": 1777053438,
         "narHash": "sha256-R+sXA5NZ/gDElMUTUHyOha7ZZ6FKgwTpAYuWUF4hqto=",
-        "owner": "justchokingaround",
+        "owner": "pystardust",
         "repo": "ani-cli",
-        "rev": "967821592a52bf6d0481672b961f8ccae5d67cac",
+        "rev": "766795bea98c323be6d652433bda53f41021cc43",
         "type": "github"
       },
       "original": {
-        "owner": "justchokingaround",
-        "ref": "allanime-fix",
+        "owner": "pystardust",
         "repo": "ani-cli",
         "type": "github"
       }
