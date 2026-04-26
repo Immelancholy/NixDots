@@ -40,8 +40,7 @@
       };
     };
     ani-cli = {
-      url = "github:justchokingaround/ani-cli/allanime-fix";
-      # url = "github:pystardust/ani-cli";
+      url = "github:pystardust/ani-cli";
       flake = false;
     };
     opencode.url = "github:anomalyco/opencode/tags/v1.1.53";
