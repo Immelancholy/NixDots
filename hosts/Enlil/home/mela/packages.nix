@@ -5,7 +5,7 @@
 }: {
   home.packages = with pkgs; [
     (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {extensions = ["rust-src" "rust-analyzer"];}))
-    reaper
+    dexed
     prismlauncher
     (ani-cli.overrideAttrs (finalAttrs: previousAttrs: {
       src = "${inputs.ani-cli}"; 
@@ -34,4 +34,5 @@
     inputs.alejandra.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.helium.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
+
 }
