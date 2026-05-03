@@ -8,9 +8,6 @@
         "nixpkgs": [
           "nixpkgs"
         ],
-        "opencode": [
-          "opencode"
-        ],
         "plugins-atone": "plugins-atone",
         "plugins-conflict-marker": "plugins-conflict-marker",
         "plugins-lze": "plugins-lze",
@@ -24,11 +21,11 @@
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1777837163,
-        "narHash": "sha256-mYxcMKkrFe4dlI0O9eoYrm36hj+nQMNVLow6WsK4hAc=",
+        "lastModified": 1777837511,
+        "narHash": "sha256-pqXdve5o2yV6ZXB4wQszNwWfD6efXcE1daVNBNMBBVY=",
         "owner": "Immelancholy",
         "repo": "RheaynaVim",
-        "rev": "00cc6a3366138e973f55bfc900d979e8547df906",
+        "rev": "bfaeb267c72eab52868a077b0ae7ea1ea2f6b51d",
         "type": "github"
       },
       "original": {
@@ -1377,22 +1374,6 @@
         "type": "github"
       }
     },
-    "nixpkgs_9": {
-      "locked": {
-        "lastModified": 1768393167,
-        "narHash": "sha256-n2063BRjHde6DqAz2zavhOOiLUwA3qXt7jQYHyETjX8=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "2f594d5af95d4fdac67fba60376ec11e482041cb",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixpkgs-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "nur": {
       "inputs": {
         "flake-parts": "flake-parts_3",
@@ -1439,25 +1420,6 @@
       "original": {
         "owner": "nix-community",
         "repo": "NUR",
-        "type": "github"
-      }
-    },
-    "opencode": {
-      "inputs": {
-        "nixpkgs": "nixpkgs_9"
-      },
-      "locked": {
-        "lastModified": 1770332936,
-        "narHash": "sha256-VddWpvtoDJlbbesJL6VlP99/NJqkHbN8Rdv1XccNRZM=",
-        "owner": "anomalyco",
-        "repo": "opencode",
-        "rev": "579902ace6e9fb925f50b7d9fdf11a6b47895307",
-        "type": "github"
-      },
-      "original": {
-        "owner": "anomalyco",
-        "ref": "tags/v1.1.53",
-        "repo": "opencode",
         "type": "github"
       }
     },
@@ -1623,7 +1585,6 @@
         "nix-relic": "nix-relic",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_8",
-        "opencode": "opencode",
         "zarumet": "zarumet"
       }
     },
