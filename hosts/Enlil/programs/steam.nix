@@ -16,7 +16,7 @@
 in {
   programs.steam = {
     enable = true;
-    package = lib.mkDefault steam_pkg;
+    package = lib.mkForce steam_pkg;
     gamescopeSession = {
       enable = true;
     };
