@@ -34,7 +34,6 @@
       url = "github:Immelancholy/RheaynaVim";
       inputs = {
         nixpkgs.follows = "nixpkgs";
-        opencode.follows = "opencode";
         rust-overlay.follows = "nix-relic/rust-overlay";
         neovim-nightly-overlay.follows = "neovim-nightly-overlay";
       };
@@ -43,7 +42,6 @@
       url = "github:pystardust/ani-cli";
       flake = false;
     };
-    opencode.url = "github:anomalyco/opencode/tags/v1.1.53";
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
     agenix.url = "github:ryantm/agenix";
     helium = {
