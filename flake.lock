@@ -10,10 +10,12 @@
         ],
         "plugins-atone": "plugins-atone",
         "plugins-conflict-marker": "plugins-conflict-marker",
+        "plugins-lexima": "plugins-lexima",
         "plugins-lze": "plugins-lze",
         "plugins-lzextras": "plugins-lzextras",
         "plugins-mole": "plugins-mole",
         "plugins-nvim-highlight-colors": "plugins-nvim-highlight-colors",
+        "plugins-vim-be-good": "plugins-vim-be-good",
         "rust-overlay": [
           "nix-relic",
           "rust-overlay"
@@ -21,11 +23,11 @@
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1777837511,
-        "narHash": "sha256-pqXdve5o2yV6ZXB4wQszNwWfD6efXcE1daVNBNMBBVY=",
+        "lastModified": 1777838533,
+        "narHash": "sha256-l9nnGuRaZw8f2ATAPV4hdptxAMySYwRyN/BPnS1PPBE=",
         "owner": "Immelancholy",
         "repo": "RheaynaVim",
-        "rev": "bfaeb267c72eab52868a077b0ae7ea1ea2f6b51d",
+        "rev": "272cf965eb1a01f8dae5449f99166ff1b07219a5",
         "type": "github"
       },
       "original": {
@@ -1455,6 +1457,22 @@
         "type": "github"
       }
     },
+    "plugins-lexima": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1747322518,
+        "narHash": "sha256-NtHCfuL2Tq1a4Xevx+xAbnzsKqnPAbU/l7JvK7p0evU=",
+        "owner": "cohama",
+        "repo": "lexima.vim",
+        "rev": "ab621e4756465c9d354fce88cff2bd1aa7887065",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cohama",
+        "repo": "lexima.vim",
+        "type": "github"
+      }
+    },
     "plugins-lze": {
       "flake": false,
       "locked": {
@@ -1516,6 +1534,22 @@
       "original": {
         "owner": "brenoprata10",
         "repo": "nvim-highlight-colors",
+        "type": "github"
+      }
+    },
+    "plugins-vim-be-good": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1733364077,
+        "narHash": "sha256-yrNZV90yiHIxw0OMSSvi5SMApR2oFT8EpvF6TiUlC88=",
+        "owner": "ThePrimeagen",
+        "repo": "vim-be-good",
+        "rev": "0ae3de14eb8efc6effe7704b5e46495e91931cc5",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ThePrimeagen",
+        "repo": "vim-be-good",
         "type": "github"
       }
     },
