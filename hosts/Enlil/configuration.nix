@@ -107,6 +107,7 @@ in {
     };
     overlays = [
       nix-relic.inputs.rust-overlay.overlays.default
+      inputs.millennium.overlays.default
     ];
   };
 

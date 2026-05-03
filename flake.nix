@@ -42,6 +42,7 @@
       url = "github:pystardust/ani-cli";
       flake = false;
     };
+    millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
     agenix.url = "github:ryantm/agenix";
     helium = {

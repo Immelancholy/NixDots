@@ -3,7 +3,7 @@
   lib,
   ...
 }: let
-  steam_pkg = pkgs.steam.override {
+  steam_pkg = pkgs.millennium-steam.override {
     extraEnv = {
       OBS_VKCAPTURE = true;
       MANGOHUD = true;
