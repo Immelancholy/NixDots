@@ -12,10 +12,14 @@
       "$browser" = lib.mkForce "uwsm app -- helium.desktop";
       "$browserBoot" = "uwsm app -- helium --class=heliumBoot";
       windowrule = [
-        ''match:class ^(steam_app_\d+)$, workspace special:game''
-        ''match:content 3, workspace special:game''
+        ''match:class ^(steam.*)$, workspace special:game''
+        ''match:title ^(Heroic Games Launcher)$, workspace special:game''
+        ''match:xdg_tag ^(proton-game)$, workspace special:game''
+        ''match:content game, workspace special:game''
+        ''match:class ^(steam_app_\d+)$, fullscreen 1''
+        ''match:xdg_tag ^(proton-game)$, fullscreen 1''
+        ''match:content game, fullscreen 1''
         ''match:class ^(xfreerdp)$, workspace special:win''
-        ''match:class ^(\d+)$, workspace special''
         ''match:class ^(helium)$, opacity 0.9 0.8''
         ''match:class ^(heliumBoot)$, opacity 0.9 0.8''
         ''match:class ^(heliumBoot)$, workspace 2 silent''
