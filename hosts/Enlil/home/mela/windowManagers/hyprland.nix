@@ -13,7 +13,6 @@
       "$browserBoot" = "uwsm app -- helium --class=heliumBoot";
       windowrule = [
         ''match:class ^(steam_app_\d+)$, workspace special:game''
-        ''match:class ^(overwatch.exe)$, workspace special:game''
         ''match:xdg_tag ^(proton-game)$, workspace special:game''
         ''match:content game, workspace special:game''
         ''match:class ^(steam_app_\d+)$, fullscreen 1''
