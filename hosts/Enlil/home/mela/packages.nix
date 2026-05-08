@@ -5,7 +5,6 @@
 }: {
   home.packages = with pkgs; [
     (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {extensions = ["rust-src" "rust-analyzer"];}))
-    dexed
     prismlauncher
     (ani-cli.overrideAttrs (finalAttrs: previousAttrs: {
       src = "${inputs.ani-cli}"; 

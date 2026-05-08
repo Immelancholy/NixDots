@@ -1,7 +1,7 @@
 {lib, ...}: {
   programs.fish = {
     interactiveShellInit =
-      lib.mkForce
+      lib.mkDefault
       /*
       fish
       */
@@ -16,7 +16,7 @@
         check_tmux
 
         if [ "$class" = "fastfetch" ]
-          fastfetch --logo "$HOME"/Pictures/fastfetch_logos/Fubuki.jpg
+          fastfetch --logo 
         else
           check_for_repo
         end
