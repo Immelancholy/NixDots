@@ -3,6 +3,10 @@
     reaper
     dexed
     lsp-plugins
+    calf
+    zlequalizer
+    zlcompressor
+    zlsplitter
   ];
 
   xdg.configFile."REAPER/UserPlugins/reaper_reapack-x86_64.so" = {
