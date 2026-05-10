@@ -1418,6 +1418,22 @@
         "type": "github"
       }
     },
+    "momoisay": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1753685227,
+        "narHash": "sha256-9exrPLoroOiSa6SD6LRjlYo7+uuDTFCbxQcXmLaX2JI=",
+        "owner": "Mon4sm",
+        "repo": "momoisay",
+        "rev": "001f4a693c26c8aabbf0dc4f88100303ad93efc6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Mon4sm",
+        "repo": "momoisay",
+        "type": "github"
+      }
+    },
     "neovim-nightly-overlay": {
       "inputs": {
         "flake-parts": "flake-parts",
@@ -1917,6 +1933,7 @@
         "home-manager": "home-manager_2",
         "llm-git-commit": "llm-git-commit",
         "millennium": "millennium",
+        "momoisay": "momoisay",
         "neovim-nightly-overlay": "neovim-nightly-overlay",
         "nix-relic": "nix-relic",
         "nixos-hardware": "nixos-hardware",
