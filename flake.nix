@@ -46,7 +46,7 @@
       url = "github:Mon4sm/momoisay";
       flake = false;
     };
-    millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+    millennium.url = "github:Immelancholy/Millennium/e2c66a276e579ee73c5151b01897bf63503aa12c?dir=packages/nix";
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
     agenix.url = "github:ryantm/agenix";
     helium = {
