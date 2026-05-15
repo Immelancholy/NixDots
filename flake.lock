@@ -99,15 +99,16 @@
     "ani-cli": {
       "flake": false,
       "locked": {
-        "lastModified": 1777645919,
-        "narHash": "sha256-OyCKDN89sBz59+3JncMDyNOq8UMqqjara+A0Owo3oko=",
+        "lastModified": 1778778427,
+        "narHash": "sha256-rfzXK5ZiRd0uVJ5GxD5e/z5VQKcZVRu4kVuFdKkWTog=",
         "owner": "pystardust",
         "repo": "ani-cli",
-        "rev": "6803b8a15faafa41cb79271e9a4f7f9c70a53651",
+        "rev": "e42679778041acac3212b3fa23909935ea43b64b",
         "type": "github"
       },
       "original": {
         "owner": "pystardust",
+        "ref": "coolans_patches",
         "repo": "ani-cli",
         "type": "github"
       }
@@ -1498,11 +1499,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1778437724,
-        "narHash": "sha256-l5IcfXiD6fdb/gnrYwWA7VCLDpoVcvi4XIwNHA3ZFZ8=",
+        "lastModified": 1778853834,
+        "narHash": "sha256-gUPitwf4HIKhZZjI3p9Gt9PF4VStcmhfobq6LecuhjY=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "c861c38b6a0cebe535caac672d5fc9fcb72b0f71",
+        "rev": "2f035cc47c7df028128168d060a969abb14dece1",
         "type": "github"
       },
       "original": {
@@ -2460,11 +2461,11 @@
         "rust-overlay": "rust-overlay_3"
       },
       "locked": {
-        "lastModified": 1773533700,
-        "narHash": "sha256-qzHCMpDgNbxPeQJ5MGkIGN706CFq2IVSPFRQJk4Aos8=",
+        "lastModified": 1778853685,
+        "narHash": "sha256-wjloRdp+schZ6+Fj3WHphqqy1KMgY8JHHakgKXc339M=",
         "owner": "Immelancholy",
         "repo": "zarumet",
-        "rev": "012832e5e4acb48325eb081ac2b40b44d7cecf50",
+        "rev": "d8e043b1f51d00c497f2d485ddff4a58da954482",
         "type": "github"
       },
       "original": {
