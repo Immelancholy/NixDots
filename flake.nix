@@ -39,7 +39,7 @@
       };
     };
     ani-cli = {
-      url = "github:pystardust/ani-cli";
+      url = "github:pystardust/ani-cli/coolans_patches";
       flake = false;
     };
     momoisay = {
