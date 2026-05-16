@@ -1499,11 +1499,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1778893697,
-        "narHash": "sha256-Iz452lKqYBJ15LywaO7DWfsN+9RphKFvUQj6dAssNyQ=",
+        "lastModified": 1778927879,
+        "narHash": "sha256-X+ov9bl9qVRihda6tSpK0IosWOzDo0k580O/2jvcwas=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "fb637b69943166abe0222a8b96b9bc1d983a328a",
+        "rev": "703f4a0c31cb6e18433bd7cfbd7a7c9f01e0460e",
         "type": "github"
       },
       "original": {
