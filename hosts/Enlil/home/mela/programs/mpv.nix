@@ -18,10 +18,12 @@
       ];
     };
     config = {
+      profile = "gpu-hq";
+      gpu-api = "vulkan";
       osc = "no";
-      hwdec = "auto";
-      vo = "gpu";
-      gpu-context = "wayland";
+      hwdec = "vulkan";
+      vo = "gpu-next";
+      gpu-context = "waylandvk";
       target-colorspace-hint-mode = "source";
       target-peak = 300;
     };
