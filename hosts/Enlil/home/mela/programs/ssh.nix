@@ -3,7 +3,7 @@
     enable = true;
     package = null;
     enableDefaultConfig = false;
-    matchBlocks = {
+    settings = {
       "ereshkigal" = {
         host = "ereshkigal";
         forwardAgent = true;
