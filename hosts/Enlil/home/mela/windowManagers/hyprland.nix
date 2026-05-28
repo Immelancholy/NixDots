@@ -27,8 +27,8 @@
       ];
       exec-once = [
         "systemctl start --user qpwgraph"
-        "$browserBoot"
         "uwsm app -- $discord"
+        "$browserBoot"
       ];
       ecosystem = {
         enforce_permissions = true;
