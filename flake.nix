@@ -12,7 +12,7 @@
       };
     };
     stylix = {
-      url = "git+file:/home/mela/Documents/Projects/stylix";
+      url = "git+file:/home/mela/Documents/Projects/stylix?ref=zen-browser-opacity";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     home-manager = {
