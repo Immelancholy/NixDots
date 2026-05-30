@@ -9,8 +9,6 @@
     easymotion.enable = true;
     settings = {
       "$editor" = lib.mkForce "uwsm app -- nvim.desktop";
-      "$browser" = lib.mkForce "uwsm app -- helium.desktop";
-      "$browserBoot" = "uwsm app -- helium --class=heliumBoot";
       windowrule = [
         ''match:class ^(steam_app_\d+)$, workspace special:game''
         ''match:xdg_tag ^(proton-game)$, workspace special:game''
@@ -19,16 +17,13 @@
         ''match:xdg_tag ^(proton-game)$, fullscreen 1''
         ''match:content game, fullscreen 1''
         ''match:class ^(xfreerdp)$, workspace special:win''
-        ''match:class ^(helium)$, opacity 0.9 0.8''
-        ''match:class ^(heliumBoot)$, opacity 0.9 0.8''
-        ''match:class ^(heliumBoot)$, workspace 2 silent''
         ''match:title ^(.*[Ee]pisode \d+ - mpv*.)$, workspace special:video''
         ''match:title ^(.*[Ee]pisode \d+ - mpv*.)$, fullscreen 1''
       ];
       exec-once = [
         "systemctl start --user qpwgraph"
         "uwsm app -- $discord"
-        "$browserBoot"
+        "[workspace 2 silent] $browser"
       ];
       ecosystem = {
         enforce_permissions = true;

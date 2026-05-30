@@ -4,11 +4,16 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixos-hardware.url = "github:nixos/nixos-hardware/master";
     nix-relic = {
-      url = "github:Immelancholy/Nix-Relic";
+      url = "git+file:/home/mela/Documents/Projects/Nix-Relic";
       inputs = {
         nixpkgs.follows = "nixpkgs";
         zarumet.follows = "zarumet";
+        stylix.follows = "stylix";
       };
+    };
+    stylix = {
+      url = "git+file:/home/mela/Documents/Projects/stylix";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -31,7 +36,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     RheaynaVim = {
-      url = "github:Immelancholy/RheaynaVim";
+      url = "git+file:/home/mela/Documents/Projects/RheaynaVim";
       inputs = {
         nixpkgs.follows = "nixpkgs";
         rust-overlay.follows = "nix-relic/rust-overlay";
