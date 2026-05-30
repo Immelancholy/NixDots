@@ -1500,11 +1500,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1780152041,
-        "narHash": "sha256-f11LNMDf3WsZU0CQQQCAiyNm6ZD9iOS70Phdug0jFA0=",
+        "lastModified": 1780152883,
+        "narHash": "sha256-y95z1p3OGP1WK3mqpM9yj2hsMyADsgklz+URcXa/GAs=",
         "owner": "Immelancholy",
         "repo": "Nix-Relic",
-        "rev": "b9e5521cec021e7fc74d01c521c9a2d3c50e24e2",
+        "rev": "5d9d9246c2b7c7144c5b0fcdcef60e6cb82e59d7",
         "type": "github"
       },
       "original": {
