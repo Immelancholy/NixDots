@@ -2084,13 +2084,14 @@
       "locked": {
         "lastModified": 1780167546,
         "narHash": "sha256-qnkIqxKSJjgZNwrmA80QNyM5VDfdB0SQnbQkpJyaLEI=",
-        "ref": "refs/heads/master",
+        "ref": "zen-browser-opacity",
         "rev": "b6e9d510ea3a4cc1c183cc7d946a58dc26e23cbb",
         "revCount": 1415,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/stylix"
       },
       "original": {
+        "ref": "zen-browser-opacity",
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/stylix"
       }
