@@ -483,7 +483,6 @@
     "flake-parts_3": {
       "inputs": {
         "nixpkgs-lib": [
-          "nix-relic",
           "stylix",
           "nixpkgs"
         ]
@@ -540,7 +539,7 @@
     },
     "flake-utils_3": {
       "inputs": {
-        "systems": "systems_7"
+        "systems": "systems_6"
       },
       "locked": {
         "lastModified": 1731533236,
@@ -1487,7 +1486,9 @@
         "rust-overlay": "rust-overlay",
         "solaar": "solaar",
         "spicetify-nix": "spicetify-nix",
-        "stylix": "stylix",
+        "stylix": [
+          "stylix"
+        ],
         "yamb": "yamb",
         "yazi": "yazi",
         "yazi-flavors": "yazi-flavors",
@@ -1553,22 +1554,6 @@
       "original": {
         "owner": "nixos",
         "ref": "nixos-26.05",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_10": {
-      "locked": {
-        "lastModified": 1779508470,
-        "narHash": "sha256-Ap9KJX+5xHIn3bPIpfNgT6MEXdAECECwo4/rmlQD74M=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "29916453413845e54a65b8a1cf996842300cd299",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixos-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -1684,11 +1669,11 @@
     },
     "nixpkgs_9": {
       "locked": {
-        "lastModified": 1779560665,
-        "narHash": "sha256-tpyBcxPpcQb8ukyNF7DoCwfSY3VPsxHoYwj00Cayv5o=",
+        "lastModified": 1779508470,
+        "narHash": "sha256-Ap9KJX+5xHIn3bPIpfNgT6MEXdAECECwo4/rmlQD74M=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "64c08a7ca051951c8eae34e3e3cb1e202fe36786",
+        "rev": "29916453413845e54a65b8a1cf996842300cd299",
         "type": "github"
       },
       "original": {
@@ -1723,12 +1708,10 @@
     "nur_2": {
       "inputs": {
         "flake-parts": [
-          "nix-relic",
           "stylix",
           "flake-parts"
         ],
         "nixpkgs": [
-          "nix-relic",
           "stylix",
           "nixpkgs"
         ]
@@ -1939,7 +1922,8 @@
         "neovim-nightly-overlay": "neovim-nightly-overlay",
         "nix-relic": "nix-relic",
         "nixos-hardware": "nixos-hardware",
-        "nixpkgs": "nixpkgs_10",
+        "nixpkgs": "nixpkgs_9",
+        "stylix": "stylix",
         "zarumet": "zarumet"
       }
     },
@@ -2087,20 +2071,22 @@
         "firefox-gnome-theme": "firefox-gnome-theme",
         "flake-parts": "flake-parts_3",
         "gnome-shell": "gnome-shell",
-        "nixpkgs": "nixpkgs_9",
+        "nixpkgs": [
+          "nixpkgs"
+        ],
         "nur": "nur_2",
-        "systems": "systems_6",
+        "systems": "systems_7",
         "tinted-kitty": "tinted-kitty",
         "tinted-schemes": "tinted-schemes",
         "tinted-tmux": "tinted-tmux",
         "tinted-zed": "tinted-zed"
       },
       "locked": {
-        "lastModified": 1780147946,
-        "narHash": "sha256-NNY8FL1gs/qA0RD/0q0dNBoU4F3kjfcCmLVUqk7eGoM=",
+        "lastModified": 1780148391,
+        "narHash": "sha256-s+o+ORj8HkXCnob0NX7E0lOpkTjJNrEJm3lsHV2m50E=",
         "owner": "Immelancholy",
         "repo": "stylix",
-        "rev": "057e6caea7dd472f7b95c0192ec979ecd5287c52",
+        "rev": "4ed128e84c86bcb40d750757ebf7434fb6f01a6d",
         "type": "github"
       },
       "original": {
