@@ -1500,11 +1500,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1780154467,
-        "narHash": "sha256-sbudr1CBnmL/+kTc8KskVKr7I12VBW8VH779fpZRJcI=",
+        "lastModified": 1780156903,
+        "narHash": "sha256-EXM4urQGf09Kr5w4TCoF95eCpaADTK5dI9EK20+s7sE=",
         "ref": "refs/heads/main",
-        "rev": "46e3104679786cce8a2f89bdd0abfccf93fc8c03",
-        "revCount": 4168,
+        "rev": "0ed2435f48c13f5170eb6528acdd5b26ee0bb590",
+        "revCount": 4169,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
@@ -2082,10 +2082,10 @@
         "tinted-zed": "tinted-zed"
       },
       "locked": {
-        "lastModified": 1780151947,
-        "narHash": "sha256-kvxmjG4M/xYJGhgA12nsqf0N1HaASKeF2bB+rSAIQqY=",
+        "lastModified": 1780156921,
+        "narHash": "sha256-9YLXpEIMYSh21lXN/Bo0LQESKx0xG3iAIfCR98/OMfo=",
         "ref": "refs/heads/master",
-        "rev": "b475877bae099bc018d69f2d27315a1bfa01d855",
+        "rev": "9faaa0a840caf9d85a8f12f25de23dc29b5021fb",
         "revCount": 1415,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/stylix"
