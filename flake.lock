@@ -437,6 +437,22 @@
         "type": "github"
       }
     },
+    "flake-compat_4": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1767039857,
+        "narHash": "sha256-vNpUSpF5Nuw8xvDLj2KCwwksIbjua2LZCqhV1LNRDns=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "5edf11c44bc78a0d334f6334cdaf7d60d732daab",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
     "flake-parts": {
       "inputs": {
         "nixpkgs-lib": [
@@ -1489,6 +1505,7 @@
         "stylix": [
           "stylix"
         ],
+        "waybar": "waybar",
         "yamb": "yamb",
         "yazi": "yazi",
         "yazi-flavors": "yazi-flavors",
@@ -1500,11 +1517,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1780257718,
-        "narHash": "sha256-N5zk0PZY5zpwJslLhMyFIjrDP1uUlzRIlyzEtVOeEzY=",
+        "lastModified": 1780258868,
+        "narHash": "sha256-Xpt23fsEmh0m9SXAltA12JJYJc2+7HMS3MTFxGgTCAQ=",
         "ref": "hyprlua",
-        "rev": "b2a2d91823e00ce76e74b7d2c602172cc5c95c63",
-        "revCount": 4204,
+        "rev": "6c5762c14dd9c1405889176e2f6f86416b3c4d7d",
+        "revCount": 4205,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
@@ -2282,6 +2299,28 @@
         "owner": "gytis-ivaskevicius",
         "repo": "flake-utils-plus",
         "rev": "afcb15b845e74ac5e998358709b2b5fe42a948d1",
+        "type": "github"
+      }
+    },
+    "waybar": {
+      "inputs": {
+        "flake-compat": "flake-compat_4",
+        "nixpkgs": [
+          "nix-relic",
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1777929458,
+        "narHash": "sha256-51R3mIt8cLNvh/X5qe9vOqeJCj0U9KRyemVE5y+OhiU=",
+        "owner": "Alexays",
+        "repo": "waybar",
+        "rev": "05945748dccce28bf96d26d8f64a9e69a8dd49ba",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Alexays",
+        "repo": "waybar",
         "type": "github"
       }
     },
