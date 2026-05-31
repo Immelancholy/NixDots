@@ -88,7 +88,6 @@ in {
       )
 
       hl.bind(mod .. " + Q", hl.dsp.window.close())
-      hl.bind(mod .. " + B", hl.dsp.exec_cmd("binds.sh"))
       hl.bind(mod .. " + W", hl.dsp.window.float({ action = "toggle" }))
       hl.bind("Pause", hl.dsp.exec_cmd(playerctl .. " play-pause"))
       hl.bind(mod .. " + T", hl.dsp.exec_cmd(term))
