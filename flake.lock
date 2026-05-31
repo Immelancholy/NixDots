@@ -833,11 +833,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1779983308,
-        "narHash": "sha256-BU3nfD5ugLkOvsdoL/1GyUSIEVCQM3mkJ5hIe2mZehA=",
+        "lastModified": 1780142732,
+        "narHash": "sha256-7sBe6ujnxspLeX7zMSKpGpOuOXGeUmvDV/78CSsY+PQ=",
         "owner": "hyprwm",
         "repo": "Hyprland",
-        "rev": "ebc1816dfb27f1091c9713876669e092a215382d",
+        "rev": "34fddc949042e45d22bed6cbe72f9a9c838914fa",
         "type": "github"
       },
       "original": {
@@ -1500,11 +1500,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1780240747,
-        "narHash": "sha256-2z/A5bvoYS41ouc0ip1QJTuE0JssZEpZCz9PVbvaKKw=",
+        "lastModified": 1780244327,
+        "narHash": "sha256-lppsvZw5EjFTGCu0je9vYlgpbZh36oXL/mWzTHiR7sM=",
         "ref": "hyprlua",
-        "rev": "e3457b50e286e47c4832cc85c7dfb9fc9b912368",
-        "revCount": 4197,
+        "rev": "3208692fc52603e2a7a7e2b778470f6182ca762f",
+        "revCount": 4198,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
