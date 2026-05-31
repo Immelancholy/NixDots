@@ -53,6 +53,36 @@
       })
       hl.window_rule({
       	match = {
+      		class = "^(mpd)$",
+      	},
+      	opacity = "1.0 override 0.9 override",
+      })
+      hl.window_rule({
+      	match = {
+      		class = "^(neo)$",
+      	},
+      	opacity = "1.0 override 0.9 override",
+      })
+      hl.window_rule({
+      	match = {
+      		class = "^(fastfetch)$",
+      	},
+      	opacity = "1.0 override 0.9 override",
+      })
+      hl.window_rule({
+      	match = {
+      		class = "^(cava)$",
+      	},
+      	opacity = "1.0 override 0.9 override",
+      })
+      hl.window_rule({
+      	match = {
+      		class = "^(btop)$",
+      	},
+      	opacity = "1.0 override 0.9 override",
+      })
+      hl.window_rule({
+      	match = {
       		class = "^(zen.*)$",
       	},
       	opacity = "1.0 override 0.9 override",
