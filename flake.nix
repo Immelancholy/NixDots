@@ -4,7 +4,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixos-hardware.url = "github:nixos/nixos-hardware/master";
     nix-relic = {
-      url = "git+file:/home/mela/Documents/Projects/Nix-Relic";
+      url = "git+file:/home/mela/Documents/Projects/Nix-Relic?ref=hyprlua";
       inputs = {
         nixpkgs.follows = "nixpkgs";
         zarumet.follows = "zarumet";
@@ -136,7 +136,7 @@
         ];
       };
   in {
-    formatter = forAllSystems (system: inputs.alejandra.packages.${system}.alejandra);
+    formatter = forAllSystems (system: inputs.alejandra.packages.${system}.default);
 
     overlays = import ./overlays;
 
