@@ -1500,15 +1500,16 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1780169974,
-        "narHash": "sha256-eFC92kPH2GxvJWOscEM/l2kF7iOfItMa1HuTIa/uRCI=",
-        "ref": "refs/heads/main",
-        "rev": "83d6fa3757661c85c20401a71a20a657c25059ac",
-        "revCount": 4176,
+        "lastModified": 1780199034,
+        "narHash": "sha256-eRwn2G443wueGfV/GZBhgWKVKjKcWTKzamkJ94bswcc=",
+        "ref": "hyprlua",
+        "rev": "c386343bc24e20e78a5e2840f3548ae43a12dbfd",
+        "revCount": 4179,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
       "original": {
+        "ref": "hyprlua",
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       }
