@@ -258,22 +258,6 @@ in {
       hl.bind("P", hl.dsp.exec_cmd(playerctl .. " play-pause"), { locked = true })
       end)
 
-      -- hl.bind(mod .. " + I", hl.dsp.easymotion({ action = "hyprctl dispatch focuswindow", address = {} }))
-      -- hl.config({
-      --   plugin = {
-      --     easymotion = {
-      --       textcolor = "rgba(59f8fdff)",
-      --       bgcolor = "rgba(0a1e23bb)",
-      --       bordercolor = {colors = { "rgb(27a195)", "rgb(de51f6)", "rgb(dbf5ff)" }, angle = 40 },
-      --       blur = 1,
-      --       textpadding = 8,
-      --       textsize = 35,
-      --       bordersize = 2,
-      --       fullscreen_action = "maximize"
-      --     }
-      --   }
-      -- })
-
       hl.bind(
       mod .. " + R",
       layout_bind({
