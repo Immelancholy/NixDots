@@ -23,11 +23,11 @@
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1780324360,
-        "narHash": "sha256-A59HeZ6WGx/JRgr1ClkrtOSFAawMC5d7ORgTW5bfJOc=",
+        "lastModified": 1780324827,
+        "narHash": "sha256-btuSESpacZM6FrILYoApxQvFlnclUzkdU2vZxveRJw8=",
         "ref": "refs/heads/main",
-        "rev": "639106d25d1b6f22e0effdd01ef4836c6e15e20e",
-        "revCount": 87,
+        "rev": "28c573767d1548a454b75b9b7f354a3ade35f9b0",
+        "revCount": 90,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/RheaynaVim"
       },
@@ -241,11 +241,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1780100267,
-        "narHash": "sha256-vBw7muX6+VZA/49tLcG+v3NRZltljQMxzs6vl3+R3q8=",
+        "lastModified": 1780319200,
+        "narHash": "sha256-nz1oQdoVNESbBFu/+iq1nBOeQ65mtslBItk49u5t3LA=",
         "owner": "saghen",
         "repo": "blink.pairs",
-        "rev": "44ef9b9eb77cd5dfca471b6f7dc0ee74888626fb",
+        "rev": "436857a5c2558c8f66a61ce4745d1342789a4881",
         "type": "github"
       },
       "original": {
@@ -1456,11 +1456,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1780324437,
-        "narHash": "sha256-8jCAOvCjniU2Cz/5l7yYzNpEV4a4EgOxt0J6Kpdu2pY=",
+        "lastModified": 1780324542,
+        "narHash": "sha256-Kwae61rmBZBHWsNKGj59QSkOZ2wel0ohWMVRiv8UWzQ=",
         "ref": "hyprlua",
-        "rev": "717a9db60181a28e358cbb8dceaa66f225176676",
-        "revCount": 4225,
+        "rev": "a451b66c0049c45a4a5e4d394f11729cbe96ed68",
+        "revCount": 4226,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
