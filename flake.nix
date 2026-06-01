@@ -4,7 +4,7 @@
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixos-hardware.url = "github:nixos/nixos-hardware/master";
     nix-relic = {
-      url = "git+file:/home/mela/Documents/Projects/Nix-Relic?ref=hyprlua";
+      url = "git+file:/home/mela/Documents/Projects/Nix-Relic";
       inputs = {
         nixpkgs.follows = "nixpkgs";
         zarumet.follows = "zarumet";
