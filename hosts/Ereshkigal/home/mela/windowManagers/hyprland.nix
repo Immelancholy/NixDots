@@ -34,8 +34,8 @@
         "$mod, F12, pass, class:^(com.obsproject.Studio)$"
       ];
       bindl = [
-        "$mod, mouse:282, exec, $playerctl next" #next
-        "$mod, mouse:281, exec, $playerctl previous" #previous,
+        "$mod, mouse:282, exec, $playerctl next" # next
+        "$mod, mouse:281, exec, $playerctl previous" # previous,
         ", mouse:277, exec, $playerctl play-pause" # toggle between media play and pause
       ];
       bindel = [

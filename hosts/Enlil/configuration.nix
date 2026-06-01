@@ -3,9 +3,11 @@
   nix-relic,
   lib,
   ...
-}: let
+}:
+let
   disable = lib.mkForce false;
-in {
+in
+{
   imports = [
     inputs.nixos-hardware.nixosModules.lenovo-legion-t526amr5
   ];
@@ -34,7 +36,11 @@ in {
           openssh.authorizedKeys.keys = [
             "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBLCQZSKxQcuHRUbEN7AK1lSf0VmXzTTYJA4BTs0pIgT Enlil"
           ];
-          extraGroups = ["tty" "docker" "gamemode"];
+          extraGroups = [
+            "tty"
+            "docker"
+            "gamemode"
+          ];
           initialPassword = "password";
           home-config = {
             # programs.zen-browser.enable = disable;
@@ -46,7 +52,7 @@ in {
   };
 
   users.groups = {
-    audio.members = ["mela"];
+    audio.members = [ "mela" ];
   };
 
   locale = "en_GB.UTF-8";
@@ -112,10 +118,14 @@ in {
   };
 
   networking = {
-    nameservers = ["100.100.100.100" "192.242.2.2" "9.9.9.9"];
-    search = ["jaglion-teeth.ts.net"];
+    nameservers = [
+      "100.100.100.100"
+      "192.242.2.2"
+      "9.9.9.9"
+    ];
+    search = [ "jaglion-teeth.ts.net" ];
     firewall = {
-      allowedTCPPorts = [1234];
+      allowedTCPPorts = [ 1234 ];
     };
   };
 

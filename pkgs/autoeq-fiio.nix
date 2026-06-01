@@ -2,7 +2,8 @@
   writers,
   python3Packages,
   fetchFromGitHub,
-}: let
+}:
+let
   script = fetchFromGitHub {
     owner = "yoeljacobsen";
     repo = "AutoEQ-to-FIIO";
@@ -10,10 +11,9 @@
     hash = "sha256-wUrYFfgkQItRZCdNsnbkbefZhXMFJNeRHMSM9KBiXQk=";
   };
 in
-  writers.writePython3Bin "autoeq-fiio" {
-    doCheck = false;
-    libraries = with python3Packages; [
-      requests
-    ];
-  }
-  (builtins.readFile "${script}/autoeq_to_fiio.py")
+writers.writePython3Bin "autoeq-fiio" {
+  doCheck = false;
+  libraries = with python3Packages; [
+    requests
+  ];
+} (builtins.readFile "${script}/autoeq_to_fiio.py")

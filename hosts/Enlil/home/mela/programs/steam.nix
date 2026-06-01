@@ -2,28 +2,33 @@
   config,
   lib,
   ...
-}: let
+}:
+let
   colors = config.lib.stylix.colors;
 
-  decTo255 = decStrOrNum: let
-    parsed =
-      if builtins.typeOf decStrOrNum == "string"
-      then builtins.elemAt (builtins.fromJSON ("[" + decStrOrNum + "]")) 0
-      else decStrOrNum; # already numeric
-  in
+  decTo255 =
+    decStrOrNum:
+    let
+      parsed =
+        if builtins.typeOf decStrOrNum == "string" then
+          builtins.elemAt (builtins.fromJSON ("[" + decStrOrNum + "]")) 0
+        else
+          decStrOrNum; # already numeric
+    in
     toString (builtins.floor (parsed * 255));
 
-  rgbOf = colorPrefix: let
-    r = decTo255 (colors."${colorPrefix}-dec-r");
-    g = decTo255 (colors."${colorPrefix}-dec-g");
-    b = decTo255 (colors."${colorPrefix}-dec-b");
-  in "${r}, ${g}, ${b}";
-in {
+  rgbOf =
+    colorPrefix:
+    let
+      r = decTo255 (colors."${colorPrefix}-dec-r");
+      g = decTo255 (colors."${colorPrefix}-dec-g");
+      b = decTo255 (colors."${colorPrefix}-dec-b");
+    in
+    "${r}, ${g}, ${b}";
+in
+{
   home.file.".local/share/Steam/steamui/skins/Adwaita-for-Steam/adwaita/colorthemes/stylix/stylix.css".text =
-    /*
-    css
-    */
-    ''
+    /* css */ ''
       :root {
               /* The main accent color and the matching text value */
               --adw-accent-bg-rgb: ${rgbOf "base07"} !important;

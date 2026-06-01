@@ -2,7 +2,8 @@
   pkgs,
   lib,
   ...
-}: {
+}:
+{
   programs.mpv = {
     package = pkgs.mpv.override {
       extraMakeWrapperArgs = [
@@ -27,6 +28,6 @@
       target-colorspace-hint-mode = "source";
       target-peak = 300;
     };
-    scripts = lib.mkForce [];
+    scripts = lib.mkForce [ ];
   };
 }

@@ -4,7 +4,7 @@
 }:
 writeShellApplication {
   name = "toggle-exit-node";
-  runtimeInputs = with pkgs; [tailscale];
+  runtimeInputs = with pkgs; [ tailscale ];
   text = ''
     lan_access=false
     node_on() {

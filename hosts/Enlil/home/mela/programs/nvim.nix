@@ -2,17 +2,19 @@
   pkgs,
   inputs,
   ...
-}: let
+}:
+let
   associations = {
-    "text/plain" = ["nvim.desktop"];
-    "text/css" = ["nvim.desktop"];
-    "text/csv" = ["nvim.desktop"];
-    "text/javascript" = ["nvim.desktop"];
-    "application/json" = ["nvim.desktop"];
-    "application/xml" = ["nvim.desktop"];
-    "application/x-shellscript" = ["nvim.desktop"];
+    "text/plain" = [ "nvim.desktop" ];
+    "text/css" = [ "nvim.desktop" ];
+    "text/csv" = [ "nvim.desktop" ];
+    "text/javascript" = [ "nvim.desktop" ];
+    "application/json" = [ "nvim.desktop" ];
+    "application/xml" = [ "nvim.desktop" ];
+    "application/x-shellscript" = [ "nvim.desktop" ];
   };
-in {
+in
+{
   xdg.mimeApps = {
     associations.added = associations;
     defaultApplications = associations;

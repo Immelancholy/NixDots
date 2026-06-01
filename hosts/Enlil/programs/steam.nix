@@ -2,7 +2,8 @@
   pkgs,
   lib,
   ...
-}: let
+}:
+let
   steam_pkg = pkgs.millennium-steam.override {
     extraEnv = {
       OBS_VKCAPTURE = true;
@@ -13,7 +14,8 @@
       PROTON_USE_NTSYNC = 1;
     };
   };
-in {
+in
+{
   programs.steam = {
     enable = true;
     package = lib.mkForce steam_pkg;

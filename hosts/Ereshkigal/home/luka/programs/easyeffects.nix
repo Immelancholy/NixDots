@@ -10,7 +10,7 @@
       use-default-input-device = false;
     };
     "com/github/wwmm/easyeffects/streamoutputs" = {
-      blocklist = ["Zen"];
+      blocklist = [ "Zen" ];
       output-device = "alsa_input.pci-0000_00_1f.3.analog-stereo";
       use-default-output-device = false;
     };

@@ -1,4 +1,5 @@
-{nix-relic, ...}: {
+{ nix-relic, ... }:
+{
   nix-relic = {
     flakePath = "/home/mela/NixDots";
     updateScript.enableToken = true;
@@ -23,20 +24,24 @@
         openssh.authorizedKeys.keys = [
           "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK+5oVR8PMnCW5lP533YWut9mqzqj+Fepk5U9Uo/sKbv Ereshkigal"
         ];
-        extraGroups = ["tty"];
+        extraGroups = [ "tty" ];
       };
       luka = {
         openssh.authorizedKeys.keys = [
           "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIK+5oVR8PMnCW5lP533YWut9mqzqj+Fepk5U9Uo/sKbv Ereshkigal"
         ];
-        extraGroups = ["tty"];
+        extraGroups = [ "tty" ];
       };
     };
   };
 
   networking = {
-    nameservers = ["100.100.100.100" "192.242.2.2" "9.9.9.9"];
-    search = ["jaglion-teeth.ts.net"];
+    nameservers = [
+      "100.100.100.100"
+      "192.242.2.2"
+      "9.9.9.9"
+    ];
+    search = [ "jaglion-teeth.ts.net" ];
   };
 
   nix.settings.trusted-users = [

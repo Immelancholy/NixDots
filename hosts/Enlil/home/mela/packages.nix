@@ -2,7 +2,8 @@
   pkgs,
   inputs,
   ...
-}: let
+}:
+let
   momoisay = pkgs.stdenv.mkDerivation {
     pname = "momoisay";
     version = "1.1.1";
@@ -13,31 +14,38 @@
       ncurses
     ];
 
-    installPhase =
-      /*
-      bash
-      */
-      ''
-        mkdir -p $out/bin
-        cp momoisay $out/bin
-      '';
+    installPhase = /* bash */ ''
+      mkdir -p $out/bin
+      cp momoisay $out/bin
+    '';
   };
-in {
+in
+{
   home.packages = with pkgs; [
-    (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default.override {extensions = ["rust-src" "rust-analyzer"];}))
+    (rust-bin.selectLatestNightlyWith (
+      toolchain:
+      toolchain.default.override {
+        extensions = [
+          "rust-src"
+          "rust-analyzer"
+        ];
+      }
+    ))
     prismlauncher
-    (ani-cli.overrideAttrs (finalAttrs: previousAttrs: {
-      src = "${inputs.ani-cli}";
-      runtimeInputs = with pkgs; [
-        gnugrep
-        gnused
-        curl
-        fzf
-        ffmpeg
-        aria2
-        openssl
-      ];
-    }))
+    (ani-cli.overrideAttrs (
+      finalAttrs: previousAttrs: {
+        src = "${inputs.ani-cli}";
+        runtimeInputs = with pkgs; [
+          gnugrep
+          gnused
+          curl
+          fzf
+          ffmpeg
+          aria2
+          openssl
+        ];
+      }
+    ))
     momoisay
     temurin-bin
     bespokesynth
@@ -51,7 +59,6 @@ in {
     obsidian-export
     gimp3-with-plugins
     inkscape-with-extensions
-    inputs.alejandra.packages.${pkgs.stdenv.hostPlatform.system}.default
     inputs.helium.packages.${pkgs.stdenv.hostPlatform.system}.default
     blender
   ];

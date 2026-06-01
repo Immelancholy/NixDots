@@ -2,7 +2,8 @@
   pkgs,
   inputs,
   ...
-}: let
+}:
+let
   lgc = inputs.llm-git-commit.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
   python = pkgs.stable.python3.override {
@@ -12,14 +13,21 @@
     };
   };
   pyWithLlm = (
-    python.withPackages (ps: with ps; [llm llm-git-commit llm-openrouter])
+    python.withPackages (
+      ps: with ps; [
+        llm
+        llm-git-commit
+        llm-openrouter
+      ]
+    )
   );
   llm-with-plugins = (
     pkgs.writeShellScriptBin "llm" ''
       exec ${pyWithLlm}/bin/llm "$@"
     ''
   );
-in {
+in
+{
   environment.systemPackages = with pkgs; [
     llm-with-plugins
     autoeq-fiio

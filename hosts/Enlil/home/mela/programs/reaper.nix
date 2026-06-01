@@ -1,6 +1,7 @@
-{pkgs, ...}: {
+{ pkgs, ... }:
+{
   home.packages = with pkgs; [
-    (reaper.override {jackLibrary = pkgs.pipewire.jack;})
+    (reaper.override { jackLibrary = pkgs.pipewire.jack; })
     dexed
     lsp-plugins
     calf

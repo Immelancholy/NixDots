@@ -1,4 +1,5 @@
-{nix-relic, ...}: {
+{ nix-relic, ... }:
+{
   wayland.windowManager.hyprland = {
     # ONLY ENABLE 1 LAYOUT!!
     layout = {

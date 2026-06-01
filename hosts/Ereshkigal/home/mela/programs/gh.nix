@@ -1,7 +1,7 @@
 {
   programs.gh = {
     enable = true;
-    extensions = [];
+    extensions = [ ];
     settings = {
       git_protocol = "ssh";
       prompt = "enabled";

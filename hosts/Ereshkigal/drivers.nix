@@ -1,4 +1,5 @@
-{config, ...}: {
+{ config, ... }:
+{
   drivers = {
     amd.enable = false;
     intel.enable = false;
