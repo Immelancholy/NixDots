@@ -1411,14 +1411,13 @@
       "locked": {
         "lastModified": 1780346401,
         "narHash": "sha256-xq54oeuC4gE4ARaxN4DvU+KgTS8rHqOvozfkdSUeX/4=",
-        "ref": "hyprlua",
+        "ref": "refs/heads/main",
         "rev": "2de3a620f516a3e1fca4f1851b89bdfc479d0cde",
         "revCount": 4235,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
       "original": {
-        "ref": "hyprlua",
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       }
