@@ -2027,10 +2027,10 @@
         "tinted-zed": "tinted-zed"
       },
       "locked": {
-        "lastModified": 1780346060,
-        "narHash": "sha256-DnmueZ7OtUSeycbgwF8steNRZbTuZTiDpoumIhhPXXw=",
+        "lastModified": 1780352192,
+        "narHash": "sha256-Li2we2Hcl+HX0JH4F7rQakuC+NVKjW7x/uic5SeSXtk=",
         "ref": "zen-browser-opacity",
-        "rev": "5cdf9b5793663ce9a24b9f24de43ed2892ac578c",
+        "rev": "7dcfc403a8303091770f08ecdd035c1d06055c8e",
         "revCount": 1416,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/stylix"
