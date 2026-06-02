@@ -625,11 +625,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1780347968,
-        "narHash": "sha256-I8ibSDQx+E8cgw6k3UxX6Bm7awmGoKSTXc8Gt1Zbpp4=",
+        "lastModified": 1780366933,
+        "narHash": "sha256-fooDKmgUmgCVMR5EYWbW7LF0v7GuEKm5UqM/sZWyYyU=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "d0af9b8bf3b4a1d449be7034bebc9f8f9fd6ee99",
+        "rev": "c7e4087b4da746d61f654a6e7971d3e693e188fd",
         "type": "github"
       },
       "original": {
@@ -1409,11 +1409,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1780366894,
-        "narHash": "sha256-gx8ErJW5QlOYJCohMlU0RkxL7Y1qbFck1mpiabWeJ5A=",
+        "lastModified": 1780366932,
+        "narHash": "sha256-1tjAw1jJBMf6IMMaNU7A8/asp3MlKjQ8JQnUD2LYQdE=",
         "ref": "refs/heads/main",
-        "rev": "fe99b5efe18bde1e598ffe635706894a726d19c7",
-        "revCount": 4243,
+        "rev": "f7f75252700b25767ee12355852770171b1746a7",
+        "revCount": 4244,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
