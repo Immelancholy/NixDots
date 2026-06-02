@@ -1409,11 +1409,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1780412846,
-        "narHash": "sha256-T9XBEphXld7C/teAy7v3zmL33zwsTWwbDNwmnij5lwY=",
+        "lastModified": 1780414739,
+        "narHash": "sha256-X/AWpJKUEpd0CT2rumCK+BYpDl0zFPgWshkoQ4JKmZs=",
         "ref": "refs/heads/main",
-        "rev": "bf835c00a85121bf9e01f845baba9903de86b3cc",
-        "revCount": 4247,
+        "rev": "8bf97dd525b6fb7039548197e7b338e8422f3a77",
+        "revCount": 4249,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
@@ -2270,15 +2270,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1777929458,
-        "narHash": "sha256-51R3mIt8cLNvh/X5qe9vOqeJCj0U9KRyemVE5y+OhiU=",
-        "owner": "Alexays",
+        "lastModified": 1779377647,
+        "narHash": "sha256-weB+iCrCzTxWFPkuijVEUH6v1RE1YqZHqHdgxC5oWDs=",
+        "owner": "buzz",
         "repo": "waybar",
-        "rev": "05945748dccce28bf96d26d8f64a9e69a8dd49ba",
+        "rev": "ea36aab3babe79f646e87b8cd3a49d041dc32443",
         "type": "github"
       },
       "original": {
-        "owner": "Alexays",
+        "owner": "buzz",
+        "ref": "fix/hyprland-workspaces-scroll",
         "repo": "waybar",
         "type": "github"
       }
