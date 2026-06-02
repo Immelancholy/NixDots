@@ -149,6 +149,13 @@
     })
     hl.window_rule({
     	match = {
+    		class = "^(org.kde.easyeffects)$",
+    	},
+    	float = true,
+    	opacity = "0.9 override 0.8 override",
+    })
+    hl.window_rule({
+    	match = {
     		class = "^(dev.zed.Zed.*)$",
     	},
     	opacity = "0.9 override 0.8 override",
