@@ -420,7 +420,7 @@
                     {
                         id = "9c97rtbv4f5";
                         name = "Firefly <33";
-                        color = "15844367";
+                        color = "f1c40f";
                         collapsed = false;
                         channels = [
                             "1311503458507030580"
@@ -431,7 +431,7 @@
                     {
                         id = "6lezdk9ykda";
                         name = "Friends";
-                        color = "15277667";
+                        color = "e91e63";
                         collapsed = false;
                         channels = [
                             "1144763901959999499"
