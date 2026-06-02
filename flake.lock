@@ -2043,16 +2043,16 @@
         "tinted-zed": "tinted-zed"
       },
       "locked": {
-        "lastModified": 1780352793,
-        "narHash": "sha256-Li2we2Hcl+HX0JH4F7rQakuC+NVKjW7x/uic5SeSXtk=",
-        "ref": "zen-browser-opacity",
-        "rev": "2041b7b8287fc6e5b7d5e8df5caf862e38baaf00",
-        "revCount": 1417,
+        "lastModified": 1780365272,
+        "narHash": "sha256-JQjnjwO+u88sBjx3zjx7UsYREW+ycyAAmNKYF2CVCIU=",
+        "ref": "zen+kms",
+        "rev": "65dcfd6b01239a0ae0b05e813e77cccddf69fe0c",
+        "revCount": 1420,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/stylix"
       },
       "original": {
-        "ref": "zen-browser-opacity",
+        "ref": "zen+kms",
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/stylix"
       }
