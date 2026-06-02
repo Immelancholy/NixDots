@@ -388,7 +388,7 @@
             enabled = true;
         };
         OpenInApp = {
-            enabled = true;
+            enabled = false;
             spotify = true;
             steam = true;
             epic = true;
