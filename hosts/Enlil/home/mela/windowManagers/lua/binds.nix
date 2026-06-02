@@ -216,7 +216,7 @@ in
       hl.bind(mod .. " + semicolon", hl.dsp.exec_cmd("uwsm-app -- qalculate-gtk"))
       hl.bind(moda .. " + S", hl.dsp.workspace.toggle_special("magic"))
       hl.bind(mods .. " + S", hl.dsp.window.move({ workspace = "special:magic" }))
-      hl.bind("Print", hl.dsp.exec_cmd("hyprquickframe"))
+      hl.bind("Print", hl.dsp.exec_cmd("hyprquickframe -n -d"))
       hl.bind(mod .. " + O", hl.dsp.exec_cmd("uwsm-app -- hyprpicker -a"))
       hl.bind(mods .. " + P", hl.dsp.submap("player"))
       hl.bind(mods .. " + Comma", hl.dsp.window.move({ monitor = "+1", follow = true }))
@@ -405,14 +405,46 @@ in
       hl.bind("CTRL + Left", hl.dsp.group.prev())
       hl.bind("CTRL + Right", hl.dsp.group.next())
 
-      hl.bind(mod .. " + H", hl.dsp.window.move({ direction = "left" }))
+      hl.bind(
+        mod  .. " + H",
+        layout_bind({
+                scrolling = hl.dsp.layout("consume_or_expel prev"),
+                dwindle = hl.dsp.window.move({ direction = "left" }),
+                monocle = hl.dsp.window.move({ direction = "left" }),
+                master = hl.dsp.window.move({ direction = "left" }),
+        })
+      )
       hl.bind(mod .. " + J", hl.dsp.window.move({ direction = "down" }))
       hl.bind(mod .. " + K", hl.dsp.window.move({ direction = "up" }))
-      hl.bind(mod .. " + L", hl.dsp.window.move({ direction = "right" }))
-      hl.bind(mod .. " + Left", hl.dsp.window.move({ direction = "left" }))
+      hl.bind(
+        mod .. " + L",
+        layout_bind({
+                scrolling = hl.dsp.layout("consume_or_expel next"),
+                dwindle = hl.dsp.window.move({ direction = "right" }),
+                monocle = hl.dsp.window.move({ direction = "right" }),
+                master = hl.dsp.window.move({ direction = "right" }),
+        })
+      )
+      hl.bind(
+        mod .. " + H",
+        layout_bind({
+                scrolling = hl.dsp.layout("consume_or_expel prev"),
+                dwindle = hl.dsp.window.move({ direction = "left" }),
+                monocle = hl.dsp.window.move({ direction = "left" }),
+                master = hl.dsp.window.move({ direction = "left" }),
+        })
+      )
       hl.bind(mod .. " + Down", hl.dsp.window.move({ direction = "down" }))
       hl.bind(mod .. " + Up", hl.dsp.window.move({ direction = "up" }))
-      hl.bind(mod .. " + Right", hl.dsp.window.move({ direction = "right" }))
+      hl.bind(
+        mod .. " + L",
+        layout_bind({
+                scrolling = hl.dsp.layout("consume_or_expel next"),
+                dwindle = hl.dsp.window.move({ direction = "right" }),
+                monocle = hl.dsp.window.move({ direction = "right" }),
+                master = hl.dsp.window.move({ direction = "right" }),
+        })
+      )
 
       hl.bind(modc .. " + H", hl.dsp.window.move({ direction = "left", group_aware = true }))
       hl.bind(modc .. " + J", hl.dsp.window.move({ direction = "down", group_aware = true }))
