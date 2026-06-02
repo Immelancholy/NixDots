@@ -932,17 +932,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1774939288,
-        "narHash": "sha256-oRvG4hNDY9pPIr6a+NTYmXpjnL8P5qIJiBHDjfO7+Gg=",
+        "lastModified": 1779384000,
+        "narHash": "sha256-JwqbPTtyvH+7zCmh9VUX/sSbxuYuo1QftXB0pwcSIac=",
         "owner": "Ronin-CK",
         "repo": "HyprQuickFrame",
-        "rev": "591f1276c9a5b27d6573e818bcc7fdc902bb6d3d",
+        "rev": "61fe0efda2db29cf2c4457f483735236d658631d",
         "type": "github"
       },
       "original": {
         "owner": "Ronin-CK",
-        "ref": "v1.0.2",
         "repo": "HyprQuickFrame",
+        "rev": "61fe0efda2db29cf2c4457f483735236d658631d",
         "type": "github"
       }
     },
@@ -1412,11 +1412,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1780434932,
-        "narHash": "sha256-w+cUbf+lmbFJ50TneDj87etbmsoXdqMFVySRtheJgMU=",
+        "lastModified": 1780435208,
+        "narHash": "sha256-cHPA3I8zNx1yXP479h0m6+BQEbu1r81I4Xe0Mhx6V0g=",
         "ref": "refs/heads/main",
-        "rev": "2689b7499afcd5566b643b9a140001890e487414",
-        "revCount": 4253,
+        "rev": "006967c52564af929dbb8152d2173a5aea80a5fc",
+        "revCount": 4254,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
