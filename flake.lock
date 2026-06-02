@@ -1409,11 +1409,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1780367093,
-        "narHash": "sha256-xQymXqVNWWSBHLnBKA3/SZ6P+eVowc0vo9EDYuSIJVA=",
+        "lastModified": 1780367392,
+        "narHash": "sha256-U51BiusNWwxhiUvrz8cEXBy2ualmjG//OJNfglPbG30=",
         "ref": "refs/heads/main",
-        "rev": "20ef9a87795bb7f667102a7ea95f681461822005",
-        "revCount": 4245,
+        "rev": "5b3788692b75afead21cd1dad49a6eb8407c7ad2",
+        "revCount": 4242,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
@@ -1442,7 +1442,7 @@
     },
     "nixos-hardware": {
       "inputs": {
-        "nixpkgs": "nixpkgs_11"
+        "nixpkgs": "nixpkgs_10"
       },
       "locked": {
         "lastModified": 1780310866,
@@ -1493,22 +1493,6 @@
     },
     "nixpkgs_10": {
       "locked": {
-        "lastModified": 1780243769,
-        "narHash": "sha256-x5UQuRsH3MqI0U9afaXSNqzTPSeZlRLvFAav2Ux1pNw=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "331800de5053fcebacf6813adb5db9c9dca22a0c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_11": {
-      "locked": {
         "lastModified": 1767892417,
         "narHash": "sha256-8bW3q88CEg2u4hSP66Vf4lpbLonHz7hqDNBMcCY7E9U=",
         "rev": "3497aa5c9457a9d88d71fa93a4a8368816fbeeba",
@@ -1520,7 +1504,7 @@
         "url": "https://channels.nixos.org/nixos-unstable/nixexprs.tar.xz"
       }
     },
-    "nixpkgs_12": {
+    "nixpkgs_11": {
       "locked": {
         "lastModified": 1780243769,
         "narHash": "sha256-x5UQuRsH3MqI0U9afaXSNqzTPSeZlRLvFAav2Ux1pNw=",
@@ -1915,7 +1899,7 @@
         "nix-relic": "nix-relic",
         "nixfmt": "nixfmt",
         "nixos-hardware": "nixos-hardware",
-        "nixpkgs": "nixpkgs_12",
+        "nixpkgs": "nixpkgs_11",
         "stylix": "stylix",
         "zarumet": "zarumet"
       }
@@ -2280,7 +2264,10 @@
     "waybar": {
       "inputs": {
         "flake-compat": "flake-compat_4",
-        "nixpkgs": "nixpkgs_10"
+        "nixpkgs": [
+          "nix-relic",
+          "nixpkgs"
+        ]
       },
       "locked": {
         "lastModified": 1777929458,
