@@ -16,11 +16,11 @@
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1780415374,
-        "narHash": "sha256-mwU32z14aSQTIWe98QwGyyWM2WIUojePSrcvyLaXPG0=",
+        "lastModified": 1780415527,
+        "narHash": "sha256-Djs0xKBzgRWa/98J89/kQSgFT1RLEX4R2La5m2l0j58=",
         "ref": "refs/heads/main",
-        "rev": "e09bb69bb46f42ee2eb8504c3c6d58c7e109c38a",
-        "revCount": 94,
+        "rev": "2cc2f592121ca85db5fb4999e0257b8f2fccf03a",
+        "revCount": 96,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/RheaynaVim"
       },
@@ -1909,11 +1909,11 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1780284119,
-        "narHash": "sha256-y2wR4Mk6D/N1ID4FZa2oUMStCUxyIoRzmgOOpLzoWmo=",
+        "lastModified": 1780370483,
+        "narHash": "sha256-7mDa7OBAaf7MU6ZovT9ENfD62kH911SsSazBb4KTDF0=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "51390d0bfca0a68a8c337d215a4bbeddc2ca616e",
+        "rev": "4a408e1fc99ad517b4cb402fd0de7464f40c05e1",
         "type": "github"
       },
       "original": {
