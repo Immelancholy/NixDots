@@ -19,11 +19,11 @@
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1780457962,
-        "narHash": "sha256-AkUTdlMv/00TBGDdSribj2898SQrlC3bVNPn9fRVzfM=",
+        "lastModified": 1780458359,
+        "narHash": "sha256-JxrP9SsX/7QwbrhEttOuEo8ftocs2/ej4eCNVCa7UQ8=",
         "ref": "refs/heads/main",
-        "rev": "06aed26b0a11166dba6285def182247ffc7d7058",
-        "revCount": 104,
+        "rev": "5a3d92c5970da5de4006fdf2ab76ca38852f005e",
+        "revCount": 105,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/RheaynaVim"
       },
@@ -1384,6 +1384,9 @@
     },
     "nix-relic": {
       "inputs": {
+        "RheaynaVim": [
+          "RheaynaVim"
+        ],
         "hyprland": "hyprland",
         "hyprland-easymotion": "hyprland-easymotion",
         "hyprland-plugins": "hyprland-plugins",
@@ -1412,11 +1415,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1780452366,
-        "narHash": "sha256-dFpr1i/lEP23ePUVlT7382X2PfqiD/10L5OX1Ub+YYo=",
+        "lastModified": 1780458836,
+        "narHash": "sha256-4wykUif+QgUsb8B4Vasb675SgElx2SpRNwwKi2QzhBg=",
         "ref": "refs/heads/main",
-        "rev": "c78e033b3a657bd0480bcba8f22ece16a0d48152",
-        "revCount": 4264,
+        "rev": "7991a42f9dcfd10c6a1551c86fadf6fd4c07ceee",
+        "revCount": 4267,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
