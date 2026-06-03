@@ -7,6 +7,7 @@
         "plugins-arborist": "plugins-arborist",
         "plugins-atone": "plugins-atone",
         "plugins-conflict-marker": "plugins-conflict-marker",
+        "plugins-conform": "plugins-conform",
         "plugins-lze": "plugins-lze",
         "plugins-lzextras": "plugins-lzextras",
         "plugins-mole": "plugins-mole",
@@ -18,11 +19,11 @@
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1780457254,
-        "narHash": "sha256-l8A/Vdof/iV1RNqU7N/Ty8b+ORrEBoWJAY2N75eU/LI=",
+        "lastModified": 1780457962,
+        "narHash": "sha256-AkUTdlMv/00TBGDdSribj2898SQrlC3bVNPn9fRVzfM=",
         "ref": "refs/heads/main",
-        "rev": "ce6800bf73cce2857ae6c91959ceddff7b32a342",
-        "revCount": 103,
+        "rev": "06aed26b0a11166dba6285def182247ffc7d7058",
+        "revCount": 104,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/RheaynaVim"
       },
@@ -1755,6 +1756,22 @@
       "original": {
         "owner": "tronikelis",
         "repo": "conflict-marker.nvim",
+        "type": "github"
+      }
+    },
+    "plugins-conform": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1779792615,
+        "narHash": "sha256-3Rfl2krKpR8fyXSody4eM1py3AVSiEqJcPH8mA1P3nk=",
+        "owner": "auscyber",
+        "repo": "conform.nvim",
+        "rev": "49adb4dae989bb72295fedd621a433f8000067e6",
+        "type": "github"
+      },
+      "original": {
+        "owner": "auscyber",
+        "repo": "conform.nvim",
         "type": "github"
       }
     },
