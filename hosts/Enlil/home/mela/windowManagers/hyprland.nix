@@ -61,14 +61,14 @@
         class = "^(REAPER)$",
       },
       workspace = "special:reaper",
-      fullscreen = true,
+      float = true,
     })
-    hl.window_rule({
-      match = {
-        title = "^(REAPER \\(initializing\\))$",
-      },
-      workspace = "special:reaper",
-      fullscreen = false,
-    })
+    -- hl.window_rule({
+    --   match = {
+    --     title = "^(REAPER .*)$",
+    --   },
+    --   workspace = "special:reaper",
+    --   fullscreen = false,
+    -- })
   '';
 }
