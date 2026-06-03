@@ -307,7 +307,7 @@
             enabled = true;
         };
         MessageClickActions = {
-            enabled = false;
+            enabled = true;
         };
         MessageLatency = {
             enabled = false;
@@ -319,8 +319,8 @@
             enabled = true;
             collapseDeleted = false;
             deleteStyle = "text";
-            ignoreBots = false;
-            ignoreSelf = false;
+            ignoreBots = true;
+            ignoreSelf = true;
             ignoreUsers = "";
             ignoreChannels = "";
             ignoreGuilds = "";
