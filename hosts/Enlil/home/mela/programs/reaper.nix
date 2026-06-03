@@ -8,6 +8,7 @@
     zlequalizer
     zlcompressor
     zlsplitter
+    zam-plugins
   ];
 
   xdg.configFile."REAPER/UserPlugins/reaper_reapack-x86_64.so" = {

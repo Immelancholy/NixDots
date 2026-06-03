@@ -37,6 +37,26 @@
     Scr = "$XDG_BIN_HOME"
     Term = "uwsm-app -- kitty"
 
+    function User_Conf() end
+    function Universal_User_Binds()
+      hl.bind(Moda .. " + R", hl.dsp.workspace.toggle_special("reaper"))
+      hl.bind(Mods .. " + R", hl.dsp.window.move({ workspace = "special:reaper" }))
+    end
+    function Default_User_Binds() end
+    function Manage_User_Binds() end
+    function Resize_User_Binds() end
+    function Move_User_Binds() end
+    function Player_User_Binds() end
+    function User_Rules()
+      hl.window_rule({
+        match = {
+          class = "$(REAPER)$",
+        },
+        workspace = "special:reaper",
+        fullscreen = true,
+      })
+    end
+
     load_module("autostart")
     load_module("binds")
     load_module("hardware")
@@ -45,5 +65,6 @@
     load_module("plugins")
     load_module("rules")
     load_module("theme")
+    User_Conf()
   '';
 }

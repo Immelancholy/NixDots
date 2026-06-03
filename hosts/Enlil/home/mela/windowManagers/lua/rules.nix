@@ -388,5 +388,6 @@
       blur = true,
       ignore_alpha = 0,
     })
+    User_Rules()
   '';
 }
