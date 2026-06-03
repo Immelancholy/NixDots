@@ -42,10 +42,6 @@ in
             "gamemode"
           ];
           initialPassword = "password";
-          home-config = {
-            # programs.zen-browser.enable = disable;
-            programs.zed-editor.enable = disable;
-          };
         };
       };
     };

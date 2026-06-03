@@ -9,6 +9,7 @@
         nixpkgs.follows = "nixpkgs";
         zarumet.follows = "zarumet";
         stylix.follows = "stylix";
+        rheayna-vim.follows = "rheayna-vim";
       };
     };
     stylix = {
@@ -34,7 +35,7 @@
       url = "github:Immelancholy/zarumet";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    RheaynaVim = {
+    rheayna-vim = {
       url = "git+file:/home/mela/Documents/Projects/RheaynaVim";
     };
     ani-cli = {
