@@ -37,15 +37,10 @@
     Scr = "$XDG_BIN_HOME"
     Term = "uwsm app -- kitty"
 
-    hl.config({
-    	general = {
-    		layout = "scrolling",
-    	},
-    })
-
     load_module("autostart")
     load_module("binds")
     load_module("hardware")
+    load_module("layouts")
     load_module("permissions")
     load_module("plugins")
     load_module("rules")
