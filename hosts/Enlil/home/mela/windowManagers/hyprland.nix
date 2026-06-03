@@ -61,14 +61,13 @@
         class = "^(REAPER)$",
       },
       workspace = "special:reaper",
-      float = true,
     })
-    -- hl.window_rule({
-    --   match = {
-    --     title = "^(REAPER .*)$",
-    --   },
-    --   workspace = "special:reaper",
-    --   fullscreen = false,
-    -- })
+    hl.window_rule({
+      match = {
+        title = "^(REAPER v.* - EVALUATION LICENSE)$",
+      },
+      workspace = "special:reaper",
+      fullscreen = true,
+    })
   '';
 }
