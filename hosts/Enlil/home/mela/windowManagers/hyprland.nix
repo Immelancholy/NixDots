@@ -38,8 +38,8 @@
     Term = "uwsm-app -- kitty"
 
     function Universal_User_Binds()
-      hl.bind(Moda .. " + R", hl.dsp.workspace.toggle_special("reaper"))
-      hl.bind(Mods .. " + R", hl.dsp.window.move({ workspace = "special:reaper" }))
+      hl.bind(Moda .. " + D", hl.dsp.workspace.toggle_special("DAW"))
+      hl.bind(Mods .. " + D", hl.dsp.window.move({ workspace = "special:DAW" }))
     end
     function Default_User_Binds() end
     function Manage_User_Binds() end
@@ -60,13 +60,12 @@
       match = {
         class = "^(REAPER)$",
       },
-      workspace = "special:reaper",
+      workspace = "special:DAW",
     })
     hl.window_rule({
       match = {
         title = "^(REAPER v.* - EVALUATION LICENSE)$",
       },
-      workspace = "special:reaper",
       fullscreen = true,
     })
   '';
