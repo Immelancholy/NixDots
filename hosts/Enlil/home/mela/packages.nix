@@ -58,7 +58,6 @@ in
     obsidian
     obsidian-export
     gimp3-with-plugins
-    inkscape-with-extensions
     inputs.helium.packages.${pkgs.stdenv.hostPlatform.system}.default
     blender
   ];

@@ -284,9 +284,9 @@
         "rnnoise#0": {
             "bypass": false,
             "enable-vad": false,
-            "input-gain": 10.0,
+            "input-gain": 0.0,
             "model-name": "",
-            "output-gain": -10.0,
+            "output-gain": 0.0,
             "release": 25.0,
             "use-standard-model": true,
             "vad-thres": 30.0,
