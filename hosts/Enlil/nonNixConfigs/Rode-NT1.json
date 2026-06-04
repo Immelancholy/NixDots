@@ -240,18 +240,18 @@
             "reverb#0"
         ],
         "reverb#0": {
-            "amount": -25.0,
-            "bass-cut": 257.65,
+            "amount": -15.0,
+            "bass-cut": 240.0,
             "bypass": false,
             "decay-time": 0.445945,
-            "diffusion": 0.54,
+            "diffusion": 0.17,
             "dry": 0.0,
-            "hf-damp": 5508.46,
+            "hf-damp": 3971.64,
             "input-gain": 0.0,
             "output-gain": 0.0,
-            "predelay": 25.0,
+            "predelay": 13.0,
             "room-size": "Small",
-            "treble-cut": 20000.0
+            "treble-cut": 3303.0
         },
         "rnnoise#0": {
             "bypass": false,
