@@ -1,12 +1,12 @@
 {
     "input": {
         "bass_enhancer#0": {
-            "amount": 8.0,
-            "blend": 6.0,
+            "amount": 5.0,
+            "blend": 7.0,
             "bypass": false,
             "floor": 20.0,
             "floor-active": true,
-            "harmonics": 2.7,
+            "harmonics": 8.5,
             "input-gain": 0.0,
             "output-gain": 0.0,
             "scope": 200.0
@@ -20,7 +20,7 @@
             "dry": -80.01,
             "hpf-frequency": 200.0,
             "hpf-mode": "Off",
-            "input-gain": 5.0,
+            "input-gain": 0.0,
             "input-to-link": -80.01,
             "input-to-sidechain": -80.01,
             "knee": -24.0,
@@ -218,6 +218,33 @@
             },
             "split-channels": false
         },
+        "limiter#0": {
+            "alr": true,
+            "alr-attack": 5.0,
+            "alr-knee": 0.0,
+            "alr-knee-smooth": -5.0,
+            "alr-release": 50.0,
+            "attack": 5.0,
+            "bypass": false,
+            "dithering": "24bit",
+            "gain-boost": false,
+            "input-gain": 10.0,
+            "input-to-link": -80.01,
+            "input-to-sidechain": -80.01,
+            "link-to-input": -80.01,
+            "link-to-sidechain": -80.01,
+            "lookahead": 5.0,
+            "mode": "Herm Thin",
+            "output-gain": 0.0,
+            "oversampling": "True Peak/24 bit",
+            "release": 5.0,
+            "sidechain-preamp": 0.0,
+            "sidechain-to-input": -80.01,
+            "sidechain-to-link": -80.01,
+            "sidechain-type": "Internal",
+            "stereo-link": 100.0,
+            "threshold": -1.0
+        },
         "loudness#0": {
             "bypass": false,
             "clipping": false,
@@ -237,7 +264,8 @@
             "equalizer#0",
             "bass_enhancer#0",
             "loudness#0",
-            "reverb#0"
+            "reverb#0",
+            "limiter#0"
         ],
         "reverb#0": {
             "amount": -15.0,
