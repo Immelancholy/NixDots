@@ -4,6 +4,8 @@
       hl.timer(function()
         hl.exec_cmd(Discord)
         hl.exec_cmd(Browser, { workspace = "2 silent" })
+        hl.exec_cmd("systemctl restart --user easyeffects")
+        hl.exec_cmd("systemctl restart --user qpwgraph")
       end, { timeout = 1, type = "oneshot" })
     end)
     hl.on("config.reloaded", function()
