@@ -55,6 +55,27 @@
         "type": "github"
       }
     },
+    "anifetch": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1780702821,
+        "narHash": "sha256-lcY+Er4esIRaNL4p1JAGAcfez9gDgFyXftIoMy7wzQ4=",
+        "owner": "Immelancholy",
+        "repo": "anifetch",
+        "rev": "391e8b803cf0e2f4f57f3c2de412cf91c9fb1242",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Immelancholy",
+        "ref": "direnv",
+        "repo": "anifetch",
+        "type": "github"
+      }
+    },
     "aquamarine": {
       "inputs": {
         "hyprutils": [
@@ -1943,6 +1964,7 @@
       "inputs": {
         "agenix": "agenix",
         "ani-cli": "ani-cli",
+        "anifetch": "anifetch",
         "disko": "disko",
         "helium": "helium",
         "home-manager": "home-manager_2",
