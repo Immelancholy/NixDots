@@ -13,7 +13,7 @@
       };
     };
     stylix = {
-      url = "git+file:/home/mela/Documents/Projects/stylix?ref=zen+kms";
+      url = "git+file:/home/mela/Documents/Projects/stylix?ref=master+zen";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     home-manager = {
