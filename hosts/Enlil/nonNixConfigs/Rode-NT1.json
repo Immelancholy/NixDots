@@ -1,20 +1,9 @@
 {
     "input": {
-        "bass_enhancer#0": {
-            "amount": 2.69,
-            "blend": 7.0,
-            "bypass": false,
-            "floor": 20.0,
-            "floor-active": true,
-            "harmonics": 8.5,
-            "input-gain": 0.0,
-            "output-gain": 0.0,
-            "scope": 200.0
-        },
         "blocklist": [],
         "compressor#0": {
             "attack": 5.0,
-            "boost-amount": 6.0,
+            "boost-amount": 5.999999523162842,
             "boost-threshold": -72.0,
             "bypass": false,
             "dry": -80.01,
@@ -23,7 +12,7 @@
             "input-gain": 0.0,
             "input-to-link": -80.01,
             "input-to-sidechain": -80.01,
-            "knee": -0.1,
+            "knee": -0.09999989718198776,
             "link-to-input": -80.01,
             "link-to-sidechain": -80.01,
             "lpf-frequency": 16000.0,
@@ -45,14 +34,31 @@
             },
             "sidechain-to-input": -80.01,
             "sidechain-to-link": -80.01,
-            "stereo-split": true,
+            "stereo-split": false,
             "threshold": -35.0,
             "wet": 0.0
+        },
+        "deesser#0": {
+            "bypass": false,
+            "detection": "Peak",
+            "f1-freq": 5000.0,
+            "f1-level": 0.0,
+            "f2-freq": 4500.0,
+            "f2-level": 12.0,
+            "f2-q": 1.0,
+            "input-gain": 0.0,
+            "laxity": 15,
+            "makeup": 5.490787029266357,
+            "mode": "Wide",
+            "output-gain": 0.0,
+            "ratio": 3.0,
+            "sc-listen": false,
+            "threshold": -44.55243682861328
         },
         "equalizer#0": {
             "balance": 0.0,
             "bypass": false,
-            "input-gain": 0.0,
+            "input-gain": -4.03,
             "left": {
                 "band0": {
                     "frequency": 80.0,
@@ -67,7 +73,7 @@
                 },
                 "band1": {
                     "frequency": 175.0,
-                    "gain": -4.0,
+                    "gain": 4.03,
                     "mode": "RLC (BT)",
                     "mute": false,
                     "q": 2.0,
@@ -77,8 +83,8 @@
                     "width": 4.0
                 },
                 "band2": {
-                    "frequency": 375.0,
-                    "gain": -4.0,
+                    "frequency": 394.8,
+                    "gain": -5.02,
                     "mode": "RLC (BT)",
                     "mute": false,
                     "q": 7.0,
@@ -88,7 +94,7 @@
                     "width": 4.0
                 },
                 "band3": {
-                    "frequency": 6431.7,
+                    "frequency": 6431.7001953125,
                     "gain": -7.0,
                     "mode": "RLC (BT)",
                     "mute": false,
@@ -99,19 +105,19 @@
                     "width": 4.0
                 },
                 "band4": {
-                    "frequency": 7854.6,
-                    "gain": 6.01,
+                    "frequency": 7854.60009765625,
+                    "gain": 6.010000228881836,
                     "mode": "RLC (BT)",
                     "mute": false,
-                    "q": 0.9,
+                    "q": 0.8999999761581421,
                     "slope": "x1",
                     "solo": false,
                     "type": "Lo-pass",
                     "width": 4.0
                 },
                 "band5": {
-                    "frequency": 1857.3,
-                    "gain": -36.0,
+                    "frequency": 2324.9,
+                    "gain": -35.99941635131836,
                     "mode": "RLC (BT)",
                     "mute": false,
                     "q": 5.0,
@@ -121,8 +127,8 @@
                     "width": 4.0
                 },
                 "band6": {
-                    "frequency": 2808.9,
-                    "gain": 4.03,
+                    "frequency": 2808.89990234375,
+                    "gain": 4.03000020980835,
                     "mode": "RLC (BT)",
                     "mute": false,
                     "q": 1.25,
@@ -136,7 +142,7 @@
             "num-bands": 7,
             "output-gain": 0.0,
             "pitch-left": 0.0,
-            "pitch-right": -0.02,
+            "pitch-right": -0.019999999552965164,
             "right": {
                 "band0": {
                     "frequency": 80.0,
@@ -151,7 +157,7 @@
                 },
                 "band1": {
                     "frequency": 175.0,
-                    "gain": -4.0,
+                    "gain": 4.03,
                     "mode": "RLC (BT)",
                     "mute": false,
                     "q": 2.0,
@@ -161,8 +167,8 @@
                     "width": 4.0
                 },
                 "band2": {
-                    "frequency": 375.0,
-                    "gain": -4.0,
+                    "frequency": 394.8,
+                    "gain": -5.02,
                     "mode": "RLC (BT)",
                     "mute": false,
                     "q": 7.0,
@@ -172,7 +178,7 @@
                     "width": 4.0
                 },
                 "band3": {
-                    "frequency": 6431.7,
+                    "frequency": 6431.7001953125,
                     "gain": -7.0,
                     "mode": "RLC (BT)",
                     "mute": false,
@@ -183,19 +189,19 @@
                     "width": 4.0
                 },
                 "band4": {
-                    "frequency": 7854.6,
-                    "gain": 6.01,
+                    "frequency": 7854.60009765625,
+                    "gain": 6.010000228881836,
                     "mode": "RLC (BT)",
                     "mute": false,
-                    "q": 0.9,
+                    "q": 0.8999999761581421,
                     "slope": "x1",
                     "solo": false,
                     "type": "Lo-pass",
                     "width": 4.0
                 },
                 "band5": {
-                    "frequency": 1857.3,
-                    "gain": -36.0,
+                    "frequency": 2324.9,
+                    "gain": -35.99941635131836,
                     "mode": "RLC (BT)",
                     "mute": false,
                     "q": 5.0,
@@ -205,8 +211,8 @@
                     "width": 4.0
                 },
                 "band6": {
-                    "frequency": 2808.9,
-                    "gain": 4.03,
+                    "frequency": 2808.89990234375,
+                    "gain": 4.03000020980835,
                     "mode": "RLC (BT)",
                     "mute": false,
                     "q": 1.25,
@@ -221,7 +227,7 @@
         "gate#0": {
             "attack": 5.0,
             "bypass": false,
-            "curve-threshold": -50.0,
+            "curve-threshold": -57.0,
             "curve-zone": 0.0,
             "dry": -80.01,
             "hpf-frequency": 10.0,
@@ -239,11 +245,11 @@
             "makeup": 0.0,
             "output-gain": 0.0,
             "reduction": -72.0,
-            "release": 99.99,
+            "release": 99.98999786376953,
             "sidechain": {
                 "lookahead": 0.0,
                 "mode": "RMS",
-                "preamp": 0.0,
+                "preamp": 5.0,
                 "reactivity": 10.0,
                 "source": "Middle",
                 "stereo-split-source": "Left/Right",
@@ -252,19 +258,19 @@
             "sidechain-to-input": -80.01,
             "sidechain-to-link": -80.01,
             "stereo-split": false,
-            "wet": -0.7999999999999999
+            "wet": -0.7999998927116394
         },
         "limiter#0": {
             "alr": true,
             "alr-attack": 5.0,
-            "alr-knee": 4.0,
-            "alr-knee-smooth": -5.0,
+            "alr-knee": 5.000000476837158,
+            "alr-knee-smooth": -10.0,
             "alr-release": 50.0,
             "attack": 5.0,
             "bypass": false,
             "dithering": "24bit",
             "gain-boost": false,
-            "input-gain": 15.0,
+            "input-gain": 10.0,
             "input-to-link": -80.01,
             "input-to-sidechain": -80.01,
             "link-to-input": -80.01,
@@ -279,30 +285,42 @@
             "sidechain-to-link": -80.01,
             "sidechain-type": "Internal",
             "stereo-link": 100.0,
-            "threshold": -1.0
+            "threshold": -7.0
         },
         "plugins_order": [
             "stereo_tools#0",
+            "gate#0",
+            "rnnoise#0",
             "compressor#0",
             "equalizer#0",
-            "bass_enhancer#0",
-            "reverb#0",
+            "deesser#0",
             "limiter#0",
-            "gate#0"
+            "reverb#0"
         ],
         "reverb#0": {
-            "amount": -15.0,
-            "bass-cut": 240.0,
+            "amount": -28.28478240966797,
+            "bass-cut": 112.46830749511719,
             "bypass": false,
-            "decay-time": 0.445945,
-            "diffusion": 0.17,
+            "decay-time": 0.5959416031837463,
+            "diffusion": 0.7160000205039978,
             "dry": 0.0,
-            "hf-damp": 3971.64,
+            "hf-damp": 4624.1318359375,
             "input-gain": 0.0,
             "output-gain": 0.0,
-            "predelay": 13.0,
+            "predelay": 55.0,
             "room-size": "Small",
-            "treble-cut": 3303.0
+            "treble-cut": 7603.7880859375
+        },
+        "rnnoise#0": {
+            "bypass": false,
+            "enable-vad": false,
+            "input-gain": 0.0,
+            "model-name": "",
+            "output-gain": 0.0,
+            "release": 25.0,
+            "use-standard-model": true,
+            "vad-thres": 45.0,
+            "wet": 0.0
         },
         "stereo_tools#0": {
             "balance-in": 0.0,
