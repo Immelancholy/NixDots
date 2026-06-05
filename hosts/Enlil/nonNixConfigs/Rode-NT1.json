@@ -277,7 +277,7 @@
             "link-to-sidechain": -80.01,
             "lookahead": 5.0,
             "mode": "Herm Thin",
-            "output-gain": 0.0,
+            "output-gain": -6.0,
             "oversampling": "True Peak/24 bit",
             "release": 5.0,
             "sidechain-preamp": 0.0,
@@ -298,7 +298,7 @@
             "reverb#0"
         ],
         "reverb#0": {
-            "amount": -28.28478240966797,
+            "amount": -25.0,
             "bass-cut": 112.46830749511719,
             "bypass": false,
             "decay-time": 0.5959416031837463,
