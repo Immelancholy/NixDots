@@ -1,10 +1,16 @@
 {
   description = "My NixOS and Home Manager config.";
   inputs = {
+    #Default-flakes
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixos-hardware.url = "github:nixos/nixos-hardware/master";
-    millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
-    agenix.url = "github:ryantm/agenix";
+    git-hooks.url = "github:cachix/git-hooks.nix";
+    home-manager = {
+      url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    #Override-flakes
     nix-relic = {
       url = "git+file:/home/mela/Documents/Projects/Nix-Relic";
       inputs = {
@@ -25,30 +31,25 @@
       url = "git+file:/home/mela/Documents/Projects/stylix?ref=master+zen";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    home-manager = {
-      url = "github:nix-community/home-manager";
+
+    #Added-flakes
+    agenix.url = "github:ryantm/agenix";
+    millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+    helium = {
+      url = "github:AlvaroParker/helium-nix";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-    nixfmt = {
-      url = "github:NixOS/nixfmt";
     };
     disko = {
       url = "github:nix-community/disko";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-    llm-git-commit = {
-      url = "github:ShamanicArts/llm-git-commit";
-      inputs.nixpkgs.follows = "nix-relic/nixpkgs-stable";
     };
     anifetch = {
       # url = "github:Notenlish/anifetch";
       url = "git+file:/home/mela/Documents/Projects/anifetch?ref=pre-commit";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    helium = {
-      url = "github:AlvaroParker/helium-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+
+    #Non-flakes
     momoisay = {
       url = "github:Mon4sm/momoisay";
       flake = false;
@@ -67,9 +68,9 @@
       nix-relic,
       agenix,
       ...
-    }@inputs:
+    }:
     let
-      inherit (self) outputs;
+      inherit (self) inputs outputs;
       systems = [
         "aarch64-linux"
         "x86_64-linux"
@@ -147,7 +148,48 @@
         };
     in
     {
-      formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.nixfmt-tree);
+
+      formatter = forAllSystems (
+        system:
+        let
+          pkgs = import nixpkgs { inherit system; };
+          config = self.checks.${system}.pre-commit-check.config;
+          inherit (config) package configFile;
+          script = ''
+            ${pkgs.lib.getExe package} run --all-files --config ${configFile}
+          '';
+        in
+        pkgs.writeShellScriptBin "pre-commit-run" script
+      );
+
+      checks = forAllSystems (
+        system:
+        let
+          pkgs = import nixpkgs { inherit system; };
+        in
+        {
+          pre-commit-check = inputs.git-hooks.lib.${system}.run {
+            src = ./.;
+            hooks = {
+              nixfmt.enable = true;
+            };
+
+            package = pkgs.prek;
+          };
+        }
+      );
+
+      devShells = forAllSystems (system: {
+        default =
+          let
+            pkgs = nixpkgs.legacyPackages.${system};
+            inherit (self.checks.${system}.pre-commit-check) shellHook enabledPackages;
+          in
+          pkgs.mkShell {
+            inherit shellHook;
+            buildInputs = enabledPackages;
+          };
+      });
 
       overlays = import ./overlays { inherit self; };
 
