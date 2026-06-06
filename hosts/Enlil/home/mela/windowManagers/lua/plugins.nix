@@ -53,6 +53,6 @@ with colors;
     })
 
     -- hl.bind(mod .. " + D", function() hl.plugin.easymotion.action("hyprctl dispatch 'hl.dsp.focus({ window = \"{}\" })'") end))
-  
-'';
+
+  '';
 }
