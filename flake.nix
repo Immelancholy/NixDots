@@ -42,6 +42,10 @@
       url = "github:pystardust/ani-cli/coolans_patches";
       flake = false;
     };
+    anifetch = {
+      url = "github:Immelancholy/anifetch/direnv";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     momoisay = {
       url = "github:Mon4sm/momoisay";
       flake = false;

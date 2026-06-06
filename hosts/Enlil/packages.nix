@@ -29,6 +29,7 @@ let
 in
 {
   environment.systemPackages = with pkgs; [
+    anifetch
     llm-with-plugins
     autoeq-fiio
     picard
