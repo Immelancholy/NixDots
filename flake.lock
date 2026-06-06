@@ -1403,11 +1403,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1780759671,
-        "narHash": "sha256-WOhT1SbzeIg2LpguF4v2bR+JbKfwG0J/J/LLarS3JhA=",
+        "lastModified": 1780760797,
+        "narHash": "sha256-6maH/5YNrDt5TSfZHyUpOpy8I5CIHttzY3QMjuQevno=",
         "ref": "refs/heads/main",
-        "rev": "77836c45d1c5221b10551d57e066dc2b0fa202c8",
-        "revCount": 4363,
+        "rev": "24bc5c75f37fe4c90b03cfe1343af5e8762a8183",
+        "revCount": 4364,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
