@@ -62,11 +62,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1780718949,
-        "narHash": "sha256-JjkHdUu7+dqsqRx4/pu3hVWKP31YxJ1n29ULXbwoD74=",
+        "lastModified": 1780720611,
+        "narHash": "sha256-3P1X2toDk0Y3n62mrGn/ny04OY0/x1RaYmcknAquoqI=",
         "owner": "Immelancholy",
         "repo": "anifetch",
-        "rev": "5982528e8fc76ba68e71e255484c123afa634dfd",
+        "rev": "eec8074089a5d0f8e67f216f4b50c7c741617996",
         "type": "github"
       },
       "original": {
