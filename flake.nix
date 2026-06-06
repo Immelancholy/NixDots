@@ -3,6 +3,8 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     nixos-hardware.url = "github:nixos/nixos-hardware/master";
+    millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+    agenix.url = "github:ryantm/agenix";
     nix-relic = {
       url = "git+file:/home/mela/Documents/Projects/Nix-Relic";
       inputs = {
@@ -11,6 +13,13 @@
         stylix.follows = "stylix";
         rheayna-vim.follows = "rheayna-vim";
       };
+    };
+    rheayna-vim = {
+      url = "git+file:/home/mela/Documents/Projects/RheaynaVim";
+    };
+    zarumet = {
+      url = "git+file:/home/mela/Documents/Projects/zarumet";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     stylix = {
       url = "git+file:/home/mela/Documents/Projects/stylix?ref=master+zen";
@@ -31,30 +40,22 @@
       url = "github:ShamanicArts/llm-git-commit";
       inputs.nixpkgs.follows = "nix-relic/nixpkgs-stable";
     };
-    zarumet = {
-      url = "github:Immelancholy/zarumet";
+    anifetch = {
+      # url = "github:Notenlish/anifetch";
+      url = "git+file:/home/mela/Documents/Projects/anifetch?ref=pre-commit";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    rheayna-vim = {
-      url = "git+file:/home/mela/Documents/Projects/RheaynaVim";
-    };
-    ani-cli = {
-      url = "github:pystardust/ani-cli/coolans_patches";
-      flake = false;
-    };
-    anifetch = {
-      url = "github:Immelancholy/anifetch/direnv";
+    helium = {
+      url = "github:AlvaroParker/helium-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     momoisay = {
       url = "github:Mon4sm/momoisay";
       flake = false;
     };
-    millennium.url = "github:Immelancholy/Millennium/e2c66a276e579ee73c5151b01897bf63503aa12c?dir=packages/nix";
-    agenix.url = "github:ryantm/agenix";
-    helium = {
-      url = "github:AlvaroParker/helium-nix";
-      inputs.nixpkgs.follows = "nixpkgs";
+    ani-cli = {
+      url = "github:pystardust/ani-cli/coolans_patches";
+      flake = false;
     };
   };
 
@@ -91,7 +92,7 @@
               }:
               with lib;
               let
-                inherit (builtins) filter map toString;
+                inherit (builtins) filter;
                 inherit (lib.filesystem) listFilesRecursive;
                 inherit (lib.strings) hasSuffix;
                 inherit (lib) elem;
@@ -148,9 +149,15 @@
     {
       formatter = forAllSystems (system: nixpkgs.legacyPackages.${system}.nixfmt-tree);
 
-      overlays = import ./overlays;
+      overlays = import ./overlays { inherit self; };
 
-      packages = forAllSystems (system: import ./pkgs nixpkgs.legacyPackages.${system});
+      packages = forAllSystems (
+        system:
+        let
+          pkgs = nixpkgs { inherit system; };
+        in
+        import ./pkgs { inherit self; } pkgs
+      );
 
       nixosModules = import ./modules/nixos;
 

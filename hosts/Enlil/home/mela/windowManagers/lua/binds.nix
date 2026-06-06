@@ -205,19 +205,19 @@ in
         hl.dispatch(hl.dsp.window.kill({ window = "class:^(cava)$" }))
         hl.dispatch(
           hl.dsp.exec_cmd(
-            "uwsm-app -- kitty --class cava cava.sh",
+            "uwsm-app -- kitty --class cava relic-cava",
             { workspace = "1 silent", float = true, size = { 888, 462 }, move = { 610, 609 } }
           )
         )
         hl.dispatch(
           hl.dsp.exec_cmd(
-            "uwsm-app -- kitty --class btop btop.sh",
+            "uwsm-app -- kitty --class btop relic-btop",
             { workspace = "1 silent", float = true, size = { 590, 637 }, move = { 10, 433 } }
           )
         )
         hl.dispatch(
           hl.dsp.exec_cmd(
-            "uwsm-app -- kitty --class neo neo.sh",
+            "uwsm-app -- kitty --class neo relic-neo",
             { workspace = "1 silent", float = true, size = { 402, 1030 }, move = { 1508, 42 } }
           )
         )
@@ -237,7 +237,7 @@ in
 
       hl.bind(Mod .. " + Delete", hl.dsp.exec_cmd("rofi -show power-menu -modi power-menu:rofi-power-menu"))
       hl.bind("CTRL + SHIFT + L", hl.dsp.exec_cmd("uwsm-app -- swaylock -fF"))
-      hl.bind(Mod .. " + N", hl.dsp.exec_cmd("rofi -show Cliphist -modi Cliphist:cliphist.sh"))
+      hl.bind(Mod .. " + N", hl.dsp.exec_cmd("rofi -show Cliphist -modi Cliphist:rofi-cliphist"))
       hl.bind(Mod .. " + Apostrophe", hl.dsp.exec_cmd("rofi -show emoji nerdy -modi emoji,nerdy"))
 
       hl.bind(Mod .. " + G", function()

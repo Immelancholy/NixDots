@@ -3,23 +3,6 @@
   inputs,
   ...
 }:
-let
-  momoisay = pkgs.stdenv.mkDerivation {
-    pname = "momoisay";
-    version = "1.1.1";
-
-    src = inputs.momoisay;
-
-    nativeBuildInputs = with pkgs; [
-      ncurses
-    ];
-
-    installPhase = /* bash */ ''
-      mkdir -p $out/bin
-      cp momoisay $out/bin
-    '';
-  };
-in
 {
   home.packages = with pkgs; [
     (rust-bin.selectLatestNightlyWith (
@@ -31,21 +14,8 @@ in
         ];
       }
     ))
+    ani-cli
     prismlauncher
-    (ani-cli.overrideAttrs (
-      finalAttrs: previousAttrs: {
-        src = "${inputs.ani-cli}";
-        runtimeInputs = with pkgs; [
-          gnugrep
-          gnused
-          curl
-          fzf
-          ffmpeg
-          aria2
-          openssl
-        ];
-      }
-    ))
     momoisay
     temurin-bin
     bespokesynth
