@@ -28,7 +28,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     stylix = {
-      url = "git+file:/home/mela/Documents/Projects/stylix?ref=master+zen";
+      url = "git+file:/home/mela/Documents/Projects/stylix?ref=zen-browser-opacity";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
