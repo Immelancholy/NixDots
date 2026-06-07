@@ -126,5 +126,4 @@ in
     };
   };
 
-  boot.secureBoot.enable = true;
 }
