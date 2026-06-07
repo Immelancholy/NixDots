@@ -46,11 +46,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1780776027,
-        "narHash": "sha256-zD+oSaTyQrwog7H+OfHogjTTr2YdQnBxKx2wOjuOL1U=",
+        "lastModified": 1780788813,
+        "narHash": "sha256-1wx+ptvk1OmgHlbwz0t3Zsv5utcxPIqI6kMm6nnpe4Q=",
         "ref": "pre-commit",
-        "rev": "fa45bd055ec1b7decaf66646cda0dc7d997311e8",
-        "revCount": 343,
+        "rev": "ef52874080a0f335640d0afca50255afbe7a1f65",
+        "revCount": 345,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/anifetch"
       },
@@ -839,11 +839,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1780408569,
-        "narHash": "sha256-s7Tv6FUQThRAvW8En8XVC6HMb0uiikzVccCcCo9u/Bg=",
+        "lastModified": 1780679734,
+        "narHash": "sha256-KmRNvpNOb7QEORa06bVgjW9kITcx0VhsI7w0vhmZyD8=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "f384af1bec6423a0d4ba1855917ab948f64e5808",
+        "rev": "b2b7db486e06e098711dc291bb25db82850e1d16",
         "type": "github"
       },
       "original": {
@@ -1472,11 +1472,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1780779332,
-        "narHash": "sha256-B/Uz+22Q1OGO1C7UBUZG6C7mzld8A+STwZYyTi4CvBY=",
+        "lastModified": 1780787005,
+        "narHash": "sha256-tiZYa/gr2cEyxFrwr3RhTnVL9hPcGJa7gVigJUPDuDs=",
         "ref": "refs/heads/main",
-        "rev": "f276fbdf5508bb8e1d9e2a12d00a108c7b5d86ca",
-        "revCount": 4371,
+        "rev": "defb2491eb80893751b81e98667456cf609d800e",
+        "revCount": 4373,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
@@ -2044,11 +2044,11 @@
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1780786766,
-        "narHash": "sha256-Em7zWsmSxLC4eV7VNOOZyTOVM0we6K+I5cRMzhbdOXY=",
+        "lastModified": 1780788626,
+        "narHash": "sha256-xLCAdzho6rxQVSQoMcH7csaUkBU30H7OrWkC+YW6fDs=",
         "ref": "refs/heads/main",
-        "rev": "aea1eb8389549bc4d36a273cee2ab18a5035a4d8",
-        "revCount": 116,
+        "rev": "7700b9280fa832c1204c51662710e157a7b2d249",
+        "revCount": 117,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/RheaynaVim"
       },
@@ -2588,11 +2588,11 @@
         "rust-overlay": "rust-overlay_4"
       },
       "locked": {
-        "lastModified": 1780776082,
-        "narHash": "sha256-v7xoEybA5mm5fgzayzWB7t/HL1DzDUxHw5Muq/2CmIA=",
+        "lastModified": 1780788961,
+        "narHash": "sha256-E9mvBy0E/Dr7GAZtw66S2SrvA6x2pV6+jtYQRGoAHls=",
         "ref": "refs/heads/main",
-        "rev": "bc1a0991ecf5f0ed538ddd01ebb26e6c2bdf7b39",
-        "revCount": 305,
+        "rev": "5dfc0712ceed28c9de67121b97a933e027320f61",
+        "revCount": 306,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/zarumet"
       },
