@@ -207,7 +207,7 @@
       packages = forAllSystems (
         system:
         let
-          pkgs = nixpkgs { inherit system; };
+          pkgs = import nixpkgs { inherit system; };
         in
         import ./pkgs { inherit self; } pkgs
       );
