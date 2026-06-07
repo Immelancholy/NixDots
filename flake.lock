@@ -46,11 +46,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1780864586,
-        "narHash": "sha256-voL04BuUv/cs4J1AjNaho/2Dqi9oPSLOGXwf6WUHpT0=",
+        "lastModified": 1780864806,
+        "narHash": "sha256-syb280qX7OAEg9wSZObBRVmTURJD1WvrGwc0SxEevbs=",
         "ref": "pre-commit",
-        "rev": "52d4bda985ae305893736914d7afb08172b54fda",
-        "revCount": 348,
+        "rev": "51a1ea8f072032ad7e034ecf04e857b5f91e19c9",
+        "revCount": 349,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/anifetch"
       },
@@ -2588,11 +2588,11 @@
         "rust-overlay": "rust-overlay_4"
       },
       "locked": {
-        "lastModified": 1780862332,
-        "narHash": "sha256-LEanBCwE++xlh//JA8PSpLdFHq33IjyE2yIzvPBqy2s=",
+        "lastModified": 1780873066,
+        "narHash": "sha256-ulf13xnDzJZIw2D0N+X0+PT1cyGnija2sWVHgKlhXkU=",
         "ref": "refs/heads/main",
-        "rev": "fc7a1c3c7c1d55bf73b4cc7f8f455734c2b17331",
-        "revCount": 308,
+        "rev": "7b7124849ab8b7d5e567a1215e49c85f774677a5",
+        "revCount": 309,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/zarumet"
       },
