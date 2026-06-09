@@ -1480,11 +1480,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1781022795,
-        "narHash": "sha256-MeY/BexgzZyh+MxUiN8WYb96pw047QopBg/a7s26ET8=",
+        "lastModified": 1781023443,
+        "narHash": "sha256-a+/GyLX9Y/ENyGt3jxDJAwzq0yLhNaRPTwwnlT2vIIQ=",
         "ref": "nix-flake",
-        "rev": "07b2d1d9f1ff0cabab2618fd6e157f7ed9afd287",
-        "revCount": 43,
+        "rev": "f8595dc9a657c99d88d0481111567e2deddfa7ae",
+        "revCount": 44,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/linktui"
       },
