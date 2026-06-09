@@ -2734,10 +2734,10 @@
         "rust-overlay": "rust-overlay_4"
       },
       "locked": {
-        "lastModified": 1780972370,
-        "narHash": "sha256-P14tHh8VreuwCTvblk6Kdx52wX2p1IQbkVmh9bTulv8=",
+        "lastModified": 1781023088,
+        "narHash": "sha256-HpdakBa/w/edp6AcQPFEbYLL5dMRDuFpPSkveifCCEs=",
         "ref": "refs/heads/main",
-        "rev": "ad76f763980dbdb286a8fbc780d1f1eac0b3d842",
+        "rev": "25483752d33a9b655a00ab101d9cbc64894d423c",
         "revCount": 312,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/zarumet"
