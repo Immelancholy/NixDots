@@ -17,7 +17,6 @@
         nixpkgs.follows = "nixpkgs";
         zarumet.follows = "zarumet";
         rheayna-vim.follows = "rheayna-vim";
-        linktui.follows = "linktui";
       };
     };
     rheayna-vim = {
@@ -25,10 +24,6 @@
     };
     zarumet = {
       url = "git+file:/home/mela/Documents/Projects/zarumet";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-    linktui = {
-      url = "git+file:/home/mela/Documents/Projects/linktui?ref=nix-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -99,7 +94,6 @@
             nix-relic.nixosModules.default
             disko.nixosModules.default
             agenix.nixosModules.default
-            inputs.linktui.nixosModules.default
             (
               {
                 config,
@@ -156,7 +150,6 @@
                 sharedModules = [
                   nix-relic.homeManagerModules.default
                   agenix.homeManagerModules.default
-                  inputs.linktui.homeModules.default
                 ];
               };
             }

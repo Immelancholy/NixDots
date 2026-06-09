@@ -367,11 +367,20 @@
       float = true,
     })
     hl.window_rule({
-      name = "linktui-top-right",
-      match = { title = "^(linktui)$" },
+      name = "linktui-top-bar",
+      match = { title = "^(linktui-top-bar)$" },
       float = true,
+      pin = true,
       size = "630 520",
-      move = { "monitor_w - window_w - 10", 50 },
+      move = { 1200, 50 },
+    })
+    hl.window_rule({
+      name = "zarumet-top-bar",
+      match = { title = "^(zarumet-top-bar)$" },
+      float = true,
+      pin = true,
+      size = "740 490",
+      move = { 590, 50 },
     })
 
     -- Layer Rules

@@ -1,3 +1,7 @@
+{ config, ... }:
+let
+  inherit (config.player) cmd class title;
+in
 {
   xdg.configFile."hypr/hyprland.lua".text = /* Lua */ ''
     if not hl then
@@ -21,6 +25,7 @@
       end
     end
 
+    Term = "uwsm-app -- kitty"
     Browser = "uwsm-app -- zen-beta.desktop"
     Discord = "uwsm-app -- vesktop.desktop"
     Editor = "uwsm-app -- org.neovim.nvim.desktop"
@@ -32,10 +37,12 @@
     Moda = "SUPER + ALT"
     Modc = "SUPER + CTRL"
     Mods = "SUPER + SHIFT"
-    Player = "mpd"
-    Playerctl = ("uwsm-app -- playerctl --player=" .. Player)
-    Scr = "$XDG_BIN_HOME"
-    Term = "uwsm-app -- kitty"
+    Player = (
+      "uwsm-app -- "
+      .. Term
+      .. " --title ${title} --class ${class} ${cmd}"
+    )
+    Playerctl = "uwsm-app -- playerctl --player=${class}"
 
     function Universal_User_Binds()
       hl.bind(Moda .. " + D", hl.dsp.workspace.toggle_special("DAW"))
