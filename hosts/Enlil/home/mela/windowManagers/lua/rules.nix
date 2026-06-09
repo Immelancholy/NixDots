@@ -1,5 +1,6 @@
 {
   xdg.configFile."hypr/lua/rules.lua".text = /* lua */ ''
+    -- Window Rules
     hl.window_rule({
       match = {
         class = "^(.*)$",
@@ -365,6 +366,15 @@
       },
       float = true,
     })
+    hl.window_rule({
+      name = "linktui-top-right",
+      match = { title = "^(linktui)$" },
+      float = true,
+      size = "630 520",
+      move = { "monitor_w - window_w - 10", 50 },
+    })
+
+    -- Layer Rules
     hl.layer_rule({
       match = { namespace = "waybar" },
       blur = true,

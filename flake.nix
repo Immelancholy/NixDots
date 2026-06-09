@@ -16,8 +16,8 @@
       inputs = {
         nixpkgs.follows = "nixpkgs";
         zarumet.follows = "zarumet";
-        stylix.follows = "stylix";
         rheayna-vim.follows = "rheayna-vim";
+        linktui.follows = "linktui";
       };
     };
     rheayna-vim = {
@@ -27,8 +27,8 @@
       url = "git+file:/home/mela/Documents/Projects/zarumet";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    stylix = {
-      url = "git+file:/home/mela/Documents/Projects/stylix?ref=zen-browser-opacity";
+    linktui = {
+      url = "git+file:/home/mela/Documents/Projects/linktui?ref=nix-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -44,8 +44,8 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     anifetch = {
-      # url = "github:Notenlish/anifetch";
-      url = "git+file:/home/mela/Documents/Projects/anifetch?ref=pre-commit";
+      url = "github:Notenlish/anifetch";
+      # url = "git+file:/home/mela/Documents/Projects/anifetch?ref=";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
@@ -64,18 +64,32 @@
     {
       self,
       nixpkgs,
-      home-manager,
       nix-relic,
+      home-manager,
+      git-hooks,
       agenix,
+      disko,
       ...
     }:
     let
       inherit (self) inputs outputs;
+      inherit (nix-relic.inputs) rust-overlay;
       systems = [
         "aarch64-linux"
         "x86_64-linux"
       ];
-      forAllSystems = nixpkgs.lib.genAttrs systems;
+      overlays = [
+        rust-overlay.overlays.default
+      ];
+      forAllSystems =
+        f:
+        nixpkgs.lib.genAttrs systems (
+          system:
+          f {
+            system = system;
+            pkgs = import nixpkgs { inherit system overlays; };
+          }
+        );
 
       mkHost =
         host:
@@ -83,8 +97,9 @@
           specialArgs = { inherit inputs outputs nix-relic; };
           modules = [
             nix-relic.nixosModules.default
-            inputs.disko.nixosModules.default
+            disko.nixosModules.default
             agenix.nixosModules.default
+            inputs.linktui.nixosModules.default
             (
               {
                 config,
@@ -141,6 +156,7 @@
                 sharedModules = [
                   nix-relic.homeManagerModules.default
                   agenix.homeManagerModules.default
+                  inputs.linktui.homeModules.default
                 ];
               };
             }
@@ -150,9 +166,8 @@
     {
 
       formatter = forAllSystems (
-        system:
+        { pkgs, system }:
         let
-          pkgs = import nixpkgs { inherit system; };
           config = self.checks.${system}.pre-commit-check.config;
           inherit (config) package configFile;
           script = ''
@@ -163,12 +178,9 @@
       );
 
       checks = forAllSystems (
-        system:
-        let
-          pkgs = import nixpkgs { inherit system; };
-        in
+        { pkgs, system }:
         {
-          pre-commit-check = inputs.git-hooks.lib.${system}.run {
+          pre-commit-check = git-hooks.lib.${system}.run {
             src = ./.;
             hooks = {
               nixfmt.enable = true;
@@ -190,27 +202,23 @@
         }
       );
 
-      devShells = forAllSystems (system: {
-        default =
-          let
-            pkgs = nixpkgs.legacyPackages.${system};
-            inherit (self.checks.${system}.pre-commit-check) shellHook enabledPackages;
-          in
-          pkgs.mkShell {
-            inherit shellHook;
-            buildInputs = enabledPackages;
-          };
-      });
+      devShells = forAllSystems (
+        { pkgs, system }:
+        {
+          default =
+            let
+              inherit (self.checks.${system}.pre-commit-check) shellHook enabledPackages;
+            in
+            pkgs.mkShell {
+              inherit shellHook;
+              buildInputs = enabledPackages;
+            };
+        }
+      );
 
       overlays = import ./overlays { inherit self; };
 
-      packages = forAllSystems (
-        system:
-        let
-          pkgs = import nixpkgs { inherit system; };
-        in
-        import ./pkgs { inherit self; } pkgs
-      );
+      packages = forAllSystems ({ pkgs, ... }: import ./pkgs { inherit self; } pkgs);
 
       nixosModules = import ./modules/nixos;
 
