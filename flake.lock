@@ -1637,11 +1637,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1781051761,
-        "narHash": "sha256-tKOpewLRqgrhMpQGAfuHpv1/5A5hfGXqAbJpu3fd7u0=",
+        "lastModified": 1781120966,
+        "narHash": "sha256-NaZJPuO6rY7ChJrFTU7WD2hhvWf4WfLiMP3I+iapNJQ=",
         "ref": "refs/heads/main",
-        "rev": "039c2b8a020d10d930ce8d483f9064a4c69363bd",
-        "revCount": 4405,
+        "rev": "95c8bc5be08772dcdf4909fa748a11b1f50b5c37",
+        "revCount": 4406,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
@@ -2255,6 +2255,7 @@
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_12",
         "rheayna-vim": "rheayna-vim",
+        "tsui": "tsui",
         "zarumet": "zarumet"
       }
     },
@@ -2559,6 +2560,26 @@
       "original": {
         "owner": "tinted-theming",
         "repo": "base16-zed",
+        "type": "github"
+      }
+    },
+    "tsui": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1725553663,
+        "narHash": "sha256-PzDC8+42zmnB3XnRISk35jj9SueimZ4kywHlVRmDaWs=",
+        "owner": "guibou",
+        "repo": "tsui",
+        "rev": "66ff849f9d5fbce4cc26b7365fcd0946ec4dab70",
+        "type": "github"
+      },
+      "original": {
+        "owner": "guibou",
+        "repo": "tsui",
         "type": "github"
       }
     },
