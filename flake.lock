@@ -1637,11 +1637,11 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1781122197,
-        "narHash": "sha256-q2j96D3Rlu4QTOTYgnFfVoHWjOQ/E14CWxD8aV3Ro6M=",
+        "lastModified": 1781123293,
+        "narHash": "sha256-VjXVBiepdYjM3xZIen05kvjoRx65n3bZuc6aj/+l9IQ=",
         "ref": "refs/heads/main",
-        "rev": "98e00b7106d5b0fd872ceab665ea062b9abf26dc",
-        "revCount": 4407,
+        "rev": "e77bfa339cf0bc903de87977e4510861c220d3b0",
+        "revCount": 4408,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
@@ -2570,15 +2570,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1725553663,
-        "narHash": "sha256-PzDC8+42zmnB3XnRISk35jj9SueimZ4kywHlVRmDaWs=",
+        "lastModified": 1725790341,
+        "narHash": "sha256-fOO35MwO9XY5l0r3+Yui1CmmlMxsvik+9xaLtyT2OeU=",
         "owner": "guibou",
         "repo": "tsui",
-        "rev": "66ff849f9d5fbce4cc26b7365fcd0946ec4dab70",
+        "rev": "f90196a65bb1d0078e82c470951e5a6acb4176f9",
         "type": "github"
       },
       "original": {
         "owner": "guibou",
+        "ref": "fix_nix_run",
         "repo": "tsui",
         "type": "github"
       }
