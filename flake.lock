@@ -1637,10 +1637,10 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1781136331,
-        "narHash": "sha256-3lM+VtU4TVKB6Oobd48DLTnLtLuIMmZokaMs5+SGkVE=",
+        "lastModified": 1781136681,
+        "narHash": "sha256-Cmq2F4uFqYFsb/bzEf7jXE7+Ebe0HPbDLHQEicQyzek=",
         "ref": "refs/heads/main",
-        "rev": "ebcb6738dcccaf40f65689e3c914ae1c8d09c733",
+        "rev": "8140768182001e963d966802fdb68af10b77386d",
         "revCount": 4411,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
@@ -2000,6 +2000,22 @@
         "type": "github"
       }
     },
+    "pipemixer": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1779199021,
+        "narHash": "sha256-dVw8x9c3DFSL5eLbBOe7ExNzeKsj3xB5Spl516XFqTQ=",
+        "owner": "heather7283",
+        "repo": "pipemixer",
+        "rev": "a2363e3f88bbcf85cb308f876bb318cbb8a0d40c",
+        "type": "github"
+      },
+      "original": {
+        "owner": "heather7283",
+        "repo": "pipemixer",
+        "type": "github"
+      }
+    },
     "plugins-arborist": {
       "flake": false,
       "locked": {
@@ -2254,6 +2270,7 @@
         "nix-relic": "nix-relic",
         "nixos-hardware": "nixos-hardware",
         "nixpkgs": "nixpkgs_12",
+        "pipemixer": "pipemixer",
         "rheayna-vim": "rheayna-vim",
         "tsui": "tsui",
         "zarumet": "zarumet"
