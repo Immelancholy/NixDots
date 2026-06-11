@@ -15,6 +15,5 @@
     heroic
     # blender
     inputs.agenix.packages.${pkgs.stdenv.hostPlatform.system}.default
-    toggle-exit-node
   ];
 }

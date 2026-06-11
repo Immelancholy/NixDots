@@ -43,6 +43,10 @@
       # url = "git+file:/home/mela/Documents/Projects/anifetch?ref=";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    tsui = {
+      url = "github:guibou/tsui/fix_nix_run";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
     #Non-flakes
     momoisay = {
@@ -89,7 +93,14 @@
       mkHost =
         host:
         nixpkgs.lib.nixosSystem {
-          specialArgs = { inherit inputs outputs nix-relic; };
+          specialArgs = {
+            inherit
+              inputs
+              outputs
+              nix-relic
+              self
+              ;
+          };
           modules = [
             nix-relic.nixosModules.default
             disko.nixosModules.default
@@ -146,7 +157,14 @@
               home-manager = {
                 useGlobalPkgs = true;
                 useUserPackages = true;
-                extraSpecialArgs = { inherit inputs outputs nix-relic; };
+                extraSpecialArgs = {
+                  inherit
+                    inputs
+                    outputs
+                    nix-relic
+                    self
+                    ;
+                };
                 sharedModules = [
                   nix-relic.homeManagerModules.default
                   agenix.homeManagerModules.default

@@ -1,3 +1,7 @@
+{ config, ... }:
+let
+  inherit (config.player) title;
+in
 {
   xdg.configFile."hypr/lua/rules.lua".text = /* lua */ ''
     -- Window Rules
@@ -367,8 +371,16 @@
       float = true,
     })
     hl.window_rule({
-      name = "linktui-top-bar",
-      match = { title = "^(linktui-top-bar)$" },
+      name = "linktui-wifi-top-bar",
+      match = { title = "^(linktui-wifi-top-bar)$" },
+      float = true,
+      pin = true,
+      size = "630 520",
+      move = { 1200, 50 },
+    })
+    hl.window_rule({
+      name = "linktui-bluetooth-top-bar",
+      match = { title = "^(linktui-bluetooth-top-bar)$" },
       float = true,
       pin = true,
       size = "630 520",
@@ -383,8 +395,8 @@
       move = { 1045, 50 },
     })
     hl.window_rule({
-      name = "zarumet-top-bar",
-      match = { title = "^(zarumet-top-bar)$" },
+      name = "${title}-top-bar",
+      match = { title = "^(${title}-top-bar)$" },
       float = true,
       pin = true,
       size = "740 490",
