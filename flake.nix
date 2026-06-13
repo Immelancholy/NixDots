@@ -54,7 +54,11 @@
       flake = false;
     };
     ani-cli = {
-      url = "github:pystardust/ani-cli/coolans_patches";
+      url = "github:pystardust/ani-cli";
+      flake = false;
+    };
+    pipemixer = {
+      url = "github:heather7283/pipemixer";
       flake = false;
     };
   };
