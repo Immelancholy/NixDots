@@ -86,7 +86,7 @@ with colors-hex;
                     "fetch_upstream_icon": true
                   },
                   "style": "powerline",
-                  "template": " <b>~></b> \uf1fa{{.ChangeID}}{{if .Working.Changed}} \uf044 {{ .Working.String }}{{ end }} ",
+                  "template": " <b>~></b> \udb85\uddc6 {{.ChangeID}}{{if .Working.Changed}} \uf044 {{ .Working.String }}{{ end }} ",
                   "type": "jujutsu",
                   "options": {
                     "fetch_status": true,
