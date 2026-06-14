@@ -1,5 +1,5 @@
 <!DOCTYPE patchbay>
-<patchbay name="Default" version="1.0.2">
+<patchbay name="Daw-Exclusive" version="1.0.2">
  <items>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Commes Output" port="Commes Output:monitor_FR"/>
@@ -14,16 +14,12 @@
    <input node="Nanna" port="Nanna:playback_FR"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Desktop Output" port="Desktop Output:monitor_FL"/>
-   <input node="Scarlett 2i2 4th Gen Pro" port="Scarlett 2i2 4th Gen:playback_AUX0"/>
+   <output node="Easy Effects Source" port="Easy Effects Source:capture_FL"/>
+   <input node="Desktop Mic In" port="Desktop Mic In:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Commes Output" port="Commes Output:monitor_FL"/>
    <input node="Audient iD4 Pro" port="Audient iD4:playback_AUX0"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Easy Effects Source" port="Easy Effects Source:capture_FL"/>
-   <input node="Desktop Mic In" port="Desktop Mic In:playback_FL"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Audient iD4 Pro" port="Audient iD4:capture_AUX0"/>
@@ -58,10 +54,6 @@
    <input node="FIIO BTR17 Analog Stereo" port="FIIO BTR17:playback_FR"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Music Player Daemon/mpd.Pipewire Sound Server" port="mpd.Pipewire Sound Server:output_FL"/>
-   <input node="Scarlett 2i2 4th Gen Pro" port="Scarlett 2i2 4th Gen:playback_AUX0"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Desktop Output" port="Desktop Output:monitor_FL"/>
    <input node="Nanna" port="Nanna:playback_FL"/>
   </item>
@@ -80,10 +72,6 @@
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Commes Output" port="Commes Output:monitor_FR"/>
    <input node="WH-1000XM6" port="WH-1000XM6:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Commes Output" port="Commes Output:monitor_FR"/>
-   <input node="Scarlett 2i2 4th Gen Pro" port="Scarlett 2i2 4th Gen:playback_AUX1"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Audient iD4 Pro" port="Audient iD4:capture_AUX0"/>
@@ -107,15 +95,7 @@
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Desktop Output" port="Desktop Output:monitor_FR"/>
-   <input node="Scarlett 2i2 4th Gen Pro" port="Scarlett 2i2 4th Gen:playback_AUX1"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Desktop Output" port="Desktop Output:monitor_FR"/>
    <input node="WH-1000XM6" port="WH-1000XM6:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Music Player Daemon/mpd.Pipewire Sound Server" port="mpd.Pipewire Sound Server:output_FR"/>
-   <input node="Scarlett 2i2 4th Gen Pro" port="Scarlett 2i2 4th Gen:playback_AUX1"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Commes Output" port="Commes Output:monitor_FL"/>
@@ -160,10 +140,6 @@
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Commes Output" port="Commes Output:monitor_FR"/>
    <input node="Ninatta" port="Ninatta:playback_FR"/>
-  </item>
-  <item node-type="pipewire" port-type="pipewire-audio">
-   <output node="Commes Output" port="Commes Output:monitor_FL"/>
-   <input node="Scarlett 2i2 4th Gen Pro" port="Scarlett 2i2 4th Gen:playback_AUX0"/>
   </item>
   <item node-type="pipewire" port-type="pipewire-audio">
    <output node="Desktop Output" port="Desktop Output:monitor_FL"/>
