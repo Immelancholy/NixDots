@@ -424,9 +424,7 @@ in
     hl.bind(Mods .. " + Right", hl.dsp.focus({ workspace = "r+1" }))
     hl.bind(Mods .. " + Down", hl.dsp.focus({ workspace = "empty" }))
 
-    hl.bind(Mod .. " + A", hl.dsp.submap("manage"))
-    hl.define_submap("manage", function()
-      universal_binds()
+    local function universal_manage_binds ()
       hl.bind(Mod .. " + P", hl.dsp.window.pin())
 
       hl.bind(
@@ -469,7 +467,12 @@ in
           monocle = hl.dsp.focus({ direction = "right" }),
         })
       )
+    end
 
+    hl.bind(Mod .. " + A", hl.dsp.submap("manage"))
+    hl.define_submap("manage", function()
+      universal_binds()
+      universal_manage_binds()
       hl.bind(Mods .. " + H", hl.dsp.window.move({ workspace = "r-1" }))
       hl.bind(Mods .. " + L", hl.dsp.window.move({ workspace = "r+1" }))
       hl.bind(Mods .. " + J", hl.dsp.window.move({ workspace = "empty" }))
@@ -536,6 +539,7 @@ in
       hl.bind(Mod .. " + R", hl.dsp.submap("resize"))
       hl.define_submap("resize", function()
         universal_binds()
+        universal_manage_binds()
 
         hl.bind(Mod .. " + Left", hl.dsp.window.resize({ x = -10, y = 0, relative = true }), { repeating = true })
         hl.bind(Mod .. " + Down", hl.dsp.window.resize({ x = 0, y = 10, relative = true }), { repeating = true })
@@ -557,6 +561,7 @@ in
       hl.bind(Mod .. " + M", hl.dsp.submap("move"))
       hl.define_submap("move", function()
         universal_binds()
+        universal_manage_binds()
 
         hl.bind(Mod .. " + Left", hl.dsp.window.move({ x = -10, y = 0, relative = true }), { repeating = true })
         hl.bind(Mod .. " + Down", hl.dsp.window.move({ x = 0, y = 10, relative = true }), { repeating = true })
