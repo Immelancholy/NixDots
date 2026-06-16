@@ -83,8 +83,8 @@ in
       match = { title = "^(tsui-top-bar)$" },
       float = true,
       pin = true,
-      size = "630 520",
-      move = { 1200, 50 },
+      size = "715 565",
+      move = { 1115, 50 },
     })
   '';
 }
