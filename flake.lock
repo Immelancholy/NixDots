@@ -1636,10 +1636,10 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1781623095,
-        "narHash": "sha256-NO6J4J5ZH9SzMMS33qlXur+O75Gwc76pM3XWqSzgRMM=",
-        "rev": "8469785adaf802748d560d5c93ab7a0178c84995",
-        "revCount": 4432,
+        "lastModified": 1781631152,
+        "narHash": "sha256-OROQgIlt8zhqwbnPlHYNJFcOzz7lujFpE/3uS3XxKHM=",
+        "rev": "005b2dc14f1c3f349cf03be548d4121fd85e333c",
+        "revCount": 4433,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
@@ -2241,10 +2241,10 @@
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1781622975,
-        "narHash": "sha256-twHa+1DzuGmHM1ObGqVuqOIA2pWIkH+CCf4Fuce+tJc=",
-        "rev": "afbeb96f60c6d874d46e6951747abdc8879f9eac",
-        "revCount": 125,
+        "lastModified": 1781631092,
+        "narHash": "sha256-QPEz6PpT7kS34A8YwMeDGER+1DIIqZiMO8qamSOjtgE=",
+        "rev": "a0b2f6a2b57cb125ebaa0b6db7d895a53bc0d002",
+        "revCount": 126,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/RheaynaVim"
       },
