@@ -57,9 +57,9 @@ with colors;
         dim_special = 0.3,
         blur = {
           enabled = true,
-          size = 7,
+          size = 5,
           passes = 4,
-          brightness = 1.2,
+          brightness = 1.35,
           vibrancy = 0.75,
           vibrancy_darkness = 0.8,
           special = true,
