@@ -57,12 +57,11 @@ with colors;
         dim_special = 0.3,
         blur = {
           enabled = true,
-          size = 5,
-          passes = 3,
-          vibrancy = 0.5,
-          new_optimizations = true,
-          ignore_opacity = true,
-          xray = false,
+          size = 7,
+          passes = 4,
+          brightness = 1.2,
+          vibrancy = 0.75,
+          vibrancy_darkness = 0.8,
           special = true,
         },
         motion_blur = {
