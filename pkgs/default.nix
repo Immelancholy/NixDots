@@ -5,4 +5,5 @@ pkgs: {
   momoisay = pkgs.callPackage ./momoisay.nix { inherit self; };
   pipemixer = pkgs.callPackage ./pipemixer.nix { inherit self; };
   toggle-tsui = pkgs.callPackage ./toggle-tsui.nix { inherit self; };
+  bibata-hyprcursor = pkgs.callPackage ./bibata-hyprcursor { };
 }
