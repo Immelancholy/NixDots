@@ -1636,10 +1636,10 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1781963462,
-        "narHash": "sha256-oFVZ5Gvq3szg9plDuTCXYjQutKTLFFEoOTNwz0j0STM=",
-        "rev": "8d6915a6caec4b8cf2cff42a321ec36921e0a12a",
-        "revCount": 4442,
+        "lastModified": 1781965228,
+        "narHash": "sha256-LI9SffcG5uJutpKpxFMjS4O02dEWK0K4NR4/ruwoqbQ=",
+        "rev": "e817394339d20ac820bdfbad470879d8a0bae2e4",
+        "revCount": 4443,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
@@ -2158,6 +2158,22 @@
         "type": "github"
       }
     },
+    "plugins-quickbuf": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1781949804,
+        "narHash": "sha256-sjTxvFCGlsHUk/2Ne0kdB8TKooszYFspQOfCdpwahHY=",
+        "owner": "tjgao",
+        "repo": "quickbuf.nvim",
+        "rev": "75b49dfd836a95cd0c80b04c1f5ac7e689e35421",
+        "type": "github"
+      },
+      "original": {
+        "owner": "tjgao",
+        "repo": "quickbuf.nvim",
+        "type": "github"
+      }
+    },
     "plugins-vim-be-good": {
       "flake": false,
       "locked": {
@@ -2236,15 +2252,16 @@
         "plugins-mole": "plugins-mole",
         "plugins-nvim-autopairs": "plugins-nvim-autopairs",
         "plugins-nvim-highlight-colors": "plugins-nvim-highlight-colors",
+        "plugins-quickbuf": "plugins-quickbuf",
         "plugins-vim-be-good": "plugins-vim-be-good",
         "rust-overlay": "rust-overlay_3",
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1781963445,
-        "narHash": "sha256-87XjADbhFCImhnCbxtuDFBKKyOnyx+Dcoi5ywiIV8L4=",
-        "rev": "da1b8edc20020bf541ee11c88be374d27ef53c1d",
-        "revCount": 128,
+        "lastModified": 1781965214,
+        "narHash": "sha256-GX6UFBiuuz78KhOjbtwLjvlQ2KgeuZjNIQ2IknM6PmM=",
+        "rev": "47f436449ef334eae616d663d215a880bc94311c",
+        "revCount": 129,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/RheaynaVim"
       },
