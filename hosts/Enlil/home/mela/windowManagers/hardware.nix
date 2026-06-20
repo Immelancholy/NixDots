@@ -1,5 +1,5 @@
 {
-  xdg.configFile."hypr/lua/hardware.lua".text = /* Lua */ ''
+  xdg.configFile."hypr/hardware.lua".text = /* Lua */ ''
     hl.config({
       cursor = {
         no_hardware_cursors = 2,

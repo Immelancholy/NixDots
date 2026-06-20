@@ -18,7 +18,7 @@ let
 in
 with colors;
 {
-  xdg.configFile."hypr/lua/plugins.lua".text = /* Lua */ ''
+  xdg.configFile."hypr/plugins.lua".text = /* Lua */ ''
     hl.on("hyprland.start", function()
       hl.exec_cmd("hyprctl plugin load ${csgo-vulkan}")
     end)
@@ -52,6 +52,6 @@ with colors;
     -- })
 
     -- hl.bind(mod .. " + D", function() hl.plugin.easymotion.action("hyprctl dispatch 'hl.dsp.focus({ window = \"{}\" })'") end))
-
-  '';
+  
+'';
 }

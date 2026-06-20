@@ -1,11 +1,6 @@
 { config, ... }:
 let
-  inherit (config.player)
-    cmd
-    class
-    cmdGame
-    title
-    ;
+  inherit (config.player) title;
   inherit (config.wayland.windowManager.hyprland) liveWallpaper;
   wallpaperKill = "${
     if liveWallpaper.enable then
@@ -18,7 +13,7 @@ let
   }";
 in
 {
-  xdg.configFile."hypr/lua/binds.lua".text = /* Lua */ ''
+  xdg.configFile."hypr/binds.lua".text = /* Lua */ ''
     local function layout_bind(bind_table)
       return function()
         local workspace = hl.get_active_special_workspace() or hl.get_active_workspace()
