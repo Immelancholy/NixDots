@@ -45,16 +45,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1782004512,
+        "lastModified": 1782070149,
         "narHash": "sha256-gGxv8wE5z5Z5OzvlMJh5lMjLgUdCs9aPhTkNFiJMpS0=",
-        "rev": "d5a930e842876198c0ed9c7c00a2290c3491b749",
-        "revCount": 377,
-        "type": "git",
-        "url": "file:/home/mela/Documents/Projects/anifetch"
+        "owner": "Notenlish",
+        "repo": "anifetch",
+        "rev": "033b9eaaa96dfa29c0ef7dc350fc3eafa8c47a93",
+        "type": "github"
       },
       "original": {
-        "type": "git",
-        "url": "file:/home/mela/Documents/Projects/anifetch"
+        "owner": "Notenlish",
+        "repo": "anifetch",
+        "type": "github"
       }
     },
     "aquamarine": {
@@ -1096,11 +1097,11 @@
         "xdph": "xdph"
       },
       "locked": {
-        "lastModified": 1781374697,
-        "narHash": "sha256-i6gEyiMnWiYWmfvyd2dUflhgrsuTD8zagGN+XxkZIR0=",
+        "lastModified": 1782070887,
+        "narHash": "sha256-rwKRD8h3bxVebEDNyoaPh+q0dqdqvrAE8+1T4Jo3xxs=",
         "owner": "hyprwm",
         "repo": "Hyprland",
-        "rev": "05922ec760c7d3bcaba1d6e7c69b68f92f622a3a",
+        "rev": "5a7078d20a14bb199ef9bb81faa4faeaf5e92117",
         "type": "github"
       },
       "original": {
@@ -1205,11 +1206,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1781367391,
-        "narHash": "sha256-BS4Dt0rPPS+OvKJv5pXgxMXsFYPVNnSvMtco78FsTK0=",
+        "lastModified": 1781442805,
+        "narHash": "sha256-Kt56e6Bq2sfqN8yq1RHsS6z+8QKCZelmhaeQQRtZyqU=",
         "owner": "hyprwm",
         "repo": "hyprland-plugins",
-        "rev": "5717e7c6c3bcb26bf1afca158ec351629c52616c",
+        "rev": "1f90c674d51a1ef83c725cd6d02280b4c969fdf7",
         "type": "github"
       },
       "original": {
@@ -1634,10 +1635,10 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1782002986,
-        "narHash": "sha256-50WKouEOiCiqsnaLW6j+5cEbbJhVQ2fT4oH4zYgTWHA=",
-        "rev": "3d30f77636f9864625776a57f28391e5a023d80b",
-        "revCount": 4448,
+        "lastModified": 1782161381,
+        "narHash": "sha256-lALvKjhF/3EQytRkVLtCOxSIKMnMg3LIflxVw7DfpLg=",
+        "rev": "e7b2d18af1d435d7dcb5647b6e02818ab2f33213",
+        "revCount": 4450,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
