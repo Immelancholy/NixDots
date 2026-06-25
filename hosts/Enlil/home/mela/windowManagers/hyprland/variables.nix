@@ -1,20 +1,20 @@
-{ config, pkgs, ... }:
+{ config, ... }:
 let
-  cfg = config.wayland.windowManager.hyprland;
+  inherit (config.wayland.windowManager.hyprland) liveWallpaper;
   inherit (config.player) cmd class title;
   inherit (config.stylix.cursor) name size;
 
   wallpaper = "${
-    if cfg.liveWallpaper.enable then
+    if liveWallpaper.enable then
       ''
-        local wallpaper = "${cfg.liveWallpaper.path}"
+        local wallpaper = "${liveWallpaper.path}"
           hl.exec_cmd("uwsm-app -- mpvpaper -f -p -o \"--loop no-audio\" '*' " .. wallpaper)
           hl.exec_cmd("systemctl stop --user hyprpaper")''
     else
       ""
   }";
   wallpaperKill = "${
-    if cfg.liveWallpaper.enable then
+    if liveWallpaper.enable then
       ''
         hl.exec_cmd("systemctl start --user hyprpaper")
           hl.exec_cmd("pkill mpvpaper")
@@ -24,9 +24,6 @@ let
   }";
 in
 {
-  home.packages = [
-    pkgs.bibata-hyprcursor
-  ];
   xdg.configFile."hypr/variables.lua".text = /* Lua */ ''
     function LiveWallpaper()
       ${wallpaper}
@@ -41,7 +38,7 @@ in
     Browser = "uwsm-app -- zen-beta.desktop"
     Discord = "uwsm-app -- vesktop.desktop"
     Editor = "uwsm-app -- org.neovim.nvim.desktop"
-    Files = "uwsm-app -- yazi.desktop"
+    Files = "uwsm-app -- " .. Term .. " yazi"
     Menu =
       'rofi -show drun -run-command "uwsm-app -- {cmd}" run filebrowser power-menu -modi drun,run,filebrowser,power-menu:rofi-power-menu'
     Mod = "SUPER"
