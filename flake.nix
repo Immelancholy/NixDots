@@ -17,7 +17,6 @@
         nixpkgs.follows = "nixpkgs";
         zarumet.follows = "zarumet";
         rheayna-vim.follows = "rheayna-vim";
-        lanzaboote.follows = "lanzaboote";
       };
     };
     rheayna-vim = {
@@ -26,15 +25,6 @@
     zarumet = {
       url = "git+file:/home/mela/Documents/Projects/zarumet";
       inputs.nixpkgs.follows = "nixpkgs";
-    };
-    lanzaboote = {
-      url = "github:nix-community/lanzaboote";
-
-      # Optional but recommended to limit the size of your system closure.
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        rust-overlay.follows = "nix-relic/rust-overlay";
-      };
     };
 
     #Added-flakes
