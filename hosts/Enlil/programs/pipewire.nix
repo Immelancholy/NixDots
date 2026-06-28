@@ -18,7 +18,7 @@
       };
       jack."92-low-latency" = {
         "jack.properties" = {
-          "rt.prio" = 88;
+          "rt.prio" = 99;
           "node.latency" = "512/192000";
           "node.rate" = "1/192000";
           "node.quantum" = "512/192000";
