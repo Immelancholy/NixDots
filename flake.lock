@@ -590,8 +590,8 @@
     },
     "git-hooks_3": {
       "inputs": {
-        "flake-compat": "flake-compat_5",
-        "gitignore": "gitignore_4",
+        "flake-compat": "flake-compat_4",
+        "gitignore": "gitignore_3",
         "nixpkgs": "nixpkgs_5"
       },
       "locked": {
@@ -739,8 +739,8 @@
     "gitignore_3": {
       "inputs": {
         "nixpkgs": [
-          "lanzaboote",
-          "pre-commit",
+          "nix-relic",
+          "git-hooks",
           "nixpkgs"
         ]
       },
@@ -762,7 +762,8 @@
       "inputs": {
         "nixpkgs": [
           "nix-relic",
-          "git-hooks",
+          "hyprland",
+          "pre-commit-hooks",
           "nixpkgs"
         ]
       },
@@ -784,8 +785,8 @@
       "inputs": {
         "nixpkgs": [
           "nix-relic",
-          "hyprland",
-          "pre-commit-hooks",
+          "lanzaboote",
+          "pre-commit",
           "nixpkgs"
         ]
       },
@@ -1448,6 +1449,7 @@
       "inputs": {
         "crane": "crane",
         "nixpkgs": [
+          "nix-relic",
           "nixpkgs"
         ],
         "pre-commit": "pre-commit",
@@ -1457,15 +1459,16 @@
         ]
       },
       "locked": {
-        "lastModified": 1782160136,
-        "narHash": "sha256-APwmLI4UuSTim0JO/kZ6FXDPiZVp3zIj0uGDF2UZ5kU=",
+        "lastModified": 1782141370,
+        "narHash": "sha256-hqijVSEETttmo8Okql9/LG0Ua34hdciKW1a5zzlj8mU=",
         "owner": "nix-community",
         "repo": "lanzaboote",
-        "rev": "6650fb7c6b48177c8200e21ffac99a4adc72b08d",
+        "rev": "7c9a54a7f87b4539ddbd8bda09a8a5f5f9361aa9",
         "type": "github"
       },
       "original": {
         "owner": "nix-community",
+        "ref": "v1.1.0",
         "repo": "lanzaboote",
         "type": "github"
       }
@@ -1590,9 +1593,7 @@
         "hyprland-easymotion": "hyprland-easymotion",
         "hyprland-plugins": "hyprland-plugins",
         "hyprquickframe": "hyprquickframe",
-        "lanzaboote": [
-          "lanzaboote"
-        ],
+        "lanzaboote": "lanzaboote",
         "linktui": "linktui",
         "nixpkgs": [
           "nixpkgs"
@@ -1617,10 +1618,10 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1782679533,
-        "narHash": "sha256-XYOKF4n/bNavocBt8UyOFcbZUjgcox4Z7BnOOW68tKc=",
-        "rev": "609a3c2dc12dcaa4f68922ccd60f62ca74267c01",
-        "revCount": 4453,
+        "lastModified": 1782684916,
+        "narHash": "sha256-32WXIb/Ya8hHEUz6mOmcET9FByp4iD0+z8VTCG1Eqjk=",
+        "rev": "b31bc4d6ee40e3c73147ce87141ec68a38c7609c",
+        "revCount": 4454,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
@@ -2173,9 +2174,10 @@
     },
     "pre-commit": {
       "inputs": {
-        "flake-compat": "flake-compat_4",
-        "gitignore": "gitignore_3",
+        "flake-compat": "flake-compat_6",
+        "gitignore": "gitignore_5",
         "nixpkgs": [
+          "nix-relic",
           "lanzaboote",
           "nixpkgs"
         ]
@@ -2196,8 +2198,8 @@
     },
     "pre-commit-hooks": {
       "inputs": {
-        "flake-compat": "flake-compat_6",
-        "gitignore": "gitignore_5",
+        "flake-compat": "flake-compat_5",
+        "gitignore": "gitignore_4",
         "nixpkgs": [
           "nix-relic",
           "hyprland",
@@ -2259,7 +2261,6 @@
         "git-hooks": "git-hooks_2",
         "helium": "helium",
         "home-manager": "home-manager_2",
-        "lanzaboote": "lanzaboote",
         "millennium": "millennium",
         "momoisay": "momoisay",
         "nix-relic": "nix-relic",
