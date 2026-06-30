@@ -2240,10 +2240,10 @@
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1782682228,
-        "narHash": "sha256-KpPF6zPZCtG68I9n1voG4X4OEkgRJH933eIdgXLBrRs=",
-        "rev": "5e2c641f0357578e5dcbdaa861f06f8082275386",
-        "revCount": 131,
+        "lastModified": 1782785977,
+        "narHash": "sha256-nrJvLTH5hHGNWvLMY2/BQdStMVtqI0TmkOh8fzyd0+M=",
+        "rev": "e8bd44ef10a6f9cc474ec465ad92fce15e57d312",
+        "revCount": 132,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/RheaynaVim"
       },
