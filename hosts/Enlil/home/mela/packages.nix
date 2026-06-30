@@ -14,6 +14,7 @@
         ];
       }
     ))
+    osu-lazer-bin
     ani-cli
     prismlauncher
     momoisay
