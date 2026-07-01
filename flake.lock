@@ -1600,6 +1600,7 @@
         ],
         "nixpkgs-stable": "nixpkgs-stable",
         "nur": "nur",
+        "quickshell-overview": "quickshell-overview",
         "rheayna-vim": [
           "rheayna-vim"
         ],
@@ -1618,10 +1619,10 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1782859937,
-        "narHash": "sha256-+ggeePzWBo/P4qX5scHeWC64OD0Jr+wi5VeNnNiSeiA=",
-        "rev": "9ca19eae20367a56a1adc680063f44ee4dafa0d7",
-        "revCount": 4459,
+        "lastModified": 1782918806,
+        "narHash": "sha256-86yqfHN6U2qTmgjacEgbOXNhH9oh79seaG2ZSDAq8fg=",
+        "rev": "3955bc03a372ad09b4c7d8061e338a32c783c78a",
+        "revCount": 4460,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
@@ -2217,6 +2218,22 @@
       "original": {
         "owner": "cachix",
         "repo": "git-hooks.nix",
+        "type": "github"
+      }
+    },
+    "quickshell-overview": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1781006042,
+        "narHash": "sha256-Gwaj36/+kDWsu30/NQKBM6x+K9zVaOf+Qtl4ZsUx/UU=",
+        "owner": "Shanu-Kumawat",
+        "repo": "quickshell-overview",
+        "rev": "74918ba66e0714017a6a5bfb9bf2affa66dabbc1",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Shanu-Kumawat",
+        "repo": "quickshell-overview",
         "type": "github"
       }
     },
