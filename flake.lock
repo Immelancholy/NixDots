@@ -1619,9 +1619,9 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1782919421,
-        "narHash": "sha256-qefAWbe088p7HscOxOr/Omv5YFlJPHYPD6Y2x4RjBGE=",
-        "rev": "5161300901c2c2f2d48e5b632303b32064283acb",
+        "lastModified": 1782919634,
+        "narHash": "sha256-o2HXyzI2Im0Z6XESiwsBV+x98a97eUqfAVF+3A/XIQg=",
+        "rev": "dc8e56ca38bb78c524b3748133ab2f7020f3337d",
         "revCount": 4460,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
