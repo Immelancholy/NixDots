@@ -426,5 +426,10 @@ in
       blur = true,
       ignore_alpha = 0,
     })
+    hl.layer_rule({
+      match = { namespace = "quickshell:overview-blur" },
+      blur = true,
+      ignore_alpha = 0.2,
+    })
   '';
 }

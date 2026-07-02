@@ -6,5 +6,6 @@
       src = "${self.inputs.ani-cli}";
       runtimeInputs = with prev.pkgs; [ ] ++ oa.runtimeInputs;
     });
+    pnpm_10_29_2 = final.pnpm_10;
   };
 }

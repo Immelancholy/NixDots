@@ -154,7 +154,7 @@ in
       hl.bind(Mod .. " + grave", hl.dsp.exec_cmd(Menu))
       hl.bind(Mod .. " + Return", hl.dsp.window.fullscreen({ mode = "fullscreen", action = "toggle" }))
       hl.bind(Mods .. " + Return", hl.dsp.window.fullscreen({ mode = "maximized", action = "toggle" }))
-      hl.bind("ALT + Tab", hl.dsp.exec_cmd("rofi -show window -Modi window"))
+      hl.bind("ALT + Tab", hl.dsp.exec_cmd("uwsm-app -- overview ipc call overview toggle"))
 
       hl.bind(Mod .. " + ALT + CONTROL + Delete", function()
         local layouts = { "scrolling", "dwindle", "master", "monocle" }

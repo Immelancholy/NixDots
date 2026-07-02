@@ -152,6 +152,7 @@
                   in
                   {
                     home-manager.users = mapAttrs makeHM config.nix-relic.users.users;
+                    home-manager.verbose = true;
                     networking.hostName = "${host}";
                   };
               }
@@ -237,7 +238,7 @@
 
       nixosModules = import ./modules/nixos;
 
-      homeModules = import ./modules/home-manager;
+      homeModules = import ./modules/home-manager { inherit self; };
 
       nixosConfigurations = {
         Enlil = mkHost "Enlil";

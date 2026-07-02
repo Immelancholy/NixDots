@@ -277,7 +277,7 @@
             "link-to-sidechain": -80.01,
             "lookahead": 5.0,
             "mode": "Herm Thin",
-            "output-gain": -6.0,
+            "output-gain": 0.0,
             "oversampling": "True Peak/24 bit",
             "release": 5.0,
             "sidechain-preamp": 0.0,
