@@ -341,18 +341,8 @@ in
 
       hl.bind(Mod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
       hl.bind(Mod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
-      hl.bind(
-        Mod .. " + N",
-        layout_bind({
-          scrolling = hl.dsp.layout("colresize +0.1"),
-        })
-      )
-      hl.bind(
-        Mods .. " + N",
-        layout_bind({
-          scrolling = hl.dsp.layout("colresize -0.1"),
-        })
-      )
+      hl.bind(Mod .. " + N", layout_bind({ scrolling = hl.dsp.layout("colresize +0.01") }), { repeating = true })
+      hl.bind(Mods .. " + N", layout_bind({ scrolling = hl.dsp.layout("colresize -0.01") }), { repeating = true })
       hl.bind(
         Mod .. " + C",
         layout_bind({
