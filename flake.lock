@@ -1607,6 +1607,7 @@
         "rust-overlay": "rust-overlay",
         "spicetify-nix": "spicetify-nix",
         "stylix": "stylix",
+        "tmux-power": "tmux-power",
         "waybar": "waybar",
         "yamb": "yamb",
         "yazi": "yazi",
@@ -1619,9 +1620,9 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1783162350,
-        "narHash": "sha256-iL7JBk0Tjr/HPJxBMmpUq5Jcjuu+DD0w7kvlWvs3V9E=",
-        "rev": "becc72a1421dc42d1b04f4571fbc23091985a33a",
+        "lastModified": 1783171329,
+        "narHash": "sha256-Xndkbxw43G/X1UT54jk6hVvxaFjhZH86tp+h8JBtoGc=",
+        "rev": "9c9713ec1b471accc47dfcfa25e52e16f6f180e5",
         "revCount": 4462,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
@@ -2590,6 +2591,22 @@
       "original": {
         "owner": "tinted-theming",
         "repo": "base16-zed",
+        "type": "github"
+      }
+    },
+    "tmux-power": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1774960584,
+        "narHash": "sha256-NRJcny3hCyqjp8SuzyC3Zc33rJqpUzs6rbWFgO8yb7c=",
+        "owner": "wfxr",
+        "repo": "tmux-power",
+        "rev": "d69c4d7ffc64828ac5ac4b3056dacdd7ef51997f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "wfxr",
+        "repo": "tmux-power",
         "type": "github"
       }
     },
