@@ -1597,10 +1597,10 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1783372471,
-        "narHash": "sha256-uAmdqN2t5EfRphEopbwCp3vhbl0cf8gK5Wp+ODFzqrI=",
-        "rev": "4d9c1b3bdbd520f760ad056d759b66587726d4f4",
-        "revCount": 4463,
+        "lastModified": 1783373756,
+        "narHash": "sha256-bhnEFyYxPHiuEXqrgiKfw7s33bdUhELnAi9ITmUY+f4=",
+        "rev": "9999a185ab16c98c6af5a795ededba4b996c377f",
+        "revCount": 4464,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
@@ -2762,10 +2762,10 @@
         "rust-overlay": "rust-overlay_4"
       },
       "locked": {
-        "lastModified": 1782002244,
-        "narHash": "sha256-WsgGD66x8PMO9oe0YM6Po5ihcRWf6+m/3a5CvDCNYh4=",
-        "rev": "de75d3802081f64f778a36051df31ba403e9eca4",
-        "revCount": 315,
+        "lastModified": 1783373222,
+        "narHash": "sha256-8cnIUzf+rvOz8jHT3p0u0mvMAZfNaAuZ+WD3PERcqcw=",
+        "rev": "d47a7c8da23ad053ebc3893237e9a992b48bcc6b",
+        "revCount": 316,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/zarumet"
       },
