@@ -299,9 +299,10 @@ in
     })
     hl.window_rule({
       match = {
-        title = "^(Picture-in-Picture)$",
+        title = "^(?i)(picture-in-picture)$",
       },
       float = true,
+      opacity = "1.0 override 1.0 override",
     })
     hl.window_rule({
       match = {

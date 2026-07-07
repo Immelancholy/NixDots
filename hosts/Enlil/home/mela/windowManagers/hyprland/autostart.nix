@@ -1,7 +1,6 @@
 {
   xdg.configFile."hypr/autostart.lua".text = /* Lua */ ''
     hl.on("hyprland.start", function()
-      hl.exec_cmd("uwsm-app -- waybar")
       hl.exec_cmd(Discord)
       hl.exec_cmd(Browser, { workspace = "2 silent" })
       hl.exec_cmd("sleep 2; systemctl restart --user easyeffects")
@@ -10,10 +9,12 @@
     hl.on("config.reloaded", function()
       hl.exec_cmd("dunstctl set-paused true")
       hl.exec_cmd("dunstctl close-all")
+      hl.exec_cmd("pkill waybar")
       LiveWallpaperKill()
       WorkspaceOneKills()
       hl.exec_cmd("pkill -f 'overview'")
       hl.exec_cmd("pkill localsend")
+      hl.exec_cmd("uwsm-app -- waybar")
       hl.exec_cmd("systemctl restart --user easyeffects")
       hl.exec_cmd("systemctl restart --user qpwgraph")
       LiveWallpaper()
