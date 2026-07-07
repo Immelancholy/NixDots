@@ -20,7 +20,7 @@ stdenv.mkDerivation rec {
   buildPhase = ''
     runHook preBuild
 
-    make -C "${kernel.dev}/lib/modules/${kernel.modDirVersion}/build" M="$PWD" modules
+    make -C "${kernel.dev}/lib/modules/${kernel.modDirVersion}/build" CC=clang M="$PWD" modules
 
     runHook postBuild
   '';
@@ -28,7 +28,7 @@ stdenv.mkDerivation rec {
   installPhase = ''
     runHook preInstall
 
-    make -C "${kernel.dev}/lib/modules/${kernel.modDirVersion}/build" M="$PWD" INSTALL_MOD_PATH="$out" modules_install
+    make -C "${kernel.dev}/lib/modules/${kernel.modDirVersion}/build" CC=clang M="$PWD" INSTALL_MOD_PATH="$out" modules_install
 
     runHook postInstall
   '';

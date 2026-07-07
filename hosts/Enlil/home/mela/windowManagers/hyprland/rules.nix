@@ -13,7 +13,7 @@ in
     })
     hl.window_rule({
       match = {
-        class = "^(steam_app_\\d+)$",
+        class = "^(steam_app_.*)$",
       },
       workspace = "special:game",
       fullscreen = true,
