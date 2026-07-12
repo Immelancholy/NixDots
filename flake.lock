@@ -1686,10 +1686,10 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1783830985,
-        "narHash": "sha256-fPqWSthV4Fxd2yh10FuCc+61nigGegh/wSpyW//YIKk=",
-        "rev": "5b5e6730cbc37f887d869ebe82e6b83f284a50fa",
-        "revCount": 4467,
+        "lastModified": 1783855572,
+        "narHash": "sha256-nb950LfFBVAiRAwiLnUdj862y9sNmYVyof8ZpuD8xx0=",
+        "rev": "cfce8bd6e1fc22094d79990879477d3bceca4318",
+        "revCount": 4468,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
@@ -2738,11 +2738,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1783351322,
-        "narHash": "sha256-gVYj72W4L5FJwtfkT/m8PxgDKBT/3HIq1BdnxhFtlPQ=",
+        "lastModified": 1783841412,
+        "narHash": "sha256-h1ZmLmqBkm3MyShV6p83kBtpeLa9rnZUVz75kp+0Ccw=",
         "owner": "Alexays",
         "repo": "waybar",
-        "rev": "98b2a563f398f63f99ec8a6f7fb2b19a172abd5d",
+        "rev": "cf19c836d3dafc1646bb60a49269d981623b680a",
         "type": "github"
       },
       "original": {
