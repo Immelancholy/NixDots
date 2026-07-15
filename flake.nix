@@ -61,6 +61,10 @@
       url = "github:heather7283/pipemixer";
       flake = false;
     };
+    toofan = {
+      url = "github:vyrx-dev/toofan";
+      flake = false;
+    };
   };
 
   outputs =

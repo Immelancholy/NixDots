@@ -6,4 +6,5 @@ pkgs: {
   pipemixer = pkgs.callPackage ./pipemixer.nix { inherit self; };
   toggle-tsui = pkgs.callPackage ./toggle-tsui.nix { inherit self; };
   bibata-hyprcursor = pkgs.callPackage ./bibata-hyprcursor { };
+  toofan = pkgs.callPackage ./toofan.nix { inherit self; };
 }
