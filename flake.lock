@@ -1640,10 +1640,10 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1784141105,
-        "narHash": "sha256-r1TXN1a5HzktfH8HxiRCyQTsGlA1GnBA2K3QVRnrIK0=",
-        "rev": "e08c943d68df5e4d6c3778c670a842bce561f670",
-        "revCount": 4470,
+        "lastModified": 1784322798,
+        "narHash": "sha256-pRlNyONMR0u7oy+f0Mi+5kH7ZcPyjaq4cOzb+5DsNdM=",
+        "rev": "1b3e3e901c59e590fc8f18ffb926915b1f996921",
+        "revCount": 4471,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
@@ -2463,11 +2463,11 @@
         "tinted-zed": "tinted-zed"
       },
       "locked": {
-        "lastModified": 1783358511,
-        "narHash": "sha256-/F85cBWvU8b2hpawuCog464065ZTJtdMgVPWwJ9yHjE=",
+        "lastModified": 1784059683,
+        "narHash": "sha256-q5MZrmKlg9A4ORx3EQcr7qkuidMU1gVZ+xJ3nCK+xgc=",
         "owner": "nix-community",
         "repo": "stylix",
-        "rev": "14814ef555d8148ab82eba5054e654cd9eae3a1f",
+        "rev": "c8ccc31f3ea29dc3eb5b54945e5eb549529491d6",
         "type": "github"
       },
       "original": {
