@@ -24,11 +24,11 @@
     "ani-cli": {
       "flake": false,
       "locked": {
-        "lastModified": 1783410458,
-        "narHash": "sha256-wU25uSikLbuzQ/nAZzWz3ilpM1Ewac4ZuICRCwUn/fQ=",
+        "lastModified": 1784047953,
+        "narHash": "sha256-uEB2RHN0JA8kvFFTeGg0n6JwMcPsccVhI7f1k+bZ5Ls=",
         "owner": "pystardust",
         "repo": "ani-cli",
-        "rev": "89ec9314eba7b66c894bf8bbf3b2b25a3b80743a",
+        "rev": "5cfc4b0020e9b692b1a7d76d2f5462371c6c184f",
         "type": "github"
       },
       "original": {
@@ -640,11 +640,11 @@
         "nixpkgs": "nixpkgs_3"
       },
       "locked": {
-        "lastModified": 1783008725,
-        "narHash": "sha256-jGiy6+sxjNWXSjp25uoJuNfyH9zBK1PEDY0lVoL4ibQ=",
+        "lastModified": 1784288435,
+        "narHash": "sha256-ReRHaLgr/uVqdD8afFSn+myXIfpHeOhP0yYe0TJqAA8=",
         "owner": "cachix",
         "repo": "git-hooks.nix",
-        "rev": "bca82caa46d5ec0f5d422c61fb1e30bc51313cbe",
+        "rev": "43b3c1ab9d40fb1dbb008f451988a91e375825e9",
         "type": "github"
       },
       "original": {
@@ -939,11 +939,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1783642032,
-        "narHash": "sha256-nXtLJOqFCpQrcnizTHLQXzF4rmWj8XVbEGQISb9K9mQ=",
+        "lastModified": 1784361323,
+        "narHash": "sha256-TsyHMkAx9V9Hq9kVbke16pm+3iehM656x/yTSvyz8KU=",
         "owner": "AlvaroParker",
         "repo": "helium-nix",
-        "rev": "d22987cb82198f2e8b94fcfae9e9d016bf8d2a4b",
+        "rev": "06afa4dddfab3f88bea5c10edaa4a509a7fa01b3",
         "type": "github"
       },
       "original": {
@@ -980,11 +980,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1783823409,
-        "narHash": "sha256-OI4IkRjRXa1e7hYmCGJDPDq5H/kPwhsyoS80cNUF9fI=",
+        "lastModified": 1784407317,
+        "narHash": "sha256-iZrxHToDJWnvt+5LGAtvuQMTy1NZYlNEKbKaVtBJNcc=",
         "owner": "nix-community",
         "repo": "home-manager",
-        "rev": "7566825d4652a1b885bd4ce65bd9e8def432fec9",
+        "rev": "39411a8e12a5526d992e65bc7e3dc9a4414d6713",
         "type": "github"
       },
       "original": {
@@ -1501,11 +1501,11 @@
       },
       "locked": {
         "dir": "packages/nix",
-        "lastModified": 1783532163,
-        "narHash": "sha256-n+YQKnVt0H1B2z6N1PmaadeVorRHi956q48/g2y8Hnc=",
+        "lastModified": 1784048235,
+        "narHash": "sha256-ar1xg5HFbz6XJ/BAOo37ewfnMcsLHj0/088soIvXKIo=",
         "owner": "SteamClientHomebrew",
         "repo": "Millennium",
-        "rev": "3623ed0ed9f6065ce666cb0276ff0b903fee2355",
+        "rev": "df5a3572fd2366b4aa689abd655ee48296ba1afd",
         "type": "github"
       },
       "original": {
@@ -1640,10 +1640,10 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1784322798,
+        "lastModified": 1784463088,
         "narHash": "sha256-pRlNyONMR0u7oy+f0Mi+5kH7ZcPyjaq4cOzb+5DsNdM=",
-        "rev": "1b3e3e901c59e590fc8f18ffb926915b1f996921",
-        "revCount": 4471,
+        "rev": "fea3b71baf76e0a36ed054a1b0416f6658d55a55",
+        "revCount": 4472,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
@@ -1657,11 +1657,11 @@
         "nixpkgs": "nixpkgs_12"
       },
       "locked": {
-        "lastModified": 1783792734,
-        "narHash": "sha256-50rvY9GdFvpYDcMLcD/4cWSi0hVxArT5wsGlVsHy8eY=",
+        "lastModified": 1784310968,
+        "narHash": "sha256-rkSPTePrKqs4dg+i7ZFCq93+HrClac6oSwXX927SVjA=",
         "owner": "nixos",
         "repo": "nixos-hardware",
-        "rev": "8efb4337e857949f4cfac86d12ef1066f417f31f",
+        "rev": "779c32a00155994c86cde8213a8dd4df139d4355",
         "type": "github"
       },
       "original": {
@@ -1762,11 +1762,11 @@
     },
     "nixpkgs_13": {
       "locked": {
-        "lastModified": 1783776592,
-        "narHash": "sha256-UgCQzxeWI75XM8G+hPrPh+MKzEPjG3SpAj7dtqSbksA=",
+        "lastModified": 1784356753,
+        "narHash": "sha256-12KrbMiWLcf8m7pCvAtZh1ZrgF85ZXDXvfR/fWTKy84=",
         "owner": "NixOS",
         "repo": "nixpkgs",
-        "rev": "e7a3ca8092b61ff85b6a45bf863ea2b2d6a661b3",
+        "rev": "61b7c44c4073f0b827768aff0049561b5110ea5a",
         "type": "github"
       },
       "original": {
@@ -2852,10 +2852,10 @@
         "rust-overlay": "rust-overlay_4"
       },
       "locked": {
-        "lastModified": 1783373222,
+        "lastModified": 1784463139,
         "narHash": "sha256-8cnIUzf+rvOz8jHT3p0u0mvMAZfNaAuZ+WD3PERcqcw=",
-        "rev": "d47a7c8da23ad053ebc3893237e9a992b48bcc6b",
-        "revCount": 316,
+        "rev": "134e6c2a7d8f5b0ae30b19b27c8ce5eb54f562fc",
+        "revCount": 317,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/zarumet"
       },
