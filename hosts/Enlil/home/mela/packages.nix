@@ -16,7 +16,6 @@
     ))
     osu-lazer-bin
     ani-cli
-    prismlauncher
     momoisay
     temurin-bin
     bespokesynth

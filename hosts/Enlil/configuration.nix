@@ -106,6 +106,9 @@ in
   nixpkgs = {
     config = {
       cudaSupport = true;
+      permittedInsecurePackages = [
+        "electron-40.10.5"
+      ];
     };
     overlays = [
       nix-relic.inputs.rust-overlay.overlays.default

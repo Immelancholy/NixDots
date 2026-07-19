@@ -82,6 +82,13 @@
       size = "715 565",
       move = { 1115, 50 },
     })
+    hl.window_rule({
+      match = {
+        title = "^(Haste)$",
+      },
+      workspace = "special:game",
+      fullscreen = true,
+    })
   '';
   home.packages = [
     pkgs.bibata-hyprcursor
