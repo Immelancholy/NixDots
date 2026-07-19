@@ -2308,10 +2308,10 @@
         "wrappers": "wrappers"
       },
       "locked": {
-        "lastModified": 1782786396,
+        "lastModified": 1784463152,
         "narHash": "sha256-iajW/O3bo9KCio/vnfrilUufG/5AKpeuVjWO4W6KsTA=",
-        "rev": "b72d8b6147e53d778909bc18fe35de802b2ba3c3",
-        "revCount": 133,
+        "rev": "fcaf0d69a28a4e83ab9dc8ee270a8648fc5a5576",
+        "revCount": 134,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/RheaynaVim"
       },
