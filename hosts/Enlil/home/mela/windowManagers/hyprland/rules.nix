@@ -11,27 +11,27 @@ in
       },
       opacity = "0.8 0.7",
     })
-    hl.window_rule({
-      match = {
-        class = "^(steam_app_.*)$",
-      },
-      workspace = "special:game",
-      fullscreen = true,
-    })
-    hl.window_rule({
-      match = {
-        xdg_tag = "^(proton-game)$",
-      },
-      workspace = "special:game",
-      fullscreen = true,
-    })
-    hl.window_rule({
-      match = {
-        content = "game",
-      },
-      workspace = "special:game",
-      fullscreen = true,
-    })
+    -- hl.window_rule({
+    --   match = {
+    --     class = "^(steam_app_.*)$",
+    --   },
+    --   workspace = "special:game",
+    --   fullscreen = true,
+    -- })
+    -- hl.window_rule({
+    --   match = {
+    --     xdg_tag = "^(proton-game)$",
+    --   },
+    --   workspace = "special:game",
+    --   fullscreen = true,
+    -- })
+    -- hl.window_rule({
+    --   match = {
+    --     content = "game",
+    --   },
+    --   workspace = "special:game",
+    --   fullscreen = true,
+    -- })
     hl.window_rule({
       match = {
         class = "^(xfreerdp)$",
