@@ -1562,10 +1562,10 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1789916818,
-        "narHash": "sha256-p0n8NEaNbVRjpUXhWZSq4QbvpYkpiHzS1HH5FCduuOI=",
-        "rev": "e94f93a84e8a786abac95b91953dd0ec39d8dbde",
-        "revCount": 4486,
+        "lastModified": 1789920372,
+        "narHash": "sha256-V59+VXXOHzfesq866IVHddfcidhMLhLlrKezzPcBK94=",
+        "rev": "f6cec88b51903c085bf50c5ea91206c55ad976a6",
+        "revCount": 4489,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
@@ -1915,11 +1915,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1789916015,
-        "narHash": "sha256-6oA4JjRMp9JkDoO8cmI3koab8aDLoQhxrRR9KbTr4pI=",
+        "lastModified": 1789920151,
+        "narHash": "sha256-R64KrFbD5erLGKaTQ1zwVF8eQjVJpVZ+n/2TLY2tTgM=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "b7b0d6021a1d275e780ca7f3c59aa476e729c99d",
+        "rev": "57839ec200e7c6f823d1e2f19fd015df48a77d21",
         "type": "github"
       },
       "original": {
@@ -2614,17 +2614,17 @@
         ]
       },
       "locked": {
-        "lastModified": 1789750187,
-        "narHash": "sha256-24zl1AUL+K4o6UK0TC20PlfJhcFxClOx4TdmaJLegw0=",
-        "owner": "tonybutt",
+        "lastModified": 1789576343,
+        "narHash": "sha256-udymEQjGzKq9sg/4ag0zwY3N+FXIY20sUCwsbebFg84=",
+        "owner": "Alexays",
         "repo": "waybar",
-        "rev": "919939aa435d1442d423e180fb3bd452802befa4",
+        "rev": "4c495a41f6fe5689665783138ce0097f9b757e0a",
         "type": "github"
       },
       "original": {
-        "owner": "tonybutt",
-        "ref": "hyprland-addressable-workspaces",
+        "owner": "Alexays",
         "repo": "waybar",
+        "rev": "4c495a41f6fe5689665783138ce0097f9b757e0a",
         "type": "github"
       }
     },
@@ -2722,11 +2722,11 @@
         "rust-overlay": "rust-overlay_2"
       },
       "locked": {
-        "lastModified": 1789820495,
-        "narHash": "sha256-ecQY/Bz1INk5Ruo1HswEaeS3mObzIzZ+PHiBF8qzt9E=",
+        "lastModified": 1789917380,
+        "narHash": "sha256-+R7lwIjG+6mPv3awdK85wjaDx+4aSJ8rAbFq07Z56B4=",
         "owner": "sxyazi",
         "repo": "yazi",
-        "rev": "014426fd8535b8b99e0be7edd3dc7c05e21d1a44",
+        "rev": "112aeceac8e70c73d7a752976d9af7fc83f148bd",
         "type": "github"
       },
       "original": {
