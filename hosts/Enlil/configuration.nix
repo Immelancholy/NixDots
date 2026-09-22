@@ -14,13 +14,8 @@ in
   nix-relic = {
     flakePath = "/home/mela/.nix/nixos-config";
     updateScript.enableToken = true;
-    cava = {
-      framerate = 280;
-      noiseReduction = 93;
-    };
     framerates = {
       steamGamescopeSession = 280;
-      neo = 280;
     };
     wallpaper = {
       path = "${nix-relic}/backgrounds/Momo_Smoke.png";
