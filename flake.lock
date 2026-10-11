@@ -710,11 +710,11 @@
         "nixpkgs": "nixpkgs_19"
       },
       "locked": {
-        "lastModified": 1789514889,
-        "narHash": "sha256-PFD1nxptCXJyJoiYO1gf/5Vv43yqGpHtMC6LUhl9/pQ=",
+        "lastModified": 1790500375,
+        "narHash": "sha256-XN3sDtn8TU9hAc9xqZ+SqRB/HHm2wjxM6aSWYLJU+oo=",
         "owner": "cachix",
         "repo": "git-hooks.nix",
-        "rev": "59f4ca0d063a1a3ec722c88b51a33004862e5379",
+        "rev": "a0e4241b51206fbcbf52fd322eb5f0cd80f153c4",
         "type": "github"
       },
       "original": {
@@ -2348,11 +2348,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1789889921,
-        "narHash": "sha256-aL/ogiN7qZCGeNovS1f9hX73jwYIKb4Pcq6AZm57WtY=",
+        "lastModified": 1791101754,
+        "narHash": "sha256-y/GF+9B0t0TZ0nQiSRMqDXpr76yT7sdDbS/3GNLhzkE=",
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "rev": "1fb104a12a8667045559b2575d6d448ae2fbd99b",
+        "rev": "dbc715a4b7c0ace63b9769a032d1dd34cd89e5bd",
         "type": "github"
       },
       "original": {
@@ -2788,10 +2788,10 @@
         "rust-overlay": "rust-overlay_4"
       },
       "locked": {
-        "lastModified": 1789916438,
-        "narHash": "sha256-Im+7f47C6Kcy3uKgggLIEV0JijJXB+wy1fLcha7m7nY=",
-        "rev": "11c873bb310749ae033e2435ae4a368b30cc04d2",
-        "revCount": 325,
+        "lastModified": 1791747232,
+        "narHash": "sha256-6yZvaWhdmUDDHhIsqX6jcZPZiPFOHocmy8MnyhSkRXw=",
+        "rev": "d469e0853af89364f291a1ccc063c5ea4d363c10",
+        "revCount": 331,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/zarumet"
       },
