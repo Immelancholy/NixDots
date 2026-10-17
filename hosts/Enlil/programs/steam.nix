@@ -10,10 +10,6 @@ let
       MANGOHUD = true;
       DXVK_HUD = "compiler";
       LD_PRELOAD = "${pkgs.gamemode.lib}/lib/libgamemode.so";
-      PROTON_ENABLE_WAYLAND = 1;
-      PROTON_ENABLE_HDR = 1;
-      ENABLE_HDR_WSI = 1;
-      PROTON_USE_NTSYNC = 1;
     };
   };
 in

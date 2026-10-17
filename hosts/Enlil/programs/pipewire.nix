@@ -32,7 +32,7 @@
           {
             matches = [
               {
-                "device.name" = "~bluez_card";
+                "device.name" = "~bluez_card.*";
               }
             ];
             actions = {
