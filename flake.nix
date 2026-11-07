@@ -30,6 +30,7 @@
     #Added-flakes
     agenix.url = "github:ryantm/agenix";
     millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
+    reaper-flake.url = "github:9Prestidigitator/reaper-flake";
     helium = {
       url = "github:AlvaroParker/helium-nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -177,6 +178,7 @@
                 sharedModules = [
                   nix-relic.homeManagerModules.default
                   agenix.homeManagerModules.default
+                  inputs.reaper-flake.homeModules.reaper
                 ];
               };
             }
