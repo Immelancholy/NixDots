@@ -38,8 +38,8 @@
     })
     hl.monitor({
       output = "HDMI-A-1",
-      mode = "2569x1440@60",
-      position = "1920x0",
+      mode = "2560x1440@60",
+      position = "auto-left",
       scale = 1,
     })
   '';

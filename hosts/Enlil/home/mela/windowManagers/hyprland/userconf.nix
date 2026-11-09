@@ -52,9 +52,9 @@
     function Universal_User_Binds()
       hl.bind(Moda .. " + D", hl.dsp.workspace.toggle_special("DAW"))
       hl.bind(Mods .. " + D", hl.dsp.window.move({ workspace = "special:DAW" }))
-      hl.bind("F9", hl.dsp.pass({ window = "class:^(com.obsproject.Studio)$" }))
-      hl.bind("F10", hl.dsp.pass({ window = "class:^(com.obsproject.Studio)$" }))
-      hl.bind("F12", hl.dsp.pass({ window = "class:^(com.obsproject.Studio)$" }))
+      -- hl.bind(Mod .. " + F9", hl.dsp.pass({ window = "class:^(com.obsproject.Studio)$" }))
+      -- hl.bind(Mod .. " + F10", hl.dsp.pass({ window = "class:^(com.obsproject.Studio)$" }))
+      -- hl.bind(Mod .. " + F12", hl.dsp.pass({ window = "class:^(com.obsproject.Studio)$" }))
     end
     function Default_User_Binds() end
     function Manage_User_Binds() end
@@ -70,7 +70,19 @@
     })
     hl.window_rule({
       match = {
-        title = "^(REAPER v.* - EVALUATION LICENSE)$",
+        title = "^(REAPER v.* - .+)$",
+      },
+      fullscreen = true,
+    })
+    hl.window_rule({
+      match = {
+        class = "^(org.kde.krita)$",
+      },
+      workspace = "name:Art",
+    })
+    hl.window_rule({
+      match = {
+        title = "^(Krita)$",
       },
       fullscreen = true,
     })
@@ -81,6 +93,28 @@
       pin = true,
       size = "715 565",
       move = { 1115, 50 },
+    })
+    hl.workspace_rule({
+      workspace = "1",
+      monitor = "DP-1",
+    })
+    hl.workspace_rule({
+      workspace = "2",
+      monitor = "DP-1",
+    })
+    hl.workspace_rule({
+      workspace = "3",
+      monitor = "DP-1",
+    })
+    hl.workspace_rule({
+      workspace = "4",
+      monitor = "DP-1",
+    })
+    hl.workspace_rule({
+      workspace = "name:Art",
+      monitor = "HDMI-A-1",
+      default = true,
+      persistent = true,
     })
   '';
   home.packages = [

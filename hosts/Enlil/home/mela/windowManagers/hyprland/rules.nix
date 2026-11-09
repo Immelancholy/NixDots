@@ -11,39 +11,39 @@ in
       },
       opacity = "0.8 0.7",
     })
-    -- hl.window_rule({
-    --   match = {
-    --     class = "^(steam_app_.*)$",
-    --   },
-    --   workspace = "special:game",
-    --   fullscreen = true,
-    -- })
-    -- hl.window_rule({
-    --   match = {
-    --     xdg_tag = "^(proton-game)$",
-    --   },
-    --   workspace = "special:game",
-    --   fullscreen = true,
-    -- })
-    -- hl.window_rule({
-    --   match = {
-    --     content = "game",
-    --   },
-    --   workspace = "special:game",
-    --   fullscreen = true,
-    -- })
+    hl.window_rule({
+      match = {
+        class = "^(steam_app_.*)$",
+      },
+      workspace = "name:Game",
+      fullscreen = true,
+    })
+    hl.window_rule({
+      match = {
+        xdg_tag = "^(proton-game)$",
+      },
+      workspace = "name:Game",
+      fullscreen = true,
+    })
+    hl.window_rule({
+      match = {
+        content = "game",
+      },
+      workspace = "name:Game",
+      fullscreen = true,
+    })
     hl.window_rule({
       match = {
         class = "^(xfreerdp)$",
       },
-      workspace = "special:win",
+      workspace = "special:Win",
       fullscreen = true,
     })
     hl.window_rule({
       match = {
         class = "^(.*[Ee]pisode \\d+ - mpv*.)$",
       },
-      workspace = "special:video",
+      workspace = "special:Video",
       opacity = "1.0 override 0.8 override",
       fullscreen = true,
     })
