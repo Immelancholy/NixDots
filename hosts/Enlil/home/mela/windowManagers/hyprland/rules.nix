@@ -1,7 +1,3 @@
-{ config, ... }:
-let
-  inherit (config.player) title;
-in
 {
   xdg.configFile."hypr/rules.lua".text = /* lua */ ''
     -- Window Rules
@@ -414,7 +410,7 @@ in
       match = { title = "^(linktui-wifi-top-bar)$" },
       float = true,
       pin = true,
-      size = "715 565",
+      size = { 715, 565 },
       move = { "(monitor_w - window_w) * 0.925", 50 },
     })
     hl.window_rule({
@@ -422,7 +418,7 @@ in
       match = { title = "^(linktui-bluetooth-top-bar)$" },
       float = true,
       pin = true,
-      size = "715 565",
+      size = { 715, 565 },
       move = { "(monitor_w - window_w) * 0.925", 50 },
     })
     hl.window_rule({
@@ -430,15 +426,15 @@ in
       match = { title = "^(btop-top-bar)$" },
       float = true,
       pin = true,
-      size = "740 855",
+      size = { 740, 855 },
       move = { "(monitor_w - window_w) * 0.886", 50 },
     })
     hl.window_rule({
-      name = "${title}-top-bar",
-      match = { title = "^(${title}-top-bar)$" },
+      name = PlayerTitle .. "-top-bar",
+      match = { title = "^(" .. PlayerTitle .. "-top-bar)$" },
       float = true,
       pin = true,
-      size = "740 490",
+      size = { "monitor_w * 0.5", "monitor_h * 0.55" },
       move = { "(monitor_w - window_w) * 0.5", 50 },
     })
 
