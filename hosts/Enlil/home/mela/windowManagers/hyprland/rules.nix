@@ -123,27 +123,27 @@ in
         class = "^(discord)$",
       },
       opacity = "0.9 override 0.7 override",
-      workspace = "3 silent",
+      workspace = "name:Discord silent",
     })
     hl.window_rule({
       match = {
         class = "^(WebCord)$",
       },
       opacity = "0.9 override 0.7 override",
-      workspace = "3 silent",
+      workspace = "name:Discord silent",
     })
     hl.window_rule({
       match = {
         class = "^(ArmCord)$",
       },
       opacity = "0.9 override 0.7 override",
-      workspace = "3 silent",
+      workspace = "name:Discord silent",
     })
     hl.window_rule({
       match = {
         class = "^(org.rncbc.qpwgraph)$",
       },
-      workspace = "3 silent",
+      workspace = "name:QpwGraph silent",
     })
     hl.window_rule({
       match = {

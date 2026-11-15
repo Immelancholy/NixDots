@@ -15,29 +15,29 @@
       hl.dispatch(
         hl.dsp.exec_cmd(
           "uwsm-app -- kitty --title relic-cava relic-cava",
-          { workspace = "1 silent", float = true, size = { 888, 456 }, move = { 610, 615 } }
+          { workspace = "name:Start silent", float = true, size = { 888, 456 }, move = { 610, 615 } }
         )
       )
       hl.dispatch(
         hl.dsp.exec_cmd(
           "uwsm-app -- kitty --title relic-btop relic-btop",
-          { workspace = "1 silent", float = true, size = { 590, 615 }, move = { 10, 455 } }
+          { workspace = "name:Start silent", float = true, size = { 590, 615 }, move = { 10, 455 } }
         )
       )
       hl.dispatch(
         hl.dsp.exec_cmd(
           "uwsm-app -- kitty --title relic-neo relic-neo",
-          { workspace = "1 silent", float = true, size = { 402, 1030 }, move = { 1508, 42 } }
+          { workspace = "name:Start silent", float = true, size = { 402, 1030 }, move = { 1508, 42 } }
         )
       )
       hl.dispatch(
         hl.dsp.exec_cmd(
           "uwsm-app -- kitty --title relic-fastfetch kitty @ launch --type overlay --env class=fastfetch",
-          { workspace = "1 silent", float = true, size = { 590, 405 }, move = { 10, 42 } }
+          { workspace = "name:Start silent", float = true, size = { 590, 405 }, move = { 10, 42 } }
         )
       )
       hl.dispatch(
-        hl.dsp.exec_cmd(Player, { workspace = "1 silent", float = true, size = { 888, 565 }, move = { 610, 42 } })
+        hl.dsp.exec_cmd(Player, { workspace = "name:Start silent", float = true, size = { 888, 565 }, move = { 610, 42 } })
       )
     end
 
@@ -50,8 +50,8 @@
     end
 
     function Universal_User_Binds()
-      hl.bind(Moda .. " + M", hl.dsp.workspace.toggle_special("DAW"))
-      hl.bind(Mods .. " + M", hl.dsp.window.move({ workspace = "special:DAW" }))
+      hl.bind(Moda .. " + R", hl.dsp.workspace.toggle_special("DAW"))
+      hl.bind(Mods .. " + R", hl.dsp.window.move({ workspace = "special:DAW" }))
       hl.bind(Moda .. " + A", hl.dsp.focus({ workspace = "name:Art" }))
       hl.bind(Mods .. " + A", hl.dsp.window.move({ workspace = "name:Art" }))
       -- hl.bind(Mod .. " + F9", hl.dsp.pass({ window = "class:^(com.obsproject.Studio)$" }))
@@ -101,12 +101,20 @@
       monitor = "DP-1",
     })
     hl.workspace_rule({
-      workspace = "2",
+      workspace = "name:Start",
       monitor = "DP-1",
+      persistent = true,
+      default = true,
     })
     hl.workspace_rule({
-      workspace = "3",
+      workspace = "name:Game",
       monitor = "DP-1",
+      persistent = true,
+    })
+    hl.workspace_rule({
+      workspace = "name:QpwGraph",
+      monitor = "DP-1",
+      persistent = true,
     })
     hl.workspace_rule({
       workspace = "name:Art",

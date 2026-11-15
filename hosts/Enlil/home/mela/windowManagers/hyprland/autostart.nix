@@ -2,7 +2,7 @@
   xdg.configFile."hypr/autostart.lua".text = /* Lua */ ''
     hl.on("hyprland.start", function()
       hl.exec_cmd(Discord)
-      hl.exec_cmd(Browser, { workspace = "2 silent" })
+      hl.exec_cmd(Browser, { workspace = "1 silent" })
       hl.exec_cmd("sleep 2; systemctl restart --user easyeffects")
       hl.exec_cmd("systemctl restart --user qpwgraph")
     end)

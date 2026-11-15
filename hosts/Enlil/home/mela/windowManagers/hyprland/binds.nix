@@ -55,14 +55,20 @@ in
         zoom(-0.5)
       end)
 
-      hl.bind(Moda .. " + V", hl.dsp.workspace.toggle_special("Video"))
+      hl.bind(Moda .. " + S", hl.dsp.focus({ workspace = "name:Start" }))
       hl.bind(Moda .. " + G", hl.dsp.focus({ workspace = "name:Game" }))
       hl.bind(Moda .. " + D", hl.dsp.focus({ workspace = "name:Discord" }))
-      hl.bind(Moda .. " + W", hl.dsp.workspace.toggle_special("Win"))
+      hl.bind(Moda .. " + Q", hl.dsp.focus({ workspace = "name:QpwGraph" }))
       hl.bind(Mods .. " + G", hl.dsp.window.move({ workspace = "name:Game" }))
       hl.bind(Mods .. " + D", hl.dsp.window.move({ workspace = "name:Discord" }))
+      hl.bind(Mods .. " + Q", hl.dsp.window.move({ workspace = "name:QpwGraph" }))
+
+      hl.bind(Moda .. " + V", hl.dsp.workspace.toggle_special("Video"))
+      hl.bind(Moda .. " + W", hl.dsp.workspace.toggle_special("Win"))
+      hl.bind(Moda .. " + M", hl.dsp.workspace.toggle_special("Magic"))
       hl.bind(Mods .. " + V", hl.dsp.window.move({ workspace = "special:Video" }))
       hl.bind(Mods .. " + W", hl.dsp.window.move({ workspace = "special:Win" }))
+      hl.bind(Mods .. " + M", hl.dsp.window.move({ workspace = "special:Magic" }))
 
       hl.bind(
         Mod .. " + U",
@@ -264,7 +270,10 @@ in
           WorkspaceOneKills()
           hl.timer(function()
             hl.dispatch(
-              hl.dsp.exec_cmd(Player, { workspace = "1 silent", float = true, size = { 1118, 710 }, move = { 401, 145 } })
+              hl.dsp.exec_cmd(
+                Player,
+                { workspace = "name:Start silent", float = true, size = { 1118, 710 }, move = { 401, 145 } }
+              )
             )
           end, { timeout = 5, type = "oneshot" })
         end
@@ -276,8 +285,6 @@ in
       hl.bind("CTRL + SHIFT + Escape", hl.dsp.exec_cmd(Term .. " --title btop btop"))
       hl.bind("XF86Calculator", hl.dsp.exec_cmd("uwsm-app -- qalculate-gtk"))
       hl.bind(Mod .. " + semicolon", hl.dsp.exec_cmd("uwsm-app -- qalculate-gtk"))
-      hl.bind(Moda .. " + S", hl.dsp.workspace.toggle_special("magic"))
-      hl.bind(Mods .. " + S", hl.dsp.window.move({ workspace = "special:magic" }))
       hl.bind("Print", hl.dsp.exec_cmd("hyprquickframe -n -d"))
       hl.bind(Mod .. " + O", hl.dsp.exec_cmd("uwsm-app -- hyprpicker -a"))
       hl.bind(Mods .. " + P", hl.dsp.submap("player"))
