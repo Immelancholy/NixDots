@@ -94,7 +94,7 @@
       float = true,
       pin = true,
       size = "715 565",
-      move = { 1115, 50 },
+      move = { "(monitor_w - window_w) * 0.925", 50 },
     })
     hl.workspace_rule({
       workspace = "1",

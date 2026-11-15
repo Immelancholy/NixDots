@@ -45,7 +45,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     tsui = {
-      url = "github:guibou/tsui/fix_nix_run";
+      url = "github:neuralink/tsui";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 

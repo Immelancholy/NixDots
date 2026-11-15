@@ -1536,9 +1536,9 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1794754329,
-        "narHash": "sha256-t3jKyiwRcq0tM7GSld+7gIlE87iTi0kVCE6+YC+FyHk=",
-        "rev": "3faf1ba85291db7e9cae54746ed848b4da9a764e",
+        "lastModified": 1794754631,
+        "narHash": "sha256-qd9tZa3IL+2uOiIAv0M4r/TU0GD1ei39LI/nl2UO2/I=",
+        "rev": "0390adde5315daa947f490b2c4781d1671b3e26a",
         "revCount": 4499,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
@@ -2615,16 +2615,15 @@
         ]
       },
       "locked": {
-        "lastModified": 1725790341,
-        "narHash": "sha256-fOO35MwO9XY5l0r3+Yui1CmmlMxsvik+9xaLtyT2OeU=",
-        "owner": "guibou",
+        "lastModified": 1792892182,
+        "narHash": "sha256-1KzV0timW0PdLsDJHqJQew5d4mS1s/MIrQjOQwOVYqg=",
+        "owner": "neuralink",
         "repo": "tsui",
-        "rev": "f90196a65bb1d0078e82c470951e5a6acb4176f9",
+        "rev": "2018695b3936f7a830236f730de441640fe4fc8a",
         "type": "github"
       },
       "original": {
-        "owner": "guibou",
-        "ref": "fix_nix_run",
+        "owner": "neuralink",
         "repo": "tsui",
         "type": "github"
       }
