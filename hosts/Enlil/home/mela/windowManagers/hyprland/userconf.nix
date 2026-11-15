@@ -52,6 +52,8 @@
     function Universal_User_Binds()
       hl.bind(Moda .. " + D", hl.dsp.workspace.toggle_special("DAW"))
       hl.bind(Mods .. " + D", hl.dsp.window.move({ workspace = "special:DAW" }))
+      hl.bind(Moda .. " + A", hl.dsp.focus("name:Art"))
+      hl.bind(Mods .. " + A", hl.dsp.window.move({ workspace = "name:Art" }))
       -- hl.bind(Mod .. " + F9", hl.dsp.pass({ window = "class:^(com.obsproject.Studio)$" }))
       -- hl.bind(Mod .. " + F10", hl.dsp.pass({ window = "class:^(com.obsproject.Studio)$" }))
       -- hl.bind(Mod .. " + F12", hl.dsp.pass({ window = "class:^(com.obsproject.Studio)$" }))
