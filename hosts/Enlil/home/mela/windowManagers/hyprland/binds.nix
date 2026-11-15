@@ -57,8 +57,10 @@ in
 
       hl.bind(Moda .. " + V", hl.dsp.workspace.toggle_special("Video"))
       hl.bind(Moda .. " + G", hl.dsp.focus({ workspace = "name:Game" }))
+      hl.bind(Moda .. " + D", hl.dsp.focus({ workspace = "name:Discord" }))
       hl.bind(Moda .. " + W", hl.dsp.workspace.toggle_special("Win"))
       hl.bind(Mods .. " + G", hl.dsp.window.move({ workspace = "name:Game" }))
+      hl.bind(Mods .. " + D", hl.dsp.window.move({ workspace = "name:Discord" }))
       hl.bind(Mods .. " + V", hl.dsp.window.move({ workspace = "special:Video" }))
       hl.bind(Mods .. " + W", hl.dsp.window.move({ workspace = "special:Win" }))
 

@@ -50,9 +50,9 @@
     end
 
     function Universal_User_Binds()
-      hl.bind(Moda .. " + D", hl.dsp.workspace.toggle_special("DAW"))
-      hl.bind(Mods .. " + D", hl.dsp.window.move({ workspace = "special:DAW" }))
-      hl.bind(Moda .. " + A", hl.dsp.focus("name:Art"))
+      hl.bind(Moda .. " + M", hl.dsp.workspace.toggle_special("DAW"))
+      hl.bind(Mods .. " + M", hl.dsp.window.move({ workspace = "special:DAW" }))
+      hl.bind(Moda .. " + A", hl.dsp.focus({ workspace = "name:Art" }))
       hl.bind(Mods .. " + A", hl.dsp.window.move({ workspace = "name:Art" }))
       -- hl.bind(Mod .. " + F9", hl.dsp.pass({ window = "class:^(com.obsproject.Studio)$" }))
       -- hl.bind(Mod .. " + F10", hl.dsp.pass({ window = "class:^(com.obsproject.Studio)$" }))
@@ -109,11 +109,12 @@
       monitor = "DP-1",
     })
     hl.workspace_rule({
-      workspace = "4",
-      monitor = "DP-1",
+      workspace = "name:Art",
+      monitor = "HDMI-A-1",
+      persistent = true,
     })
     hl.workspace_rule({
-      workspace = "name:Art",
+      workspace = "name:Discord",
       monitor = "HDMI-A-1",
       default = true,
       persistent = true,

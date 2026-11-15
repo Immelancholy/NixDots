@@ -116,7 +116,7 @@ in
         class = "^(vesktop)$",
       },
       opacity = "0.9 override 0.7 override",
-      workspace = "3 silent",
+      workspace = "name:Discord silent",
     })
     hl.window_rule({
       match = {
@@ -143,7 +143,7 @@ in
       match = {
         class = "^(org.rncbc.qpwgraph)$",
       },
-      workspace = "4 silent",
+      workspace = "3 silent",
     })
     hl.window_rule({
       match = {
