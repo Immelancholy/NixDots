@@ -11,6 +11,43 @@ in
       },
       opacity = "0.8 0.7",
     })
+
+    hl.window_rule({
+      match = { title = "^(relic-cava)$" },
+      workspace = "name:Start silent",
+      float = true,
+      size = { 888, 456 },
+      move = { 610, 615 },
+    })
+    hl.window_rule({
+      match = { title = "^(" .. PlayerTitle .. ")$" },
+      workspace = "name:Start silent",
+      float = true,
+      size = { 888, 565 },
+      move = { 610, 42 },
+    })
+    hl.window_rule({
+      match = { title = "^(relic-btop)$" },
+      workspace = "name:Start silent",
+      float = true,
+      size = { 590, 605 },
+      move = { 10, 465 },
+    })
+    hl.window_rule({
+      match = { title = "^(relic-fastfetch)$" },
+      workspace = "name:Start silent",
+      float = true,
+      size = { 590, 415 },
+      move = { 10, 42 },
+    })
+    hl.window_rule({
+      match = { title = "^(relic-neo)$" },
+      workspace = "name:Start silent",
+      float = true,
+      size = { 402, 1030 },
+      move = { 1508, 42 },
+    })
+
     hl.window_rule({
       match = {
         class = "^(steam_app_.*)$",
@@ -47,6 +84,7 @@ in
       opacity = "1.0 override 0.8 override",
       fullscreen = true,
     })
+
     hl.window_rule({
       match = {
         class = "^(kitty)$",
