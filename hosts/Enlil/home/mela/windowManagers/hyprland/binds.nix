@@ -269,15 +269,17 @@ in
           LiveWallpaperKill()
           WorkspaceOneKills()
           hl.timer(function()
-            hl.dispatch(
-              hl.dsp.exec_cmd(
-                Player,
-                { workspace = "name:Start silent", float = true, size = { 1118, 710 }, move = { 401, 145 } }
-              )
-            )
+            ExtraGameCalls()
+            hl.dispatch(hl.dsp.exec_cmd(Player, {
+              workspace = "name:Start silent",
+              float = true,
+              size = { "monitor_w * 0.582", "monitor_h * 0.657" },
+              move = { "(monitor_w - window_w) * 0.5", "(monitor_h - window_h) * 0.4" },
+            }))
           end, { timeout = 5, type = "oneshot" })
         end
         if gamemode == false then
+          ExtraGameExitCalls()
           hl.dispatch(hl.dsp.exec_cmd("hyprctl reload config-only -q"))
         end
       end)
@@ -288,10 +290,12 @@ in
       hl.bind("Print", hl.dsp.exec_cmd("hyprquickframe -n -d"))
       hl.bind(Mod .. " + O", hl.dsp.exec_cmd("uwsm-app -- hyprpicker -a"))
       hl.bind(Mods .. " + P", hl.dsp.submap("player"))
+      hl.bind(Mod .. " + Comma", hl.dsp.workspace.move({ monitor = "+1" }))
+      hl.bind(Mod .. " + Period", hl.dsp.workspace.move({ monitor = "-1" }))
       hl.bind(Mods .. " + Comma", hl.dsp.window.move({ monitor = "+1", follow = true }))
       hl.bind(Mods .. " + Period", hl.dsp.window.move({ monitor = "-1", follow = true }))
-      hl.bind(Mod .. " + Comma", hl.dsp.focus({ monitor = "+1" }))
-      hl.bind(Mod .. " + Period", hl.dsp.focus({ monitor = "-1" }))
+      hl.bind(Moda .. " + Comma", hl.dsp.focus({ monitor = "+1" }))
+      hl.bind(Moda .. " + Period", hl.dsp.focus({ monitor = "-1" }))
       hl.bind("XF86AudioLowerVolume", hl.dsp.exec_cmd(" uwsm-app -- playerVol dec"), { repeating = true, locked = true })
       hl.bind("XF86AudioRaiseVolume", hl.dsp.exec_cmd(" uwsm-app -- playerVol inc"), { repeating = true, locked = true })
       hl.bind(

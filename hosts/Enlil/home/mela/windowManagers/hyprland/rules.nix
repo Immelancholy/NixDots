@@ -103,7 +103,7 @@ in
       },
       opacity = "0.9 override 0.7 override",
       float = true,
-      size = { "monitor_w * 0.442", "monitor_h * 0.281" },
+      size = { "monitor_w * 0.442", "monitor_h * 0.5" },
     })
     hl.window_rule({
       match = {

@@ -1190,22 +1190,6 @@
         "type": "github"
       }
     },
-    "kitty": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1794753405,
-        "narHash": "sha256-ENlLN77aOJfqVKmERoTU3SDttw1zLSUprTcpBYoctds=",
-        "owner": "kovidgoyal",
-        "repo": "kitty",
-        "rev": "2b260d8d67af48132924fc404960d6e352662b0f",
-        "type": "github"
-      },
-      "original": {
-        "owner": "kovidgoyal",
-        "repo": "kitty",
-        "type": "github"
-      }
-    },
     "lanzaboote": {
       "inputs": {
         "crane": "crane",
@@ -1401,10 +1385,10 @@
         "zsh-256color": "zsh-256color"
       },
       "locked": {
-        "lastModified": 1794768734,
-        "narHash": "sha256-Hw7wlBc4MURq0wnDgYwWFWw+8kCpi6sWdNFZ66BEa6U=",
-        "rev": "dd8b8216354582537b01d0b1e0991fdbcb996dfb",
-        "revCount": 4503,
+        "lastModified": 1794770845,
+        "narHash": "sha256-Ek+PPqDVAvb8UDyT0zE2AvAl0VOSTU0Kq2a9PPE1hlY=",
+        "rev": "475cfa8cfa5273ccdac2bc5ea1f50cf0d27e6bf4",
+        "revCount": 4504,
         "type": "git",
         "url": "file:/home/mela/Documents/Projects/Nix-Relic"
       },
@@ -1799,11 +1783,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1794767572,
-        "narHash": "sha256-S+T6BWPKC4E61S9bmgUwgowCZS7gjcrqGyAAElqFS28=",
+        "lastModified": 1794770109,
+        "narHash": "sha256-QMyXsZlSG+b/b0AX0IHWFbNBF1IfR6vqLR+GgwYYu94=",
         "owner": "nix-community",
         "repo": "NUR",
-        "rev": "016bcddb53bd3f5122452f1b3a2c8461e20e72e4",
+        "rev": "7a701de34a4887d9ca6be4450140305fdae9f6e3",
         "type": "github"
       },
       "original": {
@@ -2153,7 +2137,6 @@
         "git-hooks": "git-hooks_2",
         "helium": "helium",
         "home-manager": "home-manager",
-        "kitty": "kitty",
         "millennium": "millennium",
         "momoisay": "momoisay",
         "nix-relic": "nix-relic",

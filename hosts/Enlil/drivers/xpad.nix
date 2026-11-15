@@ -1,9 +1,10 @@
 { config, ... }:
 {
-  boot = {
-    extraModulePackages = with config.boot.kernelPackages; [
-      (callPackage ../../../pkgs/xpad.nix { })
-    ];
-    initrd.kernelModules = [ "xpad" ];
-  };
+  # boot = {
+  #   extraModulePackages = with config.boot.kernelPackages; [
+  #     (callPackage ../../../pkgs/paroj-xpad.nix { })
+  #   ];
+  #   kernelModules = [ "paroj-xpad" ];
+  #   blacklistedKernelModules = [ "xpad" ];
+  # };
 }

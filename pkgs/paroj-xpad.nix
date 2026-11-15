@@ -5,12 +5,12 @@
   kernel,
 }:
 stdenv.mkDerivation rec {
-  pname = "xpad";
+  pname = "paroj-xpad";
   version = "0.4";
 
   src = fetchFromGitHub {
     owner = "Immelancholy";
-    repo = pname;
+    repo = "xpad";
     rev = "c89fcce54c802267f811ce1c0aaf3e42b1fd122b";
     hash = "sha256-oIw5Fmtoj3q8PFNlg6ABzT0Luk8lYKxnc4Tg3vnQICA=";
   };

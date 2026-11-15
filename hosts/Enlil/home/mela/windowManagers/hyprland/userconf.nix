@@ -41,6 +41,13 @@
       )
     end
 
+    function ExtraGameCalls()
+      hl.dispatch(hl.dsp.workspace.move({ workspace = "name:Start", monitor = "HDMI-A-1" }))
+    end
+    function ExtraGameExitCalls()
+      hl.dispatch(hl.dsp.workspace.move({ workspace = "name:Start", monitor = "DP-1" }))
+    end
+
     function WorkspaceOneKills()
       hl.dispatch(hl.dsp.window.kill({ window = "title:^(" .. PlayerTitle .. ")$" }))
       hl.dispatch(hl.dsp.window.kill({ window = "title:^(relic-neo)$" }))
