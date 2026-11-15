@@ -1190,6 +1190,22 @@
         "type": "github"
       }
     },
+    "kitty": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1794753405,
+        "narHash": "sha256-ENlLN77aOJfqVKmERoTU3SDttw1zLSUprTcpBYoctds=",
+        "owner": "kovidgoyal",
+        "repo": "kitty",
+        "rev": "2b260d8d67af48132924fc404960d6e352662b0f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "kovidgoyal",
+        "repo": "kitty",
+        "type": "github"
+      }
+    },
     "lanzaboote": {
       "inputs": {
         "crane": "crane",
@@ -2137,6 +2153,7 @@
         "git-hooks": "git-hooks_2",
         "helium": "helium",
         "home-manager": "home-manager",
+        "kitty": "kitty",
         "millennium": "millennium",
         "momoisay": "momoisay",
         "nix-relic": "nix-relic",
