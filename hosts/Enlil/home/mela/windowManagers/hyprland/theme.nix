@@ -53,9 +53,14 @@
           size = 5,
           passes = 4,
           brightness = 1.25,
-          vibrancy = 0.75,
-          vibrancy_darkness = 0.8,
+          vibrancy = 0.85,
+          vibrancy_darkness = 0.9,
           special = true,
+          variant = "prism",
+          glass = {
+            size = 20,
+            roughness = 0.35,
+          },
         },
         motion_blur = {
           enabled = true,
