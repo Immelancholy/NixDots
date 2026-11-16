@@ -18,9 +18,6 @@
   ];
   programs.reaper = {
     enable = true;
-    package = pkgs.reaper.override {
-      jackLibrary = pkgs.pipewire.jack;
-    };
     extensions = {
       reapack = {
         enable = true;
@@ -58,6 +55,6 @@
       sws.enable = true;
 
     };
-    packages = with pkgs; [ ];
+    packages = with pkgs; [ pipewire.jack ];
   };
 }
