@@ -14,13 +14,11 @@
     zlsplitter
     zam-plugins
     vital
+    pipewire.jack
   ];
   programs.reaper = {
     enable = true;
-    package = inputs.reaper-flake.packages.${pkgs.stdenv.hostPlatform.system}.reaper.override {
-      pythonSupport = config.programs.reaper.preferences.plugIns.reascript.python.enable;
-      python3 = config.programs.reaper.preferences.plugIns.reascript.python.package;
-      waylandSwellSupport = config.programs.reaper.experimental.swell-wayland.enable;
+    package = pkgs.reaper.override {
       jackLibrary = pkgs.pipewire.jack;
     };
     extensions = {
